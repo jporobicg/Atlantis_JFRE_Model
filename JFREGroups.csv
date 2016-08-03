@@ -1,29 +1,31 @@
-Code,Index,IsTurnedOn,Name,Long Name,NumCohorts,MovesVertically,MovesHorizontally,isFished,IsImpacted,isTAC,InvertType,isPredator,IsCover,isSiliconDep,isAssessed,IsCatchGrazer,isOverWinter
-SPL,0,1,Spiny_lobster,Spiny lobster,1,1,1,1,1,0,MOB_EP_OTHER,1,0,0,1,0,0
-GCR,1,1,Golden_Crab,Golden Crab,1,1,1,1,1,0,MOB_EP_OTHER,1,0,0,1,0,0
-BRC,2,1,Breca,Breca,1,1,1,1,1,0,FISH,1,0,0,0,0,0
-ORO,3,1,Orange_Roughy,Orange Roughy,1,1,1,1,1,1,FISH,1,0,0,1,0,0
-ALF,4,1,Alfonsino,Alfonsino,1,1,1,1,1,1,FISH,1,0,0,1,0,0
-CHO,5,1,Chondrichtyans,Chondrichtyans,1,1,1,0,1,0,SHARK,1,0,0,0,0,0
-OTA,6,1,Otariid,Otariid,1,1,1,0,1,0,MAMMAL,1,0,0,1,0,0
-CET,7,1,Cetaceans,Cetaceans,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0
-BIR,8,1,Birds,Birds,1,1,1,0,0,0,BIRD,1,0,0,1,0,0
-OCT,9,1,Octupus,Octupus,1,1,1,0,1,0,CEP,1,0,0,0,1,0
-LPF,10,1,Pelagic_L_fish,Large pelagic fish,1,1,1,1,1,0,FISH,1,0,0,0,0,0
-SPF,11,1,Pelagic_S_fish,Small pelagic fish,1,1,1,1,1,0,FISH,1,0,0,0,0,0
-SBF,12,1,Benthic_S_fish,Small benthic fish,1,1,1,1,1,0,FISH,1,0,0,0,0,0
-LBF,13,1,Benthic_L_fish,Large benthic fish,1,1,1,1,1,0,FISH,1,0,0,0,0,0
-EUP,14,1,Euphausiid,Euphausiid,1,0,0,0,0,0,MOB_EP_OTHER,1,0,0,0,0,0
-COP,15,1,Copepods,Copepods,1,1,1,0,0,0,MED_ZOO,1,0,0,0,0,0
-SCR,16,1,Small_crus,Small crustaceans,1,0,0,0,1,0,MOB_EP_OTHER,1,0,0,0,0,0
-BFF,17,1,Deposit_feeders,Deposit feeders,1,0,0,0,1,0,LG_INF,1,0,0,0,0,0
-PHY,18,1,Phytoplankton,Phytoplankton,1,0,0,0,0,0,LG_PHY,0,0,0,0,0,0
-SUR,19,1,Sea_urchins,Sea urchins,1,0,0,0,0,0,SED_EP_FF,1,0,0,0,0,0
-MOL,20,1,Mollusca,Mollusca,1,0,0,0,0,0,SED_EP_FF,1,0,0,0,0,0
-NO,21,1,Nitrate,Nitrate,1,0,0,0,0,0,NIT,0,0,0,0,0,0
-MA,22,1,Macroalgae,Macroalgae,1,0,0,0,0,0,PHYTOBEN,0,1,0,0,0,0
-PB,23,1,Pelag_Bact,Pelagic Bacteria,1,0,0,0,0,0,PL_BACT,0,0,0,0,0,0
-BB,24,1,Sed_Bact,Sediment Bacteria,1,0,0,0,0,0,SED_BACT,0,0,0,0,0,0
-DL,25,1,Labile_detritus,Labile detritus,1,0,0,0,0,0,LAB_DET,0,0,0,0,0,0
-DR,26,1,Refractory_detritrus,Refractory detritrus,1,0,0,0,0,0,REF_DET,0,0,0,0,0,0
-DC,27,1,Carrion,Carrion,1,0,0,0,0,0,CARRION,0,0,0,0,0,0
+Code,Index,IsTurnedOn,Name,Long Name,NumCohorts,NumGeneTypes,NumStages,NumSpawns,NumAgeClassSize,NumStocks,MovesVertically,MovesHorizontally,isFished,IsImpacted,isTAC,GroupType,isPredator,IsCover,isSiliconDep,isAssessed,IsCatchGrazer,isOverWinter,isCultured,isHabDepend
+SPL,0,1,Spiny_lobster,Spiny lobster,1,1,2,1,1,2,0,1,1,1,0,MOB_EP_OTHER,1,0,0,1,0,0,0,0
+GCR,1,1,Golden_Crab,Golden Crab,1,1,2,1,1,2,0,1,1,1,0,MOB_EP_OTHER,1,0,0,1,0,0,0,0
+BRC,2,1,Breca,Breca,10,1,2,1,1,2,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+VID,3,1,Vidriola,Vidriola,3,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+ORO,4,1,Orange_Roughy,Orange Roughy,1,1,2,1,1,1,1,1,1,1,1,FISH,1,0,0,1,0,0,0,0
+ALF,5,1,Alfonsino,Alfonsino,1,1,2,1,1,1,1,1,1,1,1,FISH,1,0,0,1,0,0,0,0
+ANG,6,1,Anguila,Anguila,1,1,2,1,3,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+CHO,7,1,Chondrichtyans,Chondrichtyans,1,1,2,1,1,1,1,1,0,1,0,SHARK,1,0,0,0,0,0,0,0
+OTA,8,1,Otariid,Otariid,1,1,2,1,1,2,1,1,0,1,0,MAMMAL,1,0,0,1,0,0,0,0
+CET,9,1,Cetaceans,Cetaceans,1,1,2,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0
+BIR,10,1,Birds,Birds,1,1,1,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0
+OCT,11,1,Octupus,Octupus,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,1,0,0,0
+LPF,12,1,Pelagic_L_fish,Large pelagic fish,5,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+SPF,13,1,Pelagic_S_fish,Small pelagic fish,6,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+SBF,14,1,Benthic_S_fish,Small benthic fish,10,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+LBF,15,1,Benthic_L_fish,Large benthic fish,10,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0
+EUP,16,1,Euphausiid,Euphausiid,1,1,1,1,1,1,0,0,0,0,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0
+COP,17,1,Copepods,Copepods,1,1,1,1,1,1,1,1,0,0,0,MED_ZOO,1,0,0,0,0,0,0,0
+SCR,18,1,Small_crus,Small crustaceans,1,1,1,1,1,1,0,0,0,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0
+BFF,19,1,Deposit_feeders,Deposit feeders,1,1,1,1,1,1,0,0,0,1,0,LG_INF,1,0,0,0,0,0,0,0
+PHY,20,1,Phytoplankton,Phytoplankton,1,1,1,1,1,1,0,0,0,0,0,LG_PHY,0,0,0,0,0,0,0,0
+SUR,21,1,Sea_urchins,Sea urchins,1,1,1,1,1,1,0,0,0,0,0,SED_EP_FF,1,0,0,0,0,0,0,0
+MOL,22,1,Mollusca,Mollusca,1,1,1,1,1,1,0,0,0,0,0,SED_EP_FF,1,0,0,0,0,0,0,0
+NO,23,1,Nitrate,Nitrate,1,1,1,1,1,1,0,0,0,0,0,NIT,0,0,0,0,0,0,0,0
+MA,24,1,Macroalgae,Macroalgae,1,1,1,1,1,1,0,0,0,0,0,PHYTOBEN,0,1,0,0,0,0,0,0
+PB,25,1,Pelag_Bact,Pelagic Bacteria,1,1,1,1,1,1,0,0,0,0,0,PL_BACT,0,0,0,0,0,0,0,0
+BB,26,1,Sed_Bact,Sediment Bacteria,1,1,1,1,1,1,0,0,0,0,0,SED_BACT,0,0,0,0,0,0,0,0
+DL,27,1,Labile_detritus,Labile detritus,1,1,1,1,1,1,0,0,0,0,0,LAB_DET,0,0,0,0,0,0,0,0
+DR,28,1,Refractory_detritrus,Refractory detritrus,1,1,1,1,1,1,0,0,0,0,0,REF_DET,0,0,0,0,0,0,0,0
+DC,29,1,Carrion,Carrion,1,1,1,1,1,1,0,0,0,0,0,CARRION,0,0,0,0,0,0,0,0
