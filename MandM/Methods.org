@@ -84,7 +84,7 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 ** Run the model called the SETas (Unix != DOS)
  -  atlantisMerged -i init_vmpa_setas_25032013.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Dem.prm -f VMPA_setas_force_fish_Dem.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Dem.prm -h VMPA_setas_harvest_F_New.prm -s SETasGroupsDem_NoCep.csv -q SETasFisheries.csv -d outputFolderTrunk
 
- ------
+    ------
 * Zones
 ** using Qgis for the definition of the polygos
 ** The polygons are defined by species distribution, managemet areas and Oceanography
@@ -116,7 +116,7 @@ java -jar bgmeriser-stripped.jar -as "+proj=longlat +ellps=WGS84 +datum=WGS84 +n
 rm JFRE_xy.bgm
 java -jar bgmeriser-stripped.jar -from "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"  -to "+proj=utm +zone=19 +south +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs" JFRE_v3.shp JFRE_xy.bgm
 
- ------
+------
 * Oceanography
 ** I will use the Roms model
 ** The variables that I plan tu use are:
@@ -419,7 +419,7 @@ fi
     | eddy vertmix     | 0                | 0                     | Beth         | It is necesary to change to 1 to represnet the effect of the eddies                       |
     | other parameter  | No-variation     | Same than atlantis    |              |                                                                                           |
 
- ------
+***** nw------
 * Setting Atlantis
 ** CSV files
 *** SETasfishery
@@ -446,6 +446,56 @@ fi
       | llLBF        |    12 | Trap large benthic fish         |     0 |            0 |
        [fn:1] Recreational fisheries with spears only in summer
 *** SETasGroups
+**** Functional groups
+| Code  | Functional Groups  | Common name       | Sc. Name                              |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *SPL* | Langosta           | Langosta de J.F.  | /Jasus frontalis/                     |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *GCR* | Cangrejo Dorado    | Cangrejo Dorado   | /Chaceon chilensis/                   |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *BRC* | Breca              | Breca             | /Nemadactylus gayi/                   |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *ANG* | Anguila            | Anguila           | /Gymnothorax porphyreus/              |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *VID* | Vidriola           | Vidriola          | /Seriola lalandi/                     |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *ALF* | Alfonsino          | Alfonsino         | /Beryx splendens/                     |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *ORO* | Orange Roughy      | Orange Roughy     | /Hoplostethus atlanticus/             |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *OCT* | Pulpo              | Pulpo de  J.F.    | /Octopus crusoe/                      |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *CHO* | Chondricties       | Tollo             | /Squalus mitsukuri/                   |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *OTA* | Otaridee           | Lobo de J.F.      | /Actocephalus phillippi/              |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *SPF* | Small Pelagic Fish | Pampanito         | /Scorpis chilensis/                   |   |
+|       |                    | Graniento         | /Caprodon longimanus/                 |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *LPF* | Large Pelagic Fish | Corvina de J.F.   | /Umbrina reedi/                       |   |
+|       |                    | Jurel de J.F.     | /Pseudocaranx chilensis/              |   |
+|       |                    | Sierra            | /Thyrsites atun/                      |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *SBF* | Small Benthic Fish | Colorado          | /Plectranthias exsul/                 |   |
+|       |                    | Cabrilla          | /Chironemus delfini/                  |   |
+|       |                    | Chancharro        | /Helicolenus lengerichi/              |   |
+|       |                    | Pez Mariposa      | /Pterygotrigla picta/                 |   |
+|       |                    | Jerguilla de J.F. | /Girella albostriata/                 |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *LBF* | Large Benthic Fish | Bacalado de J.F.  | /Polyprion oxigeneios fernandezianus/ |   |
+|       |                    | Lenguado          | /Paralichthys fernandezianus/         |   |
+|       |                    | Congrio           | /Lotella fernandeziana/               |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *MOL* | Mollusca           | Caracol blanco    | /Fusitritron magellanicum/            |   |
+|       |                    | Ostra             | /Nucula fernandeziana/                |   |
+|       |                    | Loco              | /Concholepas sp/                      |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *SCR* | Small Crustacean   | Centolla de J.F.  | /Paraloma rathbuni/                   |   |
+|       |                    | Jaiva             | /Talifrus dentatus/                   |   |
+|-------+--------------------+-------------------+---------------------------------------+---|
+| *SUR* | Sea Urchin         | Erizo             | /Centrostephanus rodgersii/           |   |
+|       |                    | Estrella de mar   | /Patiriella calcarata/                |   |
+
 **** JFRE_biol.csv file configuration
      #+CAPTION: Configuration file with all the functional groups
       | Code | Index | IsTurnedOn | Name                 | Long Name            | NumCohorts | NumGeneTypes | NumStages | NumSpawns | NumAgeClassSize | NumStocks | MovesVertically | MovesHorizontally | isFished | IsImpacted | isTAC | GroupType    | isPredator | IsCover | isSiliconDep | isAssessed | IsCatchGrazer | isOverWinter | isCultured | isHabDepend |
@@ -483,7 +533,6 @@ fi
       | DL   |    30 |          1 | Labile_detritus      | Labile detritus      |          1 |            1 |         1 |         1 |               1 |         1 |               0 |                 0 |        0 |          0 |     0 | LAB_DET      |          0 |       0 |            0 |          0 |             0 |            0 |          0 |           0 |
       | DR   |    31 |          1 | Refractory_detritrus | Refractory detritrus |          1 |            1 |         1 |         1 |               1 |         1 |               0 |                 0 |        0 |          0 |     0 | REF_DET      |          0 |       0 |            0 |          0 |             0 |            0 |          0 |           0 |
       | DC   |    32 |          1 | Carrion              | Carrion              |          1 |            1 |         1 |         1 |               1 |         1 |               0 |                 0 |        0 |          0 |     0 | CARRION      |          0 |       0 |            0 |          0 |             0 |            0 |          0 |           0 |
-
 
 **** Information functional groups
 ***** lifespans
@@ -652,10 +701,150 @@ fi
 
 ** PRM files
 *** Biology input file
-**** Acidification
-- Effect of ph in crustacean
+**** Habitat dependence
+ - The species that are cover are Coral and Macroalgae. Those are been reported that act as cover for juvenile lobster and juvenile bonny fishes.
+| FG  | Stage | Kcov | Bcov | Acov |
+|-----+-------+------+------+------|
+| SPL | Both  |    3 |  0.6 | 1    |
+| GCR | Both  |    3 |  0.6 | 1    |
+| BRC | Juv   |    3 |  0.6 | 1    |
+| LPF | Juv   |    3 |  0.6 | 1    |
+| SPF | Both  |    3 |  0.6 | 1    |
+| SBF | Both  |    3 |  0.6 | 1    |
+| LBF | Juv   |    3 |  0.6 | 1    |
+
+**** Acidification (Turnned off for calibration)
+- Effect of ph in crustacean and other species.
 - Acidification at the moment is settle to 1 (line 770)
   - There is effect on behavior in other species of crustacean
+
+   | FG  | Temp | Ph | fecund | Predation |
+   |-----+------+----+--------+-----------|
+   | SPL |    1 |  1 |      1 |         1 |
+   | GCR |    1 |  1 |      1 |         1 |
+   | COR |    1 |  1 |        |           |
+   | SCR |    1 |  1 |      1 |         1 |
+   | MOL |    1 |  1 |        |           |
+   | SZO |    1 |    |      1 |           |
+   | MZO |    1 |    |      1 |           |
+   | LZO |    1 |    |      1 |           |
+   |     |      |    |        |           |
+
+**** Diets
+| FG  | Species                    | Reference               |
+|-----+----------------------------+-------------------------|
+| SPL | Jasus lalandii             | van Zyl et al. 1998     |
+|     | Jasus lalandii             | Haley et al. 2011       |
+|     | Jasus edwearsii            | Connell et al. 2014     |
+|     | Jasus edwardsii            | Thesis Stewart gave me  |
+|     | Jasus edwardsii            | O'Rorke et al. 2014     |
+|-----+----------------------------+-------------------------|
+| GCR | Chaceon notialis           | Fishbase                |
+|     | Chaceon quinquedens        | Fishbase                |
+|     | Chaceon ramosae            | Fishbase                |
+|-----+----------------------------+-------------------------|
+| BRC | Nemadactilys gayi          | Ramirez et al. 2013     |
+|     | Nemadactilys gayi          | Ernst 2015              |
+|-----+----------------------------+-------------------------|
+| VID | Seriola lalandi            | Vergani et al,  2008    |
+|     | Seriola lalandi            | [[http://fishesofaustralia.net.au/home/species/1662/][fishes of australia]]     |
+|-----+----------------------------+-------------------------|
+| ORO | Hoplostethus atlanticus    | Niklitschek 2009        |
+|     | Hoplostethus atlanticus    | Labe and Arana 2001     |
+|     | Hoplostethus atlanticus    | Fishbase                |
+|     | Hoplostethus atlanticus    | Bulman and Kislow 1992  |
+|     | Hoplostethus atlanticus    | Dunn and Forman 2011    |
+|-----+----------------------------+-------------------------|
+| ALF | Beryx splendens            | Horn et al. 2010        |
+|     | Beryx splendens            | Fishbase                |
+|     | Beryx splendens            | Durn and Gonzalez 2002  |
+|-----+----------------------------+-------------------------|
+| ANG | Lycodontis porphyreus      | Pizarro and Tiffou 1974 |
+|     | Gymnothorax vicinus        | Young and Winn,  2003   |
+|-----+----------------------------+-------------------------|
+| CHO | Deep sea Squalus           | Dunn and Ferman 2011    |
+|     | Squalus fernandinus        | Arana 1974              |
+|     | Squalus mitsukurii         | Fishbase                |
+|     | Squalus mitsukurii         | Cortes, 1999            |
+|-----+----------------------------+-------------------------|
+| OTA | Arctocephalus philippii    | Osman 2008              |
+|     | Arctocephalus philippii    | Ecuña and Francis 1995  |
+|     | Arctocephalus philippii    | Diaz 2007               |
+|-----+----------------------------+-------------------------|
+| DOL | Delphinus delphis          | Pusineri et al. 2007    |
+|     | Delphinus delphis          | Fishbase                |
+|     | Tursiops truncatus         | Fishbase                |
+|     | Globicephala macrorhynchus | Fishbase                |
+|     | Delphinus delphis          | Brophy et al. 2006      |
+|-----+----------------------------+-------------------------|
+| CET | Orcinus Orca               | Ford et al 2016         |
+|     | Orcinus orca               | Ford et al. 1998        |
+|     | Kogia breviceps            | West et al. 2009        |
+|     | Kogia breviceps            | Beatson 2007            |
+|     | Balaenoptera physalus      | Landy et al 1991        |
+|     | Balaenoptera physalus      | Fishbase                |
+|     | Balaenoptera musculus      | Fishbase                |
+|-----+----------------------------+-------------------------|
+| BIR | Puffinus cretopus          | Azocar et al. 2013      |
+|-----+----------------------------+-------------------------|
+| SQD | Dosidicus gigas            | Fishbase                |
+|     | vampyroteuthis infernalis  | Fishbase                |
+|-----+----------------------------+-------------------------|
+| OCT | Octopus crusoe             | Petit et al 2015        |
+|     | Octopus mimus              | Fishbase                |
+|     | Enteroctopus megalocyathus | Ibanez and Chong 2008   |
+|     | Octopus vulgaris           | Smith 2003              |
+|-----+----------------------------+-------------------------|
+| LPF | Psudocaranx chilensis      | Ramirez et al 2013      |
+|     | Psudocaranx chilensis      | Fishbase                |
+|-----+----------------------------+-------------------------|
+| SPF | Malapterus reticulatus     | Petit, 2014             |
+|     | Scorpix chilensis          | Ramirez et al 2013      |
+|     | Malapterus reticulatus     | Ramirez et al 2013      |
+|     | Scartichthys variolatus    | Diaz and Munoz 2010     |
+|     | Thyrsites atun             | Fishbase                |
+|     | Callanthias sp.            | Fishbase                |
+|-----+----------------------------+-------------------------|
+| SBF | Hipoplectrodes semicinctum | Ramirez et al 2013      |
+|     | Plectranthias sp           | Fishbase                |
+|     | Aseraggodes sp.            | Fishbase                |
+|     | Girella albostriata        | Fishbase                |
+|     | Myctophidae                | Fishbase                |
+|-----+----------------------------+-------------------------|
+| LBF | Polyprion oxygeneios       | Pizarro and Tiffou 1974 |
+|     | Aserragodes macleayanus    | Sumpton et al. 1990     |
+|     | Polyprion oxygeneios       | Fishbase                |
+|     | Paralabrax sp.             | Fishbase                |
+|     | Paralichthys sp.           | Fishbase                |
+|-----+----------------------------+-------------------------|
+| SZO | microzooplankton           | Calbet et al. 2008      |
+|     | Microzooplankton           | Burian et al. 2013      |
+|-----+----------------------------+-------------------------|
+| MZO | Mesozooplankton            | Baten et al. 2001       |
+|     | Mesozooplankton            | Bode et al. 2004        |
+|     | Mesozooplankton            | Wu et al. 2010          |
+|     | Mesozooplankton            | Motwani et al. 2013     |
+|-----+----------------------------+-------------------------|
+| LZO | Euphausiid                 | Antezana, 2010          |
+|-----+----------------------------+-------------------------|
+| SCR | Projasus bahamondei        | Arana, 2014             |
+|     | Paromola cuviieri          | Fishbase                |
+|     | Chaceon quinquedens        | Steimle et al. 2001     |
+|     | Ovalipes trimaculatus      | Fishbase                |
+|-----+----------------------------+-------------------------|
+| BFF | Polychaete                 | Jumars et al. 2015      |
+|-----+----------------------------+-------------------------|
+| MOL | Acanthopleura              | Camus et al. 2012       |
+|     | Concholepas concholepas    | Stotz et al. 2003       |
+|     | Arca sp.                   | Fishbase                |
+|     | Aplysia sp.                | Fishbase                |
+|-----+----------------------------+-------------------------|
+| BCA | Sea Urchin                 | Fishbase                |
+|     | Actinidae                  | Fishbase                |
+|-----+----------------------------+-------------------------|
+| COR | Deep waters coral          | Kiriakoulakis 2005      |
+|-----+----------------------------+-------------------------|
+
 **** Whater - Column parameters
 - Light penetration through the water column
   -  *Ask Caly abouyt this*
@@ -693,16 +882,16 @@ fi
        | Total | 16959 | 13139 | 17903 | 8007 |         |                |
        |-------+-------+-------+-------+------+---------+----------------|
   - *Alfonsino*
-    #+CAPTION: Distribution of Orange Roughy based on Nicklitschek 2007 (evaluacion hidroacustica alfonsino y orange)
-    | Zone  |  2005 |  2006 | Average | Zones atlantis |
-    |-------+-------+-------+---------+----------------|
-    | JF1   |  7608 | 11258 |    9433 |    31,32,33,34 |
-    | JF2   | 10646 |  3112 |    6879 |             30 |
-    | JF4   |   181 |   203 |     192 |             28 |
-    | JF6   |       |  3352 |    3352 |             47 |
-    |-------+-------+-------+---------+----------------|
-    | Total | 18435 | 17925 |         |                |
-    |-------+-------+-------+---------+----------------|
+    #+CAPTION: Distribution of Orange Roughy based on Nicklitschek 2007 (evaluacion hidroacustica alfonsino y orange). And proportion of Juvenile in the Catches
+    | Zone  |  2005 |  2006 |         S1 |         S2 |         S3 |         S4 | Average | Zones atlantis |
+    |-------+-------+-------+------------+------------+------------+------------+---------+----------------|
+    | JF1   |  7608 | 11258 |  0.2196886 |  0.1952695 |  0.3574357 |  0.6673667 |    9433 |    31,32,33,34 |
+    | JF2   | 10646 |  3112 | 0.05960596 | 0.05575558 | 0.42050872 | 0.96729673 |    6879 |             30 |
+    | JF4   |   181 |   203 |  0.1396473 |  0.4303930 |  0.3107811 |   0.570357 |     192 |             28 |
+    | JF6   |       |  3352 |  0.1396473 |  0.2271394 | 0.19006901 | 0.07640764 |    3352 |             47 |
+    |-------+-------+-------+------------+------------+------------+------------+---------+----------------|
+    | Total | 18435 | 17925 |            |            |            |            |         |                |
+    |-------+-------+-------+------------+------------+------------+------------+---------+----------------|
   - *Chondricties*
      #+CAPTION: Distribution of Chondricties base on Andrade 2007 and 2008 biodiversity of seamount
           | Zone     | N/Presence | Zones       | Reference          |
@@ -845,22 +1034,40 @@ fi
       - For Large pelagic fish, Mollusca, Octupus, Small bentic fish and small crustacean, I use the average distribution for all the seasons.
 ***** Vertical distribution
 - *Deph Distribution*
-	| Functional Groups | Min |  Max | Author                                                              |
-	|-------------------+-----+------+---------------------------------------------------------------------|
-	| SPL               |   2 |  250 | Retamal & Arana 2000  - Descripcion y distribucion de 5 decapodos   |
-	| GCR               | 100 | 1000 | Arana et al 2000  -  Pesca exploratoria                             |
-	| BRC               |  20 |  300 | Arana & Vega 2000  -  Pesca exploratoria espinel and billy DB       |
-	| ORO               | 500 | 1000 | Niklitschek 2007 evaluacion hidroacustica alfonsino y otange roughy |
-	| ALF               | 200 |  600 | Niklitschek 2007 evaluacion hidroacustica alfonsino y otange roughy |
-	| LPF               |   0 |  200 | Billy data base                                                     |
-	| SPF               |   0 |  250 | Billy data base                                                     |
-	| SBF               |   0 |  250 | Billy data base                                                     |
-	| LBF               |   0 |  250 | Billy data base                                                     |
-	| VID               |   3 |  150 | IUCN and fish-base                                                  |
-	| ANG               |   0 |  300 | Arana 2000 - PEsca exploratoria con trampa                          |
-	|                   |     |      |                                                                     |
+        | Functional Groups | Min |  Max | Author                                                              |
+        |-------------------+-----+------+---------------------------------------------------------------------|
+        | SPL               |   2 |  250 | Retamal & Arana 2000  - Descripcion y distribucion de 5 decapodos   |
+        | GCR               | 100 | 1000 | Arana et al 2000  -  Pesca exploratoria                             |
+        | BRC               |  20 |  300 | Arana & Vega 2000  -  Pesca exploratoria espinel and billy DB       |
+        | ORO               | 500 | 1000 | Niklitschek 2007 evaluacion hidroacustica alfonsino y otange roughy |
+        | ALF               | 200 |  600 | Niklitschek 2007 evaluacion hidroacustica alfonsino y otange roughy |
+        | LPF               |   0 |  200 | Billy data base                                                     |
+        | SPF               |   0 |  250 | Billy data base                                                     |
+        | SBF               |   0 |  250 | Billy data base                                                     |
+        | LBF               |   0 |  250 | Billy data base                                                     |
+        | VID               |   3 |  150 | IUCN and fish-base                                                  |
+        | ANG               |   0 |  300 | Arana 2000 - PEsca exploratoria con trampa                          |
+        | CHO               |  20 |  600 | Fishbase                                                            |
+        | COR               |  50 | 1000 | Data base &   Niklitschek 2010                                      |
+        |                   |     |      |                                                                     |
+
 - *Day-nigth distribution*
   - Vertebrates
+    | FG      | JvAd     | Layer 8 | Layer 7 | Layer 6 | Layer 5 | Layer 4 | Layer 3 | Layer 2 | Layer 1 |
+    |---------+----------+---------+---------+---------+---------+---------+---------+---------+---------|
+    | Anguila | Both     |    1.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |
+    | BRC     | Adult    |    0.07 |    0.07 |    0.01 |    0.06 |    0.36 |    0.21 |    0.14 |    0.09 |
+    | BRC     | Juvenile |    0.01 |    0.04 |    0.03 |    0.03 |    0.37 |    0.21 |    0.22 |    0.09 |
+    | CHO     | Both     |    0.00 |    0.13 |    0.00 |    0.09 |    0.37 |    0.22 |    0.09 |    0.11 |
+    | LBF     | Both     |    0.05 |    0.14 |    0.45 |    0.17 |    0.09 |    0.02 |    0.09 |    0.00 |
+    | LPF     | Both     |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.01 |    0.04 |    0.95 |
+    | SBF     | Both     |    0.77 |    0.03 |    0.08 |    0.00 |    0.02 |    0.04 |    0.01 |    0.05 |
+    | SPF     | Both     |    0.00 |    0.01 |    0.00 |    0.06 |    0.13 |    0.19 |    0.13 |    0.49 |
+    | VID     | Both     |    0.00 |    0.00 |    0.00 |    0.01 |    0.12 |    0.07 |    0.10 |    0.70 |
+
+
+
+
        | FG  | JvAd  | Ligth |      Deepest |              |              |              |              |              |              |      Surface | Source         |
        |-----+-------+-------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+----------------|
        | ANG | Both  | Both  |            1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
@@ -1246,7 +1453,7 @@ fi
     p.C <- C.out[-c(4, 5, 9), ]
     p.C   <- na.omit(data.frame(FG= rownames(p.C), Cohort = sort(rep(1 : 10, nrow(p.C))), Clearance = c(p.C)))
 
-    png('img/clearance.png', height = 100, width = 100)
+    png('img/clearance.png', height = 1000, width = 1000)
     sp    <- ggplot(data=p.C, aes(Cohort, Clearance))+ geom_line()
     sp + facet_wrap(~FG, ncol = 4, scales = 'free_y')
     invisible(dev.off())
@@ -1301,7 +1508,7 @@ fi
       lf.fg       <- split(lf, lf$FG)  # split by functional group
 
       ## type of length that I used in the estimation of the cohorts for each functional group
-      len.ty <- c('total', 'fork', 'fork', 'total', 'total', 'fork', 'total', 'total', 'total', 'total')
+      len.ty <- c('total', 'fork', 'total', 'fork', 'total', 'total', 'fork', 'total', 'total','total', 'total', 'total')
 
       alometric <- function(length, alfa, beta){
           weight <- alfa  * length ^ beta
@@ -1309,10 +1516,10 @@ fi
       }
 
       ## Removing octopus
-      lf.fg <- lf.fg[ - 7]
+      lf.fg <- lf.fg[ - 8]
       png('img/allometric.png', width = 1200, height = 900)
       res <- list()
-      par(mfrow=c(3, 3), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
+      par(mfrow=c(3, 4), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
       for(i in 1:length(lf.fg)){
           len       <- lf.fg[[i]][, ifelse(len.ty[i] == 'total', 4, 3)]
           weight    <- lf.fg[[i]][, 5]
@@ -1342,10 +1549,10 @@ fi
     #+END_SRC
     #+RESULTS:
     #+CAPTION: Values of the paramter alfa and beta in the allometric relationship for each functional group
-     |      |    Anguila |      Breca | Golden Crab | Large benthic fish | Large pelagic fish |    Lobster | Small benthic fish | Small pelagic fish |   Vidriola |
-     |------+------------+------------+-------------+--------------------+--------------------+------------+--------------------+--------------------+------------|
-     | alfa | 0.00470168 | 0.00839310 |  0.53179259 |         0.00019648 |         0.02835469 | 0.96225457 |         0.26616376 |         0.00427579 | 0.00523585 |
-     | beta | 2.83452053 | 3.14636532 |  2.84013419 |         3.93024770 |         2.73409475 | 2.71901358 |         2.15528331 |         3.38133575 | 3.10821550 |
+    |      |    Anguila |      Breca |            CHO | Golden Crab | Large benthic fish | Large pelagic fish |    Lobster |        OTA | Small benthic fish | Small pelagic fish |   Vidriola |
+    |------+------------+------------+----------------+-------------+--------------------+--------------------+------------+------------+--------------------+--------------------+------------|
+    | alfa | 0.00470168 | 0.00839310 | 21162.92055755 |  0.53179259 |         0.00026108 |         0.02835469 | 0.96225457 | 3.88353881 |         7.07514256 |         0.00716116 | 0.00523585 |
+    | beta | 2.83452053 | 3.14636532 |    -0.38586474 |  2.84013419 |         3.87985815 |         2.73409475 | 2.71901358 | 2.07274350 |         1.37204560 |         3.14316080 | 3.10821550 |
 
     #+CAPTION: Allometric relationship for different functional groups
     #+ATTR_HTML: width="600" alt="image"
@@ -1407,48 +1614,88 @@ fi
     #+RESULTS:
     #+ATTR_HTML: :style float:left;width:30%;margin:3ex
     #+CAPTION: Values of growth rate (mum) for each functional group [mgN-1d-1]
-    |     |      1 |     2 |     3 |     4 |     5 |     6 |     7 |     8 |      9 |     10 |
-    |-----+--------+-------+-------+-------+-------+-------+-------+-------+--------+--------|
-    | ALF |   0.08 |  0.34 |  1.06 |  1.71 |  2.52 |  3.51 |  4.71 |  6.17 |   7.90 |  10.06 |
-    | ANG |   0.00 |  0.01 |  0.08 |  0.18 |  0.32 |  0.49 |  0.71 |  0.97 |   1.28 |   1.65 |
-    | BFF |   0.06 |       |       |       |       |       |       |       |        |        |
-    | BIR |   0.60 |       |       |       |       |       |       |       |        |        |
-    | BRC |   0.05 |  0.18 |  0.52 |  0.75 |  1.01 |  1.31 |  1.72 |  2.48 |   3.18 |   3.76 |
-    | CET | 446.04 |       |       |       |       |       |       |       |        |        |
-    | CHO |   1.13 |       |       |       |       |       |       |       |        |        |
-    | DOL |  57.10 |       |       |       |       |       |       |       |        |        |
-    | GCR |   0.01 |  0.06 |  0.21 |  0.41 |  0.68 |  1.04 |  1.54 |  2.24 |   2.65 |   3.47 |
-    | LBF |   0.11 |  0.52 |  0.71 |  2.41 |  2.93 |  3.31 |  5.08 |  8.40 |   7.93 |   9.55 |
-    | LPF |   0.02 |  0.19 |  0.56 |  1.10 |  2.06 |  3.96 |  7.83 | 15.74 |  31.99 |  65.37 |
-    | MOL |   0.68 |       |       |       |       |       |       |       |        |        |
-    | OCT |   0.35 |       |       |       |       |       |       |       |        |        |
-    | ORO |   0.00 |  0.04 |  0.14 |  0.24 |  0.83 |  1.36 |  2.22 |  3.63 |   6.04 |  10.03 |
-    | OTA |   2.28 | 14.66 | 21.07 | 28.82 | 38.57 | 51.14 | 67.58 | 89.22 | 117.81 | 155.60 |
-    | SBF |   0.07 |  0.16 |  0.46 |  0.55 |  0.72 |  0.83 |  1.39 |  1.09 |   1.82 |   2.09 |
-    | SCR |   1.26 |       |       |       |       |       |       |       |        |        |
-    | SPF |   0.04 |  0.20 |  0.68 |  1.18 |  3.71 |  4.92 |  7.39 | 10.82 |  15.66 |  22.52 |
-    | SPL |   0.13 |  0.37 |  1.29 |  1.56 |  1.72 |  2.36 |  2.75 |  3.51 |   3.91 |   4.33 |
-    | SUR |   0.46 |       |       |       |       |       |       |       |        |        |
-    | VID |   0.24 |  1.85 |  2.43 |       |       |       |       |       |        |        |
+     |     |      1 |    2 |     3 |     4 |     5 |     6 |     7 |     8 |      9 |     10 |
+     |-----+--------+------+-------+-------+-------+-------+-------+-------+--------+--------|
+     | ALF |   0.08 | 0.34 |  1.06 |  1.71 |  2.52 |  3.51 |  4.71 |  6.17 |   7.90 |  10.06 |
+     | ANG |   0.00 | 0.01 |  0.08 |  0.18 |  0.32 |  0.49 |  0.71 |  0.97 |   1.28 |   1.65 |
+     | BFF |   0.06 |      |       |       |       |       |       |       |        |        |
+     | BIR |   0.60 |      |       |       |       |       |       |       |        |        |
+     | BRC |   0.05 | 0.18 |  0.52 |  0.75 |  1.01 |  1.31 |  1.72 |  2.48 |   3.18 |   3.76 |
+     | CET | 446.04 |      |       |       |       |       |       |       |        |        |
+     | CHO |   1.13 |      |       |       |       |       |       |       |        |        |
+     | DOL |  57.10 |      |       |       |       |       |       |       |        |        |
+     | GCR |   0.01 | 0.06 |  0.21 |  0.41 |  0.68 |  1.04 |  1.54 |  2.24 |   2.65 |   3.47 |
+     | LBF |   0.12 | 0.56 |  0.76 |  2.58 |  3.12 |  3.50 |  5.37 |  8.86 |   8.34 |  10.02 |
+     | LPF |   0.02 | 0.19 |  0.56 |  1.10 |  2.06 |  3.96 |  7.83 | 15.74 |  31.99 |  65.37 |
+     | MOL |   0.68 |      |       |       |       |       |       |       |        |        |
+     | OCT |   0.35 |      |       |       |       |       |       |       |        |        |
+     | ORO |   0.00 | 0.04 |  0.14 |  0.24 |  0.83 |  1.36 |  2.22 |  3.63 |   6.04 |  10.03 |
+     | OTA |   2.28 | 6.75 | 21.07 | 28.82 | 38.57 | 51.14 | 67.58 | 89.22 | 117.81 | 155.60 |
+     | SBF |   0.18 | 0.26 |  0.82 |  0.85 |  1.01 |  1.03 |  1.70 |  1.12 |   1.85 |   2.02 |
+     | SCR |   1.26 |      |       |       |       |       |       |       |        |        |
+     | SPF |   0.01 | 0.11 |  0.58 |  1.23 |  2.11 |  3.29 |  4.91 |  7.16 |  10.34 |  14.86 |
+     | SPL |   0.13 | 0.37 |  1.29 |  1.56 |  1.72 |  2.36 |  2.75 |  3.51 |   3.91 |   4.33 |
+     | SUR |   0.46 |      |       |       |       |       |       |       |        |        |
+     | VID |   0.24 | 1.85 |  2.43 |       |       |       |       |       |        |        |
 
     #+name: fig.mum
     #+ATTR_HTML: width="600" alt="image"
     #+caption: Values of Growth rate for each Vertebrate Functional Group
      [[file:img/mum.png]]
 
-  + Estimation of KSPA_XXX and FSP_XXX
+***** Maturity and Spawning
+      #+CAPTION: length (in mm) for the reproductive maturity for vertebraes and mobile bentos (with age classes)
+    | FG  | Maturity | Age (y) | Reference                      | Specie                                            |
+    |-----+----------+---------+--------------------------------+---------------------------------------------------|
+    | SPL |     73.2 |       6 | Ernst 2013                     |                                                   |
+    | GCR |    10.62 |       6 | Ernst 2013 & Canales 2009      |                                                   |
+    | BRC |     28.9 |       5 | Rivara 2013  & Hernandez 2012  |                                                   |
+    | VID |       51 |         | Fishbase                       | Seriola lalandi                                   |
+    | ORO |       35 |      33 | Niklischek 2005                |                                                   |
+    | ALF |     33.2 |       6 | Wiff 2013 \                    |                                                   |
+    | SPF |       27 |         | Fishbase                       | Neoscorpis lithophilus                            |
+    | LBF |       92 |      12 | Flores & Rojas 1985 & Fishbase |                                                   |
+    | ANG |     43.7 |       2 | Fishbase                       |                                                   |
+    | CHO |     77.8 |         | Fishbase                       | Squalus mitsukurii                                |
+    | OTA |      105 |       5 | Amano2000 and Osman            |                                                   |
+    | LPF |     34.5 |       3 | Fishbase (average)             | Pseudocaranx dentex                               |
+    | SBF |       21 |         | Fishbase  + Munoz              | Helicolemus dactylipterus  + Girella tricuspidata |
+    |     |          |         |                                |                                                   |
+
+    #+CAPTION: Age of the behavioral maturity for vertebrates and mobile benthos. The age correspond to the cohort
+    | Functional Group | Maturity | Reference           | Specie                                            |
+    |------------------+----------+---------------------+---------------------------------------------------|
+    | SPL              |        3 | Ernst 2013          |                                                   |
+    | GCR              |        2 | Ernst 2013          |                                                   |
+    | BRC              |        3 | Rivara 2013         |                                                   |
+    | VID              |        1 | Fishbase            | Seriola lalandi                                   |
+    | ORO              |        5 | Niklischek 2005     |                                                   |
+    | ALF              |        3 | Wiff 2013           |                                                   |
+    | SPF              |        3 | Fishbase            | Neoscorpis lithophilus                            |
+    | LBF              |        4 | Flores & Rojas 1985 |                                                   |
+    | ANG              |        3 | Fishbase            |                                                   |
+    | OTA              |        3 | Amano2000 and Osman |                                                   |
+    | LPF              |        2 | Fishbase (average)  | Pseudocaranx dentex                               |
+    | SBF              |        3 | Fishbase  + Munoz   | Helicolemus dactylipterus  + Girella tricuspidata |
+
+
+
+  - Estimation of KSPA_XXX and FSP_XXX
     The approach if dereved from the growth function :
-    ##Put the function HERE
-    Nr_{S, R} = p_{r}(W(S) - cr / pr) - min{0, W(s) - (S + R)}
+    - \(Nr_{S, R} = p_{r}(W_{S} - cr / pr) - min{0, W(s) - (S + R)}\)
+    - \(cr / pr = Nm\) ## weight just before the maturity age
+    - \(pr = {alfa * Nt}/{(1 + alfa) * Nt - Nm}\)
+    - \(cr = Nm*pr\)
+    - pr = FSP_XXX & cr = KASP_XXX
     #+BEGIN_SRC R  :results output
       ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
       ## ~                 Estimation of KSPA_XX and FSP_XXX              ~ ##
       ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
       library(ascii)
-      options(asciiType="org")
+      options(asciiType = "org")
       source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
       ##read the data
-      data       <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Mature_Growth/Mgrowth.csv')
+      data             <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Mature_Growth/Mgrowth.csv')
       ## getting the weight before reproduction and the weith in equilibrium for all the FG
       data$Weight      <- ifelse(is.na(data$Weight), alometric(data$Length, data$Alfa, data$Beta), data$Weight)
       data$Weight_equi <- ifelse(is.na(data$Weight_equi), alometric(data$Length2, data$Alfa, data$Beta), data$Weight_equi)
@@ -1458,33 +1705,497 @@ fi
       ##~~~ Nt = Wigth at equilibrium
       data$Nt <- weight2N(weight = data$Weight_equi, metric = 'g')
       ## Getting KSPA_XXX and FSP_XXX
-      rate      <- 1.2  # 20% of increase weight durint reproduction
-      data$FSP <- with(data, (rate * Nt)/(rate * Nt - Nm))
+      rate       <- 0.4  # 20% of increase weight durint reproduction
+      data$FSP   <- with(data, (rate * Nt)/((1 + rate) * Nt - Nm))
       data$KSPA  <- with(data, Nm * FSP)
-      cap       <- 'Values of KASP and FSP for each functional group'
+      cap        <- 'Values of KASP and FSP for each functional group'
       ## table with parameters
-      cap                  <- 'Values of growth rate (mum) for each functional group'
+      cap                  <- 'Values of KSPA_XX and FSP_XXX for each functional group'
       b                    <- ascii(data, header=T,  include.rownames = FALSE, include.colnames = T, caption = cap)
       print(b)
     #+END_SRC
 
     #+RESULTS:
-    #+CAPTION: Values of growth rate (mum) for each functional group
-| FG  | Length | Length2 | Weight   | Weight_equi | Alfa | Beta | Nm        | Nt        | FSP  | KSPA      |
-|-----+--------+---------+----------+-------------+------+------+-----------+-----------+------+-----------|
-| ALF | 25.58  | 54.82   | 473.65   | 4117.29     | 0.05 | 2.84 | 4154.80   | 36116.56  | 1.11 | 4595.34   |
-| ANG | 30.37  | 131.18  | 74.86    | 4735.54     | 0.00 | 2.83 | 656.68    | 41539.82  | 1.01 | 665.45    |
-| BRC | 24.07  | 50.56   | 186.52   | 1926.81     | 0.01 | 3.15 | 1636.11   | 16901.85  | 1.09 | 1779.67   |
-| GCR | 4.15   | 14.75   | 30.27    | 1109.86     | 0.53 | 2.84 | 265.57    | 9735.62   | 1.02 | 271.75    |
-| LBF | 62.70  | 101.51  | 2275.31  | 15114.86    | 0.00 | 3.93 | 19958.82  | 132586.47 | 1.14 | 22821.70  |
-| LPF | 16.80  | 70.83   | 63.50    | 3245.49     | 0.03 | 2.73 | 556.97    | 28469.25  | 1.02 | 566.21    |
-| ORO | 41.91  | 51.66   | 2323.06  | 4267.89     | 0.04 | 2.91 | 20377.69  | 37437.61  | 1.83 | 37293.91  |
-| OTA | 80.73  |         | 31597.16 | 97011.42    |      |      | 277168.07 | 850977.33 | 1.37 | 380422.97 |
-| SBF | 22.01  | 60.96   | 208.39   | 1872.61     | 0.27 | 2.16 | 1827.98   | 16426.37  | 1.10 | 2014.83   |
-| SPF | 19.66  | 48.30   | 163.35   | 1133.63     | 0.27 | 2.16 | 1432.85   | 9944.08   | 1.14 | 1628.38   |
-| SPL | 7.96   | 12.94   | 271.18   | 1015.74     | 0.96 | 2.72 | 2378.75   | 8909.99   | 1.29 | 3059.40   |
-| VID | 58.02  | 77.64   | 1586.56  | 3923.89     | 0.01 | 3.11 | 13917.20  | 34420.11  | 1.51 | 20989.50  |
+    #+CAPTION: Values of KSPA_XX and FSP_XXX for each functional group
+     | FG  |  FSP |     KSPA | Length | Length2 |   Weight | Weight_equi | Alfa | Beta |        Nm |        Nt |
+     |-----+------+----------+--------+---------+----------+-------------+------+------+-----------+-----------|
+     | ALF | 0.31 |   939.02 |  25.58 |   54.82 |   473.65 |     4117.29 | 0.05 | 2.84 |   3016.50 |  26221.61 |
+     | ANG | 0.29 |   137.78 |  30.37 |  131.18 |    74.86 |     4735.54 | 0.00 | 2.83 |    476.77 |  30159.05 |
+     | BRC | 0.31 |   364.60 |  24.07 |   50.56 |   186.52 |     1926.81 | 0.01 | 3.15 |   1187.86 |  12271.21 |
+     | GCR | 0.29 |    56.18 |   4.15 |   14.75 |    30.27 |     1109.86 | 0.53 | 2.84 |    192.81 |   7068.33 |
+     | LBF | 0.32 |  4638.99 |  62.70 |  101.51 |  2275.31 |    15114.86 | 0.00 | 3.93 |  14490.65 |  96261.41 |
+     | LPF | 0.29 |   117.17 |  16.80 |   70.83 |    63.50 |     3245.49 | 0.03 | 2.73 |    404.38 |  20669.46 |
+     | ORO | 0.47 |  6915.95 |  41.91 |   51.66 |  2323.06 |     4267.89 | 0.04 | 2.91 |  14794.76 |  27180.73 |
+     | OTA | 0.37 | 74926.06 |  80.73 |         | 31597.16 |    97011.42 |      |      | 201231.61 | 617832.86 |
+     | SBF | 0.31 |   411.93 |  22.01 |   60.96 |   208.39 |     1872.61 | 0.27 | 2.16 |   1327.17 |  11926.00 |
+     | SPF | 0.32 |   331.33 |  19.66 |   48.30 |   163.35 |     1133.63 | 0.27 | 2.16 |   1040.29 |   7219.68 |
+     | SPL | 0.35 |   609.71 |   7.96 |   12.94 |   271.18 |     1015.74 | 0.96 | 2.72 |   1727.03 |   6468.90 |
+     | VID | 0.40 |  4059.30 |  58.02 |   77.64 |  1586.56 |     3923.89 | 0.01 | 3.11 |  10104.27 |  24989.94 |
 
+**** Spawning
+     #+CAPTION: First day of each month
+    | Jun | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+    |-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----|
+    |   0 |  30 |  61 |  91 | 122 | 152 | 183 | 213 | 243 | 274 | 304 | 335 |
+
+    #+CAPTION: Reproduction parameters for vertebrates functional groups
+     | Functional Groups | Spawn date | Spawn period | Rec. time | Rec. Period | Comment            | Referece                              |
+     |-------------------+------------+--------------+-----------+-------------+--------------------+---------------------------------------|
+     | SPL               |        274 |          121 |       365 |          30 |                    | Data base & Porobic 2012              |
+     | GCR               |        274 |          121 |        91 |          10 |                    | Data base   & Shanks 2009            |
+     | BRC               |        122 |           61 |       243 |          10 |                    | Hernandez2012                         |
+     | VID*              |        335 |           61 |       122 |          30 |                    | Moran et al 2007                      |
+     | ORO               |        183 |           20 |       150 |          30 |                    | Paya 2003  & Mace 1990  & SETAS model |
+     | ALF               |          1 |           61 |        91 |          30 |                    | TASCHERI 2004  & Mundy 1990          |
+     | ANG               | 167  & 304 |           30 |       300 |          61 | 2 spawning periods | Lucano-Ramirez 2008  & Miller 2009   |
+     | CHO               |         91 |           10 |       600 |          30 | Gestation 2 years  | Fishbase                              |
+     | OTA               |        335 |           13 |       335 |          10 | Gestation 11 month | Osman 2007                            |
+     | CET*              |        213 |           30 |       335 |          30 | Gestation 1 year   |                                       |
+     | DOL*              |        213 |           30 |       335 |          30 | Gestation 1 year   |                                       |
+     | BIR               |         20 |           30 |        90 |          30 |                    | Azocar,  2013                         |
+     | OCT               |         91 |           61 |       150 |          30 |                    | Arancibia 2005 &  Uriarte 2012        |
+     | LPF               |          1 |           61 |        30 |          30 |                    | Masuda 1999 & Fishbase                |
+     | SPF               |        213 |           60 |        30 |          30 |                    | Fishbase                              |
+     | SBF               |        213 |           61 |        30 |          40 |                    | Fishbase                              |
+     | LBF               |        213 |           61 |        30 |          60 |                    | Fishbase                              |
+
+**** Recruitment
+***** Connectivity Simulations
+****** Setting icthyops
+******* I need to work on the SBF and LBF
+
+     | FG  | Spawning date | PLD | Settlement_minimum | Source | Sink |
+     |-----+---------------+-----+--------------------+--------+------|
+     | SPL |           274 | 365 |                183 |        |      |
+     | ORO |           183 | 200 |                100 |        |      |
+     | BRC |           122 | 365 |                100 |        |      |
+     | ALF |             1 | 150 |                 60 |        |      |
+     | ANG |           304 | 450 |                150 |        |      |
+     |     |               |     |                    |        |      |
+****** Icthyops input files
+#+BEGIN_SRC R
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Cnect.tools.R')
+
+  ## General Settings
+  ## -  -  -  -  -  -  -
+  n.poly <- c('Poly_0', 'Poly_1', 'Poly_2', 'Poly_3', 'Poly_4', 'Poly_5', 'Poly_6', 'Poly_7', 'Poly_8', 'Poly_9', 'Poly_10',
+              'Poly_11', 'Poly_12', 'Poly_13', 'Poly_14', 'Poly_15', 'Poly_16', 'Poly_17', 'Poly_18', 'Poly_19', 'Poly_20',
+              'Poly_21', 'AS_S_out', 'AS_N_out', 'JF5_N_out', 'RCSC_N_out', 'RCSC_S_out', 'JF5_S_out', 'JF4', 'JF3', 'JF2',
+              'JF1_E', 'JF1_M', 'JF1_NO', 'JF1_SO', 'RCSC_NE', 'RCSC_SE', 'RCSC_NO', 'RCSC_SO', 'JF6_S', 'JF6_N', 'AS_NE',
+              'AS_SE', 'AS_NO', 'AS_SO', 'RCSC', 'JF5', 'JF6', 'AS', 'BO2', 'BO1')
+
+  map       <- '/home/demiurgo/Documents/PhD/Polygonos/Map/Polygons_27042016.csv'
+  polygons  <- read.poly(map)
+  or.pol    <- order(polygons$attrib$box_id)
+  lon       <- as.matrix(polygons$coor[, c(seq(from = 1, to = dim(polygons$coor)[2], by = 2))])[or.pol, ]
+  lat       <- as.matrix(polygons$coor[, c(seq(from = 2, to = dim(polygons$coor)[2], by = 2))])[or.pol, ]
+  s.folder  <- '/home/demiurgo/Documents/PhD/Recruitment/cfg/'
+
+  ## SPL
+  ## -  -  -  -  -  -  -  -  -  -
+  rel.pol     <- c(35, 36, 37, 38, 41, 42, 43, 44)
+  rel.depth   <- c(100, 200)
+  rec.pol     <- c(rel.pol, 22, 23, 25, 26)
+  rec.depth   <- c(0, 300)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly, name.file = paste(s.folder, 'SPL', sep = ''))
+
+  ## GCR
+  ## -  -  -  -  -  -  -  -  -  -
+  rel.pol     <- c(25, 26, 33, 34, 35, 36, 37, 38)
+  rel.depth   <- c(200, 600)
+  rec.pol     <- c(rel.pol, 41, 42, 43, 44, 22, 23)
+  rec.depth   <- c(0, 1200)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly,  name.file = paste(s.folder, 'GCR', sep = ''))
+
+  ## BRC
+  ## -  -  -  -  -  -  -  -  -  -
+  rel.pol     <- c(25, 26, 33, 34, 35, 36, 37, 38, 41, 42, 43, 44, 22, 23)
+  rel.depth   <- c(0, 200)
+  rec.depth   <- c(0, 300)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.depth = rec.depth,
+            rel.depth = rel.depth, pol.names = n.poly,  name.file = paste(s.folder, 'BRC', sep = ''))
+
+  ## ORO
+  ## -  -  -  -  -  -  -  -  -  -
+  rel.pol     <- c(28, 29, 30, 31, 32, 33, 34, 49, 50)
+  rel.depth   <- c(500, 1000)
+  rec.pol     <- c(rel.pol, 22, 23, 39, 40, 47, 46, 25, 26)
+  rec.depth   <- c(0, 1500)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly,  name.file = paste(s.folder, 'ORO', sep = ''))
+
+  ## ALF
+  ## -  -  -  -  -  -  -  -  -  -
+
+  rel.pol     <- c(28, 30, 31, 32, 33, 34, 25, 26, 46, 47)
+  rel.depth   <- c(200, 600)
+  rec.pol     <- c(rel.pol, 49, 50, 35, 36, 37, 38, 41, 42, 43, 44)
+  rec.depth   <- c(0, 700)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly, name.file = paste(s.folder, 'ALF', sep = ''))
+
+  ## ANG
+  ## -  -  -  -  -  -  -  -  -  -
+
+  rel.pol     <- c(23, 25, 26, 35, 36, 37, 38, 41, 42, 43, 44)
+  rel.depth   <- c(0, 300)
+  rec.pol     <- c(rel.pol, 22, 46, 47, 33, 34, 32)
+  rec.depth   <- c(0, 300)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly, name.file = paste(s.folder, 'ANG', sep = ''))
+
+  ## LPF
+  ## -  -  -  -  -  -  -  -  -  -
+
+  rel.pol     <- c(19, 22, 23, 25, 26, 35, 36, 37, 38, 41, 42, 43, 44)
+  rel.depth   <- c(0, 300)
+  rec.pol     <- c(rel.pol, 31, 32, 33, 34, 39, 40, 47, 46, 50, 49)
+  rec.depth   <- c(0, 300)
+  zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
+            rel.depth = rel.depth, pol.names = n.poly, name.file = paste(s.folder, 'LPF', sep = ''))
+
+#+END_SRC
+****** Output connectivity matrix
+#+BEGIN_SRC R :results output
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## ~                                  reading of the netcdf matrix anc creation of the files for atlantis                               ~ ##
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+
+  source('~/Documents/PhD/Atlantis_Model/tools/Cnect.tools.R')
+  library(ascii)
+  options(asciiType="org")
+  library(ggplot2)
+  ###------------------------------------------------------##
+  ### Get the connectivity matrix from the Ichtyps output  ##
+  ##-------------------------------------------------------##
+  global      <- '/home/demiurgo/Documents/PhD/Recruitment/Output/'
+  directories <- dir(global)
+  connect.l   <- list()
+  for (fg in 1: length(directories)){
+      ## loop thought the folder of the FGs
+      direct          <- paste(global, directories[fg], '/', sep = '')
+  #    debug(connect.matrix)
+      connect.l[[fg]] <- connect.matrix(direct)
+  }
+
+
+  ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - ##
+  ## Generating the files NC files for the connectivity   ##
+  # -  -  -  -  -  -  -  -  -  -  -  -  -  - -  -  -   - - #
+
+  create.netcdf(connect.l, directories)
+
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## ~                  Average connectivity by year and FG               ~ ##
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  connect <- matrix(0, nrow =  length(directories), ncol = 8)
+  for( fg in 1: length(directories)){
+      for(sim in 1 : 8) {
+          connect[fg, sim] <- mean(rowSums(connect.l[[fg]][, , sim]))
+      }
+  }
+
+
+  rownames(connect) <- directories
+  colnames(connect) <- 2000 : 2007
+  cap   <- 'Mean pelagic connectivity by year and functional groups'
+  b     <- ascii(connect, header = T,  include.rownames = TRUE, include.colnames = T, caption = cap)
+  print(b)
+
+  ##~ Plots
+  connectivity.out  <- data.frame(Year = sort(rep(c(2000 : 2007), length(directories))),
+                                  FG = rep(directories, 8), Connect = c(connect))
+
+  png('img/connectivity.png', height = 1000, width = 1000)
+  sp    <- ggplot(data=connectivity.out, aes(Year, Connect))+ geom_line()
+  sp + facet_wrap(~FG, ncol = 4, scales = 'free_y')
+  invisible(dev.off())
+
+#+END_SRC
+#+RESULTS:
+#+CAPTION: Mean pelagic connectivity by year and functional groups
+|     | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 |
+|-----+------+------+------+------+------+------+------+------|
+| ALF | 0.05 | 0.08 | 0.07 | 0.09 | 0.07 | 0.07 | 0.05 | 0.02 |
+| ANG | 0.04 | 0.04 | 0.06 | 0.02 | 0.04 | 0.02 | 0.01 | 0.02 |
+| BRC | 0.02 | 0.02 | 0.03 | 0.03 | 0.01 | 0.00 | 0.01 | 0.02 |
+| GCR | 0.04 | 0.07 | 0.07 | 0.06 | 0.06 | 0.05 | 0.07 | 0.04 |
+| LBF | 0.10 | 0.04 | 0.14 | 0.19 | 0.12 | 0.09 | 0.05 | 0.11 |
+| LPF | 0.09 | 0.06 | 0.12 | 0.09 | 0.07 | 0.10 | 0.09 | 0.04 |
+| ORO | 0.05 | 0.04 | 0.06 | 0.05 | 0.05 | 0.03 | 0.03 | 0.02 |
+| SBF | 0.08 | 0.03 | 0.11 | 0.17 | 0.08 | 0.06 | 0.05 | 0.07 |
+| SPF | 0.06 | 0.01 | 0.10 | 0.18 | 0.04 | 0.01 | 0.03 | 0.03 |
+| SPL | 0.02 | 0.05 | 0.08 | 0.03 | 0.05 | 0.02 | 0.02 | 0.02 |
+#+end_example
+
+#+name: fig.connect
+#+ATTR_HTML: width="600" alt="image"
+#+caption: Average connectivity by year and FG
+[[file:img/connectivity.png]]
+
+***** Recruitment model
+****** Estimation of B-H parameter
+- The Formula used is the option 3 for atlatnis
+  R_{c}=(Sp * BHa)/Biomass + BHb
+- Sp = ((Wsp * FSP - KSPA ) - (Wsp - W)) * Nm * FSPB
+- Asumptions
+  - Wsp-W = 0; the indivifual are all at optimal reproductive stage (the same wieight)
+  - Wsp =  weight * 1.4; the individual use in average 40% of their weigth in reproduction
+  - Nm and Biomass = The biomass calculated is based on the number of individual. I use the allometric relationship (calculated before)
+  - The sorvival between one year an the other is based on the Natural mortality and the losses based on the connectivity
+    - Biomas_{t+1} = Biomas(t)*exp(-M) + Rec_{t} * Survive
+  - FSPB I assume that all of the individual are mature at that age.
+  #+BEGIN_SRC R :results output
+    ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+    ## ~                  Beverton-holtz parameter estimation               ~ ##
+    ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+    library(ascii)
+    options(asciiType = "org")
+    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+    ##~ Read data
+    data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Spawning/B-H.csv')
+    ##~ Weight at mat
+    data$w.at.m <- with(data,  weight2N(alometric(l.mat,alf.all,beta.all), metric = 'g'))
+    ##~ Weight at spawning
+    data$wsp <- data$w.at.m * 1.4
+    ##~ Calculating the amount of Spawn (Sp)
+    data$Sp  <- with(data, (wsp * FSP - KSPA) * Nm * prop)
+    data$bio <- with(data, wsp * Nm)
+
+                                            #data$KSPA <- 1
+
+    b.h <- function(Sp, biomass, alfa, beta, lag, Surv, M){
+        Ro    <- (Sp * exp(alfa)) / (biomass + exp(beta))
+        B.lag <- (Ro * Surv) * exp( - M * lag) + biomass * exp( - M * lag)
+        return(B.lag)
+    }
+
+
+    for( i in 1 :  dim(data)[1]){
+        ## Estimation of parameters
+        Bio     <- data$bio[i]
+        Sp      <- data$Sp[i]
+        biomass <- data$biomass[i]
+        Age.mat <- data$Age.mat[i]
+        Survive <- data$Survive[i]
+        M       <- 0.2
+        ## optim
+        MRSS <- function(biom, par){
+            (biom -  b.h(Sp, Bio, par[1], par[2], Age.mat, Survive, M)) ^ 2
+        }
+        ## trying diffetente starting values
+        for( t in 1 : 100){
+            res <- optim(par = c(log(t), log(t)) , MRSS, biom = Bio, method = 'CG' )
+            if(t == 1) res.tmp <- res
+            if(res$value < res.tmp$value){
+                res.tmp <- res
+            }
+        }
+        data$Alfa.bh[i] <- exp(res.tmp$par[1])
+        data$Beta.bh[i] <- exp(res.tmp$par[2])
+    }
+
+    cap   <- 'Estimation of the Beverton-holt parameters'
+    b     <- ascii(data, header = T,  include.rownames = FALSE, include.colnames = T, caption = cap)
+    print(b)
+  #+END_SRC
+  #+RESULTS:
+  #+CAPTION: Estimation of the Beverton-holt parameters
+  | FG  | FSP  | KSPA     | Nm      | alf.all | beta.all | Age.mat | l.mat    | Survive | prop | w.at.m         | wsp            | Sp               | bio               | Alfa.bh             | Beta.bh |
+  |-----+------+----------+---------+---------+----------+---------+----------+---------+------+----------------+----------------+------------------+-------------------+---------------------+---------|
+  | ALF | 0.31 | 939.02   | 1000.00 | 0.05    | 2.84     | 6.00    | 54.82    | 0.06    | 1.00 | 26221.61       | 36710.26       | 10441160.66      | 36710260.20       | 4761569555.28       | 5.00    |
+  | ANG | 0.29 | 137.78   | 1000.00 | 0.00    | 2.83     | 2.00    | 131.18   | 0.03    | 0.50 | 30160.64       | 42224.89       | 6053719.07       | 42224890.16       | 4501806169.25       | 6.00    |
+  | BRC | 0.31 | 364.60   | 1000.00 | 0.01    | 3.15     | 5.00    | 50.56    | 0.02    | 1.00 | 12267.89       | 17175.05       | 4959666.03       | 17175051.72       | 6017641254.46       | 93.99   |
+  | GCR | 0.29 | 56.18    | 1000.00 | 0.53    | 2.84     | 6.00    | 14.75    | 0.06    | 0.50 | 7068.33        | 9895.66        | 1406780.33       | 9895657.45        | 2878490550.20       | 71.99   |
+  | LBF | 0.32 | 4638.99  | 1000.00 | 0.00    | 3.88     | 12.00   | 101.51   | 0.11    | 0.20 | 101342.45      | 141879.43      | 8152485.34       | 141879427.16      | 233211625935.31     | 24.00   |
+  | LPF | 0.29 | 117.17   | 1000.00 | 0.03    | 2.73     | 3.00    | 70.83    | 0.08    | 0.25 | 20670.09       | 28938.12       | 2068721.35       | 28938122.08       | 4033992076.64       | 9.00    |
+  | ORO | 0.47 | 6915.95  | 1000.00 | 0.04    | 2.91     | 33.00   | 51.66    | 0.04    | 0.67 | 27180.73       | 38053.03       | 7349211.59       | 38053026.66       | 3579941264946.31    | 39.00   |
+  | OTA | 0.37 | 74926.06 | 1000.00 | 3.88    | 2.07     | 5.00    | 31597.16 | 0.80    | 0.33 | 52467703339.25 | 73454784674.95 | 8968804483211.89 | 73454784674952.41 | 1292141376737862.00 | 95.00   |
+  | SBF | 0.31 | 411.93   | 1000.00 | 7.08    | 1.37     | 3.00    | 60.96    | 0.08    | 1.00 | 12674.96       | 17744.94       | 5089000.57       | 17744937.33       | 629201273.76        | 29.00   |
+  | SPF | 0.32 | 331.33   | 1000.00 | 0.01    | 3.14     | 3.00    | 48.30    | 0.06    | 1.00 | 8952.58        | 12533.61       | 3679425.24       | 12533610.14       | 608039026.03        | 5.00    |
+  | SPL | 0.35 | 609.71   | 1000.00 | 0.96    | 2.72     | 6.00    | 12.94    | 0.03    | 0.50 | 6467.00        | 9053.79        | 1279558.82       | 9053793.27        | 4266434446.74       | 27.00   |
+
+  -  Estimation recruitment coral
+      -  These species have low growth rate and low mortality Roger et al
+     #+BEGIN_SRC R :results output
+       library(ascii)
+       options(asciiType = "org")
+
+       ## Initial values
+
+       c.a    <- 8
+       c.b    <- 7
+       c.c    <- 20
+       K      <- 10000 # minimum ammount of recruit
+       # number of posible colonies
+       init.B <- 10000000
+
+       coral <- function(K, c.a, c.b, c.c, biom){
+           K + c.a * max(c(0, (c.b - exp(-c.c * biom))))
+       }
+       ## hacer un arreglo en matrix para calcular la superficie de verosimilitud para los valores de los parametros
+
+       biomass <- vector('numeric',100)
+       biomass[1] <- init.B
+
+       for(i in 2 : 100){
+           rec          <- coral(K, c.a, c.b, c.c, biomass[i-1])
+           biomass[i]   <- biomass[i - 1] * exp(-0.15) + rec
+       }
+
+
+     #+END_SRC
+
+
+****** EStimation of weight at recruitment
+#+BEGIN_SRC R :results output
+  library(ascii)
+  options(asciiType = "org")
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  ##~ Read data
+  data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Spawning/weight_rec.csv')
+
+  data$weight <- with(data, ifelse(is.na(weight),
+                                   alometric(size, alf.all, beta.all),
+                                   weight))
+  ##~ estimation of structural and reserve wight for recruitment
+  data <- cbind(data, with(data, weights(FG, weight,'g'))[, 2 : 3])
+
+  cap <- 'Structural and reserve wight for recruitment'
+  b     <- ascii(data, header = T,  include.rownames = FALSE, include.colnames = T, caption = cap)
+  print(b)
+#+END_SRC
+
+#+RESULTS:
+#+CAPTION: Structural and reserve wight for recruitment
+| FG  | weight  | size | alf.all | beta.all | Reference  | structural | reserve  |
+|-----+---------+------+---------+----------+------------+------------+----------|
+| ALF | 0.15    | 1.50 | 0.05    | 2.84     | Mundy1990  | 0.36       | 0.97     |
+| ANG | 0.69    | 5.80 | 0.00    | 2.83     | Miller2009 | 1.65       | 4.37     |
+| BRC | 0.28    | 3.04 | 0.01    | 3.15     | Bruce2001  | 0.67       | 1.77     |
+| GCR | 9.61    | 2.77 | 0.53    | 2.84     | Anger1983  | 23.09      | 61.18    |
+| LBF | 0.17    | 5.30 | 0.00    | 3.88     | Mujica     | 0.41       | 1.07     |
+| LPF | 4.40    |      | 0.03    | 2.73     | Lopez 2000 | 10.57      | 28.01    |
+| ORO | 0.01    | 0.53 | 0.04    | 2.91     | Zeldis     | 0.02       | 0.05     |
+| OTA | 8600.00 |      | 3.88    | 2.07     | Osman      | 20668.11   | 54770.49 |
+| SBF | 31.94   | 3.00 | 7.08    | 1.37     |            | 76.77      | 203.43   |
+| SPF | 0.06    | 2.00 | 0.01    | 3.14     | Sawada     | 0.15       | 0.40     |
+| SPL | 0.96    | 1.00 | 0.96    | 2.72     | Porobic    | 2.31       | 6.13     |
+
+**** Temperature
+***** Recruitment
+| FG  |  Max | Min | Reference                   | Specie          |
+|-----+------+-----+-----------------------------+-----------------|
+| SPL |   25 |   8 | Whale and Fogarty 2007      | lobsters        |
+|     |      |   5 | Waddy and aiken 1995        | H. americanus   |
+|     |      | 9.8 |                             | J. edwarsii     |
+| GCR |   32 |   2 | Prentice and Schneider 1978 | Dungeness crab  |
+|     |   19 |   4 | Hardy and Dutil 1994        | Snow crab       |
+|     |      |  10 | hill 1974                   | Portunid crab   |
+|     | 28.5 |  10 | Maestre et al 2015          | Chaceon affinis |
+|     |      |     |                             |                 |
+***** Optimal temperature
+     | FG  |   Opt. temp | Value Used | Reference                  | Species                    |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | SPL |          17 |         17 | Dupre1985                  | Jasus frontalis            |
+     |     |       16-18 |            | Dubber 2004                | Jasus lalandii             |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | GCR |           5 |          5 | Ahumada 2009               | Chaceon chislensis         |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | BRC |       16-18 |         17 | Neuheimer 2011             | Cheilodactylus spectabilis |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | ORO |         4-5 |          5 | Dunn 2011                  | Orange Roughy              |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | ANG |          17 |         17 | EOL                        | eels moray                 |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | ALF |       16-19 |         17 | Lehedoy 1995               | Alfonsino                  |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | CHO |        8-17 |         13 | Fishbase                   | Squalus mitsukurii         |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | OCT |       16-21 |       18.5 | Delgado 2011               | Octopus vulgaris           |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | SQD |       15-28 |         10 | Nigmatullin 2001           | Dosidicus gigas            |
+     |     |        3-10 |            | Watanabe 2006              | Squids (vampirotheutis)    |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | COR |        4-13 |          9 | Guinote 2005               | Deep sea corals            |
+     |     |        4-15 |            | Brooke 2013                | Lophelia pertusa           |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | LPF |          20 |         20 | Fishbase                   | Pseudocaranx dented        |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | SPF |       23-29 |            | Encyclopedia of Life (EOL) | Kyphosus cinerascens       |
+     |     |          27 |      20.75 | Fishbase                   | Kyphosus cinerascens       |
+     |     | 16.92-17.02 |            | EOL                        | Scartichthys variolatus    |
+     |     | 14.66-17.65 |            |                            | Callanthias allporti       |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | SBF |       17.07 |            | EOL                        | Chironemus bicornis        |
+     |     |       13.27 |     13.025 | EOL                        | Plectranthias exsul        |
+     |     |  8.41-13.35 |            | EOL                        | Helicolenus lengerichi     |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | LBF |  5.44-25.74 |            | EOL                        | Polyprion oxygeneios       |
+     |     |       15-21 |      20.22 | Khan 2015                  | Polyprion oxygeneios       |
+     |     | 16.92-17.02 |            | EOL                        | Lotella fernandeziana      |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | SCR |  8.46-13.87 |     12.218 | EOL                        | Paromola cuvieri           |
+     |     |  8.85-17.69 |            | EOL                        | Ovalipes trimaculatus      |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | BCA |       14.04 |            | EOL                        | Phymactis clematis         |
+     |     |  8.32-20.98 |      17.37 | EOL                        | Corynactis                 |
+     |     |   15.7-21.3 |            | Delorme 2013               | Evechinus chloroticus      |
+     |     |       23.88 |            | EOL                        | Centrostephanus asteriscus |
+     |-----+-------------+------------+----------------------------+----------------------------|
+     | MOL |       14-20 |     19.752 | Rabi and Maravi 1997       | Concholepas concholepas    |
+     |     | 20.69-24.32 |            | EOL                        | Thacacera                  |
+
+
+
+
+****** Temperature tolerance (Griffin model)
+
+**** Oxigen
+***** Oxygen model used for epibenthic invertebrate *Quadratic limitation* (O2case = 3)
+  + Calculates both ambient and depth based limitation and uses the larger of the two values as the oxygen scalar dO2
+  + *Ambient oxygen limitation*: uses ambient oxygen levels O amb , lethal oxygen concentration (KO2\_XXX, mgO2m-3) and limiting oxygen concentration (KO2lim\_XXX, mgO2 m -3 ) parameters. Remember that oxygen solubility in seawater at 5C and 1bar pressure is 10 mg/l or 10000 mg m -3 .
+     | FG  | KO2 (mg / m3) | KO2lim | reference    |
+     |-----+---------------+--------+--------------|
+     | SPL |          1320 |   2900 | Mcleese 1956 |
+     | GCR |          2450 |   3210 | Vaquer2008   |
+     | SCR |          2450 |   3210 |              |
+     | BFF |           890 |    690 |              |
+     | LPH |             0 |        |              |
+     | SPH |             0 |        |              |
+     | SUR |           890 |   1220 |              |
+     | MOL |           890 |   1990 |              |
+     | PB  |             0 |        |              |
+     | BB  |             0 |        |              |
+
+
+
+#+BEGIN_SRC R
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## ~                     Oxigen mortality and tolerance functions                 ~ ##
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+
+  ##
+  ## Oxigen functions
+  ##~~~~~~~~~~~~~~~~~~~~
+
+  lim_oxi <- function(Oxi, KO2, KO2lim){
+      KO2 = 1320
+      KO2lim = 2900
+      Oxi = 1:8000
+      oxi2 <- ifelse(Oxi >= KO2 & KO2lim >= KO2, ((Oxi - KO2)^2 / ((Oxi - KO2)^2 + (KO2lim - KO2) ^ 2)),
+          ifelse(Oxi >= KO2 & KO2lim < KO2, 1, 0))
+          return(oxi2)
+      }
+
+
+#+END_SRC
+
+**** Extra Mortality
+     I'm not including xxplicit fish mortality by season (mS_FDXXX) and seabird and mamal induced mortality (mS_SBXXX)
 **** Bibliography that I need
  - [ ] Sepulveda y Pequeño,  Fauna ictica del archipielago de Juan Fernandez. En P. Arana (ed). Investigaciones Marinas en el Archipiélago de Juan Fernández. Esc. Ciencias del Mar, UCV, Valparaíso
  - [ ] Meléndez, C.R. y C. Villalba. 1992. Nuevos registros y antecedentes para la ictiofauna del archipiélago de Juan Fernández, Chile. Estud. Oceanol. 11 : 3 - 29
@@ -1528,117 +2239,10 @@ fi
 |------+----------------------+---+-------------+-------|
 |      |                      |   |             |       |
 |      |                      |   |             |       |
-**** Dietary analysis (DNA)
-***** NGS
-      I will use NGS for the analysis of the dietary relationship between the functional groups
-****** Procedure
- - DNA-extraccion
-   - Feacal extraction kit
-     - PowerFecal DNA Isolation Kit code : MB-12830-50
-       Price : $439.00 ex. GST. kit of 50
- - Concentration determination
-   - Fluorecense at UTAS
- - Amplicon PCR
-   - Tailed primers  + 10% untailed primers
-     - Primers
-       - Furseal
-       - Lobster
-       - Fish
-   - Taq polymerase
-   - ddH2O
- - Clean Up
- - Gel
-   To check if PCR works
- - Index PCR
-   - Nextera index kit
-   - Kapa mix
-   - ddH2O
- - Checking PCR
- - Quantify amount of DNA
-   - Quantiflour kit
- - Normalize the samples
- - Pool all the samples
- - Sequence in illumina MiSeq
-   - Sequencing reagents (1500 for ??)
-
-***** Cost DNA procedure
--All the cost are in AUD
-   | Step-materials      | Total Amount | Price unit          | Total Price (182) | Total (96) |
-   |---------------------+--------------+---------------------+-------------------+------------|
-   | Consumables         |          Lot | 300                 |               300 |        300 |
-   | DNA-Extraccion      |           96 | 439(kit 50)         |              1756 |        878 |
-   | Cons. Determination |           96 | 2 per sample        |               364 |        192 |
-   | Amplicon-PCR        |           96 | 40 (96-well plate)  |                80 |         40 |
-   | Gel                 |           96 |                     |                   |            |
-   | Cleanup             |           96 | 8 (10 samples)      |               160 |         80 |
-   | Index-PCR           |           96 | 800 (96-well plate) |              1600 |        800 |
-   | Gel                 |              |                     |                   |            |
-   | Clean-up            |           96 | 8 (10 samples)      |               160 |         80 |
-   | Gel                 |              |                     |                   |            |
-   | Sequence Ilumina    |           96 | 1500 (regents)      |              1500 |       1500 |
-   |---------------------+--------------+---------------------+-------------------+------------|
-   |                     |              | Total               |              5620 |       3570 |
-#+TBLFM: $4=vsum(@3$4..@12$4)::$5=vsum(@3$5..@12$5)
-
-***** Functional groups
-  | Functional Groups  | Current Number | Needed | Total |   |
-  |--------------------+----------------+--------+-------+---|
-  | Spiny_lobster      |                |     18 |  -161 |   |
-  | Golden_Crab        |              1 |     17 |       |   |
-  | Breca              |              8 |     10 |       |   |
-  | Vidriola           |              2 |     16 |       |   |
-  | Anguila            |                |     18 |       |   |
-  | Otariid            |              2 |     16 |       |   |
-  | Octupus            |              3 |     15 |       |   |
-  | Large pelagic fish |              2 |     16 |       |   |
-  | Small pelagic fish |                |     18 |       |   |
-  | Small benthic fish |              1 |     17 |       |   |
-  | Large benthic fish |                |     18 |       |   |
-  |--------------------+----------------+--------+-------+---|
-  | Per groups         |             18 |        |       |   |
-#+TBLFM: $3=$VAL-$2::$4=:$VAL-vsum(@2$3..@12$3)::@2$4=$VAL-vsum(@2$3..@12$3)
-#+CONSTANTS: VAL=@13$2
-
-***** Clasification and samples
-    | Functional Group   | Species              | N-Samples | adviced | Needed |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Lobster            | Lobster              |         0 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Golden Crab        | Golden Crab          |         1 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Breca              | Breca                |         8 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Octopus            | Octopus              |         4 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Small Crustacean   | Jaiva                |           |         |        |
-    |                    | King crab            |           |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Anguila            | Anguila              |           |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Large Benthic Fish | Bacalao              |           |         |        |
-    |                    | Tollo                |           |         |        |
-    |                    | Lenguado             |           |         |        |
-    |                    | Congrio              |           |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Small Benthic Fish | Colorado             |           |         |        |
-    |                    | Graniento            |           |         |        |
-    |                    | Cabrilla             |           |         |        |
-    |                    | Chancharro           |         1 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Large Pelagic Fish | Corvina              |         1 |         |        |
-    |                    | Jurel                |         1 |         |        |
-    |                    | Jurelillo            |         1 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Small pelagic Fish | Pampanito            |           |         |        |
-    |                    | Pez Mariposa         |         1 |         |        |
-    |                    | Jerguilla            |           |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Pinnipedo          | Furseal              |         2 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Vidriola           | Yellowtail amberjack |         8 |         |        |
-    |--------------------+----------------------+-----------+---------+--------|
-    | Total              |                      |        28 |         |        |
-    #+TBLFM: $3=vsum(@2$3..@24$3)::@25$3=vsum(@2$3..@24$3)
+**** What is needed
+***** Look for the larval duration of other species
+***** Pasar los valores de KSPA and FSP
+***** Poner el numero de individuos desovando
 **** Resume of the configuration file
 |--------------------+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+----+----+-----+-----+----+----+----|
 | Recruitment        |     |     | X   | X   | X   | X   | X   | X   | X   |     | X   | X   | X   | X   |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
@@ -1696,3 +2300,147 @@ fi
 | Vert. dist. inv.   | X   | X   |     |     |     |     |     |     |     | X   |     |     |     |     | X   | X   | X   |     |     | X   | X   |    |    |     |     |    |    |    |
 | Vert. dist. ver.   |     |     | X   | X   | X   | X   | X   | X   |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
 |                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+|                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+|                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+|                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+|                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+*** Forcing files
+**** Solar radiation
+- I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
+- The model use rewind of the data
+* Dietary analysis (DNA)
+** NGS
+      I will use NGS for the analysis of the dietary relationship between the functional groups
+*** Procedure
+ - DNA-extraccion
+   - Feacal extraction kit
+     - PowerFecal DNA Isolation Kit code : MB-12830-50
+       Price : $439.00 ex. GST. kit of 50
+ - Concentration determination
+   - Fluorecense at UTAS
+ - Amplicon PCR
+   - Tailed primers  + 10% untailed primers
+     - Primers
+       - Furseal
+       - Lobster
+       - Fish
+   - Taq polymerase
+   - ddH2O
+ - Clean Up
+ - Gel
+   To check if PCR works
+ - Index PCR
+   - Nextera index kit
+   - Kapa mix
+   - ddH2O
+ - Checking PCR
+ - Quantify amount of DNA
+   - Quantiflour kit
+ - Normalize the samples
+ - Pool all the samples
+ - Sequence in illumina MiSeq
+   - Sequencing reagents (1500 for ??)
+*** Results
+- DNA-extraction
+| ID | Specie          | JF-ID  |   |   |
+|----+-----------------+--------+---+---|
+|  1 | Pulpo           | Pu_23  |   |   |
+|  2 | cangrejo dorado | CD_10  |   |   |
+|  3 | Lobo de mar     | Lb_28  |   |   |
+|  4 | Breca           | Bre_21 |   |   |
+|  5 | Vidriola        | Vi_25  |   |   |
+|  6 | Vidriola        | Vi_13  |   |   |
+|  7 | Chancharro      | Ch_6   |   |   |
+|  8 | Jurelillo       | Jur_9  |   |   |
+|  9 | Pez payaso?     | P_7    |   |   |
+| 10 | Vidriola        | Vi_18  |   |   |
+| 11 | Breca           | Bre_14 |   |   |
+| 12 | Breca           | Bre_5  |   |   |
+| 13 | Vidriola        | Vi_26  |   |   |
+| 14 | Vidriola        | Vi_22  |   |   |
+| 15 | Breca           | Bre_16 |   |   |
+| 16 | jurel           | Ju_15  |   |   |
+| 17 | Lobo de mar     | Lb_27  |   |   |
+| 18 | Vidriola        | Vi_17  |   |   |
+| 19 | Vidriola        | Vi_20  |   |   |
+| 20 | Breca           | Bre_24 |   |   |
+| 21 | Breca           | Bre_19 |   |   |
+
+** Cost DNA procedure
+-All the cost are in AUD
+   | Step-materials      | Total Amount | Price unit          | Total Price (182) | Total (96) |
+   |---------------------+--------------+---------------------+-------------------+------------|
+   | Consumables         |          Lot | 300                 |               300 |        300 |
+   | DNA-Extraccion      |           96 | 439(kit 50)         |              1756 |        878 |
+   | Cons. Determination |           96 | 2 per sample        |               364 |        192 |
+   | Amplicon-PCR        |           96 | 40 (96-well plate)  |                80 |         40 |
+   | Gel                 |           96 |                     |                   |            |
+   | Cleanup             |           96 | 8 (10 samples)      |               160 |         80 |
+   | Index-PCR           |           96 | 800 (96-well plate) |              1600 |        800 |
+   | Gel                 |              |                     |                   |            |
+   | Clean-up            |           96 | 8 (10 samples)      |               160 |         80 |
+   | Gel                 |              |                     |                   |            |
+   | Sequence Ilumina    |           96 | 1500 (regents)      |              1500 |       1500 |
+   |---------------------+--------------+---------------------+-------------------+------------|
+   |                     |              | Total               |              5620 |       3570 |
+#+TBLFM: $4=vsum(@3$4..@12$4)::$5=vsum(@3$5..@12$5)
+
+** Functional groups
+  | Functional Groups  | Current Number | Needed | Total |   |
+  |--------------------+----------------+--------+-------+---|
+  | Spiny_lobster      |                |     18 |  -161 |   |
+  | Golden_Crab        |              1 |     17 |       |   |
+  | Breca              |              8 |     10 |       |   |
+  | Vidriola           |              2 |     16 |       |   |
+  | Anguila            |                |     18 |       |   |
+  | Otariid            |              2 |     16 |       |   |
+  | Octupus            |              3 |     15 |       |   |
+  | Large pelagic fish |              2 |     16 |       |   |
+  | Small pelagic fish |                |     18 |       |   |
+  | Small benthic fish |              1 |     17 |       |   |
+  | Large benthic fish |                |     18 |       |   |
+  |--------------------+----------------+--------+-------+---|
+  | Per groups         |             18 |        |       |   |
+#+TBLFM: $3=$VAL-$2::$4=:$VAL-vsum(@2$3..@12$3)::@2$4=$VAL-vsum(@2$3..@12$3)
+#+CONSTANTS: VAL=@13$2
+
+** Clasification and samples
+    | Functional Group   | Species              | N-Samples | adviced | Needed |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Lobster            | Lobster              |         0 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Golden Crab        | Golden Crab          |         1 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Breca              | Breca                |         8 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Octopus            | Octopus              |         4 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Small Crustacean   | Jaiva                |           |         |        |
+    |                    | King crab            |           |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Anguila            | Anguila              |           |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Large Benthic Fish | Bacalao              |           |         |        |
+    |                    | Tollo                |           |         |        |
+    |                    | Lenguado             |           |         |        |
+    |                    | Congrio              |           |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Small Benthic Fish | Colorado             |           |         |        |
+    |                    | Graniento            |           |         |        |
+    |                    | Cabrilla             |           |         |        |
+    |                    | Chancharro           |         1 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Large Pelagic Fish | Corvina              |         1 |         |        |
+    |                    | Jurel                |         1 |         |        |
+    |                    | Jurelillo            |         1 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Small pelagic Fish | Pampanito            |           |         |        |
+    |                    | Pez Mariposa         |         1 |         |        |
+    |                    | Jerguilla            |           |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Pinnipedo          | Furseal              |         2 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Vidriola           | Yellowtail amberjack |         8 |         |        |
+    |--------------------+----------------------+-----------+---------+--------|
+    | Total              |                      |        28 |         |        |
+    #+TBLFM: $3=vsum(@2$3..@24$3)::@25$3=vsum(@2$3..@24$3)

@@ -1,0 +1,86 @@
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~                  Force parameter for the JFRE model              ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+# Author: Javier Porobic
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~         Hydronamic files     ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+nhdfiles 1
+hd0.name Inputs/Forcing_Hydro/JFRE_hydro.nc
+
+## ~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~      Temperature   ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~ ##
+use_tempfiles     1  # Temperature time series data file
+ntempfiles    	  1  # The number of temperature input files
+Temperature0.name Inputs/Forcing_Hydro/JFRE_temp.nc
+
+## ~~~~~~~~~~~~~~~~~~ ##
+## ~     Salinity   ~ ##
+## ~~~~~~~~~~~~~~~~~~ ##
+use_saltfiles   1  # Salinity time series data file
+nsaltfiles 	1  # The number of salinity files
+Salinity0.name 	Inputs/Forcing_Hydro/JFRE_salt.nc
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~         Larval dispersion      ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+use_larvalfiles 1
+larval_rewind   1
+Larval0.name 	Inputs/Larval_disp/LarvalDispersal.nc
+
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~        Solar radiation     ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+Solar_radiation Inputs/Solar/SolarJFRE.ts
+Solar_radiation_rewind 1
+
+# Bottom stress
+# BottomStress inputs/stress/stress.nc
+# BottomStress inputs/stress/nxstress.nc
+
+#############################################
+# Point source\sink lists
+npointss 0
+
+##########################################
+# Rain and evaporation
+#Precipitation inputs/meteor/times1.6.nc
+#Evaporation   inputs/meteor/84-95.nc
+
+ts_on_hydro_time 1
+
+#############################################
+# Historical catch lists - nCatchts is the number of time series to be loaded and
+# typeCatchts is whether or not the data is to be interpolated (0) by the model
+# or just use previous record (1)
+nCatchts 0
+typeCatchts 1
+
+Catchts0.name box0catch
+Catchts0.location 4043667.571 1150676.493  0
+Catchts0.data inputs/catchts/boundary.ts
+Catchts0.rewind 0
+
+#############################################
+# Historical discard lists
+nDiscardts 0
+typeDiscardts 0
+
+#############################################
+# Residual lists - on market fish prices
+nResidualsts 0
+typeResidualsts 0
+
+#############################################
+# Economic statistics - GDP and fuel costs
+nEconts 0
+typeEconts 0
+
+##############################################
+# MPA (spatial management) files for cases where change through time
+# Same format as Catchts above
+nMPAts 0
+typeMPAts 0
