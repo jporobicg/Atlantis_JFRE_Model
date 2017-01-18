@@ -541,7 +541,7 @@ fi
      |-----+---------------------+-------------+--------+------------+---------------------|
      | SPL |               40-50 |           8 |     10 |          4 | Simulation model    |
      | GCR |                  40 |           8 |     10 |          4 | Other species       |
-     | BCR |                  30 |           5 |     10 |          2 | Estimation          |
+     | BCR |                  30 |           5 |     10 |          3 | Estimation          |
      | VID |                  12 |           2 |      3 |          2 | fishbase            |
      | ORO |                 149 |          33 |     10 |         15 | Fishbase            |
      | ALF |                  23 |           5 |     10 |          2 | Fishbase            |

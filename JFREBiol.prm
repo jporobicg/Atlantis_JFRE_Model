@@ -4353,7 +4353,7 @@ Fben_den  0.95  #Fraction of NH release from OB and BD used in nitrif etc calcs 
 # Age class of maturity
 SPL_age_mat   3 # First mature age class of  Spiny lobster [ Number ]
 GCR_age_mat   2 # First mature age class of  Golden Crab [ Number ]
-BRC_age_mat   3 # First mature age class of  Breca [ Number ]
+BRC_age_mat   2 # First mature age class of  Breca [ Number ]
 VID_age_mat   1 # First mature age class of  Vidriola [ Number ]
 ORO_age_mat   5 # First mature age class of  Orange Roughy [ Number ]
 ALF_age_mat   3 # First mature age class of  Alfonsino [ Number ]
@@ -4486,7 +4486,7 @@ FSPB_SPL   10 # Fraction of population spawning for Spiny lobster [ Proportion ]
 FSPB_GCR   10 # Fraction of population spawning for Golden Crab [ Proportion ]
 0 0.5 1 1 1 1 1 1 1 1
 FSPB_BRC   10 # Fraction of population spawning for Breca [ Proportion ]
-0 0 1 1 1 1 1 1 1 1
+0 0.1 1 1 1 1 1 1 1 1
 FSPB_VID   3 # Fraction of population spawning for Vidriola [ Proportion ]
 0 1 1
 FSPB_ORO   10 # Fraction of population spawning for Orange Roughy [ Proportion ]
