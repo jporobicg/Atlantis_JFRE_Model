@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-01-05T14:31+1100"/>
+<meta name="generated" content="2017-01-18T17:36+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -302,13 +302,19 @@ for the JavaScript code below.
 <li><a href="#sec-5-2-1-6">Throphic relation</a></li>
 <li><a href="#sec-5-2-1-7">Spawning</a></li>
 <li><a href="#sec-5-2-1-8">Recruitment</a></li>
-<li><a href="#sec-5-2-1-9">Temperature</a></li>
-<li><a href="#sec-5-2-1-10">Oxigen</a></li>
-<li><a href="#sec-5-2-1-11">Extra Mortality</a></li>
-<li><a href="#sec-5-2-1-12">Bibliography that I need</a></li>
-<li><a href="#sec-5-2-1-13">Codes</a></li>
-<li><a href="#sec-5-2-1-14">What is needed</a></li>
-<li><a href="#sec-5-2-1-15">Resume of the configuration file</a></li>
+<li><a href="#sec-5-2-1-9">LFD by cohorts</a></li>
+<li><a href="#sec-5-2-1-10">Temperature</a></li>
+<li><a href="#sec-5-2-1-11">Oxigen</a></li>
+<li><a href="#sec-5-2-1-12">Extra Mortality</a></li>
+<li><a href="#sec-5-2-1-13">Bibliography that I need</a></li>
+<li><a href="#sec-5-2-1-14">Codes</a></li>
+<li><a href="#sec-5-2-1-15">What is needed</a></li>
+<li><a href="#sec-5-2-1-16">Resume of the configuration file</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-2-2">Forcing files</a>
+<ul>
+<li><a href="#sec-5-2-2-1">Solar radiation</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -537,12 +543,12 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 
 <ul>
 <li>atlantisMerged -i init<sub>vmpa</sub><sub>setas</sub><sub>25032013</sub>.nc 0 -o outputSETAS.nc -r VMPA<sub>setas</sub><sub>run</sub><sub>fishing</sub><sub>F</sub><sub>Dem</sub>.prm -f VMPA<sub>setas</sub><sub>force</sub><sub>fish</sub><sub>Dem</sub>.prm -p VMPA<sub>setas</sub><sub>physics</sub>.prm -b VMPA<sub>setas</sub><sub>biol</sub><sub>fishing</sub><sub>Dem</sub>.prm -h VMPA<sub>setas</sub><sub>harvest</sub><sub>F</sub><sub>New</sub>.prm -s SETasGroupsDem<sub>NoCep</sub>.csv -q SETasFisheries.csv -d outputFolderTrunk
-</li>
-</ul>
-
 
 
 <hr/>
+</li>
+</ul>
+
 </div>
 </div>
 
@@ -1434,7 +1440,7 @@ sudo make install -C /home/demiurgo/Documents/2015/Oceanography/physics/Codes/Co
 <tbody>
 <tr><td class="left">SPL</td><td class="right">40-50</td><td class="right">8</td><td class="right">10</td><td class="right">4</td><td class="left">Simulation model</td></tr>
 <tr><td class="left">GCR</td><td class="right">40</td><td class="right">8</td><td class="right">10</td><td class="right">4</td><td class="left">Other species</td></tr>
-<tr><td class="left">BCR</td><td class="right">20</td><td class="right">5</td><td class="right">10</td><td class="right">2</td><td class="left">Ribara2012/fishbase</td></tr>
+<tr><td class="left">BCR</td><td class="right">30</td><td class="right">5</td><td class="right">10</td><td class="right">3</td><td class="left">Estimation</td></tr>
 <tr><td class="left">VID</td><td class="right">12</td><td class="right">2</td><td class="right">3</td><td class="right">2</td><td class="left">fishbase</td></tr>
 <tr><td class="left">ORO</td><td class="right">149</td><td class="right">33</td><td class="right">10</td><td class="right">15</td><td class="left">Fishbase</td></tr>
 <tr><td class="left">ALF</td><td class="right">23</td><td class="right">5</td><td class="right">10</td><td class="right">2</td><td class="left">Fishbase</td></tr>
@@ -3790,7 +3796,6 @@ biomass[1] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> init.B
 </ul>
 
 
-
 </li>
 </ul>
 <ul>
@@ -3847,11 +3852,93 @@ print(b)
 </div>
 
 <div id="outline-container-5-2-1-9" class="outline-5">
-<h5 id="sec-5-2-1-9">Temperature</h5>
+<h5 id="sec-5-2-1-9">LFD by cohorts</h5>
 <div class="outline-text-5" id="text-5-2-1-9">
 
+<p>In this secction I use the data form the Database to get the number of organism by cohort. The cohorts used here matches the cohort on Atlantis
+</p>
+
+
+
+<pre class="src src-R">rm(list = ls())
+<span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+<span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">data</span>
+lf    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/cohorts/LF.csv'</span>)
+p.l   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/cohorts/params.csv'</span>, row.names=1)
+<span style="color: #696969;">##</span><span style="color: #696969;">~ Grupos funcionales</span>
+lf    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(lf, 2)
+lf.fg <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(lf, lf$FG)  <span style="color: #696969;"># </span><span style="color: #696969;">split by functional group</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>(i <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : ncol(p.l)){
+    <span style="color: #696969;">##</span><span style="color: #696969;">~ Looking FG</span>
+    t.fg   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> which(names(lf.fg) %<span style="color: #ff7f00; font-weight: bold;">in</span>% colnames(p.l)[i])
+    len    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lf.fg[[t.fg]][, 3]
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(colnames(p.l)[i] %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(<span style="color: #ffc125; font-weight: bold;">'ANG'</span>, <span style="color: #ffc125; font-weight: bold;">'LBF'</span>, <span style="color: #ffc125; font-weight: bold;">'SBF'</span>)) len <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lf.fg[[t.fg]][, 4]
+    intv   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = p.l[5, i],  by = p.l[5, i], length = (p.l[4, i] / p.l[5, i]) - 1)
+    temp.l <span style="color: #ff4500; font-weight: bold;">&lt;-</span> vb(p.l[1, i], p.l[3, i], p.l[2, i], 1 : p.l[4, i])
+    t.out  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> hist(len, breaks = c(0, temp.l[intv], max(len, na.rm = T)), plot = <span style="color: #fffacd; font-weight: bold;">FALSE</span>)
+    <span style="color: #696969;">## </span><span style="color: #696969;">reconstruction age aproximation using lineal regretion</span>
+    t.out  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(t.out, data.frame(Mid = mids, Count = counts))
+    max.p  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> which.max(t.out[, 2])
+    min.p  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> which.min(t.out[max.p : nrow(t.out), 2])
+    reg.o  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(t.out, lm(Count ~ Mid, data = t.out[max.p : min.p, ]))
+    <span style="color: #696969;">## </span><span style="color: #696969;">Recalculating the data</span>
+    <span style="color: #ff7f00; font-weight: bold;">for</span>( j <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : (max.p - 1)){
+        t.out[j, 2] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> t.out[j, 1]  * reg.o$coef[2] + reg.o$coef[1]
+    }
+    <span style="color: #696969;">## </span><span style="color: #696969;">Correction of Zeros</span>
+    t.out$Count <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(t.out$Count == 0, min(t.out$Count[t.out$Count &gt; 0], na.rm = T), t.out$Count)
+    t.out$Prop  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> t.out$Count / sum(t.out$Count, na.rm = T)
+    age.c       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(paste(<span style="color: #ffc125; font-weight: bold;">'Cohort 0'</span>, 1 : 9, sep = <span style="color: #ffc125; font-weight: bold;">''</span>),  <span style="color: #ffc125; font-weight: bold;">'Cohort 10'</span>)
+    t.out       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> cbind(FG = as.factor(colnames(p.l)[i]), Age_group = age.c[1 : nrow(t.out)], t.out)
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 1){
+        output <span style="color: #ff4500; font-weight: bold;">&lt;-</span> t.out
+    } <span style="color: #ff7f00; font-weight: bold;">else</span> {
+        output <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rbind(output, t.out)
+    }
+}
+<span style="color: #696969;">## </span><span style="color: #696969;">Table</span>
+cap     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Proportion of Individual by Cohort,  based on the configuration of Atlantis'</span>
+tab.out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> xtabs(Prop ~ FG + Age_group, output)
+png(<span style="color: #ffc125; font-weight: bold;">'img/Cohorts.png'</span>, height = 1000, width = 1000)
+sp    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = output, aes(Age_group, Prop, group = 1))+ geom_line()
+sp + facet_wrap(~FG, ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
+invisible(dev.off())
+b     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(tab.out, header = T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption=cap)
+print(b)
+</pre>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
+</colgroup>
+<tbody>
+<tr><td class="left"></td><td class="right">Cohort 01</td><td class="right">Cohort 02</td><td class="right">Cohort 03</td><td class="right">Cohort 04</td><td class="right">Cohort 05</td><td class="right">Cohort 06</td><td class="right">Cohort 07</td><td class="right">Cohort 08</td><td class="right">Cohort 09</td><td class="right">Cohort 10</td></tr>
+<tr><td class="left">ANG</td><td class="right">0.58</td><td class="right">0.29</td><td class="right">0.11</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td></tr>
+<tr><td class="left">BRC</td><td class="right">0.44</td><td class="right">0.24</td><td class="right">0.17</td><td class="right">0.06</td><td class="right">0.03</td><td class="right">0.02</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.02</td></tr>
+<tr><td class="left">VID</td><td class="right">0.87</td><td class="right">0.09</td><td class="right">0.04</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.55</td><td class="right">0.24</td><td class="right">0.14</td><td class="right">0.02</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.03</td></tr>
+<tr><td class="left">SBF</td><td class="right">0.47</td><td class="right">0.27</td><td class="right">0.14</td><td class="right">0.06</td><td class="right">0.03</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td></tr>
+<tr><td class="left">LPF</td><td class="right">0.51</td><td class="right">0.40</td><td class="right">0.05</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.20</td><td class="right">0.18</td><td class="right">0.18</td><td class="right">0.17</td><td class="right">0.17</td><td class="right">0.08</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+</tbody>
+</table>
+
+<img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png" width="600" alt="image" />
+<br style="clear:both;" />
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-10" class="outline-5">
+<h5 id="sec-5-2-1-10">Temperature</h5>
+<div class="outline-text-5" id="text-5-2-1-10">
+
 <ul>
-<li id="sec-5-2-1-9-1">Recruitment<br/>
+<li id="sec-5-2-1-10-1">Recruitment<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -3872,7 +3959,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-9-2">Optimal temperature<br/>
+<li id="sec-5-2-1-10-2">Optimal temperature<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -3952,7 +4039,7 @@ print(b)
 
 
 <ul>
-<li id="sec-5-2-1-9-2-1">Temperature tolerance (Griffin model)<br/>
+<li id="sec-5-2-1-10-2-1">Temperature tolerance (Griffin model)<br/>
 
 </li>
 </ul>
@@ -3962,12 +4049,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-10" class="outline-5">
-<h5 id="sec-5-2-1-10">Oxigen</h5>
-<div class="outline-text-5" id="text-5-2-1-10">
+<div id="outline-container-5-2-1-11" class="outline-5">
+<h5 id="sec-5-2-1-11">Oxigen</h5>
+<div class="outline-text-5" id="text-5-2-1-11">
 
 <ul>
-<li id="sec-5-2-1-10-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
+<li id="sec-5-2-1-11-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
 <ul>
 <li>Calculates both ambient and depth based limitation and uses the larger of the two values as the oxygen scalar dO2
 </li>
@@ -4028,18 +4115,18 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-11" class="outline-5">
-<h5 id="sec-5-2-1-11">Extra Mortality</h5>
-<div class="outline-text-5" id="text-5-2-1-11">
+<div id="outline-container-5-2-1-12" class="outline-5">
+<h5 id="sec-5-2-1-12">Extra Mortality</h5>
+<div class="outline-text-5" id="text-5-2-1-12">
 
 <p>     I'm not including xxplicit fish mortality by season (mS<sub>FDXXX</sub>) and seabird and mamal induced mortality (mS<sub>SBXXX</sub>)
 </p></div>
 
 </div>
 
-<div id="outline-container-5-2-1-12" class="outline-5">
-<h5 id="sec-5-2-1-12">Bibliography that I need</h5>
-<div class="outline-text-5" id="text-5-2-1-12">
+<div id="outline-container-5-2-1-13" class="outline-5">
+<h5 id="sec-5-2-1-13">Bibliography that I need</h5>
+<div class="outline-text-5" id="text-5-2-1-13">
 
 <ul>
 <li><code>[&nbsp;]</code> Sepulveda y Pequeño,  Fauna ictica del archipielago de Juan Fernandez. En P. Arana (ed). Investigaciones Marinas en el Archipiélago de Juan Fernández. Esc. Ciencias del Mar, UCV, Valparaíso
@@ -4055,9 +4142,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-13" class="outline-5">
-<h5 id="sec-5-2-1-13">Codes</h5>
-<div class="outline-text-5" id="text-5-2-1-13">
+<div id="outline-container-5-2-1-14" class="outline-5">
+<h5 id="sec-5-2-1-14">Codes</h5>
+<div class="outline-text-5" id="text-5-2-1-14">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4105,29 +4192,29 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-14" class="outline-5">
-<h5 id="sec-5-2-1-14">What is needed</h5>
-<div class="outline-text-5" id="text-5-2-1-14">
-
-<ul>
-<li id="sec-5-2-1-14-1">Look for the larval duration of other species<br/>
-</li>
-</ul>
-<ul>
-<li id="sec-5-2-1-14-2">Pasar los valores de KSPA and FSP<br/>
-</li>
-</ul>
-<ul>
-<li id="sec-5-2-1-14-3">Poner el numero de individuos desovando<br/>
-</li>
-</ul>
-</div>
-
-</div>
-
 <div id="outline-container-5-2-1-15" class="outline-5">
-<h5 id="sec-5-2-1-15">Resume of the configuration file</h5>
+<h5 id="sec-5-2-1-15">What is needed</h5>
 <div class="outline-text-5" id="text-5-2-1-15">
+
+<ul>
+<li id="sec-5-2-1-15-1">Look for the larval duration of other species<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-15-2">Pasar los valores de KSPA and FSP<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-15-3">Poner el numero de individuos desovando<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-16" class="outline-5">
+<h5 id="sec-5-2-1-16">Resume of the configuration file</h5>
+<div class="outline-text-5" id="text-5-2-1-16">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4188,6 +4275,29 @@ print(b)
 <tr><td class="left">Vert. dist. ver.</td><td class="left"></td><td class="left"></td><td class="left">X</td><td class="left">X</td><td class="left">X</td><td class="left">X</td><td class="left">X</td><td class="left">X</td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td><td class="left"></td></tr>
 </tbody>
 </table>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-2" class="outline-4">
+<h4 id="sec-5-2-2">Forcing files</h4>
+<div class="outline-text-4" id="text-5-2-2">
+
+
+</div>
+
+<div id="outline-container-5-2-2-1" class="outline-5">
+<h5 id="sec-5-2-2-1">Solar radiation</h5>
+<div class="outline-text-5" id="text-5-2-2-1">
+
+<ul>
+<li>I se the information irradiance from <a href="http://www.soda-pro.com/web-services/radiation/nasa-sse">soda</a>
+</li>
+<li>The model use rewind of the data
+</li>
+</ul>
 
 </div>
 </div>
@@ -4490,7 +4600,7 @@ print(b)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-01-05T14:31+1100</p>
+<p class="date">Date: 2017-01-18T17:36+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
