@@ -1,7 +1,7 @@
 "Code","Index","IsTurnedOn","Name","Long Name","NumCohorts","NumGeneTypes","NumStages","NumSpawns","NumAgeClassSize","NumStocks","VerticallyMigrates","HorizontallyMigrates","IsFished","IsImpacted","isTAC","GroupType","IsPredator","IsCover","IsSiliconDep","IsAssessed","IsCatchGrazer","OverWinters","isCultured","isHabDepend","numMoveSeaons"
 "SPL",0,1,"Spiny_lobster","Spiny lobster",10,1,2,1,4,2,0,1,1,1,0,"FISH_INVERT",1,0,0,1,0,0,0,0,4
 "GCR",1,1,"Golden_Crab","Golden Crab",10,1,2,1,4,2,0,1,1,1,0,"FISH_INVERT",1,0,0,1,0,0,0,0,1
-"BRC",2,1,"Breca","Breca",10,1,2,1,2,2,1,1,1,1,0,"FISH",1,0,0,0,0,0,0,0,4
+"BRC",2,1,"Breca","Breca",10,1,2,1,3,2,1,1,1,1,0,"FISH",1,0,0,0,0,0,0,0,4
 "VID",3,1,"Vidriola","Vidriola",3,1,2,1,2,1,1,1,1,1,0,"FISH",1,0,0,0,0,0,0,0,1
 "ORO",4,1,"Orange_Roughy","Orange Roughy",10,1,2,1,15,1,1,1,1,1,1,"FISH",1,0,0,1,0,0,0,0,1
 "ALF",5,1,"Alfonsino","Alfonsino",10,1,2,1,2,1,1,1,1,1,1,"FISH",1,0,0,1,0,0,0,0,1
