@@ -2090,6 +2090,7 @@ In this secction I use the data form the Database to get the number of organism 
  #+BEGIN_SRC R :results output
    rm(list = ls())
    library(ascii)
+   options(asciiType = "org")
    library(ggplot2)
    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
    ## data
@@ -2137,21 +2138,64 @@ In this secction I use the data form the Database to get the number of organism 
    print(b)
  #+END_SRC
  #+RESULTS:
-#+CAPTION Proportion of Individual by Cohort,  based on the configuration of Atlantis
+#+CAPTION: Proportion of Individual by Cohort,  based on the configuration of Atlantis
+|      |     | *Age_group* |           |           |           |           |           |           |           |           |           |
+|      |     |   Cohort 01 | Cohort 02 | Cohort 03 | Cohort 04 | Cohort 05 | Cohort 06 | Cohort 07 | Cohort 08 | Cohort 09 | Cohort 10 |
+|------+-----+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------|
+| *FG* | ANG |        0.58 |      0.29 |      0.11 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
+|      | BRC |        0.44 |      0.24 |      0.17 |      0.06 |      0.03 |      0.02 |      0.01 |      0.01 |      0.00 |      0.02 |
+|      | VID |        0.87 |      0.09 |      0.04 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |
+|      | LBF |        0.55 |      0.24 |      0.14 |      0.02 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.03 |
+|      | SBF |        0.47 |      0.27 |      0.14 |      0.06 |      0.03 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
+|      | LPF |        0.51 |      0.40 |      0.05 |      0.01 |      0.01 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |
+|      | SPF |        0.20 |      0.18 |      0.18 |      0.17 |      0.17 |      0.08 |      0.01 |      0.00 |      0.00 |      0.00 |
 
- |     | Cohort 01 | Cohort 02 | Cohort 03 | Cohort 04 | Cohort 05 | Cohort 06 | Cohort 07 | Cohort 08 | Cohort 09 | Cohort 10 |
- | ANG |      0.58 |      0.29 |      0.11 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
- | BRC |      0.44 |      0.24 |      0.17 |      0.06 |      0.03 |      0.02 |      0.01 |      0.01 |      0.00 |      0.02 |
- | VID |      0.87 |      0.09 |      0.04 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |
- | LBF |      0.55 |      0.24 |      0.14 |      0.02 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.03 |
- | SBF |      0.47 |      0.27 |      0.14 |      0.06 |      0.03 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
- | LPF |      0.51 |      0.40 |      0.05 |      0.01 |      0.01 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |
- | SPF |      0.20 |      0.18 |      0.18 |      0.17 |      0.17 |      0.08 |      0.01 |      0.00 |      0.00 |      0.00 |
 #+end_example
 #+ATTR_HTML: width="600" alt="image"
 [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png]]
 @<br style="clear:both;" />
 
+**** Estimation of the mean Weight
+- Based on the catch data and the data at age available I calculated the mean weight for several groups
+#+BEGIN_SRC R :results output
+  ## Estimation of the mean weight for the FG
+  rm(list=ls())
+  library(ascii)
+  options(asciiType = "org")
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  datos <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv')
+  w.fg  <- FG(datos, 2)
+  w.fg  <- split(w.fg, w.fg$FG)
+  ## estimation of mean weight
+  weigth <- vector('numeric')
+  for( i in 1: length(w.fg)){
+  weigth[i] <- mean(w.fg[[i]]$weight)
+  }
+  ## output
+  cap <- 'Mean weight for Functional Group (FG)'
+  out <- data.frame(FG = names(w.fg), Mean.Weight = weigth)
+  b   <- ascii(out, header = T,  include.rownames = FALSE, include.colnames = TRUE, caption=cap)
+  print(b)
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+#+CAPTION: Mean weight for Functional Group (FG)
+| FG  | Mean.Weight |
+|-----+-------------|
+| ANG | 1013.75     |
+| BRC | 745.93      |
+| CHO | 4298.08     |
+| GCR | 697.06      |
+| LBF | 4125.24     |
+| LPF | 484.88      |
+| OCT | 640.00      |
+| OTA | 75857.01    |
+| SBF | 1203.85     |
+| SPF | 318.45      |
+| SPL | 630.62      |
+| VID | 3755.67     |
+#+end_example
 
 **** Temperature
 ***** Recruitment
