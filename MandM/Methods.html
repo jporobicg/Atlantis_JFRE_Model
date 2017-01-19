@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-01-18T17:36+1100"/>
+<meta name="generated" content="2017-01-19T12:18+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -303,13 +303,14 @@ for the JavaScript code below.
 <li><a href="#sec-5-2-1-7">Spawning</a></li>
 <li><a href="#sec-5-2-1-8">Recruitment</a></li>
 <li><a href="#sec-5-2-1-9">LFD by cohorts</a></li>
-<li><a href="#sec-5-2-1-10">Temperature</a></li>
-<li><a href="#sec-5-2-1-11">Oxigen</a></li>
-<li><a href="#sec-5-2-1-12">Extra Mortality</a></li>
-<li><a href="#sec-5-2-1-13">Bibliography that I need</a></li>
-<li><a href="#sec-5-2-1-14">Codes</a></li>
-<li><a href="#sec-5-2-1-15">What is needed</a></li>
-<li><a href="#sec-5-2-1-16">Resume of the configuration file</a></li>
+<li><a href="#sec-5-2-1-10">Estimation of the mean Weight</a></li>
+<li><a href="#sec-5-2-1-11">Temperature</a></li>
+<li><a href="#sec-5-2-1-12">Oxigen</a></li>
+<li><a href="#sec-5-2-1-13">Extra Mortality</a></li>
+<li><a href="#sec-5-2-1-14">Bibliography that I need</a></li>
+<li><a href="#sec-5-2-1-15">Codes</a></li>
+<li><a href="#sec-5-2-1-16">What is needed</a></li>
+<li><a href="#sec-5-2-1-17">Resume of the configuration file</a></li>
 </ul>
 </li>
 <li><a href="#sec-5-2-2">Forcing files</a>
@@ -3862,6 +3863,7 @@ print(b)
 
 <pre class="src src-R">rm(list = ls())
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
 <span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
 <span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">data</span>
@@ -3905,40 +3907,82 @@ png(<span style="color: #ffc125; font-weight: bold;">'img/Cohorts.png'</span>, h
 sp    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = output, aes(Age_group, Prop, group = 1))+ geom_line()
 sp + facet_wrap(~FG, ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
 invisible(dev.off())
-b     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(tab.out, header = T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption=cap)
+b     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(tab.out, header = T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption=cap, digits=3)
 print(b)
 </pre>
 
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
+<colgroup><col class="left" /><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
 </colgroup>
+<thead>
+<tr><th scope="col" class="left"></th><th scope="col" class="left"></th><th scope="col" class="right"><b>Age<sub>group</sub></b></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th></tr>
+<tr><th scope="col" class="left"></th><th scope="col" class="left"></th><th scope="col" class="right">Cohort 01</th><th scope="col" class="right">Cohort 02</th><th scope="col" class="right">Cohort 03</th><th scope="col" class="right">Cohort 04</th><th scope="col" class="right">Cohort 05</th><th scope="col" class="right">Cohort 06</th><th scope="col" class="right">Cohort 07</th><th scope="col" class="right">Cohort 08</th><th scope="col" class="right">Cohort 09</th><th scope="col" class="right">Cohort 10</th></tr>
+</thead>
 <tbody>
-<tr><td class="left"></td><td class="right">Cohort 01</td><td class="right">Cohort 02</td><td class="right">Cohort 03</td><td class="right">Cohort 04</td><td class="right">Cohort 05</td><td class="right">Cohort 06</td><td class="right">Cohort 07</td><td class="right">Cohort 08</td><td class="right">Cohort 09</td><td class="right">Cohort 10</td></tr>
-<tr><td class="left">ANG</td><td class="right">0.58</td><td class="right">0.29</td><td class="right">0.11</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td></tr>
-<tr><td class="left">BRC</td><td class="right">0.44</td><td class="right">0.24</td><td class="right">0.17</td><td class="right">0.06</td><td class="right">0.03</td><td class="right">0.02</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.02</td></tr>
-<tr><td class="left">VID</td><td class="right">0.87</td><td class="right">0.09</td><td class="right">0.04</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
-<tr><td class="left">LBF</td><td class="right">0.55</td><td class="right">0.24</td><td class="right">0.14</td><td class="right">0.02</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.03</td></tr>
-<tr><td class="left">SBF</td><td class="right">0.47</td><td class="right">0.27</td><td class="right">0.14</td><td class="right">0.06</td><td class="right">0.03</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td></tr>
-<tr><td class="left">LPF</td><td class="right">0.51</td><td class="right">0.40</td><td class="right">0.05</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.20</td><td class="right">0.18</td><td class="right">0.18</td><td class="right">0.17</td><td class="right">0.17</td><td class="right">0.08</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+<tr><td class="left"><b>FG</b></td><td class="left">ANG</td><td class="right">0.576</td><td class="right">0.287</td><td class="right">0.113</td><td class="right">0.012</td><td class="right">0.001</td><td class="right">0.001</td><td class="right">0.001</td><td class="right">0.001</td><td class="right">0.001</td><td class="right">0.006</td></tr>
+<tr><td class="left"></td><td class="left">BRC</td><td class="right">0.436</td><td class="right">0.238</td><td class="right">0.168</td><td class="right">0.063</td><td class="right">0.032</td><td class="right">0.018</td><td class="right">0.011</td><td class="right">0.008</td><td class="right">0.005</td><td class="right">0.020</td></tr>
+<tr><td class="left"></td><td class="left">VID</td><td class="right">0.867</td><td class="right">0.092</td><td class="right">0.037</td><td class="right">0.005</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td></tr>
+<tr><td class="left"></td><td class="left">LBF</td><td class="right">0.551</td><td class="right">0.244</td><td class="right">0.137</td><td class="right">0.019</td><td class="right">0.008</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.027</td></tr>
+<tr><td class="left"></td><td class="left">SBF</td><td class="right">0.473</td><td class="right">0.269</td><td class="right">0.144</td><td class="right">0.057</td><td class="right">0.028</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.013</td></tr>
+<tr><td class="left"></td><td class="left">LPF</td><td class="right">0.512</td><td class="right">0.402</td><td class="right">0.051</td><td class="right">0.010</td><td class="right">0.007</td><td class="right">0.010</td><td class="right">0.005</td><td class="right">0.002</td><td class="right">0.000</td><td class="right">0.001</td></tr>
+<tr><td class="left"></td><td class="left">SPF</td><td class="right">0.201</td><td class="right">0.185</td><td class="right">0.177</td><td class="right">0.171</td><td class="right">0.166</td><td class="right">0.077</td><td class="right">0.015</td><td class="right">0.002</td><td class="right">0.002</td><td class="right">0.005</td></tr>
+<tr><td class="left"></td><td class="left">ALF</td><td class="right">0.384</td><td class="right">0.235</td><td class="right">0.152</td><td class="right">0.144</td><td class="right">0.063</td><td class="right">0.016</td><td class="right">0.002</td><td class="right">0.002</td><td class="right">0.002</td><td class="right">0.002</td></tr>
+<tr><td class="left"></td><td class="left">ORO</td><td class="right">0.432</td><td class="right">0.252</td><td class="right">0.149</td><td class="right">0.084</td><td class="right">0.046</td><td class="right">0.018</td><td class="right">0.006</td><td class="right">0.004</td><td class="right">0.004</td><td class="right">0.004</td></tr>
 </tbody>
 </table>
 
+
+<p>
 <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png" width="600" alt="image" />
 <br style="clear:both;" />
-
-
+</p>
 </div>
 
 </div>
 
 <div id="outline-container-5-2-1-10" class="outline-5">
-<h5 id="sec-5-2-1-10">Temperature</h5>
+<h5 id="sec-5-2-1-10">Estimation of the mean Weight</h5>
 <div class="outline-text-5" id="text-5-2-1-10">
 
 <ul>
-<li id="sec-5-2-1-10-1">Recruitment<br/>
+<li>Based on the catch data and the data at age available I calculated the mean weight for several groups
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">Estimation of the mean weight for the FG</span>
+rm(list=ls())
+<span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
+datos <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv'</span>)
+w.fg  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(datos, 2)
+w.fg  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(w.fg, w.fg$FG)
+<span style="color: #696969;">## </span><span style="color: #696969;">estimation of mean weight</span>
+weigth <span style="color: #ff4500; font-weight: bold;">&lt;-</span> vector(<span style="color: #ffc125; font-weight: bold;">'numeric'</span>)
+<span style="color: #ff7f00; font-weight: bold;">for</span>( i <span style="color: #ff7f00; font-weight: bold;">in</span> 1: length(w.fg)){
+weigth[i] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mean(w.fg[[i]]$weight)
+}
+<span style="color: #696969;">## </span><span style="color: #696969;">output</span>
+cap <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Mean weight for Functional Group (FG)'</span>
+out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(FG = names(w.fg), Mean.Weight = weigth)
+b   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, header = T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">FALSE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption=cap)
+print(b)
+</pre>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-11" class="outline-5">
+<h5 id="sec-5-2-1-11">Temperature</h5>
+<div class="outline-text-5" id="text-5-2-1-11">
+
+<ul>
+<li id="sec-5-2-1-11-1">Recruitment<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -3959,7 +4003,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-10-2">Optimal temperature<br/>
+<li id="sec-5-2-1-11-2">Optimal temperature<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -4039,7 +4083,7 @@ print(b)
 
 
 <ul>
-<li id="sec-5-2-1-10-2-1">Temperature tolerance (Griffin model)<br/>
+<li id="sec-5-2-1-11-2-1">Temperature tolerance (Griffin model)<br/>
 
 </li>
 </ul>
@@ -4049,12 +4093,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-11" class="outline-5">
-<h5 id="sec-5-2-1-11">Oxigen</h5>
-<div class="outline-text-5" id="text-5-2-1-11">
+<div id="outline-container-5-2-1-12" class="outline-5">
+<h5 id="sec-5-2-1-12">Oxigen</h5>
+<div class="outline-text-5" id="text-5-2-1-12">
 
 <ul>
-<li id="sec-5-2-1-11-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
+<li id="sec-5-2-1-12-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
 <ul>
 <li>Calculates both ambient and depth based limitation and uses the larger of the two values as the oxygen scalar dO2
 </li>
@@ -4115,18 +4159,18 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-12" class="outline-5">
-<h5 id="sec-5-2-1-12">Extra Mortality</h5>
-<div class="outline-text-5" id="text-5-2-1-12">
+<div id="outline-container-5-2-1-13" class="outline-5">
+<h5 id="sec-5-2-1-13">Extra Mortality</h5>
+<div class="outline-text-5" id="text-5-2-1-13">
 
 <p>     I'm not including xxplicit fish mortality by season (mS<sub>FDXXX</sub>) and seabird and mamal induced mortality (mS<sub>SBXXX</sub>)
 </p></div>
 
 </div>
 
-<div id="outline-container-5-2-1-13" class="outline-5">
-<h5 id="sec-5-2-1-13">Bibliography that I need</h5>
-<div class="outline-text-5" id="text-5-2-1-13">
+<div id="outline-container-5-2-1-14" class="outline-5">
+<h5 id="sec-5-2-1-14">Bibliography that I need</h5>
+<div class="outline-text-5" id="text-5-2-1-14">
 
 <ul>
 <li><code>[&nbsp;]</code> Sepulveda y Pequeño,  Fauna ictica del archipielago de Juan Fernandez. En P. Arana (ed). Investigaciones Marinas en el Archipiélago de Juan Fernández. Esc. Ciencias del Mar, UCV, Valparaíso
@@ -4142,9 +4186,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-14" class="outline-5">
-<h5 id="sec-5-2-1-14">Codes</h5>
-<div class="outline-text-5" id="text-5-2-1-14">
+<div id="outline-container-5-2-1-15" class="outline-5">
+<h5 id="sec-5-2-1-15">Codes</h5>
+<div class="outline-text-5" id="text-5-2-1-15">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4192,29 +4236,29 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-15" class="outline-5">
-<h5 id="sec-5-2-1-15">What is needed</h5>
-<div class="outline-text-5" id="text-5-2-1-15">
-
-<ul>
-<li id="sec-5-2-1-15-1">Look for the larval duration of other species<br/>
-</li>
-</ul>
-<ul>
-<li id="sec-5-2-1-15-2">Pasar los valores de KSPA and FSP<br/>
-</li>
-</ul>
-<ul>
-<li id="sec-5-2-1-15-3">Poner el numero de individuos desovando<br/>
-</li>
-</ul>
-</div>
-
-</div>
-
 <div id="outline-container-5-2-1-16" class="outline-5">
-<h5 id="sec-5-2-1-16">Resume of the configuration file</h5>
+<h5 id="sec-5-2-1-16">What is needed</h5>
 <div class="outline-text-5" id="text-5-2-1-16">
+
+<ul>
+<li id="sec-5-2-1-16-1">Look for the larval duration of other species<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-16-2">Pasar los valores de KSPA and FSP<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-16-3">Poner el numero de individuos desovando<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-17" class="outline-5">
+<h5 id="sec-5-2-1-17">Resume of the configuration file</h5>
+<div class="outline-text-5" id="text-5-2-1-17">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4600,7 +4644,7 @@ print(b)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-01-18T17:36+1100</p>
+<p class="date">Date: 2017-01-19T12:18+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

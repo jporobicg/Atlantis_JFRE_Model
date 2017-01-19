@@ -2134,23 +2134,24 @@ In this secction I use the data form the Database to get the number of organism 
    sp    <- ggplot(data = output, aes(Age_group, Prop, group = 1))+ geom_line()
    sp + facet_wrap(~FG, ncol = 4, scales = 'free_y')
    invisible(dev.off())
-   b     <- ascii(tab.out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap)
+   b     <- ascii(tab.out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
    print(b)
  #+END_SRC
  #+RESULTS:
 #+CAPTION: Proportion of Individual by Cohort,  based on the configuration of Atlantis
 |      |     | *Age_group* |           |           |           |           |           |           |           |           |           |
-|      |     |   Cohort 01 | Cohort 02 | Cohort 03 | Cohort 04 | Cohort 05 | Cohort 06 | Cohort 07 | Cohort 08 | Cohort 09 | Cohort 10 |
-|------+-----+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------|
-| *FG* | ANG |        0.58 |      0.29 |      0.11 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
-|      | BRC |        0.44 |      0.24 |      0.17 |      0.06 |      0.03 |      0.02 |      0.01 |      0.01 |      0.00 |      0.02 |
-|      | VID |        0.87 |      0.09 |      0.04 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |      0.00 |
-|      | LBF |        0.55 |      0.24 |      0.14 |      0.02 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |      0.03 |
-|      | SBF |        0.47 |      0.27 |      0.14 |      0.06 |      0.03 |      0.00 |      0.00 |      0.00 |      0.00 |      0.01 |
-|      | LPF |        0.51 |      0.40 |      0.05 |      0.01 |      0.01 |      0.01 |      0.00 |      0.00 |      0.00 |      0.00 |
-|      | SPF |        0.20 |      0.18 |      0.18 |      0.17 |      0.17 |      0.08 |      0.01 |      0.00 |      0.00 |      0.00 |
+|      |     | Cohort 01   | Cohort 02 | Cohort 03 | Cohort 04 | Cohort 05 | Cohort 06 | Cohort 07 | Cohort 08 | Cohort 09 | Cohort 10 |
+|------+-----+-------------+-----------+-----------+-----------+-----------+-----------+-----------+-----------+-----------|-----------|
+| *FG* | ANG | 0.576       | 0.287     | 0.113     | 0.012     | 0.001     | 0.001     | 0.001     | 0.001     | 0.001     | 0.006     |
+|      | BRC | 0.436       | 0.238     | 0.168     | 0.063     | 0.032     | 0.018     | 0.011     | 0.008     | 0.005     | 0.020     |
+|      | VID | 0.867       | 0.092     | 0.037     | 0.005     | 0.000     | 0.000     | 0.000     | 0.000     | 0.000     | 0.000     |
+|      | LBF | 0.551       | 0.244     | 0.137     | 0.019     | 0.008     | 0.004     | 0.004     | 0.004     | 0.004     | 0.027     |
+|      | SBF | 0.473       | 0.269     | 0.144     | 0.057     | 0.028     | 0.004     | 0.004     | 0.004     | 0.004     | 0.013     |
+|      | LPF | 0.512       | 0.402     | 0.051     | 0.010     | 0.007     | 0.010     | 0.005     | 0.002     | 0.000     | 0.001     |
+|      | SPF | 0.201       | 0.185     | 0.177     | 0.171     | 0.166     | 0.077     | 0.015     | 0.002     | 0.002     | 0.005     |
+|      | ALF | 0.384       | 0.235     | 0.152     | 0.144     | 0.063     | 0.016     | 0.002     | 0.002     | 0.002     | 0.002     |
+|      | ORO | 0.432       | 0.252     | 0.149     | 0.084     | 0.046     | 0.018     | 0.006     | 0.004     | 0.004     | 0.004     |
 
-#+end_example
 #+ATTR_HTML: width="600" alt="image"
 [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png]]
 @<br style="clear:both;" />
