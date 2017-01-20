@@ -1401,6 +1401,45 @@ fi
          |------------+---------|
          |    1778.42 | 4712.81 |
 
+**** Spatial Cover
+- For the Cover, I used the data for friedman and also I ude data from Yañez et al.
+#+BEGIN_SRC R
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## ~              Total Sediment Cover By Box           ~ ##
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## Estimation of the total cover by area
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+
+  # data
+  lc   <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/location/Location_species.csv')
+  poly <- read.poly('/home/demiurgo/Documents/PhD/Polygonos/Map/Polygons_27042016.csv')
+  ##~ FUNCTIONAL GROUPS
+  lc <- FG(data = lc, column = 2)
+  ##~ Weight
+  lc <- WtoN(lc, 6, 9, 7)
+  ## By season
+  lc$season.vat <- with(lc,  ifelse(month %in% c(1,2,3),   1,
+                             ifelse(month %in% c(4, 5, 6), 2,
+                             ifelse(month %in% c(7,8,9),   3, 4))))
+  ## by Groups
+  lc.FG    <- split(lc, lc$FG)
+  names(lc.FG)
+  ## poly
+  lon <- as.matrix(poly$coor[, c(seq(from = 1, to = dim(poly$coor)[2], by = 2))])
+  lat <- as.matrix(poly$coor[, c(seq(from = 2, to = dim(poly$coor)[2], by = 2))])
+  names(lc.FG[[11]])
+  poly <- by.pol(poly, lc.FG, la = 5, lo = 4, sea = 11, mult = 10)
+
+  ## Only sumer sampling
+  loc      <- which(colnames(poly[[1]]$attrib) %in% c("COR", "ROC", "MA", "SAN", "BFF", "BCA"))
+  sed.type <- poly[[1]]$attrib[, loc] - 1
+  sed.prop <- sed.type / rowSums(sed.type, na.rm = T)
+  sed.prop[which(is.na(sed.prop), arr.ind = TRUE)] <- 0
+  ord      <- order(poly[[1]]$attrib[, 1])
+  ## this need to be polished
+  out      <- data.frame(box =  poly[[1]]$attrib[ord, 1], sed.prop[ord, ])
+  write.table(out, '/home/demiurgo/Documents/PhD/Functional_groups/location/Type.sed.csv', row.names = FALSE)
+ #+END_SRC
 **** Throphic relation
 ***** Availability matrix
   - I will leave this one for the last part
