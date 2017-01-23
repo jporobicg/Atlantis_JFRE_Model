@@ -1,0 +1,14 @@
+#
+#Atlantis2 Updated to Version 6045
+#
+#
+#
+#Atlantis path https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis Relative ^/Atlantis/trunk/atlantis
+#
+#
+#
+#Atlantis SVN Last Change Date 2016-06-29 14:23:15 +1000 (Wed, 29 Jun 2016)
+
+# Log file for run of Atlantis - only ecological errors and important events are recorded here #
+# Key to indices used in Atlantis, which may appear in logged errors here:
+atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
