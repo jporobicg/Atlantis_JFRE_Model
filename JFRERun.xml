@@ -42,7 +42,7 @@
     <Attribute AttributeName="flagannual_Mest" AttributeDescription="Write out mortality per predator annually (1) or not (0)" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="DiagnosticOutput" AttributeDescription="The diagnostic output settings">
-    <Attribute AttributeName="verbose" AttributeDescription="Detailed logged output" AttributeValue="0" AttributeType="Integer" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="verbose" AttributeDescription="Detailed logged output" AttributeValue="1" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkbox" AttributeDescription="Give detailed logged output for this box" AttributeValue="0" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstart" AttributeDescription="Start detailed logged output from this day in the model run" AttributeValue="366666660 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstop" AttributeDescription="Stop detailed logged output after this day in the model run" AttributeValue="366666660 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
