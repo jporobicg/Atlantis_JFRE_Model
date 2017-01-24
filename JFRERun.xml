@@ -97,7 +97,7 @@
     <Attribute AttributeName="debug_it" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="GroupOptions" AttributeDescription="Parameters defining the numbers of certain types of groups.">
-    <Attribute AttributeName="K_num_tot_sp" AttributeDescription="Total number of groups in the model" AttributeValue="35" AttributeType="Integer" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="K_num_tot_sp" AttributeDescription="Total number of groups in the model" AttributeValue="34" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="K_num_stocks_per_sp" AttributeDescription="Maximum number of stocks per group in the model" AttributeValue="2" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="K_num_detritus" AttributeDescription="Total number of detritus groups in the model (labile and refractory; water column and sediments)" AttributeValue="3" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="K_num_bed_types" AttributeDescription="Maximum number of seabed types (currently only reef, soft and flat)" AttributeValue="3" AttributeType="Integer" AttributeRecommendedValue="0"/>
@@ -112,6 +112,6 @@
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="ScaleGroupDensities" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0">
     <Attribute AttributeName="flagscaleinit" AttributeDescription="Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="1"/>
-    <Attribute AttributeName="init_scalar" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0" AttributeValue="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1" AttributeType="FloatArray" ArrayLength="35"/>
+    <Attribute AttributeName="init_scalar" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0" AttributeValue="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1" AttributeType="FloatArray" ArrayLength="34"/>
   </AttributeSubGroup>
 </AttributeGroup>
