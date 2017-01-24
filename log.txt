@@ -11,4 +11,4 @@
 
 # Log file for run of Atlantis - only ecological errors and important events are recorded here #
 # Key to indices used in Atlantis, which may appear in logged errors here:
-atlantisMerged -i JFRE.ini_bec.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
