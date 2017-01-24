@@ -11,9 +11,19 @@ then
     cp -a log.txt Calibration/$now.bak
     echo "...Done"
     echo " =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  = "
-    echo " Automatic Git commit"
-    git commit -a -m "Automatic backup $now"
-    echo "Done!"
+    echo " Do you want and automatic commit? (Y)ES or (N)OT and press [ENTER]"
+    read answer
+    if [ $answer == "N" ];
+    then
+	echo "Enter your comit and the press [ENTER]"
+	read comm
+	git commit -a -m "$comm"
+	echo " Done!"
+    else
+	echo " Automatic Git commit was done "
+	git commit -a -m "Automatic backup $now"
+	echo "Done!"
+    fi
 fi
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##

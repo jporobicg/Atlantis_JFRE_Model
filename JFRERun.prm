@@ -80,7 +80,7 @@ flag_replicated_old 0	 # Flag when set to 1, the new code are not applied and th
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 # Parameters defining the numbers of certain types of groups (needed to  parameter arrays in the
 # initialisation section of the model, best left untouched for now)
-K_num_tot_sp        35     # total number of biological groups in the model - must match the number of groups defined in your functional group definition file.
+K_num_tot_sp        34     # total number of biological groups in the model - must match the number of groups defined in your functional group definition file.
 K_num_stocks_per_sp 2  	   # maximum number of stocks per group in the model
 K_num_bed_types     3      # maximum number of seabed types (currently only reef, soft and flat) 3
 K_num_cover_types   6 	   # maximum number of habitat types. Should be equal to K_num_bed_types + number of cover groups in your function def input file + 1( canyons ).
@@ -103,5 +103,5 @@ K_num_catchqueue  7    # Length (in days) of list of catches used in running ave
 # Parameters for rescalingin inital vertebrate densities - only for use in emergencies,
 # should really update the cdf file instead
 flagscaleinit     0  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)
-init_scalar       35
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+init_scalar       34
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
