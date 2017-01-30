@@ -11,7 +11,7 @@
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="4"/>
     <Attribute AttributeName="NumStocks" AttributeValue="2"/>
-    <Attribute AttributeName="VerticallyMigrates" AttributeValue="0"/>
+    <Attribute AttributeName="VerticallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="HorizontallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
@@ -67,7 +67,7 @@
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="4"/>
     <Attribute AttributeName="NumStocks" AttributeValue="2"/>
-    <Attribute AttributeName="VerticallyMigrates" AttributeValue="0"/>
+    <Attribute AttributeName="VerticallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="HorizontallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
