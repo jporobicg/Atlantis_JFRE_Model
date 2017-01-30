@@ -1,4 +1,8 @@
 #!/bin/bash
+## instaling Atlantis for functionality
+sudo make install -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis
+
+
 ## This Code make an aumotamic backup of the log file
 ## The backup is do in it at the end of the run
 datIni="$(date +'%Y%m%d%H%M%S')"
