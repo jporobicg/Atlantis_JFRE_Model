@@ -1,9 +1,7 @@
 #!/bin/bash
 ## instaling Atlantis for functionality
 
-./configure /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis
-make /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis
-sudo make install /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis
+sudo make install /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 
 
 ## This Code make an aumotamic backup of the log file
@@ -15,12 +13,6 @@ dateinicio="$(date +'%Y-%m-%d %H:%M:%S')"
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm  -s JFREGroups.csv
 
-#lback=$(ls Calibration/ -t1 |  head -n 1)
-#filo=$(stat -c %Y Calibration/$lback)
-#cur=$(stat -c %Y log.txt)
-
-#if [ $filo -ne $cur ];
-#then
 ## Backup of the log.txt file
 echo "++++++++++++++++++++++++++++++++++++++++"
 echo "  A Copy of the Log file as been made  "

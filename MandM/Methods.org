@@ -58,8 +58,8 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 - [X] aclocal
 - [X] autoconf
 - [X] automake -a               # I have some problems with this section
-- [X] autoreconf  -fvi               # you can use this instead of the other ones
-- [X] sudo chmod +x configure   #  Change the permissions to the configure script
+- [X] autoreconf  -fvi          # you can use this instead of the other ones
+- [X] sudo chmod +x configure   # Change the permissions to the configure script
 - [X] ./configure
 - [X] make
 - [X] sudo make install
