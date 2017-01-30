@@ -2,6 +2,7 @@
 ## This Code make an aumotamic backup of the log file
 ## The backup is do in it at the end of the run
 datIni="$(date +'%Y%m%d%H%M%S')"
+dateinicio="$(date +'%Y-%m-%d %H:%M:%S')"
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           Running Atlantis JFRE        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -18,6 +19,7 @@ echo "++++++++++++++++++++++++++++++++++++++++"
 echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
 datEnd="$(date +'%Y%m%d%H%M%S')"
+dateend="$(date +'%Y-%m-%d %H:%M:%S')"
 cp -a log.txt Calibration/$datEnd.bak
 echo "...Done"
 
@@ -26,8 +28,8 @@ osver=$(cat /etc/issue.net)
 
 ## Writint the information of the run in the RunTrack.org file
 echo "* Run $datIni" >> RunTrack.org
-echo "  - Run start: $datIni">> RunTrack.org
-echo "  - Run end: $datEnd">> RunTrack.org
+echo "  - Run start: $dateinicio">> RunTrack.org
+echo "  - Run end: $dateend">> RunTrack.org
 echo "  - log file : [[file:Calibration/$datEnd.bak][Backupfile]]">> RunTrack.org
 echo "  - OS : $osver">> RunTrack.org
 echo "  - Compiler version : gcc $(gcc -dumpversion)">> RunTrack.org
