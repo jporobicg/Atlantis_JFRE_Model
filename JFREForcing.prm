@@ -23,6 +23,7 @@ temp_rewind       0
 use_saltfiles   1  # Salinity time series data file
 nsaltfiles 	1  # The number of salinity files
 Salinity0.name 	Inputs/Forcing_Hydro/JFRE_salt.nc
+salt_rewind     0
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Larval dispersion      ~ ##
