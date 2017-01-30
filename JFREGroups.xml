@@ -621,7 +621,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="BFF"/>
