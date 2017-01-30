@@ -20,3 +20,8 @@ WARNING - Sum of dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01
 WARNING - Sum of nominal_dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
 WARNING - Sum of dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
 WARNING - Sum of nominal_dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+Reading in linear mortality time series forcing file
+Reading in size change time series forcing file
+Reading in growth rate time series forcing file
+Reading in FSPB time series forcing file
+Reading in pCO2 time series forcing file
