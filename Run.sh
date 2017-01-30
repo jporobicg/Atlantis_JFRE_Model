@@ -28,7 +28,7 @@ osver=$(cat /etc/issue.net)
 echo "* Run $datIni" >> RunTrack.org
 echo "  - Run start: $datIni">> RunTrack.org
 echo "  - Run end: $datEnd">> RunTrack.org
-echo "  - log file : [[file:/Calibration/$datEnd.bak][Backupfile]]">> RunTrack.org
+echo "  - log file : [[file:Calibration/$datEnd.bak][Backupfile]]">> RunTrack.org
 echo "  - OS : $osver">> RunTrack.org
 echo "  - Compiler version : gcc $(gcc -dumpversion)">> RunTrack.org
 echo "  - Bash Version : $BASH_VERSION">> RunTrack.org
