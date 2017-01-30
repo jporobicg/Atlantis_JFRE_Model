@@ -648,7 +648,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="LPH"/>
@@ -675,7 +675,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="SPH"/>
@@ -702,7 +702,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="COR"/>
@@ -729,7 +729,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="BCA"/>
@@ -756,7 +756,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="MOL"/>
@@ -783,7 +783,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="MA"/>
@@ -810,7 +810,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="PB"/>
@@ -837,7 +837,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="BB"/>
@@ -864,7 +864,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="DL"/>
@@ -891,7 +891,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="DR"/>
@@ -918,7 +918,7 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
     <Attribute AttributeName="GroupCode" AttributeValue="DC"/>
@@ -945,6 +945,6 @@
     <Attribute AttributeName="OverWinters" AttributeValue="0"/>
     <Attribute AttributeName="isCultured" AttributeValue="0"/>
     <Attribute AttributeName="isHabDepend" AttributeValue="0"/>
-    <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
+    <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
 </AttributeGroup>
