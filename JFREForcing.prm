@@ -51,7 +51,7 @@ npointss 0
 #Evaporation   inputs/meteor/84-95.nc
 
 ts_on_hydro_time 1
-
+inputs_tout 10 day
 #############################################
 # Historical catch lists - nCatchts is the number of time series to be loaded and
 # typeCatchts is whether or not the data is to be interpolated (0) by the model
