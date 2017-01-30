@@ -34,6 +34,7 @@ echo "  - log file : [[file:Calibration/$datEnd.bak][Backupfile]]">> RunTrack.or
 echo "  - OS : $osver">> RunTrack.org
 echo "  - Compiler version : gcc $(gcc -dumpversion)">> RunTrack.org
 echo "  - Bash Version : $BASH_VERSION">> RunTrack.org
+echo "  - Atlantis Version : $atlantisMerged -v">> RunTrack.org
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo " Do you want and automatic commit? (Y)ES or (N)OT and press [ENTER]"
