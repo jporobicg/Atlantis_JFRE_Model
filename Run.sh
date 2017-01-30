@@ -1,7 +1,7 @@
 #!/bin/bash
 ## This Code make an aumotamic backup of the log file
 ## The backup is do in it at the end of the run
-datIni="$(date +'%Y%m%d%H%I')"
+datIni="$(date +'%Y%m%d%H%M%S')"
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           Running Atlantis JFRE        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -17,7 +17,7 @@ atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.p
 echo "++++++++++++++++++++++++++++++++++++++++"
 echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
-datEnd="$(date +'%Y%m%d%H%I')"
+datEnd="$(date +'%Y%m%d%H%M%S')"
 cp -a log.txt Calibration/$datEnd.bak
 echo "...Done"
 
