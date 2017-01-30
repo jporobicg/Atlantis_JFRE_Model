@@ -1,6 +1,6 @@
 #!/bin/bash
 ## instaling Atlantis for functionality
-
+sudo make clean /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 sudo make install /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 
 
