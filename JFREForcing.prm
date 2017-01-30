@@ -15,6 +15,7 @@ hd0.name Inputs/Forcing_Hydro/JFRE_hydro.nc
 use_tempfiles     1  # Temperature time series data file
 ntempfiles    	  1  # The number of temperature input files
 Temperature0.name Inputs/Forcing_Hydro/JFRE_temp.nc
+temp_rewind       0
 
 ## ~~~~~~~~~~~~~~~~~~ ##
 ## ~     Salinity   ~ ##
