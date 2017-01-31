@@ -2668,6 +2668,12 @@ SBF_ReturnStock 1
 0
 LBF_ReturnStock 1
 0
+SZO_ReturnStock 1
+0
+MZO_ReturnStock 1
+0
+LZO_ReturnStock 1
+0
 
 # Large zooplankton external/migration survivorship - proportion of migrating biomass that return to the model domain
 SZO_FSM 1
@@ -2996,6 +3002,8 @@ KMIGa_INVERT_SCR 1
 KMIGa_INVERT_MOL 1
 0
 KMIGa_INVERT_BCA 1
+0
+KMIGa_SZO 1
 0
 # from B1
 # Numbers per age group
