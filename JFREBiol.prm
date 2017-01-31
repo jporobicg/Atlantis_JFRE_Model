@@ -1646,6 +1646,41 @@ DL_maxdepth   4300
 DR_maxdepth   4300
 DC_maxdepth   4300
 
+SPL_maxdepth  100000
+GCR_maxdepth  100000
+BRC_maxdepth  100000
+ORO_maxdepth  100000
+VID_maxdepth  100000
+ANG_maxdepth  100000
+ALF_maxdepth  100000
+CHO_maxdepth  100000
+OTA_maxdepth  100000
+CET_maxdepth  100000
+DOL_maxdepth  100000
+BIR_maxdepth  100000
+OCT_maxdepth  100000
+SQD_maxdepth  100000
+COR_maxdepth  100000
+LPF_maxdepth  100000
+SPF_maxdepth  100000
+SBF_maxdepth  100000
+LBF_maxdepth  100000
+MZO_maxdepth  100000
+SZO_maxdepth  100000
+LZO_maxdepth  100000
+SCR_maxdepth  100000
+BFF_maxdepth  100000
+LPH_maxdepth  100000
+SPH_maxdepth  100000
+BCA_maxdepth  100000
+MOL_maxdepth  100000
+MA_maxdepth   100000
+PB_maxdepth   100000
+BB_maxdepth   100000
+DL_maxdepth   100000
+DR_maxdepth   100000
+DC_maxdepth   100000
+
 # Home range radius (m) for each group
 SPL_homerangerad     1
 GCR_homerangerad     1
