@@ -1404,29 +1404,9 @@ juv_habitat_ALF 6
 0 0 1 1 1 1
 ad_habitat_ALF 6
 0 0 1 1 1 1
-juv_habitat_CHO 6
-0 0 1 1 1 1
-ad_habitat_CHO 6
-0 0 1 1 1 1
 juv_habitat_OTA 6
 0 0 1 1 1 1
 ad_habitat_OTA 6
-0 0 1 1 1 1
-juv_habitat_CET 6
-0 0 1 1 1 1
-ad_habitat_CET 6
-0 0 1 1 1 1
-juv_habitat_DOL 6
-0 0 1 1 1 1
-ad_habitat_DOL 6
-0 0 1 1 1 1
-habitat_BIR 6
-0 0 1 1 1 1
-habitat_OCT 6
-0 0 1 1 1 1
-habitat_SQD 6
-0 0 1 1 1 1
-habitat_COR 6
 0 0 1 1 1 1
 ad_habitat_LPF 6
 0 0 1 1 1 1
@@ -1444,6 +1424,20 @@ ad_habitat_LBF 6
 0 0 1 1 1 1
 juv_habitat_LBF 6
 1 1 1 1 1 1
+habitat_CHO 6
+0 0 1 1 1 1
+habitat_CET 6
+0 0 1 1 1 1
+habitat_DOL 6
+0 0 1 1 1 1
+habitat_BIR 6
+0 0 1 1 1 1
+habitat_OCT 6
+0 0 1 1 1 1
+habitat_SQD 6
+0 0 1 1 1 1
+habitat_COR 6
+0 0 1 1 1 1
 habitat_MZO 6
 0 0 1 1 1 1
 habitat_SZO 6
