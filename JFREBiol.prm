@@ -381,6 +381,7 @@ BRC_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit m
 ORO_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ANG_ddepend_move 3 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BIR_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OTA_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
