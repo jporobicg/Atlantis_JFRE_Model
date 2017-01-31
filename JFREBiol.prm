@@ -70,6 +70,9 @@ UseHardFeedingWindow 	   0    Whether to use Heaviside based feeding window (1) 
 UseBiLogisticFeedingWindow 1
 flag_fine_ontogenetic_diets 0
 flag_report_water_detritus  0
+flag_shrinkfat              0
+flag_predratiodepend        0
+
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
