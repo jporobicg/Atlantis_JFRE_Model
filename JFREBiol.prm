@@ -5494,7 +5494,8 @@ flag_invert_biohab 0
 #flag indicating which refugia model to use
 # refuge_model option: 0 = none, 1 = original, 2 is rugosity related
 flag_refuge_model 2
-
+## Rugosity based habitat dependency scalar
+SPL_RugCover_scalar 0.05
 #flag indicating which rugosity model to use
 # rugosity_model option: 0 = none, 1 = mechanistic, 2 is an empirical relationship from Blackwood
 flag_rugosity_model 0
