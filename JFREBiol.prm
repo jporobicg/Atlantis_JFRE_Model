@@ -2324,11 +2324,11 @@ LZO_max_move_salt 40.0
 
 # Day of year large zooplankton leave the model domain
 SZO_Migrate_Time 1
-0
+364
 LZO_Migrate_Time 1
-0
+364
 MZO_Migrate_Time 1
-0
+364
 
 # Juvenile migration times - days of the year juvenile stages of each group leave the model domain
 jSPL_Migrate_Time 1
@@ -2561,6 +2561,13 @@ SBF_Migrate_Period 1
 0
 LBF_Migrate_Period 1
 0
+SZO_Migrate_Period 1
+0
+LZO_Migrate_Period 1
+0
+MZO_Migrate_Period 1
+0
+
 
 k_migslow 1 0 = all migrators leave at once, 1 = migrators leave gradually 0
 
