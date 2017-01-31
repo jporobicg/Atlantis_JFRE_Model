@@ -34,6 +34,8 @@ flagBFSlim     1 Switch to identify filter feeding crowding used: simple=0, ERSE
 flagBFDlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBFFlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBCAlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagMOLlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+
 flagBClim      0
 
 # Those determining which environmental
