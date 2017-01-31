@@ -85,6 +85,9 @@ Kca_const		    10
 K_Ks			    10
 Ksmother_coefft		    10
 Ksmother_const		    10
+MA_coral_overgrow 	    0.001 # Rate macroalgae overgrow coral d-1
+MA_coral_compete	    0.001 # Rate macroalgae overgrow coral d-1
+
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
 flagdemSPL  0  SPL: 1 = on, 0 = off 1
@@ -1309,7 +1312,7 @@ MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on sub
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
 KI_SPH_T15  10  Light saturation, Small phytoplankton W m-2 10 - 20
 KI_MA_T15   3   Light saturation, macroalgae W m-2 5
-KI_COR_T15   3   Light saturation, macroalgae W m-2 5
+KI_COR_T15  3   Light saturation, CORALS W m-2 5
 
 # Eddy impact
 eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 1
