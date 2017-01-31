@@ -2573,7 +2573,7 @@ MZO_Migrate_Period 1
 0
 
 
-k_migslow 1 0 = all migrators leave at once, 1 = migrators leave gradually 0
+k_migslow 1  # 0 = all migrators leave at once, 1 = migrators leave gradually 0
 
 # Juvenile migration return stock - set value to the integer number identifiying the stock
 # the immigrating individuals enter. If set to 0 then the returning individuals will be
