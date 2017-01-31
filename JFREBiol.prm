@@ -2521,24 +2521,24 @@ SBF_Migrate_Return 1
 LBF_Migrate_Return 1
 
 # Adult migration periods - period of time migrating adult stages exit/enter over
-# SPL_Migrate_Period 1
-# 0
-# GCR_Migrate_Period 1
-# 0
-# BRC_Migrate_Period 1
-# 0
-# VID_Migrate_Period 1
-# 30
-# ORO_Migrate_Period 1
-# 0
-# ALF_Migrate_Period 1
-# 0
-# ANG_Migrate_Period 1
-# 0
-# CHO_Migrate_Period 1
-# 0
-# OTA_Migrate_Period 1
-# 0
+SPL_Migrate_Period 1.0
+0
+GCR_Migrate_Period 1
+0
+BRC_Migrate_Period 1
+0
+VID_Migrate_Period 1
+30
+ORO_Migrate_Period 1
+0
+ALF_Migrate_Period 1
+0
+ANG_Migrate_Period 1
+0
+CHO_Migrate_Period 1
+0
+OTA_Migrate_Period 1
+0
 CET_Migrate_Period 1
 30
 DOL_Migrate_Period 1
