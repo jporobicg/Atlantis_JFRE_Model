@@ -659,3 +659,13 @@
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed maxdepth for DOL
+* Run 20170131160226
+  - Run start: 2017-01-31 16:02:26
+  - Run end: 2017-01-31 16:02:35
+  - log file : [[file:Calibration/20170131160235.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv

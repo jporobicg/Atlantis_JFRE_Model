@@ -1603,7 +1603,6 @@ SPH_mindepth  0
 LPH_mindepth  0
 BCA_mindepth  0
 MOL_mindepth  0
-NO_mindepth   0
 MA_mindepth   0
 PB_mindepth   0
 BB_mindepth   0
@@ -1633,14 +1632,13 @@ SBF_maxdepth  1000
 LBF_maxdepth  900
 MZO_maxdepth  4300
 SZO_maxdepth  4300
-LSO_maxdepth  4300
+LZO_maxdepth  4300
 SCR_maxdepth  700
 BFF_maxdepth  4300
 LPH_maxdepth  4300
 SPH_maxdepth  4300
 BCA_maxdepth  150
 MOL_maxdepth  4300
-NO_maxdepth   4300
 MA_maxdepth   4300
 PB_maxdepth   4300
 BB_maxdepth   4300
