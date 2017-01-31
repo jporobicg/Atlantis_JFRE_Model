@@ -11,7 +11,7 @@
 
 # Log file for run of Atlantis - only ecological errors and important events are recorded here #
 # Key to indices used in Atlantis, which may appear in logged errors here:
-atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+/usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
 WARNING - Sum of dz (4.300000e+03) in box 0 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
 WARNING - Sum of dz (4.300000e+03) in box 2 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
 WARNING - Sum of dz (4.300000e+03) in box 3 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
