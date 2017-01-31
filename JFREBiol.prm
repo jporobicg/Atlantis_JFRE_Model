@@ -114,6 +114,7 @@ flagplankfishBRC   1 # Flag to indicate if is planktivore  Breca [ Number ]
 flagplankfishVID   0 # Flag to indicate if is planktivore  Vidriola [ Number ]
 flagplankfishORO   0 # Flag to indicate if is planktivore  Orange Roughy [ Number ]
 flagplankfishALF   1 # Flag to indicate if is planktivore  Alfonsino [ Number ]
+flagplankfishBIR   0 # Flag to indicate if is planktivore  Birds [ Number ]
 flagplankfishANG   0 # Flag to indicate if is planktivore  Anguila [ Number ]
 flagplankfishCHO   0 # Flag to indicate if is planktivore  Chondrichtyans [ Number ]
 flagplankfishOTA   0 # Flag to indicate if is planktivore  Otariid [ Number ]
@@ -1324,7 +1325,8 @@ MAmax   4000  Maximum macroalgal biomass mg N m-2 10000
 # growth for now
 SCRmax   10000         Maximum small crustacean biomass mg N m-2 10000
 BFFmax   400000       Maximum deposit feeder biomass mg N m-2 500000
-MOLmax   1000000000   Maximum infauna carnivore biomass mg N m-2 Unlimited
+MOLmax   1000000000   Maximum Molusk mg N m-2 Unlimited
+BCAmax   1000000000   Maximum Benthic carnivorous mg N m-2 Unlimited
 
 # Threshold spatial factors for filter feeders if using ERSEM formulation
 BFFS_low     500    Little space limitation (pop too small) mg.N.m-2 2500
