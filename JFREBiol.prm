@@ -1318,6 +1318,7 @@ eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 
 KN_LPH   10    Half-sat const for large phytoplankton growth on DIN mg N m-3 10
 KN_SPH   10    Half-sat const for small phytoplankton phy growth on DIN mg N m-3 10
 KN_MA    10    Half-sat const for MA growth on DIN mg N m-3 20
+KN_COR   10    Half-sat const for MA growth on DIN mg N m-3 20
 # KS
 KS_LPH   1     Half-sat const for small phytoplankton on Si mg Si m-3 20
 KS_SPH   1     Half-sat const for large phytoplankton on Si mg Si m-3 20
