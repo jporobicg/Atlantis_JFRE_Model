@@ -397,6 +397,9 @@ LBF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit m
 SCR_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BCA_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 MOL_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 
 # Identifier indicating whether vertebrate group seeks channels during low tide - in tidal models
 flagchannelBRC 0
