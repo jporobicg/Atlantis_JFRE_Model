@@ -83,7 +83,8 @@ Karag_C			    10
 Karag_pH		    10
 Kca_const		    10
 K_Ks			    10
-
+Ksmother_coefft		    10
+Ksmother_const		    10
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
 flagdemSPL  0  SPL: 1 = on, 0 = off 1
@@ -5250,6 +5251,8 @@ flag_bound_change     0        Whether evolution is effecting bound (1) or impac
 evol_stdev_range      2.0      Range of genotypes in terms of stdev                                     1-2
 max_rate_evol         0.0      Maximum evolutionary shift at any one point in time
 flag_inheritance      1        Flag indicating whether complex (0), simple (1) or straight (2) inheritance model used (1)
+flag_evolvar_capped   0        Whether the variability in the trait has a minimum threshold (1) or not (0)
+flag_do_var_express   0	       Flag indicating whether do variable phenotypic evolution (1) or not (0)
 
 trait_active_SPL   8 # Active traits for Spiny lobster
 0 0 0 0 0 0 0 0
