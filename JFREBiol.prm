@@ -444,6 +444,10 @@ flagLBFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of t
 flagSCRMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
 flagBCAMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
 flagMOLMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+flagMZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+flagLZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+
 
 # Predation formulation switches. 0=Holling type II, 1=Holling type I, 2=Holling type III,
 # 3=ECOSIM (currently disabled), 4=min-max, 5=Size specific Holling type III
@@ -2324,11 +2328,11 @@ LZO_max_move_salt 40.0
 
 # Day of year large zooplankton leave the model domain
 SZO_Migrate_Time 1
-364
+0
 LZO_Migrate_Time 1
-364
+0
 MZO_Migrate_Time 1
-364
+0
 
 # Juvenile migration times - days of the year juvenile stages of each group leave the model domain
 jSPL_Migrate_Time 1
@@ -2668,12 +2672,6 @@ SBF_ReturnStock 1
 0
 LBF_ReturnStock 1
 0
-SZO_ReturnStock 1
-0
-MZO_ReturnStock 1
-0
-LZO_ReturnStock 1
-0
 
 # Large zooplankton external/migration survivorship - proportion of migrating biomass that return to the model domain
 SZO_FSM 1
@@ -3003,8 +3001,7 @@ KMIGa_INVERT_MOL 1
 0
 KMIGa_INVERT_BCA 1
 0
-KMIGa_SZO 1
-0
+
 # from B1
 # Numbers per age group
 KMIGa_SPL 10
