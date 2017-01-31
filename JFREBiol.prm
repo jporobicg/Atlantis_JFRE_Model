@@ -2519,6 +2519,7 @@ SPF_Migrate_Return 1
 SBF_Migrate_Return 1
 0
 LBF_Migrate_Return 1
+0
 
 # Adult migration periods - period of time migrating adult stages exit/enter over
 SPL_Migrate_Period 1
