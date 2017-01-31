@@ -1356,6 +1356,7 @@ MAmax   4000  Maximum macroalgal biomass mg N m-2 10000
 # These MBmax is used only as a relative measure for habitat calculations it does not constrain MB
 # growth for now
 SCRmax   10000         Maximum small crustacean biomass mg N m-2 10000
+CORmax   10000         Maximum small crustacean biomass mg N m-2 10000
 BFFmax   400000       Maximum deposit feeder biomass mg N m-2 500000
 MOLmax   1000000000   Maximum Molusk mg N m-2 Unlimited
 BCAmax   1000000000   Maximum Benthic carnivorous mg N m-2 Unlimited
@@ -5494,34 +5495,34 @@ flag_invert_biohab 0
 # refuge_model option: 0 = none, 1 = original, 2 is rugosity related
 flag_refuge_model 2
 ## Rugosity based habitat dependency scalar
-SPL_RugCover_scalar 0.1
-GCR_RugCover_scalar 0.1
-BRC_RugCover_scalar 0.1
-VID_RugCover_scalar 0.1
-ORO_RugCover_scalar 0.1
-ALF_RugCover_scalar 0.1
-ANG_RugCover_scalar 0.1
-CHO_RugCover_scalar 0.1
-OTA_RugCover_scalar 0.1
-CET_RugCover_scalar 0.1
-DOL_RugCover_scalar 0.1
-BIR_RugCover_scalar 0.1
-OCT_RugCover_scalar 0.1
-SQD_RugCover_scalar 0.1
+SPL_RugCover_scalar 0.2
+GCR_RugCover_scalar 0.2
+BRC_RugCover_scalar 0.05
+VID_RugCover_scalar 0.0001
+ORO_RugCover_scalar 0.01
+ALF_RugCover_scalar 0.01
+ANG_RugCover_scalar 0.05
+CHO_RugCover_scalar 0.0001
+OTA_RugCover_scalar 0.00001
+CET_RugCover_scalar 0.00000001
+DOL_RugCover_scalar 0.00000001
+BIR_RugCover_scalar 0.0000000001
+OCT_RugCover_scalar 0.05
+SQD_RugCover_scalar 0.05
 COR_RugCover_scalar 0.1
-LPF_RugCover_scalar 0.1
-SPF_RugCover_scalar 0.1
+LPF_RugCover_scalar 0.0001
+SPF_RugCover_scalar 0.0001
 SBF_RugCover_scalar 0.1
 LBF_RugCover_scalar 0.1
-SZO_RugCover_scalar 0.1
-MZO_RugCover_scalar 0.1
-LZO_RugCover_scalar 0.1
-SCR_RugCover_scalar 0.1
-BFF_RugCover_scalar 0.1
-LPH_RugCover_scalar 0.1
-SPH_RugCover_scalar 0.1
-BCA_RugCover_scalar 0.1
-MOL_RugCover_scalar 0.1
+SZO_RugCover_scalar 0.01
+MZO_RugCover_scalar 0.01
+LZO_RugCover_scalar 0.01
+SCR_RugCover_scalar 0.2
+BFF_RugCover_scalar 0.2
+LPH_RugCover_scalar 0.01
+SPH_RugCover_scalar 0.01
+BCA_RugCover_scalar 0.2
+MOL_RugCover_scalar 0.2
 # MA_RugCover_scalar 0.1
 # PB_RugCover_scalar 0.1
 # BB_RugCover_scalar 0.1
