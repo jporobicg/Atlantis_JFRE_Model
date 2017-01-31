@@ -73,6 +73,16 @@ flag_report_water_detritus  0
 flag_shrinkfat              0
 flag_predratiodepend        0
 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~           parameter for corals        ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+K_max_num_DHW               10
+Karag_A			    10
+Karag_B			    10
+Karag_C			    10
+Karag_pH		    10
+Kca_const		    10
+K_Ks			    10
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
