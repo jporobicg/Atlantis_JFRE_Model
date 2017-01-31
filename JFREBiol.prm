@@ -499,8 +499,12 @@ flagMOLday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 # Bioturbation
 Enviro_turb  0.000002  Background level of bioturbation (physcial mixing) 0.000002
 K_TUR        116       Half saturation of bioturbation 116
+KTUR_SCR     0.5       Bioturbation contribution by Small Crustacean
 KTUR_BFF     0.5       Bioturbation contribution by Deposit feeders
 KTUR_MOL     0.5       Bioturbation contribution by mollusca
+KTUR_SPL     0.5       Bioturbation contribution by Spiny lobster
+KTUR_GCR     0.5       Bioturbation contribution by Golden Crab
+KTUR_BCA     0.5       Bioturbation contribution by BCA
 K_TUR_DEP    0.02      Bioturbation depth m 0.02
 K_MAX_TUR    10        Maximum contributions to bioturbation 10
 
@@ -509,6 +513,9 @@ K_IRR     101   Half saturation of bioirrigation 101
 KIRR_SCR  1   	Bioirrigation contribution by Small crustacean
 KIRR_BFF  1   	Bioirrigation contribution by deposit feeders 1
 KIRR_MOL  0.2   Bioirrigation contribution by mollusca
+KIRR_SPL  0.01   Bioturbation contribution by Spiny lobster
+KIRR_GCR  0.01   Bioturbation contribution by Golden Crab
+KIRR_BCA  0.05   Bioturbation contribution by BCA
 K_MAX_IRR 10   	Maximum contributions to bioirrigation 10
 K_MIN_IRR 2   	Minimum contributions to bioirrigation 2
 
