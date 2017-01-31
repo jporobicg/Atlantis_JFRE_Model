@@ -1332,15 +1332,16 @@ MOLmax   1000000000   Maximum Molusk mg N m-2 Unlimited
 BCAmax   1000000000   Maximum Benthic carnivorous mg N m-2 Unlimited
 
 # Threshold spatial factors for filter feeders if using ERSEM formulation
-BFFS_low     500    Little space limitation (pop too small) mg.N.m-2 2500
-BFFS_sat     3000   Interference to uptake due to shading mg.N.m-2 3000
-BFFSthresh   5000   mg.N.m-2 1000
-BFFD_low     200    Little space limitation (pop too small) mg.N.m-2 2000
-BFFD_sat     3000   Interference to uptake due to shading mg.N.m-2 2500
-BFFDthresh   5000   mg.N.m-2 1000
-BFFF_low     200    Little space limitation (pop too small) mg.N.m-2 2000
-BFFF_sat     3000   Interference to uptake due to shading mg.N.m-2 2500
-BFFFthresh   5000   mg.N.m-2 1000
+BFF_low    200  Little space limitation (pop too small) mg.N.m-2 2000
+BFF_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
+BFFthresh  5000  mg.N.m-2 1000
+BCA_low    200  Little space limitation (pop too small) mg.N.m-2 2000
+BCA_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
+BCAthresh  5000  mg.N.m-2 1000
+MOL_low    200  Little space limitation (pop too small) mg.N.m-2 2000
+MOL_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
+MOLthresh  5000  mg.N.m-2 1000
+
 
 # Habitat dependency parameters
 # Vectors indicating which habitats each group prefers. 1=group lives on the habitat, 0=not present.
