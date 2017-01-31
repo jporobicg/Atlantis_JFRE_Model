@@ -39,6 +39,24 @@ Larval0.name 	Inputs/Larval_disp/LarvalDispersal.nc
 Solar_radiation Inputs/Solar/SolarJFRE.ts
 Solar_radiation_rewind 1
 
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~        Ph time series    ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+use_phFiles 0
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~       Force Tracers    ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+use_force_tracers 0
+
+## ~~~~~~~~~~~~~~ ##
+## ~    Tracers ~ ##
+## ~~~~~~~~~~~~~~ ##
+# The number of tracers to search for in the files and the names of those tracers.
+nforceTracers 0
+tracerNames 0
+
 # Bottom stress
 # BottomStress inputs/stress/stress.nc
 # BottomStress inputs/stress/nxstress.nc
