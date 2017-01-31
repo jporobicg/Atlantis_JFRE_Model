@@ -4082,6 +4082,8 @@ mS_MA_T15  0  #  Scour (bottom stress) macroalgae mortality [d-1]
 # Terminal (senescence mortality) for biomass pools (proportion of terminal age group dying)
 mT_OCT        1.0
 mT_SQD        1.0
+## This approach caps the clearance rate at the value of mum/E, where E is the assimilation efficiency
+flag_satiation 0
 
 # Starvation mortality for fish (based on condition)
 mStarve_SPL   1e-04 # Starvation mortality for Spiny lobster [ d-1 ]
