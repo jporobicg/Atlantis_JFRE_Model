@@ -1622,7 +1622,7 @@ ALF_maxdepth  650
 CHO_maxdepth  700
 OTA_maxdepth  255
 CET_maxdepth  4300
-CET_maxdepth  200
+DOL_maxdepth  200
 BIR_maxdepth  5
 OCT_maxdepth  200
 SQD_maxdepth  3000
