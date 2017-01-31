@@ -107,19 +107,27 @@ flagdemDR   1 DR: 1 = on, 0 = off 1
 flagdemDC   1 DC: 1 = on, 0 = off 1
 
 # Flag indicating whether or not the vertebrate is a planktivore
-flagplankfishBRC  0  BRC: 1 = yes, 0 = no 1
-flagplankfishORO  0  ORO: 1 = yes, 0 = no 1
-flagplankfishVID  0  VID: 1 = yes, 0 = no 1
-flagplankfishANG  0  ANG: 1 = yes, 0 = no 1
-flagplankfishALF  1  ALF: 1 = yes, 0 = no 1
-flagplankfishCHO  0  CHO: 1 = yes, 0 = no 1
-flagplankfishOTA  0  OTA: 1 = yes, 0 = no 1
-flagplankfishCET  1  CET: 1 = yes, 0 = no 1
-flagplankfishDOL  0  DOL: 1 = yes, 0 = no 1
-flagplankfishLPF  0  LPF: 1 = yes, 0 = no 1
-flagplankfishSPF  1  SPF: 1 = yes, 0 = no 1
-flagplankfishSBF  0  SBF: 1 = yes, 0 = no 1
-flagplankfishLBF  0  LBF: 1 = yes, 0 = no 1
+
+flagplankfishSPL   1 # Flag to indicate if is planktivore  Spiny lobster [ Number ]
+flagplankfishGCR   1 # Flag to indicate if is planktivore  Golden Crab [ Number ]
+flagplankfishBRC   1 # Flag to indicate if is planktivore  Breca [ Number ]
+flagplankfishVID   0 # Flag to indicate if is planktivore  Vidriola [ Number ]
+flagplankfishORO   0 # Flag to indicate if is planktivore  Orange Roughy [ Number ]
+flagplankfishALF   1 # Flag to indicate if is planktivore  Alfonsino [ Number ]
+flagplankfishANG   0 # Flag to indicate if is planktivore  Anguila [ Number ]
+flagplankfishCHO   0 # Flag to indicate if is planktivore  Chondrichtyans [ Number ]
+flagplankfishOTA   0 # Flag to indicate if is planktivore  Otariid [ Number ]
+flagplankfishDOL   0 # Flag to indicate if is planktivore  Dophins [ Number ]
+flagplankfishCET   1 # Flag to indicate if is planktivore  Whales [ Number ]
+flagplankfishLPF   0 # Flag to indicate if is planktivore  Large pelagic fish [ Number ]
+flagplankfishSPF   0 # Flag to indicate if is planktivore  Small pelagic fish [ Number ]
+flagplankfishSBF   0 # Flag to indicate if is planktivore  Small benthic fish [ Number ]
+flagplankfishLBF   0 # Flag to indicate if is planktivore  Large benthic fish [ Number ]
+flagplankfishSZO   1 # Flag to indicate if is planktivore
+flagplankfishMZO   1 # Flag to indicate if is planktivore
+flagplankfishLZO   1 # Flag to indicate if is planktivore
+flagplankfishSCR   1 # Flag to indicate if is planktivore  SCR: 1 = on, 0 = off 1
+flagplankfishBFF   1 # Flag to indicate if is planktivore  BFF: 1 = on, 0 = off 1
 
 # Recruitment flags
 flagtrecruitdistrib 1 0=humped recruit arrival distrib, 1=flat distrib of recruits 1
