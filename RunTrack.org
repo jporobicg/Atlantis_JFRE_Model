@@ -1,0 +1,382 @@
+* Run 201701301111
+  - Run start: 201701301111
+  - Run end: 201701301111
+  - log file : [[file:/Calibration/201701301111.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Automatic backup 201701301111
+* Run 201701301111
+  - Run start: 201701301111
+  - Run end: 201701301111
+  - log file : [[file:Calibration/201701301111.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Testing new bash File and Atlantis
+* Run 201701301111
+  - Run start: 201701301111
+  - Run end: 201701301111
+  - log file : [[file:Calibration/201701301111.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Changed the group definition file (.csv) the used of ("") was the problem with the file
+* Run 201701301111
+  - Run start: 201701301111
+  - Run end: 201701301111
+  - log file : [[file:Calibration/201701301111.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Automatic backup 201701301111
+* Run 20170130114752
+  - Run start: 20170130114752
+  - Run end: 20170130114754
+  - log file : [[file:Calibration/20170130114754.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Bash Run file fixed
+* Run 20170130115300
+  - Run start: 2017-01-30 11:53:00
+  - Run end: 2017-01-30 11:53:02
+  - log file : [[file:Calibration/20170130115301.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Commit Githhub : Change date storage
+* Run 20170130115747
+  - Run start: 2017-01-30 11:57:47
+  - Run end: 2017-01-30 11:57:49
+  - log file : [[file:Calibration/20170130115749.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version :  -v
+  - Commit Githhub : Automatic backup 20170130115749
+* Run 20170130115848
+  - Run start: 2017-01-30 11:58:48
+  - Run end: 2017-01-30 11:58:50
+  - log file : [[file:Calibration/20170130115850.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : 
+  - Commit Githhub : Automatic backup 20170130115850
+* Run 20170130122037
+  - Run start: 2017-01-30 12:20:37
+  - Run end: 2017-01-30 12:20:39
+  - log file : [[file:Calibration/20170130122039.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+* Run 20170130122111
+  - Run start: 2017-01-30 12:21:11
+  - Run end: 2017-01-30 12:21:12
+  - log file : [[file:Calibration/20170130122112.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Commit Githhub : Automatic backup 20170130122112
+* Run 20170130122253
+  - Run start: 2017-01-30 12:22:53
+  - Run end: 2017-01-30 12:22:55
+  - log file : [[file:Calibration/20170130122255.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130122255
+* Run 20170130123835
+  - Run start: 2017-01-30 12:38:35
+  - Run end: 2017-01-30 12:38:38
+  - log file : [[file:Calibration/20170130123838.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130123838
+* Run 20170130124225
+  - Run start: 2017-01-30 12:42:25
+  - Run end: 2017-01-30 12:42:27
+  - log file : [[file:Calibration/20170130124227.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Changed the variation by season
+* Run 20170130134330
+  - Run start: 2017-01-30 13:43:30
+  - Run end: 2017-01-30 13:43:32
+  - log file : [[file:Calibration/20170130134332.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130134332
+* Run 20170130141430
+  - Run start: 2017-01-30 14:14:30
+  - Run end: 2017-01-30 14:14:34
+  - log file : [[file:Calibration/20170130141434.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130141434
+* Run 20170130141512
+  - Run start: 2017-01-30 14:15:12
+  - Run end: 2017-01-30 14:15:17
+  - log file : [[file:Calibration/20170130141517.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130141517
+* Run 20170130141611
+  - Run start: 2017-01-30 14:16:11
+  - Run end: 2017-01-30 14:16:15
+  - log file : [[file:Calibration/20170130141615.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130141615
+* Run 20170130142055
+  - Run start: 2017-01-30 14:20:55
+  - Run end: 2017-01-30 14:20:59
+  - log file : [[file:Calibration/20170130142059.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130142059
+* Run 20170130142331
+  - Run start: 2017-01-30 14:23:31
+  - Run end: 2017-01-30 14:23:35
+  - log file : [[file:Calibration/20170130142335.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130142335
+* Run 20170130143050
+  - Run start: 2017-01-30 14:30:50
+  - Run end: 2017-01-30 14:30:54
+  - log file : [[file:Calibration/20170130143054.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+* Run 20170130143358
+  - Run start: 2017-01-30 14:33:58
+  - Run end: 2017-01-30 14:34:02
+  - log file : [[file:Calibration/20170130143402.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130143402
+* Run 20170130144859
+  - Run start: 2017-01-30 14:48:59
+  - Run end: 2017-01-30 14:49:03
+  - log file : [[file:Calibration/20170130144903.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130144903
+* Run 20170130145648
+  - Run start: 2017-01-30 14:56:48
+  - Run end: 2017-01-30 14:56:52
+  - log file : [[file:Calibration/20170130145652.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170130145652
+* Run 20170130145943
+  - Run start: 2017-01-30 14:59:43
+  - Run end: 2017-01-30 14:59:46
+  - log file : [[file:Calibration/20170130145946.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Added checking for variables on the C code nercdf.c
+* Run 20170130150126
+  - Run start: 2017-01-30 15:01:26
+  - Run end: 2017-01-30 15:01:30
+  - log file : [[file:Calibration/20170130150130.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : changein nc files
+* Run 20170130152625
+  - Run start: 2017-01-30 15:26:25
+  - Run end: 2017-01-30 15:26:29
+  - log file : [[file:Calibration/20170130152629.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : 
+  - Run used :  
+  - Commit Githhub : Problem found!..the problem is the dimention of the arragement on the Shiny application
+* Run 20170130154005
+  - Run start: 2017-01-30 15:40:05
+  - Run end: 2017-01-30 15:40:09
+  - log file : [[file:Calibration/20170130154009.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : 
+  - Run used :  
+  - Commit Githhub : core Dumped
+* Run 20170130175356
+  - Run start: 2017-01-30 17:53:56
+  - Run end: 2017-01-30 17:54:00
+  - log file : [[file:Calibration/20170130175400.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed problem to read 'phys' from initial condition 'nc' file
+* Run 20170131103429
+  - Run start: 2017-01-31 10:34:29
+  - Run end: 2017-01-31 10:34:31
+  - log file : [[file:Calibration/20170131103431.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed the nominal depth from the Shiny application
+* Run 20170131104140
+  - Run start: 2017-01-31 10:41:40
+  - Run end: 2017-01-31 10:41:44
+  - log file : [[file:Calibration/20170131104144.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170131104144
+* Run 20170131104949
+  - Run start: 2017-01-31 10:49:49
+  - Run end: 2017-01-31 10:49:53
+  - log file : [[file:Calibration/20170131104953.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed inputs_tout
+* Run 20170131105249
+  - Run start: 2017-01-31 10:52:49
+  - Run end: 2017-01-31 10:52:52
+  - log file : [[file:Calibration/20170131105252.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed temp_rewind 0
+* Run 20170131105404
+  - Run start: 2017-01-31 10:54:04
+  - Run end: 2017-01-31 10:54:07
+  - log file : [[file:Calibration/20170131105407.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Added salt_rewind 0
+* Run 20170131105936
+  - Run start: 2017-01-31 10:59:36
+  - Run end: 2017-01-31 10:59:40
+  - log file : [[file:Calibration/20170131105940.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Add flags for tracers and Ph
+* Run 20170131110601
+  - Run start: 2017-01-31 11:06:01
+  - Run end: 2017-01-31 11:06:04
+  - log file : [[file:Calibration/20170131110604.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Added add flagPlankfish for lobster and others
+* Run 20170131110735
+  - Run start: 2017-01-31 11:07:35
+  - Run end: 2017-01-31 11:07:39
+  - log file : [[file:Calibration/20170131110739.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : added flag for Birds
+* Run 20170131111900
+  - Run start: 2017-01-31 11:19:00
+  - Run end: 2017-01-31 11:19:12
+  - log file : [[file:Calibration/20170131111912.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Error lim parameter
+* Run 20170131114720
+  - Run start: 2017-01-31 11:47:20
+  - Run end: 2017-01-31 11:47:23
+  - log file : [[file:Calibration/20170131114723.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170131114723
+* Run 20170131114828
+  - Run start: 2017-01-31 11:48:28
+  - Run end: 2017-01-31 11:48:32
+  - log file : [[file:Calibration/20170131114832.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170131114832
+* Run 20170131114908
+  - Run start: 2017-01-31 11:49:08
+  - Run end: 2017-01-31 11:49:10
+  - log file : [[file:Calibration/20170131114910.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREphysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup 20170131114910
