@@ -12,7 +12,7 @@ DOL,9,1,Dophins,Dophins,1,1,2,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
 CET,10,1,Whales,Whales,1,1,2,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
 BIR,11,1,Birds,Birds,1,1,1,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0,1
 SQD,12,1,Squids,Squids,1,1,2,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
-OCT,13,1,Octupus,Octupus,1,1,2,1,1,1,1,1,0,1,0,CEP,1,0,0,0,1,0,0,0,1
+OCT,13,1,Octupus,Octupus,1,1,2,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
 LPF,14,1,Pelagic_L_fish,Large pelagic fish,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
 SPF,15,1,Pelagic_S_fish,Small pelagic fish,10,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
 SBF,16,1,Benthic_S_fish,Small benthic fish,10,1,2,1,2,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4

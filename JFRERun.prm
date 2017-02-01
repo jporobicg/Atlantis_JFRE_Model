@@ -3,7 +3,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 # author : Javier Porobic
 # Run parameters and settings
-verbose	      4   # Detailed logged output
+verbose	      1   # Detailed logged output
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~                    General parameters controlling the run                ~ ##
