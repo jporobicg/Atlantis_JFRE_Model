@@ -4759,7 +4759,7 @@ FSP_LBF   0.32 # Fraction used in spawning formulation for Large benthic fish [ 
 
 ## Proportion of the biomass of age structured biomass pool lost to spawning (i.e. what proportion of the spawning adult biomass is lost via gamete release)
 ## Simplest case is to set to 0.0, this is effectively what it was in the original Atlantis code
-prop_spawn_lost_CEP  0.0
+#prop_spawn_lost_CEP  0.0
 
 ## Proportion of the population (per age) spawning. One value per cohort, number of cohorts defined in your functional group definition file.
 FSPB_SPL   10 # Fraction of population spawning for Spiny lobster [ Proportion ]
@@ -4930,11 +4930,11 @@ KDENR_LBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 0
 
 #Average biomass of new cephalopod recruits arriving mg N m-3 0.01
-KDENR_CEP 1
-0.002
-#
-KDENR_PWN 1
-0.01
+# KDENR_CEP 1
+# 0.002
+# #
+# KDENR_PWN 1
+# 0.01
 
 # Primary production dependent recruitment
 PP_SPL   1 # Primary production recruitment coeff (if recruit = 2) for Spiny lobster [ Numbers ]
