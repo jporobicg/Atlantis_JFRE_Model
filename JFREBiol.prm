@@ -159,6 +159,8 @@ flagtrecruitdistrib 1 0=humped recruit arrival distrib, 1=flat distrib of recrui
 # 8=Bev-Holt with perscribed recovery, 9=Ricker, 10=Standard Bev-Holt (no explict use of spawn included)
 # 11=pupping/calving linearly dependent on maternal condition, 12=pupping/calving a fixed number per adult
 # spawning, 13=forced timeseries of recruitment
+flagrecruitSPL 3
+flagrecruitGCR 3
 flagrecruitBRC 3
 flagrecruitCOR 16
 flagrecruitORO 3
@@ -4892,7 +4894,7 @@ recSTOCK_LBF   1 # Stock specific recruitment scalar for Large benthic fish [ mu
 rec_m 1
 rec_sigma 1
 
-recruitRange   4.5  max relative cohort strength (multiplicative) for groups with strong year classes
+recruitRange      4.5  max relative cohort strength (multiplicative) for groups with strong year classes
 recruitRangeFlat  1.5  max relative cohort strength (multiplicative) for groups without strong year classes
 
 ## Stock-Recruit options
