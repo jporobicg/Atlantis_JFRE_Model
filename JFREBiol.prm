@@ -3655,6 +3655,63 @@ vlb_SPF   0.4 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
 vlb_SBF   0.3 # Coefficient of search volume for Small benthic fish [ mg N m-3 ]
 vlb_LBF   0.25 # Coefficient of search volume for Large benthic fish [ mg N m-3 ]
 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~       Handling Time    ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## Biomass pools
+ht_SQD 4.5        # Coefficient of handling time for SQD  [ mg N m-3 ]
+ht_OCT 4.5     	  # Coefficient of handling time for OCT  [ mg N m-3 ]
+ht_SZO 0.14       # Coefficient of handling time for SZO  [ mg N m-3 ]
+ht_MZO 1.2     	  # Coefficient of handling time for MZO  [ mg N m-3 ]
+ht_LZO 4.5     	  # Coefficient of handling time for LZO  [ mg N m-3 ]
+ht_SCR 0.01       # Coefficient of handling time for SCR  [ mg N m-3 ]
+ht_BFF 40     	  # Coefficient of handling time for BFF  [ mg N m-3 ]
+ht_BCA 30     	  # Coefficient of handling time for BCA  [ mg N m-3 ]
+ht_MOL 20     	  # Coefficient of handling time for MOL  [ mg N m-3 ]
+ht_COR 40     	  # Coefficient of handling time for COR  [ mg N m-3 ]
+
+## Vertebrates
+hta_SPL   100	  # Coefficient of handling time for Spiny lobster [ mg N m-3 ]
+hta_GCR   120 	  # Coefficient of handling time for Golden Crab [ mg N m-3 ]
+hta_BRC   100 	  # Coefficient of handling time for Breca [ mg N m-3 ]
+hta_VID   150 	  # Coefficient of handling time for Vidriola [ mg N m-3 ]
+hta_ORO   250 	  # Coefficient of handling time for Orange Roughy [ mg N m-3 ]
+hta_ALF   250 	  # Coefficient of handling time for Alfonsino [ mg N m-3 ]
+hta_ANG   200 	  # Coefficient of handling time for Anguila [ mg N m-3 ]
+hta_CHO   150 	  # Coefficient of handling time for Chondrichtyans [ mg N m-3 ]
+hta_OTA   250 	  # Coefficient of handling time for Otariid [ mg N m-3 ]
+hta_CET   50 	  # Coefficient of handling time for Cetaceans [ mg N m-3 ]
+hta_DOL   200 	  # Coefficient of handling time for Cetaceans [ mg N m-3 ]
+hta_BIR   100 	  # Coefficient of handling time for Birds [ mg N m-3 ]
+hta_LPF   150 	  # Coefficient of handling time for Large pelagic fish [ mg N m-3 ]
+hta_SPF   100 	  # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
+hta_SBF   150 	  # Coefficient of handling time for Small benthic fish [ mg N m-3 ]
+hta_LBF   150 	  # Coefficient of handling time for Large benthic fish [ mg N m-3 ]
+
+htb_SPL   0.2	  # Coefficient of handling time for Spiny lobster [ mg N m-3 ]
+htb_GCR   0.2 	  # Coefficient of handling time for Golden Crab [ mg N m-3 ]
+htb_BRC   0.2 	  # Coefficient of handling time for Breca [ mg N m-3 ]
+htb_VID   0.2 	  # Coefficient of handling time for Vidriola [ mg N m-3 ]
+htb_ORO   0.2 	  # Coefficient of handling time for Orange Roughy [ mg N m-3 ]
+htb_ALF   0.2 	  # Coefficient of handling time for Alfonsino [ mg N m-3 ]
+htb_ANG   0.2 	  # Coefficient of handling time for Anguila [ mg N m-3 ]
+htb_CHO   0.2 	  # Coefficient of handling time for Chondrichtyans [ mg N m-3 ]
+htb_OTA   0.2 	  # Coefficient of handling time for Otariid [ mg N m-3 ]
+htb_CET   0.2 	  # Coefficient of handling time for Cetaceans [ mg N m-3 ]
+htb_DOL   0.2 	  # Coefficient of handling time for Cetaceans [ mg N m-3 ]
+htb_BIR   0.2 	  # Coefficient of handling time for Birds [ mg N m-3 ]
+htb_LPF   0.2 	  # Coefficient of handling time for Large pelagic fish [ mg N m-3 ]
+htb_SPF   0.2 	  # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
+htb_SBF   0.2 	  # Coefficient of handling time for Small benthic fish [ mg N m-3 ]
+htb_LBF   0.2 	  # Coefficient of handling time for Large benthic fish [ mg N m-3 ]
+
+
+
+
+
+
+
+
 
 # Bacteria need C_ param for read-in but not used - see bacteria colonistation and uptake params above
 C_PB_T15         0.0  # Clearance rate of pelagic bacteria m3(mg N)-1 d-1
