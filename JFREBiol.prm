@@ -3621,7 +3621,7 @@ vl_BCA 0.016
 vl_MOL 0.016
 vl_COR 0.001
 ## For vertebrates
-vla_SPL   1 # Coefficient of search volume for Spiny lobster [ mg N m-3 ]
+vla_SPL   1.0 # Coefficient of search volume for Spiny lobster [ mg N m-3 ]
 vla_GCR   1 # Coefficient of search volume for Golden Crab [ mg N m-3 ]
 vla_BRC   1 # Coefficient of search volume for Breca [ mg N m-3 ]
 vla_VID   1 # Coefficient of search volume for Vidriola [ mg N m-3 ]
