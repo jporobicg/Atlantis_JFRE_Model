@@ -3864,7 +3864,7 @@ pR_LPF   2 # Preference for rebuilding reserves over structure for Large pelagic
 pR_SPF   2 # Preference for rebuilding reserves over structure for Small pelagic fish [ Number ]
 pR_SBF   2 # Preference for rebuilding reserves over structure for Small benthic fish [ Number ]
 pR_LBF   2 # Preference for rebuilding reserves over structure for Large benthic fish [ Number ]
-pR_LBF   2 # Preference for rebuilding reserves over structure for sharks [ Number ]
+pR_CHO   2 # Preference for rebuilding reserves over structure for sharks [ Number ]
 
 # Length - weight parameters
 li_a_SPL    0.96225457   # Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
