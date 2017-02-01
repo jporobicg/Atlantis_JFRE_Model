@@ -5586,6 +5586,46 @@ MOL_RugCover_scalar 0.2
 # DR_RugCover_scalar 0.1
 # DC_RugCover_scalar 0.01
 
+## Predator specific – how much coral do coral predators chomp off
+SPL_rugFeedScalar 0.00000001
+GCR_rugFeedScalar 0.00000001
+BRC_rugFeedScalar 0.0001
+VID_rugFeedScalar 0.00000001
+ORO_rugFeedScalar 0.000000001
+ALF_rugFeedScalar 0.000000001
+ANG_rugFeedScalar 0.000000001
+CHO_rugFeedScalar 0.000000001
+OTA_rugFeedScalar 0.000000001
+CET_rugFeedScalar 0.000000001
+DOL_rugFeedScalar 0.000000001
+BIR_rugFeedScalar 0.000000001
+OCT_rugFeedScalar 0.000000001
+SQD_rugFeedScalar 0.000000001
+COR_rugFeedScalar 0.000000001
+LPF_rugFeedScalar 0.000000001
+SPF_rugFeedScalar 0.000000001
+SBF_rugFeedScalar 0.000000001
+LBF_rugFeedScalar 0.000000001
+SZO_rugFeedScalar 0.000000001
+MZO_rugFeedScalar 0.000000001
+LZO_rugFeedScalar 0.000000001
+SCR_rugFeedScalar 0.000000001
+BFF_rugFeedScalar 0.000000001
+LPH_rugFeedScalar 0.000000001
+SPH_rugFeedScalar 0.000000001
+BCA_rugFeedScalar 0.000000001
+MOL_rugFeedScalar 0.000000001
+# MA_RugCover_scalar 0.1
+# PB_RugCover_scalar 0.1
+# BB_RugCover_scalar 0.1
+# DL_RugCover_scalar 0.1
+# DR_RugCover_scalar 0.1
+# DC_RugCover_scalar 0.01
+
+
+
+
+
 
 #flag indicating which rugosity model to use
 # rugosity_model option: 0 = none, 1 = mechanistic, 2 is an empirical relationship from Blackwood
