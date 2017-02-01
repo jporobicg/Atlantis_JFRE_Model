@@ -4168,6 +4168,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 KLYS_LPH   0.00001 # Lysis rate of Large phytoplankton [ d-1 ]
 KLYS_SPH   0.00002 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    1 # Lysis rate of Macroalgae [ d-1 ]
+KLYS_COR   0.0001 # Lysis rate of Macroalgae [ d-1 ]
 
 # Linear mortality
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
