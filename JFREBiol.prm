@@ -4229,6 +4229,18 @@ LPH_mL   2 # Linear mortality rate of Large phytoplancton [ d-1 ]
 0 0
 SPH_mL   2 # Linear mortality rate of Mollusca [ d-1 ]
 0 0
+PB_mL    2 # Linear mortality rate of Pelagic Bacteria [ d-1 ]
+0 0
+BB_mL    2 # Linear mortality rate of Sediment Bacteria [ d-1 ]
+0 0
+DL_mL    2 # Linear mortality rate of Labile detritus [ d-1 ]
+0 0
+DR_mL    2 # Linear mortality rate of Refractory detritrus [ d-1 ]
+0 0
+DC_mL    2 # Linear mortality rate of Carrion [ d-1 ]
+0 0
+
+
 
 # Quadratic mortality
 # Invertebrates
@@ -4289,6 +4301,16 @@ MA_mQ    2 #  Quad. mortality rate of Macroalgae [ d-1 ]
 LPH_mQ   2 # Linear mortality rate of Large phytoplancton [ d-1 ]
 0 0
 SPH_mQ   2 # Linear mortality rate of Mollusca [ d-1 ]
+0 0
+PB_mQ    2 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
+0 0
+BB_mQ    2 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
+0 0
+DL_mQ    2 #  Quad. mortality rate of Labile detritus [ d-1 ]
+0 0
+DR_mQ    2 #  Quad. mortality rate of Refractory detritrus [ d-1 ]
+0 0
+DC_mQ    2 #  Quad. mortality rate of Carrion [ d-1 ]
 0 0
 
 # Extra macrophyte mortality (based on physical environment)
