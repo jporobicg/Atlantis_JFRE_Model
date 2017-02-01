@@ -3884,7 +3884,9 @@ li_a_SPF    0.00716116   # Coefficient of allometic length-weight relation for S
 li_a_SBF    7.07514256   # Coefficient of allometic length-weight relation for Small benthic fish [ Number ]
 li_a_LBF    0.00026108   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 li_a_CHO    0.00210   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
-
+li_a_CET    0.01   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_DOL    0.01   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_BIR    0.02   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 
 li_b_SPL   2.71901358  # Exponent in allometic length-weight relation for Spiny lobster [ Number ]
 li_b_GCR   2.84013419  # Exponent in allometic length-weight relation for Golden Crab [ Number ]
@@ -3899,6 +3901,9 @@ li_b_SPF   3.14316080  # Exponent in allometic length-weight relation for Small 
 li_b_SBF   1.37204560  # Exponent in allometic length-weight relation for Small benthic fish [ Number ]
 li_b_LBF   3.87985815  # Exponent in allometic length-weight relation for Large benthic fish [ Number ]
 li_b_CHO   3.176 	# Exponent in allometic length-weight relation for Large benthic fish [ Number ]
+li_b_CET   3.0   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_b_DOL   3.0   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_b_BIR   3.0   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 
 min_li_mat_SPL   73.2    # Minimum size of maturity of  Spiny lobster [ cm ]
 min_li_mat_GCR   10.62    # Minimum size of maturity of  Golden Crab [ cm ]
