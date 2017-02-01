@@ -3705,14 +3705,6 @@ htb_SPF   0.2 	  # Coefficient of handling time for Small pelagic fish [ mg N m-
 htb_SBF   0.2 	  # Coefficient of handling time for Small benthic fish [ mg N m-3 ]
 htb_LBF   0.2 	  # Coefficient of handling time for Large benthic fish [ mg N m-3 ]
 
-
-
-
-
-
-
-
-
 # Bacteria need C_ param for read-in but not used - see bacteria colonistation and uptake params above
 C_PB_T15         0.0  # Clearance rate of pelagic bacteria m3(mg N)-1 d-1
 C_BB_T15         0.0  # Clearance rate of benthic bacteria m3(mg N)-1 d-1
@@ -3872,6 +3864,7 @@ pR_LPF   2 # Preference for rebuilding reserves over structure for Large pelagic
 pR_SPF   2 # Preference for rebuilding reserves over structure for Small pelagic fish [ Number ]
 pR_SBF   2 # Preference for rebuilding reserves over structure for Small benthic fish [ Number ]
 pR_LBF   2 # Preference for rebuilding reserves over structure for Large benthic fish [ Number ]
+pR_LBF   2 # Preference for rebuilding reserves over structure for sharks [ Number ]
 
 # Length - weight parameters
 li_a_SPL    0.96225457   # Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
