@@ -277,7 +277,7 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Dophins"/>
     <Attribute AttributeName="LongName" AttributeValue="Dophins"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="2"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
@@ -304,7 +304,7 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Whales"/>
     <Attribute AttributeName="LongName" AttributeValue="Whales"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="2"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
@@ -358,7 +358,7 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Squids"/>
     <Attribute AttributeName="LongName" AttributeValue="Squids"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="2"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
@@ -385,7 +385,7 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Octupus"/>
     <Attribute AttributeName="LongName" AttributeValue="Octupus"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="2"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
