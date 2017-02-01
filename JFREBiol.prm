@@ -1314,7 +1314,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 mum_LPH_T15  1.0     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1.0     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   0.2     Maximum growth rate, small (pico) phytoplankton d-1 1 - 1.24
-mum_MB_T15   0.35  Maximum growth rate, microphytobenthos d-1 0.35
+
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
