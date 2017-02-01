@@ -3606,7 +3606,10 @@ C_BFF_T15   0.02     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.016    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.016    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
-## Volumen search
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~      Volumen search      ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## for biomass pools
 vl_SQD 480
 vl_OCT 480
 vl_SZO 0.18
@@ -3616,6 +3619,41 @@ vl_SCR 0.01
 vl_BFF 0.02
 vl_BCA 0.016
 vl_MOL 0.016
+vl_COR 0.001
+## For vertebrates
+vla_SPL   1 # Coefficient of search volume for Spiny lobster [ mg N m-3 ]
+vla_GCR   1 # Coefficient of search volume for Golden Crab [ mg N m-3 ]
+vla_BRC   1 # Coefficient of search volume for Breca [ mg N m-3 ]
+vla_VID   1 # Coefficient of search volume for Vidriola [ mg N m-3 ]
+vla_ORO   1 # Coefficient of search volume for Orange Roughy [ mg N m-3 ]
+vla_ALF   1 # Coefficient of search volume for Alfonsino [ mg N m-3 ]
+vla_ANG   1 # Coefficient of search volume for Anguila [ mg N m-3 ]
+vla_CHO   1 # Coefficient of search volume for Chondrichtyans [ mg N m-3 ]
+vla_OTA   1 # Coefficient of search volume for Otariid [ mg N m-3 ]
+vla_CET   1.2 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
+vla_DOL   1.2 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
+vla_BIR   1 # Coefficient of search volume for Birds [ mg N m-3 ]
+vla_LPF   1 # Coefficient of search volume for Large pelagic fish [ mg N m-3 ]
+vla_SPF   1 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
+vla_SBF   1 # Coefficient of search volume for Small benthic fish [ mg N m-3 ]
+vla_LBF   1 # Coefficient of search volume for Large benthic fish [ mg N m-3 ]
+
+vlb_SPL   0.3 # Coefficient of search volume for Spiny lobster [ mg N m-3 ]
+vlb_GCR   0.3 # Coefficient of search volume for Golden Crab [ mg N m-3 ]
+vlb_BRC   0.35 # Coefficient of search volume for Breca [ mg N m-3 ]
+vlb_VID   0.4 # Coefficient of search volume for Vidriola [ mg N m-3 ]
+vlb_ORO   0.2 # Coefficient of search volume for Orange Roughy [ mg N m-3 ]
+vlb_ALF   0.2 # Coefficient of search volume for Alfonsino [ mg N m-3 ]
+vlb_ANG   0.35 # Coefficient of search volume for Anguila [ mg N m-3 ]
+vlb_CHO   0.2 # Coefficient of search volume for Chondrichtyans [ mg N m-3 ]
+vlb_OTA   0.25 # Coefficient of search volume for Otariid [ mg N m-3 ]
+vlb_CET   0.25 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
+vlb_DOL   0.25 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
+vlb_BIR   0.4 # Coefficient of search volume for Birds [ mg N m-3 ]
+vlb_LPF   0.2 # Coefficient of search volume for Large pelagic fish [ mg N m-3 ]
+vlb_SPF   0.4 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
+vlb_SBF   0.3 # Coefficient of search volume for Small benthic fish [ mg N m-3 ]
+vlb_LBF   0.25 # Coefficient of search volume for Large benthic fish [ mg N m-3 ]
 
 
 # Bacteria need C_ param for read-in but not used - see bacteria colonistation and uptake params above
