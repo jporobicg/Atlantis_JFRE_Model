@@ -3607,6 +3607,7 @@ C_BCA_T15   0.016    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 
 C_MOL_T15   0.016    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 ## Volumen search for SQD
 vl_SQD 480
+vl_OCT 480
 
 # Bacteria need C_ param for read-in but not used - see bacteria colonistation and uptake params above
 C_PB_T15         0.0  # Clearance rate of pelagic bacteria m3(mg N)-1 d-1
