@@ -669,7 +669,6 @@ q10_SPH  2.0
 q10_LPH  2.0
 q10_BCA  2.0
 q10_MOL  2.0
-q10_NO   2.0
 q10_MA   2.0
 q10_PB  2.0
 q10_BB  2.0
@@ -877,7 +876,6 @@ flagpHsensitive_SPH  0
 flagpHsensitive_LPH  0
 flagpHsensitive_BCA  0
 flagpHsensitive_MOL  0
-flagpHsensitive_NO   0
 flagpHsensitive_MA   0
 flagpHsensitive_PB  0
 flagpHsensitive_BB  0
@@ -911,7 +909,6 @@ flagfecundsensitive_LPH  0
 flagfecundsensitive_SPH  0
 flagfecundsensitive_BCA  0
 flagfecundsensitive_MOL  0
-flagfecundsensitive_NO   0
 flagfecundsensitive_MA   0
 flagfecundsensitive_PB  0
 flagfecundsensitive_BB  0
@@ -945,7 +942,6 @@ flagnutvaleffect_SPH  1
 flagnutvaleffect_LPH  1
 flagnutvaleffect_BCA  0
 flagnutvaleffect_MOL  0
-flagnutvaleffect_NO   0
 flagnutvaleffect_MA   0
 flagnutvaleffect_PB  0
 flagnutvaleffect_BB  0
@@ -979,7 +975,6 @@ flagpredavaileffect_LPH  0
 flagpredavaileffect_SPH  0
 flagpredavaileffect_BCA  0
 flagpredavaileffect_MOL  0
-flagpredavaileffect_NO   0
 flagpredavaileffect_MA   0
 flagpredavaileffect_PB  0
 flagpredavaileffect_BB  0
@@ -1013,7 +1008,6 @@ flagcontract_tol_SPH  0
 flagcontract_tol_LPH  0
 flagcontract_tol_BCA  0
 flagcontract_tol_MOL  0
-flagcontract_tol_NO   0
 flagcontract_tol_MA   0
 flagcontract_tol_PB  0
 flagcontract_tol_BB  0
@@ -1048,7 +1042,6 @@ pHsensitive_model_SPH  0
 pHsensitive_model_LPH  0
 pHsensitive_model_BCA  0
 pHsensitive_model_MOL  0
-pHsensitive_model_NO   0
 pHsensitive_model_MA   0
 pHsensitive_model_PB  0
 pHsensitive_model_BB  0
@@ -1082,7 +1075,6 @@ KN_pH_LPH  7.0
 KN_pH_SPH  7.0
 KN_pH_BCA  0.0
 KN_pH_MOL  0.0
-KN_pH_NO   0.0
 KN_pH_MA   0.0
 KN_pH_PB  0.0
 KN_pH_BB  0.0
@@ -1115,7 +1107,6 @@ optimal_pH_SPH  0.0
 optimal_pH_LPH  0.0
 optimal_pH_BCA  0.0
 optimal_pH_MOL  0.0
-optimal_pH_NO   0.0
 optimal_pH_MA   0.0
 optimal_pH_PB  0.0
 optimal_pH_BB  0.0
@@ -1149,7 +1140,6 @@ pH_correction_SPH  1.0
 pH_correction_LPH  1.0
 pH_correction_BCA  1.0
 pH_correction_MOL  1.0
-pH_correction_NO   1.0
 pH_correction_MA   1.0
 pH_correction_PB  1.0
 pH_correction_BB  1.0
@@ -1183,7 +1173,6 @@ pH_constA_SPH  1.0
 pH_constA_LPH  1.0
 pH_constA_BCA  1.0
 pH_constA_MOL  1.0
-pH_constA_NO   1.0
 pH_constA_MA   1.0
 pH_constA_PB  1.0
 pH_constA_BB  1.0
@@ -1217,7 +1206,6 @@ pH_constB_LPH  1.0
 pH_constB_SPH  1.0
 pH_constB_BCA  1.0
 pH_constB_MOL  1.0
-pH_constB_NO   1.0
 pH_constB_MA   1.0
 pH_constB_PB  1.0
 pH_constB_BB  1.0
@@ -1251,7 +1239,6 @@ contract_tol_LPH  0.0
 contract_tol_SPH  0.0
 contract_tol_BCA  0.0
 contract_tol_MOL  0.0
-contract_tol_NO   0.0
 contract_tol_MA   0.0
 contract_tol_PB  0.0
 contract_tol_BB  0.0
@@ -1285,7 +1272,6 @@ flagSaltSensitive_SPH  0
 flagSaltSensitive_LPH  0
 flagSaltSensitive_BCA  0
 flagSaltSensitive_MOL  0
-flagSaltSensitive_NO   0
 flagSaltSensitive_MA   0
 flagSaltSensitive_PB  0
 flagSaltSensitive_BB  0
@@ -1319,7 +1305,6 @@ salt_correction_SPH  1.0
 salt_correction_LPH  1.0
 salt_correction_BCA  1.0
 salt_correction_MOL  1.0
-salt_correction_NO   1.0
 salt_correction_MA   1.0
 salt_correction_PB  1.0
 salt_correction_BB  1.0
@@ -3365,7 +3350,6 @@ p_split_LPH   1 # Ontogenetic diet preferences  Large phytoplankton [ Number ]
 p_split_SPH   1 # Ontogenetic diet preferences  Small phytoplankton [ Number ]
 p_split_BCA   1 # Ontogenetic diet preferences  Benthic Carnivorous [ Number ]
 p_split_MOL   1 # Ontogenetic diet preferences  Mollusca [ Number ]
-p_split_NO    1 # Ontogenetic diet preferences  Nitrate [ Number ]
 p_split_MA    1 # Ontogenetic diet preferences  Macroalgae [ Number ]
 p_split_PB    1 # Ontogenetic diet preferences  Pelagic Bacteria [ Number ]
 p_split_BB    1 # Ontogenetic diet preferences  Sediment Bacteria [ Number ]
@@ -3402,7 +3386,6 @@ age_structured_prey_LPH   0 # Flag to indicate that the group uses age structure
 age_structured_prey_SPH   0 # Flag to indicate that the group uses age structured prey Small phytoplankton [ Number ]
 age_structured_prey_BCA   0 # Flag to indicate that the group uses age structured prey Benthic Carnivorous [ Number ]
 age_structured_prey_MOL   0 # Flag to indicate that the group uses age structured prey Mollusca [ Number ]
-age_structured_prey_NO    0 # Flag to indicate that the group uses age structured prey Nitrate [ Number ]
 age_structured_prey_MA    0 # Flag to indicate that the group uses age structured prey Macroalgae [ Number ]
 age_structured_prey_PB    0 # Flag to indicate that the group uses age structured prey Pelagic Bacteria [ Number ]
 age_structured_prey_BB    0 # Flag to indicate that the group uses age structured prey Sediment Bacteria [ Number ]
@@ -3579,7 +3562,6 @@ Kmax_coefft_LPH   6 # Steepness of the smooth feeding window curve of the predat
 Kmax_coefft_SPH   6 # Steepness of the smooth feeding window curve of the predator  Small phytoplankton
 Kmax_coefft_BCA   6 # Steepness of the smooth feeding window curve of the predator  Benthic Carnivorous
 Kmax_coefft_MOL   6 # Steepness of the smooth feeding window curve of the predator  Mollusca
-Kmax_coefft_NO    6 # Steepness of the smooth feeding window curve of the predator  Nitrate
 Kmax_coefft_MA    6 # Steepness of the smooth feeding window curve of the predator  Macroalgae
 Kmax_coefft_PB    6 # Steepness of the smooth feeding window curve of the predator  Pelagic Bacteria
 Kmax_coefft_BB    6 # Steepness of the smooth feeding window curve of the predator  Sediment Bacteria
@@ -3829,7 +3811,6 @@ KL_LPH   0 # Lower threshold for feeding by Large phytoplankton [ mg N m-3 ]
 KL_SPH   0 # Lower threshold for feeding by Small phytoplankton [ mg N m-3 ]
 KL_BCA   0 # Lower threshold for feeding by Benthic Carnivorous [ mg N m-3 ]
 KL_MOL   0 # Lower threshold for feeding by Mollusca [ mg N m-3 ]
-KL_NO    0 # Lower threshold for feeding by Nitrate [ mg N m-3 ]
 KL_MA    0 # Lower threshold for feeding by Macroalgae [ mg N m-3 ]
 KL_PB    0 # Lower threshold for feeding by Pelagic Bacteria [ mg N m-3 ]
 KL_BB    0 # Lower threshold for feeding by Sediment Bacteria [ mg N m-3 ]
@@ -3866,7 +3847,6 @@ KU_LPH   0 # Half saturation for uptake by Large phytoplankton [ mg N m-3 ]
 KU_SPH   0 # Half saturation for uptake by Small phytoplankton [ mg N m-3 ]
 KU_BCA   0 # Half saturation for uptake by Benthic Carnivorous [ mg N m-3 ]
 KU_MOL   0 # Half saturation for uptake by Mollusca [ mg N m-3 ]
-KU_NO    0 # Half saturation for uptake by Nitrate [ mg N m-3 ]
 KU_MA    0 # Half saturation for uptake by Macroalgae [ mg N m-3 ]
 KU_PB    0 # Half saturation for uptake by Pelagic Bacteria [ mg N m-3 ]
 KU_BB    0 # Half saturation for uptake by Sediment Bacteria [ mg N m-3 ]
@@ -4130,7 +4110,6 @@ KA_LPH   0 # Scaling coefft in allometry of resp vs weight for Large phytoplankt
 KA_SPH   0 # Scaling coefft in allometry of resp vs weight for Small phytoplankton
 KA_BCA   0 # Scaling coefft in allometry of resp vs weight for Benthic Carnivorous
 KA_MOL   0 # Scaling coefft in allometry of resp vs weight for Mollusca
-KA_NO    0 # Scaling coefft in allometry of resp vs weight for Nitrate
 KA_MA    0 # Scaling coefft in allometry of resp vs weight for Macroalgae
 KA_PB    0 # Scaling coefft in allometry of resp vs weight for Pelagic Bacteria
 KA_BB    0 # Scaling coefft in allometry of resp vs weight for Sediment Bacteria
@@ -4166,7 +4145,6 @@ KB_LPH   0 #  Exponent in respiration vs weight for Large phytoplankton
 KB_SPH   0 #  Exponent in respiration vs weight for Small phytoplankton
 KB_BCA   0 #  Exponent in respiration vs weight for Benthic Carnivorous
 KB_MOL   0 #  Exponent in respiration vs weight for Mollusca
-KB_NO    0 #  Exponent in respiration vs weight for Nitrate
 KB_MA    0 #  Exponent in respiration vs weight for Macroalgae
 KB_PB    0 #  Exponent in respiration vs weight for Pelagic Bacteria
 KB_BB    0 #  Exponent in respiration vs weight for Sediment Bacteria
@@ -5523,8 +5501,6 @@ trait_active_BCA   8 # Active traits for Benthic Carnivorous
 0 0 0 0 0 0 0 0
 trait_active_MOL   8 # Active traits for Mollusca
 0 0 0 0 0 0 0 0
-trait_active_NO    8 # Active traits for Nitrate
-0 0 0 0 0 0 0 0
 trait_active_MA    8 # Active traits for Macroalgae
 0 0 0 0 0 0 0 0
 trait_active_PB    8 # Active traits for Pelagic Bacteria
@@ -5567,7 +5543,6 @@ max_prop_shift_LPH   0 # Max proportional shift in phenotypes with aging for Lar
 max_prop_shift_SPH   0 # Max proportional shift in phenotypes with aging for Small phytoplankton
 max_prop_shift_BCA   0 # Max proportional shift in phenotypes with aging for Benthic Carnivorous
 max_prop_shift_MOL   0 # Max proportional shift in phenotypes with aging for Mollusca
-max_prop_shift_NO    0 # Max proportional shift in phenotypes with aging for Nitrate
 max_prop_shift_MA    0 # Max proportional shift in phenotypes with aging for Macroalgae
 max_prop_shift_PB    0 # Max proportional shift in phenotypes with aging for Pelagic Bacteria
 max_prop_shift_BB    0 # Max proportional shift in phenotypes with aging for Sediment Bacteria
@@ -5604,7 +5579,6 @@ inheritance_LPH   0 # Level of inheritance for Large phytoplankton
 inheritance_SPH   0 # Level of inheritance for Small phytoplankton
 inheritance_BCA   0 # Level of inheritance for Benthic Carnivorous
 inheritance_MOL   0 # Level of inheritance for Mollusca
-inheritance_NO    0 # Level of inheritance for Nitrate
 inheritance_MA    0 # Level of inheritance for Macroalgae
 inheritance_PB    0 # Level of inheritance for Pelagic Bacteria
 inheritance_BB    0 # Level of inheritance for Sediment Bacteria
