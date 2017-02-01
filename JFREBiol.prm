@@ -354,6 +354,7 @@ flagtempsensitiveGCR 1
 flagtempsensitiveBRC 0
 flagtempsensitiveORO 0
 flagtempsensitiveVID 0
+flagtempsensitiveBIR 0
 flagtempsensitiveANG 0
 flagtempsensitiveALF 0
 flagtempsensitiveCHO 0
