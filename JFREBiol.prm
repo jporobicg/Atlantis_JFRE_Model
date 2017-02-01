@@ -310,6 +310,7 @@ flagq10effALF 0
 flagq10effCHO 0
 flagq10effOTA 0
 flagq10effCET 0
+flagq10effBIR 0
 flagq10effOCT 0
 flagq10effCOR 0
 flagq10effSQD 0
@@ -3910,8 +3911,6 @@ li_b_BIR   3.0         # Coefficient of allometic length-weight relation for Lar
 ## Invertebrates
 li_a_invert 0.01
 li_b_invert 3.0
-
-
 
 min_li_mat_SPL   73.2      # Minimum size of maturity of  Spiny lobster [ cm ]
 min_li_mat_GCR   10.62     # Minimum size of maturity of  Golden Crab [ cm ]
