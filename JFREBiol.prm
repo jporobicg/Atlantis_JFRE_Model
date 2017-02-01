@@ -4900,8 +4900,8 @@ recruitRangeFlat  1.5  max relative cohort strength (multiplicative) for groups 
 ## Stock-Recruit options
 # Total number of new recruits for the year (used if recruit flag is set to 1 or 12) - number per individual (not per female)
 # One value per stock.
-#KDENR_SPL   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Spiny lobster [ Numbers ]
-#0
+KDENR_SPL   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Spiny lobster [ Numbers ]
+0
 KDENR_GCR   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Golden Crab [ Numbers ]
 0
 KDENR_BRC   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Breca [ Numbers ]
@@ -4997,7 +4997,7 @@ CrecruitC_COR 0.9
 KDENR_COR 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   4266434446.74  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL    1.00E+09 ##4266434446.74  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   2878490550.20    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   6017641254.46    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   1.3E+07     # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
