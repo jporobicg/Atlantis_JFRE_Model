@@ -636,7 +636,6 @@ temp_coefftA_SPH  0.851
 temp_coefftA_LPH  0.851
 temp_coefftA_BCA  0.851
 temp_coefftA_MOL  0.851
-temp_coefftA_NO   0.851
 temp_coefftA_MA   0.851
 temp_coefftA_PB  0.851
 temp_coefftA_BB  0.851
@@ -702,7 +701,6 @@ q10_method_LPH 0
 q10_method_SPH 0
 q10_method_BCA 1
 q10_method_MOL 1
-q10_method_NO  0
 q10_method_MA  0
 q10_method_PB  0
 q10_method_BB  0
@@ -736,7 +734,6 @@ q10_optimal_temp_SPH 0
 q10_optimal_temp_LPH 0
 q10_optimal_temp_BCA 17.37
 q10_optimal_temp_MOL 0
-q10_optimal_temp_NO  0
 q10_optimal_temp_MA  0
 q10_optimal_temp_PB 0
 q10_optimal_temp_BB 0
@@ -770,7 +767,6 @@ q10_correction_LPH   1000
 q10_correction_SPH   1000
 q10_correction_BCA   1000
 q10_correction_MOL   1000
-q10_correction_NO    1000
 q10_correction_MA    1000
 q10_correction_PB    1000
 q10_correction_BB    1000
