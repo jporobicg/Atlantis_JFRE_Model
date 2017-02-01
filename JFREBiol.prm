@@ -88,6 +88,20 @@ Ksmother_const		    10
 MA_coral_overgrow 	    0.001 # Rate macroalgae overgrow coral d-1
 MA_coral_compete	    0.001 # Rate macroalgae overgrow coral d-1
 
+## Bleaching
+COR_bleach_periodA          0 # Quick recovery period (regain original zooxanthellae)
+COR_bleach_periodB 	    0 # Slow recovery period (regain new zooxanthellae)
+COR_mBleach 	   	    0.0000001
+COR_bleaching_rate 	    0.0001
+COR_bleach_recovery_rate    0.0001
+COR_bleach_tempshift        25 # Temperature shift with new zooxanthellae
+COR_bleach_growshift	    0.001   # Growth shift with new zooxanthellae
+COR_bleach_temp		    30	    # Bleaching temperature threshold
+COR_DHW_thresh		    12	    # Degree heating weeks threshold
+COR_threshdepth		    100	    # Depth threshold for shifting growth state
+COR_depmum_scalar	    2 	    #Scalar for shifting growth state
+COR_prop_zooxanth
+
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
 flagdemSPL  0  SPL: 1 = on, 0 = off 1
@@ -202,6 +216,8 @@ flagext_reprodLBF 0 0
 # Vertebrate reproduction strength flags (1=very strong year classes possible, relative strength
 # set using recruitRange and 0=only moderate variation in year class strength possible, mainly
 # for top predators with few young per reproductive event, relative strength set using recruitRangeFlat)
+flagrecpeakSPL 1 1
+flagrecpeakGCR 1 1
 flagrecpeakBRC 1 1
 flagrecpeakORO 1 1
 flagrecpeakVID 1 1
@@ -222,6 +238,7 @@ flaglocalrecruitSPL 3
 flaglocalrecruitGCR 3
 flaglocalrecruitBRC 3
 flaglocalrecruitORO 3
+flaglocalrecruitBIR 1
 flaglocalrecruitVID 1
 flaglocalrecruitANG 3
 flaglocalrecruitALF 3
@@ -241,6 +258,8 @@ flaglocalrecruitBCA 1
 flaglocalrecruitMOL 1
 
 # Flag indicating whether the vertebrate group bearslive young (0 = no, 1 = yes)
+flagbearliveSPL 0
+flagbearliveGCR 0
 flagbearliveBRC 0
 flagbearliveORO 0
 flagbearliveVID 0
@@ -257,14 +276,18 @@ flagbearliveLPF 0
 flagbearliveSPF 0
 flagbearliveSBF 0
 flagbearliveLBF 0
+flagbearliveBIR 0
 
 # Flag indicating whether the vertebrate group provides parental care for young until maturity
 # (0 = no, 1 = yes, -1 = semelparous so die after reproduction)
+flagmotherSPL 0
+flagmotherGCR 0
 flagmotherBRC 0
 flagmotherORO 0
 flagmotherVID 0
 flagmotherANG 0
 flagmotherALF 0
+flagmotherBIR 1
 flagmotherCHO 1
 flagmotherOTA 1
 flagmotherCET 1
@@ -299,6 +322,7 @@ feed_while_spawnLBF 1
 feed_while_spawnSCR 1
 feed_while_spawnBCA 1
 feed_while_spawnMOL 1
+feed_while_spawnBIR 1
 
 # Switch indicating whether or not efficiency of assimilation is temperature dependent
 # 0 = no (same efficiency regardless), 1 = poorer when cooler, 2 = poorer when warmer
@@ -476,6 +500,43 @@ flagMOLMigrate 0 0=always remain within the model domain, 1+=migrate in/out of t
 flagSZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
 flagMZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
 flagLZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+
+## Flag indicating whether stocking recruits or not
+flagstockingSPL  0
+flagstockingGCR  0
+flagstockingBRC  0
+flagstockingORO  0
+flagstockingVID  0
+flagstockingANG  0
+flagstockingALF  0
+flagstockingCHO  0
+flagstockingOTA  0
+flagstockingCET  0
+flagstockingDOL  0
+flagstockingBIR  0
+flagstockingOCT  0
+flagstockingSQD  0
+flagstockingCOR  0
+flagstockingLPF  0
+flagstockingSPF  0
+flagstockingSBF  0
+flagstockingLBF  0
+flagstockingSZO  0
+flagstockingMZO  0
+flagstockingLZO  0
+flagstockingSCR  0
+flagstockingBFF  0
+flagstockingLPH  0
+flagstockingSPH  0
+flagstockingBCA  0
+flagstockingMOL  0
+flagstockingNO   0
+flagstockingMA   0
+flagstockingPB   0
+flagstockingBB   0
+flagstockingDL   0
+flagstockingDR   0
+flagstockingDC   0
 
 
 # Predation formulation switches. 0=Holling type II, 1=Holling type I, 2=Holling type III,
@@ -4646,6 +4707,10 @@ LPF_age_mat   2 # First mature age class of  Large pelagic fish [ Number ]
 SPF_age_mat   3 # First mature age class of  Small pelagic fish [ Number ]
 SBF_age_mat   3 # First mature age class of  Small benthic fish [ Number ]
 LBF_age_mat   4 # First mature age class of  Large benthic fish [ Number ]
+CHO_age_mat   1 # First mature age class of  Large benthic fish [ Number ]
+DOL_age_mat   1 # First mature age class of  Large benthic fish [ Number ]
+CET_age_mat   1 # First mature age class of  Large benthic fish [ Number ]
+BIR_age_mat   1 # First mature age class of  Large benthic fish [ Number ]
 
 #interpreted as the time of year that each cohort becomes mature (this is 226 + 'Time_Spawn')
 Time_Age_OCT     1
@@ -4733,31 +4798,39 @@ Recruit_Period_SPF   30 # Length of time recruits arrive over for  Small pelagic
 Recruit_Period_SBF   40 # Length of time recruits arrive over for  Small benthic fish [ d ]
 Recruit_Period_LBF   60 # Length of time recruits arrive over for  Large benthic fish [ d ]
 
-KSPA_SPL   609.71 # Constant in spawning formulation for  Spiny lobster
-KSPA_GCR   56.18 # Constant in spawning formulation for  Golden Crab
-KSPA_BRC   364.60 # Constant in spawning formulation for  Breca
-KSPA_VID   4059.30 # Constant in spawning formulation for  Vidriola
-KSPA_ORO   6915.95 # Constant in spawning formulation for  Orange Roughy
-KSPA_ALF   939.02 # Constant in spawning formulation for  Alfonsino
-KSPA_ANG   137.78 # Constant in spawning formulation for  Anguila
-KSPA_OTA   74926.06 # Constant in spawning formulation for  Otariid
-KSPA_LPF   117.17 # Constant in spawning formulation for  Large pelagic fish
-KSPA_SPF   331.13 # Constant in spawning formulation for  Small pelagic fish
-KSPA_SBF   411.93 # Constant in spawning formulation for  Small benthic fish
-KSPA_LBF   4638.99 # Constant in spawning formulation for  Large benthic fish
+KSPA_SPL   609.71     # Constant in spawning formulation for  Spiny lobster
+KSPA_GCR   56.18      # Constant in spawning formulation for  Golden Crab
+KSPA_BRC   364.60     # Constant in spawning formulation for  Breca
+KSPA_VID   4059.30    # Constant in spawning formulation for  Vidriola
+KSPA_ORO   6915.95    # Constant in spawning formulation for  Orange Roughy
+KSPA_ALF   939.02     # Constant in spawning formulation for  Alfonsino
+KSPA_ANG   137.78     # Constant in spawning formulation for  Anguila
+KSPA_OTA   74926.06   # Constant in spawning formulation for  Otariid
+KSPA_LPF   117.17     # Constant in spawning formulation for  Large pelagic fish
+KSPA_SPF   331.13     # Constant in spawning formulation for  Small pelagic fish
+KSPA_SBF   411.93     # Constant in spawning formulation for  Small benthic fish
+KSPA_LBF   4638.99    # Constant in spawning formulation for  Large benthic fish
+KSPA_CHO   331.13     # Constant in spawning formulation for  CHO
+KSPA_DOL   38376.9    # Constant in spawning formulation for  DOL
+KSPA_CET   38376.99   # Constant in spawning formulation for  CET
+KSPA_BIR   193.99     # Constant in spawning formulation for  BIR
 
-FSP_SPL   0.35 # Fraction used in spawning formulation for Spiny lobster [ Proportion ]
-FSP_GCR   0.29 # Fraction used in spawning formulation for Golden Crab [ Proportion ]
-FSP_BRC   0.31 # Fraction used in spawning formulation for Breca [ Proportion ]
-FSP_VID   0.40 # Fraction used in spawning formulation for Vidriola [ Proportion ]
-FSP_ORO   0.47 # Fraction used in spawning formulation for Orange Roughy [ Proportion ]
-FSP_ALF   0.31 # Fraction used in spawning formulation for Alfonsino [ Proportion ]
-FSP_ANG   0.29 # Fraction used in spawning formulation for Anguila [ Proportion ]
-FSP_OTA   0.37 # Fraction used in spawning formulation for Otariid [ Proportion ]
-FSP_LPF   0.29 # Fraction used in spawning formulation for Large pelagic fish [ Proportion ]
-FSP_SPF   0.32 # Fraction used in spawning formulation for Small pelagic fish [ Proportion ]
-FSP_SBF   0.31 # Fraction used in spawning formulation for Small benthic fish [ Proportion ]
-FSP_LBF   0.32 # Fraction used in spawning formulation for Large benthic fish [ Proportion ]
+FSP_SPL   0.35        # Fraction used in spawning formulation for Spiny lobster [ Proportion ]
+FSP_GCR   0.29 	      # Fraction used in spawning formulation for Golden Crab [ Proportion ]
+FSP_BRC   0.31 	      # Fraction used in spawning formulation for Breca [ Proportion ]
+FSP_VID   0.40 	      # Fraction used in spawning formulation for Vidriola [ Proportion ]
+FSP_ORO   0.47 	      # Fraction used in spawning formulation for Orange Roughy [ Proportion ]
+FSP_ALF   0.31 	      # Fraction used in spawning formulation for Alfonsino [ Proportion ]
+FSP_ANG   0.29 	      # Fraction used in spawning formulation for Anguila [ Proportion ]
+FSP_OTA   0.37 	      # Fraction used in spawning formulation for Otariid [ Proportion ]
+FSP_LPF   0.29 	      # Fraction used in spawning formulation for Large pelagic fish [ Proportion ]
+FSP_SPF   0.32 	      # Fraction used in spawning formulation for Small pelagic fish [ Proportion ]
+FSP_SBF   0.31 	      # Fraction used in spawning formulation for Small benthic fish [ Proportion ]
+FSP_LBF   0.32 	      # Fraction used in spawning formulation for Large benthic fish [ Proportion ]
+FSP_CHO   0.27        # Constant in spawning formulation for  CHO
+FSP_DOL   0.16        # Constant in spawning formulation for  DOL
+FSP_CET   0.16        # Constant in spawning formulation for  CET
+FSP_BIR   0.2         # Constant in spawning formulation for  BIR
 
 ## Proportion of the biomass of age structured biomass pool lost to spawning (i.e. what proportion of the spawning adult biomass is lost via gamete release)
 ## Simplest case is to set to 0.0, this is effectively what it was in the original Atlantis code
@@ -4954,6 +5027,7 @@ PP_LPF   1 # Primary production recruitment coeff (if recruit = 2) for Large pel
 PP_SPF   1 # Primary production recruitment coeff (if recruit = 2) for Small pelagic fish [ Numbers ]
 PP_SBF   1 # Primary production recruitment coeff (if recruit = 2) for Small benthic fish [ Numbers ]
 PP_LBF   1 # Primary production recruitment coeff (if recruit = 2) for Large benthic fish [ Numbers ]
+PP_BIR   1 # Primary production recruitment coeff (if recruit = 2) for Large benthic fish [ Numbers ]
 
 ref_chl 0.15  Reference level of chla mg Chla m-3 1.5
 
@@ -4973,6 +5047,7 @@ Ralpha_LPF   0 # Ricker recruitment r parameter (if recruit = 9) for Large pelag
 Ralpha_SPF   0 # Ricker recruitment r parameter (if recruit = 9) for Small pelagic fish
 Ralpha_SBF   0 # Ricker recruitment r parameter (if recruit = 9) for Small benthic fish
 Ralpha_LBF   0 # Ricker recruitment r parameter (if recruit = 9) for Large benthic fish
+Ralpha_BIR   0 # Ricker recruitment r parameter (if recruit = 9) for Large benthic fish
 
 Rbeta_SPL   0 # Ricker recruitment K parameter (if recruit = 9) for Spiny lobster
 Rbeta_GCR   0 # Ricker recruitment K parameter (if recruit = 9) for Golden Crab
@@ -4989,6 +5064,7 @@ Rbeta_LPF   0 # Ricker recruitment K parameter (if recruit = 9) for Large pelagi
 Rbeta_SPF   0 # Ricker recruitment K parameter (if recruit = 9) for Small pelagic fish
 Rbeta_SBF   0 # Ricker recruitment K parameter (if recruit = 9) for Small benthic fish
 Rbeta_LBF   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
+Rbeta_BIR   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
 
 # Coral recruitment
 CrecruitA_COR 50000
@@ -5013,6 +5089,7 @@ BHalpha_LPF   4033992076.64            # Beverton-Holt recruitment rate paramete
 BHalpha_SPF   608039026.03             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   629201273.76             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   233211625935.31          # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   27      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   71.99   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
@@ -5029,6 +5106,7 @@ BHbeta_LPF   9       # Beverton-Holt recruitment saturation parameter (if recrui
 BHbeta_SPF   5       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_SBF   29      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small benthic fish
 BHbeta_LBF   24      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
+BHbeta_BIR   24      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
 
 # Recruitment modifiers to encourage recovery of stocks
 recover_mult_SPL   1 # Recruitment multiplier for Spiny lobster [ multiplier ]
@@ -5046,6 +5124,7 @@ recover_mult_LPF   1 # Recruitment multiplier for Large pelagic fish [ multiplie
 recover_mult_SPF   1 # Recruitment multiplier for Small pelagic fish [ multiplier ]
 recover_mult_SBF   1 # Recruitment multiplier for Small benthic fish [ multiplier ]
 recover_mult_LBF   1 # Recruitment multiplier for Large benthic fish [ multiplier ]
+recover_mult_BIR   1 # Recruitment multiplier for Large benthic fish [ multiplier ]
 
 recover_trigger  0             # Prop. of init. stock remaining that triggers encourage recovery
 recover_span     31449600000   # Number of days from initial trigger until recover_mult used
@@ -5067,6 +5146,7 @@ recover_start_LPF   31449600000 # Recruitment change start date for Large pelagi
 recover_start_SPF   31449600000 # Recruitment change start date for Small pelagic fish [ d ]
 recover_start_SBF   31449600000 # Recruitment change start date for Small benthic fish [ d ]
 recover_start_LBF   31449600000 # Recruitment change start date for Large benthic fish [ d ]
+recover_start_BIR   31449600000 # Recruitment change start date for Large benthic fish [ d ]
 
 # Log-normal random recruitment CHECK WITH BETH
 lognorm_mu     0.5   Centre for lognormal distribution of the number of recruits
@@ -5086,6 +5166,7 @@ LPF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for 
 SPF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Small pelagic fish
 SBF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Small benthic fish
 LBF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Large benthic fish
+BIR_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Large benthic fish
 
 # Size of recruits
 KWSR_SPL   2.31     # Structural weight of recruits for Spiny lobster [ mg N m-3 ]
@@ -5103,6 +5184,8 @@ KWSR_LPF   10.57    # Structural weight of recruits for Large pelagic fish [ mg 
 KWSR_SPF   0.15     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_SBF   76.77    # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
 KWSR_LBF   0.41     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
+KWSR_BIR   500     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
+
 
 KWRR_SPL   6.13     # Reserve weight of recruits for Spiny lobster [ mg N m-3 ]
 KWRR_GCR   61.18    # Reserve weight of recruits for Golden Crab [ mg N m-3 ]
@@ -5119,6 +5202,95 @@ KWRR_LPF   28.01    # Reserve weight of recruits for Large pelagic fish [ mg N m
 KWRR_SPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWRR_SBF   203.43   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
 KWRR_LBF   1.07     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
+KWRR_BIR   1600     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~           Interdep Recruitment       ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+intersp_depend_recruit_SPL   0 # Flag indicating interspecies dependence of recruitment for SPL
+intersp_depend_recruit_GCR   0 # Flag indicating interspecies dependence of recruitment for GCR
+intersp_depend_recruit_BRC   0 # Flag indicating interspecies dependence of recruitment for BRC
+intersp_depend_recruit_VID   0 # Flag indicating interspecies dependence of recruitment for VID
+intersp_depend_recruit_ORO   0 # Flag indicating interspecies dependence of recruitment for ORO
+intersp_depend_recruit_ALF   0 # Flag indicating interspecies dependence of recruitment for ALF
+intersp_depend_recruit_ANG   0 # Flag indicating interspecies dependence of recruitment for ANG
+intersp_depend_recruit_CHO   0 # Flag indicating interspecies dependence of recruitment for CHO
+intersp_depend_recruit_OTA   0 # Flag indicating interspecies dependence of recruitment for OTA
+intersp_depend_recruit_CET   0 # Flag indicating interspecies dependence of recruitment for CET
+intersp_depend_recruit_DOL   0 # Flag indicating interspecies dependence of recruitment for DOL
+intersp_depend_recruit_BIR   0 # Flag indicating interspecies dependence of recruitment for BIR
+intersp_depend_recruit_OCT   0 # Flag indicating interspecies dependence of recruitment for OCT
+intersp_depend_recruit_SQD   0 # Flag indicating interspecies dependence of recruitment for SQD
+intersp_depend_recruit_LPF   0 # Flag indicating interspecies dependence of recruitment for LPF
+intersp_depend_recruit_SPF   0 # Flag indicating interspecies dependence of recruitment for SPF
+intersp_depend_recruit_SBF   0 # Flag indicating interspecies dependence of recruitment for SBF
+intersp_depend_recruit_LBF   0 # Flag indicating interspecies dependence of recruitment for LBF
+intersp_depend_recruit_SZO   0 # Flag indicating interspecies dependence of recruitment for SZO
+intersp_depend_recruit_MZO   0 # Flag indicating interspecies dependence of recruitment for MZO
+intersp_depend_recruit_LZO   0 # Flag indicating interspecies dependence of recruitment for LZO
+intersp_depend_recruit_SCR   0 # Flag indicating interspecies dependence of recruitment for SCR
+intersp_depend_recruit_BFF   0 # Flag indicating interspecies dependence of recruitment for BFF
+intersp_depend_recruit_BCA   0 # Flag indicating interspecies dependence of recruitment for BCA
+intersp_depend_recruit_MOL   0 # Flag indicating interspecies dependence of recruitment for MOL
+intersp_depend_recruit_PB    0 # Flag indicating interspecies dependence of recruitment for PB
+intersp_depend_recruit_BB    0 # Flag indicating interspecies dependence of recruitment for BB
+
+intersp_depend_sp_SPL   0 # ID of species recruitment dependent on
+intersp_depend_sp_GCR   0 # ID of species recruitment dependent on
+intersp_depend_sp_BRC   0 # ID of species recruitment dependent on
+intersp_depend_sp_VID   0 # ID of species recruitment dependent on
+intersp_depend_sp_ORO   0 # ID of species recruitment dependent on
+intersp_depend_sp_ALF   0 # ID of species recruitment dependent on
+intersp_depend_sp_ANG   0 # ID of species recruitment dependent on
+intersp_depend_sp_CHO   0 # ID of species recruitment dependent on
+intersp_depend_sp_OTA   0 # ID of species recruitment dependent on
+intersp_depend_sp_CET   0 # ID of species recruitment dependent on
+intersp_depend_sp_DOL   0 # ID of species recruitment dependent on
+intersp_depend_sp_BIR   0 # ID of species recruitment dependent on
+intersp_depend_sp_OCT   0 # ID of species recruitment dependent on
+intersp_depend_sp_SQD   0 # ID of species recruitment dependent on
+intersp_depend_sp_LPF   0 # ID of species recruitment dependent on
+intersp_depend_sp_SPF   0 # ID of species recruitment dependent on
+intersp_depend_sp_SBF   0 # ID of species recruitment dependent on
+intersp_depend_sp_LBF   0 # ID of species recruitment dependent on
+intersp_depend_sp_SZO   0 # ID of species recruitment dependent on
+intersp_depend_sp_MZO   0 # ID of species recruitment dependent on
+intersp_depend_sp_LZO   0 # ID of species recruitment dependent on
+intersp_depend_sp_SCR   0 # ID of species recruitment dependent on
+intersp_depend_sp_BFF   0 # ID of species recruitment dependent on
+intersp_depend_sp_BCA   0 # ID of species recruitment dependent on
+intersp_depend_sp_MOL   0 # ID of species recruitment dependent on
+intersp_depend_sp_PB    0 # ID of species recruitment dependent on
+intersp_depend_sp_BB    0 # ID of species recruitment dependent on
+
+intersp_depend_scale_SPL   0 # Scalar for dependency of recruitment
+intersp_depend_scale_GCR   0 # Scalar for dependency of recruitment
+intersp_depend_scale_BRC   0 # Scalar for dependency of recruitment
+intersp_depend_scale_VID   0 # Scalar for dependency of recruitment
+intersp_depend_scale_ORO   0 # Scalar for dependency of recruitment
+intersp_depend_scale_ALF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_ANG   0 # Scalar for dependency of recruitment
+intersp_depend_scale_CHO   0 # Scalar for dependency of recruitment
+intersp_depend_scale_OTA   0 # Scalar for dependency of recruitment
+intersp_depend_scale_CET   0 # Scalar for dependency of recruitment
+intersp_depend_scale_DOL   0 # Scalar for dependency of recruitment
+intersp_depend_scale_BIR   0 # Scalar for dependency of recruitment
+intersp_depend_scale_OCT   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SQD   0 # Scalar for dependency of recruitment
+intersp_depend_scale_LPF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SPF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SBF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_LBF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SZO   0 # Scalar for dependency of recruitment
+intersp_depend_scale_MZO   0 # Scalar for dependency of recruitment
+intersp_depend_scale_LZO   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SCR   0 # Scalar for dependency of recruitment
+intersp_depend_scale_BFF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_BCA   0 # Scalar for dependency of recruitment
+intersp_depend_scale_MOL   0 # Scalar for dependency of recruitment
+intersp_depend_scale_PB    0 # Scalar for dependency of recruitment
+intersp_depend_scale_BB    0 # Scalar for dependency of recruitment
+
 
 # Minimum and maximum spawning temperatures recalculated as a weighted average
 SPL_min_spawn_temp   5 # Minimum spawning temperature for Spiny lobster [ Celsius ]
@@ -5136,6 +5308,7 @@ LPF_min_spawn_temp   4 # Minimum spawning temperature for Large pelagic fish [ C
 SPF_min_spawn_temp   4 # Minimum spawning temperature for Small pelagic fish [ Celsius ]
 SBF_min_spawn_temp   4 # Minimum spawning temperature for Small benthic fish [ Celsius ]
 LBF_min_spawn_temp   4 # Minimum spawning temperature for Large benthic fish [ Celsius ]
+BIR_min_spawn_temp   4 # Minimum spawning temperature for Large benthic fish [ Celsius ]
 
 SPL_max_spawn_temp   25 # Maximum spawning temperature for Spiny lobster [ Celsius ]
 GCR_max_spawn_temp   25 # Maximum spawning temperature for Golden Crab [ Celsius ]
@@ -5152,6 +5325,7 @@ LPF_max_spawn_temp   25 # Maximum spawning temperature for Large pelagic fish [ 
 SPF_max_spawn_temp   25 # Maximum spawning temperature for Small pelagic fish [ Celsius ]
 SBF_max_spawn_temp   25 # Maximum spawning temperature for Small benthic fish [ Celsius ]
 LBF_max_spawn_temp   25 # Maximum spawning temperature for Large benthic fish [ Celsius ]
+BIR_max_spawn_temp   25 # Maximum spawning temperature for Large benthic fish [ Celsius ]
 
 
 # Minimum and maximum spawning salinities
@@ -5170,6 +5344,7 @@ LPF_min_spawn_salt   0 # Minimum spawning salinity for Large pelagic fish
 SPF_min_spawn_salt   0 # Minimum spawning salinity for Small pelagic fish
 SBF_min_spawn_salt   0 # Minimum spawning salinity for Small benthic fish
 LBF_min_spawn_salt   0 # Minimum spawning salinity for Large benthic fish
+BIR_min_spawn_salt   0 # Minimum spawning salinity for Large benthic fish
 
 SPL_max_spawn_salt   40 # Maximum spawning salinity for Spiny lobster
 GCR_max_spawn_salt   40 # Maximum spawning salinity for Golden Crab
@@ -5186,6 +5361,7 @@ LPF_max_spawn_salt   40 # Maximum spawning salinity for Large pelagic fish
 SPF_max_spawn_salt   40 # Maximum spawning salinity for Small pelagic fish
 SBF_max_spawn_salt   40 # Maximum spawning salinity for Small benthic fish
 LBF_max_spawn_salt   40 # Maximum spawning salinity for Large benthic fish
+BIR_max_spawn_salt   40 # Maximum spawning salinity for Large benthic fish
 
 ## Stock structure
 # Horizontal stock structure
@@ -5481,6 +5657,7 @@ jack_a_LPF   0 # (If recruit  = 15) Slope of recruitment for Large pelagic fish 
 jack_a_SPF   0 # (If recruit  = 15) Slope of recruitment for Small pelagic fish [ Number ]
 jack_a_SBF   0 # (If recruit  = 15) Slope of recruitment for Small benthic fish [ Number ]
 jack_a_LBF   0 # (If recruit  = 15) Slope of recruitment for Large benthic fish [ Number ]
+jack_a_BIR   0 # (If recruit  = 15) Slope of recruitment for Large benthic fish [ Number ]
 
 jack_b_SPL   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Spiny lobster [ Number ]
 jack_b_GCR   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Golden Crab [ Number ]
@@ -5497,6 +5674,7 @@ jack_b_LPF   0 # (If recruit  = 15)Empirical proxy for a relationship with the c
 jack_b_SPF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Small pelagic fish [ Number ]
 jack_b_SBF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Small benthic fish [ Number ]
 jack_b_LBF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Large benthic fish [ Number ]
+jack_b_BIR   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Large benthic fish [ Number ]
 
 ## Evolution related parameters
 flag_do_evolution     0        Whether do evolution (1) or not (0)                                      0
