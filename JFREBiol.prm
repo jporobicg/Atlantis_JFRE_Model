@@ -5460,6 +5460,7 @@ BD_remin_contrib  1
 BC_remin_contrib  0
 BO_remin_contrib  1
 BB_remin_contrib  1
+BFF_remin_contrib  1
 
 # Added by Bec Gorton 23rd April 2013.
 jack_a_SPL   0 # (If recruit  = 15) Slope of recruitment for Spiny lobster [ Number ]
