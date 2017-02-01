@@ -3460,8 +3460,8 @@ pSTOCK_jLBF   1 # Stock specific differences in predation for juvenile of Large 
 # Availabilty of catch to opportunistic catch grazers (thieves). There should be an
 # entry for each group that has 'IsCatchGrazer' set to true in the functional group
 # definition file.
-pFCOCT      37
-0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#pFCOCT      37
+#0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Availability of bacteria being cleaned from ingested detritus #
 p_BBfish  0.3  Prop. of sed. bacteria taken when detrit eaten by verts. 0.3 - 1

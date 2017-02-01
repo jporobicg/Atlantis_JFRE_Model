@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <AttributeGroup AttributeGroupName="AtlantisFunctionalGroups">
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SPL&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SPL"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Spiny_lobster&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Spiny lobster&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Spiny_lobster"/>
+    <Attribute AttributeName="LongName" AttributeValue="Spiny lobster"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -16,7 +16,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH_INVERT&quot;">
+    <Attribute AttributeName="GroupType" AttributeValue="FISH_INVERT">
       <Lookup>
         <LookupValue LookupValue="LG_PHY" LookupDescription="Large Phytoplankton"/>
         <LookupValue LookupValue="SM_PHY" LookupDescription="Small Phytoplankton"/>
@@ -57,10 +57,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;GCR&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="GCR"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Golden_Crab&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Golden Crab&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Golden_Crab"/>
+    <Attribute AttributeName="LongName" AttributeValue="Golden Crab"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -72,7 +72,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH_INVERT&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH_INVERT"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -84,10 +84,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;BRC&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="BRC"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Breca&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Breca&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Breca"/>
+    <Attribute AttributeName="LongName" AttributeValue="Breca"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -99,7 +99,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -111,10 +111,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;VID&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="VID"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Vidriola&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Vidriola&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Vidriola"/>
+    <Attribute AttributeName="LongName" AttributeValue="Vidriola"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="3"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -126,7 +126,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -138,10 +138,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;ORO&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="ORO"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Orange_Roughy&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Orange Roughy&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Orange_Roughy"/>
+    <Attribute AttributeName="LongName" AttributeValue="Orange Roughy"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -153,7 +153,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="1"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -165,10 +165,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;ALF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="ALF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Alfonsino&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Alfonsino&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Alfonsino"/>
+    <Attribute AttributeName="LongName" AttributeValue="Alfonsino"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -180,7 +180,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="1"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -192,10 +192,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;ANG&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="ANG"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Anguila&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Anguila&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Anguila"/>
+    <Attribute AttributeName="LongName" AttributeValue="Anguila"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -207,7 +207,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -219,10 +219,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;CHO&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="CHO"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Chondrichtyans&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Chondrichtyans&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Chondrichtyans"/>
+    <Attribute AttributeName="LongName" AttributeValue="Chondrichtyans"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -234,7 +234,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;SHARK&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="SHARK"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -246,10 +246,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;OTA&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="OTA"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Otariid&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Otariid&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Otariid"/>
+    <Attribute AttributeName="LongName" AttributeValue="Otariid"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -261,7 +261,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MAMMAL&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MAMMAL"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -273,10 +273,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;DOL&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="DOL"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Dophins&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Dophins&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Dophins"/>
+    <Attribute AttributeName="LongName" AttributeValue="Dophins"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -288,7 +288,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MAMMAL&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MAMMAL"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -300,10 +300,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;CET&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="CET"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Whales&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Whales&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Whales"/>
+    <Attribute AttributeName="LongName" AttributeValue="Whales"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -315,7 +315,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MAMMAL&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MAMMAL"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -327,10 +327,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;BIR&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="BIR"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Birds&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Birds&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Birds"/>
+    <Attribute AttributeName="LongName" AttributeValue="Birds"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -342,7 +342,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;BIRD&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="BIRD"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -354,10 +354,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SQD&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SQD"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Squids&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Squids&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Squids"/>
+    <Attribute AttributeName="LongName" AttributeValue="Squids"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -369,7 +369,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;CEP&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="CEP"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -381,10 +381,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;OCT&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="OCT"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Octupus&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Octupus&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Octupus"/>
+    <Attribute AttributeName="LongName" AttributeValue="Octupus"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -396,7 +396,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;CEP&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="CEP"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -408,10 +408,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;LPF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="LPF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Pelagic_L_fish&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Large pelagic fish&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Pelagic_L_fish"/>
+    <Attribute AttributeName="LongName" AttributeValue="Large pelagic fish"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -423,7 +423,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -435,10 +435,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SPF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SPF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Pelagic_S_fish&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Small pelagic fish&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Pelagic_S_fish"/>
+    <Attribute AttributeName="LongName" AttributeValue="Small pelagic fish"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -450,7 +450,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -462,10 +462,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SBF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SBF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Benthic_S_fish&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Small benthic fish&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Benthic_S_fish"/>
+    <Attribute AttributeName="LongName" AttributeValue="Small benthic fish"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -477,7 +477,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -489,10 +489,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;LBF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="LBF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Benthic_L_fish&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Large benthic fish&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Benthic_L_fish"/>
+    <Attribute AttributeName="LongName" AttributeValue="Large benthic fish"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
@@ -504,7 +504,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="1"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;FISH&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="FISH"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -516,10 +516,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="4"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SZO&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SZO"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Small_zooplankton&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Small Zooplankton&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Small_zooplankton"/>
+    <Attribute AttributeName="LongName" AttributeValue="Small Zooplankton"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -531,7 +531,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MED_ZOO&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MED_ZOO"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -543,10 +543,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;MZO&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="MZO"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Med_zooplankton&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Medium Zooplankton&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Med_zooplankton"/>
+    <Attribute AttributeName="LongName" AttributeValue="Medium Zooplankton"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -558,7 +558,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MED_ZOO&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MED_ZOO"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -570,10 +570,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;LZO&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="LZO"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Large_zooplankton&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Large Zooplankton&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Large_zooplankton"/>
+    <Attribute AttributeName="LongName" AttributeValue="Large Zooplankton"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -585,7 +585,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;LG_ZOO&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="LG_ZOO"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -597,10 +597,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="1"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SCR&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SCR"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Small_crus&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Small crustaceans&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Small_crus"/>
+    <Attribute AttributeName="LongName" AttributeValue="Small crustaceans"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -612,7 +612,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;MOB_EP_OTHER&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="MOB_EP_OTHER"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -624,10 +624,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;BFF&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="BFF"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Deposit_feeders&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Deposit feeders&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Deposit_feeders"/>
+    <Attribute AttributeName="LongName" AttributeValue="Deposit feeders"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -639,7 +639,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;LG_INF&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="LG_INF"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -651,10 +651,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;LPH&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="LPH"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Large_phyto&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Large phytoplankton&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Large_phyto"/>
+    <Attribute AttributeName="LongName" AttributeValue="Large phytoplankton"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -666,7 +666,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;LG_PHY&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="LG_PHY"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -678,10 +678,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;SPH&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="SPH"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Small_phyto&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Small phytoplankton&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Small_phyto"/>
+    <Attribute AttributeName="LongName" AttributeValue="Small phytoplankton"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -693,7 +693,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;SM_PHY&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="SM_PHY"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -705,10 +705,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;COR&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="COR"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Coral&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Coral&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Coral"/>
+    <Attribute AttributeName="LongName" AttributeValue="Coral"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -720,7 +720,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="1"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;CORAL&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="CORAL"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="1"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -732,10 +732,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;BCA&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="BCA"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Benthic_carnivorous&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Sedentary benthic carnivorous&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Benthic_carnivorous"/>
+    <Attribute AttributeName="LongName" AttributeValue="Sedentary benthic carnivorous"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -747,7 +747,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;SED_EP_OTHER&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="SED_EP_OTHER"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -759,10 +759,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;MOL&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="MOL"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Mollusca&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Mollusca&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Mollusca"/>
+    <Attribute AttributeName="LongName" AttributeValue="Mollusca"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -774,7 +774,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;SED_EP_FF&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="SED_EP_FF"/>
     <Attribute AttributeName="IsPredator" AttributeValue="1"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -786,10 +786,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;MA&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="MA"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Macroalgae&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Macroalgae&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Macroalgae"/>
+    <Attribute AttributeName="LongName" AttributeValue="Macroalgae"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -801,7 +801,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;PHYTOBEN&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="PHYTOBEN"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="1"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -813,10 +813,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;PB&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="PB"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Pelag_Bact&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Pelagic Bacteria&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Pelag_Bact"/>
+    <Attribute AttributeName="LongName" AttributeValue="Pelagic Bacteria"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -828,7 +828,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;PL_BACT&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="PL_BACT"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -840,10 +840,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;BB&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="BB"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Sed_Bact&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Sediment Bacteria&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Sed_Bact"/>
+    <Attribute AttributeName="LongName" AttributeValue="Sediment Bacteria"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -855,7 +855,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;SED_BACT&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="SED_BACT"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -867,10 +867,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;DL&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="DL"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Labile_detritus&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Labile detritus&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Labile_detritus"/>
+    <Attribute AttributeName="LongName" AttributeValue="Labile detritus"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -882,7 +882,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;LAB_DET&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="LAB_DET"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -894,10 +894,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;DR&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="DR"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Refractory_detritrus&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Refractory detritrus&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Refractory_detritrus"/>
+    <Attribute AttributeName="LongName" AttributeValue="Refractory detritrus"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -909,7 +909,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;REF_DET&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="REF_DET"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
@@ -921,10 +921,10 @@
     <Attribute AttributeName="numMoveEntries" AttributeValue="0"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="FunctionalGroup" AttributeDescription="The defintion of a functional group">
-    <Attribute AttributeName="GroupCode" AttributeValue="&quot;DC&quot;"/>
+    <Attribute AttributeName="GroupCode" AttributeValue="DC"/>
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
-    <Attribute AttributeName="Name" AttributeValue="&quot;Carrion&quot;"/>
-    <Attribute AttributeName="LongName" AttributeValue="&quot;Carrion&quot;"/>
+    <Attribute AttributeName="Name" AttributeValue="Carrion"/>
+    <Attribute AttributeName="LongName" AttributeValue="Carrion"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="1"/>
@@ -936,7 +936,7 @@
     <Attribute AttributeName="IsFished" AttributeValue="0"/>
     <Attribute AttributeName="IsImpacted" AttributeValue="0"/>
     <Attribute AttributeName="IsTAC" AttributeValue="0"/>
-    <Attribute AttributeName="GroupType" AttributeValue="&quot;CARRION&quot;"/>
+    <Attribute AttributeName="GroupType" AttributeValue="CARRION"/>
     <Attribute AttributeName="IsPredator" AttributeValue="0"/>
     <Attribute AttributeName="IsCover" AttributeValue="0"/>
     <Attribute AttributeName="IsSiliconDep" AttributeValue="0"/>
