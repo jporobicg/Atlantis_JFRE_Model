@@ -99,8 +99,9 @@ COR_bleach_growshift	    0.001   # Growth shift with new zooxanthellae
 COR_bleach_temp		    30	    # Bleaching temperature threshold
 COR_DHW_thresh		    12	    # Degree heating weeks threshold
 COR_threshdepth		    100	    # Depth threshold for shifting growth state
-COR_depmum_scalar	    2 	    #Scalar for shifting growth state
-COR_prop_zooxanth
+COR_depmum_scalar	    2 	    # Scalar for shifting growth state
+COR_prop_zooxanth	    0.5	    # Remineralisation rate of host respiration
+
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
