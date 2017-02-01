@@ -4496,6 +4496,9 @@ FSBDR_BFF   0 # Seabird slopping feeding for Deposit feeders [ Proportion ]
 FSBDR_BCA   0 # Seabird slopping feeding for Sea urchins [ Proportion ]
 FSBDR_MOL   0 # Seabird slopping feeding for Mollusca [ Proportion ]
 
+# Demersal fish sloppy feeding
+FFDDR   0.95  Proportion of static demersal fish planktivore prey lost
+
 # Fraction of non-assimilate lost to detritus
 FDG_SPL   0.25 # Fraction of non-assimilate lost to detritus for  Spiny lobster [ Proportion ]
 FDG_GCR   0.25 # Fraction of non-assimilate lost to detritus for  Golden Crab [ Proportion ]
