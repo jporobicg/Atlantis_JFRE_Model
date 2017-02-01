@@ -323,6 +323,31 @@ flagq10effSCR 0
 flagq10effBCA 0
 flagq10effMOL 0
 
+flagq10receffSPL 0
+flagq10receffGCR 0
+flagq10receffBRC 0
+flagq10receffORO 0
+flagq10receffVID 0
+flagq10receffANG 0
+flagq10receffALF 0
+flagq10receffCHO 0
+flagq10receffOTA 0
+flagq10receffCET 0
+flagq10receffBIR 0
+flagq10receffOCT 0
+flagq10receffCOR 0
+flagq10receffSQD 0
+flagq10receffDOL 0
+flagq10receffLPF 0
+flagq10receffSPF 0
+flagq10receffSBF 0
+flagq10receffLBF 0
+flagq10receffSCR 0
+flagq10receffBCA 0
+flagq10receffMOL 0
+
+
+
 # Temperature sensitivty of vertebrates and CEP, PWN: 0 = no, 1 = yes
 flagtempsensitiveSPL 1
 flagtempsensitiveGCR 1
