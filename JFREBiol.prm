@@ -4223,6 +4223,8 @@ BCA_mL   2 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
 0 0
 MOL_mL   2 # Linear mortality rate of Mollusca [ d-1 ]
 0 0
+MA_mL   2 # Linear mortality rate of Large phytoplancton [ d-1 ]
+0 0
 LPH_mL   2 # Linear mortality rate of Large phytoplancton [ d-1 ]
 0 0
 SPH_mL   2 # Linear mortality rate of Mollusca [ d-1 ]
@@ -4282,9 +4284,11 @@ BCA_mQ   2 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
 0 0
 MOL_mQ   2 #  Quad. mortality rate of Mollusca [ d-1 ]
 0 0
-NO_mQ    2 #  Quad. mortality rate of Nitrate [ d-1 ]
-0 0
 MA_mQ    2 #  Quad. mortality rate of Macroalgae [ d-1 ]
+0 0
+LPH_mQ   2 # Linear mortality rate of Large phytoplancton [ d-1 ]
+0 0
+SPH_mQ   2 # Linear mortality rate of Mollusca [ d-1 ]
 0 0
 
 # Extra macrophyte mortality (based on physical environment)
