@@ -4509,6 +4509,7 @@ FDG_ALF   0.2 # Fraction of non-assimilate lost to detritus for  Alfonsino [ Pro
 FDG_ANG   0.3 # Fraction of non-assimilate lost to detritus for  Anguila [ Proportion ]
 FDG_CHO   0.2 # Fraction of non-assimilate lost to detritus for  Chondrichtyans [ Proportion ]
 FDG_OTA   0.2 # Fraction of non-assimilate lost to detritus for  Otariid [ Proportion ]
+FDG_COR   0.15 # Fraction of non-assimilate lost to detritus for  Otariid [ Proportion ]
 FDG_CET   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Proportion ]
 FDG_DOL   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Proportion ]
 FDG_BIR   0.3 # Fraction of non-assimilate lost to detritus for  Birds [ Proportion ]
