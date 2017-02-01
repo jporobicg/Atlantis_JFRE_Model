@@ -3870,7 +3870,10 @@ pR_CET   3.5 # Preference for rebuilding reserves over structure for sharks [ Nu
 pR_DOL   3.5 # Preference for rebuilding reserves over structure for Otariids [ Number ]
 pR_BIR   5 # Preference for rebuilding reserves over structure for Otariids [ Number ]
 
-# Length - weight parameters
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~              Length - weight parameters          ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+# Vertebrates
 li_a_SPL    0.96225457   # Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
 li_a_GCR    0.53179259   # Coefficient of allometic length-weight relation for Golden Crab [ Number ]
 li_a_BRC    0.00839310   # Coefficient of allometic length-weight relation for Breca [ Number ]
@@ -3904,6 +3907,11 @@ li_b_CHO   3.176       # Exponent in allometic length-weight relation for Large 
 li_b_CET   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 li_b_DOL   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 li_b_BIR   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+## Invertebrates
+li_a_invert 0.01
+li_b_invert 3.0
+
+
 
 min_li_mat_SPL   73.2      # Minimum size of maturity of  Spiny lobster [ cm ]
 min_li_mat_GCR   10.62     # Minimum size of maturity of  Golden Crab [ cm ]
