@@ -64,7 +64,7 @@ flaghemisphere      0    # Flag for hemisphere model is in (0 = southern; 1 = no
 flagIsEstuary       0    # Flag to indicate if the model is estuary. If true a sediment tracer is required in the initial conditions input file.
 flagAllowLand 	    0    # Flag If set to 1 if the model includes dynamic land components
 trackAtomicRatio    0	 # Flag If set to 1, then not only N, but also P and C are tracked
-track_rugosity_arag 0  	 # Flag indicating that rugosity and aragonite saturation to be tracked - needed for coral
+track_rugosity_arag 1  	 # Flag indicating that rugosity and aragonite saturation to be tracked - needed for coral
 track_pH 	    0    # Flag indicating that want to track pH
 track_contaminants  0	 # Flag If set to 1, contaminants will be tracked
 

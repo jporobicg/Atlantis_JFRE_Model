@@ -16,7 +16,7 @@
     <Attribute AttributeName="fishmove" AttributeDescription="Set to 0 to turn vertebrate movement off for debugging purposes" AttributeValue="1" AttributeType="Boolean" AttributeRecommendedValue="1"/>
     <Attribute AttributeName="flaghemisphere" AttributeDescription="Flag for hemisphere model is in (0 = southern; 1 = northern)." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="trackAtomicRatio" AttributeDescription="Flag to turn on tracking atomic ratios." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="track_rugosity_arag" AttributeDescription="Flag to turn on tracking of rugosity and aragonite saturaiton." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="track_rugosity_arag" AttributeDescription="Flag to turn on tracking of rugosity and aragonite saturaiton." AttributeValue="1" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="track_pH" AttributeDescription="Flag to turn on tracking of pH." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="mirror_invalid" AttributeDescription="Flag to indicate how to deal with invalid hydrodynamic exchanges." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="flag_replicated_old" AttributeDescription="Flag to replicate old model results before the trunk code was merged." AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>

@@ -35,12 +35,13 @@ flagBFDlim     1 Switch to identify filter feeding crowding used: simple=0, ERSE
 flagBFFlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBCAlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagMOLlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagCORlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 
 flagBClim      0
 
 # Those determining which environmental
 # interaction formulations used
-track_rugosity_arag        1 set to 1 Rugosity and aragonite saturation will be tracked and additional parameters required. Important for modelling corals.
+#track_rugosity_arag        1 set to 1 Rugosity and aragonite saturation will be tracked and additional parameters required. Important for modelling corals.
 flagtrackpops        	   1 Flag to indicate whether yearly stock value required 1
 flagseason           	   1 Flag of seasonal change, 0 for no, 1 yes 1
 flaglight            	   0 Light adaptation: 1 = on, 0 = off 1
@@ -48,7 +49,7 @@ flagIsEstuary        	   0
 flaglightopt         	   3 Light model: 0=orig, 1=bottom, 2=top, 3=mid-depth of cell 3
 flagmodeltemp        	   0 Temperature model used: 1 = regression, 0 = from data 1
 flagmodelpH          	   0
-flagmodelArag        	   0
+flagmodelArag        	   1
 flagq10              	   1 Q10 corrections used in the model: 1 = yes, 0 = no 1
 O2case               	   3 Oxygen limitation used: 0 = ambient O2, 1 = based on depth, 2 = IGBEM, 3 = quadratic lim 3
 flagnut              	   0 Nutrient lim used: 0=Leibig (min), 1=multiplicative, 2=WQI 0
@@ -77,30 +78,68 @@ flag_predratiodepend        0
 ## ~           parameter for corals        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 K_max_num_DHW               10
-Karag_A			    10
-Karag_B			    10
-Karag_C			    10
+Karag_A			    0.9
+Karag_B			    8.20416
+Karag_C			    2.3641
+Karag_D			    8
 Karag_pH		    10
-Kca_const		    10
-K_Ks			    10
-Ksmother_coefft		    10
-Ksmother_const		    10
+Kca_const		    0.0103
+K_Ks			    6e-9
+Ksmother_coefft		    0.054
+Ksmother_const		    0.4622
 MA_coral_overgrow 	    0.001 # Rate macroalgae overgrow coral d-1
-MA_coral_compete	    0.001 # Rate macroalgae overgrow coral d-1
+MA_coral_compete	    0.8 # Rate macroalgae overgrow coral d-1
 
 ## Bleaching
-COR_bleach_periodA          0 # Quick recovery period (regain original zooxanthellae)
-COR_bleach_periodB 	    0 # Slow recovery period (regain new zooxanthellae)
+COR_bleach_periodA          0           # Quick recovery period (regain original zooxanthellae)
+COR_bleach_periodB 	    0 	        # Slow recovery period (regain new zooxanthellae)
 COR_mBleach 	   	    0.0000001
 COR_bleaching_rate 	    0.0001
 COR_bleach_recovery_rate    0.0001
-COR_bleach_tempshift        25 # Temperature shift with new zooxanthellae
-COR_bleach_growshift	    0.001   # Growth shift with new zooxanthellae
-COR_bleach_temp		    30	    # Bleaching temperature threshold
-COR_DHW_thresh		    12	    # Degree heating weeks threshold
-COR_threshdepth		    100	    # Depth threshold for shifting growth state
-COR_depmum_scalar	    2 	    # Scalar for shifting growth state
-COR_prop_zooxanth	    0.5	    # Remineralisation rate of host respiration
+COR_bleach_tempshift        30          # Temperature shift with new zooxanthellae
+COR_bleach_growshift	    0.001   	# Growth shift with new zooxanthellae
+COR_bleach_temp		    30	    	# Bleaching temperature threshold
+COR_DHW_thresh		    4	    	# Degree heating weeks threshold
+COR_threshdepth		    100	    	# Depth threshold for shifting growth state
+COR_depmum_scalar	    2 	    	# Scalar for shifting growth state
+COR_prop_zooxanth	    0.5	    	# Proportion of zooxanthel
+COR_HostRemin		    0.9		# Remineralisation rate of host respiration
+COR_FeedLightThresh	    700		# Light threshold W
+COR_PropLightFeed	    0.2		# Proportion of night feeding done when in daylight
+COR_calcifRefBaseline	    15.03	# Calcification baseline rate d-1
+COR_calcifTconst	    9.7		# Calcification temperature constant
+COR_calcifTcoefft	    18.83	# Calcification temperature coefficient
+COR_calcifTopt		    29		# Calcification optimal temperature
+COR_calcifLambda	    0.42	# Calcification lambda
+COR_coral_max_accel_trans   0.003	# Max proportion of accelerated growth
+COR_coral_max_accelA	    0.7		# Steepness of accelerated growth
+COR_coral_max_accelB	    0.5		# Midpoint of accelerated growth
+COR_CrecruitA		    0.8		# Coral recruitment scalar
+COR_CrecruitB		    50		# Coral recruitment constant
+COR_CrecruitC		    0.8		# Coral recruitment exponent
+
+## rugosity
+COR_rug_factor		    0.5		# Rugosity surface area scalar
+MOL_rug_factor		    0.03	# Rugosity surface area scalar
+BCA_rug_factor		    0.01	# Rugosity surface area scalar
+BFF_rug_factor		    0.001	# Rugosity surface area scalar
+MA_rug_factor		    0.1		# Rugosity surface area scalar
+
+COR_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+MOL_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+BCA_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+BFF_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+MA_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+
+COR_rug_bleacherode	    0.001	# Cryptic bleached coral erosion rate
+MOL_rug_bleacherode	    0.003	# Cryptic bleached coral erosion rate
+BCA_rug_bleacherode	    0.003	# Cryptic bleached coral erosion rate
+BFF_rug_bleacherode	    0.03	# Cryptic bleached coral erosion rate
+MA_rug_bleacherode	    0.1		# Cryptic bleached coral erosion rate
+COR_colony_ha		    0.75	# Constant scaling colony height to diameter
+COR_rugosity_inc	    0.03	# Rate of increase in rugosity
+COR_colony_diam		    60		# Colony diameter
+COR_rugosity_dec	    0.01	# Rate at which rugosity drops as coral is degraded
 
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
@@ -1451,6 +1490,9 @@ BCAthresh  5000  mg.N.m-2 1000
 MOL_low    200  Little space limitation (pop too small) mg.N.m-2 2000
 MOL_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
 MOLthresh  5000  mg.N.m-2 1000
+COR_low    200  Little space limitation (pop too small) mg.N.m-2 2000
+COR_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
+CORthresh  5000  mg.N.m-2 1000
 
 
 # Habitat dependency parameters
@@ -4410,6 +4452,7 @@ mD_SPL   0.001 # Half oxygen mortality depth for  Spiny lobster [ m ]
 mD_GCR   0.001 # Half oxygen mortality depth for  Golden Crab [ m ]
 mD_SCR   0.001 # Half oxygen mortality depth for  Small crustaceans [ m ]
 mD_BFF   0.001 # Half oxygen mortality depth for  Deposit feeders [ m ]
+mD_COR   0.001 # Half oxygen mortality depth for  Deposit feeders [ m ]
 mD_LPH   1 # Half oxygen mortality depth for  Large phytoplankton [ m ]
 mD_SPH   1 # Half oxygen mortality depth for  Small phytoplankton [ m ]
 mD_BCA   0.001 # Half oxygen mortality depth for  Benthic Carnivorous [ m ]
@@ -4422,6 +4465,7 @@ mO_SPL   0.001 # Oxygen dependent mortality for  Spiny lobster [ d-1 ]
 mO_GCR   0.001 # Oxygen dependent mortality for  Golden Crab [ d-1 ]
 mO_SCR   0.001     # Oxygen dependent mortality for  Small crustaceans [ d-1 ]
 mO_BFF   0.00001 # Oxygen dependent mortality for  Deposit feeders [ d-1 ]
+mO_COR   0.00001 # Oxygen dependent mortality for  Deposit feeders [ d-1 ]
 mO_LPH   0 # Oxygen dependent mortality for  Large phytoplankton [ d-1 ]
 mO_SPH   0 # Oxygen dependent mortality for  Small phytoplankton [ d-1 ]
 mO_BCA   0.001 # Oxygen dependent mortality for  Benthic Carnivorous [ d-1 ]
@@ -4434,6 +4478,7 @@ KO2_SPL   1320 # Lethal oxygen limit for  Spiny lobster [ mg O2 m-3 ]
 KO2_GCR   2450 # Lethal oxygen limit for  Golden Crab [ mg O2 m-3 ]
 KO2_SCR   2450 # Lethal oxygen limit for  Small crustaceans [ mg O2 m-3 ]
 KO2_BFF   690 # Lethal oxygen limit for  Deposit feeders [ mg O2 m-3 ]
+KO2_COR   690 # Lethal oxygen limit for  Deposit feeders [ mg O2 m-3 ]
 KO2_LPH   0 # Lethal oxygen limit for  Large phytoplankton [ mg O2 m-3 ]
 KO2_SPH   0 # Lethal oxygen limit for  Small phytoplankton [ mg O2 m-3 ]
 KO2_BCA   890 # Lethal oxygen limit for  Benthic Carnivorous [ mg O2 m-3 ]
@@ -4445,6 +4490,7 @@ KO2LIM_SPL   2900 # Limiting oxygen level for settled Spiny lobster [ mg O2 m-3 
 KO2LIM_GCR   3210 # Limiting oxygen level for settled Golden Crab [ mg O2 m-3 ]
 KO2LIM_SCR   3210 # Limiting oxygen level for settled Small crustaceans [ mg O2 m-3 ]
 KO2LIM_BFF   890 # Limiting oxygen level for settled Deposit feeders [ mg O2 m-3 ]
+KO2LIM_COR   890 # Limiting oxygen level for settled Deposit feeders [ mg O2 m-3 ]
 KO2LIM_LPH   0 # Limiting oxygen level for settled Large phytoplankton [ mg O2 m-3 ]
 KO2LIM_SPH   0 # Limiting oxygen level for settled Small phytoplankton [ mg O2 m-3 ]
 KO2LIM_BCA   1220 # Limiting oxygen level for settled Benthic Carnivorous [ mg O2 m-3 ]
@@ -5980,12 +6026,6 @@ MOL_rugFeedScalar 0.000000001
 # DL_RugCover_scalar 0.1
 # DR_RugCover_scalar 0.1
 # DC_RugCover_scalar 0.01
-
-
-
-
-
-
 #flag indicating which rugosity model to use
 # rugosity_model option: 0 = none, 1 = mechanistic, 2 is an empirical relationship from Blackwood
 flag_rugosity_model 0
