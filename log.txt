@@ -26,3 +26,4 @@ VID-2 had 3.304000e+03 migrants in KMIG array but its migration (0) dates (T: 18
 DOL-0 had 4.256000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
 CET-0 had 2.128000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
 BIR-0 had 8.601000e+03 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+Set epibenthic ids

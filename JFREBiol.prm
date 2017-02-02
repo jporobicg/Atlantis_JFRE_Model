@@ -468,31 +468,31 @@ flagtempdepend   0         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
-SPL_ddepend_move 3 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-GCR_ddepend_move 3 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BRC_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-ORO_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-VID_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-ANG_ddepend_move 3 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BIR_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-ALF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-CHO_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OTA_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-CET_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-DOL_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OCT_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-COR_ddepend_move 1 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SQD_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LPF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SPF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SBF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LBF_ddepend_move 0 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SCR_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BCA_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MOL_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LZO_ddepend_move 4 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPL_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+GCR_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BRC_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+ANG_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BIR_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+CHO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OTA_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OCT_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SQD_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SCR_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BCA_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MOL_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 
 # Identifier indicating whether vertebrate group seeks channels during low tide - in tidal models
 flagchannelBRC 0
