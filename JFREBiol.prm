@@ -474,25 +474,25 @@ BRC_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ANG_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BIR_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OTA_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OCT_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OCT_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SQD_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SQD_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SCR_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BCA_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MOL_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SCR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BCA_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MOL_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SZO_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MZO_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LZO_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 
 # Identifier indicating whether vertebrate group seeks channels during low tide - in tidal models
 flagchannelBRC 0
@@ -3614,6 +3614,8 @@ pSTOCK_SBF   1 # Stock specific differences in predation for Small benthic fish 
 1
 pSTOCK_LBF   1 # Stock specific differences in predation for Large benthic fish [ Number ]
 1
+pSTOCK_BIR   1 # Stock specific differences in predation for Large benthic fish [ Number ]
+1
 
 # Variable availability per stock for juveniles
 pSTOCK_jSPL   1 # Stock specific differences in predation for juvenile of Spiny lobster [ Number ]
@@ -3645,6 +3647,8 @@ pSTOCK_jSPF   1 # Stock specific differences in predation for juvenile of Small 
 pSTOCK_jSBF   1 # Stock specific differences in predation for juvenile of Small benthic fish [ Number ]
 1
 pSTOCK_jLBF   1 # Stock specific differences in predation for juvenile of Large benthic fish [ Number ]
+1
+pSTOCK_jBIR   1 # Stock specific differences in predation for juvenile of Large benthic fish [ Number ]
 1
 
 # Availabilty of catch to opportunistic catch grazers (thieves). There should be an
@@ -5134,6 +5138,8 @@ KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_SBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small benthic fish [ Numbers ]
 0
 KDENR_LBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
+0
+KDENR_BIR   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
 0
 
 #Average biomass of new cephalopod recruits arriving mg N m-3 0.01
