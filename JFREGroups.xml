@@ -225,7 +225,7 @@
     <Attribute AttributeName="LongName" AttributeValue="Chondrichtyans"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="2"/>
+    <Attribute AttributeName="NumStages" AttributeValue="1"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -279,7 +279,7 @@
     <Attribute AttributeName="LongName" AttributeValue="Dophins"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="2"/>
+    <Attribute AttributeName="NumStages" AttributeValue="1"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -306,7 +306,7 @@
     <Attribute AttributeName="LongName" AttributeValue="Whales"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="2"/>
+    <Attribute AttributeName="NumStages" AttributeValue="1"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -360,7 +360,7 @@
     <Attribute AttributeName="LongName" AttributeValue="Squids"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="2"/>
+    <Attribute AttributeName="NumStages" AttributeValue="1"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -387,7 +387,7 @@
     <Attribute AttributeName="LongName" AttributeValue="Octupus"/>
     <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="2"/>
+    <Attribute AttributeName="NumStages" AttributeValue="1"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>

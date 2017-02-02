@@ -107,7 +107,7 @@
     <Attribute AttributeName="K_num_catchqueue" AttributeDescription="Length of the catch queue in days for use in running average of recent catch (typically a week or month)" AttributeValue="7" AttributeType="Integer" AttributeRecommendedValue="1"/>
     <Attribute AttributeName="K_num_fisheries" AttributeDescription="Maximum number of fisheries" AttributeValue="11" AttributeType="Integer" AttributeRecommendedValue="33"/>
     <Attribute AttributeName="K_num_ports" AttributeDescription="Number of ports in the model area" AttributeValue="4" AttributeType="Integer" AttributeRecommendedValue="5"/>
-    <Attribute AttributeName="K_num_reg" AttributeDescription="Maximum number of management zonings used in the model" AttributeValue="1" AttributeType="Integer" AttributeRecommendedValue="5"/>
+    <Attribute AttributeName="K_num_reg" AttributeDescription="Maximum number of management zonings used in the model" AttributeValue="2" AttributeType="Integer" AttributeRecommendedValue="5"/>
     <Attribute AttributeName="K_num_markets" AttributeDescription="Maxiumum number of markets in the model area" AttributeValue="2" AttributeType="Integer" AttributeRecommendedValue="5"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="ScaleGroupDensities" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0">

@@ -20,3 +20,9 @@ WARNING - Sum of dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01
 WARNING - Sum of nominal_dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
 WARNING - Sum of dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
 WARNING - Sum of nominal_dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+VID-0 had 6.160000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-1 had 3.603000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-2 had 3.304000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-0 had 4.256000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-0 had 2.128000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+BIR-0 had 8.601000e+03 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
