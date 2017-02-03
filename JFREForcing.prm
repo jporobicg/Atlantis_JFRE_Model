@@ -30,7 +30,7 @@ salt_rewind     0
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 use_larvalfiles 1
 larval_rewind   1
-Larval0.name 	Inputs/Larval_disp/LarvalDispersal.nc
+Larval0.name 	Inputs/Larval_disp/FG_connect.nc
 
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
