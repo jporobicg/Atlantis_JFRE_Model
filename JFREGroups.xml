@@ -223,9 +223,9 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Chondrichtyans"/>
     <Attribute AttributeName="LongName" AttributeValue="Chondrichtyans"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="1"/>
+    <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -277,9 +277,9 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Dophins"/>
     <Attribute AttributeName="LongName" AttributeValue="Dophins"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="1"/>
+    <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -304,9 +304,9 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Whales"/>
     <Attribute AttributeName="LongName" AttributeValue="Whales"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="1"/>
+    <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
@@ -331,9 +331,9 @@
     <Attribute AttributeName="IsTurnedOn" AttributeValue="1"/>
     <Attribute AttributeName="Name" AttributeValue="Birds"/>
     <Attribute AttributeName="LongName" AttributeValue="Birds"/>
-    <Attribute AttributeName="NumCohorts" AttributeValue="1"/>
+    <Attribute AttributeName="NumCohorts" AttributeValue="10"/>
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
-    <Attribute AttributeName="NumStages" AttributeValue="1"/>
+    <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
     <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>

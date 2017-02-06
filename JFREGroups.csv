@@ -6,11 +6,11 @@ VID,3,1,Vidriola,Vidriola,3,1,2,1,2,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,1
 ORO,4,1,Orange_Roughy,Orange Roughy,10,1,2,1,15,1,1,1,1,1,1,FISH,1,0,0,1,0,0,0,0,1
 ALF,5,1,Alfonsino,Alfonsino,10,1,2,1,2,1,1,1,1,1,1,FISH,1,0,0,1,0,0,0,0,1
 ANG,6,1,Anguila,Anguila,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
-CHO,7,1,Chondrichtyans,Chondrichtyans,1,1,1,1,1,1,1,1,0,1,0,SHARK,1,0,0,0,0,0,0,0,1
+CHO,7,1,Chondrichtyans,Chondrichtyans,10,1,2,1,1,1,1,1,0,1,0,SHARK,1,0,0,0,0,0,0,0,1
 OTA,8,1,Otariid,Otariid,10,1,2,1,3,2,1,1,0,1,0,MAMMAL,1,0,0,1,0,0,0,0,1
-DOL,9,1,Dophins,Dophins,1,1,1,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
-CET,10,1,Whales,Whales,1,1,1,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
-BIR,11,1,Birds,Birds,1,1,1,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0,1
+DOL,9,1,Dophins,Dophins,10,1,2,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
+CET,10,1,Whales,Whales,10,1,2,1,1,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
+BIR,11,1,Birds,Birds,10,1,2,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0,1
 SQD,12,1,Squids,Squids,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
 OCT,13,1,Octupus,Octupus,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
 LPF,14,1,Pelagic_L_fish,Large pelagic fish,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
