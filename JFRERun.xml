@@ -43,7 +43,7 @@
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="DiagnosticOutput" AttributeDescription="The diagnostic output settings">
     <Attribute AttributeName="verbose" AttributeDescription="Detailed logged output" AttributeValue="1" AttributeType="Integer" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="checkbox" AttributeDescription="Give detailed logged output for this box" AttributeValue="1" AttributeType="Integer" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="checkbox" AttributeDescription="Give detailed logged output for this box" AttributeValue="5" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstart" AttributeDescription="Start detailed logged output from this day in the model run" AttributeValue="0 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstop" AttributeDescription="Stop detailed logged output after this day in the model run" AttributeValue="366666660 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="fishtest" AttributeDescription="Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
