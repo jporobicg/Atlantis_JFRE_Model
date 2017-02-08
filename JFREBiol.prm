@@ -3940,14 +3940,15 @@ C_SBF   10 #  Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 C_LBF   10 #  Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 178.39 244.89 340.76 424.55 534.44 730.52 908.95 1029.94 1223.99 1446.00
 C_CHO 10 #  Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
-933.3333333 566.6666667 766.6666667 1350 3133.333333 3666.666667 3666.666667 3666.666667 3666.666667 3666.666667
+5.10	16.28	29.51	42.66	54.70	65.23	74.16	81.58	87.67	92.62
 C_DOL 10
-900.0 1400.0 2000.0 2000.0 2500.0 2500.0 2600.0 2600.0 3000.0 3000.0
+13.39	43.88	81.51	120.50	157.67	191.46	221.26	246.99	268.89	287.32
 C_CET 10
-15.0 80.0 270.0 500.0 1000.0 1000.0 2000.0 3000.0 3000.0 3000.0
+3111.88	3599.63	3851.93	3978.84	4041.87	4072.98	4088.28	4095.80	4099.50	4101.31
 C_BIR 10
-20.0 70.0 50.0 50.0 50.0 50.0 50.0 50.0 50.0 50.0
-
+0.38	1.24	2.33	3.47	4.57	5.58	6.49	7.28	7.96	8.55
+C_OTA 10
+350.36	483.53	598.37	693.28	769.64	830.00	877.13	913.62	941.69	963.18
 
 # Consumer growth - this is used by Holling type feeding (predcase 0, 1, 2)
 #mum_CHO_T15   1.13     #  Growth rate for Chondrichtyans [ m3(mg N)-1 d-1 ]
@@ -3993,13 +3994,13 @@ mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ]
 2.28 6.75 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 mum_CHO	  10
-3.0 5.0 15.0 15.0 20.0 40.0 40.0 40.0 40.0 40.0
-mum_BIR	  10
-5 10 20 10 10 10 10 30 30 30
-mum_CET	  10
-7000000.0 1500000.0 2200000.0 2200000.0 2200000.0 2200000.0 2200000.0 2200000.0 2200000.0 2200000.0
-mum_DOL	  10
-2000.0 1500.0 1500.0 1500.0 1500.0 1500.0 1500.0 1500.0 1500.0 1500.0
+0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
+mum_BIR   10
+0.02 0.21 0.54 1.01 1.62 2.39 3.33 4.49 5.90 7.63
+mum_CET   10
+73.65 238.04 1359.33 2620.55 5172.94 10365.79 20944.64 42502.78 86438.54 175981.86
+mum_DOL   10
+0.06 0.52 1.33 2.48 3.97 5.84 8.17 11.03 14.54 18.86
 
 # Seed bank/population refuge based on consumer intake, if available food below this feeding
 # slows/stops so can't eat out all food. This is used by min-max feeding (predcase 4)
@@ -4133,22 +4134,22 @@ li_b_BIR   3.0         # Coefficient of allometic length-weight relation for Lar
 li_a_invert 0.01
 li_b_invert 3.0
 
-min_li_mat_SPL   73.2      # Minimum size of maturity of  Spiny lobster [ cm ]
-min_li_mat_GCR   10.62     # Minimum size of maturity of  Golden Crab [ cm ]
-min_li_mat_BRC   28.9     # Minimum size of maturity of  Breca [ cm ]
-min_li_mat_VID   51     # Minimum size of maturity of  Vidriola [ cm ]
-min_li_mat_ORO   35     # Minimum size of maturity of  Orange Roughy [ cm ]
-min_li_mat_ALF   33.7     # Minimum size of maturity of  Alfonsino [ cm ]
-min_li_mat_ANG   43.7     # Minimum size of maturity of  Anguila [ cm ]
-min_li_mat_CHO   77.8     # Minimum size of maturity of  Chondrichtyans [ cm ]
-min_li_mat_OTA   105     # Minimum size of maturity of  Otariid [ cm ]
-min_li_mat_LPF   34.5     # Minimum size of maturity of  Large pelagic fish [ cm ]
-min_li_mat_SPF   27     # Minimum size of maturity of  Small pelagic fish [ cm ]
-min_li_mat_SBF   21  	   # Minimum size of maturity of  Small benthic fish [ cm ]
-min_li_mat_LBF   92 	   # Minimum size of maturity of  Large benthic fish [ cm ]
-min_li_mat_CET 	 0   	   # Minimum size of maturity of  CET  [ cm ]
-min_li_mat_DOL 	 0 	   # Minimum size of maturity of  DOL  [ cm ]
-min_li_mat_BIR 	 0 	   # Minimum size of maturity of  BIR  [ cm ]
+min_li_mat_SPL   73.2			# Minimum size of maturity of  Spiny lobster [ cm ]
+min_li_mat_GCR   10.62    		# Minimum size of maturity of  Golden Crab [ cm ]
+min_li_mat_BRC   28.9     		# Minimum size of maturity of  Breca [ cm ]
+min_li_mat_VID   51     		# Minimum size of maturity of  Vidriola [ cm ]
+min_li_mat_ORO   35     		# Minimum size of maturity of  Orange Roughy [ cm ]
+min_li_mat_ALF   33.7     		# Minimum size of maturity of  Alfonsino [ cm ]
+min_li_mat_ANG   43.7     		# Minimum size of maturity of  Anguila [ cm ]
+min_li_mat_CHO   77.8     		# Minimum size of maturity of  Chondrichtyans [ cm ]
+min_li_mat_OTA   105     		# Minimum size of maturity of  Otariid [ cm ]
+min_li_mat_LPF   34.5     		# Minimum size of maturity of  Large pelagic fish [ cm ]
+min_li_mat_SPF   27     		# Minimum size of maturity of  Small pelagic fish [ cm ]
+min_li_mat_SBF   21  	   		# Minimum size of maturity of  Small benthic fish [ cm ]
+min_li_mat_LBF   92 	   		# Minimum size of maturity of  Large benthic fish [ cm ]
+min_li_mat_CET 	 2044  	   		# Minimum size of maturity of  CET  [ cm ]
+min_li_mat_DOL 	 100 	   		# Minimum size of maturity of  DOL  [ cm ]
+min_li_mat_BIR 	 20 	   		# Minimum size of maturity of  BIR  [ cm ]
 
 # Depth consumers can dig into, are found down to in the sediment
 # Sediment penetration depth for predators (m). Value read in for groups that are
