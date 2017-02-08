@@ -227,7 +227,7 @@
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
-    <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
+    <Attribute AttributeName="NumAgeClassSize" AttributeValue="3"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
     <Attribute AttributeName="VerticallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="HorizontallyMigrates" AttributeValue="1"/>
@@ -281,7 +281,7 @@
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
-    <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
+    <Attribute AttributeName="NumAgeClassSize" AttributeValue="5"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
     <Attribute AttributeName="VerticallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="HorizontallyMigrates" AttributeValue="1"/>
@@ -308,7 +308,7 @@
     <Attribute AttributeName="NumGeneTypes" AttributeValue="1"/>
     <Attribute AttributeName="NumStages" AttributeValue="2"/>
     <Attribute AttributeName="NumSpawns" AttributeValue="1"/>
-    <Attribute AttributeName="NumAgeClassSize" AttributeValue="1"/>
+    <Attribute AttributeName="NumAgeClassSize" AttributeValue="8"/>
     <Attribute AttributeName="NumStocks" AttributeValue="1"/>
     <Attribute AttributeName="VerticallyMigrates" AttributeValue="1"/>
     <Attribute AttributeName="HorizontallyMigrates" AttributeValue="1"/>
