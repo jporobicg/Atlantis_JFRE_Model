@@ -2535,6 +2535,83 @@ In this secction I use the data form the Database to get the number of organism 
   #b   <- ascii(BioNum, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
 #+END_SRC
 
+ -Calculatin the Structural and reserve weight for each Functional Group
+ #+BEGIN_SRC R :results output
+   ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+   ## ~         Estimation of Nitrogen by Ageclass      ~ ##
+   ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+   library(ascii)
+   library(ggplot2)
+   data  <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Nitrogen_by_Agegroup/age_length.csv')
+   options(asciiType="org")
+   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+   ## estimation of the weight at each age class or cohort
+   data$Weight     <- ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
+   data$Reserve    <- with(data, weight2N(Weight, 'g', reserve = TRUE))
+   data$Structural <- with(data, weight2N(Weight, 'g', reserve = FALSE))
+   ## Plotting
+   sp            <- ggplot(data = data, aes(AgeClass, label = 'Weight')) +
+       geom_line(aes(y = Reserve, colour = 'Reserve')) +
+       geom_line(aes(y = Structural, colour = 'Structural')) +
+       xlab("Cohort") +
+       ylab("Weight (MgN)")
+   png('img/rev_stru.png', height = 1200, width = 1200)
+   sp + facet_wrap(~FG, ncol=4, scales = 'free')
+   invisible(dev.off())
+   ## Table
+   tab.out <- xtabs(cbind(Reserve, Structural) ~ FG + AgeClass, data)
+   cap1    <- 'Reserve by cohort for each functional group [mgN]'
+   cap2    <- 'Structural by cohort for each functional group [mgN]'
+   b       <- ascii(tab.out[, , 1], header=T,  include.rownames = TRUE, include.colnames = T, caption = cap1)
+   c       <- ascii(tab.out[, , 2], header=T,  include.rownames = TRUE, include.colnames = T, caption = cap2)
+   cat("#+ATTR_HTML: :style float:left;width:30%;margin:3ex\n")
+   print(b)
+   print(c)
+ #+END_SRC
+
+ #+RESULTS:
+ #+ATTR_HTML: :style float:left;width:30%;margin:3ex
+ [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/rev_stru.png]]
+ #+CAPTION: Reserve by cohort for each functional group [mgN]
+ |     | 1            | 2            | 3            | 4            | 5            | 6            | 7            | 8            | 9            | 10           |
+ |-----+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------|
+ | ALF | 1088.62      | 3016.50      | 5683.68      | 8794.83      | 12083.87     | 15349.19     | 18459.23     | 21327.55     | 23928.66     | 26221.61     |
+ | ANG | 5.14         | 476.77       | 2073.97      | 4803.25      | 8410.48      | 12585.66     | 17045.88     | 21564.06     | 25973.03     | 30159.05     |
+ | BIR | 69.13        | 415.90       | 1066.08      | 1938.17      | 2931.67      | 3960.82      | 4963.61      | 5900.56      | 6750.08      | 7503.41      |
+ | BRC | 681.99       | 1187.86      | 1903.52      | 2835.69      | 4071.67      | 5794.55      | 7999.09      | 10088.06     | 12271.21     | 14756.34     |
+ | CET | 395155425.63 | 491609711.65 | 544190946.98 | 571307526.53 | 584935787.29 | 591701186.84 | 595039702.45 | 596682367.21 | 597489464.60 | 597885742.56 |
+ | CHO | 463.86       | 2929.85      | 7534.30      | 13527.87     | 20078.00     | 26550.51     | 32550.19     | 37876.85     | 42464.82     | 46330.94     |
+ | DOL | 4307.42      | 25566.65     | 64722.96     | 116326.38    | 174114.22    | 232990.31    | 289446.06    | 341384.57    | 387777.19    | 428327.01    |
+ | GCR | 34.97        | 192.81       | 549.34       | 1157.33      | 2026.08      | 3072.45      | 4122.86      | 5046.51      | 6094.64      | 7068.33      |
+ | LBF | 6768.28      | 10195.69     | 15630.74     | 20771.14     | 27974.29     | 41908.11     | 55595.37     | 65347.40     | 81692.38     | 101344.52    |
+ | LPF | 404.38       | 5842.40      | 12058.50     | 16171.97     | 18457.96     | 19640.82     | 20233.53     | 20526.09     | 20669.46     | 20739.47     |
+ | ORO | 19.04        | 2754.30      | 8782.94      | 14794.76     | 19420.34     | 22595.62     | 24646.17     | 25930.18     | 26709.13     | 27180.73     |
+ | OTA | 201231.61    | 305483.96    | 393956.61    | 463082.98    | 514521.02    | 551653.23    | 577941.71    | 596317.57    | 609054.39    | 617832.86    |
+ | SBF | 2378.48      | 3132.71      | 3940.00      | 5003.55      | 6092.65      | 7518.46      | 8371.08      | 10308.91     | 11475.56     | 12675.33     |
+ | SPF | 16.46        | 530.71       | 1768.56      | 3321.01      | 4832.29      | 6127.44      | 7159.38      | 7945.64      | 8527.77      | 8950.70      |
+ | SPL | 1348.65      | 1727.03      | 2166.40      | 2670.60      | 3337.86      | 3931.32      | 4572.95      | 5159.03      | 5790.63      | 6468.90      |
+ | VID | 10104.27     | 15617.54     | 24989.94     | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         |
+
+ #+CAPTION: Structural by cohort for each functional group [mgN]
+ |     | 1            | 2            | 3            | 4            | 5            | 6            | 7            | 8            | 9            | 10           |
+ |-----+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------|
+ | ALF | 1499.42      | 4154.80      | 7828.46      | 12113.63     | 16643.83     | 21141.34     | 25424.97     | 29375.68     | 32958.34     | 36116.56     |
+ | ANG | 7.08         | 656.68       | 2856.60      | 6615.80      | 11584.24     | 17334.97     | 23478.29     | 29701.44     | 35774.18     | 41539.82     |
+ | BIR | 95.22        | 572.85       | 1468.37      | 2669.56      | 4037.96      | 5455.47      | 6836.67      | 8127.19      | 9297.27      | 10334.89     |
+ | BRC | 939.34       | 1636.11      | 2621.83      | 3905.77      | 5608.15      | 7981.17      | 11017.62     | 13894.87     | 16901.85     | 20324.78     |
+ | CET | 544270680.58 | 677122810.39 | 749546021.32 | 786895272.40 | 805666273.07 | 814984653.57 | 819582986.39 | 821845524.64 | 822957187.09 | 823503003.91 |
+ | CHO | 638.90       | 4035.46      | 10377.43     | 18632.73     | 27654.61     | 36569.57     | 44833.28     | 52170.00     | 58489.28     | 63814.31     |
+ | DOL | 5932.87      | 35214.45     | 89146.72     | 160223.13    | 239817.69    | 320911.18    | 398670.99    | 470208.93    | 534108.20    | 589959.84    |
+ | GCR | 48.16        | 265.57       | 756.64       | 1594.06      | 2790.64      | 4231.87      | 5678.65      | 6950.85      | 8394.50      | 9735.62      |
+ | LBF | 9322.35      | 14043.12     | 21529.13     | 28609.31     | 38530.63     | 57722.49     | 76574.75     | 90006.80     | 112519.69    | 139587.74    |
+ | LPF | 556.97       | 8047.08      | 16608.88     | 22274.60     | 25423.23     | 27052.45     | 27868.82     | 28271.78     | 28469.25     | 28565.69     |
+ | ORO | 26.23        | 3793.65      | 12097.26     | 20377.69     | 26748.78     | 31122.27     | 33946.61     | 35715.15     | 36788.05     | 37437.61     |
+ | OTA | 277168.07    | 420760.93    | 542619.48    | 637831.28    | 708679.90    | 759824.26    | 796032.92    | 821343.07    | 838886.23    | 850977.33    |
+ | SBF | 3276.02      | 4314.87      | 5426.79      | 6891.69      | 8391.76      | 10355.62     | 11529.98     | 14199.07     | 15805.97     | 17458.47     |
+ | SPF | 22.67        | 730.97       | 2435.94      | 4574.22      | 6655.79      | 8439.68      | 9861.04      | 10944.00     | 11745.80     | 12328.32     |
+ | SPL | 1857.57      | 2378.75      | 2983.91      | 3678.38      | 4597.42      | 5414.84      | 6298.58      | 7105.84      | 7975.77      | 8909.99      |
+ | VID | 13917.20     | 21510.96     | 34420.11     | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         | 0.00         |
+
  - Write the csv and the nc file witht he information
 #+BEGIN_SRC R
 
@@ -2570,6 +2647,7 @@ In this secction I use the data form the Database to get the number of organism 
   nc.file     <- "/home/demiurgo/Documents/PhD/Ini_conditions/JFRE.ini.nc"
   make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 #+END_SRC
+
 * Dietary analysis (DNA)
 ** NGS
       I will use NGS for the analysis of the dietary relationship between the functional groups
