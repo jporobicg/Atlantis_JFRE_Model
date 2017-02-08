@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-02-08T11:16+1100"/>
+<meta name="generated" content="2017-02-08T17:07+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -4529,19 +4529,20 @@ options(asciiType=<span style="color: #ffc125; font-weight: bold;">"org"</span>)
 <span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">estimation of the weight at each age class or cohort</span>
 data$Weight     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
-data$Reserve    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(data, weight2N(Weight, <span style="color: #ffc125; font-weight: bold;">'g'</span>, reserve = <span style="color: #fffacd; font-weight: bold;">TRUE</span>))
-data$Structural <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(data, weight2N(Weight, <span style="color: #ffc125; font-weight: bold;">'g'</span>, reserve = <span style="color: #fffacd; font-weight: bold;">FALSE</span>))
+
+w.data     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(data, weights(FG, Weight, <span style="color: #ffc125; font-weight: bold;">'g'</span>, wet = <span style="color: #fffacd; font-weight: bold;">TRUE</span>))
+w.data$AgeClass <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data$AgeClass
 <span style="color: #696969;">## </span><span style="color: #696969;">Plotting</span>
-sp            <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = data, aes(AgeClass, label = <span style="color: #ffc125; font-weight: bold;">'Weight'</span>)) +
-    geom_line(aes(y = Reserve, colour = <span style="color: #ffc125; font-weight: bold;">'Reserve'</span>)) +
-    geom_line(aes(y = Structural, colour = <span style="color: #ffc125; font-weight: bold;">'Structural'</span>)) +
+sp            <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = w.data, aes(AgeClass, label = <span style="color: #ffc125; font-weight: bold;">'Weight'</span>)) +
+    geom_line(aes(y = reserve, colour = <span style="color: #ffc125; font-weight: bold;">'Reserve'</span>)) +
+    geom_line(aes(y = structural, colour = <span style="color: #ffc125; font-weight: bold;">'Structural'</span>)) +
     xlab(<span style="color: #ffc125; font-weight: bold;">"Cohort"</span>) +
     ylab(<span style="color: #ffc125; font-weight: bold;">"Weight (MgN)"</span>)
 png(<span style="color: #ffc125; font-weight: bold;">'img/rev_stru.png'</span>, height = 1200, width = 1200)
-sp + facet_wrap(~FG, ncol=4, scales = <span style="color: #ffc125; font-weight: bold;">'free'</span>)
+sp + facet_wrap(~Functional_Groups, ncol=4, scales = <span style="color: #ffc125; font-weight: bold;">'free'</span>)
 invisible(dev.off())
 <span style="color: #696969;">## </span><span style="color: #696969;">Table</span>
-tab.out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> xtabs(cbind(Reserve, Structural) ~ FG + AgeClass, data)
+tab.out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> xtabs(cbind(reserve, structural) ~ Functional_Groups + AgeClass, w.data)
 cap1    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Reserve by cohort for each functional group [mgN]'</span>
 cap2    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Structural by cohort for each functional group [mgN]'</span>
 b       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(tab.out[, , 1], header=T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, include.colnames = T, caption = cap1)
@@ -4577,36 +4578,29 @@ print(c)
 <tr><td class="left">SPF</td><td class="right">16.46</td><td class="right">530.71</td><td class="right">1768.56</td><td class="right">3321.01</td><td class="right">4832.29</td><td class="right">6127.44</td><td class="right">7159.38</td><td class="right">7945.64</td><td class="right">8527.77</td><td class="right">8950.70</td></tr>
 <tr><td class="left">SPL</td><td class="right">1348.65</td><td class="right">1727.03</td><td class="right">2166.40</td><td class="right">2670.60</td><td class="right">3337.86</td><td class="right">3931.32</td><td class="right">4572.95</td><td class="right">5159.03</td><td class="right">5790.63</td><td class="right">6468.90</td></tr>
 <tr><td class="left">VID</td><td class="right">10104.27</td><td class="right">15617.54</td><td class="right">24989.94</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+<tr><td class="left"></td><td class="right">1</td><td class="right">2</td><td class="right">3</td><td class="right">4</td><td class="right">5</td><td class="right">6</td><td class="right">7</td><td class="right">8</td><td class="right">9</td><td class="right">10</td></tr>
 </tbody>
-</table>
-
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption>Structural by cohort for each functional group [mgN]</caption>
-<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
-</colgroup>
-<thead>
-<tr><th scope="col" class="left"></th><th scope="col" class="right">1</th><th scope="col" class="right">2</th><th scope="col" class="right">3</th><th scope="col" class="right">4</th><th scope="col" class="right">5</th><th scope="col" class="right">6</th><th scope="col" class="right">7</th><th scope="col" class="right">8</th><th scope="col" class="right">9</th><th scope="col" class="right">10</th></tr>
-</thead>
 <tbody>
-<tr><td class="left">ALF</td><td class="right">1499.42</td><td class="right">4154.80</td><td class="right">7828.46</td><td class="right">12113.63</td><td class="right">16643.83</td><td class="right">21141.34</td><td class="right">25424.97</td><td class="right">29375.68</td><td class="right">32958.34</td><td class="right">36116.56</td></tr>
-<tr><td class="left">ANG</td><td class="right">7.08</td><td class="right">656.68</td><td class="right">2856.60</td><td class="right">6615.80</td><td class="right">11584.24</td><td class="right">17334.97</td><td class="right">23478.29</td><td class="right">29701.44</td><td class="right">35774.18</td><td class="right">41539.82</td></tr>
-<tr><td class="left">BIR</td><td class="right">95.22</td><td class="right">572.85</td><td class="right">1468.37</td><td class="right">2669.56</td><td class="right">4037.96</td><td class="right">5455.47</td><td class="right">6836.67</td><td class="right">8127.19</td><td class="right">9297.27</td><td class="right">10334.89</td></tr>
-<tr><td class="left">BRC</td><td class="right">939.34</td><td class="right">1636.11</td><td class="right">2621.83</td><td class="right">3905.77</td><td class="right">5608.15</td><td class="right">7981.17</td><td class="right">11017.62</td><td class="right">13894.87</td><td class="right">16901.85</td><td class="right">20324.78</td></tr>
-<tr><td class="left">CET</td><td class="right">544270680.58</td><td class="right">677122810.39</td><td class="right">749546021.32</td><td class="right">786895272.40</td><td class="right">805666273.07</td><td class="right">814984653.57</td><td class="right">819582986.39</td><td class="right">821845524.64</td><td class="right">822957187.09</td><td class="right">823503003.91</td></tr>
-<tr><td class="left">CHO</td><td class="right">638.90</td><td class="right">4035.46</td><td class="right">10377.43</td><td class="right">18632.73</td><td class="right">27654.61</td><td class="right">36569.57</td><td class="right">44833.28</td><td class="right">52170.00</td><td class="right">58489.28</td><td class="right">63814.31</td></tr>
-<tr><td class="left">DOL</td><td class="right">5932.87</td><td class="right">35214.45</td><td class="right">89146.72</td><td class="right">160223.13</td><td class="right">239817.69</td><td class="right">320911.18</td><td class="right">398670.99</td><td class="right">470208.93</td><td class="right">534108.20</td><td class="right">589959.84</td></tr>
-<tr><td class="left">GCR</td><td class="right">48.16</td><td class="right">265.57</td><td class="right">756.64</td><td class="right">1594.06</td><td class="right">2790.64</td><td class="right">4231.87</td><td class="right">5678.65</td><td class="right">6950.85</td><td class="right">8394.50</td><td class="right">9735.62</td></tr>
-<tr><td class="left">LBF</td><td class="right">9322.35</td><td class="right">14043.12</td><td class="right">21529.13</td><td class="right">28609.31</td><td class="right">38530.63</td><td class="right">57722.49</td><td class="right">76574.75</td><td class="right">90006.80</td><td class="right">112519.69</td><td class="right">139587.74</td></tr>
-<tr><td class="left">LPF</td><td class="right">556.97</td><td class="right">8047.08</td><td class="right">16608.88</td><td class="right">22274.60</td><td class="right">25423.23</td><td class="right">27052.45</td><td class="right">27868.82</td><td class="right">28271.78</td><td class="right">28469.25</td><td class="right">28565.69</td></tr>
-<tr><td class="left">ORO</td><td class="right">26.23</td><td class="right">3793.65</td><td class="right">12097.26</td><td class="right">20377.69</td><td class="right">26748.78</td><td class="right">31122.27</td><td class="right">33946.61</td><td class="right">35715.15</td><td class="right">36788.05</td><td class="right">37437.61</td></tr>
-<tr><td class="left">OTA</td><td class="right">277168.07</td><td class="right">420760.93</td><td class="right">542619.48</td><td class="right">637831.28</td><td class="right">708679.90</td><td class="right">759824.26</td><td class="right">796032.92</td><td class="right">821343.07</td><td class="right">838886.23</td><td class="right">850977.33</td></tr>
-<tr><td class="left">SBF</td><td class="right">3276.02</td><td class="right">4314.87</td><td class="right">5426.79</td><td class="right">6891.69</td><td class="right">8391.76</td><td class="right">10355.62</td><td class="right">11529.98</td><td class="right">14199.07</td><td class="right">15805.97</td><td class="right">17458.47</td></tr>
-<tr><td class="left">SPF</td><td class="right">22.67</td><td class="right">730.97</td><td class="right">2435.94</td><td class="right">4574.22</td><td class="right">6655.79</td><td class="right">8439.68</td><td class="right">9861.04</td><td class="right">10944.00</td><td class="right">11745.80</td><td class="right">12328.32</td></tr>
-<tr><td class="left">SPL</td><td class="right">1857.57</td><td class="right">2378.75</td><td class="right">2983.91</td><td class="right">3678.38</td><td class="right">4597.42</td><td class="right">5414.84</td><td class="right">6298.58</td><td class="right">7105.84</td><td class="right">7975.77</td><td class="right">8909.99</td></tr>
-<tr><td class="left">VID</td><td class="right">13917.20</td><td class="right">21510.96</td><td class="right">34420.11</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
+<tr><td class="left">ALF</td><td class="right">410.80</td><td class="right">1138.30</td><td class="right">2144.78</td><td class="right">3318.80</td><td class="right">4559.95</td><td class="right">5792.15</td><td class="right">6965.75</td><td class="right">8048.13</td><td class="right">9029.68</td><td class="right">9894.95</td></tr>
+<tr><td class="left">ANG</td><td class="right">1.94</td><td class="right">179.91</td><td class="right">782.63</td><td class="right">1812.55</td><td class="right">3173.77</td><td class="right">4749.31</td><td class="right">6432.41</td><td class="right">8137.38</td><td class="right">9801.14</td><td class="right">11380.77</td></tr>
+<tr><td class="left">BIR</td><td class="right">26.09</td><td class="right">156.94</td><td class="right">402.29</td><td class="right">731.39</td><td class="right">1106.29</td><td class="right">1494.65</td><td class="right">1873.06</td><td class="right">2226.63</td><td class="right">2547.20</td><td class="right">2831.48</td></tr>
+<tr><td class="left">BRC</td><td class="right">257.35</td><td class="right">448.25</td><td class="right">718.31</td><td class="right">1070.07</td><td class="right">1536.48</td><td class="right">2186.62</td><td class="right">3018.53</td><td class="right">3806.81</td><td class="right">4630.64</td><td class="right">5568.43</td></tr>
+<tr><td class="left">CET</td><td class="right">149115254.95</td><td class="right">185513098.74</td><td class="right">205355074.33</td><td class="right">215587745.86</td><td class="right">220730485.77</td><td class="right">223283466.73</td><td class="right">224543283.94</td><td class="right">225163157.44</td><td class="right">225467722.49</td><td class="right">225617261.34</td></tr>
+<tr><td class="left">CHO</td><td class="right">175.04</td><td class="right">1105.61</td><td class="right">2843.13</td><td class="right">5104.86</td><td class="right">7576.61</td><td class="right">10019.06</td><td class="right">12283.09</td><td class="right">14293.15</td><td class="right">16024.46</td><td class="right">17483.37</td></tr>
+<tr><td class="left">DOL</td><td class="right">1625.44</td><td class="right">9647.79</td><td class="right">24423.76</td><td class="right">43896.75</td><td class="right">65703.48</td><td class="right">87920.87</td><td class="right">109224.93</td><td class="right">128824.36</td><td class="right">146331.01</td><td class="right">161632.83</td></tr>
+<tr><td class="left">GCR</td><td class="right">13.20</td><td class="right">72.76</td><td class="right">207.30</td><td class="right">436.73</td><td class="right">764.56</td><td class="right">1159.42</td><td class="right">1555.79</td><td class="right">1904.34</td><td class="right">2299.86</td><td class="right">2667.29</td></tr>
+<tr><td class="left">LBF</td><td class="right">2554.07</td><td class="right">3847.43</td><td class="right">5898.39</td><td class="right">7838.17</td><td class="right">10556.34</td><td class="right">15814.38</td><td class="right">20979.38</td><td class="right">24659.40</td><td class="right">30827.31</td><td class="right">38243.22</td></tr>
+<tr><td class="left">LPF</td><td class="right">152.60</td><td class="right">2204.68</td><td class="right">4550.38</td><td class="right">6102.63</td><td class="right">6965.27</td><td class="right">7411.63</td><td class="right">7635.29</td><td class="right">7745.69</td><td class="right">7799.80</td><td class="right">7826.22</td></tr>
+<tr><td class="left">ORO</td><td class="right">7.19</td><td class="right">1039.36</td><td class="right">3314.32</td><td class="right">5582.93</td><td class="right">7328.43</td><td class="right">8526.65</td><td class="right">9300.44</td><td class="right">9784.97</td><td class="right">10078.92</td><td class="right">10256.88</td></tr>
+<tr><td class="left">OTA</td><td class="right">75936.46</td><td class="right">115276.97</td><td class="right">148662.87</td><td class="right">174748.30</td><td class="right">194158.88</td><td class="right">208171.03</td><td class="right">218091.21</td><td class="right">225025.50</td><td class="right">229831.84</td><td class="right">233144.47</td></tr>
+<tr><td class="left">SBF</td><td class="right">897.54</td><td class="right">1182.16</td><td class="right">1486.79</td><td class="right">1888.13</td><td class="right">2299.11</td><td class="right">2837.16</td><td class="right">3158.90</td><td class="right">3890.16</td><td class="right">4330.40</td><td class="right">4783.14</td></tr>
+<tr><td class="left">SPF</td><td class="right">6.21</td><td class="right">200.27</td><td class="right">667.38</td><td class="right">1253.21</td><td class="right">1823.51</td><td class="right">2312.24</td><td class="right">2701.65</td><td class="right">2998.36</td><td class="right">3218.03</td><td class="right">3377.62</td></tr>
+<tr><td class="left">SPL</td><td class="right">508.92</td><td class="right">651.71</td><td class="right">817.51</td><td class="right">1007.77</td><td class="right">1259.57</td><td class="right">1483.52</td><td class="right">1725.64</td><td class="right">1946.81</td><td class="right">2185.14</td><td class="right">2441.09</td></tr>
+<tr><td class="left">VID</td><td class="right">3812.93</td><td class="right">5893.41</td><td class="right">9430.17</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
 </tbody>
 </table>
+
+
 
 
 <ul>
@@ -4950,7 +4944,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-02-08T11:16+1100</p>
+<p class="date">Date: 2017-02-08T17:07+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

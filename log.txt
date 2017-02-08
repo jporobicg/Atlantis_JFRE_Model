@@ -13640,6 +13640,40 @@ Box: 1-0 (it_count: 29) Vari ij: 33 (Refractory_detritrus_N in sm) has Netflux 2
 Box: 1-0 (it_count: 29) Vari ij: 1 (Coral_N in epi) has Netflux -1.297442e-34 and local pool is 1.000000e-08
 Box: 1-0 (it_count: 29) Vari ij: 4 (Mollusca_N in epi) has Netflux -1.252379e-25 and local pool is 1.000000e-08
 Time: 0.000000e+00 box-5-0 base_pH: 8.000000e+00
+After SPL, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After GCR, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After BRC, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After VID, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After ORO, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After ALF, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After ANG, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After CHO, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After OTA, boxLayerInfo->NutsProd[WC][NH_id] = 0.000000e+00
+After DOL, boxLayerInfo->NutsProd[WC][NH_id] = 1.577137e-10
+After CET, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After BIR, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After SQD, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After OCT, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After LPF, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After SPF, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After SBF, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After LBF, boxLayerInfo->NutsProd[WC][NH_id] = 1.009097e-08
+After SZO, boxLayerInfo->NutsProd[WC][NH_id] = 4.303468e-02
+After MZO, boxLayerInfo->NutsProd[WC][NH_id] = 7.706398e-02
+After LZO, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After SCR, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After BFF, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After LPH, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After SPH, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After COR, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After BCA, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After MOL, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After MA, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After PB, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After BB, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After DL, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After DR, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
+After DC, boxLayerInfo->NutsProd[WC][NH_id] = 8.035026e-02
 flux = 8.034963e-02
 boxLayerInfo->DONremin = 1.032683e-07
 FunctGroupArray[LabDetIndex].reminc = 0.000000e+00
