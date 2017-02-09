@@ -1448,7 +1448,7 @@ fi
   - I increase the value of KLP to 1e-06 for whales
 ***** Estimation of structural weight to calculate the biomass for predation
   #+BEGIN_SRC R :results output
-    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
     library(ascii)
     options(asciiType="org")
     data  <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Structural_weight/SN.csv')
@@ -1477,7 +1477,7 @@ fi
   #+BEGIN_SRC R :results output
     library(ascii)
     library(ggplot2)
-    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
     options(asciiType = "org")
     data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Clearance/c_data.csv')
     ## swimming speed
@@ -1531,7 +1531,7 @@ fi
       ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
       library(ascii)
       options(asciiType="org")
-      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
       spgrey <- rgb(t(col2rgb("black")), alpha=30, maxColorValue=255)
       ## read the data
       dat    <- read.csv("/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv")
@@ -1606,7 +1606,7 @@ fi
       library(ascii)
       library(ggplot2)
       options(asciiType="org")
-      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
       ## estimation of the weight at each age class or cohort
       data$Weight <- ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
       fg          <- split(data, data$FG)
@@ -1728,7 +1728,7 @@ fi
       ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
       library(ascii)
       options(asciiType = "org")
-      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
       ##read the data
       data             <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Mature_Growth/Mgrowth.csv')
       ## getting the weight before reproduction and the weith in equilibrium for all the FG
@@ -1809,7 +1809,7 @@ fi
      |     |               |     |                    |        |      |
 ****** Icthyops input files
 #+BEGIN_SRC R
-  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Cnect.tools.R')
 
   ## General Settings
@@ -1989,7 +1989,7 @@ fi
     ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
     library(ascii)
     options(asciiType = "org")
-    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+    source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
     ##~ Read data
     data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Spawning/B-H.csv')
     ##~ Weight at mat
@@ -2088,7 +2088,7 @@ fi
 #+BEGIN_SRC R :results output
   library(ascii)
   options(asciiType = "org")
-  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
   ##~ Read data
   data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Spawning/weight_rec.csv')
 
@@ -2540,7 +2540,7 @@ In this secction I use the data form the Database to get the number of organism 
    library(ggplot2)
    data  <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Nitrogen_by_Agegroup/age_length.csv')
    options(asciiType="org")
-   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
    ## estimation of the weight at each age class or cohort
    data$Weight     <- ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
 
