@@ -12,14 +12,14 @@ dateinicio="$(date +'%Y-%m-%d %H:%M:%S')"
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv
 
-## Backup of the log.txt file
-echo "++++++++++++++++++++++++++++++++++++++++"
-echo "  A Copy of the Log file as been made  "
-echo "++++++++++++++++++++++++++++++++++++++++"
-datEnd="$(date +'%Y%m%d%H%M%S')"
-dateend="$(date +'%Y-%m-%d %H:%M:%S')"
-cp -a log.txt Calibration/$datEnd.bak
-echo "...Done"
+# ## Backup of the log.txt file
+# echo "++++++++++++++++++++++++++++++++++++++++"
+# echo "  A Copy of the Log file as been made  "
+# echo "++++++++++++++++++++++++++++++++++++++++"
+# datEnd="$(date +'%Y%m%d%H%M%S')"
+# dateend="$(date +'%Y-%m-%d %H:%M:%S')"
+# cp -a log.txt Calibration/$datEnd.bak
+# echo "...Done"
 
 osver=$(cat /etc/issue.net)
 
