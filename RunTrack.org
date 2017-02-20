@@ -1739,3 +1739,13 @@
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Fixed initial condition file; re-calculated the biomass for BB and PB; change pprey matrix for SZO and MZO, they not eat Bacteria
+* Run 20170220155724
+  - Run start: 2017-02-20 15:57:24
+  - Run end: 2017-02-20 16:33:28
+  - log file : [[file:Calibration/20170220163328.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
