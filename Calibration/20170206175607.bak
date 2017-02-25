@@ -1,0 +1,215 @@
+#
+#Atlantis2 Updated to Version 6106
+#
+#
+#
+#Atlantis path https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis Relative ^/Atlantis/trunk/atlantis
+#
+#
+#
+#Atlantis SVN Last Change Date 2017-01-19 22:13:02 +1100 (Thu, 19 Jan 2017)
+
+# Log file for run of Atlantis - only ecological errors and important events are recorded here #
+# Key to indices used in Atlantis, which may appear in logged errors here:
+/usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+WARNING - Sum of dz (4.300000e+03) in box 0 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 2 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 3 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 4 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+VID-0 had 6.160000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-1 had 3.603000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-2 had 3.304000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-0 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-1 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-2 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-3 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-4 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-5 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-6 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-7 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-8 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-9 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-0 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-1 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-2 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-3 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-4 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-5 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-6 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-7 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-8 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-9 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+BIR-0 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-1 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-2 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-3 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-4 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-5 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-6 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-7 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-8 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-9 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+Set epibenthic ids
+Searching for SPL_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for GCR_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for BRC_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ORO_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ALF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ANG_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+SPL has startN = 2.345858e+02
+GCR has startN = 1.067260e+05
+BRC has startN = 5.473055e+04
+VID has startN = 9.053400e+02
+ORO has startN = 6.738149e+05
+ALF has startN = 3.676750e+05
+ANG has startN = 2.342032e+02
+CHO has startN = 5.702633e+03
+OTA has startN = 2.633719e+03
+DOL has startN = 3.351658e+03
+CET has startN = 1.675829e+03
+BIR has startN = 3.764153e+02
+LPF has startN = 1.325171e+04
+SPF has startN = 1.668555e+06
+SBF has startN = 2.089123e+03
+LBF has startN = 1.196491e+03
+SPL is smallest vertebrate (at 2.951452e-02 kg) - SN: 1.499972e+02, RN: 1.089021e+02
+CET is largest vertebrate (at 2.269107e+06 kg) - SN: 1.153194e+10, RN: 8.372507e+09
+Time: 0.000000e+00, species SPL virgin biomass is 90940411.822967 t
+Time: 0.000000e+00, species GCR virgin biomass is 5883457269569.439453 t
+Time: 0.000000e+00, species BRC virgin biomass is 631211490.841518 t
+Time: 0.000000e+00, species VID virgin biomass is 69310.134453 t
+Time: 0.000000e+00, species ORO virgin biomass is 63658210477.750793 t
+Time: 0.000000e+00, species ALF virgin biomass is 21867318779.799194 t
+Time: 0.000000e+00, species ANG virgin biomass is 2602434.241943 t
+Time: 0.000000e+00, species CHO virgin biomass is 170136806.508727 t
+Time: 0.000000e+00, species OTA virgin biomass is 4882424.265593 t
+Time: 0.000000e+00, species DOL virgin biomass is 40222427.868182 t
+Time: 0.000000e+00, species CET virgin biomass is 300116468.631998 t
+Time: 0.000000e+00, species BIR virgin biomass is 10453.315387 t
+Time: 0.000000e+00, species SQD virgin biomass is 27351478998.171104 t
+Time: 0.000000e+00, species OCT virgin biomass is 49980231976.013107 t
+Time: 0.000000e+00, species LPF virgin biomass is 210875571.818626 t
+Time: 0.000000e+00, species SPF virgin biomass is 7453861849.838473 t
+Time: 0.000000e+00, species SBF virgin biomass is 17063432.830537 t
+Time: 0.000000e+00, species LBF virgin biomass is 16115851.979551 t
+Time: 0.000000e+00, species SZO virgin biomass is 52727996407118.007812 t
+Time: 0.000000e+00, species MZO virgin biomass is 50793103129714.140625 t
+Time: 0.000000e+00, species LZO virgin biomass is 54647539955481.656250 t
+Time: 0.000000e+00, species SCR virgin biomass is 2457164102.150129 t
+Time: 0.000000e+00, species BFF virgin biomass is 0.000000 t
+Time: 0.000000e+00, species LPH virgin biomass is 586345673247603.625000 t
+Time: 0.000000e+00, species SPH virgin biomass is 6542500161341734.000000 t
+Time: 0.000000e+00, species COR virgin biomass is 442967.604226 t
+Time: 0.000000e+00, species BCA virgin biomass is 2235705.368136 t
+Time: 0.000000e+00, species MOL virgin biomass is 26485784.980198 t
+Time: 0.000000e+00, species MA virgin biomass is 408524.145149 t
+Time: 0.000000e+00, species PB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species BB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DL virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DR virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DC virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DIN virgin biomass is 513936509.167519 t
+SPL stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+GCR stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BRC stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+VID stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ORO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ALF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ANG stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CHO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+OTA stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+DOL stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CET stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BIR stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Time: 0.000000e+00 box-0-0 base_pH: 8.000000e+00
+
+
+Time: 0.000000e+00, species SPL is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 90940411.822967 t)
+Time: 0.000000e+00, species GCR is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 5883457269569.439453 t)
+Time: 0.000000e+00, species BRC is at 1.000000 of virgin biomass (now 631211490.841517 t vs virgin 631211490.841518 t)
+Time: 0.000000e+00, species VID is at 1.000000 of virgin biomass (now 69310.134453 t vs virgin 69310.134453 t)
+Time: 0.000000e+00, species ORO is at 1.000000 of virgin biomass (now 63658210477.750877 t vs virgin 63658210477.750793 t)
+Time: 0.000000e+00, species ALF is at 1.000000 of virgin biomass (now 21867318779.799210 t vs virgin 21867318779.799194 t)
+Time: 0.000000e+00, species ANG is at 0.223487 of virgin biomass (now 581609.079237 t vs virgin 2602434.241943 t)
+Time: 0.000000e+00, species CHO is at 1.000000 of virgin biomass (now 170136806.508727 t vs virgin 170136806.508727 t)
+Time: 0.000000e+00, species OTA is at 1.000000 of virgin biomass (now 4882424.265593 t vs virgin 4882424.265593 t)
+Time: 0.000000e+00, species DOL is at 1.000000 of virgin biomass (now 40222427.868182 t vs virgin 40222427.868182 t)
+Time: 0.000000e+00, species CET is at 1.000000 of virgin biomass (now 300116468.631998 t vs virgin 300116468.631998 t)
+Time: 0.000000e+00, species BIR is at 1.000000 of virgin biomass (now 10453.315387 t vs virgin 10453.315387 t)
+Time: 0.000000e+00, species SQD is at 1.000000 of virgin biomass (now 27351478998.171104 t vs virgin 27351478998.171104 t)
+Time: 0.000000e+00, species OCT is at 1.000000 of virgin biomass (now 49980231976.013107 t vs virgin 49980231976.013107 t)
+Time: 0.000000e+00, species LPF is at 1.000000 of virgin biomass (now 210875571.818626 t vs virgin 210875571.818626 t)
+Time: 0.000000e+00, species SPF is at 1.000000 of virgin biomass (now 7453861849.838473 t vs virgin 7453861849.838473 t)
+Time: 0.000000e+00, species SBF is at 1.000000 of virgin biomass (now 17063432.830537 t vs virgin 17063432.830537 t)
+Time: 0.000000e+00, species LBF is at 1.000000 of virgin biomass (now 16115851.979551 t vs virgin 16115851.979551 t)
+Time: 0.000000e+00, species SZO is at 1.000000 of virgin biomass (now 52727996407118.007812 t vs virgin 52727996407118.007812 t)
+Time: 0.000000e+00, species MZO is at 1.000000 of virgin biomass (now 50793103129714.140625 t vs virgin 50793103129714.140625 t)
+Time: 0.000000e+00, species LZO is at 1.000000 of virgin biomass (now 54647539955481.656250 t vs virgin 54647539955481.656250 t)
+Time: 0.000000e+00, species SCR is at 1.000000 of virgin biomass (now 2457164102.150129 t vs virgin 2457164102.150129 t)
+Time: 0.000000e+00, species BFF is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species LPH is at 1.000000 of virgin biomass (now 586345673247603.625000 t vs virgin 586345673247603.625000 t)
+Time: 0.000000e+00, species SPH is at 1.000000 of virgin biomass (now 6542500161341734.000000 t vs virgin 6542500161341734.000000 t)
+Time: 0.000000e+00, species COR is at 1.000000 of virgin biomass (now 442967.604226 t vs virgin 442967.604226 t)
+Time: 0.000000e+00, species BCA is at 1.000000 of virgin biomass (now 2235705.368136 t vs virgin 2235705.368136 t)
+Time: 0.000000e+00, species MOL is at 1.000000 of virgin biomass (now 26485784.980198 t vs virgin 26485784.980198 t)
+Time: 0.000000e+00, species MA is at 1.000000 of virgin biomass (now 408524.145149 t vs virgin 408524.145149 t)
+Time: 0.000000e+00, species PB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species BB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DL is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DR is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DC is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DIN is at 1.000000 of virgin biomass (now 513936509.167519 t vs virgin 513936509.167519 t)
+Time step size 1.555313e-11 (seconds) is too small.
+Time: 0.000000e+00 The UNstable vari. 3 is NH3 in wc (offset: 0 NH3 in wc), its  Pool = 20, Netflux = 1.28592e+11 on day: 0.000000e+00 in box: 1 layer 7

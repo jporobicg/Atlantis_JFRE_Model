@@ -1,0 +1,737 @@
+#
+#Atlantis2 Updated to Version 6106
+#
+#
+#
+#Atlantis path https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis Relative ^/Atlantis/trunk/atlantis
+#
+#
+#
+#Atlantis SVN Last Change Date 2017-01-19 22:13:02 +1100 (Thu, 19 Jan 2017)
+
+# Log file for run of Atlantis - only ecological errors and important events are recorded here #
+# Key to indices used in Atlantis, which may appear in logged errors here:
+/usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+WARNING - Sum of dz (4.300000e+03) in box 0 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 2 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 3 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 4 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+Reading in linear mortality time series forcing file
+Reading in size change time series forcing file
+Reading in growth rate time series forcing file
+Reading in FSPB time series forcing file
+Reading in pCO2 time series forcing file
+VID-0 had 6.160000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-1 had 3.603000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-2 had 3.304000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-0 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-1 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-2 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-3 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-4 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-5 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-6 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-7 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-8 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-9 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-0 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-1 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-2 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-3 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-4 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-5 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-6 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-7 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-8 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-9 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+BIR-0 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-1 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-2 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-3 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-4 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-5 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-6 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-7 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-8 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-9 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+Found water in wc, 0
+Found salt in wc, 12
+Found Light_Adaptn_LPH in wc, 27
+Found Light_Adaptn_SPH in wc, 29
+Found Spiny_lobster_N in wc, 35
+Found Golden_Crab_N in wc, 66
+Found Breca_N in wc, 97
+Found Vidriola_N in wc, 128
+Found Orange_Roughy_N in wc, 138
+Found Alfonsino_N in wc, 169
+Found Anguila_N in wc, 200
+Found Chondrichtyans_N in wc, 231
+Found Otariid_N in wc, 262
+Found Dophins_N in wc, 293
+Found Whales_N in wc, 324
+Found Birds_N in wc, 355
+Found Squids_N in wc, 20
+Found Octupus_N in wc, 21
+Found Pelagic_L_fish_N in wc, 386
+Found Pelagic_S_fish_N in wc, 417
+Found Benthic_S_fish_N in wc, 448
+Found Benthic_L_fish_N in wc, 479
+Found Small_zooplankton_N in wc, 22
+Found Med_zooplankton_N in wc, 23
+Found Large_zooplankton_N in wc, 24
+Found Deposit_feeders_N in wc, 25
+Found Large_phyto_N in wc, 26
+Found Small_phyto_N in wc, 28
+Found Pelag_Bact_N in wc, 30
+Found Sed_Bact_N in wc, 31
+Found Labile_detritus_N in wc, 32
+Found Refractory_detritrus_N in wc, 33
+Found Carrion_N in wc, 34
+Found Spiny_lobster1_StructN in wc, 46
+Found Spiny_lobster2_StructN in wc, 47
+Found Spiny_lobster3_StructN in wc, 48
+Found Spiny_lobster4_StructN in wc, 49
+Found Spiny_lobster5_StructN in wc, 50
+Found Spiny_lobster6_StructN in wc, 51
+Found Spiny_lobster7_StructN in wc, 52
+Found Spiny_lobster8_StructN in wc, 53
+Found Spiny_lobster9_StructN in wc, 54
+Found Spiny_lobster10_StructN in wc, 55
+Found Golden_Crab1_StructN in wc, 77
+Found Golden_Crab2_StructN in wc, 78
+Found Golden_Crab3_StructN in wc, 79
+Found Golden_Crab4_StructN in wc, 80
+Found Golden_Crab5_StructN in wc, 81
+Found Golden_Crab6_StructN in wc, 82
+Found Golden_Crab7_StructN in wc, 83
+Found Golden_Crab8_StructN in wc, 84
+Found Golden_Crab9_StructN in wc, 85
+Found Golden_Crab10_StructN in wc, 86
+Found Breca1_StructN in wc, 108
+Found Breca2_StructN in wc, 109
+Found Breca3_StructN in wc, 110
+Found Breca4_StructN in wc, 111
+Found Breca5_StructN in wc, 112
+Found Breca6_StructN in wc, 113
+Found Breca7_StructN in wc, 114
+Found Breca8_StructN in wc, 115
+Found Breca9_StructN in wc, 116
+Found Breca10_StructN in wc, 117
+Found Vidriola1_StructN in wc, 132
+Found Vidriola2_StructN in wc, 133
+Found Vidriola3_StructN in wc, 134
+Found Orange_Roughy1_StructN in wc, 149
+Found Orange_Roughy2_StructN in wc, 150
+Found Orange_Roughy3_StructN in wc, 151
+Found Orange_Roughy4_StructN in wc, 152
+Found Orange_Roughy5_StructN in wc, 153
+Found Orange_Roughy6_StructN in wc, 154
+Found Orange_Roughy7_StructN in wc, 155
+Found Orange_Roughy8_StructN in wc, 156
+Found Orange_Roughy9_StructN in wc, 157
+Found Orange_Roughy10_StructN in wc, 158
+Found Alfonsino1_StructN in wc, 180
+Found Alfonsino2_StructN in wc, 181
+Found Alfonsino3_StructN in wc, 182
+Found Alfonsino4_StructN in wc, 183
+Found Alfonsino5_StructN in wc, 184
+Found Alfonsino6_StructN in wc, 185
+Found Alfonsino7_StructN in wc, 186
+Found Alfonsino8_StructN in wc, 187
+Found Alfonsino9_StructN in wc, 188
+Found Alfonsino10_StructN in wc, 189
+Found Anguila1_StructN in wc, 211
+Found Anguila2_StructN in wc, 212
+Found Anguila3_StructN in wc, 213
+Found Anguila4_StructN in wc, 214
+Found Anguila5_StructN in wc, 215
+Found Anguila6_StructN in wc, 216
+Found Anguila7_StructN in wc, 217
+Found Anguila8_StructN in wc, 218
+Found Anguila9_StructN in wc, 219
+Found Anguila10_StructN in wc, 220
+Found Chondrichtyans1_StructN in wc, 242
+Found Chondrichtyans2_StructN in wc, 243
+Found Chondrichtyans3_StructN in wc, 244
+Found Chondrichtyans4_StructN in wc, 245
+Found Chondrichtyans5_StructN in wc, 246
+Found Chondrichtyans6_StructN in wc, 247
+Found Chondrichtyans7_StructN in wc, 248
+Found Chondrichtyans8_StructN in wc, 249
+Found Chondrichtyans9_StructN in wc, 250
+Found Chondrichtyans10_StructN in wc, 251
+Found Otariid1_StructN in wc, 273
+Found Otariid2_StructN in wc, 274
+Found Otariid3_StructN in wc, 275
+Found Otariid4_StructN in wc, 276
+Found Otariid5_StructN in wc, 277
+Found Otariid6_StructN in wc, 278
+Found Otariid7_StructN in wc, 279
+Found Otariid8_StructN in wc, 280
+Found Otariid9_StructN in wc, 281
+Found Otariid10_StructN in wc, 282
+Found Dophins1_StructN in wc, 304
+Found Dophins2_StructN in wc, 305
+Found Dophins3_StructN in wc, 306
+Found Dophins4_StructN in wc, 307
+Found Dophins5_StructN in wc, 308
+Found Dophins6_StructN in wc, 309
+Found Dophins7_StructN in wc, 310
+Found Dophins8_StructN in wc, 311
+Found Dophins9_StructN in wc, 312
+Found Dophins10_StructN in wc, 313
+Found Whales1_StructN in wc, 335
+Found Whales2_StructN in wc, 336
+Found Whales3_StructN in wc, 337
+Found Whales4_StructN in wc, 338
+Found Whales5_StructN in wc, 339
+Found Whales6_StructN in wc, 340
+Found Whales7_StructN in wc, 341
+Found Whales8_StructN in wc, 342
+Found Whales9_StructN in wc, 343
+Found Whales10_StructN in wc, 344
+Found Birds1_StructN in wc, 366
+Found Birds2_StructN in wc, 367
+Found Birds3_StructN in wc, 368
+Found Birds4_StructN in wc, 369
+Found Birds5_StructN in wc, 370
+Found Birds6_StructN in wc, 371
+Found Birds7_StructN in wc, 372
+Found Birds8_StructN in wc, 373
+Found Birds9_StructN in wc, 374
+Found Birds10_StructN in wc, 375
+Found Pelagic_L_fish1_StructN in wc, 397
+Found Pelagic_L_fish2_StructN in wc, 398
+Found Pelagic_L_fish3_StructN in wc, 399
+Found Pelagic_L_fish4_StructN in wc, 400
+Found Pelagic_L_fish5_StructN in wc, 401
+Found Pelagic_L_fish6_StructN in wc, 402
+Found Pelagic_L_fish7_StructN in wc, 403
+Found Pelagic_L_fish8_StructN in wc, 404
+Found Pelagic_L_fish9_StructN in wc, 405
+Found Pelagic_L_fish10_StructN in wc, 406
+Found Pelagic_S_fish1_StructN in wc, 428
+Found Pelagic_S_fish2_StructN in wc, 429
+Found Pelagic_S_fish3_StructN in wc, 430
+Found Pelagic_S_fish4_StructN in wc, 431
+Found Pelagic_S_fish5_StructN in wc, 432
+Found Pelagic_S_fish6_StructN in wc, 433
+Found Pelagic_S_fish7_StructN in wc, 434
+Found Pelagic_S_fish8_StructN in wc, 435
+Found Pelagic_S_fish9_StructN in wc, 436
+Found Pelagic_S_fish10_StructN in wc, 437
+Found Benthic_S_fish1_StructN in wc, 459
+Found Benthic_S_fish2_StructN in wc, 460
+Found Benthic_S_fish3_StructN in wc, 461
+Found Benthic_S_fish4_StructN in wc, 462
+Found Benthic_S_fish5_StructN in wc, 463
+Found Benthic_S_fish6_StructN in wc, 464
+Found Benthic_S_fish7_StructN in wc, 465
+Found Benthic_S_fish8_StructN in wc, 466
+Found Benthic_S_fish9_StructN in wc, 467
+Found Benthic_S_fish10_StructN in wc, 468
+Found Benthic_L_fish1_StructN in wc, 490
+Found Benthic_L_fish2_StructN in wc, 491
+Found Benthic_L_fish3_StructN in wc, 492
+Found Benthic_L_fish4_StructN in wc, 493
+Found Benthic_L_fish5_StructN in wc, 494
+Found Benthic_L_fish6_StructN in wc, 495
+Found Benthic_L_fish7_StructN in wc, 496
+Found Benthic_L_fish8_StructN in wc, 497
+Found Benthic_L_fish9_StructN in wc, 498
+Found Benthic_L_fish10_StructN in wc, 499
+Found Spiny_lobster1_ResN in wc, 56
+Found Spiny_lobster2_ResN in wc, 57
+Found Spiny_lobster3_ResN in wc, 58
+Found Spiny_lobster4_ResN in wc, 59
+Found Spiny_lobster5_ResN in wc, 60
+Found Spiny_lobster6_ResN in wc, 61
+Found Spiny_lobster7_ResN in wc, 62
+Found Spiny_lobster8_ResN in wc, 63
+Found Spiny_lobster9_ResN in wc, 64
+Found Spiny_lobster10_ResN in wc, 65
+Found Golden_Crab1_ResN in wc, 87
+Found Golden_Crab2_ResN in wc, 88
+Found Golden_Crab3_ResN in wc, 89
+Found Golden_Crab4_ResN in wc, 90
+Found Golden_Crab5_ResN in wc, 91
+Found Golden_Crab6_ResN in wc, 92
+Found Golden_Crab7_ResN in wc, 93
+Found Golden_Crab8_ResN in wc, 94
+Found Golden_Crab9_ResN in wc, 95
+Found Golden_Crab10_ResN in wc, 96
+Found Breca1_ResN in wc, 118
+Found Breca2_ResN in wc, 119
+Found Breca3_ResN in wc, 120
+Found Breca4_ResN in wc, 121
+Found Breca5_ResN in wc, 122
+Found Breca6_ResN in wc, 123
+Found Breca7_ResN in wc, 124
+Found Breca8_ResN in wc, 125
+Found Breca9_ResN in wc, 126
+Found Breca10_ResN in wc, 127
+Found Vidriola1_ResN in wc, 135
+Found Vidriola2_ResN in wc, 136
+Found Vidriola3_ResN in wc, 137
+Found Orange_Roughy1_ResN in wc, 159
+Found Orange_Roughy2_ResN in wc, 160
+Found Orange_Roughy3_ResN in wc, 161
+Found Orange_Roughy4_ResN in wc, 162
+Found Orange_Roughy5_ResN in wc, 163
+Found Orange_Roughy6_ResN in wc, 164
+Found Orange_Roughy7_ResN in wc, 165
+Found Orange_Roughy8_ResN in wc, 166
+Found Orange_Roughy9_ResN in wc, 167
+Found Orange_Roughy10_ResN in wc, 168
+Found Alfonsino1_ResN in wc, 190
+Found Alfonsino2_ResN in wc, 191
+Found Alfonsino3_ResN in wc, 192
+Found Alfonsino4_ResN in wc, 193
+Found Alfonsino5_ResN in wc, 194
+Found Alfonsino6_ResN in wc, 195
+Found Alfonsino7_ResN in wc, 196
+Found Alfonsino8_ResN in wc, 197
+Found Alfonsino9_ResN in wc, 198
+Found Alfonsino10_ResN in wc, 199
+Found Anguila1_ResN in wc, 221
+Found Anguila2_ResN in wc, 222
+Found Anguila3_ResN in wc, 223
+Found Anguila4_ResN in wc, 224
+Found Anguila5_ResN in wc, 225
+Found Anguila6_ResN in wc, 226
+Found Anguila7_ResN in wc, 227
+Found Anguila8_ResN in wc, 228
+Found Anguila9_ResN in wc, 229
+Found Anguila10_ResN in wc, 230
+Found Chondrichtyans1_ResN in wc, 252
+Found Chondrichtyans2_ResN in wc, 253
+Found Chondrichtyans3_ResN in wc, 254
+Found Chondrichtyans4_ResN in wc, 255
+Found Chondrichtyans5_ResN in wc, 256
+Found Chondrichtyans6_ResN in wc, 257
+Found Chondrichtyans7_ResN in wc, 258
+Found Chondrichtyans8_ResN in wc, 259
+Found Chondrichtyans9_ResN in wc, 260
+Found Chondrichtyans10_ResN in wc, 261
+Found Otariid1_ResN in wc, 283
+Found Otariid2_ResN in wc, 284
+Found Otariid3_ResN in wc, 285
+Found Otariid4_ResN in wc, 286
+Found Otariid5_ResN in wc, 287
+Found Otariid6_ResN in wc, 288
+Found Otariid7_ResN in wc, 289
+Found Otariid8_ResN in wc, 290
+Found Otariid9_ResN in wc, 291
+Found Otariid10_ResN in wc, 292
+Found Dophins1_ResN in wc, 314
+Found Dophins2_ResN in wc, 315
+Found Dophins3_ResN in wc, 316
+Found Dophins4_ResN in wc, 317
+Found Dophins5_ResN in wc, 318
+Found Dophins6_ResN in wc, 319
+Found Dophins7_ResN in wc, 320
+Found Dophins8_ResN in wc, 321
+Found Dophins9_ResN in wc, 322
+Found Dophins10_ResN in wc, 323
+Found Whales1_ResN in wc, 345
+Found Whales2_ResN in wc, 346
+Found Whales3_ResN in wc, 347
+Found Whales4_ResN in wc, 348
+Found Whales5_ResN in wc, 349
+Found Whales6_ResN in wc, 350
+Found Whales7_ResN in wc, 351
+Found Whales8_ResN in wc, 352
+Found Whales9_ResN in wc, 353
+Found Whales10_ResN in wc, 354
+Found Birds1_ResN in wc, 376
+Found Birds2_ResN in wc, 377
+Found Birds3_ResN in wc, 378
+Found Birds4_ResN in wc, 379
+Found Birds5_ResN in wc, 380
+Found Birds6_ResN in wc, 381
+Found Birds7_ResN in wc, 382
+Found Birds8_ResN in wc, 383
+Found Birds9_ResN in wc, 384
+Found Birds10_ResN in wc, 385
+Found Pelagic_L_fish1_ResN in wc, 407
+Found Pelagic_L_fish2_ResN in wc, 408
+Found Pelagic_L_fish3_ResN in wc, 409
+Found Pelagic_L_fish4_ResN in wc, 410
+Found Pelagic_L_fish5_ResN in wc, 411
+Found Pelagic_L_fish6_ResN in wc, 412
+Found Pelagic_L_fish7_ResN in wc, 413
+Found Pelagic_L_fish8_ResN in wc, 414
+Found Pelagic_L_fish9_ResN in wc, 415
+Found Pelagic_L_fish10_ResN in wc, 416
+Found Pelagic_S_fish1_ResN in wc, 438
+Found Pelagic_S_fish2_ResN in wc, 439
+Found Pelagic_S_fish3_ResN in wc, 440
+Found Pelagic_S_fish4_ResN in wc, 441
+Found Pelagic_S_fish5_ResN in wc, 442
+Found Pelagic_S_fish6_ResN in wc, 443
+Found Pelagic_S_fish7_ResN in wc, 444
+Found Pelagic_S_fish8_ResN in wc, 445
+Found Pelagic_S_fish9_ResN in wc, 446
+Found Pelagic_S_fish10_ResN in wc, 447
+Found Benthic_S_fish1_ResN in wc, 469
+Found Benthic_S_fish2_ResN in wc, 470
+Found Benthic_S_fish3_ResN in wc, 471
+Found Benthic_S_fish4_ResN in wc, 472
+Found Benthic_S_fish5_ResN in wc, 473
+Found Benthic_S_fish6_ResN in wc, 474
+Found Benthic_S_fish7_ResN in wc, 475
+Found Benthic_S_fish8_ResN in wc, 476
+Found Benthic_S_fish9_ResN in wc, 477
+Found Benthic_S_fish10_ResN in wc, 478
+Found Benthic_L_fish1_ResN in wc, 500
+Found Benthic_L_fish2_ResN in wc, 501
+Found Benthic_L_fish3_ResN in wc, 502
+Found Benthic_L_fish4_ResN in wc, 503
+Found Benthic_L_fish5_ResN in wc, 504
+Found Benthic_L_fish6_ResN in wc, 505
+Found Benthic_L_fish7_ResN in wc, 506
+Found Benthic_L_fish8_ResN in wc, 507
+Found Benthic_L_fish9_ResN in wc, 508
+Found Benthic_L_fish10_ResN in wc, 509
+Found Spiny_lobster1_Nums in wc, 36
+Found Spiny_lobster2_Nums in wc, 37
+Found Spiny_lobster3_Nums in wc, 38
+Found Spiny_lobster4_Nums in wc, 39
+Found Spiny_lobster5_Nums in wc, 40
+Found Spiny_lobster6_Nums in wc, 41
+Found Spiny_lobster7_Nums in wc, 42
+Found Spiny_lobster8_Nums in wc, 43
+Found Spiny_lobster9_Nums in wc, 44
+Found Spiny_lobster10_Nums in wc, 45
+Found Golden_Crab1_Nums in wc, 67
+Found Golden_Crab2_Nums in wc, 68
+Found Golden_Crab3_Nums in wc, 69
+Found Golden_Crab4_Nums in wc, 70
+Found Golden_Crab5_Nums in wc, 71
+Found Golden_Crab6_Nums in wc, 72
+Found Golden_Crab7_Nums in wc, 73
+Found Golden_Crab8_Nums in wc, 74
+Found Golden_Crab9_Nums in wc, 75
+Found Golden_Crab10_Nums in wc, 76
+Found Breca1_Nums in wc, 98
+Found Breca2_Nums in wc, 99
+Found Breca3_Nums in wc, 100
+Found Breca4_Nums in wc, 101
+Found Breca5_Nums in wc, 102
+Found Breca6_Nums in wc, 103
+Found Breca7_Nums in wc, 104
+Found Breca8_Nums in wc, 105
+Found Breca9_Nums in wc, 106
+Found Breca10_Nums in wc, 107
+Found Vidriola1_Nums in wc, 129
+Found Vidriola2_Nums in wc, 130
+Found Vidriola3_Nums in wc, 131
+Found Orange_Roughy1_Nums in wc, 139
+Found Orange_Roughy2_Nums in wc, 140
+Found Orange_Roughy3_Nums in wc, 141
+Found Orange_Roughy4_Nums in wc, 142
+Found Orange_Roughy5_Nums in wc, 143
+Found Orange_Roughy6_Nums in wc, 144
+Found Orange_Roughy7_Nums in wc, 145
+Found Orange_Roughy8_Nums in wc, 146
+Found Orange_Roughy9_Nums in wc, 147
+Found Orange_Roughy10_Nums in wc, 148
+Found Alfonsino1_Nums in wc, 170
+Found Alfonsino2_Nums in wc, 171
+Found Alfonsino3_Nums in wc, 172
+Found Alfonsino4_Nums in wc, 173
+Found Alfonsino5_Nums in wc, 174
+Found Alfonsino6_Nums in wc, 175
+Found Alfonsino7_Nums in wc, 176
+Found Alfonsino8_Nums in wc, 177
+Found Alfonsino9_Nums in wc, 178
+Found Alfonsino10_Nums in wc, 179
+Found Anguila1_Nums in wc, 201
+Found Anguila2_Nums in wc, 202
+Found Anguila3_Nums in wc, 203
+Found Anguila4_Nums in wc, 204
+Found Anguila5_Nums in wc, 205
+Found Anguila6_Nums in wc, 206
+Found Anguila7_Nums in wc, 207
+Found Anguila8_Nums in wc, 208
+Found Anguila9_Nums in wc, 209
+Found Anguila10_Nums in wc, 210
+Found Chondrichtyans1_Nums in wc, 232
+Found Chondrichtyans2_Nums in wc, 233
+Found Chondrichtyans3_Nums in wc, 234
+Found Chondrichtyans4_Nums in wc, 235
+Found Chondrichtyans5_Nums in wc, 236
+Found Chondrichtyans6_Nums in wc, 237
+Found Chondrichtyans7_Nums in wc, 238
+Found Chondrichtyans8_Nums in wc, 239
+Found Chondrichtyans9_Nums in wc, 240
+Found Chondrichtyans10_Nums in wc, 241
+Found Otariid1_Nums in wc, 263
+Found Otariid2_Nums in wc, 264
+Found Otariid3_Nums in wc, 265
+Found Otariid4_Nums in wc, 266
+Found Otariid5_Nums in wc, 267
+Found Otariid6_Nums in wc, 268
+Found Otariid7_Nums in wc, 269
+Found Otariid8_Nums in wc, 270
+Found Otariid9_Nums in wc, 271
+Found Otariid10_Nums in wc, 272
+Found Dophins1_Nums in wc, 294
+Found Dophins2_Nums in wc, 295
+Found Dophins3_Nums in wc, 296
+Found Dophins4_Nums in wc, 297
+Found Dophins5_Nums in wc, 298
+Found Dophins6_Nums in wc, 299
+Found Dophins7_Nums in wc, 300
+Found Dophins8_Nums in wc, 301
+Found Dophins9_Nums in wc, 302
+Found Dophins10_Nums in wc, 303
+Found Whales1_Nums in wc, 325
+Found Whales2_Nums in wc, 326
+Found Whales3_Nums in wc, 327
+Found Whales4_Nums in wc, 328
+Found Whales5_Nums in wc, 329
+Found Whales6_Nums in wc, 330
+Found Whales7_Nums in wc, 331
+Found Whales8_Nums in wc, 332
+Found Whales9_Nums in wc, 333
+Found Whales10_Nums in wc, 334
+Found Birds1_Nums in wc, 356
+Found Birds2_Nums in wc, 357
+Found Birds3_Nums in wc, 358
+Found Birds4_Nums in wc, 359
+Found Birds5_Nums in wc, 360
+Found Birds6_Nums in wc, 361
+Found Birds7_Nums in wc, 362
+Found Birds8_Nums in wc, 363
+Found Birds9_Nums in wc, 364
+Found Birds10_Nums in wc, 365
+Found Pelagic_L_fish1_Nums in wc, 387
+Found Pelagic_L_fish2_Nums in wc, 388
+Found Pelagic_L_fish3_Nums in wc, 389
+Found Pelagic_L_fish4_Nums in wc, 390
+Found Pelagic_L_fish5_Nums in wc, 391
+Found Pelagic_L_fish6_Nums in wc, 392
+Found Pelagic_L_fish7_Nums in wc, 393
+Found Pelagic_L_fish8_Nums in wc, 394
+Found Pelagic_L_fish9_Nums in wc, 395
+Found Pelagic_L_fish10_Nums in wc, 396
+Found Pelagic_S_fish1_Nums in wc, 418
+Found Pelagic_S_fish2_Nums in wc, 419
+Found Pelagic_S_fish3_Nums in wc, 420
+Found Pelagic_S_fish4_Nums in wc, 421
+Found Pelagic_S_fish5_Nums in wc, 422
+Found Pelagic_S_fish6_Nums in wc, 423
+Found Pelagic_S_fish7_Nums in wc, 424
+Found Pelagic_S_fish8_Nums in wc, 425
+Found Pelagic_S_fish9_Nums in wc, 426
+Found Pelagic_S_fish10_Nums in wc, 427
+Found Benthic_S_fish1_Nums in wc, 449
+Found Benthic_S_fish2_Nums in wc, 450
+Found Benthic_S_fish3_Nums in wc, 451
+Found Benthic_S_fish4_Nums in wc, 452
+Found Benthic_S_fish5_Nums in wc, 453
+Found Benthic_S_fish6_Nums in wc, 454
+Found Benthic_S_fish7_Nums in wc, 455
+Found Benthic_S_fish8_Nums in wc, 456
+Found Benthic_S_fish9_Nums in wc, 457
+Found Benthic_S_fish10_Nums in wc, 458
+Found Benthic_L_fish1_Nums in wc, 480
+Found Benthic_L_fish2_Nums in wc, 481
+Found Benthic_L_fish3_Nums in wc, 482
+Found Benthic_L_fish4_Nums in wc, 483
+Found Benthic_L_fish5_Nums in wc, 484
+Found Benthic_L_fish6_Nums in wc, 485
+Found Benthic_L_fish7_Nums in wc, 486
+Found Benthic_L_fish8_Nums in wc, 487
+Found Benthic_L_fish9_Nums in wc, 488
+Found Benthic_L_fish10_Nums in wc, 489
+Found NH3 in wc, 3
+Found NO3 in wc, 4
+Found DON in wc, 5
+Found MicroNut in wc, 6
+Found Oxygen in wc, 7
+Found Si in wc, 8
+Found Det_Si in wc, 9
+Found Light in wc, 10
+Found Temp in wc, 11
+Found Denitrifiction in wc, 13
+Found Nitrification in wc, 14
+Found Chl_a in wc, 15
+Found Stress in wc, 16
+Found DiagNGain in wc, 17
+Found DiagNLoss in wc, 18
+Found DiagNFlux in wc, 19
+Found Rugosity in wc, 1
+Found AragoniteSaturation in wc, 2
+Set epibenthic ids
+Searching for SPL_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for GCR_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for BRC_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ORO_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ALF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ANG_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+SPL has startN = 2.345858e+02
+GCR has startN = 1.067260e+05
+BRC has startN = 5.473055e+04
+VID has startN = 9.053400e+02
+ORO has startN = 6.738149e+05
+ALF has startN = 3.676750e+05
+ANG has startN = 2.342032e+02
+CHO has startN = 5.702633e+03
+OTA has startN = 2.633719e+03
+DOL has startN = 3.351658e+03
+CET has startN = 1.675829e+03
+BIR has startN = 3.764153e+02
+LPF has startN = 1.325171e+04
+SPF has startN = 1.668555e+06
+SBF has startN = 2.089123e+03
+LBF has startN = 1.196491e+03
+SPL is smallest vertebrate (at 2.951452e-02 kg) - SN: 1.499972e+02, RN: 1.089021e+02
+CET is largest vertebrate (at 2.269107e+06 kg) - SN: 1.153194e+10, RN: 8.372507e+09
+Time: 0.000000e+00, species SPL virgin biomass is 90940411.822967 t
+Time: 0.000000e+00, species GCR virgin biomass is 5883457269569.439453 t
+Time: 0.000000e+00, species BRC virgin biomass is 631211490.841518 t
+Time: 0.000000e+00, species VID virgin biomass is 69310.134453 t
+Time: 0.000000e+00, species ORO virgin biomass is 63658210477.750793 t
+Time: 0.000000e+00, species ALF virgin biomass is 21867318779.799194 t
+Time: 0.000000e+00, species ANG virgin biomass is 2602434.241943 t
+Time: 0.000000e+00, species CHO virgin biomass is 170136806.508727 t
+Time: 0.000000e+00, species OTA virgin biomass is 4882424.265593 t
+Time: 0.000000e+00, species DOL virgin biomass is 40222427.868182 t
+Time: 0.000000e+00, species CET virgin biomass is 300116468.631998 t
+Time: 0.000000e+00, species BIR virgin biomass is 10453.315387 t
+Time: 0.000000e+00, species SQD virgin biomass is 27351478998.171104 t
+Time: 0.000000e+00, species OCT virgin biomass is 49980231976.013107 t
+Time: 0.000000e+00, species LPF virgin biomass is 210875571.818626 t
+Time: 0.000000e+00, species SPF virgin biomass is 7453861849.838473 t
+Time: 0.000000e+00, species SBF virgin biomass is 17063432.830537 t
+Time: 0.000000e+00, species LBF virgin biomass is 16115851.979551 t
+Time: 0.000000e+00, species SZO virgin biomass is 52727996407118.007812 t
+Time: 0.000000e+00, species MZO virgin biomass is 50793103129714.140625 t
+Time: 0.000000e+00, species LZO virgin biomass is 54647539955481.656250 t
+Time: 0.000000e+00, species SCR virgin biomass is 2457164102.150129 t
+Time: 0.000000e+00, species BFF virgin biomass is 0.000000 t
+Time: 0.000000e+00, species LPH virgin biomass is 586345673247603.625000 t
+Time: 0.000000e+00, species SPH virgin biomass is 6542500161341734.000000 t
+Time: 0.000000e+00, species COR virgin biomass is 442967.604226 t
+Time: 0.000000e+00, species BCA virgin biomass is 2235705.368136 t
+Time: 0.000000e+00, species MOL virgin biomass is 26485784.980198 t
+Time: 0.000000e+00, species MA virgin biomass is 408524.145149 t
+Time: 0.000000e+00, species PB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species BB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DL virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DR virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DC virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DIN virgin biomass is 513936509.167519 t
+SPL stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+GCR stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BRC stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+VID stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ORO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ALF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ANG stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CHO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+OTA stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+DOL stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CET stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BIR stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+t = 0, hd.t = 2.5, TofY: 0
+Time: 0.000000e+00 box-0-0 base_pH: 8.000000e+00
+
+
+Time: 0.000000e+00, species SPL is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 90940411.822967 t)
+Time: 0.000000e+00, species GCR is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 5883457269569.439453 t)
+Time: 0.000000e+00, species BRC is at 1.000000 of virgin biomass (now 631211490.841517 t vs virgin 631211490.841518 t)
+Time: 0.000000e+00, species VID is at 1.000000 of virgin biomass (now 69310.134453 t vs virgin 69310.134453 t)
+Time: 0.000000e+00, species ORO is at 1.000000 of virgin biomass (now 63658210477.750877 t vs virgin 63658210477.750793 t)
+Time: 0.000000e+00, species ALF is at 1.000000 of virgin biomass (now 21867318779.799210 t vs virgin 21867318779.799194 t)
+Time: 0.000000e+00, species ANG is at 0.223487 of virgin biomass (now 581609.079237 t vs virgin 2602434.241943 t)
+Time: 0.000000e+00, species CHO is at 1.000000 of virgin biomass (now 170136806.508727 t vs virgin 170136806.508727 t)
+Time: 0.000000e+00, species OTA is at 1.000000 of virgin biomass (now 4882424.265593 t vs virgin 4882424.265593 t)
+Time: 0.000000e+00, species DOL is at 1.000000 of virgin biomass (now 40222427.868182 t vs virgin 40222427.868182 t)
+Time: 0.000000e+00, species CET is at 1.000000 of virgin biomass (now 300116468.631998 t vs virgin 300116468.631998 t)
+Time: 0.000000e+00, species BIR is at 1.000000 of virgin biomass (now 10453.315387 t vs virgin 10453.315387 t)
+Time: 0.000000e+00, species SQD is at 1.000000 of virgin biomass (now 27351478998.171104 t vs virgin 27351478998.171104 t)
+Time: 0.000000e+00, species OCT is at 1.000000 of virgin biomass (now 49980231976.013107 t vs virgin 49980231976.013107 t)
+Time: 0.000000e+00, species LPF is at 1.000000 of virgin biomass (now 210875571.818626 t vs virgin 210875571.818626 t)
+Time: 0.000000e+00, species SPF is at 1.000000 of virgin biomass (now 7453861849.838473 t vs virgin 7453861849.838473 t)
+Time: 0.000000e+00, species SBF is at 1.000000 of virgin biomass (now 17063432.830537 t vs virgin 17063432.830537 t)
+Time: 0.000000e+00, species LBF is at 1.000000 of virgin biomass (now 16115851.979551 t vs virgin 16115851.979551 t)
+Time: 0.000000e+00, species SZO is at 1.000000 of virgin biomass (now 52727996407118.007812 t vs virgin 52727996407118.007812 t)
+Time: 0.000000e+00, species MZO is at 1.000000 of virgin biomass (now 50793103129714.140625 t vs virgin 50793103129714.140625 t)
+Time: 0.000000e+00, species LZO is at 1.000000 of virgin biomass (now 54647539955481.656250 t vs virgin 54647539955481.656250 t)
+Time: 0.000000e+00, species SCR is at 1.000000 of virgin biomass (now 2457164102.150129 t vs virgin 2457164102.150129 t)
+Time: 0.000000e+00, species BFF is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species LPH is at 1.000000 of virgin biomass (now 586345673247603.625000 t vs virgin 586345673247603.625000 t)
+Time: 0.000000e+00, species SPH is at 1.000000 of virgin biomass (now 6542500161341734.000000 t vs virgin 6542500161341734.000000 t)
+Time: 0.000000e+00, species COR is at 1.000000 of virgin biomass (now 442967.604226 t vs virgin 442967.604226 t)
+Time: 0.000000e+00, species BCA is at 1.000000 of virgin biomass (now 2235705.368136 t vs virgin 2235705.368136 t)
+Time: 0.000000e+00, species MOL is at 1.000000 of virgin biomass (now 26485784.980198 t vs virgin 26485784.980198 t)
+Time: 0.000000e+00, species MA is at 1.000000 of virgin biomass (now 408524.145149 t vs virgin 408524.145149 t)
+Time: 0.000000e+00, species PB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species BB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DL is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DR is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DC is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DIN is at 1.000000 of virgin biomass (now 513936509.167519 t vs virgin 513936509.167519 t)
+Light levels are assessed
+processing water column layer 7
+
+Doing adaptive timestep for box: 1, layer 7 (Water Column(
+
+Water column processes running now (it_count = 1), t = 0.000000e+00
+Time step size 1.555313e-11 (seconds) is too small.
+Time: 0.000000e+00 The UNstable vari. 3 is NH3 in wc (offset: 0 NH3 in wc), its  Pool = 20, Netflux = 1.28592e+11 on day: 0.000000e+00 in box: 1 layer 7

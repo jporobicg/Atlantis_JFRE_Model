@@ -1,0 +1,1017 @@
+#
+#Atlantis2 Updated to Version 6106
+#
+#
+#
+#Atlantis path https://svnserv.csiro.au/svn/atlantis/Atlantis/trunk/atlantis Relative ^/Atlantis/trunk/atlantis
+#
+#
+#
+#Atlantis SVN Last Change Date 2017-01-19 22:13:02 +1100 (Thu, 19 Jan 2017)
+
+# Log file for run of Atlantis - only ecological errors and important events are recorded here #
+# Key to indices used in Atlantis, which may appear in logged errors here:
+/usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+WARNING - Sum of dz (4.300000e+03) in box 0 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 2 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 3 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (4.300000e+03) in box 4 is greater than botz (4.500000e+03) for that box in bgm file. Difference = -2.000000e+02 - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 45 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+WARNING - Sum of dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file. Difference = 1.000000e+01 - correct and retry
+WARNING - Sum of nominal_dz (0.000000e+00) in box 48 is greater than botz (-1.000000e+01) for that box in bgm file - this will impact number of layers calculated for the box - correct and retry
+VID-0 had 6.160000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-1 had 3.603000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+VID-2 had 3.304000e+03 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-0 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-1 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-2 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-3 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-4 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-5 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-6 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-7 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-8 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+DOL-9 had 4.256000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-0 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-1 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-2 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-3 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-4 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-5 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-6 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-7 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-8 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+CET-9 had 2.128000e+02 migrants in KMIG array but its migration (0) dates (T: 182 R: 273) say that it shouldn't be away at the start of the model run
+BIR-0 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-1 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-2 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-3 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-4 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-5 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-6 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-7 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-8 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+BIR-9 had 8.601000e+02 migrants in KMIG array but its migration (0) dates (T: 91 R: 273) say that it shouldn't be away at the start of the model run
+Set epibenthic ids
+Searching for SPL_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for GCR_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for BRC_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ORO_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ALF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for ANG_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SPF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for SBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+Searching for LBF_Connnectivity in file Inputs/Larval_disp/FG_connect.nc
+SPL has startN = 2.345858e+02
+GCR has startN = 1.067260e+05
+BRC has startN = 5.473055e+04
+VID has startN = 9.053400e+02
+ORO has startN = 6.738149e+05
+ALF has startN = 3.676750e+05
+ANG has startN = 2.342032e+02
+CHO has startN = 5.702633e+03
+OTA has startN = 2.633719e+03
+DOL has startN = 3.351658e+03
+CET has startN = 1.675829e+03
+BIR has startN = 3.764153e+02
+LPF has startN = 1.325171e+04
+SPF has startN = 1.668555e+06
+SBF has startN = 2.089123e+03
+LBF has startN = 1.196491e+03
+SPL is smallest vertebrate (at 2.951452e-02 kg) - SN: 1.499972e+02, RN: 1.089021e+02
+CET is largest vertebrate (at 2.269107e+06 kg) - SN: 1.153194e+10, RN: 8.372507e+09
+Time: 0.000000e+00, species SPL virgin biomass is 90940411.822967 t
+Time: 0.000000e+00, species GCR virgin biomass is 5883457269569.439453 t
+Time: 0.000000e+00, species BRC virgin biomass is 631211490.841518 t
+Time: 0.000000e+00, species VID virgin biomass is 69310.134453 t
+Time: 0.000000e+00, species ORO virgin biomass is 63658210477.750793 t
+Time: 0.000000e+00, species ALF virgin biomass is 21867318779.799194 t
+Time: 0.000000e+00, species ANG virgin biomass is 2602434.241943 t
+Time: 0.000000e+00, species CHO virgin biomass is 170136806.508727 t
+Time: 0.000000e+00, species OTA virgin biomass is 4882424.265593 t
+Time: 0.000000e+00, species DOL virgin biomass is 40222427.868182 t
+Time: 0.000000e+00, species CET virgin biomass is 300116468.631998 t
+Time: 0.000000e+00, species BIR virgin biomass is 10453.315387 t
+Time: 0.000000e+00, species SQD virgin biomass is 27351478998.171104 t
+Time: 0.000000e+00, species OCT virgin biomass is 49980231976.013107 t
+Time: 0.000000e+00, species LPF virgin biomass is 210875571.818626 t
+Time: 0.000000e+00, species SPF virgin biomass is 7453861849.838473 t
+Time: 0.000000e+00, species SBF virgin biomass is 17063432.830537 t
+Time: 0.000000e+00, species LBF virgin biomass is 16115851.979551 t
+Time: 0.000000e+00, species SZO virgin biomass is 52727996407118.007812 t
+Time: 0.000000e+00, species MZO virgin biomass is 50793103129714.140625 t
+Time: 0.000000e+00, species LZO virgin biomass is 54647539955481.656250 t
+Time: 0.000000e+00, species SCR virgin biomass is 2457164102.150129 t
+Time: 0.000000e+00, species BFF virgin biomass is 0.000000 t
+Time: 0.000000e+00, species LPH virgin biomass is 586345673247603.625000 t
+Time: 0.000000e+00, species SPH virgin biomass is 6542500161341734.000000 t
+Time: 0.000000e+00, species COR virgin biomass is 442967.604226 t
+Time: 0.000000e+00, species BCA virgin biomass is 2235705.368136 t
+Time: 0.000000e+00, species MOL virgin biomass is 26485784.980198 t
+Time: 0.000000e+00, species MA virgin biomass is 408524.145149 t
+Time: 0.000000e+00, species PB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species BB virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DL virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DR virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DC virgin biomass is 0.000000 t
+Time: 0.000000e+00, species DIN virgin biomass is 513936509.167519 t
+SPL stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+GCR stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BRC stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+VID stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ORO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ALF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+ANG stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CHO stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+OTA stock 0 (of 2) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+DOL stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+CET stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+BIR stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SPF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+SBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+LBF stock 0 (of 1) would have recruit contrib 0.000000000000, but stock prop is 1.000000000000
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Larval_Dispersal - year = 0
+bm->larvalYears = 8
+bm->larval_rewind = 1
+updated - year = 0
+Time: 0.000000e+00 box-0-0 base_pH: 8.000000e+00
+
+
+Time: 0.000000e+00, species SPL is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 90940411.822967 t)
+Time: 0.000000e+00, species GCR is at 0.000000 of virgin biomass (now 0.000000 t vs virgin 5883457269569.439453 t)
+Time: 0.000000e+00, species BRC is at 1.000000 of virgin biomass (now 631211490.841517 t vs virgin 631211490.841518 t)
+Time: 0.000000e+00, species VID is at 1.000000 of virgin biomass (now 69310.134453 t vs virgin 69310.134453 t)
+Time: 0.000000e+00, species ORO is at 1.000000 of virgin biomass (now 63658210477.750877 t vs virgin 63658210477.750793 t)
+Time: 0.000000e+00, species ALF is at 1.000000 of virgin biomass (now 21867318779.799210 t vs virgin 21867318779.799194 t)
+Time: 0.000000e+00, species ANG is at 0.223487 of virgin biomass (now 581609.079237 t vs virgin 2602434.241943 t)
+Time: 0.000000e+00, species CHO is at 1.000000 of virgin biomass (now 170136806.508727 t vs virgin 170136806.508727 t)
+Time: 0.000000e+00, species OTA is at 1.000000 of virgin biomass (now 4882424.265593 t vs virgin 4882424.265593 t)
+Time: 0.000000e+00, species DOL is at 1.000000 of virgin biomass (now 40222427.868182 t vs virgin 40222427.868182 t)
+Time: 0.000000e+00, species CET is at 1.000000 of virgin biomass (now 300116468.631998 t vs virgin 300116468.631998 t)
+Time: 0.000000e+00, species BIR is at 1.000000 of virgin biomass (now 10453.315387 t vs virgin 10453.315387 t)
+Time: 0.000000e+00, species SQD is at 1.000000 of virgin biomass (now 27351478998.171104 t vs virgin 27351478998.171104 t)
+Time: 0.000000e+00, species OCT is at 1.000000 of virgin biomass (now 49980231976.013107 t vs virgin 49980231976.013107 t)
+Time: 0.000000e+00, species LPF is at 1.000000 of virgin biomass (now 210875571.818626 t vs virgin 210875571.818626 t)
+Time: 0.000000e+00, species SPF is at 1.000000 of virgin biomass (now 7453861849.838473 t vs virgin 7453861849.838473 t)
+Time: 0.000000e+00, species SBF is at 1.000000 of virgin biomass (now 17063432.830537 t vs virgin 17063432.830537 t)
+Time: 0.000000e+00, species LBF is at 1.000000 of virgin biomass (now 16115851.979551 t vs virgin 16115851.979551 t)
+Time: 0.000000e+00, species SZO is at 1.000000 of virgin biomass (now 52727996407118.007812 t vs virgin 52727996407118.007812 t)
+Time: 0.000000e+00, species MZO is at 1.000000 of virgin biomass (now 50793103129714.140625 t vs virgin 50793103129714.140625 t)
+Time: 0.000000e+00, species LZO is at 1.000000 of virgin biomass (now 54647539955481.656250 t vs virgin 54647539955481.656250 t)
+Time: 0.000000e+00, species SCR is at 1.000000 of virgin biomass (now 2457164102.150129 t vs virgin 2457164102.150129 t)
+Time: 0.000000e+00, species BFF is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species LPH is at 1.000000 of virgin biomass (now 586345673247603.625000 t vs virgin 586345673247603.625000 t)
+Time: 0.000000e+00, species SPH is at 1.000000 of virgin biomass (now 6542500161341734.000000 t vs virgin 6542500161341734.000000 t)
+Time: 0.000000e+00, species COR is at 1.000000 of virgin biomass (now 442967.604226 t vs virgin 442967.604226 t)
+Time: 0.000000e+00, species BCA is at 1.000000 of virgin biomass (now 2235705.368136 t vs virgin 2235705.368136 t)
+Time: 0.000000e+00, species MOL is at 1.000000 of virgin biomass (now 26485784.980198 t vs virgin 26485784.980198 t)
+Time: 0.000000e+00, species MA is at 1.000000 of virgin biomass (now 408524.145149 t vs virgin 408524.145149 t)
+Time: 0.000000e+00, species PB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species BB is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DL is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DR is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DC is at 1.000000 of virgin biomass (now 0.000000 t vs virgin 0.000000 t)
+Time: 0.000000e+00, species DIN is at 1.000000 of virgin biomass (now 513936509.167519 t vs virgin 513936509.167519 t)
+
+Time: 0.000000e+00, box1-layer7, wcwcFluxNH: 2.106422e+02 (it_count 1)
+wcSPL_wcFluxNH: 0.000000e+00
+wcGCR_wcFluxNH: 0.000000e+00
+wcBRC_wcFluxNH: 0.000000e+00
+wcVID_wcFluxNH: 0.000000e+00
+wcORO_wcFluxNH: 0.000000e+00
+wcALF_wcFluxNH: 0.000000e+00
+wcANG_wcFluxNH: 0.000000e+00
+wcCHO_wcFluxNH: 0.000000e+00
+wcOTA_wcFluxNH: 0.000000e+00
+wcDOL_wcFluxNH: 4.615207e-10
+wcCET_wcFluxNH: 4.285809e-08
+wcBIR_wcFluxNH: 0.000000e+00
+wcSQD_wcFluxNH: 0.000000e+00
+wcOCT_wcFluxNH: 0.000000e+00
+wcLPF_wcFluxNH: 0.000000e+00
+wcSPF_wcFluxNH: 0.000000e+00
+wcSBF_wcFluxNH: 0.000000e+00
+wcLBF_wcFluxNH: 0.000000e+00
+wcSZO_wcFluxNH: 8.209221e+01
+wcMZO_wcFluxNH: 1.081291e+02
+wcLZO_wcFluxNH: 2.042383e+01
+wcSCR_wcFluxNH: 0.000000e+00
+wcBFF_wcFluxNH: 0.000000e+00
+wcLPH_wcFluxNH: -4.530855e-04
+wcSPH_wcFluxNH: -2.451429e-03
+wcCOR_wcFluxNH: 0.000000e+00
+wcBCA_wcFluxNH: 0.000000e+00
+wcMOL_wcFluxNH: 0.000000e+00
+wcMA_wcFluxNH: 0.000000e+00
+wcPB_wcFluxNH: -5.215570e-10
+wcBB_wcFluxNH: 0.000000e+00
+wcDL_wcFluxNH: 0.000000e+00
+wcDR_wcFluxNH: 0.000000e+00
+wcDC_wcFluxNH: 0.000000e+00
+wcRemin_wcFluxNH: 1.027467e-07
+
+Time: 0.000000e+00, box1-layer7, wcsedFluxNH: 0.000000e+00 (it_count 1)
+wcSPL_sedFluxNH: 0.000000e+00
+wcGCR_sedFluxNH: 0.000000e+00
+wcBRC_sedFluxNH: 0.000000e+00
+wcVID_sedFluxNH: 0.000000e+00
+wcORO_sedFluxNH: 0.000000e+00
+wcALF_sedFluxNH: 0.000000e+00
+wcANG_sedFluxNH: 0.000000e+00
+wcCHO_sedFluxNH: 0.000000e+00
+wcOTA_sedFluxNH: 0.000000e+00
+wcDOL_sedFluxNH: 0.000000e+00
+wcCET_sedFluxNH: 0.000000e+00
+wcBIR_sedFluxNH: 0.000000e+00
+wcSQD_sedFluxNH: 0.000000e+00
+wcOCT_sedFluxNH: 0.000000e+00
+wcLPF_sedFluxNH: 0.000000e+00
+wcSPF_sedFluxNH: 0.000000e+00
+wcSBF_sedFluxNH: 0.000000e+00
+wcLBF_sedFluxNH: 0.000000e+00
+wcSZO_sedFluxNH: 0.000000e+00
+wcMZO_sedFluxNH: 0.000000e+00
+wcLZO_sedFluxNH: 0.000000e+00
+wcSCR_sedFluxNH: 0.000000e+00
+wcBFF_sedFluxNH: 0.000000e+00
+wcLPH_sedFluxNH: 0.000000e+00
+wcSPH_sedFluxNH: 0.000000e+00
+wcCOR_sedFluxNH: 0.000000e+00
+wcBCA_sedFluxNH: 0.000000e+00
+wcMOL_sedFluxNH: 0.000000e+00
+wcMA_sedFluxNH: 0.000000e+00
+wcPB_sedFluxNH: 0.000000e+00
+wcBB_sedFluxNH: 0.000000e+00
+wcDL_sedFluxNH: 0.000000e+00
+wcDR_sedFluxNH: 0.000000e+00
+wcDC_sedFluxNH: 0.000000e+00
+wcRemin_sedFluxNH: 0.000000e+00
+
+Time: 0.000000e+00, box1-layer7, wcwcFluxDL: 6.494477e+01 (it_count 1)
+wcSPL_wcFluxDL: 0.000000e+00
+wcGCR_wcFluxDL: 0.000000e+00
+wcBRC_wcFluxDL: 0.000000e+00
+wcVID_wcFluxDL: 0.000000e+00
+wcORO_wcFluxDL: 0.000000e+00
+wcALF_wcFluxDL: 0.000000e+00
+wcANG_wcFluxDL: 0.000000e+00
+wcCHO_wcFluxDL: 0.000000e+00
+wcOTA_wcFluxDL: 0.000000e+00
+wcDOL_wcFluxDL: 2.306595e-11
+wcCET_wcFluxDL: 1.157467e-09
+wcBIR_wcFluxDL: 0.000000e+00
+wcSQD_wcFluxDL: 0.000000e+00
+wcOCT_wcFluxDL: 0.000000e+00
+wcLPF_wcFluxDL: 0.000000e+00
+wcSPF_wcFluxDL: 0.000000e+00
+wcSBF_wcFluxDL: 0.000000e+00
+wcLBF_wcFluxDL: 0.000000e+00
+wcSZO_wcFluxDL: 2.462766e+01
+wcMZO_wcFluxDL: 3.243872e+01
+wcLZO_wcFluxDL: 7.877763e+00
+wcSCR_wcFluxDL: 0.000000e+00
+wcBFF_wcFluxDL: 0.000000e+00
+wcLPH_wcFluxDL: 5.322024e-05
+wcSPH_wcFluxDL: 5.758985e-04
+wcCOR_wcFluxDL: 0.000000e+00
+wcBCA_wcFluxDL: 0.000000e+00
+wcMOL_wcFluxDL: 0.000000e+00
+wcMA_wcFluxDL: 0.000000e+00
+wcPB_wcFluxDL: -0.000000e+00
+wcBB_wcFluxDL: 0.000000e+00
+wcDL_wcFluxDL: 0.000000e+00
+wcDR_wcFluxDL: 0.000000e+00
+wcDC_wcFluxDL: 0.000000e+00
+wcRemin_wcFluxDL: -0.000000e+00
+
+Time: 0.000000e+00, box1-layer7, wcsedFluxDL: 0.000000e+00 (it_count 1)
+wcSPL_sedFluxDL: 0.000000e+00
+wcGCR_sedFluxDL: 0.000000e+00
+wcBRC_sedFluxDL: 0.000000e+00
+wcVID_sedFluxDL: 0.000000e+00
+wcORO_sedFluxDL: 0.000000e+00
+wcALF_sedFluxDL: 0.000000e+00
+wcANG_sedFluxDL: 0.000000e+00
+wcCHO_sedFluxDL: 0.000000e+00
+wcOTA_sedFluxDL: 0.000000e+00
+wcDOL_sedFluxDL: 0.000000e+00
+wcCET_sedFluxDL: 0.000000e+00
+wcBIR_sedFluxDL: 0.000000e+00
+wcSQD_sedFluxDL: 0.000000e+00
+wcOCT_sedFluxDL: 0.000000e+00
+wcLPF_sedFluxDL: 0.000000e+00
+wcSPF_sedFluxDL: 0.000000e+00
+wcSBF_sedFluxDL: 0.000000e+00
+wcLBF_sedFluxDL: 0.000000e+00
+wcSZO_sedFluxDL: 0.000000e+00
+wcMZO_sedFluxDL: 0.000000e+00
+wcLZO_sedFluxDL: 0.000000e+00
+wcSCR_sedFluxDL: 0.000000e+00
+wcBFF_sedFluxDL: 0.000000e+00
+wcLPH_sedFluxDL: 0.000000e+00
+wcSPH_sedFluxDL: 0.000000e+00
+wcCOR_sedFluxDL: 0.000000e+00
+wcBCA_sedFluxDL: 0.000000e+00
+wcMOL_sedFluxDL: 0.000000e+00
+wcMA_sedFluxDL: 0.000000e+00
+wcPB_sedFluxDL: 0.000000e+00
+wcBB_sedFluxDL: 0.000000e+00
+wcDL_sedFluxDL: 0.000000e+00
+wcDR_sedFluxDL: 0.000000e+00
+wcDC_sedFluxDL: 0.000000e+00
+wcRemin_sedFluxDL: 0.000000e+00
+
+Time: 0.000000e+00, box1-layer7, wcwcFluxDR: 7.216016e+00 (it_count 1)
+wcSPL_wcFluxDR: 0.000000e+00
+wcGCR_wcFluxDR: 0.000000e+00
+wcBRC_wcFluxDR: 0.000000e+00
+wcVID_wcFluxDR: 0.000000e+00
+wcORO_wcFluxDR: 0.000000e+00
+wcALF_wcFluxDR: 0.000000e+00
+wcANG_wcFluxDR: 0.000000e+00
+wcCHO_wcFluxDR: 0.000000e+00
+wcOTA_wcFluxDR: 0.000000e+00
+wcDOL_wcFluxDR: 2.075936e-10
+wcCET_wcFluxDR: 1.041720e-08
+wcBIR_wcFluxDR: 0.000000e+00
+wcSQD_wcFluxDR: 0.000000e+00
+wcOCT_wcFluxDR: 0.000000e+00
+wcLPF_wcFluxDR: 0.000000e+00
+wcSPF_wcFluxDR: 0.000000e+00
+wcSBF_wcFluxDR: 0.000000e+00
+wcLBF_wcFluxDR: 0.000000e+00
+wcSZO_wcFluxDR: 2.736407e+00
+wcMZO_wcFluxDR: 3.604302e+00
+wcLZO_wcFluxDR: 8.753070e-01
+wcSCR_wcFluxDR: 0.000000e+00
+wcBFF_wcFluxDR: 0.000000e+00
+wcLPH_wcFluxDR: 0.000000e+00
+wcSPH_wcFluxDR: 0.000000e+00
+wcCOR_wcFluxDR: 0.000000e+00
+wcBCA_wcFluxDR: 0.000000e+00
+wcMOL_wcFluxDR: 0.000000e+00
+wcMA_wcFluxDR: 0.000000e+00
+wcPB_wcFluxDR: 0.000000e+00
+wcBB_wcFluxDR: 0.000000e+00
+wcDL_wcFluxDR: 0.000000e+00
+wcDR_wcFluxDR: 0.000000e+00
+wcDC_wcFluxDR: 0.000000e+00
+wcRemin_wcFluxDR: 0.000000e+00
+
+Time: 0.000000e+00, box1-layer7, wcsedFluxDR: 0.000000e+00 (it_count 1)
+wcSPL_sedFluxDR: 0.000000e+00
+wcGCR_sedFluxDR: 0.000000e+00
+wcBRC_sedFluxDR: 0.000000e+00
+wcVID_sedFluxDR: 0.000000e+00
+wcORO_sedFluxDR: 0.000000e+00
+wcALF_sedFluxDR: 0.000000e+00
+wcANG_sedFluxDR: 0.000000e+00
+wcCHO_sedFluxDR: 0.000000e+00
+wcOTA_sedFluxDR: 0.000000e+00
+wcDOL_sedFluxDR: 0.000000e+00
+wcCET_sedFluxDR: 0.000000e+00
+wcBIR_sedFluxDR: 0.000000e+00
+wcSQD_sedFluxDR: 0.000000e+00
+wcOCT_sedFluxDR: 0.000000e+00
+wcLPF_sedFluxDR: 0.000000e+00
+wcSPF_sedFluxDR: 0.000000e+00
+wcSBF_sedFluxDR: 0.000000e+00
+wcLBF_sedFluxDR: 0.000000e+00
+wcSZO_sedFluxDR: 0.000000e+00
+wcMZO_sedFluxDR: 0.000000e+00
+wcLZO_sedFluxDR: 0.000000e+00
+wcSCR_sedFluxDR: 0.000000e+00
+wcBFF_sedFluxDR: 0.000000e+00
+wcLPH_sedFluxDR: 0.000000e+00
+wcSPH_sedFluxDR: 0.000000e+00
+wcCOR_sedFluxDR: 0.000000e+00
+wcBCA_sedFluxDR: 0.000000e+00
+wcMOL_sedFluxDR: 0.000000e+00
+wcMA_sedFluxDR: 0.000000e+00
+wcPB_sedFluxDR: 0.000000e+00
+wcBB_sedFluxDR: 0.000000e+00
+wcDL_sedFluxDR: 0.000000e+00
+wcDR_sedFluxDR: 0.000000e+00
+wcDC_sedFluxDR: 0.000000e+00
+wcRemin_sedFluxDR: 0.000000e+00
+
+Time: 0.000000e+00, box1-7, species SPL is 0.000000
+Time: 0.000000e+00, box1-7, species GCR is 0.000000
+Time: 0.000000e+00, box1-7, species BRC is 0.000000
+Time: 0.000000e+00, box1-7, species VID is 0.000000
+Time: 0.000000e+00, box1-7, species ORO is 0.000000
+Time: 0.000000e+00, box1-7, species ALF is 0.000000
+Time: 0.000000e+00, box1-7, species ANG is 0.000000
+Time: 0.000000e+00, box1-7, species CHO is 0.000000
+Time: 0.000000e+00, box1-7, species OTA is 0.000000
+Time: 0.000000e+00, box1-7, species DOL is 205842.546237
+Time: 0.000000e+00, box1-7, species CET is 1535877.900593
+Time: 0.000000e+00, box1-7, species BIR is 0.000000
+Time: 0.000000e+00, box1-7, species SQD is 0.000000
+Time: 0.000000e+00, box1-7, species OCT is 0.000000
+Time: 0.000000e+00, box1-7, species LPF is 0.000000
+Time: 0.000000e+00, box1-7, species SPF is 0.000000
+Time: 0.000000e+00, box1-7, species SBF is 0.000000
+Time: 0.000000e+00, box1-7, species LBF is 0.000000
+Time: 0.000000e+00, box1-7, species SZO is 133366218340.381653
+Time: 0.000000e+00, box1-7, species MZO is 137163759311.868500
+Time: 0.000000e+00, box1-7, species LZO is 137292428553.734222
+Time: 0.000000e+00, box1-7, species SCR is 0.000000
+Time: 0.000000e+00, box1-7, species BFF is 0.000000
+Time: 0.000000e+00, box1-7, species LPH is 333435383305.853333
+Time: 0.000000e+00, box1-7, species SPH is 1804059162669.435791
+Time: 0.000000e+00, box1-7, species COR is 0.000000
+Time: 0.000000e+00, box1-7, species BCA is 0.000000
+Time: 0.000000e+00, box1-7, species MOL is 0.000000
+Time: 0.000000e+00, box1-7, species MA is 0.000000
+Time: 0.000000e+00, box1-7, species PB is 0.000000
+Time: 0.000000e+00, box1-7, species BB is 0.000000
+Time: 0.000000e+00, box1-7, species DL is 0.000000
+Time: 0.000000e+00, box1-7, species DR is 0.000000
+Time: 0.000000e+00, box1-7, species DC is 0.000000
+Time: 0.000000e+00, box1-7, species DIN is 18925057.263611
+debug Water_Column_Box, bm->current_box = 1, currentLayer = 7, it_count = 1
+
+day: 0.000000e+00, box: 1, layer: 7
+Pelagic Bacteria (PB) N flux: 0.00000000000000000000e+00
+Small phytoplankton (SPH) N flux: -1.84913104751474094201e+02
+Large phytoplankton (LPH) N flux: -7.00742701347929042299e+00
+Large Zooplankton (LZO) N flux: 1.77074208410468614261e+01
+Medium Zooplankton (MZO) N flux: 1.11866716991562782368e+02
+Small Zooplankton (SZO) N flux: -2.20456583852956725877e+02
+Large benthic fish-0 growth flux: 0.00000000000000000000e+00
+Large benthic fish-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-0 flux: -0.00000000000000000000e+00
+Large benthic fish-1 growth flux: 0.00000000000000000000e+00
+Large benthic fish-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-1 flux: -0.00000000000000000000e+00
+Large benthic fish-2 growth flux: 0.00000000000000000000e+00
+Large benthic fish-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-2 flux: -0.00000000000000000000e+00
+Large benthic fish-3 growth flux: 0.00000000000000000000e+00
+Large benthic fish-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-3 flux: -0.00000000000000000000e+00
+Large benthic fish-4 growth flux: 0.00000000000000000000e+00
+Large benthic fish-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-4 flux: -0.00000000000000000000e+00
+Large benthic fish-5 growth flux: 0.00000000000000000000e+00
+Large benthic fish-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-5 flux: -0.00000000000000000000e+00
+Large benthic fish-6 growth flux: 0.00000000000000000000e+00
+Large benthic fish-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-6 flux: -0.00000000000000000000e+00
+Large benthic fish-7 growth flux: 0.00000000000000000000e+00
+Large benthic fish-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-7 flux: -0.00000000000000000000e+00
+Large benthic fish-8 growth flux: 0.00000000000000000000e+00
+Large benthic fish-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-8 flux: -0.00000000000000000000e+00
+Large benthic fish-9 growth flux: 0.00000000000000000000e+00
+Large benthic fish-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large benthic fish-9 flux: -0.00000000000000000000e+00
+Small benthic fish-0 growth flux: 0.00000000000000000000e+00
+Small benthic fish-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-0 flux: -0.00000000000000000000e+00
+Small benthic fish-1 growth flux: 0.00000000000000000000e+00
+Small benthic fish-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-1 flux: -0.00000000000000000000e+00
+Small benthic fish-2 growth flux: 0.00000000000000000000e+00
+Small benthic fish-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-2 flux: -0.00000000000000000000e+00
+Small benthic fish-3 growth flux: 0.00000000000000000000e+00
+Small benthic fish-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-3 flux: -0.00000000000000000000e+00
+Small benthic fish-4 growth flux: 0.00000000000000000000e+00
+Small benthic fish-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-4 flux: -0.00000000000000000000e+00
+Small benthic fish-5 growth flux: 0.00000000000000000000e+00
+Small benthic fish-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-5 flux: -0.00000000000000000000e+00
+Small benthic fish-6 growth flux: 0.00000000000000000000e+00
+Small benthic fish-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-6 flux: -0.00000000000000000000e+00
+Small benthic fish-7 growth flux: 0.00000000000000000000e+00
+Small benthic fish-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-7 flux: -0.00000000000000000000e+00
+Small benthic fish-8 growth flux: 0.00000000000000000000e+00
+Small benthic fish-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-8 flux: -0.00000000000000000000e+00
+Small benthic fish-9 growth flux: 0.00000000000000000000e+00
+Small benthic fish-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small benthic fish-9 flux: -0.00000000000000000000e+00
+Small pelagic fish-0 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-0 flux: -0.00000000000000000000e+00
+Small pelagic fish-1 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-1 flux: -0.00000000000000000000e+00
+Small pelagic fish-2 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-2 flux: -0.00000000000000000000e+00
+Small pelagic fish-3 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-3 flux: -0.00000000000000000000e+00
+Small pelagic fish-4 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-4 flux: -0.00000000000000000000e+00
+Small pelagic fish-5 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-5 flux: -0.00000000000000000000e+00
+Small pelagic fish-6 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-6 flux: -0.00000000000000000000e+00
+Small pelagic fish-7 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-7 flux: -0.00000000000000000000e+00
+Small pelagic fish-8 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-8 flux: -0.00000000000000000000e+00
+Small pelagic fish-9 growth flux: 0.00000000000000000000e+00
+Small pelagic fish-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Small pelagic fish-9 flux: -0.00000000000000000000e+00
+Large pelagic fish-0 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-0 flux: -0.00000000000000000000e+00
+Large pelagic fish-1 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-1 flux: -0.00000000000000000000e+00
+Large pelagic fish-2 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-2 flux: -0.00000000000000000000e+00
+Large pelagic fish-3 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-3 flux: -0.00000000000000000000e+00
+Large pelagic fish-4 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-4 flux: -0.00000000000000000000e+00
+Large pelagic fish-5 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-5 flux: -0.00000000000000000000e+00
+Large pelagic fish-6 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-6 flux: -0.00000000000000000000e+00
+Large pelagic fish-7 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-7 flux: -0.00000000000000000000e+00
+Large pelagic fish-8 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-8 flux: -0.00000000000000000000e+00
+Large pelagic fish-9 growth flux: 0.00000000000000000000e+00
+Large pelagic fish-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Large pelagic fish-9 flux: -0.00000000000000000000e+00
+Octupus (OCT) N flux: 0.00000000000000000000e+00
+Squids (SQD) N flux: 0.00000000000000000000e+00
+Birds-0 growth flux: 0.00000000000000000000e+00
+Birds-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-0 flux: -0.00000000000000000000e+00
+Birds-1 growth flux: 0.00000000000000000000e+00
+Birds-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-1 flux: -0.00000000000000000000e+00
+Birds-2 growth flux: 0.00000000000000000000e+00
+Birds-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-2 flux: -0.00000000000000000000e+00
+Birds-3 growth flux: 0.00000000000000000000e+00
+Birds-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-3 flux: -0.00000000000000000000e+00
+Birds-4 growth flux: 0.00000000000000000000e+00
+Birds-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-4 flux: -0.00000000000000000000e+00
+Birds-5 growth flux: 0.00000000000000000000e+00
+Birds-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-5 flux: -0.00000000000000000000e+00
+Birds-6 growth flux: 0.00000000000000000000e+00
+Birds-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-6 flux: -0.00000000000000000000e+00
+Birds-7 growth flux: 0.00000000000000000000e+00
+Birds-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-7 flux: -0.00000000000000000000e+00
+Birds-8 growth flux: 0.00000000000000000000e+00
+Birds-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-8 flux: -0.00000000000000000000e+00
+Birds-9 growth flux: 0.00000000000000000000e+00
+Birds-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Birds-9 flux: -0.00000000000000000000e+00
+Whales-0 growth flux: 1.22094332627395809718e-08
+Whales-0 mortality flux: 1.74619342843669175290e-09 (eaten: 6.97952496071037019952e-15)
+Whales-0 flux: -3.56926693116214015758e-10
+Whales-1 growth flux: 2.10438756682425400871e-09
+Whales-1 mortality flux: 4.43137673018655579216e-10 (eaten: 1.77121869748060403173e-15)
+Whales-1 flux: -1.79805176205953630510e-10
+Whales-2 growth flux: 4.26958359627081829897e-09
+Whales-2 mortality flux: 8.24215970103187139099e-10 (eaten: 3.29438643089011834918e-15)
+Whales-2 flux: -2.45218576029495360205e-10
+Whales-3 growth flux: 3.51343235788222872713e-09
+Whales-3 mortality flux: 5.52487078018902685810e-10 (eaten: 7.99217477422732211755e-16)
+Whales-3 flux: -2.00767477392381246109e-10
+Whales-4 growth flux: 2.88517473229095368953e-09
+Whales-4 mortality flux: 3.70343164048920257371e-10 (eaten: 5.35731496948791082528e-16)
+Whales-4 flux: -1.64374508064931107461e-10
+Whales-5 growth flux: 2.36218081929146783532e-09
+Whales-5 mortality flux: 2.48248446383830367942e-10 (eaten: 3.59111561132677612836e-16)
+Whales-5 flux: -1.34578464668995536671e-10
+Whales-6 growth flux: 1.93689172992819242166e-09
+Whales-6 mortality flux: 1.66405910312270253885e-10 (eaten: 2.40719678630126017684e-16)
+Whales-6 flux: -1.10183527827165117275e-10
+Whales-7 growth flux: 1.58658596358883619690e-09
+Whales-7 mortality flux: 1.11545217427395681696e-10 (eaten: 1.61359226012235349749e-16)
+Whales-7 flux: -9.02106427010868027891e-11
+Whales-8 growth flux: 1.29898625958703438636e-09
+Whales-8 mortality flux: 7.47709952690781908362e-11 (eaten: 1.08162323791575117259e-16)
+Whales-8 flux: -7.38582274284255917446e-11
+Whales-9 growth flux: 1.06351953610038095749e-09
+Whales-9 mortality flux: 5.01204968638436017386e-11 (eaten: 7.25033736794919911688e-17)
+Whales-9 flux: -6.04700020868349651799e-11
+Dophins-0 growth flux: 1.14210318078956914674e-11
+Dophins-0 mortality flux: 2.34028671621722240061e-10 (eaten: 0.00000000000000000000e+00)
+Dophins-0 flux: -7.13850532964602446844e-10
+Dophins-1 growth flux: 4.31586634471043138796e-12
+Dophins-1 mortality flux: 5.93902824699890041887e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-1 flux: -3.59608915051412260660e-10
+Dophins-2 growth flux: 5.88628226789246142822e-12
+Dophins-2 mortality flux: 1.10463231318731796503e-10 (eaten: 0.00000000000000000000e+00)
+Dophins-2 flux: -4.90435191784533905158e-10
+Dophins-3 growth flux: 4.81927999966801263537e-12
+Dophins-3 mortality flux: 7.40457183124453158198e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-3 flux: -4.01534373931808639066e-10
+Dophins-4 growth flux: 3.94578517975667054154e-12
+Dophins-4 mortality flux: 4.96343293718937971944e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-4 flux: -3.28748540567676101411e-10
+Dophins-5 growth flux: 3.23053535449210996274e-12
+Dophins-5 mortality flux: 3.32708858971910285503e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-5 flux: -2.69156539980613339407e-10
+Dophins-6 growth flux: 2.64494789642050671424e-12
+Dophins-6 mortality flux: 2.23021418069919443838e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-6 flux: -2.20366736875465898112e-10
+Dophins-7 growth flux: 2.16549986808631169280e-12
+Dophins-7 mortality flux: 1.49495727182361187995e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-7 flux: -1.80421024408116159539e-10
+Dophins-8 growth flux: 1.77298239544982177977e-12
+Dophins-8 mortality flux: 1.00209982711054265341e-11 (eaten: 0.00000000000000000000e+00)
+Dophins-8 flux: -1.47716241172995341244e-10
+Dophins-9 growth flux: 1.45159489530250378285e-12
+Dophins-9 mortality flux: 6.71727600538193249197e-12 (eaten: 0.00000000000000000000e+00)
+Dophins-9 flux: -1.20939829224121636387e-10
+Otariid-0 growth flux: 0.00000000000000000000e+00
+Otariid-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-0 flux: -0.00000000000000000000e+00
+Otariid-1 growth flux: 0.00000000000000000000e+00
+Otariid-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-1 flux: -0.00000000000000000000e+00
+Otariid-2 growth flux: 0.00000000000000000000e+00
+Otariid-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-2 flux: -0.00000000000000000000e+00
+Otariid-3 growth flux: 0.00000000000000000000e+00
+Otariid-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-3 flux: -0.00000000000000000000e+00
+Otariid-4 growth flux: 0.00000000000000000000e+00
+Otariid-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-4 flux: -0.00000000000000000000e+00
+Otariid-5 growth flux: 0.00000000000000000000e+00
+Otariid-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-5 flux: -0.00000000000000000000e+00
+Otariid-6 growth flux: 0.00000000000000000000e+00
+Otariid-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-6 flux: -0.00000000000000000000e+00
+Otariid-7 growth flux: 0.00000000000000000000e+00
+Otariid-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-7 flux: -0.00000000000000000000e+00
+Otariid-8 growth flux: 0.00000000000000000000e+00
+Otariid-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-8 flux: -0.00000000000000000000e+00
+Otariid-9 growth flux: 0.00000000000000000000e+00
+Otariid-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Otariid-9 flux: -0.00000000000000000000e+00
+Chondrichtyans-0 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-0 flux: -0.00000000000000000000e+00
+Chondrichtyans-1 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-1 flux: -0.00000000000000000000e+00
+Chondrichtyans-2 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-2 flux: -0.00000000000000000000e+00
+Chondrichtyans-3 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-3 flux: -0.00000000000000000000e+00
+Chondrichtyans-4 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-4 flux: -0.00000000000000000000e+00
+Chondrichtyans-5 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-5 flux: -0.00000000000000000000e+00
+Chondrichtyans-6 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-6 flux: -0.00000000000000000000e+00
+Chondrichtyans-7 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-7 flux: -0.00000000000000000000e+00
+Chondrichtyans-8 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-8 flux: -0.00000000000000000000e+00
+Chondrichtyans-9 growth flux: 0.00000000000000000000e+00
+Chondrichtyans-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Chondrichtyans-9 flux: -0.00000000000000000000e+00
+Anguila-0 growth flux: 0.00000000000000000000e+00
+Anguila-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-0 flux: -0.00000000000000000000e+00
+Anguila-1 growth flux: 0.00000000000000000000e+00
+Anguila-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-1 flux: -0.00000000000000000000e+00
+Anguila-2 growth flux: 0.00000000000000000000e+00
+Anguila-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-2 flux: -0.00000000000000000000e+00
+Anguila-3 growth flux: 0.00000000000000000000e+00
+Anguila-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-3 flux: -0.00000000000000000000e+00
+Anguila-4 growth flux: 0.00000000000000000000e+00
+Anguila-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-4 flux: -0.00000000000000000000e+00
+Anguila-5 growth flux: 0.00000000000000000000e+00
+Anguila-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-5 flux: -0.00000000000000000000e+00
+Anguila-6 growth flux: 0.00000000000000000000e+00
+Anguila-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-6 flux: -0.00000000000000000000e+00
+Anguila-7 growth flux: 0.00000000000000000000e+00
+Anguila-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-7 flux: -0.00000000000000000000e+00
+Anguila-8 growth flux: 0.00000000000000000000e+00
+Anguila-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-8 flux: -0.00000000000000000000e+00
+Anguila-9 growth flux: 0.00000000000000000000e+00
+Anguila-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Anguila-9 flux: -0.00000000000000000000e+00
+Alfonsino-0 growth flux: 0.00000000000000000000e+00
+Alfonsino-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-0 flux: -0.00000000000000000000e+00
+Alfonsino-1 growth flux: 0.00000000000000000000e+00
+Alfonsino-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-1 flux: -0.00000000000000000000e+00
+Alfonsino-2 growth flux: 0.00000000000000000000e+00
+Alfonsino-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-2 flux: -0.00000000000000000000e+00
+Alfonsino-3 growth flux: 0.00000000000000000000e+00
+Alfonsino-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-3 flux: -0.00000000000000000000e+00
+Alfonsino-4 growth flux: 0.00000000000000000000e+00
+Alfonsino-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-4 flux: -0.00000000000000000000e+00
+Alfonsino-5 growth flux: 0.00000000000000000000e+00
+Alfonsino-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-5 flux: -0.00000000000000000000e+00
+Alfonsino-6 growth flux: 0.00000000000000000000e+00
+Alfonsino-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-6 flux: -0.00000000000000000000e+00
+Alfonsino-7 growth flux: 0.00000000000000000000e+00
+Alfonsino-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-7 flux: -0.00000000000000000000e+00
+Alfonsino-8 growth flux: 0.00000000000000000000e+00
+Alfonsino-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-8 flux: -0.00000000000000000000e+00
+Alfonsino-9 growth flux: 0.00000000000000000000e+00
+Alfonsino-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Alfonsino-9 flux: -0.00000000000000000000e+00
+Orange Roughy-0 growth flux: 0.00000000000000000000e+00
+Orange Roughy-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-0 flux: -0.00000000000000000000e+00
+Orange Roughy-1 growth flux: 0.00000000000000000000e+00
+Orange Roughy-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-1 flux: -0.00000000000000000000e+00
+Orange Roughy-2 growth flux: 0.00000000000000000000e+00
+Orange Roughy-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-2 flux: -0.00000000000000000000e+00
+Orange Roughy-3 growth flux: 0.00000000000000000000e+00
+Orange Roughy-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-3 flux: -0.00000000000000000000e+00
+Orange Roughy-4 growth flux: 0.00000000000000000000e+00
+Orange Roughy-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-4 flux: -0.00000000000000000000e+00
+Orange Roughy-5 growth flux: 0.00000000000000000000e+00
+Orange Roughy-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-5 flux: -0.00000000000000000000e+00
+Orange Roughy-6 growth flux: 0.00000000000000000000e+00
+Orange Roughy-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-6 flux: -0.00000000000000000000e+00
+Orange Roughy-7 growth flux: 0.00000000000000000000e+00
+Orange Roughy-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-7 flux: -0.00000000000000000000e+00
+Orange Roughy-8 growth flux: 0.00000000000000000000e+00
+Orange Roughy-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-8 flux: -0.00000000000000000000e+00
+Orange Roughy-9 growth flux: 0.00000000000000000000e+00
+Orange Roughy-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Orange Roughy-9 flux: -0.00000000000000000000e+00
+Vidriola-0 growth flux: 0.00000000000000000000e+00
+Vidriola-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Vidriola-0 flux: -0.00000000000000000000e+00
+Vidriola-1 growth flux: 0.00000000000000000000e+00
+Vidriola-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Vidriola-1 flux: -0.00000000000000000000e+00
+Vidriola-2 growth flux: 0.00000000000000000000e+00
+Vidriola-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Vidriola-2 flux: -0.00000000000000000000e+00
+Breca-0 growth flux: 0.00000000000000000000e+00
+Breca-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-0 flux: -0.00000000000000000000e+00
+Breca-1 growth flux: 0.00000000000000000000e+00
+Breca-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-1 flux: -0.00000000000000000000e+00
+Breca-2 growth flux: 0.00000000000000000000e+00
+Breca-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-2 flux: -0.00000000000000000000e+00
+Breca-3 growth flux: 0.00000000000000000000e+00
+Breca-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-3 flux: -0.00000000000000000000e+00
+Breca-4 growth flux: 0.00000000000000000000e+00
+Breca-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-4 flux: -0.00000000000000000000e+00
+Breca-5 growth flux: 0.00000000000000000000e+00
+Breca-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-5 flux: -0.00000000000000000000e+00
+Breca-6 growth flux: 0.00000000000000000000e+00
+Breca-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-6 flux: -0.00000000000000000000e+00
+Breca-7 growth flux: 0.00000000000000000000e+00
+Breca-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-7 flux: -0.00000000000000000000e+00
+Breca-8 growth flux: 0.00000000000000000000e+00
+Breca-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-8 flux: -0.00000000000000000000e+00
+Breca-9 growth flux: 0.00000000000000000000e+00
+Breca-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Breca-9 flux: -0.00000000000000000000e+00
+Golden Crab-0 growth flux: 0.00000000000000000000e+00
+Golden Crab-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-0 flux: -0.00000000000000000000e+00
+Golden Crab-1 growth flux: 0.00000000000000000000e+00
+Golden Crab-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-1 flux: -0.00000000000000000000e+00
+Golden Crab-2 growth flux: 0.00000000000000000000e+00
+Golden Crab-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-2 flux: -0.00000000000000000000e+00
+Golden Crab-3 growth flux: 0.00000000000000000000e+00
+Golden Crab-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-3 flux: -0.00000000000000000000e+00
+Golden Crab-4 growth flux: 0.00000000000000000000e+00
+Golden Crab-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-4 flux: -0.00000000000000000000e+00
+Golden Crab-5 growth flux: 0.00000000000000000000e+00
+Golden Crab-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-5 flux: -0.00000000000000000000e+00
+Golden Crab-6 growth flux: 0.00000000000000000000e+00
+Golden Crab-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-6 flux: -0.00000000000000000000e+00
+Golden Crab-7 growth flux: 0.00000000000000000000e+00
+Golden Crab-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-7 flux: -0.00000000000000000000e+00
+Golden Crab-8 growth flux: 0.00000000000000000000e+00
+Golden Crab-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-8 flux: -0.00000000000000000000e+00
+Golden Crab-9 growth flux: 0.00000000000000000000e+00
+Golden Crab-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Golden Crab-9 flux: -0.00000000000000000000e+00
+Spiny lobster-0 growth flux: 0.00000000000000000000e+00
+Spiny lobster-0 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-0 flux: -0.00000000000000000000e+00
+Spiny lobster-1 growth flux: 0.00000000000000000000e+00
+Spiny lobster-1 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-1 flux: -0.00000000000000000000e+00
+Spiny lobster-2 growth flux: 0.00000000000000000000e+00
+Spiny lobster-2 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-2 flux: -0.00000000000000000000e+00
+Spiny lobster-3 growth flux: 0.00000000000000000000e+00
+Spiny lobster-3 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-3 flux: -0.00000000000000000000e+00
+Spiny lobster-4 growth flux: 0.00000000000000000000e+00
+Spiny lobster-4 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-4 flux: -0.00000000000000000000e+00
+Spiny lobster-5 growth flux: 0.00000000000000000000e+00
+Spiny lobster-5 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-5 flux: -0.00000000000000000000e+00
+Spiny lobster-6 growth flux: 0.00000000000000000000e+00
+Spiny lobster-6 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-6 flux: -0.00000000000000000000e+00
+Spiny lobster-7 growth flux: 0.00000000000000000000e+00
+Spiny lobster-7 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-7 flux: -0.00000000000000000000e+00
+Spiny lobster-8 growth flux: 0.00000000000000000000e+00
+Spiny lobster-8 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-8 flux: -0.00000000000000000000e+00
+Spiny lobster-9 growth flux: 0.00000000000000000000e+00
+Spiny lobster-9 mortality flux: 0.00000000000000000000e+00 (eaten: 0.00000000000000000000e+00)
+Spiny lobster-9 flux: -0.00000000000000000000e+00
+NH3 N flux: 2.10642190850354410259e+02
+NO3 N flux: -6.04333551654719227979e-07
+DON N flux: -1.03268282174157649415e-07
+MicroNut N flux: 0.00000000000000000000e+00
+Oxygen N flux: -3.37027504393633353175e+03
+Si N flux: 1.93628029076545564529e-07
+Det_Si N flux: -1.93628029076545564529e-07
+Light N flux: 0.00000000000000000000e+00
+Temp N flux: 0.00000000000000000000e+00
+Denitrifiction N flux: 0.00000000000000000000e+00
+Nitrification N flux: 5.21556980677563900556e-10
+Chl_a N flux: 0.00000000000000000000e+00
+Stress N flux: 0.00000000000000000000e+00
+DiagNGain N flux: 0.00000000000000000000e+00
+DiagNLoss N flux: 0.00000000000000000000e+00
+DiagNFlux N flux: 0.00000000000000000000e+00
+Rugosity N flux: 0.00000000000000000000e+00
+AragoniteSaturation N flux: 0.00000000000000000000e+00
+box: 1, layer: 7, on day: 0.000000e+00, wcFlux: 1.040453e-08 (wcFlux1: 9.088245e+01, wcFlux2: 3.847412e-08, wcFlux3: -9.088245e+01, wcFishing: 0.000000e+00)
+where wcFlux1 is nutrients and small plankton, wcFlux2 is vertebrates and wcFlux3 is large zooplankton, cephalopods and prawns
+Box: 1-7 (it_count: 1) Vari ij: 3 (NH3 in wc) has Netflux 2.106422e+02 and local pool is 2.000000e+01
+Box: 1-7 (it_count: 1) Vari ij: 4 (NO3 in wc) has Netflux -6.043336e-07 and local pool is 1.250000e-02
+Box: 1-7 (it_count: 1) Vari ij: 5 (DON in wc) has Netflux -1.032683e-07 and local pool is 1.125000e+01
+Box: 1-7 (it_count: 1) Vari ij: 7 (Oxygen in wc) has Netflux -3.370275e+03 and local pool is 8.375000e+02
+Box: 1-7 (it_count: 1) Vari ij: 8 (Si in wc) has Netflux 1.936280e-07 and local pool is 1.125000e-01
+Box: 1-7 (it_count: 1) Vari ij: 9 (Det_Si in wc) has Netflux -1.936280e-07 and local pool is 1.125000e+00
+Box: 1-7 (it_count: 1) Vari ij: 14 (Nitrification in wc) has Netflux 5.215570e-10 and local pool is 0.000000e+00
+Box: 1-7 (it_count: 1) Vari ij: 22 (Small_zooplankton_N in wc) has Netflux -2.204566e+02 and local pool is 1.751779e+07
+Box: 1-7 (it_count: 1) Vari ij: 23 (Med_zooplankton_N in wc) has Netflux 1.118667e+02 and local pool is 1.801660e+07
+Box: 1-7 (it_count: 1) Vari ij: 24 (Large_zooplankton_N in wc) has Netflux 1.770742e+01 and local pool is 1.823051e+07
+Box: 1-7 (it_count: 1) Vari ij: 26 (Large_phyto_N in wc) has Netflux -7.007427e+00 and local pool is 3.525947e+05
+Box: 1-7 (it_count: 1) Vari ij: 28 (Small_phyto_N in wc) has Netflux -1.849131e+02 and local pool is 1.907721e+06
+Box: 1-7 (it_count: 1) Vari ij: 32 (Labile_detritus_N in wc) has Netflux 6.494477e+01 and local pool is 0.000000e+00
+Box: 1-7 (it_count: 1) Vari ij: 33 (Refractory_detritrus_N in wc) has Netflux 7.216016e+00 and local pool is 0.000000e+00
+Box: 1-7 (it_count: 1) Vari ij: 294 (Dophins1_Nums in wc) has Netflux -7.138505e-10 and local pool is 2.274568e+01
+Box: 1-7 (it_count: 1) Vari ij: 295 (Dophins2_Nums in wc) has Netflux -3.596089e-10 and local pool is 1.145835e+01
+Box: 1-7 (it_count: 1) Vari ij: 296 (Dophins3_Nums in wc) has Netflux -4.904352e-10 and local pool is 1.562691e+01
+Box: 1-7 (it_count: 1) Vari ij: 297 (Dophins4_Nums in wc) has Netflux -4.015344e-10 and local pool is 1.279424e+01
+Box: 1-7 (it_count: 1) Vari ij: 298 (Dophins5_Nums in wc) has Netflux -3.287485e-10 and local pool is 1.047503e+01
+Box: 1-7 (it_count: 1) Vari ij: 299 (Dophins6_Nums in wc) has Netflux -2.691565e-10 and local pool is 8.576233e+00
+Box: 1-7 (it_count: 1) Vari ij: 300 (Dophins7_Nums in wc) has Netflux -2.203667e-10 and local pool is 7.021625e+00
+Box: 1-7 (it_count: 1) Vari ij: 301 (Dophins8_Nums in wc) has Netflux -1.804210e-10 and local pool is 5.748821e+00
+Box: 1-7 (it_count: 1) Vari ij: 302 (Dophins9_Nums in wc) has Netflux -1.477162e-10 and local pool is 4.706736e+00
+Box: 1-7 (it_count: 1) Vari ij: 303 (Dophins10_Nums in wc) has Netflux -1.209398e-10 and local pool is 3.853550e+00
+Box: 1-7 (it_count: 1) Vari ij: 314 (Dophins1_ResN in wc) has Netflux 2.314008e-02 and local pool is 6.355147e+09
+Box: 1-7 (it_count: 1) Vari ij: 315 (Dophins2_ResN in wc) has Netflux 1.735819e-02 and local pool is 3.201465e+09
+Box: 1-7 (it_count: 1) Vari ij: 316 (Dophins3_ResN in wc) has Netflux 1.735907e-02 and local pool is 4.366163e+09
+Box: 1-7 (it_count: 1) Vari ij: 317 (Dophins4_ResN in wc) has Netflux 1.735906e-02 and local pool is 3.574712e+09
+Box: 1-7 (it_count: 1) Vari ij: 318 (Dophins5_ResN in wc) has Netflux 1.735947e-02 and local pool is 2.926727e+09
+Box: 1-7 (it_count: 1) Vari ij: 319 (Dophins6_ResN in wc) has Netflux 1.735947e-02 and local pool is 2.396201e+09
+Box: 1-7 (it_count: 1) Vari ij: 320 (Dophins7_ResN in wc) has Netflux 1.735953e-02 and local pool is 1.961843e+09
+Box: 1-7 (it_count: 1) Vari ij: 321 (Dophins8_ResN in wc) has Netflux 1.735953e-02 and local pool is 1.606222e+09
+Box: 1-7 (it_count: 1) Vari ij: 322 (Dophins9_ResN in wc) has Netflux 1.735973e-02 and local pool is 1.315063e+09
+Box: 1-7 (it_count: 1) Vari ij: 323 (Dophins10_ResN in wc) has Netflux 1.735973e-02 and local pool is 1.076683e+09
+Box: 1-7 (it_count: 1) Vari ij: 325 (Whales1_Nums in wc) has Netflux -3.569267e-10 and local pool is 1.137284e+01
+Box: 1-7 (it_count: 1) Vari ij: 326 (Whales2_Nums in wc) has Netflux -1.798052e-10 and local pool is 5.729175e+00
+Box: 1-7 (it_count: 1) Vari ij: 327 (Whales3_Nums in wc) has Netflux -2.452186e-10 and local pool is 7.813457e+00
+Box: 1-7 (it_count: 1) Vari ij: 328 (Whales4_Nums in wc) has Netflux -2.007675e-10 and local pool is 6.397118e+00
+Box: 1-7 (it_count: 1) Vari ij: 329 (Whales5_Nums in wc) has Netflux -1.643745e-10 and local pool is 5.237517e+00
+Box: 1-7 (it_count: 1) Vari ij: 330 (Whales6_Nums in wc) has Netflux -1.345785e-10 and local pool is 4.288116e+00
+Box: 1-7 (it_count: 1) Vari ij: 331 (Whales7_Nums in wc) has Netflux -1.101835e-10 and local pool is 3.510813e+00
+Box: 1-7 (it_count: 1) Vari ij: 332 (Whales8_Nums in wc) has Netflux -9.021064e-11 and local pool is 2.874410e+00
+Box: 1-7 (it_count: 1) Vari ij: 333 (Whales9_Nums in wc) has Netflux -7.385823e-11 and local pool is 2.353368e+00
+Box: 1-7 (it_count: 1) Vari ij: 334 (Whales10_Nums in wc) has Netflux -6.047000e-11 and local pool is 1.926775e+00
+Box: 1-7 (it_count: 1) Vari ij: 345 (Whales1_ResN in wc) has Netflux 4.947492e+01 and local pool is 9.483686e+10
+Box: 1-7 (it_count: 1) Vari ij: 346 (Whales2_ResN in wc) has Netflux 1.692747e+01 and local pool is 4.777496e+10
+Box: 1-7 (it_count: 1) Vari ij: 347 (Whales3_ResN in wc) has Netflux 2.518261e+01 and local pool is 6.515556e+10
+Box: 1-7 (it_count: 1) Vari ij: 348 (Whales4_ResN in wc) has Netflux 2.531079e+01 and local pool is 5.334486e+10
+Box: 1-7 (it_count: 1) Vari ij: 349 (Whales5_ResN in wc) has Netflux 2.538664e+01 and local pool is 4.367508e+10
+Box: 1-7 (it_count: 1) Vari ij: 350 (Whales6_ResN in wc) has Netflux 2.538663e+01 and local pool is 3.575813e+10
+Box: 1-7 (it_count: 1) Vari ij: 351 (Whales7_ResN in wc) has Netflux 2.542472e+01 and local pool is 2.927628e+10
+Box: 1-7 (it_count: 1) Vari ij: 352 (Whales8_ResN in wc) has Netflux 2.543744e+01 and local pool is 2.396939e+10
+Box: 1-7 (it_count: 1) Vari ij: 353 (Whales9_ResN in wc) has Netflux 2.543743e+01 and local pool is 1.962448e+10
+Box: 1-7 (it_count: 1) Vari ij: 354 (Whales10_ResN in wc) has Netflux 2.543742e+01 and local pool is 1.606716e+10
+Time step size 9.494774e-03 (seconds) is too small.
+Time: 0.000000e+00 The UNstable vari. 3 is NH3 in wc (offset: 0 NH3 in wc), its  Pool = 20, Netflux = 210.642 on day: 0.000000e+00 in box: 1 layer 7
