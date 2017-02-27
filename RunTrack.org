@@ -62,7 +62,7 @@
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : 
+  - Atlantis Version :
   - Commit Githhub : Automatic backup 20170130115850
 * Run 20170130122037
   - Run start: 2017-01-30 12:20:37
@@ -237,8 +237,8 @@
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : 
-  - Run used :  
+  - Atlantis Version :
+  - Run used :
   - Commit Githhub : Problem found!..the problem is the dimention of the arragement on the Shiny application
 * Run 20170130154005
   - Run start: 2017-01-30 15:40:05
@@ -247,8 +247,8 @@
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : 
-  - Run used :  
+  - Atlantis Version :
+  - Run used :
   - Commit Githhub : core Dumped
 * Run 20170130175356
   - Run start: 2017-01-30 17:53:56
@@ -1752,7 +1752,7 @@
   - Commit Githhub : Reduced biomass of Phyto and Zoo (Was way to high), Using values from the ROMS model and from andrade 2014
 * Run 20170220163745
   - Run start: 2017-02-20 16:37:45
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1762,17 +1762,17 @@
   - Commit Githhub : Fixed, values from total biomass to density for the biomass pool FG
 * Run 20170221093159
   - Run start: 2017-02-21 09:31:59
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
-  - Commit Githhub : Automatic backup 
+  - Commit Githhub : Automatic backup
 * Run 20170221093957
   - Run start: 2017-02-21 09:39:57
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1782,7 +1782,7 @@
   - Commit Githhub : Recalculation of Biomass for SPH and LPH. Mistake in the transformation from Km2 to m2
 * Run 20170221165557
   - Run start: 2017-02-21 16:55:57
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1792,7 +1792,7 @@
   - Commit Githhub : Model running initializacion of calibration
 * Run 20170224103829
   - Run start: 2017-02-24 10:38:29
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1802,6 +1802,30 @@
   - Commit Githhub : changed the DT for saving
 * Run 20170227123736
   - Run start: 2017-02-27 12:37:36
+  - Run end:
+  - log file : [[file:Calibration/.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6106
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : Automatic backup
+* Run 20170227144452
+  - Run start: 2017-02-27 14:44:52
+  - Run end:
+  - log file : [[file:Calibration/.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version :
+  - Run used :
+  - Commit Githhub : testing temperature
+  chasing crash of SPL and GCR
+  Activated print on Line *877 atecology.c file*
+  Temperature for lobster and crab inside the normal range
+  activated temperature for BRC and fishes
+* Run 20170227154214
+  - Run start: 2017-02-27 15:42:14
   - Run end: 
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
@@ -1809,13 +1833,3 @@
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
-  - Commit Githhub : Automatic backup 
-* Run 20170227144452
-  - Run start: 2017-02-27 14:44:52
-  - Run end: 
-  - log file : [[file:Calibration/.bak][Backupfile]]
-  - OS : Ubuntu 14.04.3 LTS
-  - Compiler version : gcc 4.8
-  - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : 
-  - Run used :  
