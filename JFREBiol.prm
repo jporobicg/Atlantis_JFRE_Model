@@ -412,12 +412,10 @@ flagq10receffSCR 0
 flagq10receffBCA 0
 flagq10receffMOL 0
 
-
-
 # Temperature sensitivty of vertebrates and CEP, PWN: 0 = no, 1 = yes
 flagtempsensitiveSPL 1
 flagtempsensitiveGCR 1
-flagtempsensitiveBRC 0
+flagtempsensitiveBRC 1
 flagtempsensitiveORO 0
 flagtempsensitiveVID 0
 flagtempsensitiveBIR 0
@@ -430,10 +428,10 @@ flagtempsensitiveDOL 0
 flagtempsensitiveOCT 0
 flagtempsensitiveCOR 1
 flagtempsensitiveSQD 0
-flagtempsensitiveLPF 0
-flagtempsensitiveSPF 0
-flagtempsensitiveSBF 0
-flagtempsensitiveLBF 0
+flagtempsensitiveLPF 1
+flagtempsensitiveSPF 1
+flagtempsensitiveSBF 1
+flagtempsensitiveLBF 1
 
 # Habitat dependency
 flag_rel_cover  0  to show ehther using cumulative habitat (0) or average relative cover (1) when interacting with predators

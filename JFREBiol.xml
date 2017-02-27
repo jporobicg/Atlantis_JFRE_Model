@@ -3429,8 +3429,8 @@
         <GroupValue GroupName="BB" AttributeValue="1000"/>
       </Attribute>
       <Attribute AttributeName="FLAG_TEMP_SENSITIVE" AttributeDescription="Temperature sensitivty">
-        <GroupValue GroupName="SPL" AttributeValue="1"/>
-        <GroupValue GroupName="GCR" AttributeValue="1"/>
+        <GroupValue GroupName="SPL" AttributeValue="0"/>
+        <GroupValue GroupName="GCR" AttributeValue="0"/>
         <GroupValue GroupName="BRC" AttributeValue="0"/>
         <GroupValue GroupName="ORO" AttributeValue="0"/>
         <GroupValue GroupName="VID" AttributeValue="0"/>

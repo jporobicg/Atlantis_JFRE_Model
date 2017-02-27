@@ -43,6 +43,12 @@ if [ $answer == "N" ];
 then
     echo "Enter your comit and the press [ENTER]"
     read comm
+    read comm2
+    while [[ ! -z "${comm2}" ]]
+    do
+	comm="$comm\n$comm2"
+	read comm2
+    done
     git commit -a -m "$comm"
     echo " Done!"
 else
@@ -51,4 +57,4 @@ else
     git commit -a -m "$comm"
     echo "Done!"
 fi
-echo "  - Commit Githhub : $comm">> RunTrack.org
+echo -e "  - Commit Githhub : $comm">> RunTrack.org
