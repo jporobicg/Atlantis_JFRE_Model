@@ -166,7 +166,7 @@ flagdemLBF  0 LBF: 1 = on, 0 = off 1
 flagdemSZO  1 SCP: 1 = on, 0 = off 1
 flagdemMZO  1 SCP: 1 = on, 0 = off 1
 flagdemLZO  1 LCP: 1 = on, 0 = off 1
-flagdemSCR  0 SCR: 1 = on, 0 = off 1
+flagdemSCR  1 SCR: 1 = on, 0 = off 1
 flagdemBFF  1 BFF: 1 = on, 0 = off 1
 flagdemLPH  1 PHY: 1 = on, 0 = off 1
 flagdemSPH  0 SCP: 1 = on, 0 = off 1
@@ -466,8 +466,8 @@ flagtempdepend   0         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
-SPL_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-GCR_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPL_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+GCR_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BRC_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -2195,6 +2195,7 @@ VERTday_SCR 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 VERTnight_SCR 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+
 VERTday_LZO 8
 0 0.021312873 0.028417164 0.1449275362 0.0824097755 0.2750781472 0.2810457516 0.1668087525
 VERTnight_LZO 8
@@ -4132,8 +4133,8 @@ KDEP_MOL   0.002 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0 # Assimilation efficiency on live food and carrion of Golden Crab
+E_SPL   0.2 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_GCR   0.2 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.297 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.298 # Assimilation efficiency on live food and carrion of Orange Roughy

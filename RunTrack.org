@@ -1855,3 +1855,16 @@ I should reduce the pprey matrix for the prey lobster and crab
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv
+  - Commit Githhub : changed output location
+Movement of lobster and Crab to sedentary
+- No movement
+The model is using the distgribution that I put on the .prm file (this is nor dinamyc)
+* Run 20170228164116
+  - Run start: 2017-02-28 16:41:16
+  - Run end: 
+  - log file : [[file:Calibration/.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : 
+  - Run used :  
