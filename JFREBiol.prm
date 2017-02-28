@@ -354,7 +354,7 @@ feed_while_spawnCET 1
 feed_while_spawnDOL 1
 feed_while_spawnOCT 0
 feed_while_spawnCOR 1
-feed_while_spawnSQD 0
+feed_while_spawnSQD 1
 feed_while_spawnLPF 1
 feed_while_spawnSPF 1
 feed_while_spawnSBF 1
@@ -425,9 +425,9 @@ flagtempsensitiveCHO 0
 flagtempsensitiveOTA 0
 flagtempsensitiveCET 0
 flagtempsensitiveDOL 0
-flagtempsensitiveOCT 1
+flagtempsensitiveOCT 0
 flagtempsensitiveCOR 1
-flagtempsensitiveSQD 1
+flagtempsensitiveSQD 0
 flagtempsensitiveLPF 1
 flagtempsensitiveSPF 1
 flagtempsensitiveSBF 1
@@ -466,8 +466,8 @@ flagtempdepend   0         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
-SPL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-GCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPL_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+GCR_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BRC_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -4132,8 +4132,8 @@ KDEP_MOL   0.002 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0.1 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0.1 # Assimilation efficiency on live food and carrion of Golden Crab
+E_SPL   0 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_GCR   0 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.297 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.298 # Assimilation efficiency on live food and carrion of Orange Roughy
@@ -5381,6 +5381,7 @@ intersp_depend_scale_MOL   0 # Scalar for dependency of recruitment
 intersp_depend_scale_PB    0 # Scalar for dependency of recruitment
 intersp_depend_scale_BB    0 # Scalar for dependency of recruitment
 
+
 # Minimum and maximum spawning temperatures recalculated as a weighted average
 SPL_min_spawn_temp   5 # Minimum spawning temperature for Spiny lobster [ Celsius ]
 GCR_min_spawn_temp   4 # Minimum spawning temperature for Golden Crab [ Celsius ]
@@ -5990,9 +5991,10 @@ min_trait_variance_DL    0 # Minimum level of trait variance for Labile detritus
 min_trait_variance_DR    0 # Minimum level of trait variance for Refractory detritrus
 min_trait_variance_DC    0 # Minimum level of trait variance for Carrion
 
+
 flag_benthos_sediment_link 0  flag indicating whether growth of benthos is scaled based on bottom types (1) or not (0)
-flag_competing_epiff   	   0
-flag_invert_biohab         0
+flag_competing_epiff 0
+flag_invert_biohab 0
 
 #flag indicating which refugia model to use
 # refuge_model option: 0 = none, 1 = original, 2 is rugosity related
@@ -6026,6 +6028,12 @@ LPH_RugCover_scalar 0.01
 SPH_RugCover_scalar 0.01
 BCA_RugCover_scalar 0.2
 MOL_RugCover_scalar 0.2
+# MA_RugCover_scalar 0.1
+# PB_RugCover_scalar 0.1
+# BB_RugCover_scalar 0.1
+# DL_RugCover_scalar 0.1
+# DR_RugCover_scalar 0.1
+# DC_RugCover_scalar 0.01
 
 ## Predator specific – how much coral do coral predators chomp off
 SPL_rugFeedScalar 0.00000001
@@ -6121,6 +6129,7 @@ MA_Arsenic_uptake_rate 5e-07
 SG_Arsenic_uptake_rate 5e-07
 PL_Arsenic_uptake_rate 5e-07
 PS_Arsenic_uptake_rate 5e-07
+
 
 MA_Arsenic_uptake_option 1
 SG_Arsenic_uptake_option 1

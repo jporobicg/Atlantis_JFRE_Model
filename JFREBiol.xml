@@ -1133,8 +1133,8 @@
       <GroupValue GroupName="SCR" AttributeValue="4"/>
     </Attribute>
     <Attribute AttributeName="FLAG_DEPEND_MOVE" AttributeDescription="Vertebrate density dependent movement related flags." AttributeType="Lookup" AttributeRecommendedValue="0">
-      <GroupValue GroupName="SPL" AttributeValue="0"/>
-      <GroupValue GroupName="GCR" AttributeValue="0"/>
+      <GroupValue GroupName="SPL" AttributeValue="2"/>
+      <GroupValue GroupName="GCR" AttributeValue="2"/>
       <GroupValue GroupName="BRC" AttributeValue="2"/>
       <GroupValue GroupName="ORO" AttributeValue="0"/>
       <GroupValue GroupName="VID" AttributeValue="0"/>
@@ -3072,8 +3072,8 @@
     <Attribute AttributeName="li_b_invert" AttributeDescription="Exponent in allometic length-weight relation for inverts" AttributeValue="3.0" AttributeType="Float" AttributeRecommendedValue="3.0"/>
     <AttributeSubGroup AttributeGroupName="Assimilation_Efficiency" AttributeDescription="Assimilation efficiency values">
       <Attribute AttributeName="FLAG_E" AttributeDescription="Assimilation efficiency of consumers on live food and carrion" AttributeType="Float" AttributeRecommendedValue="">
-        <GroupValue GroupName="SPL" AttributeValue="0.1"/>
-        <GroupValue GroupName="GCR" AttributeValue="0.1"/>
+        <GroupValue GroupName="SPL" AttributeValue="0"/>
+        <GroupValue GroupName="GCR" AttributeValue="0"/>
         <GroupValue GroupName="BRC" AttributeValue="0.297"/>
         <GroupValue GroupName="VID" AttributeValue="0.234"/>
         <GroupValue GroupName="ORO" AttributeValue="0.298"/>
@@ -3441,9 +3441,9 @@
         <GroupValue GroupName="OTA" AttributeValue="0"/>
         <GroupValue GroupName="CET" AttributeValue="0"/>
         <GroupValue GroupName="DOL" AttributeValue="0"/>
-        <GroupValue GroupName="OCT" AttributeValue="1"/>
+        <GroupValue GroupName="OCT" AttributeValue="0"/>
         <GroupValue GroupName="COR" AttributeValue="1"/>
-        <GroupValue GroupName="SQD" AttributeValue="1"/>
+        <GroupValue GroupName="SQD" AttributeValue="0"/>
         <GroupValue GroupName="LPF" AttributeValue="1"/>
         <GroupValue GroupName="SPF" AttributeValue="1"/>
         <GroupValue GroupName="SBF" AttributeValue="1"/>
@@ -4685,7 +4685,7 @@
       <GroupValue GroupName="DOL" AttributeValue="1"/>
       <GroupValue GroupName="OCT" AttributeValue="0"/>
       <GroupValue GroupName="COR" AttributeValue="1"/>
-      <GroupValue GroupName="SQD" AttributeValue="0"/>
+      <GroupValue GroupName="SQD" AttributeValue="1"/>
       <GroupValue GroupName="LPF" AttributeValue="1"/>
       <GroupValue GroupName="SPF" AttributeValue="1"/>
       <GroupValue GroupName="SBF" AttributeValue="1"/>

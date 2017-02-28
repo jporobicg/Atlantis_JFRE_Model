@@ -43,7 +43,7 @@
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="DiagnosticOutput" AttributeDescription="The diagnostic output settings">
     <Attribute AttributeName="verbose" AttributeDescription="Detailed logged output" AttributeValue="0" AttributeType="Integer" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="checkbox" AttributeDescription="Give detailed logged output for this box" AttributeValue="35" AttributeType="Integer" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="checkbox" AttributeDescription="Give detailed logged output for this box" AttributeValue="0" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstart" AttributeDescription="Start detailed logged output from this day in the model run" AttributeValue="0 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkstop" AttributeDescription="Stop detailed logged output after this day in the model run" AttributeValue="366666660 day" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="fishtest" AttributeDescription="Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
@@ -51,12 +51,12 @@
     <Attribute AttributeName="flagchecksize" AttributeDescription="Periodically list relative size (tuning diagnostic)" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="flagagecheck" AttributeDescription="Periodically list age structure per cohort (tuning diagnostic)" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="flagdietcheck" AttributeDescription="Whether want detailed diet output" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="checkNH" AttributeDescription="Give detailed logged output for NH in checkbox" AttributeValue="1" AttributeType="Boolean" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="checkNH" AttributeDescription="Give detailed logged output for NH in checkbox" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkDL" AttributeDescription="Give detailed logged output for DL in checkbox" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="checkDR" AttributeDescription="Give detailed logged output for DR in checkbox" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="checkbiom" AttributeDescription="Give detailed logged output for biomasses in checkbox" AttributeValue="1" AttributeType="Boolean" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="checkbiom" AttributeDescription="Give detailed logged output for biomasses in checkbox" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="which_fleet" AttributeDescription="ID number of fleet to track (if don't want to track anything set to a value greater than the number of fleets)" AttributeValue="33" AttributeType="Integer" AttributeRecommendedValue="0"/>
-    <Attribute AttributeName="which_check" AttributeDescription="ID number of group to track (if don't want to track anything set to a value greater than the number of groups)" AttributeValue="0" AttributeType="Integer" AttributeRecommendedValue="0"/>
+    <Attribute AttributeName="which_check" AttributeDescription="ID number of group to track (if don't want to track anything set to a value greater than the number of groups)" AttributeValue="88" AttributeType="Integer" AttributeRecommendedValue="0"/>
     <Attribute AttributeName="habitat_check" AttributeDescription="Which habitat to check the above group in." AttributeValue="0" AttributeType="Lookup" AttributeRecommendedValue="0">
       <Lookup>
         <LookupValue LookupValue="0" LookupDescription="Water Column"/>
@@ -111,7 +111,7 @@
     <Attribute AttributeName="K_num_markets" AttributeDescription="Maxiumum number of markets in the model area" AttributeValue="2" AttributeType="Integer" AttributeRecommendedValue="5"/>
   </AttributeSubGroup>
   <AttributeSubGroup AttributeGroupName="ScaleGroupDensities" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0">
-    <Attribute AttributeName="flagscaleinit" AttributeDescription="Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)" AttributeValue="1" AttributeType="Boolean" AttributeRecommendedValue="1"/>
+    <Attribute AttributeName="flagscaleinit" AttributeDescription="Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)" AttributeValue="0" AttributeType="Boolean" AttributeRecommendedValue="1"/>
     <Attribute AttributeName="init_scalar" AttributeDescription="Scale the vertebrate groups in the model. Only values for the vertebrate groups are used- other groups should just be 1.0" AttributeValue="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1" AttributeType="FloatArray" ArrayLength="34"/>
   </AttributeSubGroup>
 </AttributeGroup>
