@@ -144,8 +144,8 @@ COR_rugosity_dec	    0.01	# Rate at which rugosity drops as coral is degraded
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
-flagdemSPL  0  SPL: 1 = on, 0 = off 1
-flagdemGCR  0  GCR: 1 = on, 0 = off 1
+flagdemSPL  1  SPL: 1 = on, 0 = off 1
+flagdemGCR  1  GCR: 1 = on, 0 = off 1
 flagdemBRC  0  BRC: 1 = on, 0 = off 1
 flagdemORO  1  ORO: 1 = on, 0 = off 1
 flagdemVID  1  VID: 1 = on, 0 = off 1
@@ -354,7 +354,7 @@ feed_while_spawnCET 1
 feed_while_spawnDOL 1
 feed_while_spawnOCT 0
 feed_while_spawnCOR 1
-feed_while_spawnSQD 1
+feed_while_spawnSQD 0
 feed_while_spawnLPF 1
 feed_while_spawnSPF 1
 feed_while_spawnSBF 1
@@ -425,9 +425,9 @@ flagtempsensitiveCHO 0
 flagtempsensitiveOTA 0
 flagtempsensitiveCET 0
 flagtempsensitiveDOL 0
-flagtempsensitiveOCT 0
+flagtempsensitiveOCT 1
 flagtempsensitiveCOR 1
-flagtempsensitiveSQD 0
+flagtempsensitiveSQD 1
 flagtempsensitiveLPF 1
 flagtempsensitiveSPF 1
 flagtempsensitiveSBF 1
@@ -466,8 +466,8 @@ flagtempdepend   0         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
-SPL_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-GCR_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+GCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BRC_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -1727,7 +1727,7 @@ DR_mindepth   0
 DC_mindepth   0
 
 # Maximum depth (m) for each group
-SPL_maxdepth  250
+SPL_maxdepth  300
 GCR_maxdepth  1000
 BRC_maxdepth  300
 ORO_maxdepth  1000
@@ -3312,7 +3312,7 @@ KHTI 1.5 Factor handother deep demersal time increased by for relres<thresh2 1.5
 # pPREY1FY1 is the availability of juvenile prey groups to juvenile group FY, similarly
 # pPREY1FY2 is the availability of juvenile prey groups to adult group FY and so on
 # The order of the prey groups is defined by your functional group input file.
-##  SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
+##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.1 0.05 0.05 0.05 0 0.001 0 0.001 0.05 0.05 0.01 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
@@ -3330,11 +3330,11 @@ pPREY1GCR2  37
 pPREY2GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.01 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY2BRC1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.05 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY1BRC2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY2BRC2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.05 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY1VID1  37
@@ -3414,11 +3414,11 @@ pPREYSQD  37
 pPREYOCT  37
 0.1 0.01 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0 0 0 0 0.01 0 0 0 0 0.1 0.1 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0.1 0.1 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0.1 0.1 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0.1 0.2 0.1 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0 0
+0.1 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0.1 0.2 0.1 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0 0.1 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
@@ -3434,11 +3434,11 @@ pPREY1SBF1  37
 pPREY2SBF1  37
 0 0 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.1 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.05 0.05 0.01 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.2 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0
+0.05 0.001 0.01 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.2 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
 0 0 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.1 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
-0.05 0 0.01 0 0 0 0.01 0 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.01 0.001 0.01 0.01 0.01 0.01 0 0 0 0.001 0.001 0.001 0 0 0 0 0 0 0 0
+0.001 0 0.01 0 0 0 0.01 0 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.01 0.001 0.01 0.01 0.01 0.01 0 0 0 0.001 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
 0 0 0.01 0 0 0 0.01 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.01 0.01 0.01 0.01 0 0 0 0.001 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF2  37
@@ -3461,7 +3461,6 @@ pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.01 0 0 0.05 0.001 0.001 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.05 0.01 0.01 0 0 0 0 0.2 0 0 0
-
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
 p_split_SPL   1 # Ontogenetic diet preferences  Spiny lobster [ Number ]
@@ -4133,8 +4132,8 @@ KDEP_MOL   0.002 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0 # Assimilation efficiency on live food and carrion of Golden Crab
+E_SPL   0.1 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_GCR   0.1 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.297 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.298 # Assimilation efficiency on live food and carrion of Orange Roughy
@@ -5382,7 +5381,6 @@ intersp_depend_scale_MOL   0 # Scalar for dependency of recruitment
 intersp_depend_scale_PB    0 # Scalar for dependency of recruitment
 intersp_depend_scale_BB    0 # Scalar for dependency of recruitment
 
-
 # Minimum and maximum spawning temperatures recalculated as a weighted average
 SPL_min_spawn_temp   5 # Minimum spawning temperature for Spiny lobster [ Celsius ]
 GCR_min_spawn_temp   4 # Minimum spawning temperature for Golden Crab [ Celsius ]
@@ -5992,10 +5990,9 @@ min_trait_variance_DL    0 # Minimum level of trait variance for Labile detritus
 min_trait_variance_DR    0 # Minimum level of trait variance for Refractory detritrus
 min_trait_variance_DC    0 # Minimum level of trait variance for Carrion
 
-
 flag_benthos_sediment_link 0  flag indicating whether growth of benthos is scaled based on bottom types (1) or not (0)
-flag_competing_epiff 0
-flag_invert_biohab 0
+flag_competing_epiff   	   0
+flag_invert_biohab         0
 
 #flag indicating which refugia model to use
 # refuge_model option: 0 = none, 1 = original, 2 is rugosity related
@@ -6029,12 +6026,6 @@ LPH_RugCover_scalar 0.01
 SPH_RugCover_scalar 0.01
 BCA_RugCover_scalar 0.2
 MOL_RugCover_scalar 0.2
-# MA_RugCover_scalar 0.1
-# PB_RugCover_scalar 0.1
-# BB_RugCover_scalar 0.1
-# DL_RugCover_scalar 0.1
-# DR_RugCover_scalar 0.1
-# DC_RugCover_scalar 0.01
 
 ## Predator specific – how much coral do coral predators chomp off
 SPL_rugFeedScalar 0.00000001
@@ -6130,7 +6121,6 @@ MA_Arsenic_uptake_rate 5e-07
 SG_Arsenic_uptake_rate 5e-07
 PL_Arsenic_uptake_rate 5e-07
 PS_Arsenic_uptake_rate 5e-07
-
 
 MA_Arsenic_uptake_option 1
 SG_Arsenic_uptake_option 1
