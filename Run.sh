@@ -32,8 +32,8 @@ echo "  - log file : [[file:Calibration/$datEnd.bak][Backupfile]]">> RunTrack.or
 echo "  - OS : $osver">> RunTrack.org
 echo "  - Compiler version : gcc $(gcc -dumpversion)">> RunTrack.org
 echo "  - Bash Version : $BASH_VERSION">> RunTrack.org
-echo "  - Atlantis Version : $(sed -n '2p' < log.txt)">> RunTrack.org
-echo "  - Run used :  $(sed -n '14p' < log.txt)">> RunTrack.org
+echo "  - Atlantis Version : $(sed -n '2p' < JFR_Output_Folder/log.txt)">> RunTrack.org
+echo "  - Run used :  $(sed -n '14p' < JFR_Output_Folder/log.txt)">> RunTrack.org
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo " Do you want and automatic commit? (Y)ES or (N)OT and press [ENTER]"
