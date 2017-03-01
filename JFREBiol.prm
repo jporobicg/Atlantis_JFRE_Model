@@ -462,7 +462,7 @@ BCA_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 MOL_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 
 # Vertebrate density dependent movement related flags
-flagtempdepend   0         0 = off, 1 = temperature preferences used
+flagtempdepend   1         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
@@ -2362,8 +2362,8 @@ GCR_min_move_temp  4
 BRC_min_move_temp  4
 VID_min_move_temp  4
 ORO_min_move_temp  4
-ALF_min_move_temp  13
-ANG_min_move_temp  9.5
+ALF_min_move_temp  4
+ANG_min_move_temp  7
 CHO_min_move_temp  4
 OTA_min_move_temp  4
 CET_min_move_temp  4
@@ -2385,7 +2385,7 @@ GCR_max_move_temp  28.5
 BRC_max_move_temp  30
 VID_max_move_temp  30
 ORO_max_move_temp  30
-ALF_max_move_temp  18
+ALF_max_move_temp  25
 ANG_max_move_temp  30
 CHO_max_move_temp  30
 OTA_max_move_temp  30
