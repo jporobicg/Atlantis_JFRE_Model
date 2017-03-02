@@ -1826,7 +1826,7 @@
   activated temperature for BRC and fishes
 * Run 20170227154214
   - Run start: 2017-02-27 15:42:14
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1837,7 +1837,7 @@
 I should reduce the pprey matrix for the prey lobster and crab
 * Run 20170228104250
   - Run start: 2017-02-28 10:42:50
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1848,7 +1848,7 @@ I should reduce the pprey matrix for the prey lobster and crab
 .prm file
 * Run 20170228155412
   - Run start: 2017-02-28 15:54:12
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1861,29 +1861,29 @@ Movement of lobster and Crab to sedentary
 The model is using the distgribution that I put on the .prm file (this is nor dinamyc)
 * Run 20170228164116
   - Run start: 2017-02-28 16:41:16
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : 
-  - Run used :  
+  - Atlantis Version :
+  - Run used :
   - Commit Githhub : Changed folder to save output
 modified efficiency of predation of Lobster and Crab
 Checking the problem with SCR
 * Run 20170301085241
   - Run start: 2017-03-01 08:52:41
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6106
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : Automatic backup 
+  - Commit Githhub : Automatic backup
 * Run 20170301090810
   - Run start: 2017-03-01 09:08:10
-  - Run end: 
+  - Run end:
   - log file : [[file:Calibration/.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
@@ -1891,11 +1891,11 @@ Checking the problem with SCR
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
   - Commit Githhub : New Atlatntis version
-Changed temperature dependence
-* Run 20170301143922
-  - Run start: 2017-03-01 14:39:22
-  - Run end: 2017-03-01 15:32:57
-  - log file : [[file:Calibration/20170301153257.bak][Backupfile]]
+  Changed temperature dependence
+* Run 20170302113843
+  - Run start: 2017-03-02 11:38:43
+  - Run end: 2017-03-02 14:18:58
+  - log file : [[file:Calibration/20170302141858.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release

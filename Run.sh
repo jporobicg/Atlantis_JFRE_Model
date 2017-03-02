@@ -18,8 +18,8 @@ echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
 datEnd="$(date +'%Y%m%d%H%M%S')"
 dateend="$(date +'%Y-%m-%d %H:%M:%S')"
-cp -a JFR_Output_Folder/outputJFREAnnualAgeBiomIndx.txt Calibration/BioAge$datEnd.bak
-cp -a JFR_Output_Folder/outputJFREBiomIndx.txt Calibration/BioTot$datEnd.bak
+cp -a JFR_Output_Folder/outputJFREAnnualAgeBiomIndx.txt ../Calibration/BioAge$datEnd.bak
+cp -a JFR_Output_Folder/outputJFREBiomIndx.txt ../Calibration/BioTot$datEnd.bak
 echo "...Done"
 
 osver=$(cat /etc/issue.net)
