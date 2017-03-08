@@ -18,8 +18,8 @@ echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
 datEnd="$(date +'%Y%m%d%H%M%S')"
 dateend="$(date +'%Y-%m-%d %H:%M:%S')"
-cp -a JFR_Output_Folder/outputJFREAnnualAgeBiomIndx.txt ../Calibration/BioAge$datEnd.bak
-cp -a JFR_Output_Folder/outputJFREBiomIndx.txt ../Calibration/BioTot$datEnd.bak
+cp -a JFR_Output_Folder/outputJFREAnnualAgeBiomIndx.txt Calibration/BioAge$datEnd.bak
+cp -a JFR_Output_Folder/outputJFREBiomIndx.txt Calibration/BioTot$datEnd.bak
 echo "...Done"
 
 osver=$(cat /etc/issue.net)
@@ -37,10 +37,10 @@ echo "  - Atlantis Version : $(sed -n '2p' < JFR_Output_Folder/log.txt)">> RunTr
 echo "  - Run used :  $(sed -n '14p' < JFR_Output_Folder/log.txt)">> RunTrack.org
 
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-echo " Do you want and automatic commit? (Y)ES or (N)OT and press [ENTER]"
+echo " Do you want to do a commit? (Y)ES or (N)OT and press [ENTER]"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 read answer
-if [ $answer == "N" ];
+if [ $answer -eq "Y" -o $answer -eq "y" ];
 then
     echo "Enter your comit and the press [ENTER]"
     read comm
