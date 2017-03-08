@@ -40,7 +40,7 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo " Do you want to do a commit? (Y)ES or (N)OT and press [ENTER]"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 read answer
-if [ $answer -eq "Y" -o $answer -eq "y" ];
+if [ $answer  ==  "Y" -o $answer  ==  "y" ];
 then
     echo "Enter your comit and the press [ENTER]"
     read comm
