@@ -1940,3 +1940,23 @@ Changed initial condition abundance
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : Changed Initial Condition
+Biomass stimation
+Changed clearance
+- SQD
+- OCT
+Changed mum
+- SQD
+- MA
+- LPH
+- SPH
+Changed pprey matrix for SPF
+* Run 20170310095316
+  - Run start: 2017-03-10 09:53:16
+  - Run end: 2017-03-10 12:16:42
+  - log file : [[file:Calibration/20170310121642.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
