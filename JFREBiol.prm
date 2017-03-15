@@ -4348,17 +4348,17 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0 0
+0 0.002507
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0 0
+0 0.0009589041
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0 0
+0 0.002739726
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1 ]
-0 0
+0 0.002739726
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
-0 0
+0 4.986301e-05
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
-0 0
+0  0.0003383014
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 0 0
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
@@ -4372,13 +4372,13 @@ CET_mL   2 # Linear mortality rate of Whales [ d-1 ]
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0 0
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
-0 0
+0  0.000001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0 0
+0  0.000001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
-0 0
+0  0.0000002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
-0 0
+0 0.0000001
 
 ## Invertebrates
 OCT_mL   0 # Linear mortality rate of Octupus [ d-1 ]

@@ -2452,6 +2452,21 @@ In this secction I use the data form the Database to get the number of organism 
 |                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
 |                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
 |                    |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |    |    |     |     |    |    |    |
+**** Mortality
+| FG  | LM (F_{initial}) | Reference    |
+|-----+------------------+--------------|
+| SPL |         0.002507 | MPA model    |
+| GCR |     0.0009589041 | Canales2009  |
+| BRC |         0.000002 | Arancibia    |
+| ORO |     4.986301e-05 | Wiff2016     |
+| ALF |     0.0003383014 | Wiff2016     |
+| SPF |         0.000001 | Guestimation |
+| LPF |         0.000001 | Guestimation |
+| SBF |        0.0000002 | Guestimation |
+| LBF |        0.0000001 | Guestimation |
+| VID |      0.002739726 | Using CCL    |
+
+
 *** Forcing files
 **** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
