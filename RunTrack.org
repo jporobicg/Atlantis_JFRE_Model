@@ -1980,3 +1980,18 @@ Changed pprey matrix for SPF
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+    Added:
+    Lineal mortality to: BRC; SPL; GCR; ORO; ALF; SPF; LPF; LBF; SBF
+    Changed:
+    Initial condition file
+    Horizontal distribution of RN and SN for each functional group
+* Run 20170316134635
+  - Run start: 2017-03-16 13:46:35
+  - Run end: 2017-03-16 15:40:22
+  - log file : [[file:Calibration/20170316154022.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
