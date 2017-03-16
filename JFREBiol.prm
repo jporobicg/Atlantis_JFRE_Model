@@ -1580,9 +1580,9 @@ habitat_MOL 6
 habitat_MA 6
 0 0 1 1 1 1
 habitat_PB 6
-0 0 1 1 1 1
+1 1 1 1 1 1
 habitat_BB 6
-0 0 1 1 1 1
+1 1 1 1 1 1
 
 # Refuge
 Kcov_juv_SPL   3 # Exponent of refuge provided by the habitat for Juveniles of Spiny lobster [  ]
