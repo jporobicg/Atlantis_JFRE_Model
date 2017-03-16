@@ -36,12 +36,12 @@ flaggape      0        	       # Periodically list prey vs gape statistics (tuni
 flagchecksize 0        	       # Periodically list relative size (tuning diagnostic)
 flagagecheck  0        	       # Periodically list age structure per cohort (tuning diagnostic)
 flagdietcheck 0        	       # Periodically list realised diet matchups (tuning diagnostic)
-checkNH       1       	       # Give detailed logged output for NH in checkbox
-checkDL       1        	       # Give detailed logged output for DL in checkbox
-checkDR       1        	       # Give detailed logged output for DR in checkbox
-checkbiom     0       	       # Give detailed logged output for biomasses in checkbox
+checkNH       0       	       # Give detailed logged output for NH in checkbox
+checkDL       0        	       # Give detailed logged output for DL in checkbox
+checkDR       0        	       # Give detailed logged output for DR in checkbox
+checkbiom     1       	       # Give detailed logged output for biomasses in checkbox
 which_fleet   33       	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
-which_check   88       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
+which_check   31       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
 habitat_check 0		       # Which distribution type (0-water column, 1- sediment, 2- epibenthic, 3-land, 4-ice) to report for the group marked with which_check.
 move_check    33	       # ID number of group where tracking movements
 
