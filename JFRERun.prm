@@ -41,7 +41,7 @@ checkDL       0        	       # Give detailed logged output for DL in checkbox
 checkDR       0        	       # Give detailed logged output for DR in checkbox
 checkbiom     0       	       # Give detailed logged output for biomasses in checkbox
 which_fleet   33       	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
-which_check   0       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
+which_check   1       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
 habitat_check 0		       # Which distribution type (0-water column, 1- sediment, 2- epibenthic, 3-land, 4-ice) to report for the group marked with which_check.
 move_check    0  	       # ID number of group where tracking movements
 
