@@ -10,7 +10,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 # Those determining set-up and recording
-ecotest    4 Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+ecotest    0 Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
 availflag  1 Switch to filter flows based on active groups 1
 flagrandom 0 Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
