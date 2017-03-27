@@ -3052,3 +3052,37 @@ Results
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : Decreased
+' t ' availability matrix by 50
+' 		 ' LPF on BCA
+' 		 'SCR on BCA
+' 		 ' GCR on CA
+' 		 ' BCA on BCA
+' 		 ' nothing else
+' 	 ' mum and clearance
+' 		 'SCR by 50% both
+Increase predation on
+' 		 '50% SZO on LPH and SPH
+Increased mum by 50% on
+' 		 ' SZO; MZO
+' 		 ' LZO
+Results:
+' 	 ' Increased
+74% SZO
+' 		 '184% BCA
+' 		 ' 18% MOL
+' 	 ' Decreased on
+' 		 ' -4% sqd
+' 		 ' 13% LZO
+' 		 ' 9% SCR
+' 		 ' -1% COR
+' 		 ' 3% MA
+* Run 20170327180151
+  - Run start: 2017-03-27 18:01:51
+  - Run end: 2017-03-27 18:05:39
+  - log file : [[file:Calibration/20170327180539.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
