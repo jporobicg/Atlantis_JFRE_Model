@@ -2016,7 +2016,7 @@ Changed Initial biomass per box and layer for SPL and GCR
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 * Run 20170316155353
   - Run start: 2017-03-16 15:53:53
   - Run end: 2017-03-16 18:02:59
@@ -2154,7 +2154,7 @@ BFF
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 * Run 20170318134837
   - Run start: 2017-03-18 13:48:37
   - Run end: 2017-03-18 16:28:39
@@ -2164,7 +2164,7 @@ BFF
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 * Run 20170319154447
   - Run start: 2017-03-19 15:44:47
   - Run end: 2017-03-19 17:43:10
@@ -2236,7 +2236,7 @@ Increased abundance of Pelagic bacteria and sediment bacteria to  more realistic
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 * Run 20170320103407
   - Run start: 2017-03-20 10:34:07
   - Run end: 2017-03-20 10:35:01
@@ -2993,6 +2993,34 @@ Increase
   - Run start: 2017-03-27 13:30:25
   - Run end: 2017-03-27 13:32:09
   - log file : [[file:Calibration/20170327133209.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : Changed Availabilty Matrix
+  \\t Increased
+  25% OTA on OCT
+50 OTA on SQD
+25% OTA on SQD
+Decrease Clearance
+OCT 0.35 to 0.2
+SCR 0.126 to 0.1
+Output
+Increase
+3% SPL
+6% GCR
+58% SPF
+16% SBF
+4% MOL
+Decrease
+42% SQD
+2% OCT
+20% DR
+* Run 20170327145220
+  - Run start: 2017-03-27 14:52:20
+  - Run end: 2017-03-27 15:07:05
+  - log file : [[file:Calibration/20170327150705.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
