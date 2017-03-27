@@ -3026,3 +3026,29 @@ Decrease
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : Pprey matrix
+' t ' Added
+' tt ' PB and BB to SZO
+' t' Decreased
+' tt ' Clearance by 50% on
+' ttt ' OCT and SQD
+' tt ' mum for OCT on 10%
+' t' Increased
+' tt 'Clearance on SZO by 0.2
+Results
+' tt 'Increased:
+' ttt ' SPL 2%
+' ttt ' GCR 6%
+' ttt ' SPF 24%
+' ttt ' SBF 8%
+' ttt ' MOL 2%
+' ttt ' LZO 11%
+* Run 20170327172651
+  - Run start: 2017-03-27 17:26:51
+  - Run end: 2017-03-27 17:52:30
+  - log file : [[file:Calibration/20170327175230.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
