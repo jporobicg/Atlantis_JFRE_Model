@@ -3118,3 +3118,27 @@ Results:
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 		 Decreasing clearance on OCT and SQD
+			 from 25 to 0.05
+Output
+		 Increased
+			 1% SPL
+			 26% GCR
+			 12% SPF
+			 4% SBF
+			 5% SCR
+			 4% LPH
+		 Decreased
+			 90% SQD
+			 95% OCT
+			 6% DL
+			 27% DR
+* Run 20170328132046
+  - Run start: 2017-03-28 13:20:46
+  - Run end: 2017-03-28 13:45:18
+  - log file : [[file:Calibration/20170328134518.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
