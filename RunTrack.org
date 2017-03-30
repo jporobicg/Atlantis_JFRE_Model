@@ -3108,7 +3108,7 @@ Results:
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
   - Commit Githhub : 		 Decreased for SQD and OCT
 			 50% on clearance
-	
+
 * Run 20170328121545
   - Run start: 2017-03-28 12:15:45
   - Run end: 2017-03-28 13:15:12
@@ -3230,6 +3230,35 @@ Output: NONE
   - Run start: 2017-03-31 08:58:56
   - Run end: 2017-03-31 09:12:40
   - log file : [[file:Calibration/20170331091240.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+** Decreased
+   MOL on MOL * 0.1
+   MZO on SZO * 0.1
+** Increased
+   MOL on LPH * 2
+   MOL on MZO to 0.01
+   MOL on LZO to 0.001
+** Output
+*** Increased
+    42% OCT
+    4% SPF
+    800% SZO
+    721 MZO
+    21% SCR
+    3% DL
+*** Decreased
+    21% LZP
+    21% MA
+    21% COR
+* Run 20170331104616
+  - Run start: 2017-03-31 10:46:16
+  - Run end: 2017-03-31 10:46:23
+  - log file : [[file:Calibration/20170331104623.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
