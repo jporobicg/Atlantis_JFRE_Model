@@ -3449,7 +3449,7 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0 0 0.005 0.005 0 0 0 0 0.001 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0025 0.00025 5e-04 0 0 0.02 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.00025 0.00025 5e-04 0 0 0.02 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
@@ -3461,7 +3461,8 @@ pPREYCOR  37
 pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.01 0 0 0.006 0.001 0.001 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.025 0.01 0.01 0 0 0 0 0.2 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.02 0.01 0.001 0.025 0.001 0.01 0 0 0 0 0.2 0 0 0
+
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
