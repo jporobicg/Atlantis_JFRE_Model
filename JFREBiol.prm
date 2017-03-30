@@ -3749,7 +3749,7 @@ k_trans_BCA 1.0
 C_OCT_T15   0.07     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.0007    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.2     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.3     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.04    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.02    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.005   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
