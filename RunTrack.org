@@ -3162,3 +3162,18 @@ Output
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 		 Changed
+			 Decreased
+				 50% BCA on BCA
+				 SCR on BCA
+				 SPL on SZO
+			 Increased
+				 BCA on SCR 50%
+				 BCA on mol 5 times
+		 Output
+			 Decreased
+				 1% on OCT
+				 3% on SCR
+			 Increased
+				 53% on BCA
+				 1% on MOL
