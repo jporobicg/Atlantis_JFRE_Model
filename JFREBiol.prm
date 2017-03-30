@@ -3411,7 +3411,7 @@ pPREY1BIR2  37
 pPREY2BIR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSQD  37
-5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0 0 0 0.001 0.001 0 0.001 0 0 0 0.00025 0 0 0 0.001 0.001 0 0 0 0
+5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0 0 0 0.001 0.001 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 0 0 0 0
 pPREYOCT  37
 0.005 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
@@ -3449,9 +3449,9 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0 0 0.005 0.005 0 0 0 0 0.001 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 5e-04 5e-04 0 0 0.01 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0025 0.00025 5e-04 0 0 0.02 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
 pPREYLZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 0.001 0.001 0.01 0.001 1e-04 0.006 0.01 0 0 0 0.001 0 0 0 0 0
 pPREYBFF  37
@@ -3462,7 +3462,6 @@ pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.01 0 0 0.006 0.001 0.001 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.025 0.01 0.01 0 0 0 0 0.2 0 0 0
-
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3881,7 +3880,7 @@ C_ANG   3 #  Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 C_LPF   5 #  Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 8.85 165.77 367.12 506.61 585.71 627.02 647.81 658.09 663.14 665.60
 C_SPF   6 #  Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
-0.31 8.53 26.92 49.12 70.26 88.13 102.25 112.94 120.82 126.54
+5.0 13.53 26.92 49.12 70.26 88.13 102.25 112.94 120.82 126.54
 C_SBF   10 #  Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 7.06 12.90 21.29 35.90 55.23 87.47 110.62 174.41 220.49 274.03
 C_LBF   10 #  Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -3929,7 +3928,7 @@ mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ] ## prev 0.00 0.0
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 0.02 0.19 0.56 1.10 2.06 3.96 7.83 15.74 31.99 65.37
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+0.1 0.3 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.18 0.26 0.82 0.85 1.01 1.03 1.70 1.12 1.85 2.02
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
