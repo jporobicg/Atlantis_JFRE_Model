@@ -10,7 +10,7 @@ verbose	      0   # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - First attempt
 dt            12 hour     # 12 hour time step
-tstop         300 day     # Stop time after the given period 15000 5000
+tstop         130 day     # Stop time after the given period 15000 5000
 tburnday      0 day	  # Burnday
 external_box  0		  #
 
