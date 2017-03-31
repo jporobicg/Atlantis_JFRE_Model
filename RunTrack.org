@@ -3274,3 +3274,25 @@ Output: NONE
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+** Input
+*** Decreased
+- BCA on BCA to 0.0001
+- OCT Clearance 50%
+- SCR mum 50%
+- SCR on COR to 0
+- MZO mum 50%
+*** Increased
+- BCA on SCR to 0.04
+- BCA on LZO to 0.04
+- SPH mum to 1.2
+- MA mum to 3.5
+* Run 20170331135528
+  - Run start: 2017-03-31 13:55:28
+  - Run end: 2017-03-31 14:29:45
+  - log file : [[file:Calibration/20170331142945.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
