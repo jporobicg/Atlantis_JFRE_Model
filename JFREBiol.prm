@@ -100,7 +100,7 @@ COR_bleach_tempshift        30          # Temperature shift with new zooxanthell
 COR_bleach_growshift	    0.001   	# Growth shift with new zooxanthellae
 COR_bleach_temp		    30	    	# Bleaching temperature threshold
 COR_DHW_thresh		    4	    	# Degree heating weeks threshold
-COR_threshdepth		    100	    	# Depth threshold for shifting growth state
+COR_threshdepth		    200	    	# Depth threshold for shifting growth state
 COR_depmum_scalar	    2 	    	# Scalar for shifting growth state
 COR_prop_zooxanth	    0.5	    	# Proportion of zooxanthel
 COR_HostRemin		    0.9		# Remineralisation rate of host respiration
@@ -475,7 +475,7 @@ ANG_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OTA_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -811,11 +811,11 @@ q10_optimal_temp_SPL 17
 q10_optimal_temp_GCR 5
 q10_optimal_temp_BRC 17
 q10_optimal_temp_ORO 5
-q10_optimal_temp_VID 0
+q10_optimal_temp_VID 16
 q10_optimal_temp_ANG 17
 q10_optimal_temp_ALF 17
 q10_optimal_temp_CHO 13
-q10_optimal_temp_OTA 0
+q10_optimal_temp_OTA 5
 q10_optimal_temp_CET 0
 q10_optimal_temp_DOL 0
 q10_optimal_temp_BIR 0
@@ -1753,7 +1753,7 @@ SCR_maxdepth  700
 BFF_maxdepth  4300
 LPH_maxdepth  4300
 SPH_maxdepth  4300
-BCA_maxdepth  150
+BCA_maxdepth  350
 MOL_maxdepth  4300
 MA_maxdepth   4300
 PB_maxdepth   4300
@@ -3323,13 +3323,13 @@ pPREY1SPL2  37
 pPREY2SPL2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.01 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.01 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0 0 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.025 0.05 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.01 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
 0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY2BRC1  37
@@ -3459,7 +3459,7 @@ pPREYBFF  37
 pPREYCOR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0 0 0
 pPREYBCA  37
-1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 0.01 0 0 1e-04 0.001 0.001 0 0 0 0 0.1 0 0 0
+1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 0.01 0 0 1e-04 0.001 0.1 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.02 0.01 0.001 0.025 0.001 0.001 0 0 0 0 0.2 0 0 0
 
@@ -3663,7 +3663,7 @@ KUP_ORO   0.4 # Upper prey selection size limit for Orange Roughy [ Number ]
 KUP_ALF   0.4 # Upper prey selection size limit for Alfonsino [ Number ]
 KUP_ANG   0.4 # Upper prey selection size limit for Anguila [ Number ]
 KUP_CHO   0.4 # Upper prey selection size limit for Chondrichtyans [ Number ]
-KUP_OTA   0.4 # Upper prey selection size limit for Otariid [ Number ]
+KUP_OTA   0.5 # Upper prey selection size limit for Otariid [ Number ]
 KUP_DOL   0.4 # Upper prey selection size limit for Dophins [ Number ]
 KUP_CET   0.001 # Upper prey selection size limit for Cetaceans [ Number ]
 KUP_BIR   0.4 # Upper prey selection size limit for Birds [ Number ]
@@ -3935,7 +3935,7 @@ mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 2.28 6.75 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
-10 10 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
+10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 mum_CHO	  10
 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
 mum_BIR   10
