@@ -3331,13 +3331,13 @@ pPREY1GCR2  37
 pPREY2GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.05 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
-0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.15 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.15 0.08 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY2BRC1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.15 0.05 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.15 0.03 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY1BRC2  37
-0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.2 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.08 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY2BRC2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.05 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.03 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY1VID1  37
 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
@@ -3453,7 +3453,7 @@ pPREYMZO  37
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.0125 0.0125 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 0.001 0.001 0.01 0.001 0 0.006 0.01 0 0 0 0.001 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.001 0.01 0.001 0 0.006 0.01 0 0 0 0.001 0 0 0 0 0
 pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0 0 0 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0
 pPREYCOR  37
@@ -3752,12 +3752,12 @@ C_OCT_T15   0.035     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.0007    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.3     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.04    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.01    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.005   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.02    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.007    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.01   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.02     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.03    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
-C_MOL_T15   0.016    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
+C_MOL_T15   0.008    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~      Volumen search      ~ ##
@@ -3869,8 +3869,8 @@ C_SPL   10 #  Clearance rate for Spiny lobster [ m3(mg N)-1 d-1 ]
 0.90 1.07 1.27 1.48 1.74 1.97 2.20 2.40 2.61 2.84
 C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
 0.03 0.20 0.27 0.37 0.55 0.73 1 1.2 1.5 1.8
-C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
-20.91 29.75 40.15 51.72 65.09 81.46 99.99 115.88 131.25 147.57
+C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ] ##20.91 29.75 40.15 51.72 65.09 81.46 99.99 115.88 131.25 147.57
+10.91 19.75 30.15 41.72 55.09 71.46 89.99 105.88 121.25 137.57
 C_VID   3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 438.65 667.79 1051.19
 C_ORO   10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
@@ -3917,8 +3917,8 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
-mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
-0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
+mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ] 0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
+0.5 1.5 1.9 2.3 3.1 4.9 5.2 6.1 7.7 5
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 0.24 1.85 2.43
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
