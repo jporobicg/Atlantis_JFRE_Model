@@ -3364,3 +3364,33 @@ Output: NONE
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- MZO on SZO to 0.0001
+- MZO on LZO to 0.0001
+- MOL on BCA 50%
+*** Increased
+**** Predation
+- BRC on LZO 50%
+**** Running time
+- from 148 to 360
+** Output
+*** Increase Biomass
+- LZO 18%
+- SZO 44%
+*** Decreased biomass
+- MZO 71%
+- LPH 20%
+- SPH 29%
+* Run 20170404125847
+  - Run start: 2017-04-04 12:58:47
+  - Run end: 2017-04-04 13:11:32
+  - log file : [[file:Calibration/20170404131132.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6145
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
