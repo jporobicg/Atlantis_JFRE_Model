@@ -156,22 +156,22 @@ flagdemOTA  0  OTA: 1 = on, 0 = off 1
 flagdemCET  0  CET: 1 = on, 0 = off 1
 flagdemDOL  0  DOL: 1 = on, 0 = off 1
 flagdemBIR  0  BIR: 1 = on, 0 = off 1
-flagdemOCT  0  OCT: 1 = on, 0 = off 1
+flagdemOCT  1  OCT: 1 = on, 0 = off 1
 flagdemSQD  1  SQD: 1 = on, 0 = off 1
 flagdemCOR  1  SQD: 1 = on, 0 = off 1
 flagdemLPF  0  LPF: 1 = on, 0 = off 1
 flagdemSPF  0 SPF: 1 = on, 0 = off 1
 flagdemSBF  1 SBF: 1 = on, 0 = off 1
-flagdemLBF  0 LBF: 1 = on, 0 = off 1
+flagdemLBF  1 LBF: 1 = on, 0 = off 1
 flagdemSZO  1 SCP: 1 = on, 0 = off 1
 flagdemMZO  1 SCP: 1 = on, 0 = off 1
 flagdemLZO  1 LCP: 1 = on, 0 = off 1
 flagdemSCR  1 SCR: 1 = on, 0 = off 1
 flagdemBFF  1 BFF: 1 = on, 0 = off 1
-flagdemLPH  1 PHY: 1 = on, 0 = off 1
+flagdemLPH  0 PHY: 1 = on, 0 = off 1
 flagdemSPH  0 SCP: 1 = on, 0 = off 1
-flagdemBCA  0 BCA: 1 = on, 0 = off 1
-flagdemMOL  0 MOL: 1 = on, 0 = off 1
+flagdemBCA  1 BCA: 1 = on, 0 = off 1
+flagdemMOL  1 MOL: 1 = on, 0 = off 1
 flagdemNO   1 NO: 1 = on, 0 = off 1
 flagdemMA   1 MA: 1 = on, 0 = off 1
 flagdemPB   1 PB: 1 = on, 0 = off 1
@@ -1420,15 +1420,15 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  1.1     Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  1.1     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   3.5       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_LPH_T15  1.3     Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  1.3     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_MA_T15   3.8       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
 KI_SPH_T15  10  Light saturation, Small phytoplankton W m-2 10 - 20
-KI_MA_T15   10   Light saturation, macroalgae W m-2 5
+KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  5   Light saturation, CORALS W m-2 5
 
 # Eddy impact
@@ -3425,11 +3425,11 @@ pPREY2LPF2  37
 pPREY1SPF1  37
 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.1 0.01 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0.1 0 0.05 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0075 0.15 0.1 0 0.05 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.1 0.1 0.01 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0.15 0.15 0 0.01 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.075 0.15 0.15 0 0.01 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.01 0.01 0.01 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.1 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3447,22 +3447,21 @@ pPREY1LBF2  37
 pPREY2LBF2  37
 0.1 0 0.01 0 0 0 0.001 0 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.001 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0
 pPREYSZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.01 0 0 0 0 0.001 0.001 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.02 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 1e-04 1e-04 0 0 0.005 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 1e-04 1e-04 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0.001 0 0 0 0.001 1e-04 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.001 0.01 0.001 0 0.006 0.01 0 0 0 0.001 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.001 0.001 0.001 0 0.006 0.01 0 0 0 0.001 0 0 0 0 0
 pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0 0 0 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0
 pPREYCOR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0 0 0
 pPREYBCA  37
-1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 0.01 0 0 1e-04 0.001 0.1 0 0 0 0 0.1 0 0 0
+1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 1e-04 0 0 1e-04 0.001 0.1 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.02 0.01 0.001 0.025 0.001 0.001 0 0 0 0 0.2 0 0 0
-
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.013 0.01 0.001 0.025 0.001 0.001 0 0 0 0 0.2 0 0 0
 
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
@@ -3752,8 +3751,8 @@ C_OCT_T15   0.035     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.0007    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.18     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.004    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.0015    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.01   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.02     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.03    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -4478,15 +4477,15 @@ mStarve_LBF   1e-04 # Starvation mortality for Large benthic fish [ d-1 ]
 
 Kthreshm  0.5  Threshold starvation level when mort starts 0.7
 # Oxygen mortality (based on depth and the oxygen horizon)
-mD_SPL   0.001 # Half oxygen mortality depth for  Spiny lobster [ m ]
-mD_GCR   0.001 # Half oxygen mortality depth for  Golden Crab [ m ]
-mD_SCR   0.001 # Half oxygen mortality depth for  Small crustaceans [ m ]
-mD_BFF   0.001 # Half oxygen mortality depth for  Deposit feeders [ m ]
-mD_COR   0.001 # Half oxygen mortality depth for  Deposit feeders [ m ]
+mD_SPL   0.005 # Half oxygen mortality depth for  Spiny lobster [ m ]
+mD_GCR   0.005 # Half oxygen mortality depth for  Golden Crab [ m ]
+mD_SCR   0.005 # Half oxygen mortality depth for  Small crustaceans [ m ]
+mD_BFF   0.005 # Half oxygen mortality depth for  Deposit feeders [ m ]
+mD_COR   0.005 # Half oxygen mortality depth for  Deposit feeders [ m ]
 mD_LPH   1 # Half oxygen mortality depth for  Large phytoplankton [ m ]
 mD_SPH   1 # Half oxygen mortality depth for  Small phytoplankton [ m ]
-mD_BCA   0.001 # Half oxygen mortality depth for  Benthic Carnivorous [ m ]
-mD_MOL   0.001 #  Half oxygen mortality depth for  Mollusca [ m ]
+mD_BCA   0.005 # Half oxygen mortality depth for  Benthic Carnivorous [ m ]
+mD_MOL   0.005 #  Half oxygen mortality depth for  Mollusca [ m ]
 mD_PB    0.001 # Half oxygen mortality depth for  Pelagic Bacteria [ m ]
 mD_BB    0.001 # Half oxygen mortality depth for  Sediment Bacteria [ m ]
 
@@ -4657,9 +4656,9 @@ FDG_LPF   0.2 # Fraction of non-assimilate lost to detritus for  Large pelagic f
 FDG_SPF   0.2 # Fraction of non-assimilate lost to detritus for  Small pelagic fish [ Proportion ]
 FDG_SBF   0.2 # Fraction of non-assimilate lost to detritus for  Small benthic fish [ Proportion ]
 FDG_LBF   0.2 # Fraction of non-assimilate lost to detritus for  Large benthic fish [ Proportion ]
-FDG_SZO   0.15 # Fraction of non-assimilate lost to detritus for  Small Zooplankton [ Proportion ]
-FDG_MZO   0.15 # Fraction of non-assimilate lost to detritus for  Medium Zooplankton [ Proportion ]
-FDG_LZO   0.2 # Fraction of non-assimilate lost to detritus for  Large Zooplankton [ Proportion ]
+FDG_SZO   0.25 # Fraction of non-assimilate lost to detritus for  Small Zooplankton [ Proportion ]
+FDG_MZO   0.25 # Fraction of non-assimilate lost to detritus for  Medium Zooplankton [ Proportion ]
+FDG_LZO   0.3 # Fraction of non-assimilate lost to detritus for  Large Zooplankton [ Proportion ]
 FDG_SCR   0.3 # Fraction of non-assimilate lost to detritus for  Small crustaceans [ Proportion ]
 FDG_BFF   0.35 # Fraction of non-assimilate lost to detritus for  Deposit feeders [ Proportion ]
 FDG_BCA   0.3 # Fraction of non-assimilate lost to detritus for  Benthic Carnivorous [ Proportion ]
@@ -4685,13 +4684,13 @@ FDGDL_LPF   0  # Detrit contrib from unassim lab detrit ingested by  Large pelag
 FDGDL_SPF   0  # Detrit contrib from unassim lab detrit ingested by  Small pelagic fish [ Proportion ]
 FDGDL_SBF   0  # Detrit contrib from unassim lab detrit ingested by  Small benthic fish [ Proportion ]
 FDGDL_LBF   0  # Detrit contrib from unassim lab detrit ingested by  Large benthic fish [ Proportion ]
-FDGDL_SZO   0.00005 # Detrit contrib from unassim lab detrit ingested by  Small Zooplankton [ Proportion ]
-FDGDL_MZO   0.00005 # Detrit contrib from unassim lab detrit ingested by  Medium Zooplankton [ Proportion ]
-FDGDL_LZO   0.00005 # Detrit contrib from unassim lab detrit ingested by  Large Zooplankton [ Proportion ]
+FDGDL_SZO   0  # Detrit contrib from unassim lab detrit ingested by  Small Zooplankton [ Proportion ]
+FDGDL_MZO   0.05 # Detrit contrib from unassim lab detrit ingested by  Medium Zooplankton [ Proportion ]
+FDGDL_LZO   0.05 # Detrit contrib from unassim lab detrit ingested by  Large Zooplankton [ Proportion ]
 FDGDL_SCR   0.05 # Detrit contrib from unassim lab detrit ingested by  Small crustaceans [ Proportion ]
-FDGDL_BFF   0.05 # Detrit contrib from unassim lab detrit ingested by  Deposit feeders [ Proportion ]
-FDGDL_BCA   0.05 # Detrit contrib from unassim lab detrit ingested by  Benthic Carnivorous [ Proportion ]
-FDGDL_MOL   0.05 # Detrit contrib from unassim lab detrit ingested by  Mollusca [ Proportion ]
+FDGDL_BFF   0.5 # Detrit contrib from unassim lab detrit ingested by  Deposit feeders [ Proportion ]
+FDGDL_BCA   0.5 # Detrit contrib from unassim lab detrit ingested by  Benthic Carnivorous [ Proportion ]
+FDGDL_MOL   0.5 # Detrit contrib from unassim lab detrit ingested by  Mollusca [ Proportion ]
 
 # Fraction of non-assimilate from refractory detrital food lost to detritus
 FDGDR_SPL   0 # Detrit contrib from unassim ref detrit ingested by  Spiny lobster [ Proportion ]
