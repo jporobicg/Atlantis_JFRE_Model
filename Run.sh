@@ -62,5 +62,5 @@ echo -e "  - Commit Githhub : $comm">> RunTrack.org
 
 echo " - Biomasss Plot">> RunTrack.org
 Rscript Figures_Save.R $datIni --save
-echo "#+CAPTION: Biomass plot for the simulation $datIni"
-echo "[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/$datIni.jpg]]">> RunTrack.org
+echo "#+CAPTION: Biomass plot for the simulation $datIni" >> RunTrack.org
+echo "[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/$datIni.png]]">> RunTrack.org
