@@ -2,5 +2,5 @@
 ##----------------------------##
 /Inputs/Forcing_Hydro/*
 Inputs/Forcing_Hydro/JFRE_hydro.nc
-JFR_Output_Folder/*
-Calibration/*
+/JFR_Output_Folder/*
+/Calibration/*
