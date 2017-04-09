@@ -74,6 +74,7 @@ flag_report_water_detritus  0
 flag_shrinkfat              0
 flag_predratiodepend        0
 
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           parameter for corals        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -140,6 +141,13 @@ COR_colony_ha		    0.75	# Constant scaling colony height to diameter
 COR_rugosity_inc	    0.03	# Rate of increase in rugosity
 COR_colony_diam		    60		# Colony diameter
 COR_rugosity_dec	    0.01	# Rate at which rugosity drops as coral is degraded
+
+## Readiation and shorwave parameters
+swr_const 1367.0
+swr_cos_coefft 0.034
+swr_cos_offset 0.0
+
+
 
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
@@ -5044,7 +5052,8 @@ recSTOCK_SBF   1 # Stock specific recruitment scalar for Small benthic fish [ mu
 1
 recSTOCK_LBF   1 # Stock specific recruitment scalar for Large benthic fish [ multiplier ]
 1
-
+recSTOCK_BIR   1 # Stock specific recruitment scalar for Bird [ multiplier ]
+1
 # Distribution of recruits within recruitment period
 rec_m 1
 rec_sigma 1
