@@ -10,7 +10,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
 # Those determining set-up and recording
-ecotest    0 Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+ecotest    1 Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
 availflag  1 Switch to filter flows based on active groups 1
 flagrandom 0 Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
@@ -5175,7 +5175,7 @@ BHalpha_ORO   3579941264946.31         # Beverton-Holt recruitment rate paramete
 BHalpha_ALF   4761569555.28            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   4501806169.25            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   9E+08        	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
-BHalpha_OTA   1292141376737862.00      # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
+BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   4033992076.64            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
