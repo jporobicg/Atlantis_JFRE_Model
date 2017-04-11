@@ -1430,14 +1430,14 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1.3     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1.3     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   3.8       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   4       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
 KI_SPH_T15  10  Light saturation, Small phytoplankton W m-2 10 - 20
-KI_MA_T15   5   Light saturation, macroalgae W m-2 5
-KI_COR_T15  5   Light saturation, CORALS W m-2 5
+KI_MA_T15   10   Light saturation, macroalgae W m-2 5
+KI_COR_T15  10   Light saturation, CORALS W m-2 5
 
 # Eddy impact
 eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 1
@@ -1476,7 +1476,7 @@ BBthresh  10    Threshold BB flux level where damping starts mg N m-2 s-1 0.1
 BBdamp    0.85  Damping coefficient for BB fluxes 0.75
 
 # Space restrictions for basal (epibenthic and some infauna) groups
-MAmax   4000  Maximum macroalgal biomass mg N m-2 10000
+MAmax   10000  Maximum macroalgal biomass mg N m-2 10000
 
 # These MBmax is used only as a relative measure for habitat calculations it does not constrain MB
 # growth for now
@@ -1763,7 +1763,7 @@ LPH_maxdepth  4300
 SPH_maxdepth  4300
 BCA_maxdepth  350
 MOL_maxdepth  4300
-MA_maxdepth   4300
+MA_maxdepth   250
 PB_maxdepth   4300
 BB_maxdepth   4300
 DL_maxdepth   4300
@@ -4338,7 +4338,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.00001 # Lysis rate of Large phytoplankton [ d-1 ]
 KLYS_SPH   0.00002 # Lysis rate of Small phytoplankton [ d-1 ]
-KLYS_MA    1 # Lysis rate of Macroalgae [ d-1 ]
+KLYS_MA    0.01 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
