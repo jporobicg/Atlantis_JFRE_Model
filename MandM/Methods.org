@@ -108,7 +108,7 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 - UTM projection - For Juan Fernandez is UTM 17H South
 
 - check the shp file
-v.in.ogr "dsn=/home/demiurgo/Documents/2015/Polygonos/qgis-project/JFR.shp" output=JFR0p001 snap=0.0001 min_area=0.0001 -o
+   v.in.ogr "dsn=/home/demiurgo/Documents/2015/Polygonos/qgis-project/JFR.shp" output=JFR0p001 snap=0.0001 min_area=0.0001 -o
 - Using the Java lybrarie I need to run the follow code
 rm JFRE_ll.bgm
 java -jar bgmeriser-stripped.jar -as "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs" JFRE_v3.shp JFRE_ll.bgm
