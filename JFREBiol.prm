@@ -1430,7 +1430,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1.3     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1.3     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   4       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   5.5       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 # Primary producer light requirements
@@ -3355,13 +3355,13 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.1 0.01 0 0 0.2 0.1 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.1 0.01 0 0 0.2 0.05 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.1 0 0 0 0.2 0.1 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.1 0 0 0 0.2 0.05 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.1 0.01 0 0 0.2 0.1 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.1 0.01 0 0 0.2 0.05 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.1 0.001 0 0 0.2 0.1 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.1 0.001 0 0 0.2 0.05 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
@@ -3371,13 +3371,13 @@ pPREY1ALF2  37
 pPREY2ALF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0.001 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 0.05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG2  37
-0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG2  37
-0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
 0.001 0.001 0 0 0.01 0.01 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
@@ -3423,11 +3423,11 @@ pPREYSQD  37
 pPREYOCT  37
 0.005 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 0.01 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0.1 0.1 0 0 0 0.025 0.01 0 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0.05 0.1 0 0 0 0.025 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0.1 0.2 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
+0.1 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0.1 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0.1 0 0.1 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
@@ -3470,7 +3470,6 @@ pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 1e-04 0 0 1e-04 0.003 1e-05 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.013 0.01 0.001 1e-04 0.001 0.001 0 1e-06 0 0 0.2 0 0 0
-
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3908,11 +3907,11 @@ C_OTA 10
 # Consumer growth - this is used by Holling type feeding (predcase 0, 1, 2)
 mum_OCT_T15   0.08     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.002     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_COR_T15   0.03     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_COR_T15   0.08     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.04      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.005     #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-mum_SCR_T15   0.0125     #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+mum_SCR_T15   1.5      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.06     #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.46     #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 mum_MOL_T15   0.68     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -4212,7 +4211,7 @@ EDL_LBF   0 # Assim efficiency on labile detritus of Large benthic fish
 EDL_SZO   0.1 # Assim efficiency on labile detritus of Small Zooplankton
 EDL_MZO   0.02 # Assim efficiency on labile detritus of Medium Zooplankton
 EDL_LZO   0 # Assim efficiency on labile detritus of Large Zooplankton
-EDL_SCR   0.1 # Assim efficiency on labile detritus of Small crustaceans
+EDL_SCR   0.4 # Assim efficiency on labile detritus of Small crustaceans
 EDL_BFF   0.2  # Assim efficiency on labile detritus of Deposit feeders
 EDL_LPH   0 # Assim efficiency on labile detritus of Large phytoplankton
 EDL_SPH   0 # Assim efficiency on labile detritus of Small phytoplankton
