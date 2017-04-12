@@ -1476,7 +1476,7 @@ BBthresh  10    Threshold BB flux level where damping starts mg N m-2 s-1 0.1
 BBdamp    0.85  Damping coefficient for BB fluxes 0.75
 
 # Space restrictions for basal (epibenthic and some infauna) groups
-MAmax   10000  Maximum macroalgal biomass mg N m-2 10000
+MAmax   60000  Maximum macroalgal biomass mg N m-2 10000
 
 # These MBmax is used only as a relative measure for habitat calculations it does not constrain MB
 # growth for now
