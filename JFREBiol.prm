@@ -171,9 +171,9 @@ flagdemLPF  0  LPF: 1 = on, 0 = off 1
 flagdemSPF  0 SPF: 1 = on, 0 = off 1
 flagdemSBF  1 SBF: 1 = on, 0 = off 1
 flagdemLBF  1 LBF: 1 = on, 0 = off 1
-flagdemSZO  1 SCP: 1 = on, 0 = off 1
-flagdemMZO  1 SCP: 1 = on, 0 = off 1
-flagdemLZO  1 LCP: 1 = on, 0 = off 1
+flagdemSZO  0 SCP: 1 = on, 0 = off 1
+flagdemMZO  0 SCP: 1 = on, 0 = off 1
+flagdemLZO  0 LCP: 1 = on, 0 = off 1
 flagdemSCR  1 SCR: 1 = on, 0 = off 1
 flagdemBFF  1 BFF: 1 = on, 0 = off 1
 flagdemLPH  0 PHY: 1 = on, 0 = off 1
@@ -3343,9 +3343,9 @@ pPREY1BRC1  37
 pPREY2BRC1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.15 0.03 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
 pPREY1BRC2  37
-0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.08 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.08 0.05 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2BRC2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.03 0.05 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0.15 0.03 0.05 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1VID1  37
 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
@@ -3371,13 +3371,13 @@ pPREY1ALF2  37
 pPREY2ALF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0.001 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.005 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 0.005 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG2  37
-0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.005 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG2  37
-0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.02 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 0.005 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
 0.001 0.001 0 0 0.01 0.01 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
@@ -3470,6 +3470,7 @@ pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.04 0 1e-04 0 0 1e-04 0.003 1e-05 0 0 0 0 0.1 0 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.001 0.013 0.01 0.001 1e-04 0.001 0.001 0 1e-06 0 0 0.2 0 0 0
+
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3725,11 +3726,11 @@ Kmax_coefft_DR    6 # Steepness of the smooth feeding window curve of the predat
 Kmax_coefft_DC    6 # Steepness of the smooth feeding window curve of the predator  Carrion
 
 # Following parameters required for read-in, but as these species don't eat age-structured groups, not used as yet
-CHO_sn   11103.10    # Size biomass pool to available to be  consume Chondrichtyans [ mg N ]
+#CHO_sn   11103.10    # Size biomass pool to available to be  consume Chondrichtyans [ mg N ]
 #OTA_sn   225907.23   # Size biomass pool to available to be  consume Otariid [ mg N ]
-DOL_sn   1123528.00  # Size biomass pool to available to be  consume Dophins [ mg N ]
-CET_sn   70211487.62 # Size biomass pool to available to be  consume Cetaceans [ mg N ]
-BIR_sn   1778.42     # Size biomass pool to available to be  consume Birds [ mg N ]
+#DOL_sn   1123528.00  # Size biomass pool to available to be  consume Dophins [ mg N ]
+#CET_sn   70211487.62 # Size biomass pool to available to be  consume Cetaceans [ mg N ]
+#BIR_sn   1778.42     # Size biomass pool to available to be  consume Birds [ mg N ]
 OCT_sn   1737.56     # Size biomass pool to available to be  consume Octupus [ mg N ]
 SQD_sn   1737.56     # Size biomass pool to available to be  consume Octupus [ mg N ]
 COR_sn   90.0        # Size biomass pool to available to be  consume Octupus [ mg N ]
@@ -3760,7 +3761,7 @@ C_COR_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.18     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.01   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.1   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.02     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.03    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.008    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -3774,7 +3775,7 @@ vl_OCT 76
 vl_SZO 0.018
 vl_MZO 0.004
 vl_LZO 0.002
-vl_SCR 0.005
+vl_SCR 0.05
 vl_BFF 0.02
 vl_BCA 0.016
 vl_MOL 0.016
@@ -3911,7 +3912,7 @@ mum_COR_T15   0.08     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.04      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.005     #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-mum_SCR_T15   1.5      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+mum_SCR_T15   2      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.06     #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.46     #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 mum_MOL_T15   0.68     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -4243,7 +4244,7 @@ EDR_LBF   0 # Assim efficiency on refractory detritus of Large benthic fish
 EDR_SZO   0.05 # Assim efficiency on refractory detritus of Small Zooplankton
 EDR_MZO   0.02 # Assim efficiency on refractory detritus of Medium Zooplankton
 EDR_LZO   0.02 # Assim efficiency on refractory detritus of Large Zooplankton
-EDR_SCR   0 # Assim efficiency on refractory detritus of Small crustaceans
+EDR_SCR   0.001 # Assim efficiency on refractory detritus of Small crustaceans
 EDR_BFF   0 # Assim efficiency on refractory detritus of Deposit feeders
 EDR_LPH   0 # Assim efficiency on refractory detritus of Large phytoplankton
 EDR_SPH   0 # Assim efficiency on refractory detritus of Small phytoplankton
@@ -4749,7 +4750,7 @@ FDM_LBF   0.35 # Detrit contrib from mortality of  Large benthic fish [ Proporti
 FDM_SZO   0.025 # Detrit contrib from mortality of  Small Zooplankton [ Proportion ]
 FDM_MZO   0.025 # Detrit contrib from mortality of  Medium Zooplankton [ Proportion ]
 FDM_LZO   0.03  # Detrit contrib from mortality of  Large Zooplankton [ Proportion ]
-FDM_SCR   0.25 # Detrit contrib from mortality of  Small crustaceans [ Proportion ]
+FDM_SCR   0.15 # Detrit contrib from mortality of  Small crustaceans [ Proportion ]
 FDM_BFF   0.25 # Detrit contrib from mortality of  Deposit feeders [ Proportion ]
 FDM_BCA   0.25 # Detrit contrib from mortality of  Benthic Carnivorous [ Proportion ]
 FDM_MOL   0.25 # Detrit contrib from mortality of  Mollusca [ Proportion ]
