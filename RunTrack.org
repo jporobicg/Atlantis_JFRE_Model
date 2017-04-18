@@ -3760,3 +3760,49 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- BCA on MA 0.1 to 0.00001
+- MOL on BCA 0.025 to 0.0001
+- ANG on SCR 0.05 to 0.02 (all)
+- ORO on SCR 0.1 to 0.05
+- LPF on SCR 0.2 to 0.05 Adl - juv
+- LPF on SCR 0.1 to 0.05 Juv - juv
+- BRC on MOL 0.1 to 0.01 both
+**** Clearance
+**** Mum
+*** Increased
+**** Clearance
+- BCA on MOL 0.001 to 0.003
+**** Predation
+**** Running time
+**** Mum
+- MA from 3.8 to 5
+- COR from 0.03 to 0.08
+- SCR from 0.0125 to 2
+**** Other paramteres
+- Light saturation
+- MA from 5 to 10
+- Lysis
+- MA from 1 to 0.01
+- EDL on SCR from 0.1 to 0.4
+- EDR on SCR from 0 to 0.001
+- Changed spatial distribution SZO,Lzo and Mzo demersal 0
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170413150315
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170413150315.png]]
+* Run 20170418102503
+  - Run start: 2017-04-18 10:25:03
+  - Run end: 2017-04-18 11:57:38
+  - log file : [[file:Calibration/20170418115738.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6178
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
