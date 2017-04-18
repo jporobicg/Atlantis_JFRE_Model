@@ -3806,3 +3806,38 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- LZO on SZO 0.000005
+- MZO on SZO 0.0005
+- SQD on DL and DR from 0.0001 to 5e-8
+- SQD on BRC from 0.001 to 5e-4
+**** Clearance
+- SZO from 0.18 to 0.018
+- COR from 0.10.01
+**** Mum
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+**** Other paramteres
+- Added new
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170418102503
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170418102503.png]]
+* Run 20170418140346
+  - Run start: 2017-04-18 14:03:46
+  - Run end: 2017-04-18 15:52:18
+  - log file : [[file:Calibration/20170418155218.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6178
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
