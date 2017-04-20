@@ -3841,3 +3841,45 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Clearance
+- SZO 0.018 to 0.009
+**** Mum
+- SZO from 0.04 to 0.01
+- SCR from 21 to 0.2
+*** Increased
+**** Clearance
+- BFF from 0.02 to 0.08
+**** Predation
+- SCR on DRsed and DLsed from 0 to 1e-5
+- This was a mistake. I should have put values on the ppre matrix for this species on the sediment not in the WC
+**** Running time
+**** Mum
+**** Other paramteres
+** Output
+*** Increase Biomass
+- 2596% LPH
+- MZO 3%
+- BCA 2%
+*** Decreased biomass
+- ALF 9%
+- SZO 97%
+- LPH 35%
+- PB 6%
+- DL 1%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170418140346
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170418140346.png]]
+* Run 20170420142354
+  - Run start: 2017-04-20 14:23:54
+  - Run end: 2017-04-20 14:56:24
+  - log file : [[file:Calibration/20170420145624.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6178
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

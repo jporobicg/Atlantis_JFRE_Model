@@ -226,7 +226,7 @@ eddy_S4 51
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Eddy sclaing of vertical mixing
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-eddy_vertmix 0
+eddy_vertmix 1
 
 # Coefficient used in scaling of vertical exchanges by eddies
 eddy_mixscale 10.0
