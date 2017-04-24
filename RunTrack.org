@@ -3982,3 +3982,58 @@ New netcdf file with the values of eddies by box
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- LBF on LBF 0.01 to 0.005 (Juv and Adl on Juv)
+- LBF on LBF 0.001 to 0.0005 (Adl on Adl)
+- LBF on LBF 0.001 to 0.0000001 (juv on Adl)
+**** Clearance
+**** Mum
+- SCR from 0.2 to 0.02
+*** Increased
+**** Clearance
+- MOL from 0.008 to 0.016
+**** Predation
+**** Running time
+**** Mum
+- MA from 5.5 to 6.5
+- COR from 0.08 to 0.1
+**** Other paramteres
+- Vertical distribution of LFB
+- from : 0.0454545455 0.1363636364 0.4545454545 0.1666666667 0.0909090909 0.0151515152 0.0909090909 0
+- to  : 0.19 0.45 0.17 0.09 0.09 0.01 0.00 0.00
+- Optimal temperature LBF from 21 to 17.45
+- Changed values of Age class for ANG LPF and SPF
+** Output
+*** Increase Biomass
+- SQD 1%
+- LPF 4%
+- LBF 256%
+- SCR 2%
+- BCA 39%
+- MOL 1%
+*** Decreased biomass
+- SPL 3%
+- GCR 1%
+- ORO 2%
+- ANG 2%
+- CHO 1%
+- OCT 3%
+- SBF 7%
+- COR 10%
+- MA 10%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170423131226
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170423131226.png]]
+* Run 20170424091247
+  - Run start: 2017-04-24 09:12:47
+  - Run end: 2017-04-24 17:15:37
+  - log file : [[file:Calibration/20170424171537.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
