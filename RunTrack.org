@@ -3575,7 +3575,7 @@ Output: NONE
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -3629,7 +3629,7 @@ Output: NONE
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6145
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170407092744
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170407092744.png]]
@@ -3760,7 +3760,7 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -3806,7 +3806,7 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -3841,7 +3841,7 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6178
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -3896,7 +3896,7 @@ Fixed Beverton holt paramters for OTA
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170420145656
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170420145656.png]]
@@ -3936,7 +3936,7 @@ New netcdf file with the values of eddies by box
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170421151239
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170421151239.png]]
@@ -3949,7 +3949,7 @@ New netcdf file with the values of eddies by box
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -3982,7 +3982,7 @@ New netcdf file with the values of eddies by box
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4037,3 +4037,68 @@ New netcdf file with the values of eddies by box
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+
+** Input
+*** Decreased
+**** Predation
+- BRC on MOL from 0.1 to 0.05 (Juv and Adl)
+- SBF on SCR from :
+- 0.1 to 0.03 (Juv - Juv)
+- 0.1 to 0.07 (Adl - Juv)
+- 0.05 to 0.03 (Adl - Adl)
+- 0.05 to 0.001 (Juv - Adl)
+- LPF on BCA from :
+- 0.05 to 0.01 (Adl - Adl)
+- 0.025 to 0.005 (Juv - Juv)
+- MOL on MOL from 0.001 to 0.0005
+- ANG on SCR from 0.005 to 0.001
+- LBF on LBF
+- 0.005 to 0 (Adl - Adl)
+- 0.005 to 0.000001 Juv - Juv
+- LBF on ANG
+- 0.01 to 0.05 (Juv - Juv)
+- 0.01 to 0.001 (Juv - Adl)
+- 0.05 to 0.1 (Adl to Juv)
+**** Clearance
+- ANG
+I reduce the search time and the maximum speed. For the search tiem I was using half of the day,  but in natural condition they only search for food with light. The maximum Speed is the speed of searching not running. So i used the half of the maximum speed
+- *from*   : 0.60 72.60 344.13 837.05 1514.40 2320.14 3198.52 4102.24 4994.94 5850.78
+- *to*  : 0.13  16.13 74.95 135.56  201.28  267.49  331.34  391.13  445.99  495.58
+- SCR from 0.03 to 0.01
+**** Mum
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+- MOL from 0.016 to 0.032
+- COR from 0.01 to 0.02
+**** Other paramteres
+- Changed ad_habitat_LBF. LBF is allow to leave on all the places
+- changed optimal temperature
+** Output
+*** Increase Biomass
+- SPL 196%
+- GCR 3%
+- BRC 239%
+- SPF 14%
+- BRD 2%
+- SBF 169%
+- LBF 191%
+- BFF 1%
+- BCA 453%
+- MOL 57%
+*** Decreased biomass
+- ORO 23%
+- ALF 5%
+- ANG 37%
+- CHO 2%
+- SQD 2%
+- SCR 30%
+- COR 48%
+- MA 49%
+- BB 2%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170424091247
+    [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170424091247.png]]
