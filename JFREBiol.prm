@@ -464,7 +464,7 @@ SQD_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 LPF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
 SPF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
 SBF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-LBF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
+LBF_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 SCR_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 BCA_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
 MOL_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
@@ -489,7 +489,7 @@ DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 OCT_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LPF_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LPF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -833,7 +833,7 @@ q10_optimal_temp_SQD 10
 q10_optimal_temp_LPF 20
 q10_optimal_temp_SPF 20.75
 q10_optimal_temp_SBF 13.025
-q10_optimal_temp_LBF 13.48
+q10_optimal_temp_LBF 13.025
 q10_optimal_temp_LZO 0
 q10_optimal_temp_SZO 17.37
 q10_optimal_temp_MZO 0
@@ -1753,7 +1753,7 @@ COR_maxdepth  1000
 LPF_maxdepth  350
 SPF_maxdepth  300
 SBF_maxdepth  1000
-LBF_maxdepth  900
+LBF_maxdepth  1000
 MZO_maxdepth  4300
 SZO_maxdepth  4300
 LZO_maxdepth  4300
@@ -2318,13 +2318,13 @@ VERTday_SBF2 8
 VERTnight_SBF2 8
 0.7692307692 0.0316742081 0.0814479638 0 0.0180995475 0.036199095 0.0090497738 0.0542986425
 VERTday_LBF1 8
-0.19 0.45 0.17 0.09 0.09 0.01 0.00 0.00
+0.64 0.17 0.09 0.09 0.01 0 0 0
 VERTnight_LBF1 8
-0.19 0.45 0.17 0.09 0.09 0.01 0.00 0.00
+0.64 0.17 0.09 0.09 0.01 0 0 0
 VERTday_LBF2 8
-0.19 0.45 0.17 0.09 0.09 0.01 0.00 0.00
+0.64 0.17 0.09 0.09 0.01 0 0 0
 VERTnight_LBF2 8
-0.19 0.45 0.17 0.09 0.09 0.01 0.00 0.00
+0.64 0.17 0.09 0.09 0.01 0 0 0
 VERTday_ANG1 8
 1 0 0 0 0 0 0 0
 VERTnight_ANG1 8
@@ -3680,7 +3680,7 @@ KUP_COR   0.0001 # Upper prey selection size limit for Octupus [ Number ]
 KUP_LPF   0.4 # Upper prey selection size limit for Large pelagic fish [ Number ]
 KUP_SPF   0.4 # Upper prey selection size limit for Small pelagic fish [ Number ]
 KUP_SBF   0.4 # Upper prey selection size limit for Small benthic fish [ Number ]
-KUP_LBF   0.4 # Upper prey selection size limit for Large benthic fish [ Number ]
+KUP_LBF   0.45 # Upper prey selection size limit for Large benthic fish [ Number ]
 KUP_SZO   0.4 # Upper prey selection size limit for Small Zooplankton [ Number ]
 KUP_MZO   0.4 # Upper prey selection size limit for Medium Zooplankton [ Number ]
 KUP_LZO   0.4 # Upper prey selection size limit for Large Zooplankton [ Number ]
@@ -3891,7 +3891,7 @@ C_SPF 10 #  Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 C_SBF   10 #  Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 7.06 12.90 21.29 35.90 55.23 87.47 110.62 174.41 220.49 274.03
 C_LBF   10 #  Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
-178.39 244.89 340.76 424.55 534.44 730.52 908.95 1029.94 1223.99 1446.00
+141.21 174.41 217.39 251.70 293.45 361.43 418.12 454.44 509.87 569.79
 C_CHO 10 #  Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 5.10	16.28	29.51	42.66	54.70	65.23	74.16	81.58	87.67	92.62
 C_DOL 10
@@ -4121,14 +4121,14 @@ KDEP_COR   0 # Sediment penetration depth of Octupus [ m ]
 KDEP_LPF   0 # Sediment penetration depth of Large pelagic fish [ m ]
 KDEP_SPF   0 # Sediment penetration depth of Small pelagic fish [ m ]
 KDEP_SBF   0.002 # Sediment penetration depth of Small benthic fish [ m ]
-KDEP_LBF   0.003 # Sediment penetration depth of Large benthic fish [ m ]
+KDEP_LBF   0.03 # Sediment penetration depth of Large benthic fish [ m ]
 KDEP_SZO   0 # Sediment penetration depth of Small Zooplankton [ m ]
 KDEP_MZO   0 # Sediment penetration depth of Medium Zooplankton [ m ]
 KDEP_LZO   0 # Sediment penetration depth of Large Zooplankton [ m ]
-KDEP_SCR   0.005 # Sediment penetration depth of Small crustaceans [ m ]
-KDEP_BFF   0.003 # Sediment penetration depth of Deposit feeders [ m ]
-KDEP_BCA   0.001 # Sediment penetration depth of Benthic Carnivorous [ m ]
-KDEP_MOL   0.002 # Sediment penetration depth of Mollusca [ m ]
+KDEP_SCR   0.01 # Sediment penetration depth of Small crustaceans [ m ]
+KDEP_BFF   0.03 # Sediment penetration depth of Deposit feeders [ m ]
+KDEP_BCA   0.01 # Sediment penetration depth of Benthic Carnivorous [ m ]
+KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
