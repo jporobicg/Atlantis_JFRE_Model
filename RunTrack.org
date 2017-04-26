@@ -4111,3 +4111,26 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- LBF on ANG from 0.05 to 0.03 (Juv - Juv)
+- LBF on ANG from 0.1 to 0.05 (Adl - Juv)
+**** Clearance
+***** LBF
+- from : 178.39 244.89 340.76 424.55 534.44 730.52 908.95 1029.94 1223.99 1446.00
+- to   : 141.21 174.41 217.39 251.70 293.45 361.43 418.12 454.44 509.87 569.79
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170425084036
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170425084036.png]]
+* Run 20170426094003
+  - Run start: 2017-04-26 09:40:03
+  - Run end: 2017-04-26 17:22:52
+  - log file : [[file:Calibration/20170426172252.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
