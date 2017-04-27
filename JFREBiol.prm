@@ -3892,9 +3892,8 @@ C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 35.25  56.73  84.30  127.39  179.01  257.43  309.93  444.12  534.49  634.68
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
-13.96 19.26 26.94 33.68 42.55 58.46 72.99 82.87 98.75 116.97
 11.17 15.41 21.55 26.94 34.04 46.77 58.39 66.29 79.00 93.57
-C_CHO 10 # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
+C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 5.10	16.28	29.51	42.66	54.70	65.23	74.16	81.58	87.67	92.62
 C_DOL 10
 13.39	43.88	81.51	120.50	157.67	191.46	221.26	246.99	268.89	287.32

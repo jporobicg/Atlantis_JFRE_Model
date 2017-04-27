@@ -4240,3 +4240,76 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- BCA on SCR from 0.003 to 0.0005
+- BFF on SPH from 0.0005 to 0.001
+- BFF on SZO from 0.0005 to 0.001
+- BFF on sedDL from 0.00005 to 0
+- MOL on DC from 0.2 to 0
+**** Clearance
+***** ANG
+- from : 0.06 4.79 20.21 45.88 79.00 117.20 157.65 198.43 237.70 264.31
+- to : 0.03  2.39  10.10  22.94  39.50  58.60  78.83  99.22  118.85 132.15
+***** LBF
+- from : 13.96 19.26 26.94 33.68 42.55 58.46 72.99 82.87 98.75 116.97
+- to : 11.17 15.41 21.55 26.94 34.04 46.77 58.39 66.29 79.00 93.57
+***** LPF
+***** BRC
+***** VID
+***** ORO
+***** ALF
+***** SPF
+***** SBF
+**** Mum
+*** Increased
+**** Clearance
+**** Predation
+- BCA on BFF from 0.0005 to 0.005
+- BCA on DLsed from 0 to 0.0001
+- BFF on DL 0.01
+- BFF on DR 0.005
+- MOL on DL from 0 to 0.001
+**** Running time
+**** Mum
+**** Other paramteres
+***** Efficiency
+- SCR on DL from 0.001 to 0.01
+- BFF on DR from 0 to 0.05
+** Output
+*** Increase Biomass
+- 29% SPL
+- 11% GCR
+- 9% BRC
+- 2% VID
+- 25% ORO
+- 3% ALF
+- 24% ANG
+- 20% CHO
+- SQD 2%
+- OCT 14%
+- SPF 1%
+- SBF 289%
+- LBF 238%
+- SCR 222%
+- COR 12%
+- BB 1%
+*** Decreased biomass
+- BFF 5%
+- BCA 60%
+- MOL 14%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170427092827
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170427092827.png]]
+* Run 20170427145609
+  - Run start: 2017-04-27 14:56:09
+  - Run end: 2017-04-27 15:15:31
+  - log file : [[file:Calibration/20170427151531.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

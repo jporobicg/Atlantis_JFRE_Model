@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-02-09T09:41+1100"/>
+<meta name="generated" content="2017-04-27T14:27+1000"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -312,6 +312,7 @@ for the JavaScript code below.
 <li><a href="#sec-5-2-1-16">Codes</a></li>
 <li><a href="#sec-5-2-1-17">What is needed</a></li>
 <li><a href="#sec-5-2-1-18">Resume of the configuration file</a></li>
+<li><a href="#sec-5-2-1-19">Mortality</a></li>
 </ul>
 </li>
 <li><a href="#sec-5-2-2">Forcing files</a>
@@ -630,11 +631,8 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 
 </li>
 <li>check the shp file
+   v.in.ogr "dsn=/home/demiurgo/Documents/2015/Polygonos/qgis-project/JFR.shp" output=JFR0p001 snap=0.0001 min<sub>area</sub>=0.0001 -o
 </li>
-</ul>
-
-<p>v.in.ogr "dsn=/home/demiurgo/Documents/2015/Polygonos/qgis-project/JFR.shp" output=JFR0p001 snap=0.0001 min<sub>area</sub>=0.0001 -o
-</p><ul>
 <li>Using the Java lybrarie I need to run the follow code
 </li>
 </ul>
@@ -2378,7 +2376,7 @@ print(b)
 <tr><td class="left">BRC</td><td class="left">Adult</td><td class="right">0.07</td><td class="right">0.07</td><td class="right">0.01</td><td class="right">0.06</td><td class="right">0.36</td><td class="right">0.21</td><td class="right">0.14</td><td class="right">0.09</td></tr>
 <tr><td class="left">BRC</td><td class="left">Juvenile</td><td class="right">0.01</td><td class="right">0.04</td><td class="right">0.03</td><td class="right">0.03</td><td class="right">0.37</td><td class="right">0.21</td><td class="right">0.22</td><td class="right">0.09</td></tr>
 <tr><td class="left">CHO</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.13</td><td class="right">0.00</td><td class="right">0.09</td><td class="right">0.37</td><td class="right">0.22</td><td class="right">0.09</td><td class="right">0.11</td></tr>
-<tr><td class="left">LBF</td><td class="left">Both</td><td class="right">0.05</td><td class="right">0.14</td><td class="right">0.45</td><td class="right">0.17</td><td class="right">0.09</td><td class="right">0.02</td><td class="right">0.09</td><td class="right">0.00</td></tr>
+<tr><td class="left">LBF</td><td class="left">Both</td><td class="right">0.19</td><td class="right">0.45</td><td class="right">0.17</td><td class="right">0.09</td><td class="right">0.09</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td></tr>
 <tr><td class="left">LPF</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.04</td><td class="right">0.95</td></tr>
 <tr><td class="left">SBF</td><td class="left">Both</td><td class="right">0.77</td><td class="right">0.03</td><td class="right">0.08</td><td class="right">0.00</td><td class="right">0.02</td><td class="right">0.04</td><td class="right">0.01</td><td class="right">0.05</td></tr>
 <tr><td class="left">SPF</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.06</td><td class="right">0.13</td><td class="right">0.19</td><td class="right">0.13</td><td class="right">0.49</td></tr>
@@ -3022,7 +3020,7 @@ write.table(out, <span style="color: #ffc125; font-weight: bold;">'/home/demiurg
 
 
 
-<pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 options(asciiType=<span style="color: #ffc125; font-weight: bold;">"org"</span>)
 data  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Structural_weight/SN.csv'</span>)
@@ -3057,27 +3055,30 @@ print(b)
 </ul>
 <ul>
 <li id="sec-5-2-1-7-3">Estimation of Clearance<br/>
-  I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food
+  I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
 
 
 
 <pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 <span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
 data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Clearance/c_data.csv'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">swimming speed</span>
 <span style="color: #696969;">## </span><span style="color: #696969;">from mm to  meters</span>
 data$length <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data$length  / 1000
 cap         <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Clearance by cohort for some functional groups [m3d-1]'</span>
-C.out       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> clearance(fg     = data[, 1],
-                         speed  = data[, 3],
-                         len    = data[, 2],
-                         ratio  = data[, 4],
-                         time.l = data[, 5])
-p.C <span style="color: #ff4500; font-weight: bold;">&lt;-</span> C.out[-c(4, 5, 9), ]
+<span style="color: #696969;">##</span><span style="color: #696969;">debug(clearance)</span>
+C.out       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> clearance(fg        = data[, 1],
+                         speed     = data[, 3],
+                         len       = data[, 2],
+                         ratio     = data[, 4],
+                         time.l    = data[, 5],
+                         max.speed = data[, 6],
+                         alfa      = data[, 7],
+                         beta      = data[, 8])
+p.C <span style="color: #ff4500; font-weight: bold;">&lt;-</span> C.out[-11, ]
 p.C   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(data.frame(FG= rownames(p.C), Cohort = sort(rep(1 : 10, nrow(p.C))), Clearance = c(p.C)))
-
 png(<span style="color: #ffc125; font-weight: bold;">'img/clearance.png'</span>, height = 1000, width = 1000)
 sp    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data=p.C, aes(Cohort, Clearance))+ geom_line()
 sp + facet_wrap(~FG, ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
@@ -3093,29 +3094,31 @@ print(b)
 <tr><th scope="col" class="left"></th><th scope="col" class="right">1</th><th scope="col" class="right">2</th><th scope="col" class="right">3</th><th scope="col" class="right">4</th><th scope="col" class="right">5</th><th scope="col" class="right">6</th><th scope="col" class="right">7</th><th scope="col" class="right">8</th><th scope="col" class="right">9</th><th scope="col" class="right">10</th></tr>
 </thead>
 <tbody>
-<tr><td class="left">ALF</td><td class="right">2.36</td><td class="right">9.26</td><td class="right">18.09</td><td class="right">28.70</td><td class="right">40.15</td><td class="right">51.71</td><td class="right">62.85</td><td class="right">73.22</td><td class="right">82.70</td><td class="right">91.10</td></tr>
-<tr><td class="left">ANG</td><td class="right">0.60</td><td class="right">72.60</td><td class="right">344.13</td><td class="right">837.05</td><td class="right">1514.40</td><td class="right">2320.14</td><td class="right">3198.52</td><td class="right">4102.24</td><td class="right">4994.94</td><td class="right">5850.78</td></tr>
+<tr><td class="left">ALF</td><td class="right">1.56</td><td class="right">5.61</td><td class="right">10.40</td><td class="right">15.92</td><td class="right">21.70</td><td class="right">27.40</td><td class="right">32.80</td><td class="right">37.76</td><td class="right">42.25</td><td class="right">46.19</td></tr>
+<tr><td class="left">ANG</td><td class="right">0.03</td><td class="right">2.39</td><td class="right">10.10</td><td class="right">22.94</td><td class="right">39.50</td><td class="right">58.60</td><td class="right">78.83</td><td class="right">99.22</td><td class="right">118.85</td><td class="right">132.15</td></tr>
 <tr><td class="left">BIR</td><td class="right">0.38</td><td class="right">1.24</td><td class="right">2.33</td><td class="right">3.47</td><td class="right">4.57</td><td class="right">5.58</td><td class="right">6.49</td><td class="right">7.28</td><td class="right">7.96</td><td class="right">8.55</td></tr>
 <tr><td class="left">BRC</td><td class="right">20.91</td><td class="right">29.75</td><td class="right">40.15</td><td class="right">51.72</td><td class="right">65.09</td><td class="right">81.46</td><td class="right">99.99</td><td class="right">115.88</td><td class="right">131.25</td><td class="right">147.57</td></tr>
 <tr><td class="left">CET</td><td class="right">3111.88</td><td class="right">3599.63</td><td class="right">3851.93</td><td class="right">3978.84</td><td class="right">4041.87</td><td class="right">4072.98</td><td class="right">4088.28</td><td class="right">4095.80</td><td class="right">4099.50</td><td class="right">4101.31</td></tr>
 <tr><td class="left">CHO</td><td class="right">5.10</td><td class="right">16.28</td><td class="right">29.51</td><td class="right">42.66</td><td class="right">54.70</td><td class="right">65.23</td><td class="right">74.16</td><td class="right">81.58</td><td class="right">87.67</td><td class="right">92.62</td></tr>
 <tr><td class="left">DOL</td><td class="right">13.39</td><td class="right">43.88</td><td class="right">81.51</td><td class="right">120.50</td><td class="right">157.67</td><td class="right">191.46</td><td class="right">221.26</td><td class="right">246.99</td><td class="right">268.89</td><td class="right">287.32</td></tr>
 <tr><td class="left">GCR</td><td class="right">0.03</td><td class="right">0.10</td><td class="right">0.22</td><td class="right">0.37</td><td class="right">0.55</td><td class="right">0.73</td><td class="right">0.90</td><td class="right">1.04</td><td class="right">1.19</td><td class="right">1.32</td></tr>
-<tr><td class="left">LBF</td><td class="right">178.39</td><td class="right">244.89</td><td class="right">340.76</td><td class="right">424.55</td><td class="right">534.44</td><td class="right">730.52</td><td class="right">908.95</td><td class="right">1029.94</td><td class="right">1223.99</td><td class="right">1446.00</td></tr>
-<tr><td class="left">LPF</td><td class="right">8.85</td><td class="right">165.77</td><td class="right">367.12</td><td class="right">506.61</td><td class="right">585.71</td><td class="right">627.02</td><td class="right">647.81</td><td class="right">658.09</td><td class="right">663.14</td><td class="right">665.60</td></tr>
+<tr><td class="left">LBF</td><td class="right">8.38</td><td class="right">11.56</td><td class="right">16.16</td><td class="right">20.21</td><td class="right">25.53</td><td class="right">35.07</td><td class="right">43.79</td><td class="right">49.72</td><td class="right">59.25</td><td class="right">70.18</td></tr>
+<tr><td class="left">LPF</td><td class="right">5.39</td><td class="right">78.25</td><td class="right">161.67</td><td class="right">216.92</td><td class="right">247.63</td><td class="right">263.53</td><td class="right">271.49</td><td class="right">275.42</td><td class="right">277.35</td><td class="right">278.29</td></tr>
 <tr><td class="left">OCT</td><td class="right">480.00</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">ORO</td><td class="right">0.02</td><td class="right">4.04</td><td class="right">13.37</td><td class="right">22.90</td><td class="right">30.31</td><td class="right">35.44</td><td class="right">38.76</td><td class="right">40.85</td><td class="right">42.12</td><td class="right">42.88</td></tr>
+<tr><td class="left">ORO</td><td class="right">0.02</td><td class="right">2.38</td><td class="right">7.23</td><td class="right">11.91</td><td class="right">15.46</td><td class="right">17.87</td><td class="right">19.42</td><td class="right">20.39</td><td class="right">20.97</td><td class="right">21.33</td></tr>
 <tr><td class="left">OTA</td><td class="right">350.36</td><td class="right">483.53</td><td class="right">598.37</td><td class="right">693.28</td><td class="right">769.64</td><td class="right">830.00</td><td class="right">877.13</td><td class="right">913.62</td><td class="right">941.69</td><td class="right">963.18</td></tr>
-<tr><td class="left">SBF</td><td class="right">7.06</td><td class="right">12.90</td><td class="right">21.29</td><td class="right">35.90</td><td class="right">55.23</td><td class="right">87.47</td><td class="right">110.62</td><td class="right">174.41</td><td class="right">220.49</td><td class="right">274.03</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.31</td><td class="right">8.53</td><td class="right">26.92</td><td class="right">49.12</td><td class="right">70.26</td><td class="right">88.13</td><td class="right">102.25</td><td class="right">112.94</td><td class="right">120.82</td><td class="right">126.54</td></tr>
+<tr><td class="left">SBF</td><td class="right">35.25</td><td class="right">56.73</td><td class="right">84.30</td><td class="right">127.39</td><td class="right">179.01</td><td class="right">257.43</td><td class="right">309.93</td><td class="right">444.12</td><td class="right">534.49</td><td class="right">634.68</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.12</td><td class="right">2.88</td><td class="right">8.56</td><td class="right">15.16</td><td class="right">21.29</td><td class="right">26.41</td><td class="right">30.41</td><td class="right">33.42</td><td class="right">35.63</td><td class="right">37.23</td></tr>
 <tr><td class="left">SPL</td><td class="right">0.90</td><td class="right">1.07</td><td class="right">1.27</td><td class="right">1.48</td><td class="right">1.74</td><td class="right">1.97</td><td class="right">2.20</td><td class="right">2.40</td><td class="right">2.61</td><td class="right">2.84</td></tr>
-<tr><td class="left">VID</td><td class="right">438.65</td><td class="right">667.79</td><td class="right">1051.19</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
+<tr><td class="left">VID</td><td class="right">115.95</td><td class="right">172.58</td><td class="right">265.15</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 </tbody>
 </table>
 
-   <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png" width="600" alt="image" />
-   <br style="clear:both;" />
-</li>
+
+<p>
+<img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png" width="600" alt="image" />
+<br style="clear:both;" />
+</p></li>
 </ul>
 <ul>
 <li id="sec-5-2-1-7-4">Estimation of growth rate<br/>
@@ -3129,7 +3132,7 @@ print(b)
 <span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 options(asciiType=<span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 spgrey <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rgb(t(col2rgb(<span style="color: #ffc125; font-weight: bold;">"black"</span>)), alpha=30, maxColorValue=255)
 <span style="color: #696969;">## </span><span style="color: #696969;">read the data</span>
 dat    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">"/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv"</span>)
@@ -3221,7 +3224,7 @@ data  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<sp
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 <span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
 options(asciiType=<span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">estimation of the weight at each age class or cohort</span>
 data$Weight <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
 fg          <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(data, data$FG)
@@ -3378,7 +3381,7 @@ print(b)
 <span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">##</span><span style="color: #696969;">read the data</span>
 data             <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Mature_Growth/Mgrowth.csv'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">getting the weight before reproduction and the weith in equilibrium for all the FG</span>
@@ -3518,7 +3521,7 @@ print(b)
 
 
 
-<pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Cnect.tools.R'</span>)
 
 <span style="color: #696969;">## </span><span style="color: #696969;">General Settings</span>
@@ -3731,7 +3734,7 @@ invisible(dev.off())
 <span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
 <span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">##</span><span style="color: #696969;">~ Read data</span>
 data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Spawning/B-H.csv'</span>)
 <span style="color: #696969;">##</span><span style="color: #696969;">~ Weight at mat</span>
@@ -3853,7 +3856,7 @@ biomass[1] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> init.B
 
 <pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
 options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">##</span><span style="color: #696969;">~ Read data</span>
 data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Spawning/weight_rec.csv'</span>)
 
@@ -4052,76 +4055,76 @@ print(b)
 <ul>
 <li id="sec-5-2-1-12-2">Optimal temperature<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" /><col class="left" />
 </colgroup>
 <thead>
-<tr><th scope="col" class="left">FG</th><th scope="col" class="right">Opt. temp</th><th scope="col" class="right">Value Used</th><th scope="col" class="left">Reference</th><th scope="col" class="left">Species</th></tr>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="right">Opt. temp</th><th scope="col" class="right">Value Used</th><th scope="col" class="left">Reference</th><th scope="col" class="left">Species</th><th scope="col" class="left">Observations</th></tr>
 </thead>
 <tbody>
-<tr><td class="left">SPL</td><td class="right">17</td><td class="right">17</td><td class="left">Dupre1985</td><td class="left">Jasus frontalis</td></tr>
-<tr><td class="left"></td><td class="right">16-18</td><td class="right"></td><td class="left">Dubber 2004</td><td class="left">Jasus lalandii</td></tr>
+<tr><td class="left">SPL</td><td class="right">17</td><td class="right">17</td><td class="left">Dupre1985</td><td class="left">Jasus frontalis</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">16-18</td><td class="right"></td><td class="left">Dubber 2004</td><td class="left">Jasus lalandii</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">GCR</td><td class="right">5</td><td class="right">5</td><td class="left">Ahumada 2009</td><td class="left">Chaceon chislensis</td></tr>
+<tr><td class="left">GCR</td><td class="right">5</td><td class="right">5</td><td class="left">Ahumada 2009</td><td class="left">Chaceon chislensis</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">BRC</td><td class="right">16-18</td><td class="right">17</td><td class="left">Neuheimer 2011</td><td class="left">Cheilodactylus spectabilis</td></tr>
+<tr><td class="left">BRC</td><td class="right">16-18</td><td class="right">17</td><td class="left">Neuheimer 2011</td><td class="left">Cheilodactylus spectabilis</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">ORO</td><td class="right">4-5</td><td class="right">5</td><td class="left">Dunn 2011</td><td class="left">Orange Roughy</td></tr>
+<tr><td class="left">ORO</td><td class="right">4-5</td><td class="right">5</td><td class="left">Dunn 2011</td><td class="left">Orange Roughy</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">ANG</td><td class="right">17</td><td class="right">17</td><td class="left">EOL</td><td class="left">eels moray</td></tr>
+<tr><td class="left">ANG</td><td class="right">17</td><td class="right">17</td><td class="left">EOL</td><td class="left">eels moray</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">ALF</td><td class="right">16-19</td><td class="right">17</td><td class="left">Lehedoy 1995</td><td class="left">Alfonsino</td></tr>
+<tr><td class="left">ALF</td><td class="right">16-19</td><td class="right">17</td><td class="left">Lehedoy 1995</td><td class="left">Alfonsino</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">CHO</td><td class="right">8-17</td><td class="right">13</td><td class="left">Fishbase</td><td class="left">Squalus mitsukurii</td></tr>
+<tr><td class="left">CHO</td><td class="right">8-17</td><td class="right">13</td><td class="left">Fishbase</td><td class="left">Squalus mitsukurii</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">OCT</td><td class="right">16-21</td><td class="right">18.5</td><td class="left">Delgado 2011</td><td class="left">Octopus vulgaris</td></tr>
+<tr><td class="left">OCT</td><td class="right">16-21</td><td class="right">18.5</td><td class="left">Delgado 2011</td><td class="left">Octopus vulgaris</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">SQD</td><td class="right">15-28</td><td class="right">10</td><td class="left">Nigmatullin 2001</td><td class="left">Dosidicus gigas</td></tr>
-<tr><td class="left"></td><td class="right">3-10</td><td class="right"></td><td class="left">Watanabe 2006</td><td class="left">Squids (vampirotheutis)</td></tr>
+<tr><td class="left">SQD</td><td class="right">15-28</td><td class="right">10</td><td class="left">Nigmatullin 2001</td><td class="left">Dosidicus gigas</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">3-10</td><td class="right"></td><td class="left">Watanabe 2006</td><td class="left">Squids (vampirotheutis)</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">COR</td><td class="right">4-13</td><td class="right">9</td><td class="left">Guinote 2005</td><td class="left">Deep sea corals</td></tr>
-<tr><td class="left"></td><td class="right">4-15</td><td class="right"></td><td class="left">Brooke 2013</td><td class="left">Lophelia pertusa</td></tr>
+<tr><td class="left">COR</td><td class="right">4-13</td><td class="right">9</td><td class="left">Guinote 2005</td><td class="left">Deep sea corals</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">4-15</td><td class="right"></td><td class="left">Brooke 2013</td><td class="left">Lophelia pertusa</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">LPF</td><td class="right">20</td><td class="right">20</td><td class="left">Fishbase</td><td class="left">Pseudocaranx dented</td></tr>
+<tr><td class="left">LPF</td><td class="right">20</td><td class="right">20</td><td class="left">Fishbase</td><td class="left">Pseudocaranx dented</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">SPF</td><td class="right">23-29</td><td class="right"></td><td class="left">Encyclopedia of Life (EOL)</td><td class="left">Kyphosus cinerascens</td></tr>
-<tr><td class="left"></td><td class="right">27</td><td class="right">20.75</td><td class="left">Fishbase</td><td class="left">Kyphosus cinerascens</td></tr>
-<tr><td class="left"></td><td class="right">16.92-17.02</td><td class="right"></td><td class="left">EOL</td><td class="left">Scartichthys variolatus</td></tr>
-<tr><td class="left"></td><td class="right">14.66-17.65</td><td class="right"></td><td class="left"></td><td class="left">Callanthias allporti</td></tr>
+<tr><td class="left">SPF</td><td class="right">23-29</td><td class="right"></td><td class="left">Encyclopedia of Life (EOL)</td><td class="left">Kyphosus cinerascens</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">27</td><td class="right">20.75</td><td class="left">Fishbase</td><td class="left">Kyphosus cinerascens</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">16.92-17.02</td><td class="right"></td><td class="left">EOL</td><td class="left">Scartichthys variolatus</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">14.66-17.65</td><td class="right"></td><td class="left"></td><td class="left">Callanthias allporti</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">SBF</td><td class="right">17.07</td><td class="right"></td><td class="left">EOL</td><td class="left">Chironemus bicornis</td></tr>
-<tr><td class="left"></td><td class="right">13.27</td><td class="right">13.025</td><td class="left">EOL</td><td class="left">Plectranthias exsul</td></tr>
-<tr><td class="left"></td><td class="right">8.41-13.35</td><td class="right"></td><td class="left">EOL</td><td class="left">Helicolenus lengerichi</td></tr>
+<tr><td class="left">SBF</td><td class="right">17.07</td><td class="right"></td><td class="left">EOL</td><td class="left">Chironemus bicornis</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">13.27</td><td class="right">13.025</td><td class="left">EOL</td><td class="left">Plectranthias exsul</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">8.41-13.35</td><td class="right"></td><td class="left">EOL</td><td class="left">Helicolenus lengerichi</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">LBF</td><td class="right">5.44-25.74</td><td class="right"></td><td class="left">EOL</td><td class="left">Polyprion oxygeneios</td></tr>
-<tr><td class="left"></td><td class="right">15-21</td><td class="right">20.22</td><td class="left">Khan 2015</td><td class="left">Polyprion oxygeneios</td></tr>
-<tr><td class="left"></td><td class="right">16.92-17.02</td><td class="right"></td><td class="left">EOL</td><td class="left">Lotella fernandeziana</td></tr>
+<tr><td class="left">LBF</td><td class="right">5.44-25.74</td><td class="right"></td><td class="left">EOL</td><td class="left">Polyprion oxygeneios</td><td class="left">The range is too high so I didn't use it</td></tr>
+<tr><td class="left"></td><td class="right">15-21</td><td class="right">17.48</td><td class="left">Khan 2015</td><td class="left">Polyprion oxygeneios</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">16.92-17.02</td><td class="right"></td><td class="left">EOL</td><td class="left">Lotella fernandeziana</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">SCR</td><td class="right">8.46-13.87</td><td class="right">12.218</td><td class="left">EOL</td><td class="left">Paromola cuvieri</td></tr>
-<tr><td class="left"></td><td class="right">8.85-17.69</td><td class="right"></td><td class="left">EOL</td><td class="left">Ovalipes trimaculatus</td></tr>
+<tr><td class="left">SCR</td><td class="right">8.46-13.87</td><td class="right">12.218</td><td class="left">EOL</td><td class="left">Paromola cuvieri</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">8.85-17.69</td><td class="right"></td><td class="left">EOL</td><td class="left">Ovalipes trimaculatus</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">BCA</td><td class="right">14.04</td><td class="right"></td><td class="left">EOL</td><td class="left">Phymactis clematis</td></tr>
-<tr><td class="left"></td><td class="right">8.32-20.98</td><td class="right">17.37</td><td class="left">EOL</td><td class="left">Corynactis</td></tr>
-<tr><td class="left"></td><td class="right">15.7-21.3</td><td class="right"></td><td class="left">Delorme 2013</td><td class="left">Evechinus chloroticus</td></tr>
-<tr><td class="left"></td><td class="right">23.88</td><td class="right"></td><td class="left">EOL</td><td class="left">Centrostephanus asteriscus</td></tr>
+<tr><td class="left">BCA</td><td class="right">14.04</td><td class="right"></td><td class="left">EOL</td><td class="left">Phymactis clematis</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">8.32-20.98</td><td class="right">17.37</td><td class="left">EOL</td><td class="left">Corynactis</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">15.7-21.3</td><td class="right"></td><td class="left">Delorme 2013</td><td class="left">Evechinus chloroticus</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">23.88</td><td class="right"></td><td class="left">EOL</td><td class="left">Centrostephanus asteriscus</td><td class="left"></td></tr>
 </tbody>
 <tbody>
-<tr><td class="left">MOL</td><td class="right">14-20</td><td class="right">19.752</td><td class="left">Rabi and Maravi 1997</td><td class="left">Concholepas concholepas</td></tr>
-<tr><td class="left"></td><td class="right">20.69-24.32</td><td class="right"></td><td class="left">EOL</td><td class="left">Thacacera</td></tr>
+<tr><td class="left">MOL</td><td class="right">14-20</td><td class="right">19.752</td><td class="left">Rabi and Maravi 1997</td><td class="left">Concholepas concholepas</td><td class="left"></td></tr>
+<tr><td class="left"></td><td class="right">20.69-24.32</td><td class="right"></td><td class="left">EOL</td><td class="left">Thacacera</td><td class="left"></td></tr>
 </tbody>
 </table>
 
@@ -4368,6 +4371,35 @@ print(b)
 </table>
 
 </div>
+
+</div>
+
+<div id="outline-container-5-2-1-19" class="outline-5">
+<h5 id="sec-5-2-1-19">Mortality</h5>
+<div class="outline-text-5" id="text-5-2-1-19">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="right">LM (F<sub>initial</sub>)</th><th scope="col" class="left">Reference</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">SPL</td><td class="right">0.002507</td><td class="left">MPA model</td></tr>
+<tr><td class="left">GCR</td><td class="right">0.0009589041</td><td class="left">Canales2009</td></tr>
+<tr><td class="left">BRC</td><td class="right">0.000002</td><td class="left">Arancibia</td></tr>
+<tr><td class="left">ORO</td><td class="right">4.986301e-05</td><td class="left">Wiff2016</td></tr>
+<tr><td class="left">ALF</td><td class="right">0.0003383014</td><td class="left">Wiff2016</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.000001</td><td class="left">Guestimation</td></tr>
+<tr><td class="left">LPF</td><td class="right">0.000001</td><td class="left">Guestimation</td></tr>
+<tr><td class="left">SBF</td><td class="right">0.0000002</td><td class="left">Guestimation</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.0000001</td><td class="left">Guestimation</td></tr>
+<tr><td class="left">VID</td><td class="right">0.002739726</td><td class="left">Using CCL</td></tr>
+</tbody>
+</table>
+
+
+</div>
 </div>
 
 </div>
@@ -4517,7 +4549,7 @@ BioNum <span style="color: #ff4500; font-weight: bold;">&lt;-</span> init.number
 <span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
 data  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Nitrogen_by_Agegroup/age_length.csv'</span>)
 options(asciiType=<span style="color: #ffc125; font-weight: bold;">"org"</span>)
-<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
 <span style="color: #696969;">## </span><span style="color: #696969;">estimation of the weight at each age class or cohort</span>
 data$Weight     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(is.na(data$Weight), alometric(data$Length, data$alfa, data$beta), data$Weight)
 
@@ -4942,7 +4974,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-02-09T09:41+1100</p>
+<p class="date">Date: 2017-04-27T14:27+1000</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
