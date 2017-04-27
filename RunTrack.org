@@ -4134,3 +4134,109 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- SCR on BCA from 0.006 to 0.001
+- SCR on MOL from 0.01 to 0.001
+- BCA on Mol from 0.003 to 0.001
+***** ORO on SCR
+- Juv on Adl from 0.05 to 0.001
+- Adl on Adl from 0.05 to 0.005
+***** LBF on ANG
+- Adl on Juv from 0.01 to 0.05
+- Adl on Adl from 0.001 to 0.0005
+- Juv on Adl from 0.001 to 0.00005
+- Juv on Juv from 0.05 to 0.001
+***** LBF on SCR
+- Juv on Juv from 0.01 to 0.005
+- Juv on Adl from 0.01 to 0.001
+**** Clearance
+- BCA from 0.015 to 0.005
+- MOL from 0.04 to 0.03
+- COR from 0.03 to 0.05
+***** ANG
+- from  : 0.13 16.13 74.95 135.56 201.28 267.49 331.34 391.13 445.99 495.58
+- to    : 0.06 4.79 20.21 45.88 79.00 117.20 157.65 198.43 237.70 264.31
+***** LBF
+- from   : 141.21 174.41 217.39 251.70 293.45 361.43 418.12 454.44 509.87 569.79
+- to     : 13.96 19.26 26.94 33.68 42.55 58.46 72.99 82.87 98.75 116.97
+***** LPF
+- from : 8.85 165.77 367.12 506.61 585.71 627.02 647.81 658.09 663.14 665.60
+- to   : 5.39  78.25 161.67 216.92 247.63 263.53 271.49 275.42 277.35 278.29
+***** BRC
+- from : 10.91 19.75 30.15 41.72 55.09 71.46 89.99 105.88 121.25 137.57
+- to : 20.91 29.75 40.15 51.72 65.09 81.46 99.99  115.88  131.25  147.57
+***** VID
+- from :438.65 667.79 1051.19
+- to : 115.95  172.58  265.15
+***** ORO
+- from : 0.02 4.04 13.37 22.90 30.31 35.44 38.76 40.85 42.12 42.88
+- to : 0.02 2.38 7.23 11.91 15.46 17.87 19.42 20.39 20.97 21.33
+***** ALF
+- from : 2.36 9.26 18.09 28.70 40.15 51.71 62.85 73.22 82.70 91.10
+- to : 1.56 5.61 10.40 15.92 21.70 27.40 32.80 37.76 42.25 46.19
+***** SPF
+- from : 5.0 13.53 26.92 49.12 70.26 88.13 102.25 112.94 120.82 126.54
+- to : 0.12  2.88  8.56 15.16 21.29 26.41 30.41 33.42 35.63 37.23
+***** SBF
+- from : 7.06 12.90 21.29 35.90 55.23 87.47 110.62 174.41 220.49 274.03
+- to : 35.25  56.73  84.30  127.39  179.01  257.43  309.93  444.12  534.49  634.68
+**** Mum
+*** Increased
+**** Clearance
+- MOL from 0.032 to 0.04
+- SCR from 0.01 to 0.015
+**** Predation
+- BFF on DLsed from 0 to 0.00001
+- SCR on BFF from 0.001 to 0.005
+- BCA on BFF from 0 to 0.0005
+- MOL on BFF from 0.001 to 0.005
+- ALF on MZO from 0.1 to 0.2 (Juv on ADL and Juv)
+***** CHO on ANG
+- Juv on Adl from 0 to 0.00001
+- Juv on Juv from 0 to 0.001
+- Adl on Juv from 0 to 0.001
+- Adl on Adl from 0 to 0.0001
+**** Running time
+**** Mum
+**** Other paramteres
+***** Sediment penetration
+***** Vertical distribution LBF
+** Output
+*** Increase Biomass
+- SPL 2%
+- BRC 619%
+- ALF 1%
+- ANG 8082%
+- BIR 1%
+- SQD 14%
+- OCT 12%
+- LPF 5%
+- SPF 1%
+- SCR 85%
+- BCA 13%
+- MOL 109%
+*** Decreased biomass
+- VID 11%
+- ORO 2%
+- CHO 29%
+- SBF 50%
+- LBF 93%
+- BFF 30%
+- COR 64%
+- MA 58%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170426094003
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170426094003.png]]
+* Run 20170427092827
+  - Run start: 2017-04-27 09:28:27
+  - Run end: 2017-04-27 13:12:17
+  - log file : [[file:Calibration/20170427131217.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

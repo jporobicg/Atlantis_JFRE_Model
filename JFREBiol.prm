@@ -3463,13 +3463,14 @@ pPREYLZO  37
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0 0 0 5e-04 0 0 0 0 0 0.001 0 0 0 1e-05 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0.01 0.005 0 0 0 0
 pPREYCOR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0 0 0
 pPREYBCA  37
-1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0.003 5e-04 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 0 0 0
+1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0.001 0 1e-06 0 0 0.2 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0.001 0 1e-06 0.001 0 0 0 0 0
+
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3880,10 +3881,10 @@ C_VID   3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 115.95  172.58  265.15
 C_ORO   10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 0.02 2.38 7.23 11.91 15.46 17.87 19.42 20.39 20.97 21.33
-C_ALF 10 #  Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
+C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 1.56 5.61 10.40 15.92 21.70 27.40 32.80 37.76 42.25 46.19
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-0.06 4.79 20.21 45.88 79.00 117.20 157.65 198.43 237.70 264.31
+0.03  2.39  10.10  22.94  39.50  58.60  78.83  99.22  118.85 264.31
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 5.39 78.25 161.67 216.92 247.63 263.53 271.49 275.42 277.35 278.29
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
@@ -3892,6 +3893,7 @@ C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 35.25  56.73  84.30  127.39  179.01  257.43  309.93  444.12  534.49  634.68
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 13.96 19.26 26.94 33.68 42.55 58.46 72.99 82.87 98.75 116.97
+11.17 15.41 21.55 26.94 34.04 46.77 58.39 66.29 79.00 93.57
 C_CHO 10 # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 5.10	16.28	29.51	42.66	54.70	65.23	74.16	81.58	87.67	92.62
 C_DOL 10
@@ -4211,7 +4213,7 @@ EDL_SZO   0.1 # Assim efficiency on labile detritus of Small Zooplankton
 EDL_MZO   0.02 # Assim efficiency on labile detritus of Medium Zooplankton
 EDL_LZO   0 # Assim efficiency on labile detritus of Large Zooplankton
 EDL_SCR   0.4 # Assim efficiency on labile detritus of Small crustaceans
-EDL_BFF   0.2  # Assim efficiency on labile detritus of Deposit feeders
+EDL_BFF   0.3  # Assim efficiency on labile detritus of Deposit feeders
 EDL_LPH   0 # Assim efficiency on labile detritus of Large phytoplankton
 EDL_SPH   0 # Assim efficiency on labile detritus of Small phytoplankton
 EDL_BCA   0.2 # Assim efficiency on labile detritus of Benthic Carnivorous
@@ -4242,8 +4244,8 @@ EDR_LBF   0 # Assim efficiency on refractory detritus of Large benthic fish
 EDR_SZO   0.05 # Assim efficiency on refractory detritus of Small Zooplankton
 EDR_MZO   0.02 # Assim efficiency on refractory detritus of Medium Zooplankton
 EDR_LZO   0.02 # Assim efficiency on refractory detritus of Large Zooplankton
-EDR_SCR   0.001 # Assim efficiency on refractory detritus of Small crustaceans
-EDR_BFF   0 # Assim efficiency on refractory detritus of Deposit feeders
+EDR_SCR   0.01 # Assim efficiency on refractory detritus of Small crustaceans
+EDR_BFF   0.05 # Assim efficiency on refractory detritus of Deposit feeders
 EDR_LPH   0 # Assim efficiency on refractory detritus of Large phytoplankton
 EDR_SPH   0 # Assim efficiency on refractory detritus of Small phytoplankton
 EDR_BCA   0 # Assim efficiency on refractory detritus of Benthic Carnivorous
