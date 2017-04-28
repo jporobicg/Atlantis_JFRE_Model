@@ -4373,3 +4373,38 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Clearance
+***** ANG
+- from : 0.03  2.39  10.10  22.94  39.50  58.60  78.83  99.22  118.85 264.31
+- to : 0.03  2.16  8.18  16.57 25.28 32.96 38.62 41.92 42.79 39.98
+***** LBF
+- from : 11.17 15.41 21.55 26.94 34.04 46.77 58.39 66.29 79.00 93.57
+- to : 8.38  11.56 16.16 20.21 25.53 35.07 43.79 49.72 59.25 70.18
+**** Mum
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+**** Other paramteres
+***** Efficiency
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170427161117
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170427161117.png]]
+* Run 20170428084210
+  - Run start: 2017-04-28 08:42:10
+  - Run end: 2017-04-28 11:12:11
+  - log file : [[file:Calibration/20170428111211.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

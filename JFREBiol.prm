@@ -3465,11 +3465,11 @@ pPREYSCR  37
 pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0.01 0.005 0 0 0 0
 pPREYCOR  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.001 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 0 0 0 0 0
 pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0.001 0 1e-06 0.001 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0.001 0 1e-06 0.005 0 0 0 0 0
 
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
@@ -3913,8 +3913,8 @@ mum_MZO_T15   0.005     #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.02      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.06     #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-mum_BCA_T15   0.23     #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
-mum_MOL_T15   0.68     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_BCA_T15   0.0023     #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
+mum_MOL_T15   0.01     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_BB_T15    1.5      #  Growth rate of sediment bacteria
 
@@ -4202,8 +4202,8 @@ EDL_CET   0 # Assim efficiency on labile detritus of Cetaceans
 EDL_DOL   0 # Assim efficiency on labile detritus of Cetaceans
 EDL_BIR   0 # Assim efficiency on labile detritus of Birds
 EDL_OCT   0 # Assim efficiency on labile detritus of Octupus
-EDL_SQD   0 # Assim efficiency on labile detritus of Octupus
-EDL_COR   0 # Assim efficiency on labile detritus of Octupus
+EDL_SQD   0.01 # Assim efficiency on labile detritus of Squid
+EDL_COR   0.01 # Assim efficiency on labile detritus of Octupus
 EDL_LPF   0 # Assim efficiency on labile detritus of Large pelagic fish
 EDL_SPF   0 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_SBF   0 # Assim efficiency on labile detritus of Small benthic fish
