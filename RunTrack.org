@@ -4452,3 +4452,39 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Clearance
+***** ANG
+***** LBF
+**** Mum
+- SCR from 0.02 to 0.005
+- MOL from  0.01 to 0.005
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+**** Other paramteres
+***** Efficiency
+** Output
+*** Increase Biomass
+- COR 29%
+- BCA 17%
+- MOL 14%
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170428115622
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170428115622.png]]
+* Run 20170428140234
+  - Run start: 2017-04-28 14:02:34
+  - Run end: 2017-04-28 17:26:00
+  - log file : [[file:Calibration/20170428172600.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
