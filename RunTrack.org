@@ -4488,3 +4488,65 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+- SPF on MA from 0.2 to 0.1 (Adl to juv and Adl)
+- SPF on MA from 0.1 to 0.05 (Juv to Adl)
+- SPF on SCR from 0.1 to 0.005 (Juv - Juv)
+- SPF on SCR from 0.1 to 0.01
+- ANG on SCR from 0.001 to 0.00005 (Adl - Adl)
+- ANG on SCR from 0.005 to 0.0005 (Adl - Juv)
+- ANG on SCR from 0.005 to 0.0005 (Juv - Juv)
+- ANG on SCR from 0.005 to 0.00005 (Juv - Adl)
+***** SPF on MZO
+- from 0.1 to 0.05 (Adl - Juv)
+- from 0.1 to 0.05 (Juv - Juv)
+- from 0.15 to 0.075 (Juv - Adl and Adlt Adlt)
+**** Clearance
+- SCR from 0.015 to 0.008
+***** SBF
+- from : 35.25 56.73 84.30 127.39 179.01 257.43 309.93 444.12 534.49 634.68
+- to : 5.18  7.74  10.82 15.32 20.42 27.74 32.45 43.95 51.39 59.40
+***** SPF
+- from : 0.12  2.88  8.56 15.16 21.29 26.41 30.41 33.42 35.63 37.23
+- to : 0.10  2.21  6.59  11.66 16.38 20.31 23.39 25.71 27.41 28.64
+**** Mum
+***** ANG
+- from : 0.4449315  1.5428652  3.0478317  4.6227768  6.1454627  7.5566333 8.8315589  9.9646368 10.9605381  8.1566949
+- to :  0.01 0.5 0.8 1.1 1.5 1.8 2.2 2.5 2.6 2.6
+***** LBF
+- from : 4.311205  6.836539  6.465918  9.885405 24.550388 29.848830 30.408209 42.626556 53.365632 36.556247
+- to : 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+**** Other paramteres
+***** Efficiency
+** Output
+*** Increase Biomass
+- BRC 16%
+- SCR 32%
+- BCA 66%
+- MOL 16%
+*** Decreased biomass
+- SBF 24%
+- LBF 89%
+- COR 25%
+- MA 24%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170428140234
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170428140234.png]]
+* Run 20170501113103
+  - Run start: 2017-05-01 11:31:03
+  - Run end: 2017-05-01 17:54:13
+  - log file : [[file:Calibration/20170501175413.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

@@ -3690,47 +3690,42 @@ KUP_BFF   0.01 # Upper prey selection size limit for Deposit feeders [ Number ]
 KUP_BCA   0.01 # Upper prey selection size limit for Benthic Carnivorous [ Number ]
 KUP_MOL   0.01 # Upper prey selection size limit for Mollusca [ Number ]
 
-Kmax_coefft_SPL   6 # Steepness of the smooth feeding window curve of the predator  Spiny lobster
-Kmax_coefft_GCR   6 # Steepness of the smooth feeding window curve of the predator  Golden Crab
-Kmax_coefft_BRC   6 # Steepness of the smooth feeding window curve of the predator  Breca
-Kmax_coefft_VID   6 # Steepness of the smooth feeding window curve of the predator  Vidriola
-Kmax_coefft_ORO   6 # Steepness of the smooth feeding window curve of the predator  Orange Roughy
-Kmax_coefft_ALF   6 # Steepness of the smooth feeding window curve of the predator  Alfonsino
-Kmax_coefft_ANG   6 # Steepness of the smooth feeding window curve of the predator  Anguila
-Kmax_coefft_CHO   6 # Steepness of the smooth feeding window curve of the predator  Chondrichtyans
-Kmax_coefft_OTA   6 # Steepness of the smooth feeding window curve of the predator  Otariid
-Kmax_coefft_DOL   6 # Steepness of the smooth feeding window curve of the predator  Dophins
-Kmax_coefft_CET   6 # Steepness of the smooth feeding window curve of the predator  Whales
-Kmax_coefft_BIR   6 # Steepness of the smooth feeding window curve of the predator  Birds
-Kmax_coefft_OCT   6 # Steepness of the smooth feeding window curve of the predator  Octupus
-Kmax_coefft_SQD   6 # Steepness of the smooth feeding window curve of the predator  Octupus
-Kmax_coefft_COR   6 # Steepness of the smooth feeding window curve of the predator  Octupus
-Kmax_coefft_LPF   6 # Steepness of the smooth feeding window curve of the predator  Large pelagic fish
-Kmax_coefft_SPF   6 # Steepness of the smooth feeding window curve of the predator  Small pelagic fish
-Kmax_coefft_SBF   6 # Steepness of the smooth feeding window curve of the predator  Small benthic fish
-Kmax_coefft_LBF   6 # Steepness of the smooth feeding window curve of the predator  Large benthic fish
-Kmax_coefft_SZO   6 # Steepness of the smooth feeding window curve of the predator  Small Zooplankton
-Kmax_coefft_MZO   6 # Steepness of the smooth feeding window curve of the predator  Medium Zooplankton
-Kmax_coefft_LZO   6 # Steepness of the smooth feeding window curve of the predator  Large Zooplankton
-Kmax_coefft_SCR   6 # Steepness of the smooth feeding window curve of the predator  Small crustaceans
-Kmax_coefft_BFF   6 # Steepness of the smooth feeding window curve of the predator  Deposit feeders
-Kmax_coefft_LPH   6 # Steepness of the smooth feeding window curve of the predator  Large phytoplankton
-Kmax_coefft_SPH   6 # Steepness of the smooth feeding window curve of the predator  Small phytoplankton
-Kmax_coefft_BCA   6 # Steepness of the smooth feeding window curve of the predator  Benthic Carnivorous
-Kmax_coefft_MOL   6 # Steepness of the smooth feeding window curve of the predator  Mollusca
-Kmax_coefft_MA    6 # Steepness of the smooth feeding window curve of the predator  Macroalgae
-Kmax_coefft_PB    6 # Steepness of the smooth feeding window curve of the predator  Pelagic Bacteria
-Kmax_coefft_BB    6 # Steepness of the smooth feeding window curve of the predator  Sediment Bacteria
-Kmax_coefft_DL    6 # Steepness of the smooth feeding window curve of the predator  Labile detritus
-Kmax_coefft_DR    6 # Steepness of the smooth feeding window curve of the predator  Refractory detritrus
-Kmax_coefft_DC    6 # Steepness of the smooth feeding window curve of the predator  Carrion
+Kmax_coefft_SPL   0.6 # Steepness of the smooth feeding window curve of the predator  Spiny lobster
+Kmax_coefft_GCR   0.6 # Steepness of the smooth feeding window curve of the predator  Golden Crab
+Kmax_coefft_BRC   0.6 # Steepness of the smooth feeding window curve of the predator  Breca
+Kmax_coefft_VID   0.6 # Steepness of the smooth feeding window curve of the predator  Vidriola
+Kmax_coefft_ORO   0.6 # Steepness of the smooth feeding window curve of the predator  Orange Roughy
+Kmax_coefft_ALF   0.6 # Steepness of the smooth feeding window curve of the predator  Alfonsino
+Kmax_coefft_ANG   0.6 # Steepness of the smooth feeding window curve of the predator  Anguila
+Kmax_coefft_CHO   0.6 # Steepness of the smooth feeding window curve of the predator  Chondrichtyans
+Kmax_coefft_OTA   0.6 # Steepness of the smooth feeding window curve of the predator  Otariid
+Kmax_coefft_DOL   0.6 # Steepness of the smooth feeding window curve of the predator  Dophins
+Kmax_coefft_CET   0.6 # Steepness of the smooth feeding window curve of the predator  Whales
+Kmax_coefft_BIR   0.6 # Steepness of the smooth feeding window curve of the predator  Birds
+Kmax_coefft_OCT   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
+Kmax_coefft_SQD   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
+Kmax_coefft_COR   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
+Kmax_coefft_LPF   0.6 # Steepness of the smooth feeding window curve of the predator  Large pelagic fish
+Kmax_coefft_SPF   0.6 # Steepness of the smooth feeding window curve of the predator  Small pelagic fish
+Kmax_coefft_SBF   0.6 # Steepness of the smooth feeding window curve of the predator  Small benthic fish
+Kmax_coefft_LBF   0.6 # Steepness of the smooth feeding window curve of the predator  Large benthic fish
+Kmax_coefft_SZO   0.6 # Steepness of the smooth feeding window curve of the predator  Small Zooplankton
+Kmax_coefft_MZO   0.6 # Steepness of the smooth feeding window curve of the predator  Medium Zooplankton
+Kmax_coefft_LZO   0.6 # Steepness of the smooth feeding window curve of the predator  Large Zooplankton
+Kmax_coefft_SCR   0.6 # Steepness of the smooth feeding window curve of the predator  Small crustaceans
+Kmax_coefft_BFF   0.6 # Steepness of the smooth feeding window curve of the predator  Deposit feeders
+Kmax_coefft_LPH   0.6 # Steepness of the smooth feeding window curve of the predator  Large phytoplankton
+Kmax_coefft_SPH   0.6 # Steepness of the smooth feeding window curve of the predator  Small phytoplankton
+Kmax_coefft_BCA   0.6 # Steepness of the smooth feeding window curve of the predator  Benthic Carnivorous
+Kmax_coefft_MOL   0.6 # Steepness of the smooth feeding window curve of the predator  Mollusca
+Kmax_coefft_MA    0.6 # Steepness of the smooth feeding window curve of the predator  Macroalgae
+Kmax_coefft_PB    0.6 # Steepness of the smooth feeding window curve of the predator  Pelagic Bacteria
+Kmax_coefft_BB    0.6 # Steepness of the smooth feeding window curve of the predator  Sediment Bacteria
+Kmax_coefft_DL    0.6 # Steepness of the smooth feeding window curve of the predator  Labile detritus
+Kmax_coefft_DR    0.6 # Steepness of the smooth feeding window curve of the predator  Refractory detritrus
+Kmax_coefft_DC    0.6 # Steepness of the smooth feeding window curve of the predator  Carrion
 
 # Following parameters required for read-in, but as these species don't eat age-structured groups, not used as yet
-#CHO_sn   11103.10    # Size biomass pool to available to be  consume Chondrichtyans [ mg N ]
-#OTA_sn   225907.23   # Size biomass pool to available to be  consume Otariid [ mg N ]
-#DOL_sn   1123528.00  # Size biomass pool to available to be  consume Dophins [ mg N ]
-#CET_sn   70211487.62 # Size biomass pool to available to be  consume Cetaceans [ mg N ]
-#BIR_sn   1778.42     # Size biomass pool to available to be  consume Birds [ mg N ]
 OCT_sn   1737.56     # Size biomass pool to available to be  consume Octupus [ mg N ]
 SQD_sn   1737.56     # Size biomass pool to available to be  consume Octupus [ mg N ]
 COR_sn   90.0        # Size biomass pool to available to be  consume Octupus [ mg N ]
