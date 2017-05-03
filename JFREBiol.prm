@@ -2166,6 +2166,19 @@ FBIR_S1juv 51
 # water column layer in day and night). First entry for each vector refers to water
 # column layer closest to the sediment and then up through the watercolumn to
 # surface most layer on the extreme right
+
+# ALF	0	0.051	0.268	0.58	0.046	0.055	0	0	1
+# ANG	0	0	0	0	0	0.146	0.491	0.363	1
+# BRC-Adult	0	0	0	0.085	0.12	0.668	0.071	0.056	1
+# BRC-Juvenil	0	0	0	0.013	0.095	0.728	0.106	0.058	1
+# CHO	0	0	0	0.087	0.13	0.653	0.065	0.065	1
+# LBF	0	0	0	0	0.136	0.728	0.121	0.015	1
+# LPF	0	0	0	0	0.003	0.03	0.125	0.842	1
+# ORO	0	0.649	0.347	0.004	0	0	0	0	1
+# SBF	0	0	0	0	0.063	0.82	0.054	0.063	1
+# SPF	0	0	0	0	0.07	0.432	0.164	0.334	1
+# VID	0	0	0	0	0.005	0.269	0.586	0.14	1
+
 VERTday_SPL1 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 VERTnight_SPL1 8
