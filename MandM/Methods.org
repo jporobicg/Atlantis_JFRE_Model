@@ -1053,42 +1053,77 @@ fi
 
 - *Day-nigth distribution*
   - Vertebrates
-    | FG      | JvAd     | Layer 8 | Layer 7 | Layer 6 | Layer 5 | Layer 4 | Layer 3 | Layer 2 | Layer 1 |
-    |---------+----------+---------+---------+---------+---------+---------+---------+---------+---------|
-    | Anguila | Both     |    1.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |
-    | BRC     | Adult    |    0.07 |    0.07 |    0.01 |    0.06 |    0.36 |    0.21 |    0.14 |    0.09 |
-    | BRC     | Juvenile |    0.01 |    0.04 |    0.03 |    0.03 |    0.37 |    0.21 |    0.22 |    0.09 |
-    | CHO     | Both     |    0.00 |    0.13 |    0.00 |    0.09 |    0.37 |    0.22 |    0.09 |    0.11 |
-    | LBF     | Both     |    0.19 |    0.45 |    0.17 |    0.09 |    0.09 |    0.01 |    0.00 |    0.00 |
-    | LPF     | Both     |    0.00 |    0.00 |    0.00 |    0.00 |    0.00 |    0.01 |    0.04 |    0.95 |
-    | SBF     | Both     |    0.77 |    0.03 |    0.08 |    0.00 |    0.02 |    0.04 |    0.01 |    0.05 |
-    | SPF     | Both     |    0.00 |    0.01 |    0.00 |    0.06 |    0.13 |    0.19 |    0.13 |    0.49 |
-    | VID     | Both     |    0.00 |    0.00 |    0.00 |    0.01 |    0.12 |    0.07 |    0.10 |    0.70 |
 
-
-
-
-       | FG  | JvAd  | Ligth |      Deepest |              |              |              |              |              |              |      Surface | Source         |
-       |-----+-------+-------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+----------------|
-       | ANG | Both  | Both  |            1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-       | BRC | Adult | Both  |  0.065894115 | 0.0665757782 | 0.0077255169 | 0.0645307885 | 0.3583276528 | 0.2094978414 | 0.1376959782 |  0.089752329 | Billy Database |
-       | BRC | Juv   | Both  | 0.0084033613 |  0.037214886 | 0.0288115246 | 0.0336134454 | 0.3709483794 | 0.2088835534 | 0.2172869148 | 0.0948379352 | Billy Database |
-       | LBF | Both  | Both  |            0 | 0.0535714286 |            0 | 0.1160714286 | 0.4553571429 | 0.2053571429 | 0.0982142857 | 0.0714285714 | Billy Database |
-       | LPF | Both  | Both  |            0 |            0 |            0 | 0.0031051079 | 0.0009315324 | 0.0099363453 | 0.0353206024 |  0.950706412 | Billy Database |
-       | SBF | Both  | Both  |  0.223316913 | 0.2561576355 | 0.1871921182 |  0.144499179 | 0.0870279146 | 0.0295566502 |  0.039408867 | 0.0328407225 | Billy Database |
-       | SPF | Both  | Both  |            0 |            0 |            0 | 0.0684931507 |            0 | 0.0904109589 | 0.1246575342 | 0.7164383562 | Billy Database |
-       | VID | Both  | Both  |            0 |            0 |            0 | 0.0051813472 | 0.1191709845 |  0.067357513 |  0.103626943 | 0.7046632124 | Billy Database |
-       | ALF | Both  | Both  |  0.119487909 | 0.0871266003 | 0.1123755334 | 0.4327880512 | 0.1470483642 | 0.0460526316 | 0.0551209104 |            0 | Billy Database |
-       | ORO | Both  | Both  | 0.4119850187 |  0.240948814 | 0.3121098627 | 0.0312109863 | 0.0037453184 |            0 |            0 |            0 | Billy Database |
-       |     |       |       |              |              |              |              |              |              |              |              |                |
-    #+CAPTION: Relative vertical Distribution of Vertebrates according to their maximimum and minimum depth
-    #+ATTR_HTML: width="600" alt="image"
-    [[/home/demiurgo/Documents/PhD/Functional_groups/Depth/relative_Functional_groups.png]]
-    #+CAPTION: Relative vertical Distribution of Orange Roughy and Algonsino according to their maximimum and minimum depth
-    #+ATTR_HTML: width="600" alt="image"
-  [[/home/demiurgo/Documents/PhD/Functional_groups/Depth/alf_orang/relative_Industrial_groups.png]]
-  @<br style="clear:both;" />
-
+#+BEGIN_SRC R :results output
+  #-----------------------------------------#
+  #  obtener los limites de las capturas    #
+  #-----------------------------------------#
+  rm(list = ls())
+  ## Data~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  library(ascii)
+  options(asciiType = "org")
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  lc <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Depth/Species_depth.csv')
+  layer.depths      <- c(20, 50, 150, 250, 400, 650, 1000, 4300)
+  avgph             <- mean(lc$Captain_fathom,  na.rm = TRUE)
+  lc$Captain_fathom <- ifelse(is.na(lc$Captain_fathom), avgph, lc$Captain_fathom)
+  lc$Depth          <- lc$Captain_fathom * lc$Braz
+  lc$Total_unit[is.na(lc$Total_unit)]      <- 0    # Removing the NA
+  lc$Total_unit[which(lc$Total_unit == 0)] <- 1    # Removing the 0
+  #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ##Divdiden by layer
+  lc$layer <- ifelse(lc$Depth <= layer.depths[1], 1,
+              ifelse(lc$Depth <= layer.depths[2], 2,
+              ifelse(lc$Depth <= layer.depths[3], 3,
+              ifelse(lc$Depth <= layer.depths[4], 4,
+              ifelse(lc$Depth <= layer.depths[5], 5,
+              ifelse(lc$Depth <= layer.depths[6], 6,
+              ifelse(lc$Depth <= layer.depths[7], 7, 8)))))))
+  ## Expand rows based on the values on the column
+  lc <- dup.row(lc, 2)
+  ## Grupos funcionales
+  lc <- FG(lc, 1)
+  ##-----------
+  ##  Divide by functional group
+  ##---------------
+  lc.fg      <- split(lc, lc$FG)           # split by functional group
+  lc.fg      <- lc.fg[ - c(2, 7)]          # Remove the Sea Urchin and octopus
+  lc.fg[[2]] <- stage(lc.fg[[2]], 8, 282)  # Based on Ribara thesis
+  ##  Distribution by layers
+  depth <- data.frame(specie = names(lc.fg),
+                      min    = c(0, 0, 0, 0, 0, 0, 0, 0),
+                      max    = c(8, 8, 8, 8, 8, 8, 8, 8))
+  ##++++++++++++++++++++
+  ## Real depth location
+  ##++++++++++++++++++++
+  out <- hist.deph(lc.fg, col.val = 10, dep.lim = depth, n.file = 'Functional_groups')
+  out <- t(out)
+  colnames(out) <- paste('layer', rep(8 : 1))
+  cap           <- 'Proportion of FG by layer'
+  b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
+  print(b)
+#+END_SRC
+#+CAPTION: Proportion of FG by layer
+|                    |      layer 8 |      layer 7 |      layer 6 |      layer 5 |      layer 4 |      layer 3 |      layer 2 | layer 1 |
+|--------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+---------|
+| Anguila            |        0.000 |        0.000 |        0.000 |        0.000 |        0.000 |        0.146 |        0.491 |   0.363 |
+| Breca-Adult        |        0.000 |        0.000 |        0.000 |        0.085 |        0.120 |        0.668 |        0.071 |   0.056 |
+| Breca-Juvenil      |        0.000 |        0.000 |        0.000 |        0.013 |        0.095 |        0.729 |        0.106 |   0.058 |
+| CHO                |        0.000 |        0.000 |        0.000 |        0.087 |        0.130 |        0.652 |        0.065 |   0.065 |
+| Large benthic fish |        0.000 |        0.000 |        0.000 |        0.000 |        0.136 |        0.727 |        0.121 |   0.015 |
+| Large pelagic fish |        0.000 |        0.000 |        0.000 |        0.000 |        0.003 |        0.030 |        0.125 |   0.842 |
+| Small benthic fish |        0.000 |        0.000 |        0.000 |        0.000 |        0.063 |        0.819 |        0.054 |   0.063 |
+| Small pelagic fish |        0.000 |        0.000 |        0.000 |        0.000 |        0.070 |        0.433 |        0.164 |   0.334 |
+| Vidriola           |        0.000 |        0.000 |        0.000 |        0.000 |        0.005 |        0.269 |        0.585 |   0.140 |
+| ALF                |  0.119487909 | 0.0871266003 | 0.1123755334 | 0.4327880512 | 0.1470483642 | 0.0460526316 | 0.0551209104 |       0 |
+| ORO                | 0.4119850187 |  0.240948814 | 0.3121098627 | 0.0312109863 | 0.0037453184 |            0 |            0 |       0 |
+|                    |              |              |              |              |              |              |              |         |
+#+ATTR_HTML: width="600" alt="image"
+[[img/Functional_groups.png]]
+#+CAPTION: Relative vertical Distribution of Orange Roughy and Algonsino according to their maximimum and minimum depth
+#+ATTR_HTML: width="600" alt="image"
+[[/home/demiurgo/Documents/PhD/Functional_groups/Depth/alf_orang/relative_Industrial_groups.png]]
+@<br style="clear:both;" />
   - Invertebrates
          | FG  | Light | Deepest layer |              |              |              |              |              |              |      Surface | Source         |
          |-----+-------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+----------------|
@@ -1504,26 +1539,26 @@ fi
     print(b)
   #+END_SRC
   #+RESULTS:
-=#+CAPTION: Clearance by cohort for some functional groups [m3d-1]
-|     | 1       | 2       | 3       | 4       | 5       | 6       | 7       | 8       | 9       | 10      |
-|-----+---------+---------+---------+---------+---------+---------+---------+---------+---------+---------|
-| ALF | 1.56    | 5.61    | 10.40   | 15.92   | 21.70   | 27.40   | 32.80   | 37.76   | 42.25   | 46.19   |
-| ANG | 0.03    | 2.16    | 8.18    | 16.57   | 25.28   | 32.96   | 38.62   | 41.92   | 42.79   | 39.98   |
-| BIR | 0.38    | 1.24    | 2.33    | 3.47    | 4.57    | 5.58    | 6.49    | 7.28    | 7.96    | 8.55    |
-| BRC | 20.91   | 29.75   | 40.15   | 51.72   | 65.09   | 81.46   | 99.99   | 115.88  | 131.25  | 147.57  |
-| CET | 3111.88 | 3599.63 | 3851.93 | 3978.84 | 4041.87 | 4072.98 | 4088.28 | 4095.80 | 4099.50 | 4101.31 |
-| CHO | 5.10    | 16.28   | 29.51   | 42.66   | 54.70   | 65.23   | 74.16   | 81.58   | 87.67   | 92.62   |
-| DOL | 13.39   | 43.88   | 81.51   | 120.50  | 157.67  | 191.46  | 221.26  | 246.99  | 268.89  | 287.32  |
-| GCR | 0.03    | 0.10    | 0.22    | 0.37    | 0.55    | 0.73    | 0.90    | 1.04    | 1.19    | 1.32    |
-| LBF | 8.38    | 11.56   | 16.16   | 20.21   | 25.53   | 35.07   | 43.79   | 49.72   | 59.25   | 70.18   |
-| LPF | 5.39    | 78.25   | 161.67  | 216.92  | 247.63  | 263.53  | 271.49  | 275.42  | 277.35  | 278.29  |
-| OCT | 480.00  |         |         |         |         |         |         |         |         |         |
-| ORO | 0.02    | 2.38    | 7.23    | 11.91   | 15.46   | 17.87   | 19.42   | 20.39   | 20.97   | 21.33   |
-| OTA | 350.36  | 483.53  | 598.37  | 693.28  | 769.64  | 830.00  | 877.13  | 913.62  | 941.69  | 963.18  |
-| SBF | 5.18    | 7.74    | 10.82   | 15.32   | 20.42   | 27.74   | 32.45   | 43.95   | 51.39   | 59.40   |
-| SPF | 0.10    | 2.21    | 6.59    | 11.66   | 16.38   | 20.31   | 23.39   | 25.71   | 27.41   | 28.64   |
-| SPL | 0.90    | 1.07    | 1.27    | 1.48    | 1.74    | 1.97    | 2.20    | 2.40    | 2.61    | 2.84    |
-| VID | 115.95  | 172.58  | 265.15  |         |         |         |         |         |         |         |
+#+CAPTION: Clearance by cohort for some functional groups [m3d-1]
+|     | 1       | 2       | 3        | 4        | 5        | 6         | 7         | 8         | 9         | 10        |
+|-----+---------+---------+----------+----------+----------+-----------+-----------+-----------+-----------+-----------|
+| ALF | 1.56    | 5.61    | 10.40    | 15.92    | 21.70    | 27.40     | 32.80     | 37.76     | 42.25     | 46.19     |
+| ANG | 0.03    | 2.16    | 8.18     | 16.57    | 25.28    | 32.96     | 38.62     | 41.92     | 42.79     | 39.98     |
+| BIR | 3.76    | 12.42   | 23.27    | 34.66    | 45.67    | 55.82     | 64.88     | 72.81     | 79.64     | 85.46     |
+| BRC | 13.94   | 19.83   | 26.76    | 34.48    | 43.40    | 54.31     | 66.66     | 77.25     | 87.50     | 98.38     |
+| CET | 3111.88 | 3599.63 | 15915.38 | 36376.84 | 99471.12 | 260670.55 | 331150.95 | 409580.40 | 496039.09 | 693121.22 |
+| CHO | 36.43   | 116.28  | 210.78   | 304.71   | 390.74   | 465.91    | 529.69    | 582.73    | 626.24    | 661.56    |
+| DOL | 13.39   | 43.88   | 81.51    | 120.50   | 157.67   | 191.46    | 221.26    | 246.99    | 268.89    | 287.32    |
+| GCR | 0.03    | 0.10    | 0.22     | 0.37     | 0.55     | 0.73      | 0.90      | 1.04      | 1.19      | 1.32      |
+| LBF | 8.38    | 11.56   | 16.16    | 20.21    | 25.53    | 35.07     | 43.79     | 49.72     | 59.25     | 70.18     |
+| LPF | 5.39    | 78.25   | 161.67   | 216.92   | 247.63   | 263.53    | 271.49    | 275.42    | 277.35    | 278.29    |
+| OCT | 480.00  |         |          |          |          |           |           |           |           |           |
+| ORO | 0.02    | 2.38    | 7.23     | 11.91    | 15.46    | 17.87     | 19.42     | 20.39     | 20.97     | 21.33     |
+| OTA | 350.36  | 483.53  | 598.37   | 693.28   | 769.64   | 830.00    | 877.13    | 913.62    | 941.69    | 963.18    |
+| SBF | 5.18    | 7.74    | 10.82    | 15.32    | 20.42    | 27.74     | 32.45     | 43.95     | 51.39     | 59.40     |
+| SPF | 0.10    | 2.21    | 6.59     | 11.66    | 16.38    | 20.31     | 23.39     | 25.71     | 27.41     | 28.64     |
+| SPL | 0.90    | 1.07    | 1.27     | 1.48     | 1.74     | 1.97      | 2.20      | 2.40      | 2.61      | 2.84      |
+| VID | 89.19   | 132.76  | 203.96   |          |          |           |           |           |           |           |
 
 #+ATTR_HTML: width="600" alt="image"
 [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]

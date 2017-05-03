@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-04-27T14:27+1000"/>
+<meta name="generated" content="2017-05-03T16:42+1000"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -2365,25 +2365,6 @@ print(b)
 <li><b>Day-nigth distribution</b>
 <ul>
 <li>Vertebrates
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
-</colgroup>
-<thead>
-<tr><th scope="col" class="left">FG</th><th scope="col" class="left">JvAd</th><th scope="col" class="right">Layer 8</th><th scope="col" class="right">Layer 7</th><th scope="col" class="right">Layer 6</th><th scope="col" class="right">Layer 5</th><th scope="col" class="right">Layer 4</th><th scope="col" class="right">Layer 3</th><th scope="col" class="right">Layer 2</th><th scope="col" class="right">Layer 1</th></tr>
-</thead>
-<tbody>
-<tr><td class="left">Anguila</td><td class="left">Both</td><td class="right">1.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td></tr>
-<tr><td class="left">BRC</td><td class="left">Adult</td><td class="right">0.07</td><td class="right">0.07</td><td class="right">0.01</td><td class="right">0.06</td><td class="right">0.36</td><td class="right">0.21</td><td class="right">0.14</td><td class="right">0.09</td></tr>
-<tr><td class="left">BRC</td><td class="left">Juvenile</td><td class="right">0.01</td><td class="right">0.04</td><td class="right">0.03</td><td class="right">0.03</td><td class="right">0.37</td><td class="right">0.21</td><td class="right">0.22</td><td class="right">0.09</td></tr>
-<tr><td class="left">CHO</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.13</td><td class="right">0.00</td><td class="right">0.09</td><td class="right">0.37</td><td class="right">0.22</td><td class="right">0.09</td><td class="right">0.11</td></tr>
-<tr><td class="left">LBF</td><td class="left">Both</td><td class="right">0.19</td><td class="right">0.45</td><td class="right">0.17</td><td class="right">0.09</td><td class="right">0.09</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.00</td></tr>
-<tr><td class="left">LPF</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.04</td><td class="right">0.95</td></tr>
-<tr><td class="left">SBF</td><td class="left">Both</td><td class="right">0.77</td><td class="right">0.03</td><td class="right">0.08</td><td class="right">0.00</td><td class="right">0.02</td><td class="right">0.04</td><td class="right">0.01</td><td class="right">0.05</td></tr>
-<tr><td class="left">SPF</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.00</td><td class="right">0.06</td><td class="right">0.13</td><td class="right">0.19</td><td class="right">0.13</td><td class="right">0.49</td></tr>
-<tr><td class="left">VID</td><td class="left">Both</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.12</td><td class="right">0.07</td><td class="right">0.10</td><td class="right">0.70</td></tr>
-</tbody>
-</table>
-
 </li>
 </ul>
 
@@ -2394,36 +2375,83 @@ print(b)
 
 
 
+<pre class="src src-R"><span style="color: #696969;">#</span><span style="color: #696969;">-----------------------------------------#</span>
+<span style="color: #696969;">#  </span><span style="color: #696969;">obtener los limites de las capturas    #</span>
+<span style="color: #696969;">#</span><span style="color: #696969;">-----------------------------------------#</span>
+rm(list = ls())
+<span style="color: #696969;">## </span><span style="color: #696969;">Data~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+lc <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Depth/Species_depth.csv'</span>)
+layer.depths      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(20, 50, 150, 250, 400, 650, 1000, 4300)
+avgph             <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mean(lc$Captain_fathom,  na.rm = <span style="color: #fffacd; font-weight: bold;">TRUE</span>)
+lc$Captain_fathom <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(is.na(lc$Captain_fathom), avgph, lc$Captain_fathom)
+lc$Depth          <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lc$Captain_fathom * lc$Braz
+lc$Total_unit[is.na(lc$Total_unit)]      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 0    <span style="color: #696969;"># </span><span style="color: #696969;">Removing the NA</span>
+lc$Total_unit[which(lc$Total_unit == 0)] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 1    <span style="color: #696969;"># </span><span style="color: #696969;">Removing the 0</span>
+<span style="color: #696969;">#</span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color: #696969;">##</span><span style="color: #696969;">Divdiden by layer</span>
+lc$layer <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(lc$Depth &lt;= layer.depths[1], 1,
+            ifelse(lc$Depth &lt;= layer.depths[2], 2,
+            ifelse(lc$Depth &lt;= layer.depths[3], 3,
+            ifelse(lc$Depth &lt;= layer.depths[4], 4,
+            ifelse(lc$Depth &lt;= layer.depths[5], 5,
+            ifelse(lc$Depth &lt;= layer.depths[6], 6,
+            ifelse(lc$Depth &lt;= layer.depths[7], 7, 8)))))))
+<span style="color: #696969;">## </span><span style="color: #696969;">Expand rows based on the values on the column</span>
+lc <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dup.row(lc, 2)
+<span style="color: #696969;">## </span><span style="color: #696969;">Grupos funcionales</span>
+lc <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(lc, 1)
+<span style="color: #696969;">##</span><span style="color: #696969;">-----------</span>
+<span style="color: #696969;">##  </span><span style="color: #696969;">Divide by functional group</span>
+<span style="color: #696969;">##</span><span style="color: #696969;">---------------</span>
+lc.fg      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(lc, lc$FG)           <span style="color: #696969;"># </span><span style="color: #696969;">split by functional group</span>
+lc.fg      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lc.fg[ - c(2, 7)]          <span style="color: #696969;"># </span><span style="color: #696969;">Remove the Sea Urchin and octopus</span>
+lc.fg[[2]] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> stage(lc.fg[[2]], 8, 282)  <span style="color: #696969;"># </span><span style="color: #696969;">Based on Ribara thesis</span>
+<span style="color: #696969;">##  </span><span style="color: #696969;">Distribution by layers</span>
+depth <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(specie = names(lc.fg),
+                    min    = c(0, 0, 0, 0, 0, 0, 0, 0),
+                    max    = c(8, 8, 8, 8, 8, 8, 8, 8))
+<span style="color: #696969;">##</span><span style="color: #696969;">++++++++++++++++++++</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">Real depth location</span>
+<span style="color: #696969;">##</span><span style="color: #696969;">++++++++++++++++++++</span>
+out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> hist.deph(lc.fg, col.val = 10, dep.lim = depth, n.file = <span style="color: #ffc125; font-weight: bold;">'Functional_groups'</span>)
+out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> t(out)
+colnames(out) <span style="color: #ff4500; font-weight: bold;">&lt;-</span> paste(<span style="color: #ffc125; font-weight: bold;">'layer'</span>, rep(8 : 1))
+cap           <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Proportion of FG by layer'</span>
+b             <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, header = T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption=cap, digits=3)
+print(b)
+</pre>
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="left" /><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="left" />
+<caption>Proportion of FG by layer</caption>
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
 </colgroup>
 <thead>
-<tr><th scope="col" class="left">FG</th><th scope="col" class="left">JvAd</th><th scope="col" class="left">Ligth</th><th scope="col" class="right">Deepest</th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right"></th><th scope="col" class="right">Surface</th><th scope="col" class="left">Source</th></tr>
+<tr><th scope="col" class="left"></th><th scope="col" class="right">layer 8</th><th scope="col" class="right">layer 7</th><th scope="col" class="right">layer 6</th><th scope="col" class="right">layer 5</th><th scope="col" class="right">layer 4</th><th scope="col" class="right">layer 3</th><th scope="col" class="right">layer 2</th><th scope="col" class="right">layer 1</th></tr>
 </thead>
 <tbody>
-<tr><td class="left">ANG</td><td class="left">Both</td><td class="left">Both</td><td class="right">1</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">BRC</td><td class="left">Adult</td><td class="left">Both</td><td class="right">0.065894115</td><td class="right">0.0665757782</td><td class="right">0.0077255169</td><td class="right">0.0645307885</td><td class="right">0.3583276528</td><td class="right">0.2094978414</td><td class="right">0.1376959782</td><td class="right">0.089752329</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">BRC</td><td class="left">Juv</td><td class="left">Both</td><td class="right">0.0084033613</td><td class="right">0.037214886</td><td class="right">0.0288115246</td><td class="right">0.0336134454</td><td class="right">0.3709483794</td><td class="right">0.2088835534</td><td class="right">0.2172869148</td><td class="right">0.0948379352</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">LBF</td><td class="left">Both</td><td class="left">Both</td><td class="right">0</td><td class="right">0.0535714286</td><td class="right">0</td><td class="right">0.1160714286</td><td class="right">0.4553571429</td><td class="right">0.2053571429</td><td class="right">0.0982142857</td><td class="right">0.0714285714</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">LPF</td><td class="left">Both</td><td class="left">Both</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0.0031051079</td><td class="right">0.0009315324</td><td class="right">0.0099363453</td><td class="right">0.0353206024</td><td class="right">0.950706412</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">SBF</td><td class="left">Both</td><td class="left">Both</td><td class="right">0.223316913</td><td class="right">0.2561576355</td><td class="right">0.1871921182</td><td class="right">0.144499179</td><td class="right">0.0870279146</td><td class="right">0.0295566502</td><td class="right">0.039408867</td><td class="right">0.0328407225</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">SPF</td><td class="left">Both</td><td class="left">Both</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0.0684931507</td><td class="right">0</td><td class="right">0.0904109589</td><td class="right">0.1246575342</td><td class="right">0.7164383562</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">VID</td><td class="left">Both</td><td class="left">Both</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0.0051813472</td><td class="right">0.1191709845</td><td class="right">0.067357513</td><td class="right">0.103626943</td><td class="right">0.7046632124</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">ALF</td><td class="left">Both</td><td class="left">Both</td><td class="right">0.119487909</td><td class="right">0.0871266003</td><td class="right">0.1123755334</td><td class="right">0.4327880512</td><td class="right">0.1470483642</td><td class="right">0.0460526316</td><td class="right">0.0551209104</td><td class="right">0</td><td class="left">Billy Database</td></tr>
-<tr><td class="left">ORO</td><td class="left">Both</td><td class="left">Both</td><td class="right">0.4119850187</td><td class="right">0.240948814</td><td class="right">0.3121098627</td><td class="right">0.0312109863</td><td class="right">0.0037453184</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="left">Billy Database</td></tr>
+<tr><td class="left">Anguila</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.146</td><td class="right">0.491</td><td class="right">0.363</td></tr>
+<tr><td class="left">Breca-Adult</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.085</td><td class="right">0.120</td><td class="right">0.668</td><td class="right">0.071</td><td class="right">0.056</td></tr>
+<tr><td class="left">Breca-Juvenil</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.013</td><td class="right">0.095</td><td class="right">0.729</td><td class="right">0.106</td><td class="right">0.058</td></tr>
+<tr><td class="left">CHO</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.087</td><td class="right">0.130</td><td class="right">0.652</td><td class="right">0.065</td><td class="right">0.065</td></tr>
+<tr><td class="left">Large benthic fish</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.136</td><td class="right">0.727</td><td class="right">0.121</td><td class="right">0.015</td></tr>
+<tr><td class="left">Large pelagic fish</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.003</td><td class="right">0.030</td><td class="right">0.125</td><td class="right">0.842</td></tr>
+<tr><td class="left">Small benthic fish</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.063</td><td class="right">0.819</td><td class="right">0.054</td><td class="right">0.063</td></tr>
+<tr><td class="left">Small pelagic fish</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.070</td><td class="right">0.433</td><td class="right">0.164</td><td class="right">0.334</td></tr>
+<tr><td class="left">Vidriola</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.005</td><td class="right">0.269</td><td class="right">0.585</td><td class="right">0.140</td></tr>
+<tr><td class="left">ALF</td><td class="right">0.119487909</td><td class="right">0.0871266003</td><td class="right">0.1123755334</td><td class="right">0.4327880512</td><td class="right">0.1470483642</td><td class="right">0.0460526316</td><td class="right">0.0551209104</td><td class="right">0</td></tr>
+<tr><td class="left">ORO</td><td class="right">0.4119850187</td><td class="right">0.240948814</td><td class="right">0.3121098627</td><td class="right">0.0312109863</td><td class="right">0.0037453184</td><td class="right">0</td><td class="right">0</td><td class="right">0</td></tr>
 </tbody>
 </table>
 
-    <div class="figure">
-<p><img src="file:///home/demiurgo/Documents/PhD/Functional_groups/Depth/relative_Functional_groups.png" width="600" alt="image" /></p>
-<p>Relative vertical Distribution of Vertebrates according to their maximimum and minimum depth</p>
-</div>
-  <div class="figure">
+<a href="#img-Functional_groups.png" width="600" alt="image">img/Functional<sub>groups</sub>.png</a>
+<div class="figure">
 <p><img src="file:///home/demiurgo/Documents/PhD/Functional_groups/Depth/alf_orang/relative_Industrial_groups.png" width="600" alt="image" /></p>
 <p>Relative vertical Distribution of Orange Roughy and Algonsino according to their maximimum and minimum depth</p>
 </div>
-  <br style="clear:both;" />
-
+<br style="clear:both;" />
 <ul>
 <li>Invertebrates
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -3076,7 +3104,8 @@ C.out       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> cleara
                          time.l    = data[, 5],
                          max.speed = data[, 6],
                          alfa      = data[, 7],
-                         beta      = data[, 8])
+                         beta      = data[, 8],
+                         height    = data[, 9])
 p.C <span style="color: #ff4500; font-weight: bold;">&lt;-</span> C.out[-11, ]
 p.C   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(data.frame(FG= rownames(p.C), Cohort = sort(rep(1 : 10, nrow(p.C))), Clearance = c(p.C)))
 png(<span style="color: #ffc125; font-weight: bold;">'img/clearance.png'</span>, height = 1000, width = 1000)
@@ -3095,11 +3124,11 @@ print(b)
 </thead>
 <tbody>
 <tr><td class="left">ALF</td><td class="right">1.56</td><td class="right">5.61</td><td class="right">10.40</td><td class="right">15.92</td><td class="right">21.70</td><td class="right">27.40</td><td class="right">32.80</td><td class="right">37.76</td><td class="right">42.25</td><td class="right">46.19</td></tr>
-<tr><td class="left">ANG</td><td class="right">0.03</td><td class="right">2.39</td><td class="right">10.10</td><td class="right">22.94</td><td class="right">39.50</td><td class="right">58.60</td><td class="right">78.83</td><td class="right">99.22</td><td class="right">118.85</td><td class="right">132.15</td></tr>
-<tr><td class="left">BIR</td><td class="right">0.38</td><td class="right">1.24</td><td class="right">2.33</td><td class="right">3.47</td><td class="right">4.57</td><td class="right">5.58</td><td class="right">6.49</td><td class="right">7.28</td><td class="right">7.96</td><td class="right">8.55</td></tr>
-<tr><td class="left">BRC</td><td class="right">20.91</td><td class="right">29.75</td><td class="right">40.15</td><td class="right">51.72</td><td class="right">65.09</td><td class="right">81.46</td><td class="right">99.99</td><td class="right">115.88</td><td class="right">131.25</td><td class="right">147.57</td></tr>
-<tr><td class="left">CET</td><td class="right">3111.88</td><td class="right">3599.63</td><td class="right">3851.93</td><td class="right">3978.84</td><td class="right">4041.87</td><td class="right">4072.98</td><td class="right">4088.28</td><td class="right">4095.80</td><td class="right">4099.50</td><td class="right">4101.31</td></tr>
-<tr><td class="left">CHO</td><td class="right">5.10</td><td class="right">16.28</td><td class="right">29.51</td><td class="right">42.66</td><td class="right">54.70</td><td class="right">65.23</td><td class="right">74.16</td><td class="right">81.58</td><td class="right">87.67</td><td class="right">92.62</td></tr>
+<tr><td class="left">ANG</td><td class="right">0.03</td><td class="right">2.16</td><td class="right">8.18</td><td class="right">16.57</td><td class="right">25.28</td><td class="right">32.96</td><td class="right">38.62</td><td class="right">41.92</td><td class="right">42.79</td><td class="right">39.98</td></tr>
+<tr><td class="left">BIR</td><td class="right">3.76</td><td class="right">12.42</td><td class="right">23.27</td><td class="right">34.66</td><td class="right">45.67</td><td class="right">55.82</td><td class="right">64.88</td><td class="right">72.81</td><td class="right">79.64</td><td class="right">85.46</td></tr>
+<tr><td class="left">BRC</td><td class="right">13.94</td><td class="right">19.83</td><td class="right">26.76</td><td class="right">34.48</td><td class="right">43.40</td><td class="right">54.31</td><td class="right">66.66</td><td class="right">77.25</td><td class="right">87.50</td><td class="right">98.38</td></tr>
+<tr><td class="left">CET</td><td class="right">3111.88</td><td class="right">3599.63</td><td class="right">15915.38</td><td class="right">36376.84</td><td class="right">99471.12</td><td class="right">260670.55</td><td class="right">331150.95</td><td class="right">409580.40</td><td class="right">496039.09</td><td class="right">693121.22</td></tr>
+<tr><td class="left">CHO</td><td class="right">36.43</td><td class="right">116.28</td><td class="right">210.78</td><td class="right">304.71</td><td class="right">390.74</td><td class="right">465.91</td><td class="right">529.69</td><td class="right">582.73</td><td class="right">626.24</td><td class="right">661.56</td></tr>
 <tr><td class="left">DOL</td><td class="right">13.39</td><td class="right">43.88</td><td class="right">81.51</td><td class="right">120.50</td><td class="right">157.67</td><td class="right">191.46</td><td class="right">221.26</td><td class="right">246.99</td><td class="right">268.89</td><td class="right">287.32</td></tr>
 <tr><td class="left">GCR</td><td class="right">0.03</td><td class="right">0.10</td><td class="right">0.22</td><td class="right">0.37</td><td class="right">0.55</td><td class="right">0.73</td><td class="right">0.90</td><td class="right">1.04</td><td class="right">1.19</td><td class="right">1.32</td></tr>
 <tr><td class="left">LBF</td><td class="right">8.38</td><td class="right">11.56</td><td class="right">16.16</td><td class="right">20.21</td><td class="right">25.53</td><td class="right">35.07</td><td class="right">43.79</td><td class="right">49.72</td><td class="right">59.25</td><td class="right">70.18</td></tr>
@@ -3107,10 +3136,10 @@ print(b)
 <tr><td class="left">OCT</td><td class="right">480.00</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 <tr><td class="left">ORO</td><td class="right">0.02</td><td class="right">2.38</td><td class="right">7.23</td><td class="right">11.91</td><td class="right">15.46</td><td class="right">17.87</td><td class="right">19.42</td><td class="right">20.39</td><td class="right">20.97</td><td class="right">21.33</td></tr>
 <tr><td class="left">OTA</td><td class="right">350.36</td><td class="right">483.53</td><td class="right">598.37</td><td class="right">693.28</td><td class="right">769.64</td><td class="right">830.00</td><td class="right">877.13</td><td class="right">913.62</td><td class="right">941.69</td><td class="right">963.18</td></tr>
-<tr><td class="left">SBF</td><td class="right">35.25</td><td class="right">56.73</td><td class="right">84.30</td><td class="right">127.39</td><td class="right">179.01</td><td class="right">257.43</td><td class="right">309.93</td><td class="right">444.12</td><td class="right">534.49</td><td class="right">634.68</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.12</td><td class="right">2.88</td><td class="right">8.56</td><td class="right">15.16</td><td class="right">21.29</td><td class="right">26.41</td><td class="right">30.41</td><td class="right">33.42</td><td class="right">35.63</td><td class="right">37.23</td></tr>
+<tr><td class="left">SBF</td><td class="right">5.18</td><td class="right">7.74</td><td class="right">10.82</td><td class="right">15.32</td><td class="right">20.42</td><td class="right">27.74</td><td class="right">32.45</td><td class="right">43.95</td><td class="right">51.39</td><td class="right">59.40</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.10</td><td class="right">2.21</td><td class="right">6.59</td><td class="right">11.66</td><td class="right">16.38</td><td class="right">20.31</td><td class="right">23.39</td><td class="right">25.71</td><td class="right">27.41</td><td class="right">28.64</td></tr>
 <tr><td class="left">SPL</td><td class="right">0.90</td><td class="right">1.07</td><td class="right">1.27</td><td class="right">1.48</td><td class="right">1.74</td><td class="right">1.97</td><td class="right">2.20</td><td class="right">2.40</td><td class="right">2.61</td><td class="right">2.84</td></tr>
-<tr><td class="left">VID</td><td class="right">115.95</td><td class="right">172.58</td><td class="right">265.15</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
+<tr><td class="left">VID</td><td class="right">89.19</td><td class="right">132.76</td><td class="right">203.96</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 </tbody>
 </table>
 
@@ -3428,6 +3457,130 @@ print(b)
 
 </li>
 </ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-7-6">Feeding overlap<br/>
+-I'm trying to stimate the feeding windows for the age class groups, base on the information availabe for size of the preys
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~           stiamtion of overlap       ~ ##</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
+
+folder <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/feeding_overlap/'</span>
+
+data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(paste0(folder, <span style="color: #ffc125; font-weight: bold;">'size.fg.csv'</span>))
+
+<span style="color: #696969;">##</span><span style="color: #696969;">Increased the size of the vector to have a more smooth fucntion</span>
+first=<span style="color: #fffacd; font-weight: bold;">TRUE</span>
+fg.all <span style="color: #ff4500; font-weight: bold;">&lt;-</span> as.character(unique(data$FG))
+<span style="color: #ff7f00; font-weight: bold;">for</span>(fg <span style="color: #ff7f00; font-weight: bold;">in</span> fg.all){
+    dat.tmp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data[data$FG == fg, ]
+    <span style="color: #ff7f00; font-weight: bold;">for</span>(intv <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : (nrow(dat.tmp) - 1)){
+        tmp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(dat.tmp, seq(from = length[intv], to = length[intv + 1], length = 10))
+        <span style="color: #ff7f00; font-weight: bold;">if</span>(intv == 1){
+            tmp2 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> tmp
+        } <span style="color: #ff7f00; font-weight: bold;">else</span> {
+            tmp2 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(tmp2, tmp)
+        }
+    }
+    length.f <span style="color: #ff4500; font-weight: bold;">&lt;-</span> unique(tmp2)
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(first) {
+        data.end <span style="color: #ff4500; font-weight: bold;">&lt;-</span> cbind(fg, length.f, dat.tmp[1, 3 : 5])
+        first <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">FALSE</span>
+    } <span style="color: #ff7f00; font-weight: bold;">else</span> {
+        data.end <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rbind(data.end, cbind(fg, length.f, dat.tmp[1, 3 : 5]))
+    }
+}
+
+
+<span style="color: #696969;">## </span><span style="color: #696969;">Vector of different prey sizes</span>
+vec.size <span style="color: #ff4500; font-weight: bold;">&lt;-</span> range(data.end$length)
+vec.size <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = vec.size[1], to = vec.size[2], length.out=1000)
+lbf <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.end[data.end$fg== <span style="color: #ffc125; font-weight: bold;">'LBF'</span>,]
+<span style="color: #696969;">## </span><span style="color: #696969;">try1 &lt;- with(lbf, feed.window(vec.size,length.f[1],KLP[1],KUP[1],Kmax[1]))</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">try2 &lt;- with(lbf, feed.window(vec.size,length.f[18],KLP[18],KUP[18],Kmax[18]))</span>
+
+<span style="color: #696969;">## </span><span style="color: #696969;">try2 &lt;- feed.window(seq(1,100),100,0.2,.6,0.5)</span>
+
+<span style="color: #696969;">## </span><span style="color: #696969;">plot(try2)</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">plot(try1,type='l')</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">lines(try2)</span>
+first=<span style="color: #fffacd; font-weight: bold;">TRUE</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>( fg.prd <span style="color: #ff7f00; font-weight: bold;">in</span> fg.all){
+    <span style="color: #696969;">## </span><span style="color: #696969;">loop through predator</span>
+    pred.tmp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.end[data.end[,1] == fg.prd,]
+    len.sim  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> range(pred.tmp$length.f)
+    len.sim <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(len.sim[1],len.sim[2], length=100)
+    <span style="color: #ff7f00; font-weight: bold;">for</span>( len <span style="color: #ff7f00; font-weight: bold;">in</span> 1: nrow(pred.tmp)){
+        out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(pred.tmp, feed.window(vec.size, len.sim[len],
+                                          KLP[len], KUP[len], Kmax[len]))
+        tmp.out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> cbind(pred.tmp[len,], vec.size, out)
+        <span style="color: #ff7f00; font-weight: bold;">if</span>(first){
+            final <span style="color: #ff4500; font-weight: bold;">&lt;-</span> tmp.out
+            first = <span style="color: #fffacd; font-weight: bold;">FALSE</span>
+        } <span style="color: #ff7f00; font-weight: bold;">else</span> {
+            final <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rbind(final, tmp.out)
+        }
+    }
+}
+final$log.dat <span style="color: #ff4500; font-weight: bold;">&lt;-</span> log(final$out)
+final$log.dat[is.infinite(final$log.dat)] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NA</span>
+  final$fg
+head(final)
+plot(final$log.dat)
+<span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
+final2 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> final[final$fg==<span style="color: #ffc125; font-weight: bold;">'LBF'</span>,]
+ggplot(data=final2, aes(x=length.f, y= vec.size)) + geom_tile(aes(fill=out))+
+facet_wrap(~fg, ncol=3,, scales = <span style="color: #ffc125; font-weight: bold;">"free"</span>) + scale_fill_gradient(name = <span style="color: #ffc125; font-weight: bold;">'Feeding windows'</span>, low = <span style="color: #ffc125; font-weight: bold;">'white'</span>, high = <span style="color: #ffc125; font-weight: bold;">'red'</span>) +
+    theme(axis.title.y = element_blank())
+
+
+
+
+
+plot(log(out),type=<span style="color: #ffc125; font-weight: bold;">'l'</span>)
+
+
+
+
+        <span style="color: #ff7f00; font-weight: bold;">for</span>(fg.pry <span style="color: #ff7f00; font-weight: bold;">in</span> fg.all){
+        <span style="color: #696969;">## </span><span style="color: #696969;">loop through prey</span>
+
+
+    }
+}
+
+<span style="color: #ff7f00; font-weight: bold;">for</span>( i i
+predator loop by functional group
+    prey - loop by functional group
+do the cuntion <span style="color: #ff7f00; font-weight: bold;">for</span> each size of the prey and append the size of the predator and the prey
+and the results
+
+size.prey <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data[1:10,2]
+size.pred <span style="color: #ff4500; font-weight: bold;">&lt;-</span>  1311.776
+curve <span style="color: #ff4500; font-weight: bold;">&lt;-</span> feed.window(prey,pred,KLP=1e-4,KUP=0.4,Kmax=0.6)
+
+plot( curve)
+
+
+
+<span style="color: #87cefa;">feed.window</span> <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ff7f00; font-weight: bold;">function</span>(size.prey, size.pred, KLP, KUP, Kmax){
+    avail.top      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mean(c(KLP, KUP))
+    len.prey.50KUP <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mean(c(KUP, avail.top))
+    len.prey.50KLP <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mean(c(KLP, avail.top))
+    out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ifelse(size.prey &lt;= (size.pred * avail.top),
+                  1 / (1 + exp( - Kmax * (size.prey - len.prey.50KLP * size.pred))),
+                  1 / (1 + exp(Kmax * (size.prey - len.prey.50KUP * size.pred))))
+    out[is.infinite(out)] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 0
+    <span style="color: #ff7f00; font-weight: bold;">return</span>(out)
+}
+
+</pre>
 
 
 </li>
@@ -4974,7 +5127,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-04-27T14:27+1000</p>
+<p class="date">Date: 2017-05-03T16:42+1000</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

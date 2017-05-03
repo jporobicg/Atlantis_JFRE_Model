@@ -4563,3 +4563,50 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Clearance
+**** Mum
+*** Increased
+**** Clearance
+***** CET
+- *Recalculated*
+- from :3111.88 3599.63	3851.93	3978.84	4041.87	4072.98	4088.28	4095.80	4099.50	4101.31
+- to : 3111.88 3599.63 15915.38 36376.84 99471.12 260670.55 331150.95 409580.40 496039.09 693121.22
+***** CHO
+- *Recalculated*
+- from :  5.10	16.28	29.51	42.66	54.70	65.23	74.16	81.58	87.67	92.62
+- to :  36.43  116.28 210.78 304.71 390.74 465.91  529.69  582.73  626.24  661.56
+***** BRD
+- *Recalculated*
+- from : 0.38	1.24	2.33	3.47	4.57	5.58	6.49	7.28	7.96	8.55
+- to   : 3.76 12.42  23.27 34.66 45.67 55.82  64.88  72.81  79.64  85.46
+***** VID
+- from 115.95  172.58  265.15
+- to : 89.19 132.76 203.96
+**** Predation
+**** Running time
+**** Mum
+**** Other paramteres
+** Output
+*** Increase Biomass
+- CHO 104%
+- BIR 66%
+*** Decreased biomass
+- SBF 20%
+- LBF 13%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170502062119
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170502062119.png]]
+* Run 20170503133859
+  - Run start: 2017-05-03 13:38:59
+  - Run end: 2017-05-03 16:43:54
+  - log file : [[file:Calibration/20170503164354.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6186
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
