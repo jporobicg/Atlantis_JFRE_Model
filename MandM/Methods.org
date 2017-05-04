@@ -1116,26 +1116,65 @@ fi
     | SBF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.063 |   0.820 |   0.054 |   0.063 |
     | SPF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.070 |   0.432 |   0.164 |   0.334 |
     | VID         |   0.000 |   0.000 |   0.000 |   0.000 |   0.005 |   0.269 |   0.586 |   0.140 |
-#+CAPTION: Vertical distribution of the vertebrate FG
-#+ATTR_HTML: width="600" alt="image"
-[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Functional_groups.png]]
+  #+CAPTION: Vertical distribution of the vertebrate FG
+    #+ATTR_HTML: width="600" alt="image"
+    [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Functional_groups.png]]
   - Invertebrates
-         | FG  | Light | Deepest layer |              |              |              |              |              |              |      Surface | Source         |
-         |-----+-------+---------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+----------------|
-         | GCR | D     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | GCR | N     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | SPL | D     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | SPL | N     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | OCT | D     |           0.8 |          0.2 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | OCT | N     |           0.5 |          0.3 |          0.2 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | COP | D     |             0 |            0 |            0 | 0.0034546292 | 0.1273606633 | 0.3287655458 | 0.5404191617 |            0 | Antesana  2009 |
-         | COP | N     |  0.0295087372 | 0.0602538741 | 0.0787174415 | 0.0787174415 | 0.0492087043 | 0.0049455984 | 0.0085723706 | 0.6900758325 | Antesana 2009  |
-         | EUF | D     |             0 |  0.021312873 |  0.028417164 | 0.1449275362 | 0.0824097755 | 0.2750781472 | 0.2810457516 | 0.1668087525 | Hidalgo,2005   |
-         | EUF | N     |             0 |            0 |            0 |            0 |            0 | 0.0044113875 | 0.2979738394 |  0.697614773 | Hidalgo, 2005  |
-         | SUR | D     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | SUR | N     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | MOL | D     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
-         | MOL | N     |             1 |            0 |            0 |            0 |            0 |            0 |            0 |            0 | Billy Database |
+    #+BEGIN_SRC R :results output
+      rm(list = ls())
+      library(ascii)
+      options(asciiType = "org")
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+      zoo <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Depth/COP-EUF/Zooplancton.csv')
+      ##Divdiden by layer
+      layer.depths <- c(20, 50, 150, 250, 400, 650, 1000, 4300)
+      zoo$layer    <- ifelse(zoo$Depth <= layer.depths[1], 1,
+                      ifelse(zoo$Depth <= layer.depths[2], 2,
+                      ifelse(zoo$Depth <= layer.depths[3], 3,
+                      ifelse(zoo$Depth <= layer.depths[4], 4,
+                      ifelse(zoo$Depth <= layer.depths[5], 5,
+                      ifelse(zoo$Depth <= layer.depths[6], 6,
+                      ifelse(zoo$Depth <= layer.depths[7], 7, 8)))))))
+      ## Expand rows based on the values on the column
+      zoo$FG <- paste(zoo$FG, zoo$time, sep = '_')
+      zoo.dup     <- dup.row(zoo, 3)
+      ## Grupos funcionales
+      zoo.ly      <- split(zoo.dup, zoo.dup$FG)
+      depth <- data.frame(specie = names(zoo.ly),
+                          min    = rep(0, length(zoo.ly)),
+                          max    = rep(8, length(zoo.ly)))
+      ##++++++++++++++++++++
+      ## Real depth location
+      ##++++++++++++++++++++
+      out <- hist.deph(zoo.ly, col.val = 5, dep.lim = depth, n.file = 'img/Zooplankton')
+      out <- t(out)
+      colnames(out) <- paste('layer', rep(8 : 1))
+      cap           <- 'Proportion of zooplankton by layer'
+      b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
+      print(b)
+
+    #+END_SRC
+    #+RESULTS:
+    #+CAPTION: Proportion of zooplankton by layer
+    |           | layer 8 | layer 7 | layer 6 | layer 5 | layer 4 | layer 3 | layer 2 | layer 1 |
+    |-----------+---------+---------+---------+---------+---------+---------+---------+---------|
+    | LZO_Day   | 0.000   | 0.000   | 0.000   | 0.050   | 0.269   | 0.516   | 0.053   | 0.112   |
+    | LZO_Nigth | 0.000   | 0.000   | 0.000   | 0.000   | 0.000   | 0.362   | 0.024   | 0.615   |
+    | MZO_Day   | 0.000   | 0.000   | 0.000   | 0.007   | 0.077   | 0.669   | 0.244   | 0.003   |
+    | MZO_Night | 0.000   | 0.000   | 0.000   | 0.179   | 0.174   | 0.025   | 0.531   | 0.092   |
+    #+CAPTION: Proportion by layer of other invertebrates
+    | FG  | Light | Deepest layer |     |     |   |   |   |   | Surface | Source         |
+    |-----+-------+---------------+-----+-----+---+---+---+---+---------+----------------|
+    | GCR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | GCR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | SPL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | SPL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | OCT | D     |           0.8 | 0.2 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | OCT | N     |           0.5 | 0.3 | 0.2 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | SUR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | SUR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | MOL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+    | MOL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
 
   #+CAPTION: Relative vertical Distribution of Medium (Copepods) and Large (Eufausiid) zooplancton according to their maximimum and minimum depth
   #+ATTR_HTML: width="600" alt="image"
