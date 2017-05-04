@@ -4636,3 +4636,101 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Clearance
+**** Mum
+*** Increased
+**** Clearance
+**** Predation
+**** Running time
+**** Mum
+*** Changed
+**** Vertical distribution
+***** ALF
+- from: 0.119487909 0.0871266003 0.1123755334 0.4327880512 0.1470483642 0.0460526316 0.0551209104 0
+- to:  0	0.051	0.268	0.58	0.046	0.055	0	0
+***** BRC Adult
+- from : 0.065894115 0.0665757782 0.0077255169 0.0645307885 0.3583276528 0.2094978414 0.1376959782 0.089752329
+- to : 0	0	0	0.085	0.12	0.668	0.071	0.056
+***** BRC Juvenile
+- from : 0.0084033613 0.037214886 0.0288115246 0.0336134454 0.3709483794 0.2088835534 0.2172869148 0.0948379352
+- to : 0	0	0	0.013	0.095	0.728	0.106	0.058
+***** ORO
+- from : 0.4119850187 0.240948814 0.3121098627 0.0312109863 0.0037453184 0 0 0
+- to : 0	0.649	0.347	0.004	0	0	0	0
+***** CHO
+- from : 0 0.1304347826 0 0.0869565217 0.3695652174 0.2173913043 0.0869565217 0.1086956522
+- to : 0	0	0	0.087	0.13	0.653	0.065	0.065
+***** LBF
+- from : 0.64 0.17 0.09 0.09 0.01 0 0 0
+- to  : 0	0	0	0	0.136	0.728	0.121	0.015
+***** LPF
+- from : 0 0 0 0.0031051079 0.0009315324 0.0099363453 0.0353206024 0.950706412
+- to  : 0	0	0	0	0.003	0.03	0.125	0.842
+***** SBF
+- from : 0.7692307692 0.0316742081 0.0814479638 0 0.0180995475 0.036199095 0.0090497738 0.0542986425
+- to : 0	0	0	0	0.063	0.82	0.054	0.063
+***** SPF
+- from : 0 0.0143112701 0 0.0554561717 0.1296958855 0.1878354204 0.1252236136 0.4874776386
+- to : 0	0	0	0	0.07	0.432	0.164	0.334
+***** VID
+- from : 0 0 0 0.0051813472 0.1191709845 0.067357513 0.103626943 0.7046632124
+- to : 0	0	0	0	0.005	0.269	0.586	0.14
+***** LZO Day
+- from : 0 0.021312873 0.028417164 0.1449275362 0.0824097755 0.2750781472 0.2810457516 0.1668087525
+- to : 0	0	0	0.05	0.269	0.516	0.053	0.112
+***** LZO Night
+- fron : 0 0 0 0 0 0.0044113875 0.2979738394 0.697614773
+- to : 0	0	0	0	0	0.362	0.024	0.615
+***** MZO Day
+- from : 0 0 0 0.0034546292 0.1273606633 0.3287655458 0.5404191617 0
+- to : 0	0	0	0.007	0.077	0.669	0.244	0.003
+***** MZO Night
+- from : 0.0295087372 0.0602538741 0.0787174415 0.0787174415 0.0492087043 0.0049455984 0.0085723706 0.6900758325
+- to : 0	0	0	0.179	0.174	0.025	0.531	0.092
+***** SZO Day
+- from : 0 0 0 0.0034546292 0.1273606633 0.3287655458 0.5404191617 0
+- to : 0	0	0	0.007	0.077	0.669	0.244	0.003
+***** SZO Night
+- from : 0.0295087372 0.0602538741 0.0787174415 0.0787174415 0.0492087043 0.0049455984 0.0085723706 0.6900758325
+- to : 0	0	0	0.179	0.174	0.025	0.531	0.092
+** Output
+*** Increase Biomass
+- SPL 5%
+- GCR 3%
+- SQD 12%
+- LPF 16%
+- SPF 14%
+- SBF 156%
+- LBF 31%
+- MZO 35%
+- LZO 7%
+- SCR 7%
+*** Decreased biomass
+- BRC 88%
+- VID 62%
+- ORO 41%
+- ALF 7%
+- ANG 2%
+- CHO 53%
+- OTA 1%
+- DOL 1%
+- BIR 74%
+- OCT 11%
+- DR 25%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170504142052
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170504142052.png]]
+* Run 20170504165345
+  - Run start: 2017-05-04 16:53:45
+  - Run end: 2017-05-04 18:39:52
+  - log file : [[file:Calibration/20170504183952.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6190
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
