@@ -4368,7 +4368,7 @@ ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0003383014
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
-0 0
+0.01 0.01
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0 0
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
