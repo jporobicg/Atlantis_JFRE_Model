@@ -1162,24 +1162,64 @@ fi
     | LZO_Nigth | 0.000   | 0.000   | 0.000   | 0.000   | 0.000   | 0.362   | 0.024   | 0.615   |
     | MZO_Day   | 0.000   | 0.000   | 0.000   | 0.007   | 0.077   | 0.669   | 0.244   | 0.003   |
     | MZO_Night | 0.000   | 0.000   | 0.000   | 0.179   | 0.174   | 0.025   | 0.531   | 0.092   |
-    #+CAPTION: Proportion by layer of other invertebrates
-    | FG  | Light | Deepest layer |     |     |   |   |   |   | Surface | Source         |
-    |-----+-------+---------------+-----+-----+---+---+---+---+---------+----------------|
-    | GCR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | GCR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | SPL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | SPL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | OCT | D     |           0.8 | 0.2 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | OCT | N     |           0.5 | 0.3 | 0.2 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | SUR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | SUR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | MOL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
-    | MOL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
 
-  #+CAPTION: Relative vertical Distribution of Medium (Copepods) and Large (Eufausiid) zooplancton according to their maximimum and minimum depth
-  #+ATTR_HTML: width="600" alt="image"
-  [[/home/demiurgo/Documents/PhD/Functional_groups/Depth/COP-EUF/copeuf.png]]
-  @<br style="clear:both;" />
+    -  Lobster and Golden Crab Vertical distribution
+        #+BEGIN_SRC R :results output
+          rm(list = ls())
+          library(ascii)
+          options(asciiType = "org")
+          source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+          crus <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Depth/depth_crustaceans.csv')
+          ##Divdiden by layer
+          layer.depths <- c(20, 50, 150, 250, 400, 650, 1000, 4300)
+          crus$layer    <- ifelse(crus$depth <= layer.depths[1], 1,
+                          ifelse(crus$depth <= layer.depths[2], 2,
+                          ifelse(crus$depth <= layer.depths[3], 3,
+                          ifelse(crus$depth <= layer.depths[4], 4,
+                          ifelse(crus$depth <= layer.depths[5], 5,
+                          ifelse(crus$depth <= layer.depths[6], 6,
+                          ifelse(crus$depth <= layer.depths[7], 7, 8)))))))
+          ## By functional group
+          crus_FG <- FG(crus, 2)
+          ## Expand rows based on the values on the column
+          crus_FG <- crus_FG[-which(crus_FG$total == 0), ]
+          crus.dup     <- dup.row(crus_FG, 4)
+          ## Functinal groups
+          crus.ly      <- split(crus.dup, crus.dup$FG)
+          depth <- data.frame(specie = names(crus.ly),
+                              min    = rep(0, length(crus.ly)),
+                              max    = rep(8, length(crus.ly)))
+          ##++++++++++++++++++++
+          ## Real depth location
+          ##++++++++++++++++++++
+          out <- hist.deph(crus.ly, col.val = 7, dep.lim = depth, n.file = 'img/crustacean.prn')
+          out <- t(out)
+          colnames(out) <- paste('layer', rep(8 : 1))
+          cap           <- 'Vertical distribution of crustacean by layer'
+          b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
+          print(b)
+
+    #+END_SRC
+    #+RESULTS:
+
+     #+CAPTION: Proportion by layer of other invertebrates
+     | FG  | Light | Deepest layer |     |     |   |   |   |   | Surface | Source         |
+     |-----+-------+---------------+-----+-----+---+---+---+---+---------+----------------|
+     | GCR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | GCR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | SPL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | SPL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | OCT | D     |           0.8 | 0.2 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | OCT | N     |           0.5 | 0.3 | 0.2 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | SUR | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | SUR | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | MOL | D     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+     | MOL | N     |             1 |   0 |   0 | 0 | 0 | 0 | 0 |       0 | Billy Database |
+
+ #+CAPTION: Relative vertical Distribution of Medium (Copepods) and Large (Eufausiid) zooplancton according to their maximimum and minimum depth
+ #+ATTR_HTML: width="600" alt="image"
+ [[/home/demiurgo/Documents/PhD/Functional_groups/Depth/COP-EUF/copeuf.png]]
+ @<br style="clear:both;" />
 ***** Speed movement
       | Functional group | Speed m.hr-1 | Specie or group | Real speed reported | Source                                  |
       |------------------+--------------+-----------------+---------------------+-----------------------------------------|
@@ -1573,30 +1613,28 @@ fi
     print(b)
   #+END_SRC
   #+RESULTS:
-#+CAPTION: Clearance by cohort for some functional groups [m3d-1]
-|     | 1       | 2       | 3        | 4        | 5        | 6         | 7         | 8         | 9         | 10        |
-|-----+---------+---------+----------+----------+----------+-----------+-----------+-----------+-----------+-----------|
-| ALF | 1.56    | 5.61    | 10.40    | 15.92    | 21.70    | 27.40     | 32.80     | 37.76     | 42.25     | 46.19     |
-| ANG | 0.03    | 2.16    | 8.18     | 16.57    | 25.28    | 32.96     | 38.62     | 41.92     | 42.79     | 39.98     |
-| BIR | 3.76    | 12.42   | 23.27    | 34.66    | 45.67    | 55.82     | 64.88     | 72.81     | 79.64     | 85.46     |
-| BRC | 13.94   | 19.83   | 26.76    | 34.48    | 43.40    | 54.31     | 66.66     | 77.25     | 87.50     | 98.38     |
-| CET | 3111.88 | 3599.63 | 15915.38 | 36376.84 | 99471.12 | 260670.55 | 331150.95 | 409580.40 | 496039.09 | 693121.22 |
-| CHO | 36.43   | 116.28  | 210.78   | 304.71   | 390.74   | 465.91    | 529.69    | 582.73    | 626.24    | 661.56    |
-| DOL | 13.39   | 43.88   | 81.51    | 120.50   | 157.67   | 191.46    | 221.26    | 246.99    | 268.89    | 287.32    |
-| GCR | 0.03    | 0.10    | 0.22     | 0.37     | 0.55     | 0.73      | 0.90      | 1.04      | 1.19      | 1.32      |
-| LBF | 8.38    | 11.56   | 16.16    | 20.21    | 25.53    | 35.07     | 43.79     | 49.72     | 59.25     | 70.18     |
-| LPF | 5.39    | 78.25   | 161.67   | 216.92   | 247.63   | 263.53    | 271.49    | 275.42    | 277.35    | 278.29    |
-| OCT | 480.00  |         |          |          |          |           |           |           |           |           |
-| ORO | 0.02    | 2.38    | 7.23     | 11.91    | 15.46    | 17.87     | 19.42     | 20.39     | 20.97     | 21.33     |
-| OTA | 350.36  | 483.53  | 598.37   | 693.28   | 769.64   | 830.00    | 877.13    | 913.62    | 941.69    | 963.18    |
-| SBF | 5.18    | 7.74    | 10.82    | 15.32    | 20.42    | 27.74     | 32.45     | 43.95     | 51.39     | 59.40     |
-| SPF | 0.10    | 2.21    | 6.59     | 11.66    | 16.38    | 20.31     | 23.39     | 25.71     | 27.41     | 28.64     |
-| SPL | 0.90    | 1.07    | 1.27     | 1.48     | 1.74     | 1.97      | 2.20      | 2.40      | 2.61      | 2.84      |
-| VID | 89.19   | 132.76  | 203.96   |          |          |           |           |           |           |           |
-
-#+ATTR_HTML: width="600" alt="image"
-[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]
-@<br style="clear:both;" />
+  #+CAPTION: Clearance by cohort for some functional groups [m3d-1]
+   |     |       1 |       2 |       3 |        4 |        5 |         6 |         7 |         8 |         9 |        10 |
+   |-----+---------+---------+---------+----------+----------+-----------+-----------+-----------+-----------+-----------|
+   | ALF |    2.15 |    4.42 |    6.90 |     9.39 |    11.75 |     18.54 |     21.12 |     23.38 |     25.36 |     27.05 |
+   | ANG |    0.15 |    6.36 |   16.18 |    26.11 |    34.27 |     40.06 |     43.25 |     44.04 |     42.79 |     39.98 |
+   | BIR |    3.76 |   12.42 |   23.27 |    34.66 |    45.67 |     55.82 |     64.88 |     72.81 |     79.64 |     85.46 |
+   | BRC |   13.94 |   19.83 |   26.76 |    34.48 |    43.40 |     54.31 |     66.66 |     77.25 |     87.50 |     98.38 |
+   | CET | 1575.75 | 1822.73 | 8059.00 | 18419.99 | 50368.77 | 131994.63 | 167683.50 | 207397.48 | 251177.20 | 350972.84 |
+   | CHO |   36.43 |  116.28 |  210.78 |   304.71 |   390.74 |    465.91 |    529.69 |    582.73 |    626.24 |    661.56 |
+   | DOL |   13.39 |   43.88 |   81.51 |   120.50 |   157.67 |    191.46 |    221.26 |    246.99 |    268.89 |    287.32 |
+   | GCR |    0.03 |    0.10 |    0.22 |     0.37 |     0.55 |      0.73 |      0.90 |      1.04 |      1.19 |      1.32 |
+   | LBF |   44.13 |   54.50 |   67.93 |    78.66 |    91.70 |    112.95 |    130.66 |    142.01 |    159.33 |    178.06 |
+   | LPF |   16.01 |  232.30 |  479.99 |   644.01 |   735.19 |    782.38 |    806.02 |    817.69 |    823.41 |    826.21 |
+   | ORO |    0.12 |   13.71 |   41.63 |    68.59 |    89.01 |    102.90 |    111.83 |    117.41 |    120.78 |    122.82 |
+   | OTA |  350.36 |  483.53 |  598.37 |   693.28 |   769.64 |    830.00 |    877.13 |    913.62 |    941.69 |    963.18 |
+   | SBF |    5.18 |    7.74 |   10.82 |    15.32 |    20.42 |     27.74 |     32.45 |     43.95 |     51.39 |     59.40 |
+   | SPF |    0.73 |   17.07 |   50.82 |    89.95 |   126.37 |    156.71 |    180.45 |    198.32 |    211.45 |    220.93 |
+   | SPL |    0.46 |    0.55 |    0.65 |     0.75 |     0.89 |      1.00 |      1.12 |      1.23 |      1.33 |      1.45 |
+   | VID |  208.71 |  310.66 |  477.27 |          |          |           |           |           |           |           |
+   #+ATTR_HTML: width="600" alt="image"
+   [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]
+   @<br style="clear:both;" />
 ***** Estimation of growth rate
   - First, I estimated the value of the alfa and beta parameters from the allometric relationship
     #+BEGIN_SRC R :results output
@@ -1611,21 +1649,19 @@ fi
       dat    <- read.csv("/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv")
       ## Grupos funcionales
       lf          <- FG(dat, 2)
-      ##from mm to cm
+      ## The length is in mm. So it needed to changed to cm
       lf[, 3 : 4] <- lf[, 3 : 4] / 10
       ##-----------
       ##  Divide by functional group
       ##---------------
       lf.fg       <- split(lf, lf$FG)  # split by functional group
-
       ## type of length that I used in the estimation of the cohorts for each functional group
-      len.ty <- c('total', 'fork', 'total', 'fork', 'total', 'total', 'fork', 'total', 'total','total', 'total', 'total')
-
+      len.ty <- c('total', 'fork', 'total', 'total', 'fork',
+                  'total', 'total', 'total', 'total', 'total','fork', 'total', 'total')
       alometric <- function(length, alfa, beta){
           weight <- alfa  * length ^ beta
           return(weight)
       }
-
       ## Removing octopus
       lf.fg <- lf.fg[ - 8]
       png('img/allometric.png', width = 1200, height = 900)
@@ -1638,7 +1674,7 @@ fi
           or        <- order(len)
           len       <- len[or]
           weight    <- weight[or]
-          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = 0.5, beta = 1.4),
+          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = 0.5, beta = ifelse(i==3, 3, 1.4)),
                            trace = FALSE, control = nls.control(maxiter = 5000, minFactor = 1/100000))
           plot(len, weight, col = spgrey, pch = 20, bty = 'n', xlab = '', ylab = '', main = lf.fg[[i]]$FG[1] )
           lines(len[!is.na(len)], predict(res[[i]]), col = 2)
@@ -1649,9 +1685,8 @@ fi
           }
       }
       mtext(text="Weight (gr)",side=2,outer=TRUE,font=2,cex=1.5)
-      mtext(text="Length (mm)",side=1,outer=TRUE,font=2,cex=1.5)
+      mtext(text="Length (cm)",side=1,outer=TRUE,font=2,cex=1.5)
       invisible(dev.off())
-
       ## table with parameters
       cap                  <- 'Values of the paramter alfa and beta in the allometric relationship for each functional group'
       colnames(parameters) <- names(lf.fg)
@@ -1660,10 +1695,10 @@ fi
     #+END_SRC
     #+RESULTS:
     #+CAPTION: Values of the paramter alfa and beta in the allometric relationship for each functional group
-    |      |    Anguila |      Breca |            CHO | Golden Crab | Large benthic fish | Large pelagic fish |    Lobster |        OTA | Small benthic fish | Small pelagic fish |   Vidriola |
-    |------+------------+------------+----------------+-------------+--------------------+--------------------+------------+------------+--------------------+--------------------+------------|
-    | alfa | 0.00470168 | 0.00839310 | 21162.92055755 |  0.53179259 |         0.00026108 |         0.02835469 | 0.96225457 | 3.88353881 |         7.07514256 |         0.00716116 | 0.00523585 |
-    | beta | 2.83452053 | 3.14636532 |    -0.38586474 |  2.84013419 |         3.87985815 |         2.73409475 | 2.71901358 | 2.07274350 |         1.37204560 |         3.14316080 | 3.10821550 |
+     |      |        ANG |        BRC |        CET |          CHO |        GCR |        LBF |        LPF |        OTA |        SBF |        SPF |        SPL |        VID |
+     |------+------------+------------+------------+--------------+------------+------------+------------+------------+------------+------------+------------+------------|
+     | alfa | 0.00470168 | 0.00839310 | 0.01787816 | 833.26340006 | 0.53179259 | 0.00026120 | 0.02835469 | 3.88353881 | 7.07514256 | 0.00716116 | 0.96225457 | 0.00523585 |
+     | beta | 2.83452053 | 3.14636532 | 2.92615017 |   0.36413336 | 2.84013419 | 3.87976537 | 2.73409475 | 2.07274350 | 1.37204560 | 3.14316080 | 2.71901358 | 3.10821550 |
 
     #+CAPTION: Allometric relationship for different functional groups
     #+ATTR_HTML: width="600" alt="image"
@@ -1671,6 +1706,74 @@ fi
 
   - For Seals I use the values from Amano2000
     - \( W = 71.6(1 - 0.323 * exp( - 0.248 * t))^3 \)
+
+  - Estimation of Alometric relationship for the length on meters
+    #+BEGIN_SRC R :results output
+      ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+      ## ~                   estimation length weight relationship                ~ ##
+      ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+      library(ascii)
+      options(asciiType="org")
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+      spgrey <- rgb(t(col2rgb("black")), alpha=30, maxColorValue=255)
+      ## read the data
+      dat    <- read.csv("/home/demiurgo/Documents/PhD/Functional_groups/length_weight/length_weight_jf.csv")
+      ## Grupos funcionales
+      lf          <- FG(dat, 2)
+      ## The length is in mm. So it needed to changed to cm
+      lf[, 3 : 4] <- lf[, 3 : 4] / 1000
+      ##-----------
+      ##  Divide by functional group
+      ##---------------
+      lf.fg       <- split(lf, lf$FG)  # split by functional group
+      ## type of length that I used in the estimation of the cohorts for each functional group
+      len.ty <- c('total', 'fork', 'total', 'total', 'fork',
+                  'total', 'total', 'total', 'total', 'total','fork', 'total', 'total')
+      alometric <- function(length, alfa, beta){
+          weight <- alfa  * length ^ beta
+          return(weight)
+      }
+      ## Removing octopus
+      lf.fg <- lf.fg[ - 8]
+      png('img/allometric_meter.png', width = 1200, height = 900)
+      res <- list()
+      par(mfrow=c(3, 4), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
+      for(i in 1:length(lf.fg)){
+          len       <- lf.fg[[i]][, ifelse(len.ty[i] == 'total', 4, 3)]
+          weight    <- lf.fg[[i]][, 5]
+          ## orden the list,  jut for plotting
+          or        <- order(len)
+          len       <- len[or]
+          weight    <- weight[or]
+          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = ifelse(i %in% c(8, 9), 500, 8), beta = ifelse(i %in% c(3,9), 3, -9)),
+                           trace = FALSE, control = nls.control(maxiter = 5000, minFactor = 1/100000))
+          plot(len, weight, col = spgrey, pch = 20, bty = 'n', xlab = '', ylab = '', main = lf.fg[[i]]$FG[1] )
+          lines(len[!is.na(len)], predict(res[[i]]), col = 2)
+          if( i == 1){
+              parameters <- coef(res[[i]])
+          } else {
+              parameters <- cbind(parameters, coef(res[[i]]))
+          }
+      }
+      mtext(text="Weight (gr)",side=2,outer=TRUE,font=2,cex=1.5)
+      mtext(text="Length (m)",side=1,outer=TRUE,font=2,cex=1.5)
+      invisible(dev.off())
+      ## table with parameters
+      cap                  <- 'Values of the paramter alfa and beta in the allometric relationship for each functional group'
+      colnames(parameters) <- names(lf.fg)
+      b                    <- ascii(parameters, header=T,  include.rownames = TRUE, include.colnames = T, caption = cap, digit = 8)
+      print(b)
+    #+END_SRC
+    #+RESULTS:
+    #+CAPTION: Values of the paramter alfa and beta in the allometric relationship for each functional group
+    |      | ANG           | BRC            | CET            | CHO           | GCR             | LBF            | LPF           | OTA            | SBF           | SPF            | SPL             | VID           |
+    |------+---------------+----------------+----------------+---------------+-----------------+----------------+---------------+----------------+---------------+----------------+-----------------+---------------|
+    | alfa | 2194.28783018 | 16468.44019354 | 12723.98783963 | 4457.05529735 | 254691.80933120 | 15014.03630853 | 8333.23150290 | 54289.34295714 | 3924.92865030 | 13845.53750763 | 263827.14601143 | 8618.22537296 |
+    | beta | 2.83451275    | 3.14636395     | 2.92615017     | 0.36412652    | 2.84013908      | 3.87976788     | 2.73409107    | 2.07274414     | 1.37206189    | 3.14317104     | 2.71901603      | 3.10821255    |
+    #+ATTR_HTML: width="600" alt="image"
+    [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/allometric_meter.png]]
+
+
   - Calculation of mum
     #+BEGIN_SRC R  :results output
       ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
