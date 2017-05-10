@@ -4805,3 +4805,109 @@ Simulation time from 40 years to 14
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+***** SBF on ALF
+- 0.001 to 0.0001 (adl and Juv)
+***** BRC on SCR
+- Juv and Adl on Juv 0.08 to 0.04
+- Juv and Adl on Adl 0.03 to 0.015
+***** SBF on BRC
+- Juv on Juv 0.01 to 0.001
+- Adl on Juv 0.01 to 0.005
+***** CET on SPF
+- From 0.01 to 0.001 All combinations
+***** ALF on LBF
+- Adl on Juv from 0.01 to 0.001
+- Adl on Adl from 0.001 to 0.0001
+**** Clearance
+***** SPL
+- from : 0.90 1.07 1.27 1.48 1.74 1.97 2.20 2.40 2.61 2.84
+- to : 0.46 0.55 0.65 0.75 0.89 1.00 1.12 1.23 1.33 1.45
+***** CET
+- from : 3111.88 3599.63 15915.38 36376.84 99471.12 260670.55 331150.95 409580.40 496039.09 693121.22
+- to : 1575.75 1822.73 8059.00 18419.99 50368.77 131994.63 167683.50 207397.48 251177.20 350972.84
+***** OTA
+- from : 350.36	483.53	598.37	693.28	769.64	830.00	877.13	913.62	941.69	963.18
+- to : 234.62 323.79 400.69 464.25 515.38 555.80 587.37 611.80 630.59 644.99
+**** Mum
+*** Increased
+**** Clearance
+***** LBF
+- from : 8.38  11.56 16.16 20.21 25.53 35.07 43.79 49.72 59.25 70.18
+- to : 44.13 54.50 67.93 78.66 91.70 112.95 130.66 142.01 159.33 178.06
+***** LPF
+- from : 5.39 78.25 161.67 216.92 247.63 263.53 271.49 275.42 277.35 278.29
+- to : 16.01 232.30 479.99 644.01 735.19 782.38 806.02 817.69 823.41 826.21
+***** SPF
+- from : 0.10  2.21  6.59  11.66 16.38 20.31 23.39 25.71 27.41 28.64
+- to : 0.73 17.07 50.82 89.95 126.37 156.71 180.45 198.32 211.45 220.93
+***** VID
+- from : 47.09 70.10 107.69
+- to : 208.71 310.66 477.27
+**** Predation
+***** LBF on ALF
+- Adl to Juv from 0 to 0.001
+- Adl to Adl from 0 to 0.0001
+- Juv to Adl from 0 to 0.00001
+- Juv to Juv from 0 to 0.0001
+**** Running time
+**** Mum
+**** Mortality
+***** Lineal
+- ANG from 0.01, 0.01 to 0.001, 0.001
+*** Changed
+**** Vertical Distribution
+***** ANG
+- from : 1 0 0 0 0 0 0 0
+- to :  0 0 0 0 0 0.146 0.491 0.363
+***** SPL
+- from : 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+- to : 0.000 0.000 0.000 0.004 0.007 0.711 0.183 0.095
+***** GCR
+- from : 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+- to : 0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+***** OCT
+- from : 0.8 0.2 0.0 0.0 0.0 0.0 0.0 0.0
+- to : 0 0 0 0.017 0.183 0.33 0.31 0.16
+**** Lysis
+- MA from 0.01 to 0.005
+**** Mortality
+***** Lineal
+- CHO from 0 to 0.001
+** Output
+*** Increase Biomass
+- VID 66%
+- ALF 11%
+- ANG  +++100%
+- OCT 231%
+- SPF 9%
+- SBF 217%
+- LBF 382%
+- BFF 4%
+- COR 7%
+- BCA 10%
+- MOL 21%
+- MA 7%
+*** Decreased biomass
+- SPL 100%
+- GCR 100%
+- BRC 97%
+- CHO 97%
+- OTA 4%
+- LPF 1%
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170507174456
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170507174456.png]]
+* Run 20170510120010
+  - Run start: 2017-05-10 12:00:10
+  - Run end: 2017-05-10 15:11:46
+  - log file : [[file:Calibration/20170510151146.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6190
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

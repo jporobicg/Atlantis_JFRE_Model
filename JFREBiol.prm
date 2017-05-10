@@ -147,9 +147,6 @@ swr_const 1367.0
 swr_cos_coefft 0.034
 swr_cos_offset 0.0
 
-
-
-
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
 flagdemSPL  1  SPL: 1 = on, 0 = off 1
@@ -816,7 +813,7 @@ q10_method_BB  0
 
 # The optimum temperature of each functional group - this is only read in for groups where the q10_method is 1.
 q10_optimal_temp_SPL 17
-q10_optimal_temp_GCR 5
+q10_optimal_temp_GCR 15
 q10_optimal_temp_BRC 17
 q10_optimal_temp_ORO 5
 q10_optimal_temp_VID 16
@@ -2168,25 +2165,25 @@ FBIR_S1juv 51
 # surface most layer on the extreme right
 ## Spiny Lobster
 VERTday_SPL1 8
-0.000 0.000 0.000 0.004 0.007 0.711 0.183 0.095
+0 0 0 0.1799 0.5421 0.278 0 0
 VERTnight_SPL1 8
-0.000 0.000 0.000 0.004 0.007 0.711 0.183 0.095
+0 0 0 0.1799 0.5421 0.278 0 0
 VERTday_SPL2 8
-0.000 0.000 0.000 0.004 0.007 0.711 0.183 0.095
+0 0 0 0.1799 0.5421 0.278 0 0
 VERTnight_SPL2 8
-0.000 0.000 0.000 0.004 0.007 0.711 0.183 0.095
+0 0 0 0.1799 0.5421 0.278 0 0
 ## Golden Crab
 VERTday_GCR1 8
-0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+0 0 0.615 0.318 0.067 0 0 0
 VERTnight_GCR1 8
-0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+0 0 0.615 0.318 0.067 0 0 0
 VERTday_GCR2 8
-0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+0 0 0.615 0.318 0.067 0 0 0
 VERTnight_GCR2 8
-0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+0 0 0.615 0.318 0.067 0 0 0
 ## Octopus
 VERTday_OCT 8
-0.8 0.2 0.0 0.0 0.0 0.0 0.0 0.0
+0 0 0 0.017 0.183 0.33 0.31 0.16
 VERTnight_OCT 8
 0 0 0 0.017 0.183 0.33 0.31 0.16
 ## Squid
@@ -2405,7 +2402,7 @@ MOL_min_move_temp  4
 SCR_min_move_temp  4
 # Maximun temp tolerated
 SPL_max_move_temp  25
-GCR_max_move_temp  28.5
+GCR_max_move_temp  25
 BRC_max_move_temp  30
 VID_max_move_temp  30
 ORO_max_move_temp  30
@@ -3772,8 +3769,8 @@ C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.008     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-C_BFF_T15   0.08     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.005     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_BFF_T15   0.1     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.005    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.03    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
@@ -4997,9 +4994,9 @@ LBF_recruit_hdistrib   51 # Box recruitment locations for Large benthic fish [ P
 # column layer closest to the sediment and then up through the watercolumn to
 # surface most layer on the extreme right (regardless of how many water layers are present)
 SPL_recruit_vdistrib   8 # Vertical recruitment locations for Spiny lobster [ Proportion ]
-1 0 0 0 0 0 0
+0 0 0 0 1 0 0 0
 GCR_recruit_vdistrib   8 # Vertical recruitment locations for Golden Crab [ Proportion ]
-1 0 0 0 0 0 0
+0 0 1 0 0 0 0
 BRC_recruit_vdistrib   8 # Vertical recruitment locations for Breca [ Proportion ]
 0 0 0 0 0.4 0.3 0.2 0.1
 VID_recruit_vdistrib   8 # Vertical recruitment locations for Vidriola [ Proportion ]
