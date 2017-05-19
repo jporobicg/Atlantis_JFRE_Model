@@ -4911,3 +4911,36 @@ Simulation time from 40 years to 14
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+** Input
+*** Decreased
+**** Predation
+**** Mum
+**** Clearance
+***** SCR
+- from 0.008 to 0.005
+*** Increased
+**** Clearance
+***** BFF
+from 0.08 to 0.1
+**** Running time
+**** Mum
+**** Mortality
+*** Changed
+**** Vertical Distribution
+***** SPL
+- from  : 0 0 0 0.004 0.1795 0.5385 0.183 0.095
+- to : 0 0 0 0.1799 0.5421 0.278 0 0
+***** GCR
+- from : 0.025 0 0.59 0.319 0.044 0.007 0.012 0.003
+- to : 0 0 0.615 0.318 0.067 0 0 0
+**** Lysis
+**** Mortality
+***** Lineal
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170510120010
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170510120010.png]]
