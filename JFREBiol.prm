@@ -76,7 +76,7 @@ flag_predratiodepend        0
 
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-## ~           parameter for corals        ~ ##
+## ~           parameter for corals       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 K_max_num_DHW               10
 Karag_A			    0.9
@@ -1913,8 +1913,8 @@ SOFTchange_mult 1
 0
 
 # Array indicating cells effected by coastal degradation
-Box_degraded 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+Box_degraded 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 00
 
 ## Vertebrate movement options
 roc_wgt       10000  Wgt factor for density dependent fish move 10000
@@ -1946,14 +1946,8 @@ FBRC_S1  59  # Breca - Summer Spatial distribution
 FBRC_S3  59  # Breca - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0008263791 0.001193659 0 0 0 0 0 0.000918199 0.001010019 0.001101839 0.004590995 0.1898836 0.1183558 0.004407355 0.000918199 0 0 0 0.0311052 0.03930566 0.0312677 0.03517699 0.001836398 0 0 0 0.08484159 0.1054552 0.1862108 0.04214533 0.03081375 0.03053693 0.03189632 0.02620218
 #--------------------------------------------------------------------------------
-FVID_S2  59  # Vidriola - Autumm Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01878667 0 0 0 0 0 0 0 0 0 0.09393334 0.2927589 0 0 0 0 0 0 0.01878667 0 0 0 0 0 0 0 0.02818 0.07179321 0.03428567 0.1959181 0.05260267 0.09275917 0.0814089 0.01878667
-FVID_S4  59  # Vidriola - Spring Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02503787 0 0 0 0 0 0 0 0 0 0.1251894 0.3901735 0 0 0 0 0 0 0.02503787 0 0 0 0 0 0 0 0.03755681 0.09568218 0.04569412 0.08095579 0.07010605 0.03918972 0.0403388 0.02503787
-FVID_S1  59  # Vidriola - Summer Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02342112 0 0 0 0 0 0 0 0 0 0.1171056 0.3649792 0 0 0 0 0 0 0.02342112 0 0 0 0 0 0 0 0.03513169 0.08950378 0.04274355 0.1092986 0.06557915 0.08197394 0.02342112 0.02342112
-FVID_S3  59  # Vidriola - Winter Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02406541 0 0 0 0 0 0 0 0 0 0.1203271 0.3750193 0 0 0 0 0 0 0.02406541 0 0 0 0 0 0 0 0.03609812 0.09196592 0.04391938 0.04331774 0.06738315 0.07824529 0.07152775 0.02406541
+FVID_S1  59  # Vidriola - All Seasons Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02282777 0 0 0 0 0 0 0 0 0 0.1141388 0.3557327 0 0 0 0 0 0 0.02282777 0 0 0 0 0 0 0 0.03424165 0.08723627 0.04166068 0.1073726 0.06391776 0.07304203 0.05417414 0.02282777
 #--------------------------------------------------------------------------------
 FORO_S1  59  # Orange Roughy - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.110592 0.1591137 0.3062805 0.07321631 0.07321631 0.07321631 0.07321631 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03971167 0.09143696 0 0 0 0 0 0 0 0
@@ -2039,14 +2033,8 @@ FLZO_S1  59  # Large Zooplankton - All Seasons Spatial distribution
 FSCR_S1  59  # Small crustaceans - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05781022 0.02312409 0.02312409 0.02312409 0.02312409 0.02312409 0.02312409 0.02312409 0.03796204 0.03884915 0.0262073 0.02312409 0 0 0 0.01156204 0.03813837 0.009490853 0 0.02312409 0.02312409 0 0.02312409 0.02312409 0.02832938 0.0851638 0.02607337 0.02061588 0.07782099 0.09996026 0.08384319 0.0806841
 #--------------------------------------------------------------------------------
-FBFF_S2  59  # Deposit feeders - Autumm Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1176471 0.1176471 0.1176471 0.1176471 0.1176471 0.1176471 0.1176471 0.1764706
-FBFF_S4  59  # Deposit feeders - Spring Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0952381 0.0952381 0.0952381 0.0952381 0.3333333 0.04761905 0.0952381 0.1428571
-FBFF_S1  59  # Deposit feeders - Summer Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09638554 0.09638554 0.09638554 0.09638554 0.2168675 0.1566265 0.09638554 0.1445783
-FBFF_S3  59  # Deposit feeders - Winter Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09638554 0.09638554 0.09638554 0.09638554 0.2168675 0.1566265 0.09638554 0.1445783
+FBFF_S1  59  # Deposit feeders - All Seasons Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1014114 0.1014114 0.1014114 0.1014114 0.2190277 0.1217982 0.1014114 0.1521171
 #--------------------------------------------------------------------------------
 FLPH_S1  59  # Large phytoplankton - All Seasons Spatial distribution
 0.01874859 0.006658246 0.01768862 0.005514635 0.01532139 0.01127479 0.01746079 0.0233965 0.02688069 0.03090401 0.02494515 0.03145325 0.0192986 0.02005723 0.02622768 0.01786639 0.02886281 0.02622025 0.02297235 0.01831391 0.009403285 0.006738911 0.007537056 0.007763369 0.01080789 0.01530167 0.0156669 0.01028612 0.03352311 0.02830791 0.02548486 0.025993 0.02424248 0.02287224 0.02312897 0.01782091 0.02237954 0.02117188 0.02156601 0.01101056 0.01155165 0.007502523 0.007547789 0.007248767 0.007242557 0 0.01583765 0.01237803 0 0.02381324 0.02332528 0.02117188 0.01782091 0.02237954 0.02156601 0.007248767 0.007502523 0.007547789 0.007242557
@@ -2055,22 +2043,16 @@ FSPH_S1  59  # Small phytoplankton - All Seasons Spatial distribution
 0.01874859 0.006658246 0.01768862 0.005514635 0.01532139 0.01127479 0.01746079 0.0233965 0.02688069 0.03090401 0.02494515 0.03145325 0.0192986 0.02005723 0.02622768 0.01786639 0.02886281 0.02622025 0.02297235 0.01831391 0.009403285 0.006738911 0.007537056 0.007763369 0.01080789 0.01530167 0.0156669 0.01028612 0.03352311 0.02830791 0.02548486 0.025993 0.02424248 0.02287224 0.02312897 0.01782091 0.02237954 0.02117188 0.02156601 0.01101056 0.01155165 0.007502523 0.007547789 0.007248767 0.007242557 0 0.01583765 0.01237803 0 0.02381324 0.02332528 0.02117188 0.01782091 0.02237954 0.02156601 0.007248767 0.007502523 0.007547789 0.007242557
 #--------------------------------------------------------------------------------
 FCOR_S1  59  # Coral - All Seasons Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01042649 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009147536 0.005213243 0.005549581 0.008688738 0.5265375 0.4344369 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.0626385 0.008259811 0.05911081 0.05034662 0 0 0.03420298 0.03420298 0.03420298 0.03420298 0 0.03420298 0.03420298 0 0.03420298 0.03420298 0.007642124 0.007769106 0.01112428 0.007196998 0.12478 0.1246532 0.0117169 0.0117169
 #--------------------------------------------------------------------------------
-FBCA_S2  59  # Sedentary benthic carnivorous - Autumm Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05833475 0 0 0 0 0 0 0 0.05833475 0.05833475 0.05833475 0.05833475 0 0 0 0 0 0.05833475 0 0 0 0 0 0 0 0.0739359 0.05833475 0.05833475 0.05833475 0.1166695 0.1166695 0.08750212 0.08021028
-FBCA_S4  59  # Sedentary benthic carnivorous - Spring Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05266922 0 0 0 0 0 0 0 0.05266922 0.05266922 0.05266922 0.05266922 0 0 0 0 0 0.05266922 0 0 0 0 0 0 0 0.06675517 0.09503359 0.0909741 0.05858711 0.1158723 0.131673 0.05266922 0.07242017
-FBCA_S1  59  # Sedentary benthic carnivorous - Summer Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06304048 0 0 0 0 0 0 0 0.06304048 0.06304048 0.06304048 0.06304048 0 0 0 0 0 0.06304048 0 0 0 0 0 0 0 0.07990014 0.09143276 0.06430129 0.06304048 0.0788006 0.09456072 0.06304048 0.08668066
-FBCA_S3  59  # Sedentary benthic carnivorous - Winter Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0553574 0 0 0 0 0 0 0 0.0553574 0.0553574 0.0553574 0.0553574 0 0 0 0 0 0.0553574 0 0 0 0 0 0 0 0.07016229 0.0776207 0.07548736 0.05846737 0.1162505 0.1245542 0.06919675 0.07611643
+FBCA_S1  59  # Sedentary benthic carnivorous - All Seasons Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05735046 0 0 0 0 0 0 0 0.05735046 0.05735046 0.05735046 0.05735046 0 0 0 0 0 0.05735046 0 0 0 0 0 0 0 0.07268838 0.08060545 0.07227438 0.05960743 0.1068982 0.1168644 0.06810214 0.07885688
 #--------------------------------------------------------------------------------
 FMOL_S1  59  # Mollusca - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2190336 0 0 0 0 0 0 0 0 0.2327013 0.204013 0.08314493 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04157247 0.04157247 0.05196558 0.04285162 0.04157247 0 0 0.04157247
 #--------------------------------------------------------------------------------
 FMA_S1  59  # Macroalgae - All Seasons Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.125 0.125 0.125 0.125 0.125 0.125 0.125 0.125
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03769751 0.03769751 0.03769751 0.03769751 0.03769751 0.03769751 0.03769751 0.02029274 0.0324934 0.04040478 0.05332547 0 0 0.03769751 0.03769751 0.03769751 0.03769751 0 0.03769751 0.03769751 0 0.03769751 0.03769751 0.05311384 0.05380592 0.06303486 0.05277569 0.01865446 0.01865446 0.01865446 0.009327228
 
 ## Spatial (Horizontal) distribution Juveniles in the JFRE
 ## - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -2096,14 +2078,8 @@ FBRC_S1juv  59  # Breca - Summer Spatial distribution
 FBRC_S3juv  59  # Breca - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.003673703 0 0 0 0 0 0 0 0 0.003673703 0.1242936 0.02724663 0.004898271 0 0 0 0 0.03086994 0.03900838 0.02829744 0.03472868 0.001822509 0 0 0 0.1708272 0.19838 0.1849097 0.02602207 0.02966944 0.03030597 0.03536872 0.026004
 #--------------------------------------------------------------------------------
-FVID_S2juv  59  # Vidriola - Autumm Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01878667 0 0 0 0 0 0 0 0 0 0.09393334 0.2927589 0 0 0 0 0 0 0.01878667 0 0 0 0 0 0 0 0.02818 0.07179321 0.03428567 0.1959181 0.05260267 0.09275917 0.0814089 0.01878667
-FVID_S4juv  59  # Vidriola - Spring Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02503787 0 0 0 0 0 0 0 0 0 0.1251894 0.3901735 0 0 0 0 0 0 0.02503787 0 0 0 0 0 0 0 0.03755681 0.09568218 0.04569412 0.08095579 0.07010605 0.03918972 0.0403388 0.02503787
-FVID_S1juv  59  # Vidriola - Summer Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02342112 0 0 0 0 0 0 0 0 0 0.1171056 0.3649792 0 0 0 0 0 0 0.02342112 0 0 0 0 0 0 0 0.03513169 0.08950378 0.04274355 0.1092986 0.06557915 0.08197394 0.02342112 0.02342112
-FVID_S3juv  59  # Vidriola - Winter Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02406541 0 0 0 0 0 0 0 0 0 0.1203271 0.3750193 0 0 0 0 0 0 0.02406541 0 0 0 0 0 0 0 0.03609812 0.09196592 0.04391938 0.04331774 0.06738315 0.07824529 0.07152775 0.02406541
+FVID_S1juv  59  # Vidriola - All Seasons Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02282777 0 0 0 0 0 0 0 0 0 0.1141388 0.3557327 0 0 0 0 0 0 0.02282777 0 0 0 0 0 0 0 0.03424165 0.08723627 0.04166068 0.1073726 0.06391776 0.07304203 0.05417414 0.02282777
 #--------------------------------------------------------------------------------
 FORO_S1juv  59  # Orange Roughy - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.110592 0.1591137 0.3062805 0.07321631 0.07321631 0.07321631 0.07321631 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03971167 0.09143696 0 0 0 0 0 0 0 0
@@ -2170,8 +2146,6 @@ FLBF_S1juv  59  # Large benthic fish - Summer Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.008849558 0.008849558 0.008849558 0.008849558 0.008849558 0.03641388 0.008849558 0.01820694 0.01820694 0.008849558 0.01820694 0.01820694 0 0.3732422 0.01820694 0.04096561 0 0 0.01769912 0.01769912 0 0.008849558 0.008849558 0.04867105 0.08928297 0.03465525 0.03565526 0.02124143 0.03868975 0.02048281 0.05462082
 FLBF_S3juv  59  # Large benthic fish - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.008849558 0.008849558 0.008849558 0.008849558 0.008849558 0.03693862 0.008849558 0.01846931 0.01846931 0.008849558 0.01846931 0.01846931 0 0.3786208 0.01846931 0.04155595 0 0 0.01769912 0.01769912 0 0.008849558 0.008849558 0.04937242 0.09056957 0.03515465 0.03616906 0.02462575 0.02308664 0.02110778 0.05540793
-
-
 
 # #from B1
 # FSPL_S1 51
@@ -3344,104 +3318,104 @@ LBF_FSMG 1
 # Proportion from each box in the model that exit when group migrates out of the model domain (default value will be
 # 0 except for the few cells along the boundary where the group can flow out of the model. Juv stands for
 # juveniles and ad for adults (treated seperately in the model so separate entries for them are given here)
-MigIOBox_SZO 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_MZO 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_LZO 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SZO 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_MZO 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_LZO 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Juvenile migration
-MigIOBox_GCRjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SPLjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BRCjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_VIDjuv 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_OROjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_ALFjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_ANGjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CHOjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_OTAjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CETjuv 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_DOLjuv 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_BIRjuv 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_OCTjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SQDjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CORjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BCAjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_MOLjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SCRjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_LPFjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SPFjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_LBFjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SBFjuv 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_GCRjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SPLjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_BRCjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_VIDjuv 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_OROjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_ALFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_ANGjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CHOjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_OTAjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CETjuv 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_DOLjuv 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_BIRjuv 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_OCTjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SQDjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CORjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_BCAjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_MOLjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SCRjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_LPFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SPFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_LBFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SBFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Adult migrations
-MigIOBox_SPLad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_GCRad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BRCad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_VIDad 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_OROad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_ALFad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_ANGad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CHOad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_OTAad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CETad 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_DOLad 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_BIRad 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-MigIOBox_OCTad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SQDad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CORad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BCAad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_MOLad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SCRad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_LPFad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SPFad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_SBFad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_LBFad 51
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SPLad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_GCRad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_BRCad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_VIDad 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_OROad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_ALFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_ANGad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CHOad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_OTAad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CETad 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_DOLad 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_BIRad 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MigIOBox_OCTad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SQDad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_CORad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_BCAad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_MOLad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SCRad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_LPFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SPFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_SBFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_LBFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Numbers and weights of each group that begin outside the model domain and must migrate in during the first year.
 # Treat it these as part of the initial conditions when setting up initial stock sizes (i.e. adjust numbers inside
@@ -5210,36 +5184,36 @@ FSPB_BIR  10
 0 0.5 1 1 1 1 1 1 1 1
 
 # Recruit location spatial distibutions.
-SPL_recruit_hdistrib   51 # Box recruitment locations for Spiny lobster [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-GCR_recruit_hdistrib   51 # Box recruitment locations for Golden Crab [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-BRC_recruit_hdistrib   51 # Box recruitment locations for Breca [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-VID_recruit_hdistrib   51 # Box recruitment locations for Vidriola [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-ORO_recruit_hdistrib   51 # Box recruitment locations for Orange Roughy [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-ALF_recruit_hdistrib   51 # Box recruitment locations for Alfonsino [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-ANG_recruit_hdistrib   51 # Box recruitment locations for Anguila [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-CHO_recruit_hdistrib   51 # Box recruitment locations for Chondrichtyans [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-OTA_recruit_hdistrib   51 # Box recruitment locations for Otariid [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-CET_recruit_hdistrib   51 # Box recruitment locations for Cetaceans [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-DOL_recruit_hdistrib   51 # Box recruitment locations for Dolphins [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-LPF_recruit_hdistrib   51 # Box recruitment locations for Large pelagic fish [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-SPF_recruit_hdistrib   51 # Box recruitment locations for Small pelagic fish [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-SBF_recruit_hdistrib   51 # Box recruitment locations for Small benthic fish [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-LBF_recruit_hdistrib   51 # Box recruitment locations for Large benthic fish [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPL_recruit_hdistrib   59 # Box recruitment locations for Spiny lobster [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+GCR_recruit_hdistrib   59 # Box recruitment locations for Golden Crab [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+BRC_recruit_hdistrib   59 # Box recruitment locations for Breca [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+VID_recruit_hdistrib   59 # Box recruitment locations for Vidriola [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ORO_recruit_hdistrib   59 # Box recruitment locations for Orange Roughy [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ALF_recruit_hdistrib   59 # Box recruitment locations for Alfonsino [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ANG_recruit_hdistrib   59 # Box recruitment locations for Anguila [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CHO_recruit_hdistrib   59 # Box recruitment locations for Chondrichtyans [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+OTA_recruit_hdistrib   59 # Box recruitment locations for Otariid [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CET_recruit_hdistrib   59 # Box recruitment locations for Cetaceans [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+DOL_recruit_hdistrib   59 # Box recruitment locations for Dolphins [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+LPF_recruit_hdistrib   59 # Box recruitment locations for Large pelagic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SPF_recruit_hdistrib   59 # Box recruitment locations for Small pelagic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+SBF_recruit_hdistrib   59 # Box recruitment locations for Small benthic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+LBF_recruit_hdistrib   59 # Box recruitment locations for Large benthic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Recruit location vertical distibutions. First entry for each vector refers to water
 # column layer closest to the sediment and then up through the watercolumn to
@@ -5717,38 +5691,38 @@ BIR_max_spawn_salt   40 # Maximum spawning salinity for Large benthic fish
 
 ## Stock structure
 # Horizontal stock structure
-SPL_stock_struct   51 # Horizontal stock structure for Spiny lobster [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-GCR_stock_struct   51 # Horizontal stock structure for Golden Crab [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-BRC_stock_struct   51 # Horizontal stock structure for Breca [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-VID_stock_struct   51 # Horizontal stock structure for Vidriola [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-ORO_stock_struct   51 # Horizontal stock structure for Orange Roughy [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-ALF_stock_struct   51 # Horizontal stock structure for Alfonsino [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-ANG_stock_struct   51 # Horizontal stock structure for Anguila [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-CHO_stock_struct   51 # Horizontal stock structure for Chondrichtyans [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-OTA_stock_struct   51 # Horizontal stock structure for Otariid [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-CET_stock_struct   51 # Horizontal stock structure for Cetaceans [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-DOL_stock_struct   51 # Horizontal stock structure for Dolphins [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-LPF_stock_struct   51 # Horizontal stock structure for Large pelagic fish [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-SPF_stock_struct   51 # Horizontal stock structure for Small pelagic fish [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-SBF_stock_struct   51 # Horizontal stock structure for Small benthic fish [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-LBF_stock_struct   51 # Horizontal stock structure for Large benthic fish [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-BIR_stock_struct   51 # Horizontal stock structure for Large benthic fish [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+SPL_stock_struct   59 # Horizontal stock structure for Spiny lobster [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+GCR_stock_struct   59 # Horizontal stock structure for Golden Crab [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+BRC_stock_struct   59 # Horizontal stock structure for Breca [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+VID_stock_struct   59 # Horizontal stock structure for Vidriola [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ORO_stock_struct   59 # Horizontal stock structure for Orange Roughy [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ALF_stock_struct   59 # Horizontal stock structure for Alfonsino [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ANG_stock_struct   59 # Horizontal stock structure for Anguila [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+CHO_stock_struct   59 # Horizontal stock structure for Chondrichtyans [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+OTA_stock_struct   59 # Horizontal stock structure for Otariid [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+CET_stock_struct   59 # Horizontal stock structure for Cetaceans [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+DOL_stock_struct   59 # Horizontal stock structure for Dolphins [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+LPF_stock_struct   59 # Horizontal stock structure for Large pelagic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+SPF_stock_struct   59 # Horizontal stock structure for Small pelagic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+SBF_stock_struct   59 # Horizontal stock structure for Small benthic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+LBF_stock_struct   59 # Horizontal stock structure for Large benthic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+BIR_stock_struct   59 # Horizontal stock structure for Large benthic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 # Vertical stock structure. First entry for each vector refers to water
 # column layer closest to the sediment and then up through the watercolumn to
@@ -5787,8 +5761,8 @@ LBF_vert_stock_struct   8 # Vertical stock structure for Large benthic fish [ st
 ## Regional output information - when want overall Biom.txt file split by region too
 # Biomass reporting regions - give the region each box will be counted in (so if two
 # regions each box must be either in region 0 or 1 etc)
-regID 51
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+regID 59
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 ## VECTORS of pre-existing age distirbutions (how numbers within age class are split
 # up by years in that class). Only used if readin_popratio is set to 1
