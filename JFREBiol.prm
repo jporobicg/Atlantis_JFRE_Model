@@ -2390,22 +2390,22 @@ FLBF_S3juv  59  # Large benthic fish - Winter Spatial distribution
 # surface most layer on the extreme right
 ## Spiny Lobster
 VERTday_SPL1 8
-0 0 0 0.1799 0.5421 0.278 0 0
+1 0 0 0 0 0 0 0
 VERTnight_SPL1 8
-0 0 0 0.1799 0.5421 0.278 0 0
+1 0 0 0 0 0 0 0
 VERTday_SPL2 8
-0 0 0 0.1799 0.5421 0.278 0 0
+1 0 0 0 0 0 0 0
 VERTnight_SPL2 8
-0 0 0 0.1799 0.5421 0.278 0 0
+1 0 0 0 0 0 0 0
 ## Golden Crab
 VERTday_GCR1 8
-0 0 0.615 0.318 0.067 0 0 0
+1 0 0 0 0 0 0 0
 VERTnight_GCR1 8
-0 0 0.615 0.318 0.067 0 0 0
+1 0 0 0 0 0 0 0
 VERTday_GCR2 8
-0 0 0.615 0.318 0.067 0 0 0
+1 0 0 0 0 0 0 0
 VERTnight_GCR2 8
-0 0 0.615 0.318 0.067 0 0 0
+1 0 0 0 0 0 0 0
 ## Octopus
 VERTday_OCT 8
 0 0 0 0.017 0.183 0.33 0.31 0.16
