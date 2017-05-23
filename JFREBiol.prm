@@ -66,7 +66,7 @@ flagtsforcerecruit   	   0 Force recruitment of 1+ groups with environmental for
 lim_sun_hours        	   0 Whether using limted hours of sun oer day or the default assumption of half the day is "day"
 flag_macro_model    	   0
 swr_scalar           	   0.45 Proportion of shortwave radiation available to photosynthesis
-flag_olddiet         	   1         Whether to use old (1) or new (0) diet calculations                 1
+flag_olddiet         	   0  Whether to use old (1) or new (0) diet calculations                 1
 UseHardFeedingWindow 	   0    Whether to use Heaviside based feeding window (1) or smoother curve (0)   1
 UseBiLogisticFeedingWindow 1
 flag_fine_ontogenetic_diets 0

@@ -274,7 +274,7 @@ pss_period2 1
 # Start day of second change in nutrients
 pss_start2 0
 
-include_atmosphere 0
+include_atmosphere 1
 atmospheric_NH 0.017
 atmospheric_NO 0.025
 atmospheric_F 0.0
