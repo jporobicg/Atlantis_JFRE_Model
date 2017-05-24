@@ -3560,7 +3560,6 @@ KHTI 1.5 Factor handother deep demersal time increased by for relres<thresh2 1.5
 # pPREY1FY2 is the availability of juvenile prey groups to adult group FY and so on
 # The order of the prey groups is defined by your functional group input file.
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
-##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.01 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
@@ -3702,7 +3701,7 @@ pPREYLZO  37
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0.01 0.005 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 5e-04 0.008 0.005 0 0 0 0
 pPREYCOR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 0 0 0 0 0
 pPREYBCA  37
@@ -3995,7 +3994,7 @@ C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.005     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-C_BFF_T15   0.01     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+C_BFF_T15   0.008     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.005    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.03    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
@@ -4122,7 +4121,7 @@ C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 16.01 232.30 479.99 644.01 735.19 782.38 806.02 817.69 823.41 826.21
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
-0.73 17.07 50.82 89.95 126.37 156.71 180.45 198.32 211.45 220.93
+0.49 4.94 9.30 13.89 17.63 20.51 22.64 24.19 25.31 26.10
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 5.18  7.74  10.82 15.32 20.42 27.74 32.45 43.95 51.39 59.40
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
