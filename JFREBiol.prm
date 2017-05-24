@@ -1427,7 +1427,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   3       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   4       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 # Primary producer light requirements
@@ -1748,7 +1748,7 @@ OCT_maxdepth  200
 SQD_maxdepth  3000
 COR_maxdepth  1000
 LPF_maxdepth  350
-SPF_maxdepth  300
+SPF_maxdepth  100
 SBF_maxdepth  1000
 LBF_maxdepth  1000
 MZO_maxdepth  4300
@@ -2537,13 +2537,13 @@ VERTnight_LPF2 8
 0 0 0 0 0.003 0.03 0.125 0.842
 ## Small Pelagic Fish
 VERTday_SPF1 8
-0 0 0 0 0.07 0.432 0.164 0.334
+0 0 0 0 0 0.1 0.566 0.334
 VERTnight_SPF1 8
-0 0 0 0 0.07 0.432 0.164 0.334
+0 0 0 0 0 0.1 0.566 0.334
 VERTday_SPF2 8
-0 0 0 0 0.07 0.432 0.164 0.334
+0 0 0 0 0 0.1 0.566 0.334
 VERTnight_SPF2 8
-0 0 0 0 0.07 0.432 0.164 0.334
+0 0 0 0 0 0.1 0.566 0.334
 ## Small Benthic Fish
 VERTday_SBF1 8
 0 0 0 0 0.063 0.82 0.054 0.063
@@ -3987,8 +3987,8 @@ k_trans_MOL 1.0
 k_trans_BCA 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
-C_OCT_T15   0.035     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SQD_T15   0.0007    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_OCT_T15   0.0035     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
@@ -4117,13 +4117,13 @@ C_ORO   10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 1.56 5.61 10.40 15.92 21.70 27.40 32.80 37.76 42.25 46.19
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-0.03  2.16  8.18  16.57 25.28 32.96 38.62 41.92 42.79 39.98
+0.15 6.36 16.18 26.11 34.27 35.05 37.84 33.03 32.09 29.98
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 16.01 232.30 479.99 644.01 735.19 782.38 806.02 817.69 823.41 826.21
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
-0.49 4.94 9.30 13.89 17.63 20.51 22.64 24.19 25.31 26.10
+0.34 2.47 4.65 6.94 8.82 10.25 11.32 12.10 12.65 13.05
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
-5.18  7.74  10.82 15.32 20.42 27.74 32.45 43.95 51.39 59.40
+2.59 3.87 5.41 7.66 10.21 13.87 16.22 21.98 25.69 29.70
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 44.13 54.50 67.93 78.66 91.70 112.95 130.66 142.01 159.33 178.06
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
