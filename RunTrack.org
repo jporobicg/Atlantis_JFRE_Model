@@ -4111,7 +4111,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4134,7 +4134,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4240,7 +4240,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4313,7 +4313,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4373,7 +4373,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4408,7 +4408,7 @@ I reduce the search time and the maximum speed. For the search tiem I was using 
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4452,7 +4452,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4488,7 +4488,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4563,7 +4563,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4636,7 +4636,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6186
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4760,7 +4760,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170505151545
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170505151545.png]]
@@ -4773,7 +4773,7 @@ The decrease in clearance has a huge impact on populations
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4805,7 +4805,7 @@ Simulation time from 40 years to 14
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -4911,7 +4911,7 @@ Simulation time from 40 years to 14
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -5009,7 +5009,7 @@ changed position of lobsters
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170522152404
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170522152404.png]]
@@ -5075,7 +5075,7 @@ nuw configuration
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -5116,6 +5116,75 @@ nuw configuration
   - Run start: 2017-05-24 14:42:43
   - Run end: 2017-05-24 17:07:16
   - log file : [[file:Calibration/20170524170716.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6190
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+
+** Input
+*** Decreased
+**** Predation
+**** Mum
+**** Clearance
+***** ANG
+- from  : 0.03  2.16  8.18  16.57 25.28 32.96 38.62 41.92 42.79 39.98
+- to : 0.15 6.36 16.18 26.11 34.27 35.05 37.84 33.03 32.09 29.98
+***** SPF
+- from : 0.49 4.94 9.30 13.89 17.63 20.51 22.64 24.19 25.31 26.10
+- to : 0.34 2.47 4.65 6.94 8.82 10.25 11.32 12.10 12.65 13.05
+***** OCT
+from 0.035 to 0.0035
+***** SBF
+- from  : 5.18 7.74 10.82 15.32 20.42 27.74 32.45 43.95 51.39 59.40
+- to : 2.59 3.87 5.41 7.66 10.21 13.87 16.22 21.98 25.69 29.70
+*** Increased
+**** Clearance
+***** BFF from 0.1 to 0.01
+***** SQD from 0.0007 to 0.001
+**** Running time
+**** Mum
+- MA from 3 to 4
+**** Mortality
+***** Linear
+**** Initial Biomass
+*** Changed
+**** Vertical Distribution
+***** SPF
+- from  : 0 0 0 0 0.07 0.432 0.164 0.334
+- to : 0 0 0 0 0 0.1 0.566 0.334
+**** Max depth
+ - SPF to 100
+**** Include Atmsphere is ON (set to 1)
+**** Changed flag_old_diet (set to 0)
+**** hydro
+**** Lysis
+**** Mortality
+** Output
+*** Increase Biomass
+ - SPL 723%
+ - GCR 26%
+ - BRC 2%
+ - ANG 26%
+ - SBF 12%
+ - SCR 165%
+ - COR 1%
+ - MOL 3%
+ - MA 2100%
+*** Decreased biomass
+ - BIR 41%
+ - OCT 9%
+ - SPF 100%
+ - BFF  22%
+
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170524144243
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170524144243.png]]
+* Run 20170525113020
+  - Run start: 2017-05-25 11:30:20
+  - Run end: 2017-05-25 17:10:39
+  - log file : [[file:Calibration/20170525171039.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
