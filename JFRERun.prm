@@ -33,8 +33,8 @@ checkstop     366666660 day    # Stop detailed logged output after this date
 debug         0        	       # Several option,  Check manual
 fishtest      0        	       # Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes
 flaggape      0        	       # Periodically list prey vs gape statistics (tuning diagnostic)
-flagchecksize 1        	       # Periodically list relative size (tuning diagnostic)
-flagagecheck  1        	       # Periodically list age structure per cohort (tuning diagnostic)
+flagchecksize 0        	       # Periodically list relative size (tuning diagnostic)
+flagagecheck  0        	       # Periodically list age structure per cohort (tuning diagnostic)
 flagdietcheck 0        	       # Periodically list realised diet matchups (tuning diagnostic)
 checkNH       0       	       # Give detailed logged output for NH in checkbox
 checkDL       0        	       # Give detailed logged output for DL in checkbox
