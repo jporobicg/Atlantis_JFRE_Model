@@ -1,6 +1,6 @@
 #!/bin/bash
 ## instaling Atlantis for functionality
-sudo make install  -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
+sudo make install  -Wno-misleading-indentation -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 
 
 ## This Code make an aumotamic backup of the log file
