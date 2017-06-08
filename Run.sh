@@ -1,6 +1,6 @@
 #!/bin/bash
 ## instaling Atlantis for functionality
-sudo make install  -Wno-misleading-indentation -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
+sudo make install -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 
 
 ## This Code make an aumotamic backup of the log file
@@ -23,7 +23,6 @@ cp -a JFR_Output_Folder/outputJFREBiomIndx.txt Calibration/BioTot$datEnd.bak
 echo "...Done"
 
 osver=$(cat /etc/issue.net)
-
 
 ## Writint the information of the run in the RunTrack.org file
 echo "* Run $datIni" >> RunTrack.org
