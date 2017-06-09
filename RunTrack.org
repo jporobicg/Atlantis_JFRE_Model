@@ -5527,3 +5527,12 @@ remove the prints on the code
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170608085008
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170608085008.png]]
+* Run 20170609155554
+  - Run start: 2017-06-09 15:55:54
+  - Run end: 2017-06-09 18:14:19
+  - log file : [[file:Calibration/20170609181419.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6190
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
