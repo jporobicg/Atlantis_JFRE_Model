@@ -1418,9 +1418,9 @@ salt_correction_BB  1.0
 
 ## Tolerances and boundaries
 RelTol            0.1          Relative tolerance of the adaptive differentiation scheme 0.1
-Flux_tol     0.2          Tolerance of mass balance assumption per cell mg N m-3 0.1
-min_pool     0.00000001   Minimum pool size 0.00000001 mg N m-3
-min_dens     0.0001       Minimum density of top predators and fish 0.0001
+Flux_tol          0.2          Tolerance of mass balance assumption per cell mg N m-3 0.1
+min_pool          0.00000001   Minimum pool size 0.00000001 mg N m-3
+min_dens          0.0001       Minimum density of top predators and fish 0.0001
 min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
@@ -1428,8 +1428,8 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 mum_LPH_T15  1     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
-
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
+
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
 KI_SPH_T15  10  Light saturation, Small phytoplankton W m-2 10 - 20
