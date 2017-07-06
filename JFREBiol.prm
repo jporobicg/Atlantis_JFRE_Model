@@ -5405,15 +5405,15 @@ BHalpha_VID   1.3E+07     	       # Beverton-Holt recruitment rate parameter (if
 BHalpha_ORO   3035799410000000         # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   4761569555.28            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   245018061690            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
-### BHalpha_CHO   2680000        	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
-## BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
-## BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
-## BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
+BHalpha_CHO   0        	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
+BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
+BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
+BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   4033992076.64            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   608039026000             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1729201274             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2332116259350          # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
-## BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   27      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   71.99   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab

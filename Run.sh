@@ -24,7 +24,7 @@ echo "...Done"
 
 osver=$(cat /etc/issue.net)
 
-## Writint the information of the run in the RunTrack.org file
+## Writing the information of the run in the RunTrack.org file
 echo "* Run $datIni" >> RunTrack.org
 echo "  - Run start: $dateinicio">> RunTrack.org
 echo "  - Run end: $dateend">> RunTrack.org

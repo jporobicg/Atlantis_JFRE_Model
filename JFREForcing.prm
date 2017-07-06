@@ -6,8 +6,13 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Hydronamic files     ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-nhdfiles 1
-hd0.name Inputs/Forcing_Hydro/JFRE_hydro.nc
+nhdfiles 6
+hd0.name Inputs/Forcing_Hydro/01_JFRE_hydro.nc
+hd1.name Inputs/Forcing_Hydro/02_JFRE_hydro.nc
+hd2.name Inputs/Forcing_Hydro/03_JFRE_hydro.nc
+hd3.name Inputs/Forcing_Hydro/04_JFRE_hydro.nc
+hd4.name Inputs/Forcing_Hydro/05_JFRE_hydro.nc
+hd5.name Inputs/Forcing_Hydro/06_JFRE_hydro.nc
 
 ## ~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~      Temperature   ~ ##

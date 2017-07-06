@@ -8,7 +8,7 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~                    General parameters controlling the run                ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-title         Juan Fernandez Ridge Ecosystem Atlantis Model - First attempt
+title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
 tstop         300 day     # Stop time after the given period 1460  = 4 anos
 tburnday      0 day	   # Burnday
