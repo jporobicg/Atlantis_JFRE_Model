@@ -68,7 +68,7 @@ eddy
 ## ~      Eddy files  ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~ ##
 eddy_nFiles 1
-eddy_File0.name Inputs/Forcings/JFRE_eddies.nc
+eddy_File0.name Inputs/Forcings/OFES_JFRE_eddies.nc
 eddy_rewind 1
 
 # Bottom stress
