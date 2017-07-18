@@ -1427,7 +1427,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1     Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   4       Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   4     Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
@@ -4621,8 +4621,8 @@ BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
 BCA_mL   0 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mL   0 # Linear mortality rate of Mollusca [ d-1 ]
 MA_mL    0 # Linear mortality rate of Large phytoplancton [ d-1 ]
-LPH_mL   0.0002  # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mL   0.0002  # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mL   0.02  # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mL   0.02  # Linear mortality rate of Mollusca [ d-1 ]
 PB_mL    0 # Linear mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mL    0 # Linear mortality rate of Sediment Bacteria [ d-1 ]
 DL_mL    0 # Linear mortality rate of Labile detritus [ d-1 ]
