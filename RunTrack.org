@@ -5190,7 +5190,7 @@ from 0.035 to 0.0035
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -5327,7 +5327,7 @@ from 0.035 to 0.0035
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170530132922
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170530132922.png]]
@@ -5523,7 +5523,7 @@ remove the prints on the code
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170608085008
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170608085008.png]]
@@ -5536,7 +5536,7 @@ remove the prints on the code
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6190
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
 
 ** Input
 *** Decreased
@@ -5822,6 +5822,103 @@ new eddies matrix is needed too
   - Run start: 2017-08-01 09:09:28
   - Run end: 2017-08-01 14:58:38
   - log file : [[file:Calibration/20170801145838.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub :
+** Input
+*** Decreased
+**** Predation
+**** Mum
+***** SPH
+- from 1 to 0.7
+***** LPH
+- from 1 to 0.7
+***** OCT
+- from 0.08 to 0.008
+***** SQD
+- from  0.002 to 0.0002
+***** SZO
+- from 0.01 to 0.005
+***** MZO
+- from 0.005 to 0.001
+***** LZO
+- from 0.001 to 0.0005
+**** Clearance
+***** BRC
+- From : 9.38 13.35 18.02 23.21 29.22 36.56 44.88 52.01 58.91 66.23
+- To: 3.52 5.01 6.76 8.71 10.96 13.71 16.83 19.5 22.09 24.84
+***** LBF
+- From: 44.13 51.52 60.60 66.09 72.46 83.75 90.74 92.16 96.39 100.16
+- To: 29.42 34.35 40.40 44.06 48.31 55.83 60.49 61.44 64.26 66.77
+***** GCR
+-From 0.03 0.20 0.27 0.37 0.55 0.73 1 1.2 1.5 1.8
+- To: 0.02 0.07 0.16 0.26 0.39 0.52 0.64 0.74 0.85 0.94
+***** BRC
+- From: 4.69 6.68 9.01 11.61 14.61 18.28 22.44 26.01 29.45 33.12
+- To: 3.52 5.01 6.76 8.71 10.96 13.71 16.83 19.5 22.09 24.84
+***** VID
+- From: 183.43 174.74 186.43
+- To: 25.45 33.67 45.57
+***** LPF
+- From: 16.01 122.03 201.54 242.72 259.67 263.81 261.62 256.43 249.87 242.72
+- To: 7.78 59.32 97.97 117.99 126.23 128.24 127.18 124.65 121.47 117.99
+***** SPF
+- From: 0.34 2.47 4.65 6.94 8.82 10.25 11.32 12.10 12.65 13.05
+- To: 0.3 2.22 4.19 6.25 7.93 9.23 10.19 10.89 11.39 11.74
+***** BIR
+- from 3.76 12.42  23.27 34.66 45.67 55.82  64.88  72.81  79.64 85.46
+- to 0.41 2.18 5.28 9.24 13.61 18.04 22.28 26.2 29.72 32.81
+***** OTA
+- from 125.13 219.31 271.40 314.45 349.09 376.46 397.84 414.39 427.12 436.87
+- to 75.08 138.15 170.96 198.08 219.9 237.14 250.61 261.03 269.05 275.19
+***** CHO
+- from 125.13 219.31 271.40 314.45 349.09 376.46 397.84 414.39 427.12 436.87
+- to 75.08 138.15 170.96 198.08 219.9 237.14 250.61 261.03 269.05 275.19
+**** Pprey
+***** SPF
+- Juv on juv LZO 0.2 to 0.09
+- Juv on adul LZO 0.1 to 0.07
+- Adl on juv LZO 0.1 to 0.07
+- Adl on adul LZO 0.15 to 0.05
+**** Light penetration
+- k_w_deep     from 0.014  to 0.01
+- k_DL         from 0.0038 to 0.003
+**** Lisi
+- KLYS_LPH   from 0.00001 to 0.0001
+- KLYS_SPH   from 0.00002 to 0.0002
+- KLYS_MA    from 0.005 to 0.0005
+- KLYS_COR   from 0.001 to 0.00001
+*** Increased
+**** Clearance
+**** Pprey
+***** SPF on
+- LPH from 0 to 0.005
+- MZO from 0 to 0.005
+**** Recruitment
+**** Running time
+**** Mum
+**** Mortality
+***** lineal
+- MZO from 0 to 0.002
+- LZO from 0 to 0.001
+- MZO from 0 to 0.002
+- LPH from 0.02 to 0.4
+- SPH from 0.02 to 0.4
+**** Initial Biomass
+*** Changed
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170801090928
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170801090928.png]]
+* Run PC-Demiurgo 20170802115236
+  - Run start: 2017-08-02 11:52:36
+  - Run end: 2017-08-02 17:57:20
+  - log file : [[file:Calibration/20170802175720.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
