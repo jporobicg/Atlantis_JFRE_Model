@@ -3795,8 +3795,8 @@ C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.005     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-C_BFF_T15   0.008     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.001     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_BFF_T15   0.003     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.005    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.03    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
@@ -3930,6 +3930,7 @@ C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 22.06 25.76 30.3 33.05 36.23 41.88 45.37 46.08 48.19 50.08
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 9.37 29.9 54.2 78.36 100.48 119.81 136.21 149.85 161.03 170.12
+5 15.95 28.91 41.79 53.59 63.9 72.64 79.92 85.88 90.73
 C_DOL 10
 13.39 43.88 81.51 120.50 157.67 191.46 221.26 246.99 268.89 287.32
 C_CET 10
@@ -3939,22 +3940,27 @@ C_BIR 10
 C_OTA 10
 42.23 72.06 82.45 88.04 89.76 88.56 85.28 80.57 74.94 68.8
 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~         Growth Paramaters      ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 
-# Consumer growth - this is used by Holling type feeding (predcase 0, 1, 2)
-mum_OCT_T15   0.002   # Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+## INVERTEBRATES OR BIOMASS POOLS
+## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+mum_OCT_T15   0.002      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0002     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_COR_T15   0.1     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.005      # Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.001     #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.0005     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-mum_BFF_T15   0.06     #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+mum_BFF_T15   0.01       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.0023     #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
-mum_MOL_T15   0.005     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
-mum_PB_T15    1.20     #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
-mum_BB_T15    1.5      #  Growth rate of sediment bacteria
+mum_MOL_T15   0.005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 
-# Vertebrate growth rates for each group, per age class mg N d-1
+## VERTEBRATE AND AGE CLASSES
+## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
@@ -4395,9 +4401,9 @@ ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 0.001 0.001
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
-0.001 0.001
+0.001 0.01
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0 0
+0 0.00001
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
 CET_mL   2 # Linear mortality rate of Whales [ d-1 ]
