@@ -6077,3 +6077,88 @@ new eddies matrix is needed too
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Predation
+***** BRC on SCR
+- from 0.015 to 0.008
+***** GCR on SCR
+- from 0.05 to 0.01
+***** ORO on SCR
+- from 0.05 to 0.01
+***** ORO on SBF
+- from 0.1 to 0.05
+***** LBF on MA
+- from 0.0001 to 0.00007
+**** Mum
+- OCT from 0.002 to 0.001
+***** BFF
+- From 0.06 to 0.01
+**** Clearance
+- SCR from  0.005 to 0.001
+- BFF from 0.008 to 0.003
+- MOL from 0.03 to 0.003
+***** CHO
+- from  : 9.37 29.9 54.2 78.36 100.48 119.81 136.21 149.85 161.03 170.12
+- to : 2.33 7.44 13.49 19.5 25.01 29.82 33.9 37.29 40.08 42.34
+***** BRC
+- from 2.93 4.17 5.63 7.25 9.13 11.43 14.02 16.25 18.41 20.7
+- to 2.44 3.48 4.69 6.05 7.61 9.52 11.69 13.54 15.34 17.25
+***** DOL
+- from : 13.39 43.88 81.51 120.50 157.67 191.46 221.26 246.99 268.89 287.32
+- to :  5.52 18.1 33.62 49.7 65.04 78.98 91.27 101.88 110.92 118.52
+***** LBF
+- from : 22.06 25.76 30.3 33.05 36.23 41.88 45.37 46.08 48.19 50.08
+- to : 12.41 14.32 16.64 17.92 19.37 22.06 23.52 23.48 24.1 24.54
+***** LPF
+- from : 7.78 59.32 97.97 117.99 126.23 128.24 127.18 124.65 121.47 117.99
+- to : 5.46 37.47 61.88 74.52 79.72 80.99 80.32 78.73 76.72 74.52
+***** OTA
+- from : 42.23 72.06 82.45 88.04 89.76 88.56 85.28 80.57 74.94 68.8
+- to : 14.08 25.9 32.06 37.14 41.23 44.46 46.99 48.94 50.45 51.6
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** LM DOL
+0.001 0.01 to 0.0001 0.001
+*** Increased
+**** Clearance
+**** Efficiency
+- LPF from 0.001 to 0.1
+- SQD on DL from 0.01 to 0.2
+**** Pprey
+***** BRC
+- SPH from 0 to 0.005
+**** Recruitment
+**** Running time
+**** Mum
+- SQD from 0.0001 to 0.002
+**** Mortality
+***** LM CHO
+- from 0.001 0.001 to 0.001 0.01
+***** ML OTA
+from 0 0.0001 to 0.0001 0.00001
+**** Initial Biomass
+*** Changed
+**** CHO
+***** Allometric relationship
+- Now usingg one from Fishbase
+- Alpha 0.0021
+- Beta 3.176
+***** KSPA and FSP
+- to  2736.13  and 0.36
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170809090050
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170809090050.png]]
+* Run PC-Demiurgo 20170809153933
+  - Run start: 2017-08-09 15:39:33
+  - Run end: 2017-08-09 18:05:19
+  - log file : [[file:Calibration/20170809180519.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
