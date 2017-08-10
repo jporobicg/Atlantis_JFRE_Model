@@ -2004,7 +2004,7 @@ fi
       ## Grupos funcionales
       lf          <- FG(dat, 2)
       ## The length is in mm. So it needed to changed to cm
-      lf[, 3 : 4] <- lf[, 3 : 4] / 1000
+      lf[, 3 : 4] <- lf[, 3 : 4] / 10
       ##-----------
       ##  Divide by functional group
       ##---------------
@@ -2018,7 +2018,7 @@ fi
       }
       ## Removing octopus
       lf.fg <- lf.fg[ - 8]
-      png('img/allometric_meter.png', width = 1200, height = 900)
+      png('img/allometric.png', width = 1200, height = 900)
       res <- list()
       par(mfrow=c(3, 4), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
       for(i in 1:length(lf.fg)){
@@ -2028,7 +2028,7 @@ fi
           or        <- order(len)
           len       <- len[or]
           weight    <- weight[or]
-          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = ifelse(i %in% c(8, 9), 500, 8), beta = ifelse(i %in% c(3,9), 3, -9)),
+          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = 0.5, beta = ifelse(i==3, 3, 1.4)),
                            trace = FALSE, control = nls.control(maxiter = 5000, minFactor = 1/100000))
           plot(len, weight, col = spgrey, pch = 20, bty = 'n', xlab = '', ylab = '', main = lf.fg[[i]]$FG[1] )
           lines(len[!is.na(len)], predict(res[[i]]), col = 2)
@@ -2039,7 +2039,7 @@ fi
           }
       }
       mtext(text="Weight (gr)",side=2,outer=TRUE,font=2,cex=1.5)
-      mtext(text="Length (m)",side=1,outer=TRUE,font=2,cex=1.5)
+      mtext(text="Length (cm)",side=1,outer=TRUE,font=2,cex=1.5)
       invisible(dev.off())
       ## table with parameters
       cap                  <- 'Values of the paramter alfa and beta in the allometric relationship for each functional group'
@@ -2049,10 +2049,10 @@ fi
     #+END_SRC
     #+RESULTS:
     #+CAPTION: Values of the paramter alfa and beta in the allometric relationship for each functional group
-    |      | ANG           | BRC            | CET            | CHO           | GCR             | LBF            | LPF           | OTA            | SBF           | SPF            | SPL             | VID           |
-    |------+---------------+----------------+----------------+---------------+-----------------+----------------+---------------+----------------+---------------+----------------+-----------------+---------------|
-    | alfa | 2194.28783018 | 16468.44019354 | 12723.98783963 | 4457.05529735 | 254691.80933120 | 15014.03630853 | 8333.23150290 | 54289.34295714 | 3924.92865030 | 13845.53750763 | 263827.14601143 | 8618.22537296 |
-    | beta | 2.83451275    | 3.14636395     | 2.92615017     | 0.36412652    | 2.84013908      | 3.87976788     | 2.73409107    | 2.07274414     | 1.37206189    | 3.14317104     | 2.71901603      | 3.10821255    |
+     |      |        ANG |        BRC |        CET |          CHO |        GCR |        LBF |        LPF |        OTA |        SBF |        SPF |        SPL |        VID |
+     |------+------------+------------+------------+--------------+------------+------------+------------+------------+------------+------------+------------+------------|
+     | alfa | 0.00470168 | 0.00839310 | 0.01787816 | 164.38180473 | 0.53179259 | 0.00023791 | 0.06825499 | 3.88353881 | 1.57860495 | 0.00716116 | 0.96225457 | 0.00523585 |
+     | beta | 2.83452053 | 3.14636532 | 2.92615017 |   0.78557000 | 2.84013419 | 3.89821853 | 2.50292955 | 2.07274350 | 1.77322880 | 3.14316080 | 2.71901358 | 3.10821550 |
     #+ATTR_HTML: width="600" alt="image"
     [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/allometric_meter.png]]
 

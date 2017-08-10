@@ -9,33 +9,33 @@
 #        Flags and switches                #
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 
-# Those determining set-up and recording
-ecotest    0 Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
-availflag  1 Switch to filter flows based on active groups 1
-flagrandom 0 Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~           Set-up and recording       ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+ecotest    0 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+availflag  1 # Switch to filter flows based on active groups 1
+flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
-# Parameters defining the numbers of certain types of groups (needed to define parameter arrays in the
-# initialisation section of the model, best left untouched for now)
-K_num_invmig 5 # Maximum number of vertically migrating invertebrate groups
-
-readin_popratio 0 Switch to indicate whether loading pre-existing age distributions or not 0
+# Parameters defining groups
+K_num_invmig    5 # Maximum number of vertically migrating invertebrate groups
+readin_popratio 0 #Switch to indicate whether loading pre-existing age distributions or not 0
 
 # If fish respiration is off then the fish model is essentially/very similar to a Deriso-Schnute
 flagresp 0 Switch to turn fish respiration on/off: off=0, on=1 1
 
-flagavgmig     0 Switch to turn averaging of migrant sizes on/off: off=0, on=1 1
-flagkdrop      0 Switch to turn cubic bacterial growth on/off: off=0, on=1 0
-flagbactstim   0 Switch to turn stimulation of bacterial growth on/off: off=0, on=1 0
-flagBOlim      1 Switch to turn OB population limitation on/off: off=0, on=1 0
-flagBDlim      1 Switch to turn BD population limitation on/off: off=0, on=1 0
-flagBGlim      1 Switch to turn BG population limitation on/off: off=0, on=1 -1 0
-flagBFlim      1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagBFSlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagBFDlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagBFFlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagBCAlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagMOLlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagCORlim     1 Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagavgmig     0 # Switch to turn averaging of migrant sizes on/off: off=0, on=1 1
+flagkdrop      0 # Switch to turn cubic bacterial growth on/off: off=0, on=1 0
+flagbactstim   0 # Switch to turn stimulation of bacterial growth on/off: off=0, on=1 0
+flagBOlim      1 # Switch to turn OB population limitation on/off: off=0, on=1 0
+flagBDlim      1 # Switch to turn BD population limitation on/off: off=0, on=1 0
+flagBGlim      1 # Switch to turn BG population limitation on/off: off=0, on=1 -1 0
+flagBFlim      1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagBFSlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagBFDlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagBFFlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagBCAlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagMOLlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagCORlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 
 flagBClim      0
 
@@ -1441,10 +1441,10 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.7     Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.07     Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   4     Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
-MB_wc        0.01  Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
+mum_LPH_T15  0.7      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.07     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_MA_T15   1      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
@@ -3960,23 +3960,23 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
-mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ] 0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
-0.5 1.5 1.9 2.3 3.1 4.9 5.2 6.1 7.7 5
+mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ] 0.5 1.5 1.9 2.3 3.1 4.9 5.2 6.1 7.7 5
+0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ] 0.24 1.85 2.43
 10.40240 23.90992 13.29966
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 0.14 0.24 0.83 1.36 2.22 3.63 6.04 10.03
 0.6881151 1.5166393 1.5124073 1.6497984 1.8318671 1.9243576 1.9739724 1.9987353 2.0135155 1.9506352
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 3.637507  5.032411  5.870096 10.063565 11.942583 13.559504 14.922502 16.096034 17.036015 14.050844
-mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ] ## 0.4449315  1.5428652  3.0478317  4.6227768  6.1454627  7.5566333 8.8315589  9.9646368 10.9605381  8.1566949
+mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ] ##
 0.01 0.5 0.8 1.1 1.5 1.8 2.2 2.5 2.6 2.6
-mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ] 0.02 0.19 0.56 1.10 2.06 3.96 7.83 15.74 31.99 65.37
+mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 5.137801 7.382386 7.099402 6.500750 6.085471 5.852336 5.731340 5.670640 5.640650 5.593756
-mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ] 0.1 0.3 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
-1.940575  4.671123  5.858301  8.806035  9.815369 10.386083 10.705136 10.884259 10.986436  9.901198
-mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ] 1.2 2.5 3.8 4.1 5.5 6.2 7.5 8.2 8.2 7.5
-1.423082 2.791238 3.746944 4.417225 5.689564 5.442023 7.988295 7.666680 8.411545 6.849592
-mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ] 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86  /  / 0.12 0.76 2.58 3.12 3.50 5.37 8.86 8.34 10.02
+mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
+0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
+0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
+mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 131.1350 135.6236 201.8767 211.7992 217.7442 221.3859 223.6678 225.1270 226.0758 219.1192
