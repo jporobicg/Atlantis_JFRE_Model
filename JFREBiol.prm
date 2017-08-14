@@ -3376,13 +3376,13 @@ pPREY1GCR2  37
 pPREY2GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
-0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 5e-06 5e-06 0 0 0 0
 pPREY2BRC1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 0 5e-06 0 0 0 0
 pPREY1BRC2  37
-0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 0 0 0 0 0 0
+0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 5e-06 5e-06 0 0 0 0
 pPREY2BRC2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 5e-06 5e-06 0 0 0 0
 pPREY1VID1  37
 0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
@@ -3476,13 +3476,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0.075 0.07 0 0.01 0.005 0 0 0 0 0.05 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0
+0.005 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 0.005 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.001 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.001 0 0 0 0 0 0.05 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.05 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0
+0.01 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 0.005 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.05 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
 0.001 0 0.01 0 0 1e-04 0.001 0 0 0 0 0 0.01 0.01 0.01 0.01 0.01 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 7e-04 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
@@ -3502,7 +3502,7 @@ pPREYSCR  37
 pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 5e-04 0.008 0.005 0 0 0 0
 pPREYCOR  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 5e-04 0 0 0 0
 pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
 pPREYMOL  37
@@ -3942,7 +3942,7 @@ C_OTA 10
 ## INVERTEBRATES OR BIOMASS POOLS
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SQD_T15   0.002     #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SQD_T15   0.005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
@@ -4143,7 +4143,7 @@ min_li_mat_BIR 	 20 	   		# Minimum size of maturity of  BIR  [ cm ]
 # tagged as predators in the functionL group definition file
 KDEP_SPL   0.001 # Sediment penetration depth of Spiny lobster [ m ]
 KDEP_GCR   0.001 # Sediment penetration depth of Golden Crab [ m ]
-KDEP_BRC   0.001 # Sediment penetration depth of Breca [ m ]
+KDEP_BRC   0.01  # Sediment penetration depth of Breca [ m ]
 KDEP_VID   0 # Sediment penetration depth of Vidriola [ m ]
 KDEP_ORO   0.002 # Sediment penetration depth of Orange Roughy [ m ]
 KDEP_ALF   0.001 # Sediment penetration depth of Alfonsino [ m ]
@@ -4170,7 +4170,7 @@ KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0.2 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_SPL   0.3 # Assimilation efficiency on live food and carrion of Spiny lobster
 E_GCR   0.2 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.297 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
@@ -4226,7 +4226,7 @@ EPlant_BCA   0.5  # Assimilation efficiency on Plants of Benthic Carnivorous
 EPlant_MOL   0.45 # Assimilation efficiency on Plants of Mollusca
 
 # Assimilation efficiency of invertebrate consumers on labile detritus
-EDL_SPL   0.2 # Assim efficiency on labile detritus of Spiny lobster
+EDL_SPL   0.27 # Assim efficiency on labile detritus of Spiny lobster
 EDL_GCR   0.2 # Assim efficiency on labile detritus of Golden Crab
 EDL_BRC   0 # Assim efficiency on labile detritus of Breca
 EDL_VID   0 # Assim efficiency on labile detritus of Vidriola
@@ -4387,8 +4387,8 @@ GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0 0.0009589041
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0 0.002739726
-VID_mL   2 # Linear mortality rate of Vidriola [ d-1 ]
-0 0.002739726
+VID_mL   2 # Linear mortality rate of Vidriola [ d-1
+0.000001 0.000273972
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 0 4.986301e-05
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
@@ -4439,57 +4439,57 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-0 0
+1e-18 1e-18
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-0 0
+1e-15 1e-18
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-0 0
+1e-10 1e-10
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-0 0
+1e-15 1e-15
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-0 0
+1e-10 1e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-0 0
+1e-10 1e-10
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-0 0
+1e-10 1e-10
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-0 0
+1e-6 1e-6
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-0 0
+1e-6 1e-6
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-0 0
+1e-6 1e-6
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
-0 0
+1e-18 1e-18
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-0 0
+1e-18 1e-18
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-0 0
+1e-10 1e-10
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-0 0
+1e-16 1e-18
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-0 0
+1e-16 1e-18
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-0 0
+1e-10 1e-10
 
 ## Invertebrates
-OCT_mQ   0 #  Quad. mortality rate of Octupus [ d-1 ]
-SQD_mQ   0 #  Quad. mortality rate of Octupus [ d-1 ]
-COR_mQ   0 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   0 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   0 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   0 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   0 #  Quad. mortality rate of Small crustaceans [ d-1 ]
-BFF_mQ   0 #  Quad. mortality rate of Deposit feeders [ d-1 ]
-BCA_mQ   0 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
-MOL_mQ   0 #  Quad. mortality rate of Mollusca [ d-1 ]
-MA_mQ    0 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   0 # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   0 # Linear mortality rate of Mollusca [ d-1 ]
-PB_mQ    0 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
-BB_mQ    0 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
-DL_mQ    0 #  Quad. mortality rate of Labile detritus [ d-1 ]
-DR_mQ    0 #  Quad. mortality rate of Refractory detritrus [ d-1 ]
-DC_mQ    0 #  Quad. mortality rate of Carrion [ d-1 ]
+OCT_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
+SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
+COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
+SZO_mQ   1e-15 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   1e-15 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   1e-15 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
+BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
+MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
+MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
+LPH_mQ   1e-15 # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-15 # Linear mortality rate of Mollusca [ d-1 ]
+PB_mQ    1e-15 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
+BB_mQ    1e-15 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
+DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
+DR_mQ    1e-15 #  Quad. mortality rate of Refractory detritrus [ d-1 ]
+DC_mQ    1e-15 #  Quad. mortality rate of Carrion [ d-1 ]
 
 # Extra macrophyte mortality (based on physical environment)
 mS_MA_T15  0  #  Scour (bottom stress) macroalgae mortality [d-1]
@@ -5130,14 +5130,7 @@ KDENR_SBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_LBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
 0
 KDENR_BIR   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
-2
-
-#Average biomass of new cephalopod recruits arriving mg N m-3 0.01
-# KDENR_CEP 1
-# 0.002
-# #
-# KDENR_PWN 1
-# 0.01
+3
 
 # Primary production dependent recruitment
 PP_SPL   1 # Primary production recruitment coeff (if recruit = 2) for Spiny lobster [ Numbers ]
@@ -5170,7 +5163,7 @@ Ralpha_ANG   0 # Ricker recruitment r parameter (if recruit = 9) for Anguila
 Ralpha_CHO   0 # Ricker recruitment r parameter (if recruit = 9) for Chondrichtyans
 Ralpha_OTA   0 # Ricker recruitment r parameter (if recruit = 9) for Otariid
 Ralpha_CET   0 # Ricker recruitment r parameter (if recruit = 9) for Cetaceans
-Ralpha_DOL  0 # Ricker recruitment r parameter (if recruit = 9) for Cetaceans
+Ralpha_DOL   0 # Ricker recruitment r parameter (if recruit = 9) for Cetaceans
 Ralpha_LPF   0 # Ricker recruitment r parameter (if recruit = 9) for Large pelagic fish
 Ralpha_SPF   0 # Ricker recruitment r parameter (if recruit = 9) for Small pelagic fish
 Ralpha_SBF   0 # Ricker recruitment r parameter (if recruit = 9) for Small benthic fish
@@ -5202,31 +5195,31 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   6966434447            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
-BHalpha_GCR   5378490550    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   621017641254    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
-BHalpha_VID   1.3E+07     	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   3035799410000000         # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
-BHalpha_ALF   4761569555.28            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
-BHalpha_ANG   245018061690            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
-BHalpha_CHO   0        	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
+BHalpha_SPL   153444640499             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_GCR   27199339880    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
+BHalpha_BRC   54182703270   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_VID   514617065390     	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
+BHalpha_ORO   9.47508e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ALF   1.832987e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
+BHalpha_ANG   1.211699e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
+BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
-BHalpha_LPF   4033992076.64            # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
-BHalpha_SPF   608039026000             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   1729201274             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
-BHalpha_LBF   2332116259350          # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_LPF   699285657142             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
+BHalpha_SPF   1.173798e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_SBF   1.051619e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_LBF   6.747062e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   27      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   71.99   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   93.99   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   08E+08  # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
-BHbeta_ORO   39     # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
+BHbeta_ORO   39      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   5.00    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
 BHbeta_ANG   6.00    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
-BHbeta_CHO   10   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
+BHbeta_CHO   10      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9  # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
 BHbeta_CET   5E+08   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
 BHbeta_DOL   5E+08   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
@@ -5932,7 +5925,7 @@ inheritance_ANG   0 # Level of inheritance for Anguila
 inheritance_CHO   0 # Level of inheritance for Chondrichtyans
 inheritance_OTA   0 # Level of inheritance for Otariid
 inheritance_CET   0 # Level of inheritance for Cetaceans
-inheritance_DOL  0 # Level of inheritance for Cetaceans
+inheritance_DOL   0 # Level of inheritance for Cetaceans
 inheritance_BIR   0 # Level of inheritance for Birds
 inheritance_OCT   0 # Level of inheritance for Octupus
 inheritance_SQD   0 # Level of inheritance for Octupus
@@ -6004,7 +5997,7 @@ min_trait_variance_ANG   0 # Minimum level of trait variance for Anguila
 min_trait_variance_CHO   0 # Minimum level of trait variance for Chondrichtyans
 min_trait_variance_OTA   0 # Minimum level of trait variance for Otariid
 min_trait_variance_CET   0 # Minimum level of trait variance for Cetaceans
-min_trait_variance_DOL  0 # Minimum level of trait variance for Cetaceans
+min_trait_variance_DOL   0 # Minimum level of trait variance for Cetaceans
 min_trait_variance_BIR   0 # Minimum level of trait variance for Birds
 min_trait_variance_OCT   0 # Minimum level of trait variance for Octupus
 min_trait_variance_SQD   0 # Minimum level of trait variance for Octupus
