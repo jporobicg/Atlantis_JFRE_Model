@@ -6297,3 +6297,168 @@ from 0 0.0001 to 0.0001 0.00001
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Predation
+***** SBF
+- SZO 0.0001 to 0.001 (Juv on Juv)
+- MA
+- 0.05 to 0.01 (Adl on Adl)
+- 0.01 to 0.005 (Adl on Juv)
+- 0.01 tp 0.005 (Juv on Juv)
+- 0.05 to 0.005 (Juv on Adl)
+- SPL 0.05 to 0.01 (Adl on Juv)
+***** VID
+**** Mum
+***** LBF
+- from : 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+- to : 0.12 0.55 0.75 2.54 3.08 3.47 5.32 8.78 8.27 9.95
+***** LPF
+- from : 5.137801 7.382386 7.099402 6.500750 6.085471 5.852336 5.731340 5.670640 5.640650 5.593756
+- to : 0.02 0.19 0.51 0.98 1.84 3.54 7.01 14.12 14.12 14.12
+***** ANG
+- from : 0.01 0.5 0.8 1.1 1.5 1.8 2.2 2.5 2.6 2.6
+- to : 0 0.01 0.08 0.18 0.32 0.49 0.71 0.97 1.28 1.65
+**** Clearance
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+**** Recruitment
+***** SPL from 193444640499 to 153444640499
+***** GCR from 97199339880 to 27199339880
+***** BRC from 614182703270 to 54182703270
+*** Increased
+**** Clearance
+**** Efficiency
+- SPL
+-live and plants
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+***** SQD from 0.002 to 0.005
+**** Mortality
+***** mQ
+- SPL
+- from : 0
+- to : 1e-18 1e-18
+- GCR
+- from : 0
+- to : 1e-18 1e-18
+- BRC
+- from : 0
+- to : 1e-10 1e-10
+- VID
+- from : 0
+- to : 1e-15 1e-15
+- ORO
+- from : 0
+- to : 1e-10 1e-10
+- ALF
+- from : 0
+- to : 1e-10 1e-10
+- ANG
+- from : 0
+- to : 1e-10 1e-10
+- CHO
+- from : 0
+- to : 1e-6 1e-6
+- OTA
+- from : 0
+- to : 1e-6 1e-6
+- DOL
+- from : 0
+- to : 1e-6 1e-6
+- CET
+- from : 0
+- to : 1e-18 1e-18
+- BIR
+- from : 0
+- to : 1e-18 1e-18
+- LPF
+- from : 0
+- to : 1e-10 1e-10
+- SPF
+- from : 0
+- to : 1e-16 1e-18
+- SBF
+- from : 0
+- to : 1e-16 1e-18
+- LBF
+- from : 0
+- to : 1e-10 1e-10
+- OCT
+- from : 0
+- to : 1e-15
+- SQD
+- from : 0
+- to : 1e-15
+- COR
+- from : 0
+- to : 1e-15
+- SZO
+- from : 0
+- to : 1e-15
+- MZO
+- from : 0
+- to : 1e-15
+- LZO
+- from : 0
+- to : 1e-15
+- SCR
+- from : 0
+- to : 1e-15
+- BFF
+- from : 0
+- to : 1e-15
+- BCA
+- from : 0
+- to : 1e-15
+- MOL
+- from : 0
+- to : 1e-15
+- MA
+- from 0
+- to : 1e-15
+- LPH
+- from : 0
+- to : 1e-15
+- SPH
+- from : 0
+- to : 1e-15
+- PB
+- from : 0
+- to :  1e-15
+- BB
+- from : 0
+- to :  1e-15
+- DL
+- from : 0
+- to :  1e-15
+- DR
+- from : 0
+- to :  1e-15
+- DC
+- from : 0
+- to :  1e-15
+***** mL
+- VID
+- from 0 0.00273972 to 0.000001 0.000273972
+**** Initial Biomass
+*** Changed
+**** hmix on the BGM x10 times
+** Output
+*** Increase Biomass
+*** Decreased biomass
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170814145437
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170814145437.png]]
+* Run PC-Demiurgo 20170818121557
+  - Run start: 2017-08-18 12:15:57
+  - Run end: 2017-08-18 18:48:58
+  - log file : [[file:Calibration/20170818184858.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
