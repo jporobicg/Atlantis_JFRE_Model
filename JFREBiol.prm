@@ -700,11 +700,11 @@ K_conc     2000   Half concentration level for nitrification by PFB mg N m-3 200
 p_NH_anad  3   Proportion of NH4 adsorped to NH4 dissolved 3
 
 # Redfield
-X_ON     16     Redfield ratio of O:N 16
-X_CN   	 5.7   	Redfield ratio of C:N 5.7
-X_CHLN   7   	Ratio of chla to N 7
-X_SiN    3   	Redfield ratio of Si:N 3
-X_FeN    30000  Redfield ratio of Fe:N 30000
+X_ON     16     ## Redfield ratio of O:N 16
+X_CN   	 5.7   	## Redfield ratio of C:N 5.7
+X_CHLN   7   	## Ratio of chla to N 7
+X_SiN    3   	## Redfield ratio of Si:N 3
+X_FeN    30000  ## Redfield ratio of Fe:N 30000
 
 #AFDW to wet weight
 k_wetdry  20   Ratio of Wet weight to AFDW 20
@@ -1441,15 +1441,15 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.7      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.1      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.07     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   1      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
-KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
-KI_SPH_T15  10  Light saturation, Small phytoplankton W m-2 10 - 20
-KI_MA_T15   1   Light saturation, macroalgae W m-2 5
+KI_LPH_T15  15  Light saturation, large phytoplankton W m-2 10 - 20
+KI_SPH_T15  15  Light saturation, Small phytoplankton W m-2 10 - 20
+KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  10   Light saturation, CORALS W m-2 5
 
 # Eddy impact
@@ -3350,14 +3350,9 @@ Kthresh2        0.92   # Threshhold rel. reserve when costs reduce + handother d
 KHTD            0.5    # Factor handother deep demersal time reduced by for thresh2<relres<thesh1 0.5
 KHTI            1.5    # Factor handother deep demersal time increased by for relres<thresh2 1.5
 
-# Food availabilty (exploitable fractions) - note that a zero entry may signify a food group
-# that is either unavailable or not a part of the diet.
-# Note that explicit exploitable fractions are not generally given for PB and BB
-# as they're consumed with DL and DR. All populations on the consumed DL or DR
-# are considered grazed.
-# pPREY1FY1 is the availability of juvenile prey groups to juvenile group FY, similarly
-# pPREY1FY2 is the availability of juvenile prey groups to adult group FY and so on
-# The order of the prey groups is defined by your functional group input file
+## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~       PPrey Matrix   ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.01 0 0 0.001 0.001 0 0 0 0
@@ -3368,13 +3363,13 @@ pPREY1SPL2  37
 pPREY2SPL2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.01 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.05 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
 0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 5e-06 5e-06 0 0 0 0
 pPREY2BRC1  37
@@ -3935,7 +3930,6 @@ C_BIR 10
 C_OTA 10
 14.08 25.9 32.06 37.14 41.23 44.46 46.99 48.94 50.45 51.6
 
-
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Growth Paramaters      ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -3947,10 +3941,10 @@ mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.0005     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-mum_SCR_T15   0.005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-mum_BFF_T15   0.01       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-mum_BCA_T15   0.0005      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
-mum_MOL_T15   0.005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
+mum_MOL_T15   0.0001      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 
@@ -3960,10 +3954,10 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
-mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ] 0.5 1.5 1.9 2.3 3.1 4.9 5.2 6.1 7.7 5
+mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
 0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
-mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ] 0.24 1.85 2.43
-10.40240 23.90992 13.29966
+mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
+0.24  1.85   2.43
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 0.14 0.24 0.83 1.36 2.22 3.63 6.04 10.03
 0.6881151 1.5166393 1.5124073 1.6497984 1.8318671 1.9243576 1.9739724 1.9987353 2.0135155 1.9506352
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
@@ -4174,7 +4168,7 @@ E_SPL   0.3 # Assimilation efficiency on live food and carrion of Spiny lobster
 E_GCR   0.2 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.297 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
-E_ORO   0.298 # Assimilation efficiency on live food and carrion of Orange Roughy
+E_ORO   0.35 # Assimilation efficiency on live food and carrion of Orange Roughy
 E_ALF   0.344 # Assimilation efficiency on live food and carrion of Alfonsino
 E_ANG   0.2 # Assimilation efficiency on live food and carrion of Anguila
 E_CHO   0.3 # Assimilation efficiency on live food and carrion of Chondrichtyans
@@ -4439,11 +4433,11 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-16 1e-17
+5e-16 5e-17
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-14 1e-16
+5e-14 1e-16
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-10 1e-10
+5e-11 1e-11
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-15 1e-15
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -4455,9 +4449,9 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 8e-8 8e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-5e-7 5e-7
+1e-8 1e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-5e-7 5e-7
+1e-8 1e-8
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 1e-18 1e-18
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
@@ -4465,9 +4459,9 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 1e-10 1e-10
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-15 1e-16
+5e-15 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-15 1e-16
+5e-15 5e-16
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 1e-10
 
@@ -5114,7 +5108,7 @@ KDENR_ALF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Anguila [ Numbers ]
 0
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
-5
+3
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
 KDENR_CET   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
