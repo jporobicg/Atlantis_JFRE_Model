@@ -1441,8 +1441,8 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.1      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.07     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.07      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.05     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   1      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -3435,13 +3435,13 @@ pPREY1DOL2  37
 pPREY2DOL2  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.05 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CET1  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 0.001 0.01 0.01 0 0.001 0 0 0.001 0.01 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.01 0.01 0 0.001 0 0 0.001 0.01 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CET1  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 1e-04 0.01 0.01 0 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.01 0.01 0 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CET2  37
-0 0 0 0 0 0 0 0 0.01 0 0.005 0.001 0.01 0.02 0.001 0.001 0 0 0.001 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0.01 0 0.005 0 0.01 0.02 0.001 0.001 0 0 0.001 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CET2  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 0.001 0.05 0.05 0.001 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.05 0.05 0.001 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1BIR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2BIR1  37
@@ -3780,8 +3780,8 @@ k_trans_MOL 1.0
 k_trans_BCA 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
-C_OCT_T15   0.001     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_OCT_T15   0.0001     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_SQD_T15   0.003    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
@@ -3904,19 +3904,19 @@ C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
 C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 2.44 3.48 4.69 6.05 7.61 9.52 11.69 13.54 15.34 17.25
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
-18.18 24.05 32.55
+14.54 19.24 26.04
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-0.09 2.65 3.68 4.64 5.08 5.64 5.99 6.2 6.33 6.41
+0.05 1.49 2.07 2.61 2.86 3.17 3.37 3.49 3.56 3.6
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 1.38 2.67 3.94  5.05  5.94  8.80 9.39 9.71 9.82 9.74
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 0.15 6.36 16.18 26.11 34.27 35.05 37.84 33.03 32.09 29.98
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
-5.46 37.47 61.88 74.52 79.72 80.99 80.32 78.73 76.72 74.52
+3.61 25.43 43.22 53.56 59 61.75 63.1 63.77 64.1 64.26
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.3 2.22 4.19 6.25 7.93 9.23 10.19 10.89 11.39 11.74
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
-2.59 3.87 5.41 7.66 10.21 13.87 16.22 21.98 25.69 29.70
+1.31 1.96 2.19 2.72 3.62 4.92 5.75 7.8 9.11 10.54
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 12.41 14.32 16.64 17.92 19.37 22.06 23.52 23.48 24.1 24.54
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
@@ -3959,19 +3959,19 @@ mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 0.24  1.85   2.43
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 0.14 0.24 0.83 1.36 2.22 3.63 6.04 10.03
-0.6881151 1.5166393 1.5124073 1.6497984 1.8318671 1.9243576 1.9739724 1.9987353 2.0135155 1.9506352
+0.001 0.039 0.143 0.239 0.826 1.36 2.22 3.629 6.039 10.026
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 3.637507  5.032411  5.870096 10.063565 11.942583 13.559504 14.922502 16.096034 17.036015 14.050844
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ] ##
-0 0.01 0.08 0.18 0.32 0.49 0.71 0.97 1.28 1.65
+0.001 0.013 0.081 0.181 0.319 0.494 0.71 0.97 1.282 1.652
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
-0.02	0.19	0.51	0.98	1.84	3.54	7.01	14.12	14.12	14.12
+0.02 0.19 0.51 0.98 1.84 3.54 7.01 14.12 14.12 14.12
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
-0.12	0.55	0.75	2.54	3.08	3.47	5.32	8.78	8.27	9.95
+0.12 0.55 0.75 2.54 3.08 3.47 5.32 8.78 8.27 9.95
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 131.1350 135.6236 201.8767 211.7992 217.7442 221.3859 223.6678 225.1270 226.0758 219.1192
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
@@ -4412,8 +4412,8 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 OCT_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 SQD_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
-SZO_mL   0.002 # Linear mortality rate of Small Zooplankton [ d-1 ]
-MZO_mL   0.002 # Linear mortality rate of Medium Zooplankton [ d-1 ]
+SZO_mL   0.0015 # Linear mortality rate of Small Zooplankton [ d-1 ]
+MZO_mL   0.0015 # Linear mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mL   0 # Linear mortality rate of Large Zooplankton [ d-1 ]
 SCR_mL   0 # Linear mortality rate of Small crustaceans [ d-1 ]
 BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
@@ -4435,11 +4435,11 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 5e-16 5e-17
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-5e-14 1e-16
+8e-12 1e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-5e-11 1e-11
+1e-10 5e-11
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-1e-15 1e-15
+1e-13 1e-14
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 1e-10 1e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
@@ -4451,7 +4451,7 @@ CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-8 1e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-8 1e-8
+1e-9 1e-9
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 1e-18 1e-18
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
@@ -4461,24 +4461,24 @@ LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-15 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-5e-15 5e-16
+1e-13 5e-15
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 1e-10
 
 ## Invertebrates
-OCT_mQ   1e-13 #  Quad. mortality rate of Octupus [ d-1 ]
+OCT_mQ   1e-10 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-15 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   1e-15 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   1e-15 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SZO_mQ   1e-14 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   1e-14 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   1e-13 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-15 # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-15 # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mQ   1e-13 # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-13 # Linear mortality rate of Mollusca [ d-1 ]
 PB_mQ    1e-15 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-15 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
