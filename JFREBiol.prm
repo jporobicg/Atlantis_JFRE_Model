@@ -1443,7 +1443,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  0.07      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.05     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   1      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   2.9      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
@@ -3503,157 +3503,6 @@ pPREYBCA  37
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
 
-
-
-# pPREY1SPL1  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.01 0 0 0.001 0.001 0 0 0 0
-# pPREY2SPL1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0 0.001 0.01 0 0 0 0 0 0 0 0
-# pPREY1SPL2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.05 0 0 0 0 0 0 0 0
-# pPREY2SPL2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.01 0 0 0 0 0 0 0 0
-# pPREY1GCR1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
-# pPREY2GCR1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0
-# pPREY1GCR2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
-# pPREY2GCR2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
-# pPREY1BRC1  37
-# 0.1 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 5e-06 5e-06 0 0 0 0
-# pPREY2BRC1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.1 0.008 0.05 0.005 0 0 0 0.05 0.001 0 0 0 5e-06 0 0 0 0
-# pPREY1BRC2  37
-# 0.1 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 5e-06 5e-06 0 0 0 0
-# pPREY2BRC2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0.001 0 0 5e-06 5e-06 0 0 0 0
-# pPREY1VID1  37
-# 0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
-# pPREY2VID1  37
-# 0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
-# pPREY1VID2  37
-# 0.01 0 0.01 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
-# pPREY2VID2  37
-# 0 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
-# pPREY1ORO1  37
-# 0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2ORO1  37
-# 0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.05 0 0 0 0.2 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1ORO2  37
-# 0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2ORO2  37
-# 0 0 0 0 0 0 0.05 0 0 0 0 0 0.2 0 0 0 0.05 0.001 0 0 0.2 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1ALF1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0 0.01 0.2 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY2ALF1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0 0.01 0.2 0.2 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY1ALF2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 0.001 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY2ALF2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 1e-04 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY1ANG1  37
-# 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY2ANG1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY1ANG2  37
-# 0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY2ANG2  37
-# 0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
-# pPREY1CHO1  37
-# 0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2CHO1  37
-# 0.01 0.01 0 0 0 0 1e-05 0 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1CHO2  37
-# 0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2CHO2  37
-# 0.1 0.05 0 0 0.01 0.01 1e-04 0 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1OTA1  37
-# 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2OTA1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1OTA2  37
-# 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2OTA2  37
-# 0 0 0 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1DOL1  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0.05 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2DOL1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.01 0.1 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1DOL2  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0.05 0.05 0.1 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2DOL2  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.05 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1CET1  37
-# 0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.01 0.01 0 0.001 0 0 0.001 0.01 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2CET1  37
-# 0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.01 0.01 0 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1CET2  37
-# 0 0 0 0 0 0 0 0 0.01 0 0.005 0 0.01 0.02 0.001 0.001 0 0 0.001 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2CET2  37
-# 0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.05 0.05 0.001 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1BIR1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2BIR1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY1BIR2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREY2BIR2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREYSQD  37
-# 5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0 0 0 0.001 1e-05 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 1e-05 0 0 0
-# pPREYOCT  37
-# 0.005 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
-# pPREY1LPF1  37
-# 0.1 0.01 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0 0 0 0.1 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
-# pPREY2LPF1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
-# pPREY1LPF2  37
-# 0.1 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0 0 0 0.1 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
-# pPREY2LPF2  37
-# 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0 0 0 0.1 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
-# pPREY1SPF1  37
-# 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.09 0.005 0.01 0.005 0 0 0 0 0.1 0 0 0 0 0 0 0 0
-# pPREY2SPF1  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.075 0.07 0 0.05 0 0 0 0 0 0.05 0 0 0 0 0 0 0 0
-# pPREY1SPF2  37
-# 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.05 0.01 0.01 0.005 0 0 0 0 0.05 0 0 0 0 0 0 0 0
-# pPREY2SPF2  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0.075 0.07 0 0.01 0.005 0 0 0 0 0.05 0 0 0 0 0 0 0 0
-# pPREY1SBF1  37
-# 0.005 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 0.005 0 0 0 0 0 0 0 0
-# pPREY2SBF1  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.001 0 0 0 0 0 0.05 0.005 0 0 0 0 0 0 0 0
-# pPREY1SBF2  37
-# 0.01 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 0.005 0 0 0 0 0 0 0 0
-# pPREY2SBF2  37
-# 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0 0 0
-# pPREY1LBF1  37
-# 0.001 0 0.01 0 0 1e-04 0.001 0 0 0 0 0 0.01 0.01 0.01 0.01 0.01 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 7e-04 0 0 0 0 0 0 0 0
-# pPREY2LBF1  37
-# 0 0 0.01 0 0 1e-05 5e-05 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 1e-06 0.001 0.01 0.01 0.001 0.01 0 0 0 0.001 0.001 7e-04 0 0 0 0 0 0 0 0
-# pPREY1LBF2  37
-# 0.05 0 0.05 0 0 0.001 0.05 0 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 7e-04 0 0 0 0 0 0 0 0
-# pPREY2LBF2  37
-# 0.1 0 0.01 0 0 1e-04 5e-04 0 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 7e-04 0 0 0 0 0 0 0 0
-# pPREYSZO  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.02 0 0 0 0 0.005 0.001 0 0 0 0 0 0
-# pPREYMZO  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 1e-04 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
-# pPREYLZO  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.001 1e-04 0 0 0 0 0 0 0 0 0 0 0 0
-# pPREYSCR  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
-# pPREYBFF  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 5e-04 0.008 0.005 0 0 0 0
-# pPREYCOR  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 5e-04 0 0 0 0
-# pPREYBCA  37
-# 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
-# pPREYMOL  37
-# 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0.001 0 1e-06 0.005 0 0 0 0 0
-
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
 p_split_SPL   1 # Ontogenetic diet preferences  Spiny lobster [ Number ]
@@ -4331,7 +4180,7 @@ E_OCT   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.1 # Assimilation efficiency on live food and carrion of Large pelagic fish
-E_SPF   0.2 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_SPF   0.3 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_SBF   0.2 # Assimilation efficiency on live food and carrion of Small benthic fish
 E_LBF   0.2 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.5 # Assimilation efficiency on live food and carrion of Small Zooplankton
@@ -4563,16 +4412,16 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 OCT_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 SQD_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
-SZO_mL   0.0015 # Linear mortality rate of Small Zooplankton [ d-1 ]
-MZO_mL   0.0015 # Linear mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mL   0 # Linear mortality rate of Large Zooplankton [ d-1 ]
+SZO_mL   0.00015 # Linear mortality rate of Small Zooplankton [ d-1 ]
+MZO_mL   0.00015 # Linear mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mL   0.00015 # Linear mortality rate of Large Zooplankton [ d-1 ]
 SCR_mL   0 # Linear mortality rate of Small crustaceans [ d-1 ]
 BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
 BCA_mL   0 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mL   0 # Linear mortality rate of Mollusca [ d-1 ]
 MA_mL    0 # Linear mortality rate of Large phytoplancton [ d-1 ]
-LPH_mL   0.04  # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mL   0.2  # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mL   0.00004  # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mL   0.00002  # Linear mortality rate of Mollusca [ d-1 ]
 PB_mL    0 # Linear mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mL    0 # Linear mortality rate of Sediment Bacteria [ d-1 ]
 DL_mL    0 # Linear mortality rate of Labile detritus [ d-1 ]
@@ -4614,7 +4463,7 @@ SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-13 5e-15
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-9 1e-10
+1e-9 9e-11
 
 ## Invertebrates
 OCT_mQ   1e-10 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -4622,7 +4471,7 @@ SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-14 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-14 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   1e-13 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+LZO_mQ   1e-14 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
