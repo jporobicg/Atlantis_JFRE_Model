@@ -3379,13 +3379,13 @@ pPREY1BRC2  37
 pPREY2BRC2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 0 0 0 5e-06 5e-06 0 0 0 0
 pPREY1VID1  37
-0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.05 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
-0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.01 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1VID2  37
-0.01 0 0.01 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.01 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.05 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID2  37
-0 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.1 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.1 0.05 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
 0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
@@ -3443,13 +3443,13 @@ pPREY1CET2  37
 pPREY2CET2  37
 0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.05 0.05 0.001 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1BIR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2BIR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1BIR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2BIR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSQD  37
 5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0 0 0 0.001 1e-05 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 1e-05 0 0 0
 pPREYOCT  37
@@ -4412,16 +4412,16 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 OCT_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 SQD_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
-SZO_mL   0.00015 # Linear mortality rate of Small Zooplankton [ d-1 ]
-MZO_mL   0.00015 # Linear mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mL   0.00015 # Linear mortality rate of Large Zooplankton [ d-1 ]
+SZO_mL   0.0005 # Linear mortality rate of Small Zooplankton [ d-1 ]
+MZO_mL   0.0005 # Linear mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mL   0.0005 # Linear mortality rate of Large Zooplankton [ d-1 ]
 SCR_mL   0 # Linear mortality rate of Small crustaceans [ d-1 ]
 BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
 BCA_mL   0 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mL   0 # Linear mortality rate of Mollusca [ d-1 ]
 MA_mL    0 # Linear mortality rate of Large phytoplancton [ d-1 ]
-LPH_mL   0.00004  # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mL   0.00002  # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mL   0.0004  # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mL   0.0002  # Linear mortality rate of Mollusca [ d-1 ]
 PB_mL    0 # Linear mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mL    0 # Linear mortality rate of Sediment Bacteria [ d-1 ]
 DL_mL    0 # Linear mortality rate of Labile detritus [ d-1 ]

@@ -20,6 +20,12 @@ datEnd="$(date +'%Y%m%d%H%M%S')"
 dateend="$(date +'%Y-%m-%d %H:%M:%S')"
 cp -a JFR_Output_Folder/outputJFREAnnualAgeBiomIndx.txt Calibration/BioAge$datEnd.bak
 cp -a JFR_Output_Folder/outputJFREBiomIndx.txt Calibration/BioTot$datEnd.bak
+cp -a JFR_Output_Folder/outputJFRE.nc Calibration/Ncout$datEnd.nc
+if [ $(ls Calibration/*.nc | wc -l) -gt 4 ];
+then
+    rm "$(ls -t Calibration/*.nc | tail -1)"
+    echo "To save HD space I removed the file created 4 simulation ago"
+fi
 echo "...Done"
 
 osver=$(cat /etc/issue.net)
