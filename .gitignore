@@ -5,3 +5,4 @@ Inputs/Forcing_Hydro/JFRE_hydro.nc
 /JFR_Output_Folder/*
 /Calibration/*
 /Inputs/Forcings/*
+/MandM/FG_connect.nc
