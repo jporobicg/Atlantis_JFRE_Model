@@ -3355,13 +3355,13 @@ KHTI            1.5    # Factor handother deep demersal time increased by for re
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0 0 0 0.001 0.001 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
 pPREY2SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR1  37
@@ -3427,13 +3427,13 @@ pPREY1OTA2  37
 pPREY2OTA2  37
 0 0 0 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0.05 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.01 0.1 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.001 0.1 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0.05 0.05 0.1 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0.05 0.001 0.1 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.05 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.001 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CET1  37
 0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.01 0.01 0 0.001 0 0 0.001 0.01 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CET1  37
@@ -4477,8 +4477,8 @@ BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-13 # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-13 # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mQ   1e-10 # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-10 # Linear mortality rate of Mollusca [ d-1 ]
 PB_mQ    1e-15 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-15 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
