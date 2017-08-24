@@ -6791,3 +6791,50 @@ from 1 to 2.9
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+**** Recruitment
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+***** SPF on MA
+- from 0
+- to 0.005 and 0.01
+***** SBF on MA
+- from : 0
+- to : 0.0005
+***** LBF on GCR
+- from 0
+- to : 0.0005 and 0.008
+***** LBF on BRC
+- from 0.01 to 0.005
+***** LPF on BRC
+- from 0 to 0.0005 and 0.0008
+***** VID
+- all predation reduced to the half
+**** Recruitment
+**** Running time
+**** Mum
+***** OCT
+- from 0.001 to 0.0001
+**** Mortality
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170823164134
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170823164134.png]]
+* Run PC-Demiurgo 20170824215249
+  - Run start: 2017-08-24 21:52:49
+  - Run end: 2017-08-25 07:38:44
+  - log file : [[file:Calibration/20170825073844.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

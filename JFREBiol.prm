@@ -4439,7 +4439,7 @@ GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-10 5e-11
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-1e-13 1e-14
+1e-10 1e-14
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 1e-10 1e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
@@ -4461,7 +4461,7 @@ LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-15 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-13 5e-15
+1e-10 5e-15
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 9e-11
 
