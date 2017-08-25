@@ -4437,7 +4437,7 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 8e-12 1e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-10 5e-11
+1e-11 5e-11
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-10 1e-14
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -5191,8 +5191,8 @@ KDENR_COR 1
 # Beverton-Holt recruitment
 BHalpha_SPL   153444640499             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   27199339880    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   600455247455   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
-BHalpha_VID   50679984684.4     	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
+BHalpha_BRC   6004552474.55   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_VID   5067998468.44     	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1.832987e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   275273678027             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
@@ -5202,7 +5202,7 @@ BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   699285657142             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   1.173798e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   46612508226             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_SBF   16612508226             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   6.747062e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
