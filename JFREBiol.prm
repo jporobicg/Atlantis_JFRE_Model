@@ -3403,7 +3403,7 @@ pPREY1ALF2  37
 pPREY2ALF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.01 0 0.01 0.01 1e-04 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG2  37
@@ -3904,13 +3904,13 @@ C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
 C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 2.44 3.48 4.69 6.05 7.61 9.52 11.69 13.54 15.34 17.25
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
-14.54 19.24 26.04
+6.54 8.66 11.72
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 0.05 1.49 2.07 2.61 2.86 3.17 3.37 3.49 3.56 3.6
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 1.38 2.67 3.94  5.05  5.94  8.80 9.39 9.71 9.82 9.74
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-0.15 6.36 16.18 26.11 34.27 35.05 37.84 33.03 32.09 29.98
+0.04 2.07 5.85 10.59 15.69 20.87 25.86 30.54 34.82 38.72
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 3.61 25.43 43.22 53.56 59 61.75 63.1 63.77 64.1 64.26
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
@@ -3922,7 +3922,7 @@ C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 2.33 7.44 13.49 19.5 25.01 29.82 33.9 37.29 40.08 42.34
 C_DOL 10
-5.52 18.1 33.62 49.7 65.04 78.98 91.27 101.88 110.92 118.52
+0.13 0.70 1.67 2.89 4.22 5.54  6.52  7.28  7.92  8.47
 C_CET 10
 1575.75 1822.73 8059.00 18419.99 50368.77 131994.63 167683.50 207397.48 251177.20 350972.84
 C_BIR 10
@@ -4433,15 +4433,15 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-5e-14 5e-15
+5e-13 5e-14
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-13 5e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 5e-13 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-1e-12 1e-13
+1e-11 1e-12
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-1e-12 1e-12
+5e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 5e-11 1e-12
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
@@ -4457,9 +4457,9 @@ CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-18 1e-18
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-11 1e-11
+5e-11 1e-11
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-15 1e-15
+5e-12 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-10 5e-15
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
@@ -5211,7 +5211,7 @@ BHbeta_GCR   8E+11   # Beverton-Holt recruitment saturation parameter (if recrui
 BHbeta_BRC   5e+13   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   1E+13      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
-BHbeta_ALF   1E+11    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
+BHbeta_ALF   5E+11    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
 BHbeta_ANG   6E+11    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9  # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
