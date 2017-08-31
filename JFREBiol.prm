@@ -3379,13 +3379,13 @@ pPREY1BRC2  37
 pPREY2BRC2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.1 0.008 0.05 0.005 0 0 0 0.01 8e-04 0 0 5e-06 5e-06 0 0 0 0
 pPREY1VID1  37
-0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 5e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
-0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.005 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.005 1e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1VID2  37
-0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0.001 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID2  37
-0 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
 0 0 0 0 0 0 0.01 0 0 0 0 0 0.2 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
@@ -4439,7 +4439,7 @@ GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 5e-13 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-1e-11 1e-12
+1e-10 1e-12
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 5e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
@@ -5192,7 +5192,7 @@ KDENR_COR 1
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   613475393930   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
-BHalpha_VID   506808515707     	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
+BHalpha_VID   50680851.5707    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1.832987e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   275273678027             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
@@ -5202,14 +5202,14 @@ BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   699285657142             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   1.173798e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   16612508226             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_SBF   16612508226              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   6.747062e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   8E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   5e+13       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
-BHbeta_VID   5E+13       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
+BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
 BHbeta_ANG   6E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
