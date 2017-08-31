@@ -460,27 +460,27 @@ flag_rel_cover  0  to show ehther using cumulative habitat (0) or average relati
 # 1st one just to know if it is necessary to read the whole list of dependency par
 flaghabdepend 1   general vertebrate demersal habitat dependency: 0 = no, 1 = yes     0
 
-SPL_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-GCR_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-BRC_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-ORO_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-VID_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-ANG_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-ALF_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-CHO_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-OTA_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-CET_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-DOL_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-OCT_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-COR_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-SQD_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-LPF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-SPF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-SBF_habdepend 1  dependent on demersal habitat: 0 = no, 1 = yes
-LBF_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-SCR_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-BCA_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
-MOL_habdepend 0  dependent on demersal habitat: 0 = no, 1 = yes
+SPL_habdepend 1  ## dependent on demersal habitat: 0 = no, 1 = yes
+GCR_habdepend 1  ## dependent on demersal habitat: 0 = no, 1 = yes
+BRC_habdepend 1  ## dependent on demersal habitat: 0 = no, 1 = yes
+ORO_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+VID_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+ANG_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+ALF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+CHO_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+OTA_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+CET_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+DOL_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+OCT_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+COR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+SQD_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+LPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+SPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+SBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+LBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+SCR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+BCA_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+MOL_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 
 # Vertebrate density dependent movement related flags
 flagtempdepend   1         0 = off, 1 = temperature preferences used
@@ -502,10 +502,10 @@ DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 OCT_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LPF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SPF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SBF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LBF_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SCR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BCA_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 MOL_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -4457,11 +4457,11 @@ CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-18 1e-18
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-11 1e-11
+1e-10 1e-11
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-12 1e-15
+5e-10 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-10 5e-15
+1e-10 5e-13
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 9e-11
 
@@ -5206,17 +5206,17 @@ BHalpha_SBF   16612508226             # Beverton-Holt recruitment rate parameter
 BHalpha_LBF   6.747062e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
-BHbeta_SPL   1E+12      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   8E+11   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
-BHbeta_BRC   5e+13   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
-BHbeta_VID   1E+13      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
-BHbeta_ORO   1E+11      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
-BHbeta_ALF   5E+11    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
-BHbeta_ANG   6E+11    # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
-BHbeta_CHO   10      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
-BHbeta_OTA   1.5E+9  # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
-BHbeta_CET   5E+08   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
-BHbeta_DOL   5E+08   # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
+BHbeta_SPL   1E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
+BHbeta_GCR   8E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_BRC   5e+13       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
+BHbeta_VID   5E+13       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
+BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
+BHbeta_ALF   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
+BHbeta_ANG   6E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
+BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
+BHbeta_OTA   1.5E+9      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
+BHbeta_CET   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
+BHbeta_DOL   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
 BHbeta_LPF   6E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large pelagic fish
 BHbeta_SPF   1E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_SBF   29      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small benthic fish
