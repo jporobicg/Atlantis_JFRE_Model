@@ -1930,7 +1930,7 @@ SOFTchange_mult 1
 
 # Array indicating cells effected by coastal degradation
 Box_degraded 59
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 00
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 ## Vertebrate movement options
 roc_wgt       10000  Wgt factor for density dependent fish move 10000
@@ -5010,6 +5010,8 @@ SBF_recruit_hdistrib   59 # Box recruitment locations for Small benthic fish [ P
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 LBF_recruit_hdistrib   59 # Box recruitment locations for Large benthic fish [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+BIR_recruit_hdistrib   59 # Box recruitment locations for Large benthic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 # Recruit location vertical distibutions. First entry for each vector refers to water
 # column layer closest to the sediment and then up through the watercolumn to
@@ -5017,7 +5019,7 @@ LBF_recruit_hdistrib   59 # Box recruitment locations for Large benthic fish [ P
 SPL_recruit_vdistrib   8 # Vertical recruitment locations for Spiny lobster [ Proportion ]
 0 0 0 0 1 0 0 0
 GCR_recruit_vdistrib   8 # Vertical recruitment locations for Golden Crab [ Proportion ]
-0 0 1 0 0 0 0
+0 0 1 0 0 0 0 0
 BRC_recruit_vdistrib   8 # Vertical recruitment locations for Breca [ Proportion ]
 0 0 0 0 0.4 0.3 0.2 0.1
 VID_recruit_vdistrib   8 # Vertical recruitment locations for Vidriola [ Proportion ]
@@ -5287,7 +5289,7 @@ BIR_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for 
 KWSR_SPL   2.31     # Structural weight of recruits for Spiny lobster [ mg N m-3 ]
 KWSR_GCR   23.09    # Structural weight of recruits for Golden Crab [ mg N m-3 ]
 KWSR_BRC   0.67     # Structural weight of recruits for Breca [ mg N m-3 ]
-KWSR_VID   0.55     # Structural weight of recruits for Vidriola [ mg N m-3 ]
+KWSR_VID   3813.90  # Structural weight of recruits for Vidriola [ mg N m-3 ]
 KWSR_ORO   0.02     # Structural weight of recruits for Orange Roughy [ mg N m-3 ]
 KWSR_ALF   0.36     # Structural weight of recruits for Alfonsino [ mg N m-3 ]
 KWSR_ANG   1.65     # Structural weight of recruits for Anguila [ mg N m-3 ]
@@ -5297,14 +5299,14 @@ KWSR_CET   36919347 # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_DOL   8048     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_LPF   10.57    # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWSR_SPF   0.15     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
-KWSR_SBF   76.77    # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
+KWSR_SBF   26.61    # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
 KWSR_LBF   0.41     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
-KWSR_BIR   500     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
+KWSR_BIR   500      # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
 
 KWRR_SPL   6.13     # Reserve weight of recruits for Spiny lobster [ mg N m-3 ]
 KWRR_GCR   61.18    # Reserve weight of recruits for Golden Crab [ mg N m-3 ]
 KWRR_BRC   1.77     # Reserve weight of recruits for Breca [ mg N m-3 ]
-KWRR_VID   1.77     # Reserve weight of recruits for Vidriola [ mg N m-3 ]
+KWRR_VID   10106.83 # Reserve weight of recruits for Vidriola [ mg N m-3 ]
 KWRR_ORO   0.05     # Reserve weight of recruits for Orange Roughy [ mg N m-3 ]
 KWRR_ALF   0.97     # Reserve weight of recruits for Alfonsino [ mg N m-3 ]
 KWRR_ANG   4.37     # Reserve weight of recruits for Anguila [ mg N m-3 ]
@@ -5314,7 +5316,7 @@ KWRR_CET   65224179 # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
 KWRR_DOL   31328    # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
 KWRR_LPF   28.01    # Reserve weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWRR_SPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
-KWRR_SBF   203.43   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
+KWRR_SBF   70.53   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
 KWRR_LBF   1.07     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
 KWRR_BIR   1600     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
 
@@ -5544,6 +5546,8 @@ SPF_vert_stock_struct   8 # Vertical stock structure for Small pelagic fish [ st
 SBF_vert_stock_struct   8 # Vertical stock structure for Small benthic fish [ stock ]
 1 1 1 1 1 1 1 1
 LBF_vert_stock_struct   8 # Vertical stock structure for Large benthic fish [ stock ]
+1 1 1 1 1 1 1 1
+BIR_vert_stock_struct   8 # Vertical stock structure for Birds [ stock ]
 1 1 1 1 1 1 1 1
 
 ## Regional output information - when want overall Biom.txt file split by region too

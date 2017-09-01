@@ -2602,7 +2602,7 @@ fi
   data <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Spawning/weight_rec.csv')
 
   data$weight <- with(data, ifelse(is.na(weight),
-                                   alometric(size, alf.all, beta.all),
+                                   alometric(size, Alpha, Beta),
                                    weight))
   ##~ estimation of structural and reserve wight for recruitment
   data <- cbind(data, with(data, weights(FG, weight,'g'))[, 2 : 3])
@@ -2611,22 +2611,22 @@ fi
   b     <- ascii(data, header = T,  include.rownames = FALSE, include.colnames = T, caption = cap)
   print(b)
 #+END_SRC
-
 #+RESULTS:
 #+CAPTION: Structural and reserve wight for recruitment
-| FG  | weight  | size | alf.all | beta.all | Reference  | structural | reserve  |
-|-----+---------+------+---------+----------+------------+------------+----------|
-| ALF | 0.15    | 1.50 | 0.05    | 2.84     | Mundy1990  | 0.36       | 0.97     |
-| ANG | 0.69    | 5.80 | 0.00    | 2.83     | Miller2009 | 1.65       | 4.37     |
-| BRC | 0.28    | 3.04 | 0.01    | 3.15     | Bruce2001  | 0.67       | 1.77     |
-| GCR | 9.61    | 2.77 | 0.53    | 2.84     | Anger1983  | 23.09      | 61.18    |
-| LBF | 0.17    | 5.30 | 0.00    | 3.88     | Mujica     | 0.41       | 1.07     |
-| LPF | 4.40    |      | 0.03    | 2.73     | Lopez 2000 | 10.57      | 28.01    |
-| ORO | 0.01    | 0.53 | 0.04    | 2.91     | Zeldis     | 0.02       | 0.05     |
-| OTA | 8600.00 |      | 3.88    | 2.07     | Osman      | 20668.11   | 54770.49 |
-| SBF | 31.94   | 3.00 | 7.08    | 1.37     |            | 76.77      | 203.43   |
-| SPF | 0.06    | 2.00 | 0.01    | 3.14     | Sawada     | 0.15       | 0.40     |
-| SPL | 0.96    | 1.00 | 0.96    | 2.72     | Porobic    | 2.31       | 6.13     |
+| FG  | weight  | size  | Alpha | Beta | Reference      | structural | reserve  |
+|-----+---------+-------+-------+------+----------------+------------+----------|
+| ALF | 0.15    | 1.50  | 0.05  | 2.84 | Mundy1990      | 0.36       | 0.97     |
+| ANG | 0.69    | 5.80  | 0.00  | 2.83 | Miller2009     | 1.65       | 4.37     |
+| BRC | 0.28    | 3.04  | 0.01  | 3.15 | Bruce2001      | 0.67       | 1.77     |
+| GCR | 9.61    | 2.77  | 0.53  | 2.84 | Anger1983      | 23.09      | 61.18    |
+| LBF | 0.16    | 5.30  | 0.00  | 3.90 | Mujica         | 0.38       | 1.01     |
+| LPF | 4.40    |       | 0.07  | 2.50 | Lopez 2000     | 10.57      | 28.01    |
+| ORO | 0.01    | 0.53  | 0.04  | 2.91 | Zeldis         | 0.02       | 0.05     |
+| OTA | 8600.00 |       | 3.88  | 2.07 | Osman          | 20668.11   | 54770.49 |
+| SBF | 11.07   | 3.00  | 1.58  | 1.77 | Billy Database | 26.61      | 70.53    |
+| SPF | 0.06    | 2.00  | 0.01  | 3.14 | Sawada         | 0.15       | 0.40     |
+| SPL | 0.96    | 1.00  | 0.96  | 2.72 | Porobic        | 2.31       | 6.13     |
+| VID | 1586.96 | 58.02 | 0.01  | 3.11 | Billy Database | 3813.90    | 10106.83 |
 
 **** LFD by cohorts
 In this secction I use the data form the Database to get the number of organism by cohort. The cohorts used here matches the cohort on Atlantis
