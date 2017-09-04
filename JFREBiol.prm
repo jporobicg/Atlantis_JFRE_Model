@@ -534,31 +534,31 @@ flagchannelLBF 0
 # Flags for migration out of model domain (maximum number of times juvenile OR
 # adult stages must leave the model domain). For example if juvenile FVT leave once,
 # but adults leave 3 times then enter 3 here
-flagSPLMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagGCRMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagBRCMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagOROMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagVIDMigrate 1 0=always remain within the model domain, 1+=migrate in/out of the model
-flagANGMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagALFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagCHOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagOTAMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagCETMigrate 1 0=always remain within the model domain, 1+=migrate in/out of the model
-flagDOLMigrate 1 0=always remain within the model domain, 1+=migrate in/out of the model
-flagOCTMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagCORMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagSQDMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagBIRMigrate 1 0=always remain within the model domain, 1+=migrate in/out of the model
-flagLPFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagSPFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagSBFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagLBFMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagSCRMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagBCAMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagMOLMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagSZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagMZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
-flagLZOMigrate 0 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSPLMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagGCRMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagBRCMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagOROMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagVIDMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagANGMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagALFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagCHOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagOTAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagCETMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagDOLMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagOCTMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagCORMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSQDMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagBIRMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagLPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagLBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSCRMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagBCAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagMOLMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSZOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagMZOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagLZOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 
 ## Flag indicating whether stocking recruits or not
 flagstockingSPL  0
@@ -3029,7 +3029,7 @@ jGCR_FSMG 1
 jBRC_FSMG 1
 0
 jVID_FSMG 1
-0
+0.1
 jORO_FSMG 1
 0
 jALF_FSMG 1
@@ -3041,11 +3041,11 @@ jCHO_FSMG 1
 jOTA_FSMG 1
 0
 jCET_FSMG 1
-0
+0.3
 jDOL_FSMG 1
 0
 jBIR_FSMG 1
-0
+0.15
 jOCT_FSMG 1
 0
 jSQD_FSMG 1
@@ -3075,7 +3075,7 @@ GCR_FSMG 1
 BRC_FSMG 1
 0
 VID_FSMG 1
-0
+0.1
 ORO_FSMG 1
 0
 ALF_FSMG 1
@@ -3087,11 +3087,11 @@ CHO_FSMG 1
 OTA_FSMG 1
 0
 CET_FSMG 1
-0
+0.3
 DOL_FSMG 1
 0
 BIR_FSMG 1
-0
+0.15
 OCT_FSMG 1
 0
 SQD_FSMG 1
@@ -4433,13 +4433,13 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-5e-13 5e-14
+1e-12 5e-14
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-13 5e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-5e-13 1e-15
+1e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-1e-10 1e-12
+5e-10 1e-12
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 5e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
@@ -4459,7 +4459,7 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 1e-10 1e-11
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-10 1e-15
+5e-12 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-10 5e-13
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
@@ -5193,7 +5193,7 @@ KDENR_COR 1
 # Beverton-Holt recruitment
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   613475393930   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_BRC   8.168682e+12   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   50680851.5707    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1.832987e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
