@@ -18,7 +18,7 @@ flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates
 
 # Parameters defining groups
 K_num_invmig    5 # Maximum number of vertically migrating invertebrate groups
-readin_popratio 0 #Switch to indicate whether loading pre-existing age distributions or not 0
+readin_popratio 0 # Switch to indicate whether loading pre-existing age distributions or not 0
 
 # If fish respiration is off then the fish model is essentially/very similar to a Deriso-Schnute
 flagresp 0 Switch to turn fish respiration on/off: off=0, on=1 1
@@ -1725,7 +1725,7 @@ CET_mindepth  0
 DOL_mindepth  0
 BIR_mindepth  0
 OCT_mindepth  0
-SQD_mindepth  100
+SQD_mindepth  50
 COR_mindepth  50
 LPF_mindepth  0
 SPF_mindepth  0
@@ -1761,7 +1761,7 @@ CET_maxdepth  4300
 DOL_maxdepth  200
 BIR_maxdepth  15
 OCT_maxdepth  200
-SQD_maxdepth  3000
+SQD_maxdepth  4300
 COR_maxdepth  1000
 LPF_maxdepth  350
 SPF_maxdepth  100
@@ -2972,7 +2972,7 @@ GCR_FSM 1
 BRC_FSM 1
 1
 VID_FSM 1
-0.8
+0.7
 ORO_FSM 1
 1
 ALF_FSM 1
@@ -2984,7 +2984,7 @@ CHO_FSM 1
 OTA_FSM 1
 1
 CET_FSM 1
-0.99
+0.90
 DOL_FSM 1
 0.99
 BIR_FSM 1
@@ -3041,11 +3041,11 @@ jCHO_FSMG 1
 jOTA_FSMG 1
 0
 jCET_FSMG 1
-0.3
+0.1
 jDOL_FSMG 1
 0
 jBIR_FSMG 1
-0.15
+0.3
 jOCT_FSMG 1
 0
 jSQD_FSMG 1
@@ -3087,11 +3087,11 @@ CHO_FSMG 1
 OTA_FSMG 1
 0
 CET_FSMG 1
-0.3
+0.1
 DOL_FSMG 1
 0
 BIR_FSMG 1
-0.15
+0.3
 OCT_FSMG 1
 0
 SQD_FSMG 1
@@ -3487,11 +3487,11 @@ pPREY1LBF2  37
 pPREY2LBF2  37
 0.1 5e-05 0.005 0 0 1e-04 5e-04 0 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.02 0 0 0 0 0.005 0.001 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 1e-04 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 1e-04 0 0 0.01 0.02 0 0 0 0 0 0 0 0 0.07 0 0 0
 pPREYLZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.001 1e-04 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
@@ -3781,12 +3781,12 @@ k_trans_BCA 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
 C_OCT_T15   0.00001     #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SQD_T15   0.003    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_SQD_T15   0.03    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.009     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.003    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.00149    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.001     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.05     #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.008    #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.004    #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.003     #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003     #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.001    #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.003    #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -4409,7 +4409,7 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 0 0.0000001
 
 ## Invertebrates
-OCT_mL   0 # Linear mortality rate of Octupus [ d-1 ]
+OCT_mL   0.0005 # Linear mortality rate of Octupus [ d-1 ]
 SQD_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 SZO_mL   0.0005 # Linear mortality rate of Small Zooplankton [ d-1 ]
@@ -4433,40 +4433,40 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-12 5e-14
+1e-10 1e-13
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-13 5e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-11 1e-13
+2e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-5e-10 1e-12
+5e-10 1e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-5e-12 1e-12
+3e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-5e-11 1e-12
+1e-12 1e-13
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-12 1e-12
+1e-14 1e-14
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 8e-8 8e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-8 8e-7
+5e-8 8e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-11 1e-11
+1e-12 1e-12
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 1e-18 1e-18
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-18 1e-18
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-10 1e-11
+5e-10 1e-11
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-12 1e-15
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-10 5e-13
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-9 9e-11
+7e-10 6e-11
 
 ## Invertebrates
-OCT_mQ   1e-10 #  Quad. mortality rate of Octupus [ d-1 ]
+OCT_mQ   1e-9 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-14 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
@@ -4688,7 +4688,7 @@ FDG_CET   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Pro
 FDG_DOL   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Proportion ]
 FDG_BIR   0.3 # Fraction of non-assimilate lost to detritus for  Birds [ Proportion ]
 FDG_OCT   0.3 # Fraction of non-assimilate lost to detritus for  Octupus [ Proportion ]
-FDG_SQD   0.3 # Fraction of non-assimilate lost to detritus for  Octupus [ Proportion ]
+FDG_SQD   0.1 # Fraction of non-assimilate lost to detritus for  Octupus [ Proportion ]
 FDG_LPF   0.2 # Fraction of non-assimilate lost to detritus for  Large pelagic fish [ Proportion ]
 FDG_SPF   0.2 # Fraction of non-assimilate lost to detritus for  Small pelagic fish [ Proportion ]
 FDG_SBF   0.2 # Fraction of non-assimilate lost to detritus for  Small benthic fish [ Proportion ]
@@ -5194,7 +5194,7 @@ KDENR_COR 1
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   8.168682e+12   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
-BHalpha_VID   50680851.5707    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
+BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1.832987e+12             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   275273678027             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
