@@ -2262,13 +2262,13 @@ VERTnight_ALF2 8
 0 0.051 0.268 0.58 0.046 0.055 0 0
 ## Chondricties
 VERTday_CHO1 8
-0 0 0 0.087 0.13 0.653 0.065 0.065
+0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
 VERTnight_CHO1 8
-0 0 0 0.087 0.13 0.653 0.065 0.065
+0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
 VERTday_CHO2 8
-0 0 0 0.087 0.13 0.653 0.065 0.065
+0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
 VERTnight_CHO2 8
-0 0 0 0.087 0.13 0.653 0.065 0.065
+0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
 ## Cetaceous
 VERTday_CET1 8
 0 0 0 0.05 0.1 0.15 0.2 0.5
@@ -2325,22 +2325,22 @@ VERTnight_SPF2 8
 0 0 0 0 0 0.1 0.566 0.334
 ## Small Benthic Fish
 VERTday_SBF1 8
-0 0 0 0 0.063 0.82 0.054 0.063
+0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
 VERTnight_SBF1 8
-0 0 0 0 0.063 0.82 0.054 0.063
+0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
 VERTday_SBF2 8
-0 0 0 0 0.063 0.82 0.054 0.063
+0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
 VERTnight_SBF2 8
-0 0 0 0 0.063 0.82 0.054 0.063
+0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
 ## Large Benthic Fish
 VERTday_LBF1 8
-0 0 0 0 0.136 0.728 0.121 0.015
+0 0.123 0.269 0.491 0.04 0.054 0.02 0.003
 VERTnight_LBF1 8
-0 0 0 0 0.136 0.728 0.121 0.015
+0 0.123 0.269 0.491 0.04 0.054 0.02 0.003
 VERTday_LBF2 8
-0 0 0 0 0.136 0.728 0.121 0.015
+0 0.123 0.269 0.491 0.04 0.054 0.02 0.003
 VERTnight_LBF2 8
-0 0 0 0 0.136 0.728 0.121 0.015
+0 0.123 0.269 0.491 0.04 0.054 0.02 0.003
 ## Anguila
 VERTday_ANG1 8
 0 0 0 0 0 0.146 0.491 0.363
@@ -4152,7 +4152,7 @@ KDEP_SQD   0.003 # Sediment penetration depth of Octupus [ m ]
 KDEP_COR   0 # Sediment penetration depth of Octupus [ m ]
 KDEP_LPF   0 # Sediment penetration depth of Large pelagic fish [ m ]
 KDEP_SPF   0 # Sediment penetration depth of Small pelagic fish [ m ]
-KDEP_SBF   0.002 # Sediment penetration depth of Small benthic fish [ m ]
+KDEP_SBF   0.04 # Sediment penetration depth of Small benthic fish [ m ]
 KDEP_LBF   0.03 # Sediment penetration depth of Large benthic fish [ m ]
 KDEP_SZO   0 # Sediment penetration depth of Small Zooplankton [ m ]
 KDEP_MZO   0 # Sediment penetration depth of Medium Zooplankton [ m ]
@@ -4437,33 +4437,33 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-13 5e-14
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-2e-11 1e-13
+1.8e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-5e-10 1e-11
+5e-10 5e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 3e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-12 1e-13
+1e-13 1e-13
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-14 1e-14
+1e-13 1e-13
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 8e-8 8e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-5e-8 8e-7
+1e-8 8e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 1e-12 1e-12
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
-1e-18 1e-18
+1e-11 1e-11
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-18 1e-18
+1e-15 1e-15
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-10 1e-11
+5e-10 1e-12
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-12 1e-15
+5e-10 1e-12
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-10 5e-13
+1e-11 5e-13
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-7e-10 6e-11
+1e-11 1e-13
 
 ## Invertebrates
 OCT_mQ   1e-9 #  Quad. mortality rate of Octupus [ d-1 ]

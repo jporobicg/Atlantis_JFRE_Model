@@ -1305,6 +1305,9 @@ fi
         | CHO               |  20 |  600 | Fishbase                                                            |
         | COR               |  50 | 1000 | Data base &   Niklitschek 2010                                      |
         |                   |     |      |                                                                     |
+
+  - *NOTE* For SBF and LBF it was necesary increase the maximum depth using the distriburion observed by Yañes et al. (2008; Seamount biodiversity report)
+
 - *Day-nigth distribution*
   - Vertebrates
     #+BEGIN_SRC R :results output
@@ -1337,7 +1340,7 @@ fi
       ## Grupos funcionales
       lc <- FG(lc, 1)
 
-      lc.fg$SPF[which(lc.fg$SPF$layer==3),]
+      #lc.fg$SPF[which(lc.fg$SPF$layer==3),]
       ##-----------
       ##  Divide by functional group
       ##---------------
@@ -1358,20 +1361,23 @@ fi
       b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
       print(b)
     #+END_SRC
+
+    #+RESULTS:
     #+CAPTION: Proportion of FG by layer
     |             | layer 8 | layer 7 | layer 6 | layer 5 | layer 4 | layer 3 | layer 2 | layer 1 |
     |-------------+---------+---------+---------+---------+---------+---------+---------+---------|
-    | ALF         |   0.000 |   0.051 |   0.268 |   0.580 |   0.046 |   0.055 |   0.000 |   0.000 |
-    | ANG         |   0.000 |   0.000 |   0.000 |   0.000 |   0.000 |   0.146 |   0.491 |   0.363 |
-    | BRC-Adult   |   0.000 |   0.000 |   0.000 |   0.085 |   0.120 |   0.668 |   0.071 |   0.056 |
-    | BRC-Juvenil |   0.000 |   0.000 |   0.000 |   0.013 |   0.095 |   0.728 |   0.106 |   0.058 |
-    | CHO         |   0.000 |   0.000 |   0.000 |   0.087 |   0.130 |   0.653 |   0.065 |   0.065 |
-    | LBF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.136 |   0.728 |   0.121 |   0.015 |
-    | LPF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.003 |   0.030 |   0.125 |   0.842 |
-    | ORO         |   0.000 |   0.649 |   0.347 |   0.004 |   0.000 |   0.000 |   0.000 |   0.000 |
-    | SBF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.063 |   0.820 |   0.054 |   0.063 |
-    | SPF         |   0.000 |   0.000 |   0.000 |   0.000 |   0.070 |   0.432 |   0.164 |   0.334 |
-    | VID         |   0.000 |   0.000 |   0.000 |   0.000 |   0.005 |   0.269 |   0.586 |   0.140 |
+    | ALF         | 0.000   | 0.051   | 0.268   | 0.580   | 0.046   | 0.055   | 0.000   | 0.000   |
+    | ANG         | 0.000   | 0.000   | 0.000   | 0.000   | 0.000   | 0.146   | 0.491   | 0.363   |
+    | BRC-Adult   | 0.000   | 0.000   | 0.000   | 0.085   | 0.120   | 0.668   | 0.071   | 0.056   |
+    | BRC-Juvenil | 0.000   | 0.000   | 0.000   | 0.013   | 0.095   | 0.729   | 0.106   | 0.058   |
+    | CHO         | 0.000   | 0.144   | 0.317   | 0.183   | 0.224   | 0.131   | 0.001   | 0.001   |
+    | LBF         | 0.000   | 0.122   | 0.269   | 0.491   | 0.040   | 0.054   | 0.020   | 0.003   |
+    | LPF         | 0.000   | 0.000   | 0.000   | 0.000   | 0.003   | 0.030   | 0.125   | 0.842   |
+    | ORO         | 0.000   | 0.649   | 0.347   | 0.004   | 0.000   | 0.000   | 0.000   | 0.000   |
+    | SBF         | 0.000   | 0.122   | 0.268   | 0.489   | 0.041   | 0.075   | 0.002   | 0.002   |
+    | SCR         | 0.000   | 0.000   | 0.000   | 0.000   | 0.000   | 0.000   | 1.000   | 0.000   |
+    | SPF         | 0.000   | 0.000   | 0.000   | 0.000   | 0.069   | 0.435   | 0.165   | 0.330   |
+    | VID         | 0.000   | 0.000   | 0.000   | 0.000   | 0.005   | 0.269   | 0.585   | 0.140   |
   #+CAPTION: Vertical distribution of the vertebrate FG
     #+ATTR_HTML: width="600" alt="image"
     [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Functional_groups.png]]
@@ -1419,43 +1425,43 @@ fi
     | MZO_Day   | 0.000   | 0.000   | 0.000   | 0.007   | 0.077   | 0.669   | 0.244   | 0.003   |
     | MZO_Night | 0.000   | 0.000   | 0.000   | 0.179   | 0.174   | 0.025   | 0.531   | 0.092   |
 
-    -  Lobster and Golden Crab Vertical distribution
-        #+BEGIN_SRC R :results output
-          rm(list = ls())
-          library(ascii)
-          options(asciiType = "org")
-          source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
-          crus <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Depth/depth_crustaceans.csv')
-          ##Divdiden by layer
-          layer.depths <- c(20, 50, 150, 250, 400, 650, 1000, 4300)
-          crus$layer    <- ifelse(crus$depth <= layer.depths[1], 1,
-                          ifelse(crus$depth <= layer.depths[2], 2,
-                          ifelse(crus$depth <= layer.depths[3], 3,
-                          ifelse(crus$depth <= layer.depths[4], 4,
-                          ifelse(crus$depth <= layer.depths[5], 5,
-                          ifelse(crus$depth <= layer.depths[6], 6,
-                          ifelse(crus$depth <= layer.depths[7], 7, 8)))))))
-          ## By functional group
-          crus_FG <- FG(crus, 2)
-          ## Expand rows based on the values on the column
-          crus_FG <- crus_FG[-which(crus_FG$total == 0), ]
-          crus.dup     <- dup.row(crus_FG, 4)
-          ## Functinal groups
-          crus.ly      <- split(crus.dup, crus.dup$FG)
-          depth <- data.frame(specie = names(crus.ly),
-                              min    = rep(0, length(crus.ly)),
-                              max    = rep(8, length(crus.ly)))
-          ##++++++++++++++++++++
-          ## Real depth location
-          ##++++++++++++++++++++
-          out <- hist.deph(crus.ly, col.val = 7, dep.lim = depth, n.file = 'img/crustacean.prn')
-          out <- t(out)
-          colnames(out) <- paste('layer', rep(8 : 1))
-          cap           <- 'Vertical distribution of crustacean by layer'
-          b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
-          print(b)
+    - Lobster and Golden Crab Vertical distribution
+       #+BEGIN_SRC R :results output
+         rm(list = ls())
+         library(ascii)
+         options(asciiType = "org")
+         source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+         crus <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Depth/depth_crustaceans.csv')
+         ##Divdiden by layer
+         layer.depths <- c(20, 50, 150, 250, 400, 650, 1000, 4300)
+         crus$layer    <- ifelse(crus$depth <= layer.depths[1], 1,
+                         ifelse(crus$depth <= layer.depths[2], 2,
+                         ifelse(crus$depth <= layer.depths[3], 3,
+                         ifelse(crus$depth <= layer.depths[4], 4,
+                         ifelse(crus$depth <= layer.depths[5], 5,
+                         ifelse(crus$depth <= layer.depths[6], 6,
+                         ifelse(crus$depth <= layer.depths[7], 7, 8)))))))
+         ## By functional group
+         crus_FG <- FG(crus, 2)
+         ## Expand rows based on the values on the column
+         crus_FG <- crus_FG[-which(crus_FG$total == 0), ]
+         crus.dup     <- dup.row(crus_FG, 4)
+         ## Functinal groups
+         crus.ly      <- split(crus.dup, crus.dup$FG)
+         depth <- data.frame(specie = names(crus.ly),
+                             min    = rep(0, length(crus.ly)),
+                             max    = rep(8, length(crus.ly)))
+         ##++++++++++++++++++++
+         ## Real depth location
+         ##++++++++++++++++++++
+         out <- hist.deph(crus.ly, col.val = 7, dep.lim = depth, n.file = 'img/crustacean.prn')
+         out <- t(out)
+         colnames(out) <- paste('layer', rep(8 : 1))
+         cap           <- 'Vertical distribution of crustacean by layer'
+         b             <- ascii(out, header = T,  include.rownames = TRUE, include.colnames = TRUE, caption=cap, digits=3)
+         print(b)
 
-    #+END_SRC
+   #+END_SRC
     #+RESULTS:
     #+CAPTION: Vertical distribution of crustacean by layer
      |     | layer 8 | layer 7 | layer 6 | layer 5 | layer 4 | layer 3 | layer 2 | layer 1 |

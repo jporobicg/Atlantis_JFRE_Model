@@ -7422,3 +7422,83 @@ y
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+****** SPL
+- from : 1e-12 5e-14
+- to: 1e-10 1e-13
+****** BRC
+- from : 1e-11 1e-13
+- to : 2e-11 1e-13
+****** VID
+- from: 5e-10 1e-12
+- to: 5e-10 1e-11
+****** ORO
+- from : 5e-12 1e-12
+- to : 3e-12 1e-12
+****** ALF
+- from : 5e-11 1e-12
+- to : 1e-12 1e-13
+****** ANG
+- from : 1e-12 1e-12
+- to : 1e-14 1e-14
+****** OTA
+- from : 1e-8 8e-7
+- to : 5e-8 8e-7
+****** DOL
+- from : 1e-11 1e-11
+- to : 1e-12 1e-12
+****** LPF
+- from : 1e-10 1e-11
+- to : 5e-10 1e-11
+****** SBF
+- from 1e-10 5e-13
+- to 1e-10 5e-12
+****** LPF
+- from : 1e-9 9e-11
+- to : 7e-10 6e-11
+**** Recruitment
+*** Increased
+**** Clearance
+***** SZO
+- from : 0.009
+- to : 0.05
+***** MZO
+- from : 0.003
+- to : 0.008
+***** LZO
+- from : 0.00149
+- to : 0.004
+***** SCR
+- from 0.001
+- to :  0.003
+**** Efficiency
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+**** Mortality
+*** Other
+**** FSMG
+***** BIR
+- from 0.1 to 0.3
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170905181647
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170905181647.png]]
+* Run PC-Demiurgo 20170906155620
+  - Run start: 2017-09-06 15:56:20
+  - Run end: 2017-09-06 19:10:54
+  - log file : [[file:Calibration/20170906191054.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
