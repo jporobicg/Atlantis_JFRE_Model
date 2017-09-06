@@ -2972,7 +2972,7 @@ GCR_FSM 1
 BRC_FSM 1
 1
 VID_FSM 1
-0.7
+0.6
 ORO_FSM 1
 1
 ALF_FSM 1
@@ -4447,7 +4447,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-13 1e-13
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-8e-8 8e-8
+8e-9 8e-9
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-8 8e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
