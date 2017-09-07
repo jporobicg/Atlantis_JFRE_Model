@@ -499,7 +499,7 @@ CHO_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OCT_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -2605,7 +2605,6 @@ SBF_Migrate_Time 1
 LBF_Migrate_Time 1
 364
 
-
 # Day of year large zooplankton return to the model domain
 SZO_Migrate_Return 1
 0
@@ -2810,8 +2809,6 @@ jLZO_Migrate_Period 1
 jMZO_Migrate_Period 1
 0
 
-
-
 k_migslow 1  # 0 = all migrators leave at once, 1 = migrators leave gradually 0
 
 # Juvenile migration return stock - set value to the integer number identifiying the stock
@@ -2926,7 +2923,7 @@ jGCR_FSM 1
 jBRC_FSM 1
 1
 jVID_FSM 1
-1
+0.8
 jORO_FSM 1
 1
 jALF_FSM 1
@@ -2938,9 +2935,9 @@ jCHO_FSM 1
 jOTA_FSM 1
 1
 jCET_FSM 1
-1
+0.9
 jDOL_FSM 1
-1
+0.9
 jBIR_FSM 1
 1
 jOCT_FSM 1
@@ -3043,9 +3040,9 @@ jOTA_FSMG 1
 jCET_FSMG 1
 0.1
 jDOL_FSMG 1
-0
+0.5
 jBIR_FSMG 1
-0.3
+0.5
 jOCT_FSMG 1
 0
 jSQD_FSMG 1
@@ -3089,7 +3086,7 @@ OTA_FSMG 1
 CET_FSMG 1
 0.1
 DOL_FSMG 1
-0
+0.2
 BIR_FSMG 1
 0.3
 OCT_FSMG 1
@@ -3703,7 +3700,7 @@ KUP_ALF   0.4 # Upper prey selection size limit for Alfonsino [ Number ]
 KUP_ANG   0.4 # Upper prey selection size limit for Anguila [ Number ]
 KUP_CHO   0.5 # Upper prey selection size limit for Chondrichtyans [ Number ]
 KUP_OTA   0.5 # Upper prey selection size limit for Otariid [ Number ]
-KUP_DOL   0.4 # Upper prey selection size limit for Dophins [ Number ]
+KUP_DOL   0.5 # Upper prey selection size limit for Dophins [ Number ]
 KUP_CET   0.001 # Upper prey selection size limit for Cetaceans [ Number ]
 KUP_BIR   0.4 # Upper prey selection size limit for Birds [ Number ]
 KUP_OCT   0.4 # Upper prey selection size limit for Octupus [ Number ]
@@ -3902,11 +3899,11 @@ C_SPL   10 #  Clearance rate for Spiny lobster [ m3(mg N)-1 d-1 ]
 C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
 0.28 0.94 1.96 3.31 4.91 6.59 8.1 9.34 10.67 11.85
 C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
-2.44 3.48 4.69 6.05 7.61 9.52 11.69 13.54 15.34 17.25
+10.8 17.85 27.37 39.26 54.48 75 100.43 123.91 147.97 174.87
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
-6.54 8.66 11.72
+31.74 42 56.84
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-0.05 1.49 2.07 2.61 2.86 3.17 3.37 3.49 3.56 3.6
+0.88 26.95 59.82 85.63 103.25 114.58 121.64 125.96 128.55 130.11
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 8.51 17.45 27.28 37.11 46.42 54.95 62.58 69.29 75.15 80.15
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
@@ -4433,9 +4430,9 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-10 1e-13
+1e-10 1e-12
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-13 5e-14
+1e-12 5e-13
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1.8e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
@@ -4447,7 +4444,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-13 1e-13
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-1e-8 8e-9
+1e-8 1e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-8 8e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
@@ -4457,13 +4454,13 @@ CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-15 1e-15
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-10 1e-12
+5e-12 1e-14
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-10 1e-12
+5e-12 1e-14
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-11 5e-13
+1e-13 5e-15
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-11 1e-13
+1e-13 1e-15
 
 ## Invertebrates
 OCT_mQ   1e-9 #  Quad. mortality rate of Octupus [ d-1 ]
