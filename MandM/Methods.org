@@ -2635,7 +2635,6 @@ fi
 
 **** LFD by cohorts
 In this secction I use the data form the Database to get the number of organism by cohort. The cohorts used here matches the cohort on Atlantis
-
  #+BEGIN_SRC R :results output
    rm(list = ls())
    library(ascii)
