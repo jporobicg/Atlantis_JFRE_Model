@@ -3459,13 +3459,13 @@ pPREY1LPF2  37
 pPREY2LPF2  37
 0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0 0 0 0.1 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.09 0.005 0.01 0.005 0 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.09 0.005 0.01 0.005 0.005 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.075 0.07 0 0.05 0 0 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.075 0.07 0 0.05 0 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.05 0.01 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.05 0.01 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0.075 0.07 0 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3780,9 +3780,9 @@ k_trans_BCA 1.0
 C_OCT_T15   0.007   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.07    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.05    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.008   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.004   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.08    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.01   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.001   #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3911,7 +3911,7 @@ C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 19.2 135.45 230.14 285.26 314.22 328.83 336.06 339.61 341.34 342.19
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
-0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
+10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 3.7 5.5 7.61 10.79 14.37 19.53 22.84 30.93 36.17 41.81
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -3935,9 +3935,9 @@ C_OTA 10
 mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.4      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.0005     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.01      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.005      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3964,7 +3964,7 @@ mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 0.02 0.19 0.51 0.98 1.84 3.54 7.01 14.12 14.12 14.12
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+1.940575 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -4112,7 +4112,7 @@ li_b_BIR   3.0         # Coefficient of allometic length-weight relation for Lar
 li_a_invert 0.01
 li_b_invert 3.0
 
-min_li_mat_SPL   73.2 		# Minimum size of maturity of  Spiny lobster [ cm ]
+min_li_mat_SPL   73.2  	# Minimum size of maturity of  Spiny lobster [ cm ]
 min_li_mat_GCR   10.62    		# Minimum size of maturity of  Golden Crab [ cm ]
 min_li_mat_BRC   28.9     		# Minimum size of maturity of  Breca [ cm ]
 min_li_mat_VID   51     		# Minimum size of maturity of  Vidriola [ cm ]
@@ -4205,7 +4205,7 @@ EPlant_OCT   0.2  # Assimilation efficiency on Plants of Octupus
 EPlant_SQD   0.3  # Assimilation efficiency on Plants of Octupus
 EPlant_COR   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_LPF   0    # Assimilation efficiency on Plants of Large pelagic fish
-EPlant_SPF   0.35 # Assimilation efficiency on Plants of Small pelagic fish
+EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.35 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
 EPlant_SZO   0.3 # Assimilation efficiency on Plants of Small Zooplankton
@@ -5199,9 +5199,9 @@ BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate paramete
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
-BHalpha_LPF   2.5E+9             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
-BHalpha_SPF   1.173798E+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   1.3E9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_LPF   2.5E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
+BHalpha_SPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_SBF   1.3E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   6.747062E+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
