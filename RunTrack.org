@@ -8132,3 +8132,64 @@ y
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+**** Recruitment
+***** SPF
+- Beta :
+- from : 1.174E+010
+- to : 9.74E+009
+*** Increased
+**** Clearance
+***** SPF
+- from : 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
+- to : 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
+***** SZO
+- from : 0.05
+- to : 0.08
+***** LZO
+- from : 0.004
+- to : 0.01
+***** MZO
+- from : 0.008
+- to : 0.02
+**** Efficiency
+***** SPF
+- from 0.35
+- to 0.55
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+***** SPF
+- from : 0.01 0.11 0.58 1.23 2.11 3.29 4.91 7.16 10.34 14.86
+- to : 1.940575 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+***** SZO LZO MZO
+- from : 0.005  to 0.01
+- from : 0.001  to 0.005
+- from : 0.0005 to 0.001
+**** Mortality
+***** SPF
+- from : 5e-11 1e-12
+- to : 1e-10 1e-12
+**** Initial abundance
+**** FSMG
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170913103237
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170913103237.png]]
+* Run PC-Demiurgo 20170913122035
+  - Run start: 2017-09-13 12:20:35
+  - Run end: 2017-09-14 07:42:22
+  - log file : [[file:Calibration/20170914074222.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

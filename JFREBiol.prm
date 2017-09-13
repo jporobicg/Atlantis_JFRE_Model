@@ -500,18 +500,18 @@ OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-COR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+COR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SCR_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BCA_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MOL_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-SZO_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MZO_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-LZO_ddepend_move 1 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BCA_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+LZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 
 # Identifier indicating whether vertebrate group seeks channels during low tide - in tidal models
 flagchannelBRC 0
@@ -3911,7 +3911,8 @@ C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 19.2 135.45 230.14 285.26 314.22 328.83 336.06 339.61 341.34 342.19
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
-10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
+0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
+#10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 3.7 5.5 7.61 10.79 14.37 19.53 22.84 30.93 36.17 41.81
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
