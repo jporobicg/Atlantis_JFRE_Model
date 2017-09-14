@@ -3780,9 +3780,9 @@ k_trans_BCA 1.0
 C_OCT_T15   0.007   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.07    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.08    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.01   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.18    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.04   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.02   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.001   #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3936,9 +3936,9 @@ C_OTA 10
 mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.4      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.01      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.005      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.9      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.05      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -4162,11 +4162,11 @@ KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0.3 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0.2 # Assimilation efficiency on live food and carrion of Golden Crab
+E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_GCR   0.3 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
-E_VID   0.234 # Assimilation efficiency on live food and carrion of Vidriola
-E_ORO   0.4 # Assimilation efficiency on live food and carrion of Orange Roughy
+E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
+E_ORO   0.3 # Assimilation efficiency on live food and carrion of Orange Roughy
 E_ALF   0.42 # Assimilation efficiency on live food and carrion of Alfonsino
 E_ANG   0.2 # Assimilation efficiency on live food and carrion of Anguila
 E_CHO   0.3 # Assimilation efficiency on live food and carrion of Chondrichtyans
@@ -4177,13 +4177,13 @@ E_BIR   0.4 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
-E_LPF   0.25 # Assimilation efficiency on live food and carrion of Large pelagic fish
-E_SPF   0.3 # Assimilation efficiency on live food and carrion of Small pelagic fish
-E_SBF   0.2 # Assimilation efficiency on live food and carrion of Small benthic fish
-E_LBF   0.2 # Assimilation efficiency on live food and carrion of Large benthic fish
-E_SZO   0.5 # Assimilation efficiency on live food and carrion of Small Zooplankton
-E_MZO   0.25 # Assimilation efficiency on live food and carrion of Medium Zooplankton
-E_LZO   0.25 # Assimilation efficiency on live food and carrion of Large Zooplankton
+E_LPF   0.35 # Assimilation efficiency on live food and carrion of Large pelagic fish
+E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_SBF   0.45 # Assimilation efficiency on live food and carrion of Small benthic fish
+E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
+E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
+E_MZO   0.45 # Assimilation efficiency on live food and carrion of Medium Zooplankton
+E_LZO   0.45 # Assimilation efficiency on live food and carrion of Large Zooplankton
 E_SCR   0.4 # Assimilation efficiency on live food and carrion of Small crustaceans
 E_BFF   0.4 # Assimilation efficiency on live food and carrion of Deposit feeders
 E_BCA   0.35 # Assimilation efficiency on live food and carrion of Benthic Carnivorous
@@ -4207,11 +4207,11 @@ EPlant_SQD   0.3  # Assimilation efficiency on Plants of Octupus
 EPlant_COR   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_LPF   0    # Assimilation efficiency on Plants of Large pelagic fish
 EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
-EPlant_SBF   0.35 # Assimilation efficiency on Plants of Small benthic fish
+EPlant_SBF   0.45 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
-EPlant_SZO   0.3 # Assimilation efficiency on Plants of Small Zooplankton
-EPlant_MZO   0.3 # Assimilation efficiency on Plants of Medium Zooplankton
-EPlant_LZO   0.3 # Assimilation efficiency on Plants of Large Zooplankton
+EPlant_SZO   0.45 # Assimilation efficiency on Plants of Small Zooplankton
+EPlant_MZO   0.45 # Assimilation efficiency on Plants of Medium Zooplankton
+EPlant_LZO   0.45 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
 EPlant_BFF   0.4  # Assimilation efficiency on Plants of Deposit feeders
 EPlant_BCA   0.5  # Assimilation efficiency on Plants of Benthic Carnivorous
@@ -4232,14 +4232,14 @@ EDL_DOL   0 # Assim efficiency on labile detritus of Cetaceans
 EDL_BIR   0 # Assim efficiency on labile detritus of Birds
 EDL_OCT   0 # Assim efficiency on labile detritus of Octupus
 EDL_SQD   0.4 # Assim efficiency on labile detritus of Squid
-EDL_COR   0.01 # Assim efficiency on labile detritus of Octupus
+EDL_COR   0.1 # Assim efficiency on labile detritus of Octupus
 EDL_LPF   0 # Assim efficiency on labile detritus of Large pelagic fish
-EDL_SPF   0 # Assim efficiency on labile detritus of Small pelagic fish
+EDL_SPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_SBF   0 # Assim efficiency on labile detritus of Small benthic fish
 EDL_LBF   0 # Assim efficiency on labile detritus of Large benthic fish
-EDL_SZO   0.1 # Assim efficiency on labile detritus of Small Zooplankton
-EDL_MZO   0.02 # Assim efficiency on labile detritus of Medium Zooplankton
-EDL_LZO   0 # Assim efficiency on labile detritus of Large Zooplankton
+EDL_SZO   0.15 # Assim efficiency on labile detritus of Small Zooplankton
+EDL_MZO   0.15 # Assim efficiency on labile detritus of Medium Zooplankton
+EDL_LZO   0.15 # Assim efficiency on labile detritus of Large Zooplankton
 EDL_SCR   0.4 # Assim efficiency on labile detritus of Small crustaceans
 EDL_BFF   0.3  # Assim efficiency on labile detritus of Deposit feeders
 EDL_LPH   0 # Assim efficiency on labile detritus of Large phytoplankton
@@ -4457,7 +4457,7 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 1e-10 1e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-11 1e-12
+5e-11 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 5e-13 5e-14
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
