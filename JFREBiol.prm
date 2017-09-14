@@ -4457,7 +4457,7 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 1e-10 1e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-11 1e-10
+5e-5 1e-5
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 5e-13 5e-14
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
