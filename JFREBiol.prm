@@ -1441,8 +1441,8 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.07      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.05     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  1      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  1     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   2      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -3383,13 +3383,13 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.03 0 0 0 0.05 0 0 0 0.2 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0 0.03 0 0 0 0.05 0 0 0 0.2 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.001 0 0 0.2 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.001 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0 0.01 0.2 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
@@ -3498,7 +3498,6 @@ pPREYBCA  37
 1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
-
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -4163,17 +4162,17 @@ KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
 E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0.3 # Assimilation efficiency on live food and carrion of Golden Crab
+E_GCR   0.4 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.3 # Assimilation efficiency on live food and carrion of Orange Roughy
-E_ALF   0.42 # Assimilation efficiency on live food and carrion of Alfonsino
+E_ALF   0.55 # Assimilation efficiency on live food and carrion of Alfonsino
 E_ANG   0.2 # Assimilation efficiency on live food and carrion of Anguila
 E_CHO   0.3 # Assimilation efficiency on live food and carrion of Chondrichtyans
 E_OTA   0.35 # Assimilation efficiency on live food and carrion of Otariid
 E_CET   0.4 # Assimilation efficiency on live food and carrion of Cetaceans
 E_DOL   0.35 # Assimilation efficiency on live food and carrion of Cetaceans
-E_BIR   0.4 # Assimilation efficiency on live food and carrion of Birds
+E_BIR   0.65 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
@@ -4192,7 +4191,7 @@ E_MOL   0.35 # Assimilation efficiency on live food and carrion of Mollusca
 # Assimilation efficiency of consumers on plants
 EPlant_SPL   0.55 # Assimilation efficiency on Plants of Spiny lobster
 EPlant_GCR   0.45 # Assimilation efficiency on Plants of Golden Crab
-EPlant_BRC   0.5  # Assimilation efficiency on Plants of Breca
+EPlant_BRC   0.55  # Assimilation efficiency on Plants of Breca
 EPlant_VID   0    # Assimilation efficiency on Plants of Vidriola
 EPlant_ORO   0    # Assimilation efficiency on Plants of Orange Roughy
 EPlant_ALF   0.01    # Assimilation efficiency on Plants of Alfonsino
@@ -4220,7 +4219,7 @@ EPlant_MOL   0.45 # Assimilation efficiency on Plants of Mollusca
 # Assimilation efficiency of invertebrate consumers on labile detritus
 EDL_SPL   0.27 # Assim efficiency on labile detritus of Spiny lobster
 EDL_GCR   0.2 # Assim efficiency on labile detritus of Golden Crab
-EDL_BRC   0.01 # Assim efficiency on labile detritus of Breca
+EDL_BRC   0.05 # Assim efficiency on labile detritus of Breca
 EDL_VID   0 # Assim efficiency on labile detritus of Vidriola
 EDL_ORO   0 # Assim efficiency on labile detritus of Orange Roughy
 EDL_ALF   0 # Assim efficiency on labile detritus of Alfonsino
@@ -4374,19 +4373,19 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0 0.002507
+0.000001 0.003
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0 0.0009589041
+0.00001 0.001
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0 0.002739726
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
-0.000001 0.000273972
+0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 0 4.986301e-05
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
-0  0.0003383014
+0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
-0.001 0.001
+0.001 0.005
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0.0001 0.001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
@@ -4398,13 +4397,13 @@ CET_mL   2 # Linear mortality rate of Whales [ d-1 ]
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0 0
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
-0  0.000001
+0  0.00001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.000001
+0  0.0001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
-0  0.0000002
+0  0.000002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
-0 0.0000001
+0.0000001 0.00001
 
 ## Invertebrates
 OCT_mL   0.0001 # Linear mortality rate of Octupus [ d-1 ]
@@ -4447,19 +4446,19 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-8 3e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-8 8e-7
+6e-8 3e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-16 1e-14
+8e-17 8e-15
 CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
 1e-15 1e-15
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-15 1e-15
+1e-15 1e-14
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-10 1e-13
+5e-11 1e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-5 1e-5
+1e-10 5e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-5e-13 5e-14
+1e-13 1e-13
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-12 1e-13
 
@@ -4475,8 +4474,8 @@ BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-10 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-10 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+LPH_mQ   1e-15 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-15 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-15 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-15 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
@@ -5212,7 +5211,7 @@ BHbeta_BRC   5E+11       # Beverton-Holt recruitment saturation parameter (if re
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   8E+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
-BHbeta_ANG   6E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
+BHbeta_ANG   6E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
 BHbeta_CET   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
@@ -5291,7 +5290,7 @@ KWSR_VID   3813.90  # Structural weight of recruits for Vidriola [ mg N m-3 ]
 KWSR_ORO   0.2     # Structural weight of recruits for Orange Roughy [ mg N m-3 ]
 KWSR_ALF   36     # Structural weight of recruits for Alfonsino [ mg N m-3 ]
 KWSR_ANG   1.65     # Structural weight of recruits for Anguila [ mg N m-3 ]
-KWSR_CHO   700      # Structural weight of recruits for Chondrichtyans [ mg N m-3 ]
+KWSR_CHO   70      # Structural weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWSR_OTA   20668    # Structural weight of recruits for Otariid [ mg N m-3 ]
 KWSR_CET   36919347 # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_DOL   8048     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
