@@ -9,13 +9,13 @@ ANG,6,1,Anguila,Anguila,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
 CHO,7,1,Chondrichtyans,Chondrichtyans,10,1,2,1,3,1,1,1,0,1,0,SHARK,1,0,0,0,0,0,0,0,1
 OTA,8,1,Otariid,Otariid,10,1,2,1,3,2,1,1,0,1,0,MAMMAL,1,0,0,1,0,0,0,0,1
 DOL,9,1,Dophins,Dophins,10,1,2,1,5,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
-CET,10,0,Whales,Whales,10,1,2,1,8,1,1,1,0,0,0,MAMMAL,1,0,0,0,0,0,0,0,1
-BIR,11,1,Birds,Birds,10,1,2,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0,1
-SQD,12,1,Squids,Squids,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
-OCT,13,1,Octupus,Octupus,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
-LPF,14,1,Pelagic_L_fish,Large pelagic fish,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
-SPF,15,1,Pelagic_S_fish,Small pelagic fish,10,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
-SBF,16,1,Benthic_S_fish,Small benthic fish,10,1,2,1,2,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,1,4
+BIR,10,1,Birds,Birds,10,1,2,1,1,1,1,1,0,0,0,BIRD,1,0,0,1,0,0,0,0,1
+SQD,11,1,Squids,Squids,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
+OCT,12,1,Octupus,Octupus,1,1,1,1,1,1,1,1,0,1,0,CEP,1,0,0,0,0,0,0,0,1
+LPF,13,1,Pelagic_L_fish,Large pelagic fish,10,1,2,1,4,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
+SPF,14,1,Pelagic_S_fish,Small pelagic fish,10,1,2,1,1,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
+SBF,15,1,Benthic_S_fish,Small benthic fish,10,1,2,1,2,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,1,4
+MPF,16,1,Mesopelagic_fish,Mesopelagic fish,6,1,2,1,1,1,1,1,0,0,0,FISH,1,0,0,0,0,0,0,0,1
 LBF,17,1,Benthic_L_fish,Large benthic fish,10,1,2,1,3,1,1,1,1,1,0,FISH,1,0,0,0,0,0,0,0,4
 SZO,18,1,Small_zooplankton,Small Zooplankton,1,1,1,1,1,1,1,1,0,0,0,MED_ZOO,1,0,0,0,0,0,0,0,1
 MZO,19,1,Med_zooplankton,Medium Zooplankton,1,1,1,1,1,1,1,1,0,0,0,MED_ZOO,1,0,0,0,0,0,0,0,1

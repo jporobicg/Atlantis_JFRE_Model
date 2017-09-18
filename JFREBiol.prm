@@ -12,7 +12,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           Set-up and recording       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-ecotest    0 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+ecotest    3 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
 availflag  1 # Switch to filter flows based on active groups 1
 flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
@@ -162,7 +162,6 @@ flagdemANG  1  ANG: 1 = on, 0 = off 1
 flagdemALF  1  ALF: 1 = on, 0 = off 1
 flagdemCHO  1  CHO: 1 = on, 0 = off 1
 flagdemOTA  0  OTA: 1 = on, 0 = off 1
-flagdemCET  0  CET: 1 = on, 0 = off 1
 flagdemDOL  0  DOL: 1 = on, 0 = off 1
 flagdemBIR  0  BIR: 1 = on, 0 = off 1
 flagdemOCT  1  OCT: 1 = on, 0 = off 1
@@ -170,6 +169,7 @@ flagdemSQD  1  SQD: 1 = on, 0 = off 1
 flagdemCOR  1  COR: 1 = on, 0 = off 1
 flagdemLPF  0  LPF: 1 = on, 0 = off 1
 flagdemSPF  0 SPF: 1 = on, 0 = off 1
+flagdemMPF  1 SPF: 1 = on, 0 = off 1
 flagdemSBF  1 SBF: 1 = on, 0 = off 1
 flagdemLBF  1 LBF: 1 = on, 0 = off 1
 flagdemSZO  0 SCP: 1 = on, 0 = off 1
@@ -202,9 +202,9 @@ flagplankfishANG   0 # Flag to indicate if is planktivore  Anguila [ Number ]
 flagplankfishCHO   0 # Flag to indicate if is planktivore  Chondrichtyans [ Number ]
 flagplankfishOTA   0 # Flag to indicate if is planktivore  Otariid [ Number ]
 flagplankfishDOL   0 # Flag to indicate if is planktivore  Dophins [ Number ]
-flagplankfishCET   1 # Flag to indicate if is planktivore  Whales [ Number ]
 flagplankfishLPF   0 # Flag to indicate if is planktivore  Large pelagic fish [ Number ]
 flagplankfishSPF   0 # Flag to indicate if is planktivore  Small pelagic fish [ Number ]
+flagplankfishMPF   0 # Flag to indicate if is planktivore  Small pelagic fish [ Number ]
 flagplankfishSBF   0 # Flag to indicate if is planktivore  Small benthic fish [ Number ]
 flagplankfishLBF   0 # Flag to indicate if is planktivore  Large benthic fish [ Number ]
 flagplankfishSZO   1 # Flag to indicate if is planktivore
@@ -232,11 +232,11 @@ flagrecruitANG 3
 flagrecruitALF 3
 flagrecruitCHO 12
 flagrecruitOTA 12
-flagrecruitCET 12
 flagrecruitDOL 12
 flagrecruitBIR 12
 flagrecruitLPF 3
 flagrecruitSPF 3
+flagrecruitMPF 3
 flagrecruitSBF 3
 flagrecruitLBF 3
 
@@ -251,7 +251,6 @@ flagext_reprodORO 0 0
 flagext_reprodALF 0 0
 flagext_reprodCHO 0 0
 flagext_reprodOTA 0 0
-flagext_reprodCET 1 0
 flagext_reprodDOL 1 0
 flagext_reprodBIR 1 0
 flagext_reprodOCT 0 0
@@ -259,28 +258,29 @@ flagext_reprodCOR 0 0
 flagext_reprodSQD 0 0
 flagext_reprodLPF 0 0
 flagext_reprodSPF 0 0
+flagext_reprodMPF 0 0
 flagext_reprodSBF 0 0
 flagext_reprodLBF 0 0
 
 # Vertebrate reproduction strength flags (1=very strong year classes possible, relative strength
 # set using recruitRange and 0=only moderate variation in year class strength possible, mainly
 # for top predators with few young per reproductive event, relative strength set using recruitRangeFlat)
-flagrecpeakSPL 1 1
-flagrecpeakGCR 1 1
-flagrecpeakBRC 1 1
-flagrecpeakORO 1 1
-flagrecpeakVID 1 1
-flagrecpeakANG 1 1
-flagrecpeakALF 1 1
-flagrecpeakCHO 1 1
-flagrecpeakOTA 1 1
-flagrecpeakCET 1 1
-flagrecpeakDOL 1 1
-flagrecpeakBIR 1 1
-flagrecpeakLPF 1 1
-flagrecpeakSPF 1 1
-flagrecpeakSBF 1 1
-flagrecpeakLBF 1 1
+flagrecpeakSPL 1
+flagrecpeakGCR 1
+flagrecpeakBRC 1
+flagrecpeakORO 1
+flagrecpeakVID 1
+flagrecpeakANG 1
+flagrecpeakALF 1
+flagrecpeakCHO 1
+flagrecpeakOTA 1
+flagrecpeakDOL 1
+flagrecpeakBIR 1
+flagrecpeakLPF 1
+flagrecpeakSPF 1
+flagrecpeakMPF 1
+flagrecpeakSBF 1
+flagrecpeakLBF 1
 
 # Local recruitment (1 = demersal and piscivorous fish recruit at parental locations, 0 = independent distribution)
 flaglocalrecruitSPL 3
@@ -293,13 +293,13 @@ flaglocalrecruitANG 3
 flaglocalrecruitALF 3
 flaglocalrecruitCHO 1
 flaglocalrecruitOTA 1
-flaglocalrecruitCET 1
 flaglocalrecruitDOL 1
 flaglocalrecruitOCT 1
 flaglocalrecruitCOR 1
 flaglocalrecruitSQD 1
 flaglocalrecruitLPF 3
 flaglocalrecruitSPF 3
+flaglocalrecruitMPF 3
 flaglocalrecruitSBF 3
 flaglocalrecruitLBF 3
 flaglocalrecruitSCR 1
@@ -316,13 +316,13 @@ flagbearliveANG 0
 flagbearliveALF 0
 flagbearliveCHO 1
 flagbearliveOTA 1
-flagbearliveCET 1
 flagbearliveDOL 1
 flagbearliveOCT 0
 flagbearliveCOR 0
 flagbearliveSQD 0
 flagbearliveLPF 0
 flagbearliveSPF 0
+flagbearliveMPF 0
 flagbearliveSBF 0
 flagbearliveLBF 0
 flagbearliveBIR 0
@@ -339,13 +339,13 @@ flagmotherALF 0
 flagmotherBIR 1
 flagmotherCHO 1
 flagmotherOTA 1
-flagmotherCET 1
 flagmotherDOL 1
 flagmotherOCT 0
 flagmotherCOR 0
 flagmotherSQD 0
 flagmotherLPF 0
 flagmotherSPF 0
+flagmotherMPF 0
 flagmotherSBF 0
 flagmotherLBF 0
 
@@ -359,13 +359,13 @@ feed_while_spawnANG 1
 feed_while_spawnALF 1
 feed_while_spawnCHO 1
 feed_while_spawnOTA 1
-feed_while_spawnCET 1
 feed_while_spawnDOL 1
 feed_while_spawnOCT 0
 feed_while_spawnCOR 1
 feed_while_spawnSQD 1
 feed_while_spawnLPF 1
 feed_while_spawnSPF 1
+feed_while_spawnMPF 1
 feed_while_spawnSBF 1
 feed_while_spawnLBF 1
 feed_while_spawnSCR 1
@@ -384,7 +384,6 @@ flagq10effANG 0
 flagq10effALF 0
 flagq10effCHO 0
 flagq10effOTA 0
-flagq10effCET 0
 flagq10effBIR 0
 flagq10effOCT 0
 flagq10effCOR 0
@@ -392,6 +391,7 @@ flagq10effSQD 0
 flagq10effDOL 0
 flagq10effLPF 0
 flagq10effSPF 0
+flagq10effMPF 0
 flagq10effSBF 0
 flagq10effLBF 0
 flagq10effSCR 0
@@ -407,7 +407,6 @@ flagq10receffANG 0
 flagq10receffALF 0
 flagq10receffCHO 0
 flagq10receffOTA 0
-flagq10receffCET 0
 flagq10receffBIR 0
 flagq10receffOCT 0
 flagq10receffCOR 0
@@ -415,6 +414,7 @@ flagq10receffSQD 0
 flagq10receffDOL 0
 flagq10receffLPF 0
 flagq10receffSPF 0
+flagq10receffMPF 0
 flagq10receffSBF 0
 flagq10receffLBF 0
 flagq10receffSCR 0
@@ -432,13 +432,13 @@ flagtempsensitiveANG 0
 flagtempsensitiveALF 0
 flagtempsensitiveCHO 0
 flagtempsensitiveOTA 0
-flagtempsensitiveCET 0
 flagtempsensitiveDOL 0
 flagtempsensitiveOCT 0
 flagtempsensitiveCOR 1
 flagtempsensitiveSQD 0
 flagtempsensitiveLPF 1
 flagtempsensitiveSPF 1
+flagtempsensitiveMPF 1
 flagtempsensitiveSBF 1
 flagtempsensitiveLBF 1
 flagtempsensitiveSCR 1
@@ -469,13 +469,13 @@ ANG_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 ALF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 CHO_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 OTA_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
-CET_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 DOL_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 OCT_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 COR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SQD_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 LPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+MPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 LBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SCR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
@@ -487,23 +487,23 @@ flagtempdepend   1         0 = off, 1 = temperature preferences used
 flagsaltdepend   0         0 = off, 1 = salinity preferences used
 flagO2depend     0         0 = off, 1 = oxygen preferences used
 
-SPL_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-GCR_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BRC_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SPL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+GCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+BRC_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ORO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-ANG_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+ANG_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-CET_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -521,13 +521,13 @@ flagchannelANG 0
 flagchannelALF 0
 flagchannelCHO 0
 flagchannelOTA 0
-flagchannelCET 0
 flagchannelDOL 0
 flagchannelOCT 0
 flagchannelCOR 0
 flagchannelSQD 0
 flagchannelLPF 0
 flagchannelSPF 0
+flagchannelMPF 0
 flagchannelSBF 0
 flagchannelLBF 0
 
@@ -543,7 +543,6 @@ flagANGMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out o
 flagALFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCHOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOTAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
-flagCETMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagDOLMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOCTMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCORMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
@@ -551,6 +550,7 @@ flagSQDMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out o
 flagBIRMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagLPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagMPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagLBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSCRMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
@@ -570,7 +570,6 @@ flagstockingANG  0
 flagstockingALF  0
 flagstockingCHO  0
 flagstockingOTA  0
-flagstockingCET  0
 flagstockingDOL  0
 flagstockingBIR  0
 flagstockingOCT  0
@@ -578,6 +577,7 @@ flagstockingSQD  0
 flagstockingCOR  0
 flagstockingLPF  0
 flagstockingSPF  0
+flagstockingMPF  0
 flagstockingSBF  0
 flagstockingLBF  0
 flagstockingSZO  0
@@ -609,7 +609,6 @@ predcase_ANG 0
 predcase_ALF 0
 predcase_CHO 0
 predcase_OTA 0
-predcase_CET 0
 predcase_DOL 0
 predcase_BIR 0
 predcase_OCT 0
@@ -617,6 +616,7 @@ predcase_COR 0
 predcase_SQD 0
 predcase_LPF 0
 predcase_SPF 0
+predcase_MPF 0
 predcase_SBF 0
 predcase_LBF 0
 predcase_SZO 0
@@ -637,7 +637,6 @@ flagANGday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagALFday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagCHOday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagOTAday 1 Active: 2 = no preference, 1 = day, 0 = night 2
-flagCETday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagDOLday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagBIRday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagOCTday 1 Active: 2 = no preference, 1 = day, 0 = night 2
@@ -645,6 +644,7 @@ flagCORday 0 Active: 2 = no preference, 1 = day, 0 = night 2
 flagSQDday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagLPFday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagSPFday 1 Active: 2 = no preference, 1 = day, 0 = night 2
+flagMPFday 1 Active: 2 = no preference, 1 = day, 0 = night 2
 flagSBFday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagLBFday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagSZOday 2 Active: 2 = no preference, 1 = day, 0 = night 2
@@ -740,7 +740,6 @@ temp_coefftA_ANG  0.851
 temp_coefftA_ALF  0.851
 temp_coefftA_CHO  0.851
 temp_coefftA_OTA  0.851
-temp_coefftA_CET  0.851
 temp_coefftA_DOL  0.851
 temp_coefftA_BIR  0.851
 temp_coefftA_OCT  0.851
@@ -748,6 +747,7 @@ temp_coefftA_COR  0.851
 temp_coefftA_SQD  0.851
 temp_coefftA_LPF  0.851
 temp_coefftA_SPF  0.851
+temp_coefftA_MPF  0.851
 temp_coefftA_SBF  0.851
 temp_coefftA_LBF  0.851
 temp_coefftA_SZO  0.851
@@ -773,7 +773,6 @@ q10_ANG  2.0
 q10_ALF  2.0
 q10_CHO  2.0
 q10_OTA  2.0
-q10_CET  2.0
 q10_DOL  2.0
 q10_BIR  2.0
 q10_OCT  2.0
@@ -781,6 +780,7 @@ q10_COR  2.0
 q10_SQD  2.0
 q10_LPF  2.0
 q10_SPF  2.0
+q10_MPF  2.0
 q10_SBF  2.0
 q10_LBF  2.0
 q10_SZO  2.0
@@ -806,12 +806,12 @@ q10_method_ANG 1
 q10_method_ALF 1
 q10_method_CHO 1
 q10_method_OTA 0
-q10_method_CET 0
 q10_method_BIR 0
 q10_method_OCT 1
 q10_method_SQD 1
 q10_method_LPF 1
 q10_method_SPF 1
+q10_method_MPF 1
 q10_method_SBF 1
 q10_method_LBF 1
 q10_method_SZO 1
@@ -837,7 +837,6 @@ q10_optimal_temp_ANG 17
 q10_optimal_temp_ALF 17
 q10_optimal_temp_CHO 13
 q10_optimal_temp_OTA 5
-q10_optimal_temp_CET 0
 q10_optimal_temp_DOL 0
 q10_optimal_temp_BIR 0
 q10_optimal_temp_OCT 18.5
@@ -845,6 +844,7 @@ q10_optimal_temp_COR 9
 q10_optimal_temp_SQD 10
 q10_optimal_temp_LPF 20
 q10_optimal_temp_SPF 20.75
+q10_optimal_temp_MPF 6.5
 q10_optimal_temp_SBF 13.025
 q10_optimal_temp_LBF 13.025
 q10_optimal_temp_LZO 0
@@ -870,7 +870,6 @@ q10_correction_ANG   1000
 q10_correction_ALF   1000
 q10_correction_CHO   1000
 q10_correction_OTA   1000
-q10_correction_CET   1000
 q10_correction_DOL   1000
 q10_correction_BIR   1000
 q10_correction_OCT   1000
@@ -878,6 +877,7 @@ q10_correction_SQD   1000
 q10_correction_COR   1000
 q10_correction_LPF   1000
 q10_correction_SPF   1000
+q10_correction_MPF   1000
 q10_correction_SBF   1000
 q10_correction_LBF   1000
 q10_correction_SZO   1000
@@ -980,7 +980,6 @@ flagpHsensitive_ANG  0
 flagpHsensitive_ALF  0
 flagpHsensitive_CHO  0
 flagpHsensitive_OTA  0
-flagpHsensitive_CET  0
 flagpHsensitive_DOL  0
 flagpHsensitive_BIR  0
 flagpHsensitive_OCT  0
@@ -988,6 +987,7 @@ flagpHsensitive_SQD  0
 flagpHsensitive_COR  0
 flagpHsensitive_LPF  0
 flagpHsensitive_SPF  0
+flagpHsensitive_MPF  0
 flagpHsensitive_SBF  0
 flagpHsensitive_LBF  0
 flagpHsensitive_MZO  0
@@ -1013,7 +1013,6 @@ flagfecundsensitive_ANG  0
 flagfecundsensitive_ALF  0
 flagfecundsensitive_CHO  0
 flagfecundsensitive_OTA  0
-flagfecundsensitive_CET  0
 flagfecundsensitive_DOL  0
 flagfecundsensitive_BIR  0
 flagfecundsensitive_OCT  0
@@ -1021,6 +1020,7 @@ flagfecundsensitive_SQD  0
 flagfecundsensitive_COR  0
 flagfecundsensitive_LPF  0
 flagfecundsensitive_SPF  0
+flagfecundsensitive_MPF  0
 flagfecundsensitive_SBF  0
 flagfecundsensitive_LBF  0
 flagfecundsensitive_SZO  0
@@ -1046,7 +1046,6 @@ flagnutvaleffect_ANG  0
 flagnutvaleffect_ALF  0
 flagnutvaleffect_CHO  0
 flagnutvaleffect_OTA  0
-flagnutvaleffect_CET  0
 flagnutvaleffect_DOL  0
 flagnutvaleffect_BIR  0
 flagnutvaleffect_OCT  0
@@ -1054,6 +1053,7 @@ flagnutvaleffect_SQD  0
 flagnutvaleffect_COR  0
 flagnutvaleffect_LPF  0
 flagnutvaleffect_SPF  0
+flagnutvaleffect_MPF  0
 flagnutvaleffect_SBF  0
 flagnutvaleffect_LBF  0
 flagnutvaleffect_SZO  0
@@ -1079,7 +1079,6 @@ flagpredavaileffect_ANG  0
 flagpredavaileffect_ALF  0
 flagpredavaileffect_CHO  0
 flagpredavaileffect_OTA  0
-flagpredavaileffect_CET  0
 flagpredavaileffect_DOL  0
 flagpredavaileffect_BIR  0
 flagpredavaileffect_OCT  0
@@ -1087,6 +1086,7 @@ flagpredavaileffect_SQD  0
 flagpredavaileffect_COR  0
 flagpredavaileffect_LPF  0
 flagpredavaileffect_SPF  0
+flagpredavaileffect_MPF  0
 flagpredavaileffect_SBF  0
 flagpredavaileffect_LBF  0
 flagpredavaileffect_SZO  0
@@ -1112,7 +1112,6 @@ flagcontract_tol_ANG  0
 flagcontract_tol_ALF  0
 flagcontract_tol_CHO  0
 flagcontract_tol_OTA  0
-flagcontract_tol_CET  0
 flagcontract_tol_DOL  0
 flagcontract_tol_BIR  0
 flagcontract_tol_OCT  0
@@ -1120,6 +1119,7 @@ flagcontract_tol_SQD  0
 flagcontract_tol_COR  0
 flagcontract_tol_LPF  0
 flagcontract_tol_SPF  0
+flagcontract_tol_MPF  0
 flagcontract_tol_SBF  0
 flagcontract_tol_LBF  0
 flagcontract_tol_SZO  0
@@ -1146,7 +1146,6 @@ pHsensitive_model_ANG  0
 pHsensitive_model_ALF  0
 pHsensitive_model_CHO  0
 pHsensitive_model_OTA  0
-pHsensitive_model_CET  0
 pHsensitive_model_DOL  0
 pHsensitive_model_BIR  0
 pHsensitive_model_OCT  0
@@ -1154,6 +1153,7 @@ pHsensitive_model_SQD  0
 pHsensitive_model_COR  0
 pHsensitive_model_LPF  0
 pHsensitive_model_SPF  0
+pHsensitive_model_MPF  0
 pHsensitive_model_SBF  0
 pHsensitive_model_LBF  0
 pHsensitive_model_SZO  0
@@ -1179,7 +1179,6 @@ KN_pH_ANG  0.0
 KN_pH_ALF  0.0
 KN_pH_CHO  0.0
 KN_pH_OTA  0.0
-KN_pH_CET  0.0
 KN_pH_DOL  0.0
 KN_pH_BIR  0.0
 KN_pH_OCT  7.0
@@ -1187,6 +1186,7 @@ KN_pH_SQD  7.0
 KN_pH_COR  7.0
 KN_pH_LPF  0.0
 KN_pH_SPF  0.0
+KN_pH_MPF  0.0
 KN_pH_SBF  0.0
 KN_pH_LBF  0.0
 KN_pH_SZO  7.0
@@ -1219,6 +1219,7 @@ optimal_pH_SQD  0.0
 optimal_pH_COR  0.0
 optimal_pH_LPF  0.0
 optimal_pH_SPF  0.0
+optimal_pH_MPF  0.0
 optimal_pH_SBF  0.0
 optimal_pH_LBF  0.0
 optimal_pH_LZO  0.0
@@ -1244,7 +1245,6 @@ pH_correction_ANG  1.0
 pH_correction_ALF  1.0
 pH_correction_CHO  1.0
 pH_correction_OTA  1.0
-pH_correction_CET  1.0
 pH_correction_DOL  1.0
 pH_correction_BIR  1.0
 pH_correction_OCT  1.0
@@ -1252,6 +1252,7 @@ pH_correction_SQD  1.0
 pH_correction_COR  1.0
 pH_correction_LPF  1.0
 pH_correction_SPF  1.0
+pH_correction_MPF  1.0
 pH_correction_SBF  1.0
 pH_correction_LBF  1.0
 pH_correction_SZO  1.0
@@ -1277,7 +1278,6 @@ pH_constA_ANG  1.0
 pH_constA_ALF  1.0
 pH_constA_CHO  1.0
 pH_constA_OTA  1.0
-pH_constA_CET  1.0
 pH_constA_DOL  1.0
 pH_constA_BIR  1.0
 pH_constA_OCT  1.0
@@ -1285,6 +1285,7 @@ pH_constA_SQD  1.0
 pH_constA_COR  1.0
 pH_constA_LPF  1.0
 pH_constA_SPF  1.0
+pH_constA_MPF  1.0
 pH_constA_SBF  1.0
 pH_constA_LBF  1.0
 pH_constA_SZO  1.0
@@ -1310,7 +1311,6 @@ pH_constB_ANG  1.0
 pH_constB_ALF  1.0
 pH_constB_CHO  1.0
 pH_constB_OTA  1.0
-pH_constB_CET  1.0
 pH_constB_DOL  1.0
 pH_constB_BIR  1.0
 pH_constB_OCT  1.0
@@ -1318,6 +1318,7 @@ pH_constB_SQD  1.0
 pH_constB_COR  1.0
 pH_constB_LPF  1.0
 pH_constB_SPF  1.0
+pH_constB_MPF  1.0
 pH_constB_SBF  1.0
 pH_constB_LBF  1.0
 pH_constB_LZO  1.0
@@ -1343,7 +1344,6 @@ contract_tol_ANG  0.0
 contract_tol_ALF  0.0
 contract_tol_CHO  0.0
 contract_tol_OTA  0.0
-contract_tol_CET  0.0
 contract_tol_DOL  0.0
 contract_tol_BIR  0.0
 contract_tol_OCT  0.0
@@ -1351,6 +1351,7 @@ contract_tol_SQD  0.0
 contract_tol_COR  0.0
 contract_tol_LPF  0.0
 contract_tol_SPF  0.0
+contract_tol_MPF  0.0
 contract_tol_SBF  0.0
 contract_tol_LBF  0.0
 contract_tol_LZO  0.0
@@ -1376,7 +1377,6 @@ flagSaltSensitive_ANG  0
 flagSaltSensitive_ALF  0
 flagSaltSensitive_CHO  0
 flagSaltSensitive_OTA  0
-flagSaltSensitive_CET  0
 flagSaltSensitive_DOL  0
 flagSaltSensitive_BIR  0
 flagSaltSensitive_OCT  0
@@ -1384,6 +1384,7 @@ flagSaltSensitive_SQD  0
 flagSaltSensitive_COR  0
 flagSaltSensitive_LPF  0
 flagSaltSensitive_SPF  0
+flagSaltSensitive_MPF  0
 flagSaltSensitive_SBF  0
 flagSaltSensitive_LBF  0
 flagSaltSensitive_SZO  0
@@ -1409,7 +1410,6 @@ salt_correction_ANG  1.0
 salt_correction_ALF  1.0
 salt_correction_CHO  1.0
 salt_correction_OTA  1.0
-salt_correction_CET  1.0
 salt_correction_DOL  1.0
 salt_correction_BIR  1.0
 salt_correction_OCT  1.0
@@ -1417,6 +1417,7 @@ salt_correction_SQD  1.0
 salt_correction_COR  1.0
 salt_correction_LPF  1.0
 salt_correction_SPF  1.0
+salt_correction_MPF  1.0
 salt_correction_SBF  1.0
 salt_correction_LBF  1.0
 salt_correction_LZO  1.0
@@ -1555,7 +1556,11 @@ juv_habitat_LPF 6
 1 1 1 1 1 1
 ad_habitat_SPF 6
 1 1 1 1 1 1
+ad_habitat_MPF 6
+1 1 1 1 1 1
 juv_habitat_SPF 6
+1 1 1 1 1 1
+juv_habitat_MPF 6
 1 1 1 1 1 1
 ad_habitat_SBF 6
 1 1 1 1 1 1
@@ -1566,8 +1571,6 @@ ad_habitat_LBF 6
 juv_habitat_LBF 6
 1 1 1 1 1 1
 habitat_CHO 6
-0 0 1 1 1 1
-habitat_CET 6
 0 0 1 1 1 1
 habitat_DOL 6
 0 0 1 1 1 1
@@ -1616,9 +1619,9 @@ Kcov_juv_ANG   3 # Exponent of refuge provided by the habitat for Juveniles of A
 Kcov_juv_CHO   3 # Exponent of refuge provided by the habitat for Juveniles of Chondrichtyans [  ]
 Kcov_juv_OTA   3 # Exponent of refuge provided by the habitat for Juveniles of Otariid [  ]
 Kcov_juv_DOL   3 # Exponent of refuge provided by the habitat for Juveniles of Dophins [  ]
-Kcov_juv_CET   3 # Exponent of refuge provided by the habitat for Juveniles of Whales [  ]
 Kcov_juv_LPF   3 # Exponent of refuge provided by the habitat for Juveniles of Large pelagic fish [  ]
 Kcov_juv_SPF   3 # Exponent of refuge provided by the habitat for Juveniles of Small pelagic fish [  ]
+Kcov_juv_MPF   3 # Exponent of refuge provided by the habitat for Juveniles of Small pelagic fish [  ]
 Kcov_juv_SBF   3 # Exponent of refuge provided by the habitat for Juveniles of Small benthic fish [  ]
 Kcov_juv_LBF   3 # Exponent of refuge provided by the habitat for Juveniles of Large benthic fish [  ]
 
@@ -1633,9 +1636,9 @@ Bcov_juv_ANG   0.6 # habitat steepness coefficient for juveniles of Anguila [  ]
 Bcov_juv_CHO   0.6 # habitat steepness coefficient for juveniles of Chondrichtyans [  ]
 Bcov_juv_OTA   0.6 # habitat steepness coefficient for juveniles of Otariid [  ]
 Bcov_juv_DOL   0.6 # habitat steepness coefficient for juveniles of Dophins [  ]
-Bcov_juv_CET   0.6 # habitat steepness coefficient for juveniles of Whales [  ]
 Bcov_juv_LPF   0.6 # habitat steepness coefficient for juveniles of Large pelagic fish [  ]
 Bcov_juv_SPF   0.6 # habitat steepness coefficient for juveniles of Small pelagic fish [  ]
+Bcov_juv_MPF   0.6 # habitat steepness coefficient for juveniles of Small pelagic fish [  ]
 Bcov_juv_SBF   0.6 # habitat steepness coefficient for juveniles of Small benthic fish [  ]
 Bcov_juv_LBF   0.6 # habitat steepness coefficient for juveniles of Large benthic fish [  ]
 
@@ -1650,9 +1653,9 @@ Acov_juv_ANG   1 # scalar of the overall habitat refuge for juveniles of Anguila
 Acov_juv_CHO   1 # scalar of the overall habitat refuge for juveniles of Chondrichtyans [  ]
 Acov_juv_OTA   1 # scalar of the overall habitat refuge for juveniles of Otariid [  ]
 Acov_juv_DOL   1 # scalar of the overall habitat refuge for juveniles of Dophins [  ]
-Acov_juv_CET   1 # scalar of the overall habitat refuge for juveniles of Whales [  ]
 Acov_juv_LPF   1 # scalar of the overall habitat refuge for juveniles of Large pelagic fish [  ]
 Acov_juv_SPF   1 # scalar of the overall habitat refuge for juveniles of Small pelagic fish [  ]
+Acov_juv_MPF   1 # scalar of the overall habitat refuge for juveniles of Small pelagic fish [  ]
 Acov_juv_SBF   1 # scalar of the overall habitat refuge for juveniles of Small benthic fish [  ]
 Acov_juv_LBF   1 # scalar of the overall habitat refuge for juveniles of Large benthic fish [  ]
 
@@ -1668,9 +1671,9 @@ Kcov_ad_ANG   3 # Exponent of refuge provided by the habitat for adults of Angui
 Kcov_ad_CHO   3 # Exponent of refuge provided by the habitat for adults of Chondrichtyans [  ]
 Kcov_ad_OTA   3 # Exponent of refuge provided by the habitat for adults of Otariid [  ]
 Kcov_ad_DOL   3 # Exponent of refuge provided by the habitat for adults of Dophins [  ]
-Kcov_ad_CET   3 # Exponent of refuge provided by the habitat for adults of Whales [  ]
 Kcov_ad_LPF   3 # Exponent of refuge provided by the habitat for adults of Large pelagic fish [  ]
 Kcov_ad_SPF   3 # Exponent of refuge provided by the habitat for adults of Small pelagic fish [  ]
+Kcov_ad_MPF   3 # Exponent of refuge provided by the habitat for adults of Small pelagic fish [  ]
 Kcov_ad_SBF   3 # Exponent of refuge provided by the habitat for adults of Small benthic fish [  ]
 Kcov_ad_LBF   3 # Exponent of refuge provided by the habitat for adults of Large benthic fish [  ]
 
@@ -1685,9 +1688,9 @@ Bcov_ad_ANG   0.6 # habitat steepness coefficient for adults of Anguila [  ]
 Bcov_ad_CHO   0.6 # habitat steepness coefficient for adults of Chondrichtyans [  ]
 Bcov_ad_OTA   0.6 # habitat steepness coefficient for adults of Otariid [  ]
 Bcov_ad_DOL   0.6 # habitat steepness coefficient for adults of Dophins [  ]
-Bcov_ad_CET   0.6 # habitat steepness coefficient for adults of Whales [  ]
 Bcov_ad_LPF   0.6 # habitat steepness coefficient for adults of Large pelagic fish [  ]
 Bcov_ad_SPF   0.6 # habitat steepness coefficient for adults of Small pelagic fish [  ]
+Bcov_ad_MPF   0.6 # habitat steepness coefficient for adults of Small pelagic fish [  ]
 Bcov_ad_SBF   0.6 # habitat steepness coefficient for adults of Small benthic fish [  ]
 Bcov_ad_LBF   0.6 # habitat steepness coefficient for adults of Large benthic fish [  ]
 
@@ -1702,9 +1705,9 @@ Acov_ad_ANG   1 # scalar of the overall habitat refuge for adults of Anguila [  
 Acov_ad_CHO   1 # scalar of the overall habitat refuge for adults of Chondrichtyans [  ]
 Acov_ad_OTA   1 # scalar of the overall habitat refuge for adults of Otariid [  ]
 Acov_ad_DOL   1 # scalar of the overall habitat refuge for adults of Dophins [  ]
-Acov_ad_CET   1 # scalar of the overall habitat refuge for adults of Whales [  ]
 Acov_ad_LPF   1 # scalar of the overall habitat refuge for adults of Large pelagic fish [  ]
 Acov_ad_SPF   1 # scalar of the overall habitat refuge for adults of Small pelagic fish [  ]
+Acov_ad_MPF   1 # scalar of the overall habitat refuge for adults of Small pelagic fish [  ]
 Acov_ad_SBF   1 # scalar of the overall habitat refuge for adults of Small benthic fish [  ]
 Acov_ad_LBF   1 # scalar of the overall habitat refuge for adults of Large benthic fish [  ]
 
@@ -1720,7 +1723,6 @@ ANG_mindepth  0
 ALF_mindepth  100
 CHO_mindepth  20
 OTA_mindepth  0
-CET_mindepth  0
 DOL_mindepth  0
 BIR_mindepth  0
 OCT_mindepth  0
@@ -1728,6 +1730,7 @@ SQD_mindepth  0
 COR_mindepth  50
 LPF_mindepth  0
 SPF_mindepth  0
+MPF_mindepth  0
 SBF_mindepth  0
 LBF_mindepth  0
 MZO_mindepth  0
@@ -1756,7 +1759,6 @@ ANG_maxdepth  500
 ALF_maxdepth  650
 CHO_maxdepth  700
 OTA_maxdepth  255
-CET_maxdepth  4300
 DOL_maxdepth  200
 BIR_maxdepth  15
 OCT_maxdepth  300
@@ -1764,6 +1766,7 @@ SQD_maxdepth  4300
 COR_maxdepth  1000
 LPF_maxdepth  350
 SPF_maxdepth  100
+MPF_maxdepth  5000
 SBF_maxdepth  1000
 LBF_maxdepth  1000
 MZO_maxdepth  4300
@@ -1791,7 +1794,6 @@ ANG_maxtotdepth  100000
 ALF_maxtotdepth  100000
 CHO_maxtotdepth  100000
 OTA_maxtotdepth  100000
-CET_maxtotdepth  100000
 DOL_maxtotdepth  100000
 BIR_maxtotdepth  100000
 OCT_maxtotdepth  100000
@@ -1799,6 +1801,7 @@ SQD_maxtotdepth  100000
 COR_maxtotdepth  100000
 LPF_maxtotdepth  100000
 SPF_maxtotdepth  100000
+MPF_maxtotdepth  100000
 SBF_maxtotdepth  100000
 LBF_maxtotdepth  100000
 MZO_maxtotdepth  100000
@@ -1827,7 +1830,6 @@ ANG_homerangerad     1
 ALF_homerangerad     1
 CHO_homerangerad     1
 OTA_homerangerad     1
-CET_homerangerad     1
 DOL_homerangerad     1
 BIR_homerangerad     1
 OCT_homerangerad     1
@@ -1835,6 +1837,7 @@ SQD_homerangerad     1
 COR_homerangerad     1
 LPF_homerangerad     1
 SPF_homerangerad     1
+MPF_homerangerad     1
 SBF_homerangerad     1
 LBF_homerangerad     1
 MZO_homerangerad     1
@@ -1864,7 +1867,6 @@ ANG_overlap     0
 ALF_overlap     0
 CHO_overlap     0
 OTA_overlap     0
-CET_overlap     0
 DOL_overlap     0
 BIR_overlap     0
 OCT_overlap     0
@@ -1872,6 +1874,7 @@ SQD_overlap     0
 COR_overlap     0
 LPF_overlap     0
 SPF_overlap     0
+MPF_overlap     0
 SBF_overlap     0
 LBF_overlap     0
 MZO_overlap     0
@@ -1988,9 +1991,6 @@ FOTA_S1  59  # Otariid - All Seasons Spatial distribution
 FDOL_S1  59  # Dophins - All Seasons Spatial distribution
 0 0 0 0 0 0.001543107 0.003086214 0 0 0 0 0 0 0 0 0 0 0 0.04489644 0.04489644 0 0 0.04489644 0.04489644 0 0.04489644 0.04489644 0.007649023 0 0 0 0 0 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0 0 0 0 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644
 #--------------------------------------------------------------------------------
-FCET_S1  59  # Whales - All Seasons Spatial distribution
-0 0.06152332 0 0 0 0.09228498 0 0 0 0 0.09228498 0 0 0 0 0 0.09228498 0 0.2076412 0.03076166 0 0 0.09228498 0 0.06152332 0.03076166 0.03076166 0.07690415 0 0 0 0.09228498 0 0 0.03076166 0.0009920635 0.0009920635 0.0009920635 0.0009920635 0 0 0.0009920635 0.0009920635 0.0009920635 0.0009920635 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-#--------------------------------------------------------------------------------
 FBIR_S1  59  # Birds - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0625 0.0625 0.0625 0.0625 0 0 0.0625 0.0625 0.0625 0.0625 0 0 0 0 0 0 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625
 #--------------------------------------------------------------------------------
@@ -2017,6 +2017,9 @@ FSPF_S1  59  # Small pelagic fish - Summer Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02457808 0.01638539 0.1310831 0.009643281 0.2293954 0.009643281 0 0 0.02457808 0.03277077 0.03277077 0.03277077 0 0 0 0 0 0 0.08216213 0.07265254 0.04540118 0.07076326 0.07291497 0.02821928 0.06788232 0.01638539
 FSPF_S3  59  # Small pelagic fish - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02959417 0.01972944 0.1578356 0.009610496 0.02959417 0.009610496 0 0 0.02959417 0.03945889 0.03945889 0.03945889 0 0 0 0 0 0 0.1118485 0.08748004 0.03781477 0.0764516 0.08779603 0.05162538 0.1167325 0.02630593
+#--------------------------------------------------------------------------------
+FMPF_S1  59  # Mesopelagic fish - All seasons Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0076381875 0 0 0.0109324318 0.0071317877 0 0.0065572105 0.0267163664 0 0.0153749418 0.0183229579 0.0504438219 0.0195279862 0.0195279862 0.0385115681 0.0421645891 0.0387454628 0.0641481289 0.046529796 0.0451771277 0.0026811645 0 0.0334779273 0.0385006389 0.030575717 0.0241511678 0 0 0.0140186339 0 0.011789896 0.0184687139 0.0628452533 0.0713653048 0.024360502 0.0475271523 0.0285883927 0.0525851653 0.0522473364 0.0293666834
 #--------------------------------------------------------------------------------
 FSBF_S2  59  # Small benthic fish - Autumm Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0545028 0 0 0 0 0.008928571 0.008928571 0.008928571 0.008928571 0.008928571 0.0272514 0.008928571 0.008928571 0.08517372 0.06585755 0.0681285 0 0 0.0408771 0.0272514 0.03406425 0.008928571 0 0.008928571 0.008928571 0 0.008928571 0.008928571 0.05847957 0.07375846 0.05631956 0.06228891 0.04428352 0.1037824 0.0499609 0.0408771
@@ -2120,9 +2123,6 @@ FOTA_S1juv  59  # Otariid - All Seasons Spatial distribution
 FDOL_S1juv  59  # Dophins - All Seasons Spatial distribution
 0 0 0 0 0 0.001543107 0.003086214 0 0 0 0 0 0 0 0 0 0 0 0.04489644 0.04489644 0 0 0.04489644 0.04489644 0 0.04489644 0.04489644 0.007649023 0 0 0 0 0 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0 0 0 0 0 0 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644 0.04489644
 #--------------------------------------------------------------------------------
-FCET_S1juv  59  # Whales - All Seasons Spatial distribution
-0 0.06152332 0 0 0 0.09228498 0 0 0 0 0.09228498 0 0 0 0 0 0.09228498 0 0.2076412 0.03076166 0 0 0.09228498 0 0.06152332 0.03076166 0.03076166 0.07690415 0 0 0 0.09228498 0 0 0.03076166 0.0009920635 0.0009920635 0.0009920635 0.0009920635 0 0 0.0009920635 0.0009920635 0.0009920635 0.0009920635 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-#--------------------------------------------------------------------------------
 FBIR_S1juv  59  # Birds - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0625 0.0625 0.0625 0.0625 0 0 0.0625 0.0625 0.0625 0.0625 0 0 0 0 0 0 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625 0.0625
 #--------------------------------------------------------------------------------
@@ -2143,6 +2143,9 @@ FSPF_S1juv  59  # Small pelagic fish - Summer Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02457808 0.01638539 0.1310831 0.009643281 0.2293954 0.009643281 0 0 0.02457808 0.03277077 0.03277077 0.03277077 0 0 0 0 0 0 0.08216213 0.07265254 0.04540118 0.07076326 0.07291497 0.02821928 0.06788232 0.01638539
 FSPF_S3juv  59  # Small pelagic fish - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02959417 0.01972944 0.1578356 0.009610496 0.02959417 0.009610496 0 0 0.02959417 0.03945889 0.03945889 0.03945889 0 0 0 0 0 0 0.1118485 0.08748004 0.03781477 0.0764516 0.08779603 0.05162538 0.1167325 0.02630593
+#--------------------------------------------------------------------------------
+FMPF_S1juv  59  # Mesopelagic fish - Summer Spatial distribution
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02457808 0.01638539 0.1310831 0.009643281 0.2293954 0.009643281 0 0 0.02457808 0.03277077 0.03277077 0.03277077 0 0 0 0 0 0 0.08216213 0.07265254 0.04540118 0.07076326 0.07291497 0.02821928 0.06788232 0.01638539
 #--------------------------------------------------------------------------------
 FSBF_S2juv  59  # Small benthic fish - Autumm Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0545028 0 0 0 0 0.008928571 0.008928571 0.008928571 0.008928571 0.008928571 0.0272514 0.008928571 0.008928571 0.08517372 0.06585755 0.0681285 0 0 0.0408771 0.0272514 0.03406425 0.008928571 0 0.008928571 0.008928571 0 0.008928571 0.008928571 0.05847957 0.07375846 0.05631956 0.06228891 0.04428352 0.1037824 0.0499609 0.0408771
@@ -2268,15 +2271,6 @@ VERTday_CHO2 8
 0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
 VERTnight_CHO2 8
 0 0.143 0.317 0.183 0.224 0.131 0.001 0.001
-## Cetaceous
-VERTday_CET1 8
-0 0 0 0.05 0.1 0.15 0.2 0.5
-VERTnight_CET1 8
-0 0 0 0.05 0.1 0.15 0.2 0.5
-VERTday_CET2 8
-0 0 0 0.05 0.1 0.15 0.2 0.5
-VERTnight_CET2 8
-0 0 0 0.05 0.1 0.15 0.2 0.5
 ## Dolphins
 VERTday_DOL1 8
 0 0 0 0.05 0.1 0.15 0.2 0.5
@@ -2322,6 +2316,15 @@ VERTday_SPF2 8
 0 0 0 0 0 0.1 0.566 0.334
 VERTnight_SPF2 8
 0 0 0 0 0 0.1 0.566 0.334
+## Mesopelagic Fish
+VERTday_MPF1 8
+0.11 0.39 0.35 0.15 0 0 0 0
+VERTnight_MPF1 8
+0 0 0.03 0.12 0.2 0.26 0.24 0.15
+VERTday_MPF2 8
+0.11 0.39 0.35 0.15 0 0 0 0
+VERTnight_MPF2 8
+0 0 0.03 0.12 0.2 0.26 0.24 0.15
 ## Small Benthic Fish
 VERTday_SBF1 8
 0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
@@ -2360,25 +2363,24 @@ VERTnight_VID2 8
 0 0 0 0 0.005 0.269 0.586 0.14
 
 # Swimming speed weighted averages for VMPA are not that different from those in the NSW
-Speed_SPL  1260  Swimming speed of SPL m.hr-1 1260
-Speed_GCR  450  Swimming speed of GCR m.hr-1 450
-Speed_BRC  12500  Swimming speed of FVS m.hr-1 12500
-Speed_CHO  10000  Swimming speed of SHB m.hr-1 12500
-Speed_CET  20000  Swimming speed of WHB m.hr-1 12500
-Speed_DOL  21000  Swimming speed of WHB m.hr-1 12500
-Speed_OTA  28000  Swimming speed of PIN m.hr-1 12500
-Speed_BIR  0.5  Swimming speed of SB m.hr-1 12500
-Speed_ORO  12500  Swimming speed of FDF m.hr-1 12500
-Speed_ALF  12500  Swimming speed of FDF m.hr-1 12500
-Speed_VID  12500  Swimming speed of FVT m.hr-1 12500
-Speed_LPF  12500  Swimming speed of FDE m.hr-1 12500
-Speed_SPF  2577  Swimming speed of FPO m.hr-1 2577
-Speed_LBF  15000  Swimming speed of FDE m.hr-1 12500
-Speed_SBF  2577  Swimming speed of FPO m.hr-1 2577
-Speed_ANG  4262  Swimming speed of FPO m.hr-1 2577
-Speed_OCT  4000  Swimming speed of FPO m.hr-1 2577
-Speed_SQD  2000  Swimming speed of FPO m.hr-1 2577
-
+Speed_SPL  1260  	  ## Swimming speed
+Speed_GCR  450 	 	  ## Swimming speed
+Speed_BRC  12500    	  ## Swimming speed
+Speed_CHO  10000    	  ## Swimming speed
+Speed_DOL  21000    	  ## Swimming speed
+Speed_OTA  28000    	  ## Swimming speed
+Speed_BIR  0.5 	    	  ## Swimming speed
+Speed_ORO  12500    	  ## Swimming speed
+Speed_ALF  12500    	  ## Swimming speed
+Speed_VID  12500    	  ## Swimming speed
+Speed_LPF  12500    	  ## Swimming speed
+Speed_SPF  2577     	  ## Swimming speed
+Speed_MPF  2000     	  ## Swimming speed
+Speed_LBF  15000    	  ## Swimming speed
+Speed_SBF  2577     	  ## Swimming speed
+Speed_ANG  4262     	  ## Swimming speed
+Speed_OCT  4000     	  ## Swimming speed
+Speed_SQD  2000     	  ## Swimming speed
 
 # Minimum tolerated temperatures
 SPL_min_move_temp  5  # phillips book
@@ -2390,7 +2392,6 @@ ALF_min_move_temp  4
 ANG_min_move_temp  7
 CHO_min_move_temp  4
 OTA_min_move_temp  4
-CET_min_move_temp  4
 DOL_min_move_temp  4
 BIR_min_move_temp  4
 OCT_min_move_temp  2
@@ -2398,6 +2399,7 @@ SQD_min_move_temp  0
 COR_min_move_temp  4
 LPF_min_move_temp  4
 SPF_min_move_temp  4
+MPF_min_move_temp  0
 SBF_min_move_temp  4
 LBF_min_move_temp  4
 BCA_min_move_temp  4
@@ -2423,7 +2425,6 @@ ALF_max_move_temp  25
 ANG_max_move_temp  30
 CHO_max_move_temp  30
 OTA_max_move_temp  30
-CET_max_move_temp  30
 DOL_max_move_temp  30
 BIR_max_move_temp  30
 OCT_max_move_temp  30
@@ -2431,6 +2432,7 @@ SQD_max_move_temp  30
 COR_max_move_temp  30
 LPF_max_move_temp  30
 SPF_max_move_temp  30
+MPF_max_move_temp  30
 SBF_max_move_temp  30
 LBF_max_move_temp  30
 BCA_max_move_temp  27
@@ -2455,7 +2457,6 @@ ALF_min_move_salt 0.0
 ANG_min_move_salt 0.0
 CHO_min_move_salt 0.0
 OTA_min_move_salt 0.0
-CET_min_move_salt 0.0
 DOL_min_move_salt 0.0
 BIR_min_move_salt 0.0
 OCT_min_move_salt 0.0
@@ -2466,6 +2467,7 @@ MOL_min_move_salt 0.0
 SCR_min_move_salt 0.0
 LPF_min_move_salt 0.0
 SPF_min_move_salt 0.0
+MPF_min_move_salt 0.0
 SBF_min_move_salt 0.0
 LBF_min_move_salt 0.0
 SZO_min_move_salt 0.0
@@ -2481,7 +2483,6 @@ ALF_max_move_salt 40.0
 ANG_max_move_salt 40.0
 CHO_max_move_salt 40.0
 OTA_max_move_salt 40.0
-CET_max_move_salt 40.0
 DOL_max_move_salt 40.0
 BIR_max_move_salt 40.0
 OCT_max_move_salt 40.0
@@ -2492,6 +2493,7 @@ MOL_max_move_salt 40.0
 SCR_max_move_salt 40.0
 LPF_max_move_salt 40.0
 SPF_max_move_salt 40.0
+MPF_max_move_salt 40.0
 SBF_max_move_salt 40.0
 LBF_max_move_salt 40.0
 SZO_max_move_salt 40.0
@@ -2533,8 +2535,6 @@ jCHO_Migrate_Time 1
 364
 jOTA_Migrate_Time 1
 364
-jCET_Migrate_Time 1
-91
 jDOL_Migrate_Time 1
 182
 jBIR_Migrate_Time 1
@@ -2554,6 +2554,8 @@ jSCR_Migrate_Time 1
 jLPF_Migrate_Time 1
 364
 jSPF_Migrate_Time 1
+364
+jMPF_Migrate_Time 1
 364
 jSBF_Migrate_Time 1
 364
@@ -2577,8 +2579,6 @@ CHO_Migrate_Time 1
 364
 OTA_Migrate_Time 1
 364
-CET_Migrate_Time 1
-91
 DOL_Migrate_Time 1
 182
 BIR_Migrate_Time 1
@@ -2598,6 +2598,8 @@ SCR_Migrate_Time 1
 LPF_Migrate_Time 1
 364
 SPF_Migrate_Time 1
+364
+MPF_Migrate_Time 1
 364
 SBF_Migrate_Time 1
 364
@@ -2629,8 +2631,6 @@ jCHO_Migrate_Return 1
 0
 jOTA_Migrate_Return 1
 0
-jCET_Migrate_Return 1
-1
 jDOL_Migrate_Return 1
 273
 jBIR_Migrate_Return 1
@@ -2650,6 +2650,8 @@ jSCR_Migrate_Return 1
 jLPF_Migrate_Return 1
 0
 jSPF_Migrate_Return 1
+0
+jMPF_Migrate_Return 1
 0
 jSBF_Migrate_Return 1
 0
@@ -2675,8 +2677,6 @@ CHO_Migrate_Return 1
 0
 OTA_Migrate_Return 1
 0
-CET_Migrate_Return 1
-1
 DOL_Migrate_Return 1
 273
 BIR_Migrate_Return 1
@@ -2696,6 +2696,8 @@ SCR_Migrate_Return 1
 LPF_Migrate_Return 1
 0
 SPF_Migrate_Return 1
+0
+MPF_Migrate_Return 1
 0
 SBF_Migrate_Return 1
 0
@@ -2723,8 +2725,6 @@ CHO_Migrate_Period 1
 0
 OTA_Migrate_Period 1
 0
-CET_Migrate_Period 1
-30
 DOL_Migrate_Period 1
 30
 BIR_Migrate_Period 1
@@ -2744,6 +2744,8 @@ SCR_Migrate_Period 1
 LPF_Migrate_Period 1
 0
 SPF_Migrate_Period 1
+0
+MPF_Migrate_Period 1
 0
 SBF_Migrate_Period 1
 0
@@ -2775,8 +2777,6 @@ jCHO_Migrate_Period 1
 0
 jOTA_Migrate_Period 1
 0
-jCET_Migrate_Period 1
-30
 jDOL_Migrate_Period 1
 30
 jBIR_Migrate_Period 1
@@ -2796,6 +2796,8 @@ jSCR_Migrate_Period 1
 jLPF_Migrate_Period 1
 0
 jSPF_Migrate_Period 1
+0
+jMPF_Migrate_Period 1
 0
 jSBF_Migrate_Period 1
 0
@@ -2831,8 +2833,6 @@ jCHO_ReturnStock 1
 0
 jOTA_ReturnStock 1
 0
-jCET_ReturnStock 1
-0
 jDOL_ReturnStock 1
 0
 jBIR_ReturnStock 1
@@ -2852,6 +2852,8 @@ jSCR_ReturnStock 1
 jLPF_ReturnStock 1
 0
 jSPF_ReturnStock 1
+0
+jMPF_ReturnStock 1
 0
 jSBF_ReturnStock 1
 0
@@ -2879,8 +2881,6 @@ CHO_ReturnStock 1
 0
 OTA_ReturnStock 1
 0
-CET_ReturnStock 1
-0
 DOL_ReturnStock 1
 0
 BIR_ReturnStock 1
@@ -2900,6 +2900,8 @@ SCR_ReturnStock 1
 LPF_ReturnStock 1
 0
 SPF_ReturnStock 1
+0
+MPF_ReturnStock 1
 0
 SBF_ReturnStock 1
 0
@@ -2933,8 +2935,6 @@ jCHO_FSM 1
 1
 jOTA_FSM 1
 1
-jCET_FSM 1
-0.9
 jDOL_FSM 1
 0.9
 jBIR_FSM 1
@@ -2954,6 +2954,8 @@ jSCR_FSM 1
 jLPF_FSM 1
 1
 jSPF_FSM 1
+1
+jMPF_FSM 1
 1
 jSBF_FSM 1
 1
@@ -2979,8 +2981,6 @@ CHO_FSM 1
 1
 OTA_FSM 1
 1
-CET_FSM 1
-0.90
 DOL_FSM 1
 0.99
 BIR_FSM 1
@@ -3000,6 +3000,8 @@ SCR_FSM 1
 LPF_FSM 1
 1
 SPF_FSM 1
+1
+MPF_FSM 1
 1
 SBF_FSM 1
 1
@@ -3036,8 +3038,6 @@ jCHO_FSMG 1
 0
 jOTA_FSMG 1
 0
-jCET_FSMG 1
-0.25
 jDOL_FSMG 1
 0.25
 jBIR_FSMG 1
@@ -3057,6 +3057,8 @@ jSCR_FSMG 1
 jLPF_FSMG 1
 0
 jSPF_FSMG 1
+0
+jMPF_FSMG 1
 0
 jSBF_FSMG 1
 0
@@ -3082,8 +3084,6 @@ CHO_FSMG 1
 0
 OTA_FSMG 1
 0
-CET_FSMG 1
-0.2
 DOL_FSMG 1
 0.25
 BIR_FSMG 1
@@ -3103,6 +3103,8 @@ SCR_FSMG 1
 LPF_FSMG 1
 0
 SPF_FSMG 1
+0
+MPF_FSMG 1
 0
 SBF_FSMG 1
 0
@@ -3138,8 +3140,6 @@ MigIOBox_CHOjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_OTAjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CETjuv 59
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 MigIOBox_DOLjuv 59
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 MigIOBox_BIRjuv 59
@@ -3159,6 +3159,8 @@ MigIOBox_SCRjuv 59
 MigIOBox_LPFjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_SPFjuv 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_MPFjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_LBFjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3184,8 +3186,6 @@ MigIOBox_CHOad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_OTAad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_CETad 59
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 MigIOBox_DOLad 59
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 MigIOBox_BIRad 59
@@ -3205,6 +3205,8 @@ MigIOBox_SCRad 59
 MigIOBox_LPFad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_SPFad 59
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MigIOBox_MPFad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_SBFad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3255,8 +3257,6 @@ KMIGa_CHO 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_OTA 10
 0 0 0 0 0 0 0 0 0 0
-KMIGa_CET 10
-212.8 212.8 212.8 212.8 212.8 212.8 212.8 212.8 212.8 212.8
 KMIGa_DOL 10
 425.6 425.6 425.6 425.6 425.6 425.6 425.6 425.6 425.6 425.6
 KMIGa_BIR 10
@@ -3265,6 +3265,8 @@ KMIGa_LPF 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_SPF 10
 0 0 0 0 0 0 0 0 0 0
+KMIGa_MPF 6
+0 0 0 0 0 0
 KMIGa_SBF 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_LBF 10
@@ -3289,8 +3291,6 @@ KMIGa_CHOrn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_OTArn 10
 0 0 0 0 0 0 0 0 0 0
-KMIGa_CETrn 10
-186060442.2 18606044.22 18606044.22 18606044.22 18606044.22 18606044.22 18606044.22 18606044.22 18606044.22 18606044.22
 KMIGa_DOLrn 10
 2977349.19 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919
 KMIGa_BIRrn 1
@@ -3299,6 +3299,8 @@ KMIGa_LPFrn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_SPFrn 10
 0 0 0 0 0 0 0 0 0 0
+KMIGa_MPFrn 6
+0 0 0 0 0 0
 KMIGa_SBFrn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_LBFrn 10
@@ -3323,8 +3325,6 @@ KMIGa_CHOsn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_OTAsn 10
 0 0 0 0 0 0 0 0 0 0
-KMIGa_CETsn 10
-70211487.62 7021148.762 7021148.762 7021148.762 7021148.762 7021148.762 7021148.762 7021148.762 7021148.762 7021148.762
 KMIGa_DOLsn 10
 2977349.19 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919 297734.919
 KMIGa_BIRsn 10
@@ -3333,6 +3333,8 @@ KMIGa_LPFsn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_SPFsn 10
 0 0 0 0 0 0 0 0 0 0
+KMIGa_MPFsn 6
+0 0 0 0 0 0
 KMIGa_SBFsn 10
 0 0 0 0 0 0 0 0 0 0
 KMIGa_LBFsn 10
@@ -3346,26 +3348,27 @@ Kthresh2        0.92   # Threshhold rel. reserve when costs reduce + handother d
 KHTD            0.5    # Factor handother deep demersal time reduced by for thresh2<relres<thesh1 0.5
 KHTI            1.5    # Factor handother deep demersal time increased by for relres<thresh2 1.5
 
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~       PPrey Matrix   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
-##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
+##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
 pPREY2SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
 pPREY2GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
 pPREY1BRC1  37
 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.008 0.05 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC1  37
@@ -3375,113 +3378,113 @@ pPREY1BRC2  37
 pPREY2BRC2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 8e-04 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY1VID1  37
-0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 5e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 5e-04 0.01 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
-0 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.005 1e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 1e-04 0 0 0 0 0 0 0 0 0 0.01 0.05 0.005 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1VID2  37
-0.01 0 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0.001 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0.01 0 0.005 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 0.001 0.05 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID2  37
-0 0 0.0025 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
+0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.08 0 0 0 0.05 0.08 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0 0.03 0 0 0 0.05 0 0 0 0.2 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.03 0 0 0 0.05 0.08 0 0 0 0.2 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.08 0.01 0 0 0.2 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0 0.08 0 0 0 0.05 0.001 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.08 0.001 0 0 0.2 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0 0.01 0.2 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.01 0.2 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0 0.01 0.2 0.2 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.01 0.2 0.2 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.001 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0.001 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 1e-04 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 1e-04 0.01 0.1 0.2 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.05 0.001 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.005 0 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG2  37
-0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0.01 0.01 0 0.05 0.05 0.005 0.01 0 0 0.01 5e-04 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ANG2  37
-0.001 0.001 0.01 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0.01 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0.01 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
-0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
-0.01 0.01 0 0 0 0 1e-05 0 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0 0 1e-05 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CHO2  37
-0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO2  37
-0.1 0.05 0 0 0.01 0.01 1e-04 0 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.1 0.05 0 0 0.01 0.01 1e-04 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA1  37
-0 0 0.01 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA2  37
-0 0 0.01 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA2  37
-0 0 0 0.01 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.05 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.001 0.1 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.001 0.1 0.05 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.05 0.01 0.05 0.001 0.1 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0.05 0.01 0.05 0.001 0.1 0.05 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.001 0.2 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-pPREY1CET1  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.005 0.01 0 0.001 0 0 0.001 0.01 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-pPREY2CET1  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.005 0.01 0 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-pPREY1CET2  37
-0 0 0 0 0 0 0 0 0.01 0 0.005 0 0.005 0.02 0.001 0.001 0 0 0.001 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-pPREY2CET2  37
-0 0 0 0 0 0 0 0 0.01 0 0.001 0 0.006 0.05 0.001 0.001 0 0 0.001 0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0.1 0.05 0.05 0.001 0.2 0.05 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1BIR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2BIR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1BIR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2BIR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSQD  37
-5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0 0 0 0.001 1e-05 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 1e-05 0 0 0
+5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0.001 0 0 0 0.001 1e-05 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 1e-05 0 0 0
 pPREYOCT  37
-0.005 0.005 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
+0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.01 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0 0 0 0.1 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
+0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.1 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
-0 0 5e-05 0 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0.05 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0 0 0 0.1 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
+0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0.05 0 0 0 0.1 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
-0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0 0 0 0.1 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
+0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.1 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.09 0.005 0.01 0.005 0.005 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.09 0.005 0.01 0.005 0.005 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.075 0.07 0 0.05 0 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.03 0.075 0.07 0 0.05 0 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.05 0.05 0.01 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.05 0.01 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+pPREY1MPF1  37
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
+pPREY2MPF1  37
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.075 0.07 1e-04 0.05 0.008 0.008 0 0 0 0.008 0 0 0 0 0 0 0 0
+pPREY1MPF2  37
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0 0.05 0.05 0.05 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+pPREY2MPF2  37
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0.001 0.02 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.001 0 0 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0 0.01 0.05 0.05 0.001 0 0 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0 0.001 0.001 0.001 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0.001 0.02 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
-0.001 0.005 0.005 0 0 1e-04 0.001 0 0 0 0 0 0.01 0.01 0.01 0.01 0.01 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.005 0.005 0 0 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.05 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
-0 0 0.005 0 0 1e-05 5e-05 0 0 0 0 0 0.001 0.001 0.001 0.001 0.001 1e-06 0.001 0.01 0.01 0.001 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0 0 0.005 0 0 1e-05 5e-05 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 1e-06 0.001 0.01 0.01 0.001 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LBF2  37
-0.05 0.03 0.01 0 0 0.001 0.05 0 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
+0.05 0.03 0.01 0 0 0.001 0.05 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.05 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF2  37
-0.01 0.001 0.005 0 0 1e-04 5e-04 0 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.001 0.005 0 0 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.05 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
@@ -3489,7 +3492,7 @@ pPREYMZO  37
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 0 0 0 0 0 0
 pPREYSCR  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
+0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 5e-04 0.008 0.005 0 0 0 0
 pPREYCOR  37
@@ -3511,13 +3514,13 @@ p_split_ANG   1 # Ontogenetic diet preferences  Anguila [ Number ]
 p_split_CHO   1 # Ontogenetic diet preferences  Chondrichtyans [ Number ]
 p_split_OTA   1 # Ontogenetic diet preferences  Otariid [ Number ]
 p_split_DOL   1 # Ontogenetic diet preferences  Dophins [ Number ]
-p_split_CET   1 # Ontogenetic diet preferences  Whales [ Number ]
 p_split_BIR   1 # Ontogenetic diet preferences  Birds [ Number ]
 p_split_OCT   1 # Ontogenetic diet preferences  Octupus [ Number ]
 p_split_SQD   1 # Ontogenetic diet preferences  Octupus [ Number ]
 p_split_COR   1 # Ontogenetic diet preferences  Octupus [ Number ]
 p_split_LPF   1 # Ontogenetic diet preferences  Large pelagic fish [ Number ]
 p_split_SPF   1 # Ontogenetic diet preferences  Small pelagic fish [ Number ]
+p_split_MPF   1 # Ontogenetic diet preferences  Small pelagic fish [ Number ]
 p_split_SBF   1 # Ontogenetic diet preferences  Small benthic fish [ Number ]
 p_split_LBF   1 # Ontogenetic diet preferences  Large benthic fish [ Number ]
 p_split_SZO   1 # Ontogenetic diet preferences  Small Zooplankton [ Number ]
@@ -3547,13 +3550,13 @@ age_structured_prey_ANG   0 # Flag to indicate that the group uses age structure
 age_structured_prey_CHO   0 # Flag to indicate that the group uses age structured prey Chondrichtyans [ Number ]
 age_structured_prey_OTA   0 # Flag to indicate that the group uses age structured prey Otariid [ Number ]
 age_structured_prey_DOL   0 # Flag to indicate that the group uses age structured prey Dophins [ Number ]
-age_structured_prey_CET   0 # Flag to indicate that the group uses age structured prey Whales [ Number ]
 age_structured_prey_BIR   0 # Flag to indicate that the group uses age structured prey Birds [ Number ]
 age_structured_prey_OCT   0 # Flag to indicate that the group uses age structured prey Octupus [ Number ]
 age_structured_prey_SQD   0 # Flag to indicate that the group uses age structured prey Octupus [ Number ]
 age_structured_prey_COR   0 # Flag to indicate that the group uses age structured prey Octupus [ Number ]
 age_structured_prey_LPF   0 # Flag to indicate that the group uses age structured prey Large pelagic fish [ Number ]
 age_structured_prey_SPF   0 # Flag to indicate that the group uses age structured prey Small pelagic fish [ Number ]
+age_structured_prey_MPF   0 # Flag to indicate that the group uses age structured prey Small pelagic fish [ Number ]
 age_structured_prey_SBF   0 # Flag to indicate that the group uses age structured prey Small benthic fish [ Number ]
 age_structured_prey_LBF   0 # Flag to indicate that the group uses age structured prey Large benthic fish [ Number ]
 age_structured_prey_SZO   0 # Flag to indicate that the group uses age structured prey Small Zooplankton [ Number ]
@@ -3598,11 +3601,11 @@ pSTOCK_OTA   1 # Stock specific differences in predation for Otariid [ Number ]
 1
 pSTOCK_DOL   1 # Stock specific differences in predation for Dophins [ Number ]
 1
-pSTOCK_CET   1 # Stock specific differences in predation for Whales [ Number ]
-1
 pSTOCK_LPF   1 # Stock specific differences in predation for Large pelagic fish [ Number ]
 1
 pSTOCK_SPF   1 # Stock specific differences in predation for Small pelagic fish [ Number ]
+1
+pSTOCK_MPF   1 # Stock specific differences in predation for Small pelagic fish [ Number ]
 1
 pSTOCK_SBF   1 # Stock specific differences in predation for Small benthic fish [ Number ]
 1
@@ -3632,11 +3635,11 @@ pSTOCK_jOTA   1 # Stock specific differences in predation for juvenile of Otarii
 1
 pSTOCK_jDOL   1 # Stock specific differences in predation for juvenile of Dophins [ Number ]
 1
-pSTOCK_jCET   1 # Stock specific differences in predation for juvenile of Whales [ Number ]
-1
 pSTOCK_jLPF   1 # Stock specific differences in predation for juvenile of Large pelagic fish [ Number ]
 1
 pSTOCK_jSPF   1 # Stock specific differences in predation for juvenile of Small pelagic fish [ Number ]
+1
+pSTOCK_jMPF   1 # Stock specific differences in predation for juvenile of Small pelagic fish [ Number ]
 1
 pSTOCK_jSBF   1 # Stock specific differences in predation for juvenile of Small benthic fish [ Number ]
 1
@@ -3671,7 +3674,6 @@ KLP_ALF   1e-06 # Lower prey selection size limit for Alfonsino [ Number ]
 KLP_ANG   1e-04 # Lower prey selection size limit for Anguila [ Number ]
 KLP_CHO   1e-04 # Lower prey selection size limit for Chondrichtyans [ Number ]
 KLP_OTA   1e-04 # Lower prey selection size limit for Otariid [ Number ]
-KLP_CET   1e-08 # Lower prey selection size limit for Cetaceans [ Number ]
 KLP_DOL   1e-04 # Lower prey selection size limit for Dophins [ Number ]
 KLP_BIR   1e-04 # Lower prey selection size limit for Birds [ Number ]
 KLP_OCT   1e-04 # Lower prey selection size limit for Octupus [ Number ]
@@ -3679,6 +3681,7 @@ KLP_SQD   1e-04 # Lower prey selection size limit for Octupus [ Number ]
 KLP_COR   1e-04 # Lower prey selection size limit for Octupus [ Number ]
 KLP_LPF   1e-04 # Lower prey selection size limit for Large pelagic fish [ Number ]
 KLP_SPF   1e-04 # Lower prey selection size limit for Small pelagic fish [ Number ]
+KLP_MPF   1e-04 # Lower prey selection size limit for Small pelagic fish [ Number ]
 KLP_SBF   1e-04 # Lower prey selection size limit for Small benthic fish [ Number ]
 KLP_LBF   1e-04 # Lower prey selection size limit for Large benthic fish [ Number ]
 KLP_SZO   0     # Lower prey selection size limit for Small Zooplankton [ Number ]
@@ -3700,13 +3703,13 @@ KUP_ANG   0.4 # Upper prey selection size limit for Anguila [ Number ]
 KUP_CHO   0.5 # Upper prey selection size limit for Chondrichtyans [ Number ]
 KUP_OTA   0.5 # Upper prey selection size limit for Otariid [ Number ]
 KUP_DOL   0.5 # Upper prey selection size limit for Dophins [ Number ]
-KUP_CET   0.001 # Upper prey selection size limit for Cetaceans [ Number ]
 KUP_BIR   0.4 # Upper prey selection size limit for Birds [ Number ]
 KUP_OCT   0.4 # Upper prey selection size limit for Octupus [ Number ]
 KUP_SQD   0.4 # Upper prey selection size limit for Octupus [ Number ]
 KUP_COR   0.0001 # Upper prey selection size limit for Octupus [ Number ]
 KUP_LPF   0.4 # Upper prey selection size limit for Large pelagic fish [ Number ]
 KUP_SPF   0.4 # Upper prey selection size limit for Small pelagic fish [ Number ]
+KUP_MPF   0.4 # Upper prey selection size limit for Small pelagic fish [ Number ]
 KUP_SBF   0.4 # Upper prey selection size limit for Small benthic fish [ Number ]
 KUP_LBF   0.45 # Upper prey selection size limit for Large benthic fish [ Number ]
 KUP_SZO   0.4 # Upper prey selection size limit for Small Zooplankton [ Number ]
@@ -3727,13 +3730,13 @@ Kmax_coefft_ANG   0.6 # Steepness of the smooth feeding window curve of the pred
 Kmax_coefft_CHO   0.6 # Steepness of the smooth feeding window curve of the predator  Chondrichtyans
 Kmax_coefft_OTA   0.6 # Steepness of the smooth feeding window curve of the predator  Otariid
 Kmax_coefft_DOL   0.6 # Steepness of the smooth feeding window curve of the predator  Dophins
-Kmax_coefft_CET   0.6 # Steepness of the smooth feeding window curve of the predator  Whales
 Kmax_coefft_BIR   0.6 # Steepness of the smooth feeding window curve of the predator  Birds
 Kmax_coefft_OCT   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
 Kmax_coefft_SQD   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
 Kmax_coefft_COR   0.6 # Steepness of the smooth feeding window curve of the predator  Octupus
 Kmax_coefft_LPF   0.6 # Steepness of the smooth feeding window curve of the predator  Large pelagic fish
 Kmax_coefft_SPF   0.6 # Steepness of the smooth feeding window curve of the predator  Small pelagic fish
+Kmax_coefft_MPF   0.6 # Steepness of the smooth feeding window curve of the predator  Small pelagic fish
 Kmax_coefft_SBF   0.6 # Steepness of the smooth feeding window curve of the predator  Small benthic fish
 Kmax_coefft_LBF   0.6 # Steepness of the smooth feeding window curve of the predator  Large benthic fish
 Kmax_coefft_SZO   0.6 # Steepness of the smooth feeding window curve of the predator  Small Zooplankton
@@ -3811,11 +3814,11 @@ vla_ALF_T15   1 # Coefficient of search volume for Alfonsino [ mg N m-3 ]
 vla_ANG_T15   1 # Coefficient of search volume for Anguila [ mg N m-3 ]
 vla_CHO_T15   1 # Coefficient of search volume for Chondrichtyans [ mg N m-3 ]
 vla_OTA_T15   1 # Coefficient of search volume for Otariid [ mg N m-3 ]
-vla_CET_T15   1.2 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
 vla_DOL_T15   1.2 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
 vla_BIR_T15   1 # Coefficient of search volume for Birds [ mg N m-3 ]
 vla_LPF_T15   1 # Coefficient of search volume for Large pelagic fish [ mg N m-3 ]
 vla_SPF_T15   1 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
+vla_MPF_T15   1 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
 vla_SBF_T15   1 # Coefficient of search volume for Small benthic fish [ mg N m-3 ]
 vla_LBF_T15   1 # Coefficient of search volume for Large benthic fish [ mg N m-3 ]
 
@@ -3828,11 +3831,11 @@ vlb_ALF   0.2 # Coefficient of search volume for Alfonsino [ mg N m-3 ]
 vlb_ANG   0.35 # Coefficient of search volume for Anguila [ mg N m-3 ]
 vlb_CHO   0.2 # Coefficient of search volume for Chondrichtyans [ mg N m-3 ]
 vlb_OTA   0.25 # Coefficient of search volume for Otariid [ mg N m-3 ]
-vlb_CET   0.25 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
 vlb_DOL   0.25 # Coefficient of search volume for Cetaceans [ mg N m-3 ]
 vlb_BIR   0.4 # Coefficient of search volume for Birds [ mg N m-3 ]
 vlb_LPF   0.2 # Coefficient of search volume for Large pelagic fish [ mg N m-3 ]
 vlb_SPF   0.4 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
+vlb_MPF   0.4 # Coefficient of search volume for Small pelagic fish [ mg N m-3 ]
 vlb_SBF   0.3 # Coefficient of search volume for Small benthic fish [ mg N m-3 ]
 vlb_LBF   0.25 # Coefficient of search volume for Large benthic fish [ mg N m-3 ]
 
@@ -3861,11 +3864,11 @@ hta_ALF   250    # Coefficient of handling time for Alfonsino [ mg N m-3 ]
 hta_ANG   200    # Coefficient of handling time for Anguila [ mg N m-3 ]
 hta_CHO   150    # Coefficient of handling time for Chondrichtyans [ mg N m-3 ]
 hta_OTA   250    # Coefficient of handling time for Otariid [ mg N m-3 ]
-hta_CET   50    # Coefficient of handling time for Cetaceans [ mg N m-3 ]
 hta_DOL   200    # Coefficient of handling time for Cetaceans [ mg N m-3 ]
 hta_BIR   100    # Coefficient of handling time for Birds [ mg N m-3 ]
 hta_LPF   150    # Coefficient of handling time for Large pelagic fish [ mg N m-3 ]
 hta_SPF   100    # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
+hta_MPF   100    # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
 hta_SBF   150    # Coefficient of handling time for Small benthic fish [ mg N m-3 ]
 hta_LBF   150    # Coefficient of handling time for Large benthic fish [ mg N m-3 ]
 
@@ -3878,11 +3881,11 @@ htb_ALF   0.2    # Coefficient of handling time for Alfonsino [ mg N m-3 ]
 htb_ANG   0.2    # Coefficient of handling time for Anguila [ mg N m-3 ]
 htb_CHO   0.2    # Coefficient of handling time for Chondrichtyans [ mg N m-3 ]
 htb_OTA   0.2    # Coefficient of handling time for Otariid [ mg N m-3 ]
-htb_CET   0.2    # Coefficient of handling time for Cetaceans [ mg N m-3 ]
 htb_DOL   0.2    # Coefficient of handling time for Cetaceans [ mg N m-3 ]
 htb_BIR   0.2    # Coefficient of handling time for Birds [ mg N m-3 ]
 htb_LPF   0.2    # Coefficient of handling time for Large pelagic fish [ mg N m-3 ]
 htb_SPF   0.2    # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
+htb_MPF   0.2    # Coefficient of handling time for Small pelagic fish [ mg N m-3 ]
 htb_SBF   0.2    # Coefficient of handling time for Small benthic fish [ mg N m-3 ]
 htb_LBF   0.2    # Coefficient of handling time for Large benthic fish [ mg N m-3 ]
 
@@ -3911,7 +3914,8 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
 19.2 135.45 230.14 285.26 314.22 328.83 336.06 339.61 341.34 342.19
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
-#10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
+C_MPF 10 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
+1.63 2.18 2.28 2.29 2.3 2.3
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 3.7 5.5 7.61 10.79 14.37 19.53 22.84 30.93 36.17 41.81
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -3920,8 +3924,6 @@ C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 2.33 7.44 13.49 19.5 25.01 29.82 33.9 37.29 40.08 42.34
 C_DOL 10
 8.61 28.21 52.4 77.46 101.36 123.08 142.24 158.78 172.86 184.71
-C_CET 10
-87.52 101.24 447.62 1023.1 2797.63 7331.36 9313.62 11519.45 13951.1 19494.03
 C_BIR 10
 3.76 12.42  23.27 34.66 45.67 55.82  64.88  72.81  79.64 85.46
 C_OTA 10
@@ -3965,6 +3967,8 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 0.02 0.19 0.51 0.98 1.84 3.54 7.01 14.12 14.12 14.12
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1.940575 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
+0.052 0.494 2.071 11.434 68.05 410.553
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -3975,8 +3979,6 @@ mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
 3.101881  5.861018  8.103192 11.100475 14.658063 16.261520 17.452581 18.332467 18.982654 15.432640
 mum_BIR   10 ## 0.02 0.21 0.54 1.01 1.62 2.39 3.33 4.49 5.90 7.63
 1.308548 2.453507 3.564064 4.680342 5.564694 6.241930 6.750315 7.127507 7.405688 5.131481
-mum_CET   10 ## 73.65 238.04 1359.33 2620.55 5172.94 10365.79 20944.64 42502.78 86438.54 175981.86
-520.3 536.8 2628.2 5557.5 8023.1 18128.9 19623.7 20394.7 20413.1 23104.0
 mum_DOL   10  ## 0.06 0.52 1.33 2.48 3.97 5.84 8.17 11.03 14.54 18.86
 16.04470 29.55193 38.94598 43.61346 44.43478 46.16124 46.16064 45.11098 43.50238 15.34704
 
@@ -3991,7 +3993,6 @@ KL_ALF   0 # Lower threshold for feeding by Alfonsino [ mg N m-3 ]
 KL_ANG   0 # Lower threshold for feeding by Anguila [ mg N m-3 ]
 KL_CHO   0 # Lower threshold for feeding by Chondrichtyans [ mg N m-3 ]
 KL_OTA   0 # Lower threshold for feeding by Otariid [ mg N m-3 ]
-KL_CET   0 # Lower threshold for feeding by Cetaceans [ mg N m-3 ]
 KL_DOL   0 # Lower threshold for feeding by Cetaceans [ mg N m-3 ]
 KL_BIR   0 # Lower threshold for feeding by Birds [ mg N m-3 ]
 KL_OCT   0 # Lower threshold for feeding by Octupus [ mg N m-3 ]
@@ -3999,6 +4000,7 @@ KL_SQD   0 # Lower threshold for feeding by Octupus [ mg N m-3 ]
 KL_COR   0 # Lower threshold for feeding by Octupus [ mg N m-3 ]
 KL_LPF   0 # Lower threshold for feeding by Large pelagic fish [ mg N m-3 ]
 KL_SPF   0 # Lower threshold for feeding by Small pelagic fish [ mg N m-3 ]
+KL_MPF   0 # Lower threshold for feeding by Small pelagic fish [ mg N m-3 ]
 KL_SBF   0 # Lower threshold for feeding by Small benthic fish [ mg N m-3 ]
 KL_LBF   0 # Lower threshold for feeding by Large benthic fish [ mg N m-3 ]
 KL_SZO   0 # Lower threshold for feeding by Small Zooplankton [ mg N m-3 ]
@@ -4027,7 +4029,6 @@ KU_ALF   0 # Half saturation for uptake by Alfonsino [ mg N m-3 ]
 KU_ANG   0 # Half saturation for uptake by Anguila [ mg N m-3 ]
 KU_CHO   0 # Half saturation for uptake by Chondrichtyans [ mg N m-3 ]
 KU_OTA   0 # Half saturation for uptake by Otariid [ mg N m-3 ]
-KU_CET   0 # Half saturation for uptake by Cetaceans [ mg N m-3 ]
 KU_DOL   0 # Half saturation for uptake by Cetaceans [ mg N m-3 ]
 KU_BIR   0 # Half saturation for uptake by Birds [ mg N m-3 ]
 KU_OCT   0 # Half saturation for uptake by Octupus [ mg N m-3 ]
@@ -4035,6 +4036,7 @@ KU_SQD   0 # Half saturation for uptake by Octupus [ mg N m-3 ]
 KU_COR   0 # Half saturation for uptake by Octupus [ mg N m-3 ]
 KU_LPF   0 # Half saturation for uptake by Large pelagic fish [ mg N m-3 ]
 KU_SPF   0 # Half saturation for uptake by Small pelagic fish [ mg N m-3 ]
+KU_MPF   0 # Half saturation for uptake by Small pelagic fish [ mg N m-3 ]
 KU_SBF   0 # Half saturation for uptake by Small benthic fish [ mg N m-3 ]
 KU_LBF   0 # Half saturation for uptake by Large benthic fish [ mg N m-3 ]
 KU_SZO   0 # Half saturation for uptake by Small Zooplankton [ mg N m-3 ]
@@ -4063,11 +4065,11 @@ pR_ALF   2 # Preference for rebuilding reserves over structure for Alfonsino [ N
 pR_ANG   3.5 # Preference for rebuilding reserves over structure for Anguila [ Number ]
 pR_LPF   2 # Preference for rebuilding reserves over structure for Large pelagic fish [ Number ]
 pR_SPF   2 # Preference for rebuilding reserves over structure for Small pelagic fish [ Number ]
+pR_MPF   2 # Preference for rebuilding reserves over structure for Small pelagic fish [ Number ]
 pR_SBF   2 # Preference for rebuilding reserves over structure for Small benthic fish [ Number ]
 pR_LBF   2 # Preference for rebuilding reserves over structure for Large benthic fish [ Number ]
 pR_CHO   2 # Preference for rebuilding reserves over structure for sharks [ Number ]
 pR_OTA   3.5 # Preference for rebuilding reserves over structure for Otariids [ Number ]
-pR_CET   3.5 # Preference for rebuilding reserves over structure for sharks [ Number ]
 pR_DOL   3.5 # Preference for rebuilding reserves over structure for Otariids [ Number ]
 pR_BIR   5 # Preference for rebuilding reserves over structure for Otariids [ Number ]
 
@@ -4075,22 +4077,22 @@ pR_BIR   5 # Preference for rebuilding reserves over structure for Otariids [ Nu
 ## ~              Length - weight parameters          ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 # Vertebrates
-li_a_SPL    0.96225457   # Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
-li_a_GCR    0.53179259   # Coefficient of allometic length-weight relation for Golden Crab [ Number ]
-li_a_BRC    0.00839310   # Coefficient of allometic length-weight relation for Breca [ Number ]
-li_a_VID    0.00523585   # Coefficient of allometic length-weight relation for Vidriola [ Number ]
-li_a_ORO    0.84         # Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
-li_a_ALF    0.048        # Coefficient of allometic length-weight relation for Alfonsino [ Number ]
-li_a_ANG    0.00470168   # Coefficient of allometic length-weight relation for Anguila [ Number ]
-li_a_OTA    3.88353881   # Coefficient of allometic length-weight relation for Otariid [ Number ]
-li_a_LPF    0.02835469   # Coefficient of allometic length-weight relation for Large pelagic fish [ Number ]
-li_a_SPF    0.00716116   # Coefficient of allometic length-weight relation for Small pelagic fish [ Number ]
-li_a_SBF    7.07514256   # Coefficient of allometic length-weight relation for Small benthic fish [ Number ]
-li_a_LBF    0.00026108   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
-li_a_CHO    0.00210   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
-li_a_CET    0.01   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
-li_a_DOL    0.01   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
-li_a_BIR    0.02   # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_SPL    0.96225457		# Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
+li_a_GCR    0.53179259   	# Coefficient of allometic length-weight relation for Golden Crab [ Number ]
+li_a_BRC    0.00839310   	# Coefficient of allometic length-weight relation for Breca [ Number ]
+li_a_VID    0.00523585   	# Coefficient of allometic length-weight relation for Vidriola [ Number ]
+li_a_ORO    0.84         	# Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
+li_a_ALF    0.048        	# Coefficient of allometic length-weight relation for Alfonsino [ Number ]
+li_a_ANG    0.00470168   	# Coefficient of allometic length-weight relation for Anguila [ Number ]
+li_a_OTA    3.88353881   	# Coefficient of allometic length-weight relation for Otariid [ Number ]
+li_a_LPF    0.02835469   	# Coefficient of allometic length-weight relation for Large pelagic fish [ Number ]
+li_a_SPF    0.00716116   	# Coefficient of allometic length-weight relation for Small pelagic fish [ Number ]
+li_a_MPF    0.022   		# Coefficient of allometic length-weight relation for Mesopelagic fish [ Number ]
+li_a_SBF    7.07514256   	# Coefficient of allometic length-weight relation for Small benthic fish [ Number ]
+li_a_LBF    0.00026108   	# Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_CHO    0.00210   		# Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_DOL    0.01   		# Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
+li_a_BIR    0.02   		# Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 
 li_b_SPL   2.71901358  # Exponent in allometic length-weight relation for Spiny lobster [ Number ]
 li_b_GCR   2.84013419  # Exponent in allometic length-weight relation for Golden Crab [ Number ]
@@ -4102,17 +4104,17 @@ li_b_OTA   2.07274350  # Exponent in allometic length-weight relation for Otarii
 li_b_ANG   2.83452053  # Exponent in allometic length-weight relation for Anguila [ Number ]
 li_b_LPF   2.73409475  # Exponent in allometic length-weight relation for Large pelagic fish [ Number ]
 li_b_SPF   3.14316080  # Exponent in allometic length-weight relation for Small pelagic fish [ Number ]
+li_b_MPF   3.476       # Exponent in allometic length-weight relation for Small pelagic fish [ Number ]
 li_b_SBF   1.37204560  # Exponent in allometic length-weight relation for Small benthic fish [ Number ]
 li_b_LBF   3.87985815  # Exponent in allometic length-weight relation for Large benthic fish [ Number ]
 li_b_CHO   3.176       # Exponent in allometic length-weight relation for Large benthic fish [ Number ]
-li_b_CET   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 li_b_DOL   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 li_b_BIR   3.0         # Coefficient of allometic length-weight relation for Large benthic fish [ Number ]
 ## Invertebrates
 li_a_invert 0.01
 li_b_invert 3.0
 
-min_li_mat_SPL   73.2  	# Minimum size of maturity of  Spiny lobster [ cm ]
+min_li_mat_SPL   73.2			# Minimum size of maturity of  Spiny lobster [ cm ]
 min_li_mat_GCR   10.62    		# Minimum size of maturity of  Golden Crab [ cm ]
 min_li_mat_BRC   28.9     		# Minimum size of maturity of  Breca [ cm ]
 min_li_mat_VID   51     		# Minimum size of maturity of  Vidriola [ cm ]
@@ -4123,9 +4125,9 @@ min_li_mat_CHO   77.8     		# Minimum size of maturity of  Chondrichtyans [ cm ]
 min_li_mat_OTA   105     		# Minimum size of maturity of  Otariid [ cm ]
 min_li_mat_LPF   34.5     		# Minimum size of maturity of  Large pelagic fish [ cm ]
 min_li_mat_SPF   27     		# Minimum size of maturity of  Small pelagic fish [ cm ]
+min_li_mat_MPF   5.6     		# Minimum size of maturity of  Small pelagic fish [ cm ]
 min_li_mat_SBF   21  	   		# Minimum size of maturity of  Small benthic fish [ cm ]
 min_li_mat_LBF   92 	   		# Minimum size of maturity of  Large benthic fish [ cm ]
-min_li_mat_CET 	 2044  	   		# Minimum size of maturity of  CET  [ cm ]
 min_li_mat_DOL 	 100 	   		# Minimum size of maturity of  DOL  [ cm ]
 min_li_mat_BIR 	 20 	   		# Minimum size of maturity of  BIR  [ cm ]
 
@@ -4141,7 +4143,6 @@ KDEP_ALF   0.001 # Sediment penetration depth of Alfonsino [ m ]
 KDEP_ANG   0.005 # Sediment penetration depth of Anguila [ m ]
 KDEP_CHO   0 # Sediment penetration depth of Chondrichtyans [ m ]
 KDEP_OTA   0 # Sediment penetration depth of Otariid [ m ]
-KDEP_CET   0 # Sediment penetration depth of Cetaceans [ m ]
 KDEP_DOL   0 # Sediment penetration depth of Cetaceans [ m ]
 KDEP_BIR   0 # Sediment penetration depth of Birds [ m ]
 KDEP_OCT   0.03 # Sediment penetration depth of Octupus [ m ]
@@ -4149,6 +4150,7 @@ KDEP_SQD   0.03 # Sediment penetration depth of Octupus [ m ]
 KDEP_COR   0 # Sediment penetration depth of Octupus [ m ]
 KDEP_LPF   0 # Sediment penetration depth of Large pelagic fish [ m ]
 KDEP_SPF   0 # Sediment penetration depth of Small pelagic fish [ m ]
+KDEP_MPF   0 # Sediment penetration depth of Small pelagic fish [ m ]
 KDEP_SBF   0.04 # Sediment penetration depth of Small benthic fish [ m ]
 KDEP_LBF   0.03 # Sediment penetration depth of Large benthic fish [ m ]
 KDEP_SZO   0 # Sediment penetration depth of Small Zooplankton [ m ]
@@ -4170,7 +4172,6 @@ E_ALF   0.55 # Assimilation efficiency on live food and carrion of Alfonsino
 E_ANG   0.2 # Assimilation efficiency on live food and carrion of Anguila
 E_CHO   0.3 # Assimilation efficiency on live food and carrion of Chondrichtyans
 E_OTA   0.35 # Assimilation efficiency on live food and carrion of Otariid
-E_CET   0.4 # Assimilation efficiency on live food and carrion of Cetaceans
 E_DOL   0.35 # Assimilation efficiency on live food and carrion of Cetaceans
 E_BIR   0.65 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
@@ -4178,6 +4179,7 @@ E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.35 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_MPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_SBF   0.45 # Assimilation efficiency on live food and carrion of Small benthic fish
 E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
@@ -4198,7 +4200,6 @@ EPlant_ALF   0.01    # Assimilation efficiency on Plants of Alfonsino
 EPlant_ANG   0    # Assimilation efficiency on Plants of Anguila
 EPlant_CHO   0    # Assimilation efficiency on Plants of Chondrichtyans
 EPlant_OTA   0    # Assimilation efficiency on Plants of Otariid
-EPlant_CET   0    # Assimilation efficiency on Plants of Cetaceans
 EPlant_DOL   0    # Assimilation efficiency on Plants of Cetaceans
 EPlant_BIR   0    # Assimilation efficiency on Plants of Birds
 EPlant_OCT   0.2  # Assimilation efficiency on Plants of Octupus
@@ -4206,6 +4207,7 @@ EPlant_SQD   0.3  # Assimilation efficiency on Plants of Octupus
 EPlant_COR   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_LPF   0    # Assimilation efficiency on Plants of Large pelagic fish
 EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
+EPlant_MPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.45 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
 EPlant_SZO   0.45 # Assimilation efficiency on Plants of Small Zooplankton
@@ -4226,7 +4228,6 @@ EDL_ALF   0 # Assim efficiency on labile detritus of Alfonsino
 EDL_ANG   0 # Assim efficiency on labile detritus of Anguila
 EDL_CHO   0 # Assim efficiency on labile detritus of Chondrichtyans
 EDL_OTA   0 # Assim efficiency on labile detritus of Otariid
-EDL_CET   0 # Assim efficiency on labile detritus of Cetaceans
 EDL_DOL   0 # Assim efficiency on labile detritus of Cetaceans
 EDL_BIR   0 # Assim efficiency on labile detritus of Birds
 EDL_OCT   0 # Assim efficiency on labile detritus of Octupus
@@ -4234,6 +4235,7 @@ EDL_SQD   0.4 # Assim efficiency on labile detritus of Squid
 EDL_COR   0.1 # Assim efficiency on labile detritus of Octupus
 EDL_LPF   0 # Assim efficiency on labile detritus of Large pelagic fish
 EDL_SPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
+EDL_MPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_SBF   0 # Assim efficiency on labile detritus of Small benthic fish
 EDL_LBF   0 # Assim efficiency on labile detritus of Large benthic fish
 EDL_SZO   0.15 # Assim efficiency on labile detritus of Small Zooplankton
@@ -4258,7 +4260,6 @@ EDR_ALF   0 # Assim efficiency on refractory detritus of Alfonsino
 EDR_ANG   0 # Assim efficiency on refractory detritus of Anguila
 EDR_CHO   0 # Assim efficiency on refractory detritus of Chondrichtyans
 EDR_OTA   0 # Assim efficiency on refractory detritus of Otariid
-EDR_CET   0 # Assim efficiency on refractory detritus of Cetaceans
 EDR_DOL   0 # Assim efficiency on refractory detritus of Cetaceans
 EDR_BIR   0 # Assim efficiency on refractory detritus of Birds
 EDR_OCT   0 # Assim efficiency on refractory detritus of Octupus
@@ -4266,6 +4267,7 @@ EDR_SQD   0.1 # Assim efficiency on refractory detritus of Octupus
 EDR_COR   0.001 # Assim efficiency on refractory detritus of Octupus
 EDR_LPF   0 # Assim efficiency on refractory detritus of Large pelagic fish
 EDR_SPF   0 # Assim efficiency on refractory detritus of Small pelagic fish
+EDR_MPF   0 # Assim efficiency on refractory detritus of Small pelagic fish
 EDR_SBF   0 # Assim efficiency on refractory detritus of Small benthic fish
 EDR_LBF   0 # Assim efficiency on refractory detritus of Large benthic fish
 EDR_SZO   0.05 # Assim efficiency on refractory detritus of Small Zooplankton
@@ -4290,7 +4292,6 @@ KA_ALF   0 # Scaling coefft in allometry of resp vs weight for Alfonsino
 KA_ANG   0 # Scaling coefft in allometry of resp vs weight for Anguila
 KA_CHO   0 # Scaling coefft in allometry of resp vs weight for Chondrichtyans
 KA_OTA   0 # Scaling coefft in allometry of resp vs weight for Otariid
-KA_CET   0 # Scaling coefft in allometry of resp vs weight for Cetaceans
 KA_DOL   0 # Scaling coefft in allometry of resp vs weight for Cetaceans
 KA_BIR   0 # Scaling coefft in allometry of resp vs weight for Birds
 KA_OCT   0 # Scaling coefft in allometry of resp vs weight for Octupus
@@ -4298,6 +4299,7 @@ KA_SQD   0 # Scaling coefft in allometry of resp vs weight for Octupus
 KA_COR   0 # Scaling coefft in allometry of resp vs weight for Octupus
 KA_LPF   0 # Scaling coefft in allometry of resp vs weight for Large pelagic fish
 KA_SPF   0 # Scaling coefft in allometry of resp vs weight for Small pelagic fish
+KA_MPF   0 # Scaling coefft in allometry of resp vs weight for Small pelagic fish
 KA_SBF   0 # Scaling coefft in allometry of resp vs weight for Small benthic fish
 KA_LBF   0 # Scaling coefft in allometry of resp vs weight for Large benthic fish
 KA_SZO   0 # Scaling coefft in allometry of resp vs weight for Small Zooplankton
@@ -4325,7 +4327,6 @@ KB_ALF   0 #  Exponent in respiration vs weight for Alfonsino
 KB_ANG   0 #  Exponent in respiration vs weight for Anguila
 KB_CHO   0 #  Exponent in respiration vs weight for Chondrichtyans
 KB_OTA   0 #  Exponent in respiration vs weight for Otariid
-KB_CET   0 #  Exponent in respiration vs weight for Cetaceans
 KB_DOL   0 #  Exponent in respiration vs weight for Cetaceans
 KB_BIR   0 #  Exponent in respiration vs weight for Birds
 KB_OCT   0 #  Exponent in respiration vs weight for Octupus
@@ -4333,6 +4334,7 @@ KB_SQD   0 #  Exponent in respiration vs weight for Octupus
 KB_COR   0 #  Exponent in respiration vs weight for Octupus
 KB_LPF   0 #  Exponent in respiration vs weight for Large pelagic fish
 KB_SPF   0 #  Exponent in respiration vs weight for Small pelagic fish
+KB_MPF   0 #  Exponent in respiration vs weight for Small pelagic fish
 KB_SBF   0 #  Exponent in respiration vs weight for Small benthic fish
 KB_LBF   0 #  Exponent in respiration vs weight for Large benthic fish
 KB_SZO   0 #  Exponent in respiration vs weight for Small Zooplankton
@@ -4373,9 +4375,9 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.000001 0.003
+0.00001 0.006
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.00001 0.001
+0.0001 0.003
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0 0.002739726
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
@@ -4392,13 +4394,13 @@ OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
 0.0001 0.00001
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
-CET_mL   2 # Linear mortality rate of Whales [ d-1 ]
-0 0
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0 0
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
-0  0.00001
+0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
+0  0.0001
+MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.0001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
 0  0.000002
@@ -4440,27 +4442,27 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 3e-12 1e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 8e-13
+1e-10 1e-11
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-13 1e-13
+1e-12 1e-11
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-8 3e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-6e-8 3e-7
+7e-8 1e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-17 8e-15
-CET_mQ   2 #  Quad. mortality rate of Whales [ d-1 ]
-1e-15 1e-15
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-15 1e-14
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 5e-11 1e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-10 5e-10
+5e-11 5e-09
+MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
+5e-11 5e-09
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-13 1e-13
+1e-13 5e-12
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-12 1e-13
+1e-12 1e-11
 
 ## Invertebrates
 OCT_mQ   1e-14 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -4503,9 +4505,9 @@ mStarve_ANG   1e-04 # Starvation mortality for Anguila [ d-1 ]
 mStarve_CHO   1e-04 # Starvation mortality for Chondrichtyans [ d-1 ]
 mStarve_OTA   1e-04 # Starvation mortality for Otariid [ d-1 ]
 mStarve_DOL   1e-04 # Starvation mortality for Dophins [ d-1 ]
-mStarve_CET   1e-04 # Starvation mortality for Whales [ d-1 ]
 mStarve_LPF   1e-04 # Starvation mortality for Large pelagic fish [ d-1 ]
 mStarve_SPF   1e-04 # Starvation mortality for Small pelagic fish [ d-1 ]
+mStarve_MPF   1e-04 # Starvation mortality for Small pelagic fish [ d-1 ]
 mStarve_SBF   1e-04 # Starvation mortality for Small benthic fish [ d-1 ]
 mStarve_LBF   1e-04 # Starvation mortality for Large benthic fish [ d-1 ]
 
@@ -4571,10 +4573,10 @@ ALF_min_O2   0 # Movement limitation for  Alfonsino [ mg O2 m-4 ]
 ANG_min_O2   0 # Movement limitation for  Anguila [ mg O2 m-4 ]
 CHO_min_O2   0 # Movement limitation for  Chondrichtyans [ mg O2 m-4 ]
 OTA_min_O2   0 # Movement limitation for  Otariid [ mg O2 m-4 ]
-CET_min_O2   0 # Movement limitation for  Cetaceans [ mg O2 m-4 ]
 DOL_min_O2   0 # Movement limitation for  Dolphins [ mg O2 m-4 ]
 LPF_min_O2   0 # Movement limitation for  Large pelagic fish [ mg O2 m-4 ]
 SPF_min_O2   0 # Movement limitation for  Small pelagic fish [ mg O2 m-4 ]
+MPF_min_O2   0 # Movement limitation for  Small pelagic fish [ mg O2 m-4 ]
 SBF_min_O2   0 # Movement limitation for  Small benthic fish [ mg O2 m-4 ]
 LBF_min_O2   0 # Movement limitation for  Large benthic fish [ mg O2 m-4 ]
 
@@ -4598,13 +4600,13 @@ mS_FDCHO   4 # Implicit fishing mortality for  Chondrichtyans [ d-1 ]
 0 0 0 0
 mS_FDOTA   4 # Implicit fishing mortality for  Otariid [ d-1 ]
 0 0 0 0
-mS_FDCET   4 # Implicit fishing mortality for  Cetaceans [ d-1 ]
-0 0 0 0
 mS_FDDOL  4 # Implicit fishing mortality for  Cetaceans [ d-1 ]
 0 0 0 0
 mS_FDLPF   4 # Implicit fishing mortality for  Large pelagic fish [ d-1 ]
 0 0 0 0
 mS_FDSPF   4 # Implicit fishing mortality for  Small pelagic fish [ d-1 ]
+0 0 0 0
+mS_FDMPF   4 # Implicit fishing mortality for  Small pelagic fish [ d-1 ]
 0 0 0 0
 mS_FDSBF   4 # Implicit fishing mortality for  Small benthic fish [ d-1 ]
 0 0 0 0
@@ -4630,13 +4632,13 @@ mS_SBCHO   4 # Static seabird and mammal induced mortality of Chondrichtyans [ d
 0 0 0 0
 mS_SBOTA   4 # Static seabird and mammal induced mortality of Otariid [ d-1 ]
 0 0 0 0
-mS_SBCET   4 # Static seabird and mammal induced mortality of Cetaceans [ d-1 ]
-0 0 0 0
 mS_SBDOL  4 # Static seabird and mammal induced mortality of Cetaceans [ d-1 ]
 0 0 0 0
 mS_SBLPF   4 # Static seabird and mammal induced mortality of Large pelagic fish [ d-1 ]
 0 0 0 0
 mS_SBSPF   4 # Static seabird and mammal induced mortality of Small pelagic fish [ d-1 ]
+0 0 0 0
+mS_SBMPF   4 # Static seabird and mammal induced mortality of Small pelagic fish [ d-1 ]
 0 0 0 0
 mS_SBSBF   4 # Static seabird and mammal induced mortality of Small benthic fish [ d-1 ]
 0 0 0 0
@@ -4645,6 +4647,7 @@ mS_SBLBF   4 # Static seabird and mammal induced mortality of Large benthic fish
 
 # Seabird sloppy feeding
 FSBDR_SPF   0.005 # Seabird slopping feeding for  Small pelagic fish [ Proportion ]
+FSBDR_MPF   0.005 # Seabird slopping feeding for  Small pelagic fish [ Proportion ]
 FSBDR_OCT   0.005 # Seabird slopping feeding for  Small benthic fish [ Proportion ]
 FSBDR_SQD   0.005 # Seabird slopping feeding for  Small benthic fish [ Proportion ]
 FSBDR_SPL   0 # Seabird slopping feeding for Spiny lobster [ Proportion ]
@@ -4657,7 +4660,6 @@ FSBDR_ANG   0 # Seabird slopping feeding for Anguila [ Proportion ]
 FSBDR_CHO   0 # Seabird slopping feeding for Chondrichtyans [ Proportion ]
 FSBDR_OTA   0 # Seabird slopping feeding for Otariid [ Proportion ]
 FSBDR_DOL   0 # Seabird slopping feeding for Dophins [ Proportion ]
-FSBDR_CET   0 # Seabird slopping feeding for Whales [ Proportion ]
 FSBDR_BIR   0 # Seabird slopping feeding for Birds [ Proportion ]
 FSBDR_LPF   0 # Seabird slopping feeding for Large pelagic fish [ Proportion ]
 FSBDR_SBF   0 # Seabird slopping feeding for Small benthic fish [ Proportion ]
@@ -4681,13 +4683,13 @@ FDG_ANG   0.3 # Fraction of non-assimilate lost to detritus for  Anguila [ Propo
 FDG_CHO   0.2 # Fraction of non-assimilate lost to detritus for  Chondrichtyans [ Proportion ]
 FDG_OTA   0.2 # Fraction of non-assimilate lost to detritus for  Otariid [ Proportion ]
 FDG_COR   0.15 # Fraction of non-assimilate lost to detritus for  Otariid [ Proportion ]
-FDG_CET   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Proportion ]
 FDG_DOL   0.2 # Fraction of non-assimilate lost to detritus for  Cetaceans [ Proportion ]
 FDG_BIR   0.3 # Fraction of non-assimilate lost to detritus for  Birds [ Proportion ]
 FDG_OCT   0.3 # Fraction of non-assimilate lost to detritus for  Octupus [ Proportion ]
 FDG_SQD   0.1 # Fraction of non-assimilate lost to detritus for  Octupus [ Proportion ]
 FDG_LPF   0.2 # Fraction of non-assimilate lost to detritus for  Large pelagic fish [ Proportion ]
 FDG_SPF   0.2 # Fraction of non-assimilate lost to detritus for  Small pelagic fish [ Proportion ]
+FDG_MPF   0.2 # Fraction of non-assimilate lost to detritus for  Small pelagic fish [ Proportion ]
 FDG_SBF   0.2 # Fraction of non-assimilate lost to detritus for  Small benthic fish [ Proportion ]
 FDG_LBF   0.2 # Fraction of non-assimilate lost to detritus for  Large benthic fish [ Proportion ]
 FDG_SZO   0.25 # Fraction of non-assimilate lost to detritus for  Small Zooplankton [ Proportion ]
@@ -4709,13 +4711,13 @@ FDGDL_ANG   0  # Detrit contrib from unassim lab detrit ingested by  Anguila [ P
 FDGDL_COR   0  # Detrit contrib from unassim lab detrit ingested by  Anguila [ Proportion ]
 FDGDL_CHO   0  # Detrit contrib from unassim lab detrit ingested by  Chondrichtyans [ Proportion ]
 FDGDL_OTA   0  # Detrit contrib from unassim lab detrit ingested by  Otariid [ Proportion ]
-FDGDL_CET   0  # Detrit contrib from unassim lab detrit ingested by  Cetaceans [ Proportion ]
 FDGDL_DOL   0  # Detrit contrib from unassim lab detrit ingested by  Cetaceans [ Proportion ]
 FDGDL_BIR   0  # Detrit contrib from unassim lab detrit ingested by  Birds [ Proportion ]
 FDGDL_OCT   0  # Detrit contrib from unassim lab detrit ingested by  Octupus [ Proportion ]
 FDGDL_SQD   0  # Detrit contrib from unassim lab detrit ingested by  Octupus [ Proportion ]
 FDGDL_LPF   0  # Detrit contrib from unassim lab detrit ingested by  Large pelagic fish [ Proportion ]
 FDGDL_SPF   0  # Detrit contrib from unassim lab detrit ingested by  Small pelagic fish [ Proportion ]
+FDGDL_MPF   0  # Detrit contrib from unassim lab detrit ingested by  Small pelagic fish [ Proportion ]
 FDGDL_SBF   0  # Detrit contrib from unassim lab detrit ingested by  Small benthic fish [ Proportion ]
 FDGDL_LBF   0  # Detrit contrib from unassim lab detrit ingested by  Large benthic fish [ Proportion ]
 FDGDL_SZO   0  # Detrit contrib from unassim lab detrit ingested by  Small Zooplankton [ Proportion ]
@@ -4737,13 +4739,13 @@ FDGDR_COR   0 # Detrit contrib from unassim ref detrit ingested by  Alfonsino [ 
 FDGDR_ANG   0 # Detrit contrib from unassim ref detrit ingested by  Anguila [ Proportion ]
 FDGDR_CHO   0 # Detrit contrib from unassim ref detrit ingested by  Chondrichtyans [ Proportion ]
 FDGDR_OTA   0 # Detrit contrib from unassim ref detrit ingested by  Otariid [ Proportion ]
-FDGDR_CET   0 # Detrit contrib from unassim ref detrit ingested by  Cetaceans [ Proportion ]
 FDGDR_DOL   0 # Detrit contrib from unassim ref detrit ingested by  Cetaceans [ Proportion ]
 FDGDR_BIR   0 # Detrit contrib from unassim ref detrit ingested by  Birds [ Proportion ]
 FDGDR_OCT   0 # Detrit contrib from unassim ref detrit ingested by  Octupus [ Proportion ]
 FDGDR_SQD   0 # Detrit contrib from unassim ref detrit ingested by  Octupus [ Proportion ]
 FDGDR_LPF   0 # Detrit contrib from unassim ref detrit ingested by  Large pelagic fish [ Proportion ]
 FDGDR_SPF   0 # Detrit contrib from unassim ref detrit ingested by  Small pelagic fish [ Proportion ]
+FDGDR_MPF   0 # Detrit contrib from unassim ref detrit ingested by  Small pelagic fish [ Proportion ]
 FDGDR_SBF   0 # Detrit contrib from unassim ref detrit ingested by  Small benthic fish [ Proportion ]
 FDGDR_LBF   0 # Detrit contrib from unassim ref detrit ingested by  Large benthic fish [ Proportion ]
 FDGDR_SZO   0.005 # Detrit contrib from unassim ref detrit ingested by  Small Zooplankton [ Proportion ]
@@ -4764,13 +4766,13 @@ FDM_ALF   0.35 # Detrit contrib from mortality of  Alfonsino [ Proportion ]
 FDM_ANG   0.35 # Detrit contrib from mortality of  Anguila [ Proportion ]
 FDM_CHO   0.35 # Detrit contrib from mortality of  Chondrichtyans [ Proportion ]
 FDM_OTA   0.35 # Detrit contrib from mortality of  Otariid [ Proportion ]
-FDM_CET   0.35 # Detrit contrib from mortality of  Cetaceans [ Proportion ]
 FDM_DOL   0.35 # Detrit contrib from mortality of  Cetaceans [ Proportion ]
 FDM_BIR   0.35 # Detrit contrib from mortality of  Birds [ Proportion ]
 FDM_OCT   0.35 # Detrit contrib from mortality of  Octupus [ Proportion ]
 FDM_SQD   0.35 # Detrit contrib from mortality of  Octupus [ Proportion ]
 FDM_LPF   0.35 # Detrit contrib from mortality of  Large pelagic fish [ Proportion ]
 FDM_SPF   0.35 # Detrit contrib from mortality of  Small pelagic fish [ Proportion ]
+FDM_MPF   0.35 # Detrit contrib from mortality of  Small pelagic fish [ Proportion ]
 FDM_SBF   0.35 # Detrit contrib from mortality of  Small benthic fish [ Proportion ]
 FDM_LBF   0.35 # Detrit contrib from mortality of  Large benthic fish [ Proportion ]
 FDM_SZO   0.025 # Detrit contrib from mortality of  Small Zooplankton [ Proportion ]
@@ -4813,11 +4815,11 @@ ANG_age_mat   3 # First mature age class of  Anguila [ Number ]
 OTA_age_mat   3 # First mature age class of  Otariid [ Number ]
 LPF_age_mat   2 # First mature age class of  Large pelagic fish [ Number ]
 SPF_age_mat   3 # First mature age class of  Small pelagic fish [ Number ]
+MPF_age_mat   1 # First mature age class of  Small pelagic fish [ Number ]
 SBF_age_mat   3 # First mature age class of  Small benthic fish [ Number ]
 LBF_age_mat   4 # First mature age class of  Large benthic fish [ Number ]
 CHO_age_mat   3 # First mature age class of  Large benthic fish [ Number ]
 DOL_age_mat   2 # First mature age class of  Large benthic fish [ Number ]
-CET_age_mat   3 # First mature age class of  Large benthic fish [ Number ]
 BIR_age_mat   2 # First mature age class of  Large benthic fish [ Number ]
 
 #interpreted as the time of year that each cohort becomes mature (this is 226 + 'Time_Spawn')
@@ -4836,11 +4838,11 @@ ALF_Time_Spawn   1 # Spawn day for  Alfonsino [ d ]
 ANG_Time_Spawn   304 # Spawn day for  Anguila [ d ]
 CHO_Time_Spawn   91 # Spawn day for  Chondrichtyans [ d ]
 OTA_Time_Spawn   335 # Spawn day for  Otariid [ d ]
-CET_Time_Spawn   213 # Spawn day for  Cetaceans [ d ]
 DOL_Time_Spawn   213 # Spawn day for  Dolphins [ d ]
 BIR_Time_Spawn   20 # Spawn day for  Birds [ d ]
 LPF_Time_Spawn   1 # Spawn day for  Large pelagic fish [ d ]
 SPF_Time_Spawn   213 # Spawn day for  Small pelagic fish [ d ]
+MPF_Time_Spawn   213 # Spawn day for  Small pelagic fish [ d ]
 SBF_Time_Spawn   213 # Spawn day for  Small benthic fish [ d ]
 LBF_Time_Spawn   213 # Spawn day for  Large benthic fish [ d ]
 
@@ -4854,13 +4856,13 @@ ALF_spawn_period   61 # Spawn period for  Alfonsino [ d ]
 ANG_spawn_period   30 # Spawn period for  Anguila [ d ]
 CHO_spawn_period   10 # Spawn period for  Chondrichtyans [ d ]
 OTA_spawn_period   13 # Spawn period for  Otariid [ d ]
-CET_spawn_period   30 # Spawn period for  Cetaceans [ d ]
 DOL_spawn_period   30 # Spawn period for  Dolphins [ d ]
 BIR_spawn_period   90 # Spawn period for  Birds [ d ]
 OCT_spawn_period   61 # Spawn period for  Octupus [ d ]
 SQD_spawn_period   61 # Spawn period for  Octupus [ d ]
 LPF_spawn_period   30 # Spawn period for  Large pelagic fish [ d ]
 SPF_spawn_period   61 # Spawn period for  Small pelagic fish [ d ]
+MPF_spawn_period   61 # Spawn period for  Small pelagic fish [ d ]
 SBF_spawn_period   61 # Spawn period for  Small benthic fish [ d ]
 LBF_spawn_period   61 # Spawn period for  Large benthic fish [ d ]
 
@@ -4874,13 +4876,13 @@ ALF_Recruit_Time   91  # Length of larval period for  Alfonsino [ d ]
 ANG_Recruit_Time   300 # Length of larval period for  Anguila [ d ]
 CHO_Recruit_Time   600 # Length of larval period for  Chondrichtyans [ d ]
 OTA_Recruit_Time   335 # Length of larval period for  Otariid [ d ]
-CET_Recruit_Time   335 # Length of larval period for  Cetaceans [ d ]
 DOL_Recruit_Time   335 # Length of larval period for  Dolphins [ d ]
 BIR_Recruit_Time   90  # Length of larval period for  Birds [ d ]
 OCT_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
 SQD_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
 LPF_Recruit_Time   30 # Length of larval period for  Large pelagic fish [ d ]
 SPF_Recruit_Time   30 # Length of larval period for  Small pelagic fish [ d ]
+MPF_Recruit_Time   30 # Length of larval period for  Small pelagic fish [ d ]
 SBF_Recruit_Time   30 # Length of larval period for  Small benthic fish [ d ]
 LBF_Recruit_Time   30 # Length of larval period for  Large benthic fish [ d ]
 
@@ -4894,13 +4896,13 @@ Recruit_Period_ALF   30 # Length of time recruits arrive over for  Alfonsino [ d
 Recruit_Period_ANG   61 # Length of time recruits arrive over for  Anguila [ d ]
 Recruit_Period_CHO   30 # Length of time recruits arrive over for  Chondrichtyans [ d ]
 Recruit_Period_OTA   10 # Length of time recruits arrive over for  Otariid [ d ]
-Recruit_Period_CET   30 # Length of time recruits arrive over for  Cetaceans [ d ]
 Recruit_Period_DOL   30 # Length of time recruits arrive over for  Cetaceans [ d ]
 Recruit_Period_BIR   30 # Length of time recruits arrive over for  Birds [ d ]
 Recruit_Period_OCT   30 # Length of time recruits arrive over for  Octupus [ d ]
 Recruit_Period_SQD   30 # Length of time recruits arrive over for  Octupus [ d ]
 Recruit_Period_LPF   30 # Length of time recruits arrive over for  Large pelagic fish [ d ]
 Recruit_Period_SPF   30 # Length of time recruits arrive over for  Small pelagic fish [ d ]
+Recruit_Period_MPF   30 # Length of time recruits arrive over for  Small pelagic fish [ d ]
 Recruit_Period_SBF   40 # Length of time recruits arrive over for  Small benthic fish [ d ]
 Recruit_Period_LBF   60 # Length of time recruits arrive over for  Large benthic fish [ d ]
 
@@ -4914,11 +4916,11 @@ KSPA_ANG   137.78     # Constant in spawning formulation for  Anguila
 KSPA_OTA   74926.06   # Constant in spawning formulation for  Otariid
 KSPA_LPF   117.17     # Constant in spawning formulation for  Large pelagic fish
 KSPA_SPF   331.13     # Constant in spawning formulation for  Small pelagic fish
+KSPA_MPF   5.3     # Constant in spawning formulation for  Small pelagic fish
 KSPA_SBF   411.93     # Constant in spawning formulation for  Small benthic fish
 KSPA_LBF   4638.99    # Constant in spawning formulation for  Large benthic fish
 KSPA_CHO   2736.13     # Constant in spawning formulation for  CHO
 KSPA_DOL   38376.9    # Constant in spawning formulation for  DOL
-KSPA_CET   38376.99   # Constant in spawning formulation for  CET
 KSPA_BIR   193.99     # Constant in spawning formulation for  BIR
 
 FSP_SPL   0.35        # Fraction used in spawning formulation for Spiny lobster [ Proportion ]
@@ -4931,11 +4933,11 @@ FSP_ANG   0.29 	      # Fraction used in spawning formulation for Anguila [ Prop
 FSP_OTA   0.37 	      # Fraction used in spawning formulation for Otariid [ Proportion ]
 FSP_LPF   0.29 	      # Fraction used in spawning formulation for Large pelagic fish [ Proportion ]
 FSP_SPF   0.32 	      # Fraction used in spawning formulation for Small pelagic fish [ Proportion ]
+FSP_MPF   0.31 	      # Fraction used in spawning formulation for Small pelagic fish [ Proportion ]
 FSP_SBF   0.31 	      # Fraction used in spawning formulation for Small benthic fish [ Proportion ]
 FSP_LBF   0.32 	      # Fraction used in spawning formulation for Large benthic fish [ Proportion ]
 FSP_CHO   0.36        # Constant in spawning formulation for  CHO
 FSP_DOL   0.16        # Constant in spawning formulation for  DOL
-FSP_CET   0.16        # Constant in spawning formulation for  CET
 FSP_BIR   0.2         # Constant in spawning formulation for  BIR
 
 ## Proportion of the biomass of age structured biomass pool lost to spawning (i.e. what proportion of the spawning adult biomass is lost via gamete release)
@@ -4963,6 +4965,8 @@ FSPB_LPF   10 # Fraction of population spawning for Large pelagic fish [ Proport
 0.25 1 1 1 1 1 1 1 1 1
 FSPB_SPF   10 # Fraction of population spawning for Small pelagic fish [ Proportion ]
 0 0 0 1 1 1 1 1 1 1
+FSPB_MPF   6 # Fraction of population spawning for Small pelagic fish [ Proportion ]
+0.5 1 1 1 1 1
 FSPB_SBF   10 # Fraction of population spawning for Small benthic fish [ Proportion ]
 0 1 1 1 1 1 1 1 1 1
 FSPB_LBF   10 # Fraction of population spawning for Large benthic fish [ Proportion ]
@@ -4971,8 +4975,6 @@ FSPB_CHO  10
 0 0.1 0.25 0.666666667 1 1 1 1 1 1
 FSPB_DOL  10
 0 0.4 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
-FSPB_CET  10
-0 0.3 0.4 0.5 0.5 0.5 0.5 0.5 0.5 0.5
 FSPB_BIR  10
 0 0.5 1 1 1 1 1 1 1 1
 
@@ -4995,14 +4997,14 @@ CHO_recruit_hdistrib   59 # Box recruitment locations for Chondrichtyans [ Propo
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 OTA_recruit_hdistrib   59 # Box recruitment locations for Otariid [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-CET_recruit_hdistrib   59 # Box recruitment locations for Cetaceans [ Proportion ]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 DOL_recruit_hdistrib   59 # Box recruitment locations for Dolphins [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 LPF_recruit_hdistrib   59 # Box recruitment locations for Large pelagic fish [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 SPF_recruit_hdistrib   59 # Box recruitment locations for Small pelagic fish [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+MPF_recruit_hdistrib   59 # Box recruitment locations for Small pelagic fish [ Proportion ]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0076381875 0 0 0.0109324318 0.0071317877 0 0.0065572105 0.0267163664 0 0.0153749418 0.0183229579 0.0504438219 0.0195279862 0.0195279862 0.0385115681 0.0421645891 0.0387454628 0.0641481289 0.046529796 0.0451771277 0.0026811645 0 0.0334779273 0.0385006389 0.030575717 0.0241511678 0 0 0.0140186339 0 0.011789896 0.0184687139 0.0628452533 0.0713653048 0.024360502 0.0475271523 0.0285883927 0.0525851653 0.0522473364 0.0293666834
 SBF_recruit_hdistrib   59 # Box recruitment locations for Small benthic fish [ Proportion ]
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 LBF_recruit_hdistrib   59 # Box recruitment locations for Large benthic fish [ Proportion ]
@@ -5031,13 +5033,13 @@ CHO_recruit_vdistrib   8 # Vertical recruitment locations for Chondrichtyans [ P
 0 0 0 0.1 0.4 0.2 0.2 0.1
 OTA_recruit_vdistrib   8 # Vertical recruitment locations for Otariid [ Proportion ]
 0 0 0 0 0 0 0 1
-CET_recruit_vdistrib   8 # Vertical recruitment locations for Cetaceans [ Proportion ]
-0 0 0 0 0 0 0 1
 DOL_recruit_vdistrib   8 # Vertical recruitment locations for Dolphins [ Proportion ]
 0 0 0 0 0 0 0 1
 LPF_recruit_vdistrib   8 # Vertical recruitment locations for Large pelagic fish [ Proportion ]
 0 0 0 0 0 0 0.1 0.9
 SPF_recruit_vdistrib   8 # Vertical recruitment locations for Small pelagic fish [ Proportion ]
+0 0 0 0 0.1 0.2 0.2 0.5
+MPF_recruit_vdistrib   8 # Vertical recruitment locations for Small pelagic fish [ Proportion ]
 0 0 0 0 0.1 0.2 0.2 0.5
 SBF_recruit_vdistrib   8 # Vertical recruitment locations for Small benthic fish [ Proportion ]
 0.8 0.1 0.1 0 0 0 0 0
@@ -5068,13 +5070,13 @@ recSTOCK_CHO   1 # Stock specific recruitment scalar for Chondrichtyans [ multip
 1
 recSTOCK_OTA   1 # Stock specific recruitment scalar for Otariid [ multiplier ]
 1
-recSTOCK_CET   1 # Stock specific recruitment scalar for Cetaceans [ multiplier ]
-1
 recSTOCK_DOL  1 # Stock specific recruitment scalar for Cetaceans [ multiplier ]
 1
 recSTOCK_LPF   1 # Stock specific recruitment scalar for Large pelagic fish [ multiplier ]
 1
 recSTOCK_SPF   1 # Stock specific recruitment scalar for Small pelagic fish [ multiplier ]
+1
+recSTOCK_MPF   1 # Stock specific recruitment scalar for Small pelagic fish [ multiplier ]
 1
 recSTOCK_SBF   1 # Stock specific recruitment scalar for Small benthic fish [ multiplier ]
 1
@@ -5110,13 +5112,13 @@ KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 2
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
-KDENR_CET   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-1.5
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
 3
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
+0
+KDENR_MPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
 0
 KDENR_SBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small benthic fish [ Numbers ]
 0
@@ -5135,10 +5137,10 @@ PP_ALF   1 # Primary production recruitment coeff (if recruit = 2) for Alfonsino
 PP_ANG   1 # Primary production recruitment coeff (if recruit = 2) for Anguila [ Numbers ]
 PP_CHO   1 # Primary production recruitment coeff (if recruit = 2) for Chondrichtyans [ Numbers ]
 PP_OTA   1 # Primary production recruitment coeff (if recruit = 2) for Otariid [ Numbers ]
-PP_CET   1 # Primary production recruitment coeff (if recruit = 2) for Cetaceans [ Numbers ]
 PP_DOL   1 # Primary production recruitment coeff (if recruit = 2) for Cetaceans [ Numbers ]
 PP_LPF   1 # Primary production recruitment coeff (if recruit = 2) for Large pelagic fish [ Numbers ]
 PP_SPF   1 # Primary production recruitment coeff (if recruit = 2) for Small pelagic fish [ Numbers ]
+PP_MPF   1 # Primary production recruitment coeff (if recruit = 2) for Small pelagic fish [ Numbers ]
 PP_SBF   1 # Primary production recruitment coeff (if recruit = 2) for Small benthic fish [ Numbers ]
 PP_LBF   1 # Primary production recruitment coeff (if recruit = 2) for Large benthic fish [ Numbers ]
 PP_BIR   1 # Primary production recruitment coeff (if recruit = 2) for Large benthic fish [ Numbers ]
@@ -5155,10 +5157,10 @@ Ralpha_ALF   0 # Ricker recruitment r parameter (if recruit = 9) for Alfonsino
 Ralpha_ANG   0 # Ricker recruitment r parameter (if recruit = 9) for Anguila
 Ralpha_CHO   0 # Ricker recruitment r parameter (if recruit = 9) for Chondrichtyans
 Ralpha_OTA   0 # Ricker recruitment r parameter (if recruit = 9) for Otariid
-Ralpha_CET   0 # Ricker recruitment r parameter (if recruit = 9) for Cetaceans
 Ralpha_DOL   0 # Ricker recruitment r parameter (if recruit = 9) for Cetaceans
 Ralpha_LPF   0 # Ricker recruitment r parameter (if recruit = 9) for Large pelagic fish
 Ralpha_SPF   0 # Ricker recruitment r parameter (if recruit = 9) for Small pelagic fish
+Ralpha_MPF   0 # Ricker recruitment r parameter (if recruit = 9) for Small pelagic fish
 Ralpha_SBF   0 # Ricker recruitment r parameter (if recruit = 9) for Small benthic fish
 Ralpha_LBF   0 # Ricker recruitment r parameter (if recruit = 9) for Large benthic fish
 Ralpha_BIR   0 # Ricker recruitment r parameter (if recruit = 9) for Large benthic fish
@@ -5172,10 +5174,10 @@ Rbeta_ALF   0 # Ricker recruitment K parameter (if recruit = 9) for Alfonsino
 Rbeta_ANG   0 # Ricker recruitment K parameter (if recruit = 9) for Anguila
 Rbeta_CHO   0 # Ricker recruitment K parameter (if recruit = 9) for Chondrichtyans
 Rbeta_OTA   0 # Ricker recruitment K parameter (if recruit = 9) for Otariid
-Rbeta_CET   0 # Ricker recruitment K parameter (if recruit = 9) for Cetaceans
 Rbeta_DOL   0 # Ricker recruitment K parameter (if recruit = 9) for Cetaceans
 Rbeta_LPF   0 # Ricker recruitment K parameter (if recruit = 9) for Large pelagic fish
 Rbeta_SPF   0 # Ricker recruitment K parameter (if recruit = 9) for Small pelagic fish
+Rbeta_MPF   0 # Ricker recruitment K parameter (if recruit = 9) for Small pelagic fish
 Rbeta_SBF   0 # Ricker recruitment K parameter (if recruit = 9) for Small benthic fish
 Rbeta_LBF   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
 Rbeta_BIR   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
@@ -5197,10 +5199,10 @@ BHalpha_ALF   1.8E+9		       # Beverton-Holt recruitment rate parameter (if recr
 BHalpha_ANG   275273678027             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
-BHalpha_CET   4000            	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   2.5E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_MPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1.3E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   6.747062E+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
@@ -5214,10 +5216,10 @@ BHbeta_ALF   8E+8       # Beverton-Holt recruitment saturation parameter (if rec
 BHbeta_ANG   6E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
-BHbeta_CET   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
 BHbeta_DOL   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
 BHbeta_LPF   6E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large pelagic fish
 BHbeta_SPF   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
+BHbeta_MPF   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_SBF   1E+8      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small benthic fish
 BHbeta_LBF   2E+8      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
 BHbeta_BIR   24      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
@@ -5232,10 +5234,10 @@ recover_mult_ALF   1 # Recruitment multiplier for Alfonsino [ multiplier ]
 recover_mult_ANG   1 # Recruitment multiplier for Anguila [ multiplier ]
 recover_mult_CHO   1 # Recruitment multiplier for Chondrichtyans [ multiplier ]
 recover_mult_OTA   1 # Recruitment multiplier for Otariid [ multiplier ]
-recover_mult_CET   1 # Recruitment multiplier for Cetaceans [ multiplier ]
 recover_mult_DOL   1 # Recruitment multiplier for Cetaceans [ multiplier ]
 recover_mult_LPF   1 # Recruitment multiplier for Large pelagic fish [ multiplier ]
 recover_mult_SPF   1 # Recruitment multiplier for Small pelagic fish [ multiplier ]
+recover_mult_MPF   1 # Recruitment multiplier for Small pelagic fish [ multiplier ]
 recover_mult_SBF   1 # Recruitment multiplier for Small benthic fish [ multiplier ]
 recover_mult_LBF   1 # Recruitment multiplier for Large benthic fish [ multiplier ]
 recover_mult_BIR   1 # Recruitment multiplier for Large benthic fish [ multiplier ]
@@ -5254,10 +5256,10 @@ recover_start_ALF   31449600000 # Recruitment change start date for Alfonsino [ 
 recover_start_ANG   31449600000 # Recruitment change start date for Anguila [ d ]
 recover_start_CHO   31449600000 # Recruitment change start date for Chondrichtyans [ d ]
 recover_start_OTA   31449600000 # Recruitment change start date for Otariid [ d ]
-recover_start_CET   31449600000 # Recruitment change start date for Cetaceans [ d ]
 recover_start_DOL   31449600000 # Recruitment change start date for Cetaceans [ d ]
 recover_start_LPF   31449600000 # Recruitment change start date for Large pelagic fish [ d ]
 recover_start_SPF   31449600000 # Recruitment change start date for Small pelagic fish [ d ]
+recover_start_MPF   31449600000 # Recruitment change start date for Small pelagic fish [ d ]
 recover_start_SBF   31449600000 # Recruitment change start date for Small benthic fish [ d ]
 recover_start_LBF   31449600000 # Recruitment change start date for Large benthic fish [ d ]
 recover_start_BIR   31449600000 # Recruitment change start date for Large benthic fish [ d ]
@@ -5274,10 +5276,10 @@ ALF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for 
 ANG_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Anguila
 CHO_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Chondrichtyans
 OTA_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Otariid
-CET_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Cetaceans
 DOL_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Dolphins
 LPF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Large pelagic fish
 SPF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Small pelagic fish
+MPF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Small pelagic fish
 SBF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Small benthic fish
 LBF_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Large benthic fish
 BIR_log_mult   0 # Random lognormal recruitment multiplier (if recruit = 4) for Large benthic fish
@@ -5292,10 +5294,10 @@ KWSR_ALF   36     # Structural weight of recruits for Alfonsino [ mg N m-3 ]
 KWSR_ANG   1.65     # Structural weight of recruits for Anguila [ mg N m-3 ]
 KWSR_CHO   70      # Structural weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWSR_OTA   20668    # Structural weight of recruits for Otariid [ mg N m-3 ]
-KWSR_CET   36919347 # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_DOL   8048     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_LPF   10.57    # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWSR_SPF   1.5     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWSR_MPF   1     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_SBF   26.61    # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
 KWSR_LBF   0.41     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
 KWSR_BIR   500      # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
@@ -5309,10 +5311,10 @@ KWRR_ALF   97     # Reserve weight of recruits for Alfonsino [ mg N m-3 ]
 KWRR_ANG   4.37     # Reserve weight of recruits for Anguila [ mg N m-3 ]
 KWRR_CHO   2018     # Reserve weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWRR_OTA   54770    # Reserve weight of recruits for Otariid [ mg N m-3 ]
-KWRR_CET   65224179 # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
 KWRR_DOL   31328    # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
 KWRR_LPF   28.01    # Reserve weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWRR_SPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWRR_MPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWRR_SBF   70.53   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
 KWRR_LBF   1.07     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
 KWRR_BIR   1600     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
@@ -5329,13 +5331,13 @@ intersp_depend_recruit_ALF   0 # Flag indicating interspecies dependence of recr
 intersp_depend_recruit_ANG   0 # Flag indicating interspecies dependence of recruitment for ANG
 intersp_depend_recruit_CHO   0 # Flag indicating interspecies dependence of recruitment for CHO
 intersp_depend_recruit_OTA   0 # Flag indicating interspecies dependence of recruitment for OTA
-intersp_depend_recruit_CET   0 # Flag indicating interspecies dependence of recruitment for CET
 intersp_depend_recruit_DOL   0 # Flag indicating interspecies dependence of recruitment for DOL
 intersp_depend_recruit_BIR   0 # Flag indicating interspecies dependence of recruitment for BIR
 intersp_depend_recruit_OCT   0 # Flag indicating interspecies dependence of recruitment for OCT
 intersp_depend_recruit_SQD   0 # Flag indicating interspecies dependence of recruitment for SQD
 intersp_depend_recruit_LPF   0 # Flag indicating interspecies dependence of recruitment for LPF
 intersp_depend_recruit_SPF   0 # Flag indicating interspecies dependence of recruitment for SPF
+intersp_depend_recruit_MPF   0 # Flag indicating interspecies dependence of recruitment for SPF
 intersp_depend_recruit_SBF   0 # Flag indicating interspecies dependence of recruitment for SBF
 intersp_depend_recruit_LBF   0 # Flag indicating interspecies dependence of recruitment for LBF
 intersp_depend_recruit_SZO   0 # Flag indicating interspecies dependence of recruitment for SZO
@@ -5357,13 +5359,13 @@ intersp_depend_sp_ALF   0 # ID of species recruitment dependent on
 intersp_depend_sp_ANG   0 # ID of species recruitment dependent on
 intersp_depend_sp_CHO   0 # ID of species recruitment dependent on
 intersp_depend_sp_OTA   0 # ID of species recruitment dependent on
-intersp_depend_sp_CET   0 # ID of species recruitment dependent on
 intersp_depend_sp_DOL   0 # ID of species recruitment dependent on
 intersp_depend_sp_BIR   0 # ID of species recruitment dependent on
 intersp_depend_sp_OCT   0 # ID of species recruitment dependent on
 intersp_depend_sp_SQD   0 # ID of species recruitment dependent on
 intersp_depend_sp_LPF   0 # ID of species recruitment dependent on
 intersp_depend_sp_SPF   0 # ID of species recruitment dependent on
+intersp_depend_sp_MPF   0 # ID of species recruitment dependent on
 intersp_depend_sp_SBF   0 # ID of species recruitment dependent on
 intersp_depend_sp_LBF   0 # ID of species recruitment dependent on
 intersp_depend_sp_SZO   0 # ID of species recruitment dependent on
@@ -5385,13 +5387,13 @@ intersp_depend_scale_ALF   0 # Scalar for dependency of recruitment
 intersp_depend_scale_ANG   0 # Scalar for dependency of recruitment
 intersp_depend_scale_CHO   0 # Scalar for dependency of recruitment
 intersp_depend_scale_OTA   0 # Scalar for dependency of recruitment
-intersp_depend_scale_CET   0 # Scalar for dependency of recruitment
 intersp_depend_scale_DOL   0 # Scalar for dependency of recruitment
 intersp_depend_scale_BIR   0 # Scalar for dependency of recruitment
 intersp_depend_scale_OCT   0 # Scalar for dependency of recruitment
 intersp_depend_scale_SQD   0 # Scalar for dependency of recruitment
 intersp_depend_scale_LPF   0 # Scalar for dependency of recruitment
 intersp_depend_scale_SPF   0 # Scalar for dependency of recruitment
+intersp_depend_scale_MPF   0 # Scalar for dependency of recruitment
 intersp_depend_scale_SBF   0 # Scalar for dependency of recruitment
 intersp_depend_scale_LBF   0 # Scalar for dependency of recruitment
 intersp_depend_scale_SZO   0 # Scalar for dependency of recruitment
@@ -5415,10 +5417,10 @@ ALF_min_spawn_temp   4 # Minimum spawning temperature for Alfonsino [ Celsius ]
 ANG_min_spawn_temp   4 # Minimum spawning temperature for Anguila [ Celsius ]
 CHO_min_spawn_temp   4 # Minimum spawning temperature for Chondrichtyans [ Celsius ]
 OTA_min_spawn_temp   4 # Minimum spawning temperature for Otariid [ Celsius ]
-CET_min_spawn_temp   4 # Minimum spawning temperature for Cetaceans [ Celsius ]
 DOL_min_spawn_temp   4 # Minimum spawning temperature for Dolphins [ Celsius ]
 LPF_min_spawn_temp   4 # Minimum spawning temperature for Large pelagic fish [ Celsius ]
 SPF_min_spawn_temp   4 # Minimum spawning temperature for Small pelagic fish [ Celsius ]
+MPF_min_spawn_temp   4 # Minimum spawning temperature for Small pelagic fish [ Celsius ]
 SBF_min_spawn_temp   4 # Minimum spawning temperature for Small benthic fish [ Celsius ]
 LBF_min_spawn_temp   4 # Minimum spawning temperature for Large benthic fish [ Celsius ]
 BIR_min_spawn_temp   4 # Minimum spawning temperature for Large benthic fish [ Celsius ]
@@ -5432,14 +5434,13 @@ ALF_max_spawn_temp   25 # Maximum spawning temperature for Alfonsino [ Celsius ]
 ANG_max_spawn_temp   25 # Maximum spawning temperature for Anguila [ Celsius ]
 CHO_max_spawn_temp   25 # Maximum spawning temperature for Chondrichtyans [ Celsius ]
 OTA_max_spawn_temp   25 # Maximum spawning temperature for Otariid [ Celsius ]
-CET_max_spawn_temp   25 # Maximum spawning temperature for Cetaceans [ Celsius ]
 DOL_max_spawn_temp   25 # Maximum spawning temperature for Dolphins [ Celsius ]
 LPF_max_spawn_temp   25 # Maximum spawning temperature for Large pelagic fish [ Celsius ]
 SPF_max_spawn_temp   25 # Maximum spawning temperature for Small pelagic fish [ Celsius ]
+MPF_max_spawn_temp   25 # Maximum spawning temperature for Small pelagic fish [ Celsius ]
 SBF_max_spawn_temp   25 # Maximum spawning temperature for Small benthic fish [ Celsius ]
 LBF_max_spawn_temp   25 # Maximum spawning temperature for Large benthic fish [ Celsius ]
 BIR_max_spawn_temp   25 # Maximum spawning temperature for Large benthic fish [ Celsius ]
-
 
 # Minimum and maximum spawning salinities
 SPL_min_spawn_salt   0 # Minimum spawning salinity for Spiny lobster
@@ -5451,10 +5452,10 @@ ALF_min_spawn_salt   0 # Minimum spawning salinity for Alfonsino
 ANG_min_spawn_salt   0 # Minimum spawning salinity for Anguila
 CHO_min_spawn_salt   0 # Minimum spawning salinity for Chondrichtyans
 OTA_min_spawn_salt   0 # Minimum spawning salinity for Otariid
-CET_min_spawn_salt   0 # Minimum spawning salinity for Cetaceans
 DOL_min_spawn_salt   0 # Minimum spawning salinity for Dolphins
 LPF_min_spawn_salt   0 # Minimum spawning salinity for Large pelagic fish
 SPF_min_spawn_salt   0 # Minimum spawning salinity for Small pelagic fish
+MPF_min_spawn_salt   0 # Minimum spawning salinity for Small pelagic fish
 SBF_min_spawn_salt   0 # Minimum spawning salinity for Small benthic fish
 LBF_min_spawn_salt   0 # Minimum spawning salinity for Large benthic fish
 BIR_min_spawn_salt   0 # Minimum spawning salinity for Large benthic fish
@@ -5468,10 +5469,10 @@ ALF_max_spawn_salt   40 # Maximum spawning salinity for Alfonsino
 ANG_max_spawn_salt   40 # Maximum spawning salinity for Anguila
 CHO_max_spawn_salt   40 # Maximum spawning salinity for Chondrichtyans
 OTA_max_spawn_salt   40 # Maximum spawning salinity for Otariid
-CET_max_spawn_salt   40 # Maximum spawning salinity for Cetaceans
 DOL_max_spawn_salt   40 # Maximum spawning salinity for Dolphins
 LPF_max_spawn_salt   40 # Maximum spawning salinity for Large pelagic fish
 SPF_max_spawn_salt   40 # Maximum spawning salinity for Small pelagic fish
+MPF_max_spawn_salt   40 # Maximum spawning salinity for Small pelagic fish
 SBF_max_spawn_salt   40 # Maximum spawning salinity for Small benthic fish
 LBF_max_spawn_salt   40 # Maximum spawning salinity for Large benthic fish
 BIR_max_spawn_salt   40 # Maximum spawning salinity for Large benthic fish
@@ -5496,13 +5497,13 @@ CHO_stock_struct   59 # Horizontal stock structure for Chondrichtyans [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 OTA_stock_struct   59 # Horizontal stock structure for Otariid [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
-CET_stock_struct   59 # Horizontal stock structure for Cetaceans [ stock ]
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 DOL_stock_struct   59 # Horizontal stock structure for Dolphins [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 LPF_stock_struct   59 # Horizontal stock structure for Large pelagic fish [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 SPF_stock_struct   59 # Horizontal stock structure for Small pelagic fish [ stock ]
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPF_stock_struct   59 # Horizontal stock structure for Small pelagic fish [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 SBF_stock_struct   59 # Horizontal stock structure for Small benthic fish [ stock ]
 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
@@ -5532,13 +5533,13 @@ CHO_vert_stock_struct   8 # Vertical stock structure for Chondrichtyans [ stock 
 1 1 1 1 1 1 1 1
 OTA_vert_stock_struct   8 # Vertical stock structure for Otariid [ stock ]
 1 1 1 1 1 1 1 1
-CET_vert_stock_struct   8 # Vertical stock structure for Cetaceans [ stock ]
-1 1 1 1 1 1 1 1
 DOL_vert_stock_struct   8 # Vertical stock structure for Dolphins [ stock ]
 1 1 1 1 1 1 1 1
 LPF_vert_stock_struct   8 # Vertical stock structure for Large pelagic fish [ stock ]
 1 1 1 1 1 1 1 1
 SPF_vert_stock_struct   8 # Vertical stock structure for Small pelagic fish [ stock ]
+1 1 1 1 1 1 1 1
+MPF_vert_stock_struct   8 # Vertical stock structure for Small pelagic fish [ stock ]
 1 1 1 1 1 1 1 1
 SBF_vert_stock_struct   8 # Vertical stock structure for Small benthic fish [ stock ]
 1 1 1 1 1 1 1 1
@@ -5673,8 +5674,6 @@ CHO1popratioStock1   3 # Vectors of pre-existing age distirbutions for Chondrich
  0 0 0
 OTA1popratioStock1   3 # Vectors of pre-existing age distirbutions for Otariid [ Proportion ]
  0 0 0
-CET1popratioStock1   3 # Vectors of pre-existing age distirbutions for Cetaceans [ Proportion ]
- 0 0 0
 LPF1popratioStock1   3 # Vectors of pre-existing age distirbutions for Large pelagic fish [ Proportion ]
 0 0 0
 LPF2popratioStock1   3 # Vectors of pre-existing age distirbutions for Large pelagic fish [ Proportion ]
@@ -5687,15 +5686,27 @@ LPF5popratioStock1   3 # Vectors of pre-existing age distirbutions for Large pel
  0 0 0
 SPF1popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
 0 0 0
+MPF1popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
 SPF2popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
+MPF2popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
 0 0 0
 SPF3popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
 0 0 0
+MPF3popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
 SPF4popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
+MPF4popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
 0 0 0
 SPF5popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
 0 0 0
+MPF5popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
 SPF6popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
+0 0 0
+MPF6popratioStock1   3 # Vectors of pre-existing age distirbutions for Small pelagic fish [ Proportion ]
  0 0 0
 SBF1popratioStock1   3 # Vectors of pre-existing age distirbutions for Small benthic fish [ Proportion ]
 0 0 0
@@ -5768,10 +5779,10 @@ jack_a_ALF   0 # (If recruit  = 15) Slope of recruitment for Alfonsino [ Number 
 jack_a_ANG   0 # (If recruit  = 15) Slope of recruitment for Anguila [ Number ]
 jack_a_CHO   0 # (If recruit  = 15) Slope of recruitment for Chondrichtyans [ Number ]
 jack_a_OTA   0 # (If recruit  = 15) Slope of recruitment for Otariid [ Number ]
-jack_a_CET   0 # (If recruit  = 15) Slope of recruitment for Cetaceans [ Number ]
 jack_a_DOL  0 # (If recruit  = 15) Slope of recruitment for Cetaceans [ Number ]
 jack_a_LPF   0 # (If recruit  = 15) Slope of recruitment for Large pelagic fish [ Number ]
 jack_a_SPF   0 # (If recruit  = 15) Slope of recruitment for Small pelagic fish [ Number ]
+jack_a_MPF   0 # (If recruit  = 15) Slope of recruitment for Small pelagic fish [ Number ]
 jack_a_SBF   0 # (If recruit  = 15) Slope of recruitment for Small benthic fish [ Number ]
 jack_a_LBF   0 # (If recruit  = 15) Slope of recruitment for Large benthic fish [ Number ]
 jack_a_BIR   0 # (If recruit  = 15) Slope of recruitment for Large benthic fish [ Number ]
@@ -5785,10 +5796,10 @@ jack_b_ALF   0 # (If recruit  = 15)Empirical proxy for a relationship with the c
 jack_b_ANG   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Anguila [ Number ]
 jack_b_CHO   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Chondrichtyans [ Number ]
 jack_b_OTA   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Otariid [ Number ]
-jack_b_CET   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Cetaceans [ Number ]
 jack_b_DOL  0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Cetaceans [ Number ]
 jack_b_LPF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Large pelagic fish [ Number ]
 jack_b_SPF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Small pelagic fish [ Number ]
+jack_b_MPF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Small pelagic fish [ Number ]
 jack_b_SBF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Small benthic fish [ Number ]
 jack_b_LBF   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Large benthic fish [ Number ]
 jack_b_BIR   0 # (If recruit  = 15)Empirical proxy for a relationship with the carrying capacity Large benthic fish [ Number ]
@@ -5821,8 +5832,6 @@ trait_active_CHO   8 # Active traits for Chondrichtyans
 0 0 0 0 0 0 0 0
 trait_active_OTA   8 # Active traits for Otariid
 0 0 0 0 0 0 0 0
-trait_active_CET   8 # Active traits for Cetaceans
-0 0 0 0 0 0 0 0
 trait_active_DOL  8 # Active traits for Cetaceans
 0 0 0 0 0 0 0 0
 trait_active_BIR   8 # Active traits for Birds
@@ -5836,6 +5845,8 @@ trait_active_COR   8 # Active traits for SQUID
 trait_active_LPF   8 # Active traits for Large pelagic fish
 0 0 0 0 0 0 0 0
 trait_active_SPF   8 # Active traits for Small pelagic fish
+0 0 0 0 0 0 0 0
+trait_active_MPF   8 # Active traits for Small pelagic fish
 0 0 0 0 0 0 0 0
 trait_active_SBF   8 # Active traits for Small benthic fish
 0 0 0 0 0 0 0 0
@@ -5882,7 +5893,6 @@ max_prop_shift_ALF   0 # Max proportional shift in phenotypes with aging for Alf
 max_prop_shift_ANG   0 # Max proportional shift in phenotypes with aging for Anguila
 max_prop_shift_CHO   0 # Max proportional shift in phenotypes with aging for Chondrichtyans
 max_prop_shift_OTA   0 # Max proportional shift in phenotypes with aging for Otariid
-max_prop_shift_CET   0 # Max proportional shift in phenotypes with aging for Cetaceans
 max_prop_shift_DOL  0 # Max proportional shift in phenotypes with aging for Cetaceans
 max_prop_shift_BIR   0 # Max proportional shift in phenotypes with aging for Birds
 max_prop_shift_OCT   0 # Max proportional shift in phenotypes with aging for Octupus
@@ -5890,6 +5900,7 @@ max_prop_shift_SQD   0 # Max proportional shift in phenotypes with aging for Oct
 max_prop_shift_COR   0 # Max proportional shift in phenotypes with aging for Octupus
 max_prop_shift_LPF   0 # Max proportional shift in phenotypes with aging for Large pelagic fish
 max_prop_shift_SPF   0 # Max proportional shift in phenotypes with aging for Small pelagic fish
+max_prop_shift_MPF   0 # Max proportional shift in phenotypes with aging for Small pelagic fish
 max_prop_shift_SBF   0 # Max proportional shift in phenotypes with aging for Small benthic fish
 max_prop_shift_LBF   0 # Max proportional shift in phenotypes with aging for Large benthic fish
 max_prop_shift_SZO   0 # Max proportional shift in phenotypes with aging for Small Zooplankton
@@ -5918,7 +5929,6 @@ inheritance_ALF   0 # Level of inheritance for Alfonsino
 inheritance_ANG   0 # Level of inheritance for Anguila
 inheritance_CHO   0 # Level of inheritance for Chondrichtyans
 inheritance_OTA   0 # Level of inheritance for Otariid
-inheritance_CET   0 # Level of inheritance for Cetaceans
 inheritance_DOL   0 # Level of inheritance for Cetaceans
 inheritance_BIR   0 # Level of inheritance for Birds
 inheritance_OCT   0 # Level of inheritance for Octupus
@@ -5926,6 +5936,7 @@ inheritance_SQD   0 # Level of inheritance for Octupus
 inheritance_COR   0 # Level of inheritance for Octupus
 inheritance_LPF   0 # Level of inheritance for Large pelagic fish
 inheritance_SPF   0 # Level of inheritance for Small pelagic fish
+inheritance_MPF   0 # Level of inheritance for Small pelagic fish
 inheritance_SBF   0 # Level of inheritance for Small benthic fish
 inheritance_LBF   0 # Level of inheritance for Large benthic fish
 inheritance_SZO   0 # Level of inheritance for Small Zooplankton
@@ -5954,7 +5965,6 @@ trait_varianceALF   0 # Level of trait variance for Alfonsino
 trait_varianceANG   0 # Level of trait variance for Anguila
 trait_varianceCHO   0 # Level of trait variance for Chondrichtyans
 trait_varianceOTA   0 # Level of trait variance for Otariid
-trait_varianceCET   0 # Level of trait variance for Cetaceans
 trait_varianceDOL  0 # Level of trait variance for Cetaceans
 trait_varianceBIR   0 # Level of trait variance for Birds
 trait_varianceOCT   0 # Level of trait variance for Octupus
@@ -5962,6 +5972,7 @@ trait_varianceSQD   0 # Level of trait variance for Octupus
 trait_varianceCOR   0 # Level of trait variance for Octupus
 trait_varianceLPF   0 # Level of trait variance for Large pelagic fish
 trait_varianceSPF   0 # Level of trait variance for Small pelagic fish
+trait_varianceMPF   0 # Level of trait variance for Small pelagic fish
 trait_varianceSBF   0 # Level of trait variance for Small benthic fish
 trait_varianceLBF   0 # Level of trait variance for Large benthic fish
 trait_varianceSZO   0 # Level of trait variance for Small Zooplankton
@@ -5990,7 +6001,6 @@ min_trait_variance_ALF   0 # Minimum level of trait variance for Alfonsino
 min_trait_variance_ANG   0 # Minimum level of trait variance for Anguila
 min_trait_variance_CHO   0 # Minimum level of trait variance for Chondrichtyans
 min_trait_variance_OTA   0 # Minimum level of trait variance for Otariid
-min_trait_variance_CET   0 # Minimum level of trait variance for Cetaceans
 min_trait_variance_DOL   0 # Minimum level of trait variance for Cetaceans
 min_trait_variance_BIR   0 # Minimum level of trait variance for Birds
 min_trait_variance_OCT   0 # Minimum level of trait variance for Octupus
@@ -5998,6 +6008,7 @@ min_trait_variance_SQD   0 # Minimum level of trait variance for Octupus
 min_trait_variance_COR   0 # Minimum level of trait variance for Octupus
 min_trait_variance_LPF   0 # Minimum level of trait variance for Large pelagic fish
 min_trait_variance_SPF   0 # Minimum level of trait variance for Small pelagic fish
+min_trait_variance_MPF   0 # Minimum level of trait variance for Small pelagic fish
 min_trait_variance_SBF   0 # Minimum level of trait variance for Small benthic fish
 min_trait_variance_LBF   0 # Minimum level of trait variance for Large benthic fish
 min_trait_variance_SZO   0 # Minimum level of trait variance for Small Zooplankton
@@ -6034,7 +6045,6 @@ ALF_RugCover_scalar 0.01
 ANG_RugCover_scalar 0.05
 CHO_RugCover_scalar 0.0001
 OTA_RugCover_scalar 0.00001
-CET_RugCover_scalar 0.00000001
 DOL_RugCover_scalar 0.00000001
 BIR_RugCover_scalar 0.0000000001
 OCT_RugCover_scalar 0.05
@@ -6042,6 +6052,7 @@ SQD_RugCover_scalar 0.05
 COR_RugCover_scalar 0.1
 LPF_RugCover_scalar 0.0001
 SPF_RugCover_scalar 0.0001
+MPF_RugCover_scalar 0.0001
 SBF_RugCover_scalar 0.1
 LBF_RugCover_scalar 0.1
 SZO_RugCover_scalar 0.01
@@ -6070,7 +6081,6 @@ ALF_rugFeedScalar 0.000000001
 ANG_rugFeedScalar 0.000000001
 CHO_rugFeedScalar 0.000000001
 OTA_rugFeedScalar 0.000000001
-CET_rugFeedScalar 0.000000001
 DOL_rugFeedScalar 0.000000001
 BIR_rugFeedScalar 0.000000001
 OCT_rugFeedScalar 0.000000001
@@ -6078,6 +6088,7 @@ SQD_rugFeedScalar 0.000000001
 COR_rugFeedScalar 0.000000001
 LPF_rugFeedScalar 0.000000001
 SPF_rugFeedScalar 0.000000001
+MPF_rugFeedScalar 0.000000001
 SBF_rugFeedScalar 0.000000001
 LBF_rugFeedScalar 0.000000001
 SZO_rugFeedScalar 0.000000001
@@ -6123,7 +6134,6 @@ ALF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Alfonsino
 ANG_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Anguila
 CHO_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Chondrichtyans
 OTA_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Otariid
-CET_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Cetaceans
 DOL_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Dolphins
 BIR_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Birds
 OCT_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Octupus
@@ -6131,6 +6141,7 @@ SQD_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Octupus
 COR_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Octupus
 LPF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Large pelagic fish
 SPF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small pelagic fish
+MPF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small pelagic fish
 SBF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small benthic fish
 LBF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Large benthic fish
 SZO_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small Zooplankton
@@ -6172,7 +6183,6 @@ ALF_Arsenic_LD50   100 # Arsenic tolerance 50 Alfonsino
 ANG_Arsenic_LD50   100 # Arsenic tolerance 50 Anguila
 CHO_Arsenic_LD50   100 # Arsenic tolerance 50 Chondrichtyans
 OTA_Arsenic_LD50   100 # Arsenic tolerance 50 Otariid
-CET_Arsenic_LD50   100 # Arsenic tolerance 50 Cetaceans
 DOL_Arsenic_LD50   100 # Arsenic toleranDolphins 50 Cetaceans
 BIR_Arsenic_LD50   100 # Arsenic tolerance 50 Birds
 OCT_Arsenic_LD50   100 # Arsenic tolerance 50 Octupus
@@ -6180,6 +6190,7 @@ SQD_Arsenic_LD50   100 # Arsenic tolerance 50 Octupus
 COR_Arsenic_LD50   100 # Arsenic tolerance 50 Octupus
 LPF_Arsenic_LD50   100 # Arsenic tolerance 50 Large pelagic fish
 SPF_Arsenic_LD50   100 # Arsenic tolerance 50 Small pelagic fish
+MPF_Arsenic_LD50   100 # Arsenic tolerance 50 Small pelagic fish
 SBF_Arsenic_LD50   100 # Arsenic tolerance 50 Small benthic fish
 LBF_Arsenic_LD50   100 # Arsenic tolerance 50 Large benthic fish
 SZO_Arsenic_LD50   100 # Arsenic tolerance 50 Small Zooplankton
@@ -6208,14 +6219,14 @@ ALF_Arsenic_LD100   1000 # Arsenic tolerance 50 Alfonsino
 ANG_Arsenic_LD100   1000 # Arsenic tolerance 50 Anguila
 CHO_Arsenic_LD100   1000 # Arsenic tolerance 50 Chondrichtyans
 OTA_Arsenic_LD100   1000 # Arsenic tolerance 50 Otariid
-CET_Arsenic_LD100   1000 # Arsenic tolerance 50 Cetaceans
-DOL_Arsenic_LD100   1000 # Arsenic toleranDolphins 50 Cetaceans
+DOL_Arsenic_LD100   1000 # Arsenic toleranDolphins 50 eeCetaceans
 BIR_Arsenic_LD100   1000 # Arsenic tolerance 50 Birds
 OCT_Arsenic_LD100   1000 # Arsenic tolerance 50 Octupus
 SQD_Arsenic_LD100   1000 # Arsenic tolerance 50 Octupus
 COR_Arsenic_LD100   1000 # Arsenic tolerance 50 Octupus
 LPF_Arsenic_LD100   1000 # Arsenic tolerance 50 Large pelagic fish
 SPF_Arsenic_LD100   1000 # Arsenic tolerance 50 Small pelagic fish
+MPF_Arsenic_LD100   1000 # Arsenic tolerance 50 Small pelagic fish
 SBF_Arsenic_LD100   1000 # Arsenic tolerance 50 Small benthic fish
 LBF_Arsenic_LD100   1000 # Arsenic tolerance 50 Large benthic fish
 SZO_Arsenic_LD100   1000 # Arsenic tolerance 50 Small Zooplankton
