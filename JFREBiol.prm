@@ -12,7 +12,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           Set-up and recording       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-ecotest    3 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+ecotest    0 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
 availflag  1 # Switch to filter flows based on active groups 1
 flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
@@ -299,7 +299,7 @@ flaglocalrecruitCOR 1
 flaglocalrecruitSQD 1
 flaglocalrecruitLPF 3
 flaglocalrecruitSPF 3
-flaglocalrecruitMPF 3
+flaglocalrecruitMPF 1
 flaglocalrecruitSBF 3
 flaglocalrecruitLBF 3
 flaglocalrecruitSCR 1
@@ -3348,7 +3348,6 @@ Kthresh2        0.92   # Threshhold rel. reserve when costs reduce + handother d
 KHTD            0.5    # Factor handother deep demersal time reduced by for thresh2<relres<thesh1 0.5
 KHTI            1.5    # Factor handother deep demersal time increased by for relres<thresh2 1.5
 
-
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~       PPrey Matrix   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -3446,13 +3445,13 @@ pPREYSQD  37
 pPREYOCT  37
 0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.01 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.1 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
+0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.05 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
-0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0.05 0 0 0 0.1 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0.05 0 0 0 0.05 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0.05 0 0 0 0.1 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
+0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0.05 0 0 0 0.01 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
-0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.1 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
+0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.01 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.09 0.005 0.01 0.005 0.005 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
@@ -3462,13 +3461,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.075 0.07 1e-04 0.05 0.008 0.008 0 0 0 0.008 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.075 0.07 1e-04 0.05 0.008 0.008 0 0 0 0.008 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0 0.05 0.05 0.05 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.05 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.09 0.075 0.07 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0.001 0.02 0.001 0.001 0.05 0.01 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3488,9 +3487,9 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 1e-04 0 0 0.01 0.02 0 0 0 0 0 0 0 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0 0.01 0.02 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
@@ -4164,7 +4163,7 @@ KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
 E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0.4 # Assimilation efficiency on live food and carrion of Golden Crab
+E_GCR   0.44 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.3 # Assimilation efficiency on live food and carrion of Orange Roughy
@@ -4179,7 +4178,7 @@ E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.35 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
-E_MPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_MPF   0.6 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_SBF   0.45 # Assimilation efficiency on live food and carrion of Small benthic fish
 E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
@@ -4235,7 +4234,7 @@ EDL_SQD   0.4 # Assim efficiency on labile detritus of Squid
 EDL_COR   0.1 # Assim efficiency on labile detritus of Octupus
 EDL_LPF   0 # Assim efficiency on labile detritus of Large pelagic fish
 EDL_SPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
-EDL_MPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
+EDL_MPF   0.4 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_SBF   0 # Assim efficiency on labile detritus of Small benthic fish
 EDL_LBF   0 # Assim efficiency on labile detritus of Large benthic fish
 EDL_SZO   0.15 # Assim efficiency on labile detritus of Small Zooplankton
@@ -4267,7 +4266,7 @@ EDR_SQD   0.1 # Assim efficiency on refractory detritus of Octupus
 EDR_COR   0.001 # Assim efficiency on refractory detritus of Octupus
 EDR_LPF   0 # Assim efficiency on refractory detritus of Large pelagic fish
 EDR_SPF   0 # Assim efficiency on refractory detritus of Small pelagic fish
-EDR_MPF   0 # Assim efficiency on refractory detritus of Small pelagic fish
+EDR_MPF   0.1 # Assim efficiency on refractory detritus of Small pelagic fish
 EDR_SBF   0 # Assim efficiency on refractory detritus of Small benthic fish
 EDR_LBF   0 # Assim efficiency on refractory detritus of Large benthic fish
 EDR_SZO   0.05 # Assim efficiency on refractory detritus of Small Zooplankton
@@ -4452,17 +4451,17 @@ OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-17 8e-15
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-15 1e-14
+1e-15 1e-12
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 5e-11 1e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-11 5e-09
+5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-09
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-13 5e-12
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-12 1e-11
+1e-11 5e-09
 
 ## Invertebrates
 OCT_mQ   1e-14 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -5204,7 +5203,7 @@ BHalpha_LPF   2.5E+9                   # Beverton-Holt recruitment rate paramete
 BHalpha_SPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1.3E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
-BHalpha_LBF   6.747062E+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1.4E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
@@ -5221,7 +5220,7 @@ BHbeta_LPF   6E+7       # Beverton-Holt recruitment saturation parameter (if rec
 BHbeta_SPF   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_MPF   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_SBF   1E+8      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small benthic fish
-BHbeta_LBF   2E+8      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
+BHbeta_LBF   2E+7      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
 BHbeta_BIR   24      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large benthic fish
 
 # Recruitment modifiers to encourage recovery of stocks
