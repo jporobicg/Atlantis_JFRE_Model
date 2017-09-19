@@ -3762,8 +3762,8 @@ SCR_sn   1485.22     # Size biomass pool to available to be  consume Small crust
 BFF_sn   240.33      # Size biomass pool to available to be  consume Deposit feeders [ mg N ]
 BCA_sn   456.44      # Size biomass pool to available to be  consume Benthic Carnivorous [ mg N ]
 MOL_sn   672.92      # Size biomass pool to available to be  consume Mollusca [ mg N ]
-SZO_sn   1           # Size biomass pool to available to be  consume Small Zooplankton [ mg N ]
-MZO_sn   1           # Size biomass pool to available to be  consume Medium Zooplankton [ mg N ]
+SZO_sn   0.5           # Size biomass pool to available to be  consume Small Zooplankton [ mg N ]
+MZO_sn   0.7           # Size biomass pool to available to be  consume Medium Zooplankton [ mg N ]
 LZO_sn   1           # Size biomass pool to available to be  consume Large Zooplankton [ mg N ]
 
 
@@ -3937,8 +3937,8 @@ mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.4      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.7      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.03      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.05      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.03     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3949,7 +3949,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-0.085 0.249 0.861 1.037 1.145 1.571 1.831 2.342 2.605 2.887
+0.085 0.249 0.574 0.691 0.763 1.047 1.221 1.561 1.737 1.925
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -3967,7 +3967,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-0.152 0.494 2.071 3.8113333333 13.61 41.0553
+0.912 1.482 3.1065 3.8113333333 12.249 25.6595625
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -4374,7 +4374,7 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.00001 0.006
+0.0001 0.003
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0.0001 0.003
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
@@ -4386,15 +4386,15 @@ ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
-0.001 0.005
+0.001 0.0005
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0.0001 0.001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
 0.0005 0.00001
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
-0.0005 0.00001
+0 0.00001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
-0.0005 0.00001
+0.001 0.0005
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
@@ -4431,7 +4431,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-10 1e-11
+1e-10 5e-12
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 3e-10
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
@@ -4441,25 +4441,25 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 3e-12 3e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 6e-11
+1e-10 1e-10
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-12 1e-11
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-8 3e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-7e-8 1e-7
+7e-8 8e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-13 8e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-10 1e-12
+1e-8 1e-8
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 8e-11 5e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-11 5e-09
+8e-11 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-13 1e-11
+3e-13 5e-11
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 5e-11 5e-09
 
@@ -4467,7 +4467,7 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-14 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-14 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+SZO_mQ   1e-10 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-14 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-14 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
@@ -5207,7 +5207,7 @@ BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate paramete
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1.4E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_GCR   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy

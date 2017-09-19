@@ -8552,3 +8552,103 @@ Removed: CET
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+***** SPL
+- from : 0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
+- to : 0.085 0.249 0.861 1.037 1.145 1.571 1.831 2.342 2.605 2.887
+***** SPG
+- from : 1.940575 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+- to : 1 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+***** MPF
+- from : 0.052 0.494 2.071 11.434 68.05 410.553
+- to : 0.152 0.494 2.071 3.8113333333 13.61 41.0553
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+**** Recruitment
+***** BIR
+- from 2 to 1
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+**** Recruitment
+***** GCR
+- BETA
+- From :  8e11
+- to : 5e11
+***** BRC
+- Alpha
+- From : 8.168682E+12
+- to :  1.168682E+12
+***** DOL
+- from 3
+- to 4
+**** Running time
+**** Mum
+***** MZO SZO LZO
+- SZO 0.9 to 0.7
+- MZO 0.05 to 0.03
+- LZO 0.03 to 0.01
+***** MA
+- from : 2
+- to 1.8
+**** Mortality
+***** GCR
+- from : 1e-10 1e-10
+- to : 1e-10 3e-10
+***** LBF
+- from : 1e-11 5e-09
+- to : 5e-11 5e-09
+***** SBF
+- from : 1e-13 5e-12
+- to : 1e-13 1e-11
+***** ORO
+- from : 3e-12 1e-12
+- to : 3e-12 3e-12
+***** ALF
+- from : 1e-10 1e-11
+- to : 1e-10 6e-11
+***** DOL
+- from : 8e-17 8e-15
+- to : 8e-13 8e-13
+***** LPF
+- from : 5e-11 1e-13
+- to : 8e-11 5e-13
+***** ML OTA
+- from : 0.0001 0.00001
+- to : 0.0005 0.00001
+***** ML DOL
+- from : 0 0
+- to : 0.0005 0.00001
+***** ML BIR
+- from : 0 0
+- to : 0.0005 0.00001
+***** SBF
+- from : 0  0.000002
+- to : 0.0001  0.00002
+**** Initial Weighr
+*** Others
+- Recruitmen inside the model on BIR and DOL
+- Max depth on BIR
+- 1/5 biomass SQD
+- MA spatial restirction
+- from : 60000
+- to : 30000
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170918175707
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170918175707.png]]
+* Run PC-Demiurgo 20170919152343
+  - Run start: 2017-09-19 15:23:43
+  - Run end: 2017-09-20 08:36:29
+  - log file : [[file:Calibration/20170920083629.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
