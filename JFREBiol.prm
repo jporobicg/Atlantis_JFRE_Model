@@ -92,8 +92,8 @@ Kca_const		    0.0103
 K_Ks			    6e-9
 Ksmother_coefft		    0.054
 Ksmother_const		    0.4622
-MA_coral_overgrow 	    0.001 # Rate macroalgae overgrow coral d-1
-MA_coral_compete	    0.8 # Rate macroalgae overgrow coral d-1
+MA_coral_overgrow 	    0.001    # Rate macroalgae overgrow coral d-1
+MA_coral_compete	    0.8      # Rate macroalgae overgrow coral d-1
 
 ## Bleaching
 COR_bleach_periodA          0           # Quick recovery period (regain original zooxanthellae)
@@ -242,25 +242,25 @@ flagrecruitLBF 3
 
 # External reproduction - spawn is based on adult population within model domain, but actual reproduction
 # occurs outside model domain (0 = no, 1 = yes)
-flagext_reprodSPL 0 0
-flagext_reprodGCR 0 0
-flagext_reprodBRC 0 0
-flagext_reprodVID 1 0
-flagext_reprodANG 0 0
-flagext_reprodORO 0 0
-flagext_reprodALF 0 0
-flagext_reprodCHO 0 0
-flagext_reprodOTA 0 0
-flagext_reprodDOL 1 0
-flagext_reprodBIR 1 0
-flagext_reprodOCT 0 0
-flagext_reprodCOR 0 0
-flagext_reprodSQD 0 0
-flagext_reprodLPF 0 0
-flagext_reprodSPF 0 0
-flagext_reprodMPF 0 0
-flagext_reprodSBF 0 0
-flagext_reprodLBF 0 0
+flagext_reprodSPL 0
+flagext_reprodGCR 0
+flagext_reprodBRC 0
+flagext_reprodVID 1
+flagext_reprodANG 0
+flagext_reprodORO 0
+flagext_reprodALF 0
+flagext_reprodCHO 0
+flagext_reprodOTA 0
+flagext_reprodDOL 0
+flagext_reprodBIR 0
+flagext_reprodOCT 0
+flagext_reprodCOR 0
+flagext_reprodSQD 0
+flagext_reprodLPF 0
+flagext_reprodSPF 0
+flagext_reprodMPF 0
+flagext_reprodSBF 0
+flagext_reprodLBF 0
 
 # Vertebrate reproduction strength flags (1=very strong year classes possible, relative strength
 # set using recruitRange and 0=only moderate variation in year class strength possible, mainly
@@ -325,7 +325,7 @@ flagbearliveSPF 0
 flagbearliveMPF 0
 flagbearliveSBF 0
 flagbearliveLBF 0
-flagbearliveBIR 0
+flagbearliveBIR 1
 
 # Flag indicating whether the vertebrate group provides parental care for young until maturity
 # (0 = no, 1 = yes, -1 = semelparous so die after reproduction)
@@ -1444,7 +1444,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   2      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   1.8      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
@@ -1490,7 +1490,7 @@ BBthresh  10    Threshold BB flux level where damping starts mg N m-2 s-1 0.1
 BBdamp    0.85  Damping coefficient for BB fluxes 0.75
 
 # Space restrictions for basal (epibenthic and some infauna) groups
-MAmax   60000  Maximum macroalgal biomass mg N m-2 10000
+MAmax   30000  Maximum macroalgal biomass mg N m-2 10000
 
 # These MBmax is used only as a relative measure for habitat calculations it does not constrain MB
 # growth for now
@@ -1760,7 +1760,7 @@ ALF_maxdepth  650
 CHO_maxdepth  700
 OTA_maxdepth  255
 DOL_maxdepth  200
-BIR_maxdepth  15
+BIR_maxdepth  35
 OCT_maxdepth  300
 SQD_maxdepth  4300
 COR_maxdepth  1000
@@ -2291,13 +2291,13 @@ VERTnight_OTA2 8
 0 0 0 0 0 0.2 0.3 0.5
 ## Sea Bird
 VERTday_BIR1 8
-0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0.1 0.9
 VERTnight_BIR1 8
-0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0.1 0.9
 VERTday_BIR2 8
-0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0.1 0.9
 VERTnight_BIR2 8
-0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0.1 0.9
 ## Large Pelagic Fish
 VERTday_LPF1 8
 0 0 0 0 0.003 0.03 0.125 0.842
@@ -2369,7 +2369,7 @@ Speed_BRC  12500    	  ## Swimming speed
 Speed_CHO  10000    	  ## Swimming speed
 Speed_DOL  21000    	  ## Swimming speed
 Speed_OTA  28000    	  ## Swimming speed
-Speed_BIR  0.5 	    	  ## Swimming speed
+Speed_BIR  1000	    	  ## Swimming speed
 Speed_ORO  12500    	  ## Swimming speed
 Speed_ALF  12500    	  ## Swimming speed
 Speed_VID  12500    	  ## Swimming speed
@@ -3361,13 +3361,13 @@ pPREY1SPL2  37
 pPREY2SPL2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY2GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0 0 0 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY1GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.05 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.01 0 0 0 0.01 0 0 0.01 0 0
 pPREY2GCR2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.01 0 0 0 0.01 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY1BRC1  37
 0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.008 0.05 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC1  37
@@ -3443,7 +3443,7 @@ pPREY2BIR2  37
 pPREYSQD  37
 5e-04 0.001 0.001 0 0 0 0 0 0 0 0 0 0.001 0 0.00025 0 0.001 0 0 0 0.001 1e-05 0 1e-05 0 0 0 0.00025 0 0 0 0.001 0.001 1e-05 0 0 0
 pPREYOCT  37
-0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.01 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
+0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.001 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
 0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.05 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
@@ -3487,7 +3487,7 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0 0.01 0.02 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 1e-05 0 0 0 0.01 0.02 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
@@ -3936,8 +3936,8 @@ C_OTA 10
 mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.4      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.9      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.05      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.7      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.03      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
@@ -3949,7 +3949,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-0.13 0.37 1.29 1.56 1.72 2.36 2.75 3.51 3.91 4.33
+0.085 0.249 0.861 1.037 1.145 1.571 1.831 2.342 2.605 2.887
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -3965,9 +3965,9 @@ mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 0.02 0.19 0.51 0.98 1.84 3.54 7.01 14.12 14.12 14.12
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-1.940575 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+1 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-0.052 0.494 2.071 11.434 68.05 410.553
+0.152 0.494 2.071 3.8113333333 13.61 41.0553
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -4390,11 +4390,11 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0.0001 0.001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.0001 0.00001
+0.0005 0.00001
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
-0 0
+0.0005 0.00001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
-0 0
+0.0005 0.00001
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
@@ -4402,7 +4402,7 @@ SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.0001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
-0  0.000002
+0.0001  0.00002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 0.0000001 0.00001
 
@@ -4433,15 +4433,15 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 1e-10 1e-11
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-10 1e-10
+1e-10 3e-10
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1.8e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 8e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-3e-12 1e-12
+3e-12 3e-12
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 1e-11
+1e-10 6e-11
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-12 1e-11
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
@@ -4449,19 +4449,19 @@ CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 7e-8 1e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-8e-17 8e-15
+8e-13 8e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-15 1e-12
+1e-10 1e-12
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-11 1e-13
+8e-11 5e-13
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-09
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-13 5e-12
+1e-13 1e-11
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-11 5e-09
+5e-11 5e-09
 
 ## Invertebrates
 OCT_mQ   1e-14 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -4838,7 +4838,7 @@ ANG_Time_Spawn   304 # Spawn day for  Anguila [ d ]
 CHO_Time_Spawn   91 # Spawn day for  Chondrichtyans [ d ]
 OTA_Time_Spawn   335 # Spawn day for  Otariid [ d ]
 DOL_Time_Spawn   213 # Spawn day for  Dolphins [ d ]
-BIR_Time_Spawn   20 # Spawn day for  Birds [ d ]
+BIR_Time_Spawn   330 # Spawn day for  Birds [ d ]
 LPF_Time_Spawn   1 # Spawn day for  Large pelagic fish [ d ]
 SPF_Time_Spawn   213 # Spawn day for  Small pelagic fish [ d ]
 MPF_Time_Spawn   213 # Spawn day for  Small pelagic fish [ d ]
@@ -4856,7 +4856,7 @@ ANG_spawn_period   30 # Spawn period for  Anguila [ d ]
 CHO_spawn_period   10 # Spawn period for  Chondrichtyans [ d ]
 OTA_spawn_period   13 # Spawn period for  Otariid [ d ]
 DOL_spawn_period   30 # Spawn period for  Dolphins [ d ]
-BIR_spawn_period   90 # Spawn period for  Birds [ d ]
+BIR_spawn_period   30 # Spawn period for  Birds [ d ]
 OCT_spawn_period   61 # Spawn period for  Octupus [ d ]
 SQD_spawn_period   61 # Spawn period for  Octupus [ d ]
 LPF_spawn_period   30 # Spawn period for  Large pelagic fish [ d ]
@@ -5112,7 +5112,7 @@ KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-3
+4
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
@@ -5124,7 +5124,7 @@ KDENR_SBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_LBF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
 0
 KDENR_BIR   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large benthic fish [ Numbers ]
-3
+1
 
 # Primary production dependent recruitment
 PP_SPL   1 # Primary production recruitment coeff (if recruit = 2) for Spiny lobster [ Numbers ]
@@ -5191,7 +5191,7 @@ KDENR_COR 1
 # Beverton-Holt recruitment
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   8.168682E+12   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_BRC   1.168682E+12   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1.8E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
@@ -5207,7 +5207,7 @@ BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate paramete
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1.4E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   8E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_GCR   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
