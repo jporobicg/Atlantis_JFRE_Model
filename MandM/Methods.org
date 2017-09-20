@@ -1847,7 +1847,7 @@ fi
 ***** Availability matrix
   - I will leave this one for the last part
   - Gape size
-    I wil use the normal limits (0.1% to 40%)
+    I will use the normal limits (0.1% to 40%)
   - I increase the value of KLP to 1e-06 for whales
 ***** Estimation of structural weight to calculate the biomass for predation
   #+BEGIN_SRC R :results output
@@ -2149,7 +2149,6 @@ fi
      #+ATTR_HTML: width="600" alt="image"
      #+caption: Values of Growth rate for each Vertebrate Functional Group
     [[file:img/mum.png]]
-
 ***** Maturity and Spawning
       #+CAPTION: length (in mm) for the reproductive maturity for vertebraes and mobile bentos (with age classes)
     | FG  | Maturity | Age (y) | Reference                      | Specie                                            |
@@ -2185,8 +2184,6 @@ fi
     | LPF              |        2 | Fishbase (average)  | Pseudocaranx dentex                               |
     | SBF              |        3 | Fishbase  + Munoz   | Helicolemus dactylipterus  + Girella tricuspidata |
     | MPF              |        1 | Fishbase            |                                                   |
-
-
 
   - Estimation of KSPA_XXX and FSP_XXX
     The approach if dereved from the growth function :
@@ -2241,8 +2238,6 @@ fi
     | VID |  58.02 |   77.64 |  1586.56 |     3923.89 | 0.01 | 3.11 |  10104.27 |  24989.94 | 0.40 |  4059.30 |
     | CHO |  64.75 |   95.18 |  1187.73 |     4037.54 | 0.00 | 3.18 |   7564.23 |  25713.72 | 0.36 |  2736.13 |
     | MPF |   4.00 |    8.00 |     2.72 |       30.31 | 0.02 | 3.48 |     17.35 |    193.02 | 0.31 |     5.30 |
-
-
 **** Spawning
      #+CAPTION: First day of each month
     | Jun | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |

@@ -1983,7 +1983,7 @@ FANG_S3  59  # Anguila - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01901561 0 0.01023917 0.04241943 0 0 0 0 0 0 0 0 0.02291625 0.01734391 0.0263293 0 0 0 0.08483887 0 0.1872306 0.005850956 0 0 0 0 0 0 0.0829273 0.03515814 0.05035146 0.02889898 0.1143094 0.0920713 0.0940193 0.08607998
 #--------------------------------------------------------------------------------
 FCHO_S1  59  # Chondrichtyans - All Seasons Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04406157 0.04406157 0.04406157 0.1762463 0 0 0.04406157 0.06609236 0.04406157 0.04406157 0 0 0 0 0 0 0.1101539 0.06369157 0.06609236 0.04406157 0.04406157 0.05507697 0.04406157 0.06609236
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0177555941 0.011700925 0.0722468425 0.0134460556 0.0462369312 0.0037169274 0.0124989099 0.048707473 0.0533995435 0.0487495371 0.1155491188 0 0 0.0464145544 0.0584695405 0.046884661 0.0426983096 0 0.0016083955 0.0112641032 0 0.0011620254 0.0272975311 0.0657497342 0.0421356957 0.0443665887 0.0349404119 0.0290124376 0.0325644559 0.0285391698 0.0428845276
 #--------------------------------------------------------------------------------
 FOTA_S1  59  # Otariid - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09072639 0.001866207 0.001866207 0.4086276 0.001866207 0.001866207 0.001866207 0.491315
@@ -2115,7 +2115,7 @@ FANG_S3juv  59  # Anguila - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01901561 0 0.01023917 0.04241943 0 0 0 0 0 0 0 0 0.02291625 0.01734391 0.0263293 0 0 0 0.08483887 0 0.1872306 0.005850956 0 0 0 0 0 0 0.0829273 0.03515814 0.05035146 0.02889898 0.1143094 0.0920713 0.0940193 0.08607998
 #--------------------------------------------------------------------------------
 FCHO_S1juv  59  # Chondrichtyans - All Seasons Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04406157 0.04406157 0.04406157 0.1762463 0 0 0.04406157 0.06609236 0.04406157 0.04406157 0 0 0 0 0 0 0.1101539 0.06369157 0.06609236 0.04406157 0.04406157 0.05507697 0.04406157 0.06609236
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0177555941 0.011700925 0.0722468425 0.0134460556 0.0462369312 0.0037169274 0.0124989099 0.048707473 0.0533995435 0.0487495371 0.1155491188 0 0 0.0464145544 0.0584695405 0.046884661 0.0426983096 0 0.0016083955 0.0112641032 0 0.0011620254 0.0272975311 0.0657497342 0.0421356957 0.0443665887 0.0349404119 0.0290124376 0.0325644559 0.0285391698 0.0428845276
 #--------------------------------------------------------------------------------
 FOTA_S1juv  59  # Otariid - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09072639 0.001866207 0.001866207 0.4086276 0.001866207 0.001866207 0.001866207 0.491315
@@ -2936,9 +2936,9 @@ jCHO_FSM 1
 jOTA_FSM 1
 1
 jDOL_FSM 1
-0.9
+0.95
 jBIR_FSM 1
-1
+0.9
 jOCT_FSM 1
 1
 jSQD_FSM 1
@@ -2984,7 +2984,7 @@ OTA_FSM 1
 DOL_FSM 1
 0.99
 BIR_FSM 1
-0.99
+0.95
 OCT_FSM 1
 1
 SQD_FSM 1
@@ -4376,13 +4376,13 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
 0.0001 0.003
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.0001 0.003
+0.001 0.003
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0 0.002739726
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
-0 4.986301e-05
+0.00001 4.986301e-05
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
@@ -4431,15 +4431,15 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-10 5e-12
+1e-10 1e-12
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 3e-10
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1.8e-11 1e-13
+9e-11 1e-13
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 8e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-3e-12 3e-12
+3e-11 3e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 1e-10 1e-10
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
@@ -4447,13 +4447,13 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-8 3e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-7e-8 8e-8
+1e-9 8e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-13 8e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-8 1e-8
+5e-8 1e-8
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-8e-11 5e-13
+8e-11 1e-12
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
@@ -5207,7 +5207,7 @@ BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate paramete
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1.4E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_GCR   4E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
