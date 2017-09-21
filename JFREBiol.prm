@@ -251,7 +251,7 @@ flagext_reprodORO 0
 flagext_reprodALF 0
 flagext_reprodCHO 0
 flagext_reprodOTA 0
-flagext_reprodDOL 0
+flagext_reprodDOL 1
 flagext_reprodBIR 0
 flagext_reprodOCT 0
 flagext_reprodCOR 0
@@ -495,8 +495,8 @@ VID_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 ANG_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-CHO_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+CHO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OTA_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -837,7 +837,7 @@ q10_optimal_temp_ANG 17
 q10_optimal_temp_ALF 17
 q10_optimal_temp_CHO 13
 q10_optimal_temp_OTA 5
-q10_optimal_temp_DOL 0
+q10_optimal_temp_DOL 12
 q10_optimal_temp_BIR 0
 q10_optimal_temp_OCT 18.5
 q10_optimal_temp_COR 9
@@ -3369,13 +3369,13 @@ pPREY1GCR2  37
 pPREY2GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY1BRC1  37
-0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.008 0.05 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
+0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.01 0.05 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 8e-04 0.01 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.008 0.01 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY1BRC2  37
-0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.008 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
+0.05 0.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.01 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 8e-04 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.008 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY1VID1  37
 0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 5e-04 0.01 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
@@ -3409,13 +3409,13 @@ pPREY1ANG2  37
 pPREY2ANG2  37
 0.001 0.001 0.01 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0.01 0 0 0.01 5e-05 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
-0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
-0.01 0.01 0 0 0 0 1e-05 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0 0 1e-05 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CHO2  37
-0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO2  37
-0.1 0.05 0 0 0.01 0.01 1e-04 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.1 0.05 0 0 0.01 0.01 1e-04 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA1  37
 0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA1  37
@@ -3779,11 +3779,11 @@ k_trans_BCA 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
 C_OCT_T15   0.007   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SQD_T15   0.07    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_SQD_T15   0.007    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.18    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.04   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.02   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.08   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.05   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_BCA_T15   0.001   #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3904,7 +3904,7 @@ C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 31.74 42 56.84
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-4.77 30.47 59.82 85.63 103.25 114.58 121.64 125.96 128.55 130.11
+3.9 24.38 47.86 68.51 82.6 91.67 97.31 100.77 102.84 104.09
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 8.51 17.45 27.28 37.11 46.42 54.95 62.58 69.29 75.15 80.15
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
@@ -3934,11 +3934,11 @@ C_OTA 10
 ## INVERTEBRATES OR BIOMASS POOLS
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 mum_OCT_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SQD_T15   0.4      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SQD_T15   0.1      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.7      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.05      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.03     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.1      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.06     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
@@ -3953,11 +3953,11 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.01 0.06 0.21 0.41 0.68 1.04 1.54 2.24 2.65 3.47
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
-0.05 0.18 0.52 0.75 1.01 1.31 1.72 2.48 3.18 3.76
+0.4 0.9 1.56 2.25 3.03 3.93 5.16 7.44 9.54 11.28
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 0.24  1.85   2.43
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 0.14 0.24 0.83 1.36 2.22 3.63 6.04 10.03
-0.001 0.039 0.143 0.239 0.826 1.36 2.22 3.629 6.039 10.026
+0.01 0.39 0.715 0.717 2.478 3.4 6.66 7.258 9.6624 16.0416
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 3.637507  5.032411  5.870096 10.063565 11.942583 13.559504 14.922502 16.096034 17.036015 14.050844
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
@@ -3967,7 +3967,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-0.912 1.482 3.1065 3.8113333333 12.249 25.6595625
+4.56 3.705 6.213 9.5283333333 9.7992 20.52765
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 0.13 0.25 0.73 0.82 1.02 1.11 1.84 1.33 2.2 2.46
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -3975,7 +3975,7 @@ mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 131.1350 135.6236 201.8767 211.7992 217.7442 221.3859 223.6678 225.1270 226.0758 219.1192
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
-3.101881  5.861018  8.103192 11.100475 14.658063 16.261520 17.452581 18.332467 18.982654 15.432640
+0.9693378125 5.861018 40.51596 55.502375 73.290315 81.3076 87.262905 91.662335 94.91327 77.1632
 mum_BIR   10 ## 0.02 0.21 0.54 1.01 1.62 2.39 3.33 4.49 5.90 7.63
 1.308548 2.453507 3.564064 4.680342 5.564694 6.241930 6.750315 7.127507 7.405688 5.131481
 mum_DOL   10  ## 0.06 0.52 1.33 2.48 3.97 5.84 8.17 11.03 14.54 18.86
@@ -4220,7 +4220,7 @@ EPlant_MOL   0.45 # Assimilation efficiency on Plants of Mollusca
 # Assimilation efficiency of invertebrate consumers on labile detritus
 EDL_SPL   0.27 # Assim efficiency on labile detritus of Spiny lobster
 EDL_GCR   0.2 # Assim efficiency on labile detritus of Golden Crab
-EDL_BRC   0.05 # Assim efficiency on labile detritus of Breca
+EDL_BRC   0.1 # Assim efficiency on labile detritus of Breca
 EDL_VID   0 # Assim efficiency on labile detritus of Vidriola
 EDL_ORO   0 # Assim efficiency on labile detritus of Orange Roughy
 EDL_ALF   0 # Assim efficiency on labile detritus of Alfonsino
@@ -4252,7 +4252,7 @@ EDL_BB    0.5 # Assim efficiency on labile detritus of Sediment Bacteria
 # Assimilation efficiency of invertebrate consumers on refractory detritus
 EDR_SPL   0.01 # Assim efficiency on refractory detritus of Spiny lobster
 EDR_GCR   0.01 # Assim efficiency on refractory detritus of Golden Crab
-EDR_BRC   0.001 # Assim efficiency on refractory detritus of Breca
+EDR_BRC   0.01 # Assim efficiency on refractory detritus of Breca
 EDR_VID   0 # Assim efficiency on refractory detritus of Vidriola
 EDR_ORO   0 # Assim efficiency on refractory detritus of Orange Roughy
 EDR_ALF   0 # Assim efficiency on refractory detritus of Alfonsino
@@ -4364,9 +4364,9 @@ Ktmp_bird    0.08  # Factor relating temperature to respiration for seabirds
 Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
-KLYS_LPH   0.0001 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.0002 # Lysis rate of Small phytoplankton [ d-1 ]
-KLYS_MA    0.0003 # Lysis rate of Macroalgae [ d-1 ]
+KLYS_LPH   0.001 # Lysis rate of Large phytoplankton [ d-1 ]
+KLYS_SPH   0.002 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_MA    0.003 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -4374,11 +4374,11 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.0001 0.003
+0.0001 0.0027
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.001 0.003
+0.0005 0.002
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0 0.002739726
+0.0001 0.002739726
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
@@ -4407,8 +4407,8 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 0.0000001 0.00001
 
 ## Invertebrates
-OCT_mL   0.0001 # Linear mortality rate of Octupus [ d-1 ]
-SQD_mL   0 # Linear mortality rate of Octupus [ d-1 ]
+OCT_mL   0.001 # Linear mortality rate of Octupus [ d-1 ]
+SQD_mL   0.001 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
 SZO_mL   0.0005 # Linear mortality rate of Small Zooplankton [ d-1 ]
 MZO_mL   0.0005 # Linear mortality rate of Medium Zooplankton [ d-1 ]
@@ -4435,29 +4435,29 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 3e-10
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-9e-11 1e-13
+1e-10 5e-14
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 8e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-3e-11 3e-10
+3e-11 8e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 1e-10
+1e-10 5e-10
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-12 1e-11
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-8 3e-8
+3e-8 5e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-9 8e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-13 8e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-5e-8 1e-8
+5e-8 8e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-8e-11 1e-12
+1e-10 1e-10
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-8e-11 1e-10
+5e-11 5e-11
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 3e-13 5e-11
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
