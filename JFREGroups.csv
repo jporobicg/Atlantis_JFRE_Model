@@ -25,7 +25,7 @@ BFF,22,1,Deposit_feeders,Deposit feeders,1,1,1,1,1,1,0,0,0,1,0,LG_INF,1,0,0,0,0,
 LPH,23,1,Large_phyto,Large phytoplankton,1,1,1,1,1,1,0,0,0,0,0,LG_PHY,0,0,0,0,0,0,0,0,0
 SPH,24,1,Small_phyto,Small phytoplankton,1,1,1,1,1,1,0,0,0,0,0,SM_PHY,0,0,0,0,0,0,0,0,0
 COR,25,1,Coral,Coral,1,1,1,1,1,1,0,0,0,1,0,CORAL,1,1,0,0,0,0,0,0,0
-BCA,26,1,Benthic_carnivorous,Sedentary benthic carnivorous,1,1,1,1,1,1,0,0,0,0,0,SED_EP_OTHER,1,0,0,0,0,0,0,0,0
+SUR,26,1,Sea_Urchin,Sea Urchin,1,1,1,1,1,1,0,0,0,0,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,0
 MOL,27,1,Mollusca,Mollusca,1,1,1,1,1,1,0,0,0,0,0,SED_EP_FF,1,0,0,0,0,0,0,0,0
 MA,28,1,Macroalgae,Macroalgae,1,1,1,1,1,1,0,0,0,0,0,PHYTOBEN,0,1,0,0,0,0,0,0,0
 PB,29,1,Pelag_Bact,Pelagic Bacteria,1,1,1,1,1,1,0,0,0,0,0,PL_BACT,0,0,0,0,0,0,0,0,0

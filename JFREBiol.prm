@@ -12,7 +12,7 @@
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~           Set-up and recording       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-ecotest    0 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
+ecotest    3 # Messages: 0=no, 1=part, 2=more, 3=all, 4=fluxs, 5= do 1 iter only 2
 availflag  1 # Switch to filter flows based on active groups 1
 flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
@@ -33,7 +33,7 @@ flagBFlim      1 # Switch to identify filter feeding crowding used: simple=0, ER
 flagBFSlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBFDlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBFFlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
-flagBCAlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
+flagSURlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagMOLlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagCORlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 
@@ -126,19 +126,19 @@ COR_CrecruitC		    0.8		# Coral recruitment exponent
 ## rugosity
 COR_rug_factor		    0.5		# Rugosity surface area scalar
 MOL_rug_factor		    0.03	# Rugosity surface area scalar
-BCA_rug_factor		    0.01	# Rugosity surface area scalar
+SUR_rug_factor		    0.01	# Rugosity surface area scalar
 BFF_rug_factor		    0.001	# Rugosity surface area scalar
 MA_rug_factor		    0.1		# Rugosity surface area scalar
 
 COR_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
 MOL_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
-BCA_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
+SUR_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
 BFF_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
 MA_rug_erode		    0.01	# Erosion by cryptic (boring) invertebrates is also related to class size of coral
 
 COR_rug_bleacherode	    0.001	# Cryptic bleached coral erosion rate
 MOL_rug_bleacherode	    0.003	# Cryptic bleached coral erosion rate
-BCA_rug_bleacherode	    0.003	# Cryptic bleached coral erosion rate
+SUR_rug_bleacherode	    0.003	# Cryptic bleached coral erosion rate
 BFF_rug_bleacherode	    0.03	# Cryptic bleached coral erosion rate
 MA_rug_bleacherode	    0.1		# Cryptic bleached coral erosion rate
 COR_colony_ha		    0.75	# Constant scaling colony height to diameter
@@ -153,41 +153,41 @@ swr_cos_offset 0.0
 
 # Preferred location trend (whether to weight vertical distributions towards surface or bottom
 # layers when in depths where there were less than complete set of depth layers. 0 is top, 1 is demersal (?))
-flagdemSPL  1  SPL: 1 = on, 0 = off 1
-flagdemGCR  1  GCR: 1 = on, 0 = off 1
-flagdemBRC  0  BRC: 1 = on, 0 = off 1
-flagdemORO  1  ORO: 1 = on, 0 = off 1
-flagdemVID  1  VID: 1 = on, 0 = off 1
-flagdemANG  1  ANG: 1 = on, 0 = off 1
-flagdemALF  1  ALF: 1 = on, 0 = off 1
-flagdemCHO  1  CHO: 1 = on, 0 = off 1
-flagdemOTA  0  OTA: 1 = on, 0 = off 1
-flagdemDOL  0  DOL: 1 = on, 0 = off 1
-flagdemBIR  0  BIR: 1 = on, 0 = off 1
-flagdemOCT  1  OCT: 1 = on, 0 = off 1
-flagdemSQD  1  SQD: 1 = on, 0 = off 1
-flagdemCOR  1  COR: 1 = on, 0 = off 1
-flagdemLPF  0  LPF: 1 = on, 0 = off 1
-flagdemSPF  0 SPF: 1 = on, 0 = off 1
-flagdemMPF  1 SPF: 1 = on, 0 = off 1
-flagdemSBF  1 SBF: 1 = on, 0 = off 1
-flagdemLBF  1 LBF: 1 = on, 0 = off 1
-flagdemSZO  0 SCP: 1 = on, 0 = off 1
-flagdemMZO  0 SCP: 1 = on, 0 = off 1
-flagdemLZO  0 LCP: 1 = on, 0 = off 1
-flagdemSCR  1 SCR: 1 = on, 0 = off 1
-flagdemBFF  1 BFF: 1 = on, 0 = off 1
-flagdemLPH  0 PHY: 1 = on, 0 = off 1
-flagdemSPH  0 SCP: 1 = on, 0 = off 1
-flagdemBCA  1 BCA: 1 = on, 0 = off 1
-flagdemMOL  1 MOL: 1 = on, 0 = off 1
-flagdemNO   1 NO: 1 = on, 0 = off 1
-flagdemMA   1 MA: 1 = on, 0 = off 1
-flagdemPB   1 PB: 1 = on, 0 = off 1
-flagdemBB   1 BB: 1 = on, 0 = off 1
-flagdemDL   1 DL: 1 = on, 0 = off 1
-flagdemDR   1 DR: 1 = on, 0 = off 1
-flagdemDC   1 DC: 1 = on, 0 = off 1
+flagdemSPL  1 ##  SPL: 1 = on, 0 = off 1
+flagdemGCR  1 ##  GCR: 1 = on, 0 = off 1
+flagdemBRC  0 ##  BRC: 1 = on, 0 = off 1
+flagdemORO  1 ##  ORO: 1 = on, 0 = off 1
+flagdemVID  1 ##  VID: 1 = on, 0 = off 1
+flagdemANG  1 ##  ANG: 1 = on, 0 = off 1
+flagdemALF  1 ##  ALF: 1 = on, 0 = off 1
+flagdemCHO  1 ##  CHO: 1 = on, 0 = off 1
+flagdemOTA  0 ##  OTA: 1 = on, 0 = off 1
+flagdemDOL  0 ##  DOL: 1 = on, 0 = off 1
+flagdemBIR  0 ##  BIR: 1 = on, 0 = off 1
+flagdemOCT  1 ##  OCT: 1 = on, 0 = off 1
+flagdemSQD  1 ##  SQD: 1 = on, 0 = off 1
+flagdemCOR  1 ##  COR: 1 = on, 0 = off 1
+flagdemLPF  0 ##  LPF: 1 = on, 0 = off 1
+flagdemSPF  0 ## SPF: 1 = on, 0 = off 1
+flagdemMPF  1 ## SPF: 1 = on, 0 = off 1
+flagdemSBF  1 ## SBF: 1 = on, 0 = off 1
+flagdemLBF  1 ## LBF: 1 = on, 0 = off 1
+flagdemSZO  0 ## SCP: 1 = on, 0 = off 1
+flagdemMZO  0 ## SCP: 1 = on, 0 = off 1
+flagdemLZO  0 ## LCP: 1 = on, 0 = off 1
+flagdemSCR  1 ## SCR: 1 = on, 0 = off 1
+flagdemBFF  1 ## BFF: 1 = on, 0 = off 1
+flagdemLPH  0 ## PHY: 1 = on, 0 = off 1
+flagdemSPH  0 ## SCP: 1 = on, 0 = off 1
+flagdemSUR  1 ## SUR: 1 = on, 0 = off 1
+flagdemMOL  1 ## MOL: 1 = on, 0 = off 1
+flagdemNO   1 ## NO: 1 = on, 0 = off 1
+flagdemMA   1 ## MA: 1 = on, 0 = off 1
+flagdemPB   1 ## PB: 1 = on, 0 = off 1
+flagdemBB   1 ## BB: 1 = on, 0 = off 1
+flagdemDL   1 ## DL: 1 = on, 0 = off 1
+flagdemDR   1 ## DR: 1 = on, 0 = off 1
+flagdemDC   1 ## DC: 1 = on, 0 = off 1
 
 # Flag indicating whether or not the vertebrate is a planktivore
 
@@ -303,7 +303,7 @@ flaglocalrecruitMPF 1
 flaglocalrecruitSBF 3
 flaglocalrecruitLBF 3
 flaglocalrecruitSCR 1
-flaglocalrecruitBCA 1
+flaglocalrecruitSUR 1
 flaglocalrecruitMOL 1
 
 # Flag indicating whether the vertebrate group bearslive young (0 = no, 1 = yes)
@@ -369,7 +369,7 @@ feed_while_spawnMPF 1
 feed_while_spawnSBF 1
 feed_while_spawnLBF 1
 feed_while_spawnSCR 1
-feed_while_spawnBCA 1
+feed_while_spawnSUR 1
 feed_while_spawnMOL 1
 feed_while_spawnBIR 1
 
@@ -395,7 +395,7 @@ flagq10effMPF 0
 flagq10effSBF 0
 flagq10effLBF 0
 flagq10effSCR 0
-flagq10effBCA 0
+flagq10effSUR 0
 flagq10effMOL 0
 
 flagq10receffSPL 0
@@ -418,7 +418,7 @@ flagq10receffMPF 0
 flagq10receffSBF 0
 flagq10receffLBF 0
 flagq10receffSCR 0
-flagq10receffBCA 0
+flagq10receffSUR 0
 flagq10receffMOL 0
 
 # Temperature sensitivty of vertebrates and CEP, PWN: 0 = no, 1 = yes
@@ -449,7 +449,7 @@ flagtempsensitiveLZO 1
 flagtempsensitiveMZO 1
 flagtempsensitiveMA  1
 flagtempsensitiveBFF 1
-flagtempsensitiveBCA 1
+flagtempsensitiveSUR 1
 flagtempsensitiveMOL 1
 flagtempsensitivePB  1
 flagtempsensitiveBB  1
@@ -479,7 +479,7 @@ MPF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 LBF_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 SCR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
-BCA_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
+SUR_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 MOL_habdepend 0  ## dependent on demersal habitat: 0 = no, 1 = yes
 
 # Vertebrate density dependent movement related flags
@@ -507,7 +507,7 @@ MPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-BCA_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+SUR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 MOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 MZO_ddepend_move 4 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -554,7 +554,7 @@ flagMPFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out o
 flagSBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagLBFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSCRMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
-flagBCAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagSURMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagMOLMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSZOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagMZOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
@@ -587,7 +587,7 @@ flagstockingSCR  0
 flagstockingBFF  0
 flagstockingLPH  0
 flagstockingSPH  0
-flagstockingBCA  0
+flagstockingSUR  0
 flagstockingMOL  0
 flagstockingNO   0
 flagstockingMA   0
@@ -624,7 +624,7 @@ predcase_LZO 0
 predcase_MZO 0
 predcase_SCR 0
 predcase_BFF 0
-predcase_BCA 0
+predcase_SUR 0
 predcase_MOL 0
 
 # Period of activity for consumer groups
@@ -652,7 +652,7 @@ flagLZOday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagMZOday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagSCRday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagBFFday 2 Active: 2 = no preference, 1 = day, 0 = night 2
-flagBCAday 2 Active: 2 = no preference, 1 = day, 0 = night 2
+flagSURday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 flagMOLday 2 Active: 2 = no preference, 1 = day, 0 = night 2
 
 ## Physical and chemical parameters
@@ -664,7 +664,7 @@ KTUR_BFF     0.5       Bioturbation contribution by Deposit feeders
 KTUR_MOL     0.5       Bioturbation contribution by mollusca
 KTUR_SPL     0.5       Bioturbation contribution by Spiny lobster
 KTUR_GCR     0.5       Bioturbation contribution by Golden Crab
-KTUR_BCA     0.5       Bioturbation contribution by BCA
+KTUR_SUR     0.5       Bioturbation contribution by SUR
 K_TUR_DEP    0.02      Bioturbation depth m 0.02
 K_MAX_TUR    10        Maximum contributions to bioturbation 10
 
@@ -675,7 +675,7 @@ KIRR_BFF  1   	Bioirrigation contribution by deposit feeders 1
 KIRR_MOL  0.2   Bioirrigation contribution by mollusca
 KIRR_SPL  0.01   Bioturbation contribution by Spiny lobster
 KIRR_GCR  0.01   Bioturbation contribution by Golden Crab
-KIRR_BCA  0.05   Bioturbation contribution by BCA
+KIRR_SUR  0.05   Bioturbation contribution by SUR
 K_MAX_IRR 10   	Maximum contributions to bioirrigation 10
 K_MIN_IRR 2   	Minimum contributions to bioirrigation 2
 
@@ -757,7 +757,7 @@ temp_coefftA_SCR  0.851
 temp_coefftA_BFF  0.851
 temp_coefftA_SPH  0.851
 temp_coefftA_LPH  0.851
-temp_coefftA_BCA  0.851
+temp_coefftA_SUR  0.851
 temp_coefftA_MOL  0.851
 temp_coefftA_MA   0.851
 temp_coefftA_PB  0.851
@@ -790,7 +790,7 @@ q10_SCR  2.0
 q10_BFF  2.0
 q10_SPH  2.0
 q10_LPH  2.0
-q10_BCA  2.0
+q10_SUR  2.0
 q10_MOL  2.0
 q10_MA   2.0
 q10_PB  2.0
@@ -821,7 +821,7 @@ q10_method_SCR 1
 q10_method_BFF 0
 q10_method_LPH 0
 q10_method_SPH 0
-q10_method_BCA 1
+q10_method_SUR 1
 q10_method_MOL 1
 q10_method_MA  0
 q10_method_PB  0
@@ -854,7 +854,7 @@ q10_optimal_temp_SCR 12.218
 q10_optimal_temp_BFF 0
 q10_optimal_temp_SPH 0
 q10_optimal_temp_LPH 0
-q10_optimal_temp_BCA 17.37
+q10_optimal_temp_SUR 17.37
 q10_optimal_temp_MOL 0
 q10_optimal_temp_MA  0
 q10_optimal_temp_PB 0
@@ -887,7 +887,7 @@ q10_correction_SCR   1000
 q10_correction_BFF   1000
 q10_correction_LPH   1000
 q10_correction_SPH   1000
-q10_correction_BCA   1000
+q10_correction_SUR   1000
 q10_correction_MOL   1000
 q10_correction_MA    1000
 q10_correction_PB    1000
@@ -997,7 +997,7 @@ flagpHsensitive_SCR  0
 flagpHsensitive_BFF  0
 flagpHsensitive_SPH  0
 flagpHsensitive_LPH  0
-flagpHsensitive_BCA  0
+flagpHsensitive_SUR  0
 flagpHsensitive_MOL  0
 flagpHsensitive_MA   0
 flagpHsensitive_PB  0
@@ -1030,7 +1030,7 @@ flagfecundsensitive_SCR  0
 flagfecundsensitive_BFF  0
 flagfecundsensitive_LPH  0
 flagfecundsensitive_SPH  0
-flagfecundsensitive_BCA  0
+flagfecundsensitive_SUR  0
 flagfecundsensitive_MOL  0
 flagfecundsensitive_MA   0
 flagfecundsensitive_PB  0
@@ -1063,7 +1063,7 @@ flagnutvaleffect_SCR  0
 flagnutvaleffect_BFF  0
 flagnutvaleffect_SPH  1
 flagnutvaleffect_LPH  1
-flagnutvaleffect_BCA  0
+flagnutvaleffect_SUR  0
 flagnutvaleffect_MOL  0
 flagnutvaleffect_MA   0
 flagnutvaleffect_PB  0
@@ -1096,7 +1096,7 @@ flagpredavaileffect_SCR  0
 flagpredavaileffect_BFF  0
 flagpredavaileffect_LPH  0
 flagpredavaileffect_SPH  0
-flagpredavaileffect_BCA  0
+flagpredavaileffect_SUR  0
 flagpredavaileffect_MOL  0
 flagpredavaileffect_MA   0
 flagpredavaileffect_PB  0
@@ -1129,7 +1129,7 @@ flagcontract_tol_SCR  0
 flagcontract_tol_BFF  0
 flagcontract_tol_SPH  0
 flagcontract_tol_LPH  0
-flagcontract_tol_BCA  0
+flagcontract_tol_SUR  0
 flagcontract_tol_MOL  0
 flagcontract_tol_MA   0
 flagcontract_tol_PB  0
@@ -1163,7 +1163,7 @@ pHsensitive_model_SCR  0
 pHsensitive_model_BFF  0
 pHsensitive_model_SPH  0
 pHsensitive_model_LPH  0
-pHsensitive_model_BCA  0
+pHsensitive_model_SUR  0
 pHsensitive_model_MOL  0
 pHsensitive_model_MA   0
 pHsensitive_model_PB  0
@@ -1196,7 +1196,7 @@ KN_pH_SCR  7.0
 KN_pH_BFF  0.0
 KN_pH_LPH  7.0
 KN_pH_SPH  7.0
-KN_pH_BCA  0.0
+KN_pH_SUR  0.0
 KN_pH_MOL  0.0
 KN_pH_MA   0.0
 KN_pH_PB  0.0
@@ -1229,7 +1229,7 @@ optimal_pH_SCR  0.0
 optimal_pH_BFF  0.0
 optimal_pH_SPH  0.0
 optimal_pH_LPH  0.0
-optimal_pH_BCA  0.0
+optimal_pH_SUR  0.0
 optimal_pH_MOL  0.0
 optimal_pH_MA   0.0
 optimal_pH_PB  0.0
@@ -1262,7 +1262,7 @@ pH_correction_SCR  1.0
 pH_correction_BFF  1.0
 pH_correction_SPH  1.0
 pH_correction_LPH  1.0
-pH_correction_BCA  1.0
+pH_correction_SUR  1.0
 pH_correction_MOL  1.0
 pH_correction_MA   1.0
 pH_correction_PB  1.0
@@ -1295,7 +1295,7 @@ pH_constA_SCR  1.0
 pH_constA_BFF  1.0
 pH_constA_SPH  1.0
 pH_constA_LPH  1.0
-pH_constA_BCA  1.0
+pH_constA_SUR  1.0
 pH_constA_MOL  1.0
 pH_constA_MA   1.0
 pH_constA_PB  1.0
@@ -1328,7 +1328,7 @@ pH_constB_SCR  1.0
 pH_constB_BFF  1.0
 pH_constB_LPH  1.0
 pH_constB_SPH  1.0
-pH_constB_BCA  1.0
+pH_constB_SUR  1.0
 pH_constB_MOL  1.0
 pH_constB_MA   1.0
 pH_constB_PB  1.0
@@ -1361,7 +1361,7 @@ contract_tol_SCR  0.0
 contract_tol_BFF  0.0
 contract_tol_LPH  0.0
 contract_tol_SPH  0.0
-contract_tol_BCA  0.0
+contract_tol_SUR  0.0
 contract_tol_MOL  0.0
 contract_tol_MA   0.0
 contract_tol_PB  0.0
@@ -1394,7 +1394,7 @@ flagSaltSensitive_SCR  0
 flagSaltSensitive_BFF  0
 flagSaltSensitive_SPH  0
 flagSaltSensitive_LPH  0
-flagSaltSensitive_BCA  0
+flagSaltSensitive_SUR  0
 flagSaltSensitive_MOL  0
 flagSaltSensitive_MA   0
 flagSaltSensitive_PB  0
@@ -1427,7 +1427,7 @@ salt_correction_SCR  1.0
 salt_correction_BFF  1.0
 salt_correction_SPH  1.0
 salt_correction_LPH  1.0
-salt_correction_BCA  1.0
+salt_correction_SUR  1.0
 salt_correction_MOL  1.0
 salt_correction_MA   1.0
 salt_correction_PB  1.0
@@ -1444,7 +1444,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  1      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  1     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   1.8      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   1.5      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
@@ -1490,23 +1490,23 @@ BBthresh  10    Threshold BB flux level where damping starts mg N m-2 s-1 0.1
 BBdamp    0.85  Damping coefficient for BB fluxes 0.75
 
 # Space restrictions for basal (epibenthic and some infauna) groups
-MAmax   30000  Maximum macroalgal biomass mg N m-2 10000
+MAmax   15000  Maximum macroalgal biomass mg N m-2 10000
 
 # These MBmax is used only as a relative measure for habitat calculations it does not constrain MB
 # growth for now
-SCRmax   10000         Maximum small crustacean biomass mg N m-2 10000
-CORmax   10000         Maximum small crustacean biomass mg N m-2 10000
-BFFmax   400000       Maximum deposit feeder biomass mg N m-2 500000
-MOLmax   1000000000   Maximum Molusk mg N m-2 Unlimited
-BCAmax   1000000000   Maximum Benthic carnivorous mg N m-2 Unlimited
+SCRmax   10000         ## Maximum small crustacean biomass mg N m-2 10000
+CORmax   10000         ## Maximum small crustacean biomass mg N m-2 10000
+BFFmax   400000        ## Maximum deposit feeder biomass mg N m-2 500000
+MOLmax   500000        ## Maximum Molusk mg N m-2 Unlimited
+SURmax   500000        ## Maximum Benthic carnivorous mg N m-2 Unlimited
 
 # Threshold spatial factors for filter feeders if using ERSEM formulation
 BFF_low    200  Little space limitation (pop too small) mg.N.m-2 2000
 BFF_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
 BFFthresh  5000  mg.N.m-2 1000
-BCA_low    200  Little space limitation (pop too small) mg.N.m-2 2000
-BCA_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
-BCAthresh  5000  mg.N.m-2 1000
+SUR_low    200  Little space limitation (pop too small) mg.N.m-2 2000
+SUR_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
+SURthresh  5000  mg.N.m-2 1000
 MOL_low    200  Little space limitation (pop too small) mg.N.m-2 2000
 MOL_sat    3000  Interference to uptake due to shading mg.N.m-2 2500
 MOLthresh  5000  mg.N.m-2 1000
@@ -1596,7 +1596,7 @@ habitat_SPH 6
 0 0 1 1 1 1
 habitat_LPH 6
 0 0 1 1 1 1
-habitat_BCA 6
+habitat_SUR 6
 0 0 1 1 1 1
 habitat_MOL 6
 0 0 1 1 1 1
@@ -1740,7 +1740,7 @@ SCR_mindepth  50
 BFF_mindepth  50
 SPH_mindepth  0
 LPH_mindepth  0
-BCA_mindepth  0
+SUR_mindepth  0
 MOL_mindepth  0
 MA_mindepth   0
 PB_mindepth   0
@@ -1776,7 +1776,7 @@ SCR_maxdepth  700
 BFF_maxdepth  4300
 LPH_maxdepth  4300
 SPH_maxdepth  4300
-BCA_maxdepth  750
+SUR_maxdepth  750
 MOL_maxdepth  4300
 MA_maxdepth   250
 PB_maxdepth   4300
@@ -1811,7 +1811,7 @@ SCR_maxtotdepth  100000
 BFF_maxtotdepth  100000
 LPH_maxtotdepth  100000
 SPH_maxtotdepth  100000
-BCA_maxtotdepth  100000
+SUR_maxtotdepth  100000
 MOL_maxtotdepth  100000
 MA_maxtotdepth   100000
 PB_maxtotdepth   100000
@@ -1847,7 +1847,7 @@ SCR_homerangerad     1
 BFF_homerangerad     1
 LPH_homerangerad     1
 SPH_homerangerad     1
-BCA_homerangerad     1
+SUR_homerangerad     1
 MOL_homerangerad     1
 NO_homerangerad      1
 MA_homerangerad      1
@@ -1884,7 +1884,7 @@ SCR_overlap     0
 BFF_overlap     0
 LPH_overlap     0
 SPH_overlap     0
-BCA_overlap     0
+SUR_overlap     0
 MOL_overlap     0
 NO_overlap      0
 MA_overlap      0
@@ -2063,7 +2063,7 @@ FSPH_S1  59  # Small phytoplankton - All Seasons Spatial distribution
 FCOR_S1  59  # Coral - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.03420298 0.0626385 0.008259811 0.05911081 0.05034662 0 0 0.03420298 0.03420298 0.03420298 0.03420298 0 0.03420298 0.03420298 0 0.03420298 0.03420298 0.007642124 0.007769106 0.01112428 0.007196998 0.12478 0.1246532 0.0117169 0.0117169
 #--------------------------------------------------------------------------------
-FBCA_S1  59  # Sedentary benthic carnivorous - All Seasons Spatial distribution
+FSUR_S1  59  # Sedentary benthic carnivorous - All Seasons Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05735046 0 0 0 0 0 0 0 0.05735046 0.05735046 0.05735046 0.05735046 0 0 0 0 0 0.05735046 0 0 0 0 0 0 0 0.07268838 0.08060545 0.07227438 0.05960743 0.1068982 0.1168644 0.06810214 0.07885688
 #--------------------------------------------------------------------------------
 FMOL_S1  59  # Mollusca - All Seasons Spatial distribution
@@ -2222,9 +2222,9 @@ VERTday_SZO 8
 0 0 0 0.007 0.077 0.669 0.244 0.003
 VERTnight_SZO 8
 0 0 0 0.179 0.174 0.025 0.53 0.092
-VERTday_BCA 8
+VERTday_SUR 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
-VERTnight_BCA 8
+VERTnight_SUR 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 VERTday_MOL 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
@@ -2402,7 +2402,7 @@ SPF_min_move_temp  4
 MPF_min_move_temp  0
 SBF_min_move_temp  4
 LBF_min_move_temp  4
-BCA_min_move_temp  4
+SUR_min_move_temp  4
 MOL_min_move_temp  4
 SCR_min_move_temp  4
 SZO_min_move_temp  4
@@ -2435,7 +2435,7 @@ SPF_max_move_temp  30
 MPF_max_move_temp  30
 SBF_max_move_temp  30
 LBF_max_move_temp  30
-BCA_max_move_temp  27
+SUR_max_move_temp  27
 MOL_max_move_temp  30
 SCR_max_move_temp  30
 SZO_max_move_temp  27
@@ -2462,7 +2462,7 @@ BIR_min_move_salt 0.0
 OCT_min_move_salt 0.0
 SQD_min_move_salt 0.0
 COR_min_move_salt 0.0
-BCA_min_move_salt 0.0
+SUR_min_move_salt 0.0
 MOL_min_move_salt 0.0
 SCR_min_move_salt 0.0
 LPF_min_move_salt 0.0
@@ -2488,7 +2488,7 @@ BIR_max_move_salt 40.0
 OCT_max_move_salt 40.0
 SQD_max_move_salt 40.0
 COR_max_move_salt 40.0
-BCA_max_move_salt 40.0
+SUR_max_move_salt 40.0
 MOL_max_move_salt 40.0
 SCR_max_move_salt 40.0
 LPF_max_move_salt 40.0
@@ -2545,7 +2545,7 @@ jSQD_Migrate_Time 1
 364
 jCOR_Migrate_Time 1
 364
-jBCA_Migrate_Time 1
+jSUR_Migrate_Time 1
 364
 jMOL_Migrate_Time 1
 364
@@ -2589,7 +2589,7 @@ SQD_Migrate_Time 1
 364
 COR_Migrate_Time 1
 364
-BCA_Migrate_Time 1
+SUR_Migrate_Time 1
 364
 MOL_Migrate_Time 1
 364
@@ -2641,7 +2641,7 @@ jSQD_Migrate_Return 1
 0
 jCOR_Migrate_Return 1
 0
-jBCA_Migrate_Return 1
+jSUR_Migrate_Return 1
 0
 jMOL_Migrate_Return 1
 0
@@ -2687,7 +2687,7 @@ SQD_Migrate_Return 1
 0
 COR_Migrate_Return 1
 0
-BCA_Migrate_Return 1
+SUR_Migrate_Return 1
 0
 MOL_Migrate_Return 1
 0
@@ -2735,7 +2735,7 @@ SQD_Migrate_Period 1
 0
 COR_Migrate_Period 1
 0
-BCA_Migrate_Period 1
+SUR_Migrate_Period 1
 0
 MOL_Migrate_Period 1
 0
@@ -2787,7 +2787,7 @@ jSQD_Migrate_Period 1
 0
 jCOR_Migrate_Period 1
 0
-jBCA_Migrate_Period 1
+jSUR_Migrate_Period 1
 0
 jMOL_Migrate_Period 1
 0
@@ -2843,7 +2843,7 @@ jSQD_ReturnStock 1
 0
 jCOR_ReturnStock 1
 0
-jBCA_ReturnStock 1
+jSUR_ReturnStock 1
 0
 jMOL_ReturnStock 1
 0
@@ -2891,7 +2891,7 @@ SQD_ReturnStock 1
 0
 COR_ReturnStock 1
 0
-BCA_ReturnStock 1
+SUR_ReturnStock 1
 0
 MOL_ReturnStock 1
 0
@@ -2945,7 +2945,7 @@ jSQD_FSM 1
 1
 jCOR_FSM 1
 1
-jBCA_FSM 1
+jSUR_FSM 1
 1
 jMOL_FSM 1
 1
@@ -2991,7 +2991,7 @@ SQD_FSM 1
 1
 COR_FSM 1
 1
-BCA_FSM 1
+SUR_FSM 1
 1
 MOL_FSM 1
 1
@@ -3048,7 +3048,7 @@ jSQD_FSMG 1
 0
 jCOR_FSMG 1
 0
-jBCA_FSMG 1
+jSUR_FSMG 1
 0
 jMOL_FSMG 1
 0
@@ -3094,7 +3094,7 @@ SQD_FSMG 1
 0
 COR_FSMG 1
 0
-BCA_FSMG 1
+SUR_FSMG 1
 0
 MOL_FSMG 1
 0
@@ -3150,7 +3150,7 @@ MigIOBox_SQDjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_CORjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BCAjuv 59
+MigIOBox_SURjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_MOLjuv 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3196,7 +3196,7 @@ MigIOBox_SQDad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_CORad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-MigIOBox_BCAad 59
+MigIOBox_SURad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 MigIOBox_MOLad 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -3234,7 +3234,7 @@ KMIGa_INVERT_SCR 1
 0
 KMIGa_INVERT_MOL 1
 0
-KMIGa_INVERT_BCA 1
+KMIGa_INVERT_SUR 1
 0
 
 # from B1
@@ -3351,11 +3351,11 @@ KHTI            1.5    # Factor handother deep demersal time increased by for re
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~       PPrey Matrix   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
-##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC DLsed DRsed DCsed
+##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0 0.001 0.001 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0.001 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1SPL2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
 pPREY2SPL2  37
@@ -3363,7 +3363,7 @@ pPREY2SPL2  37
 pPREY1GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY2GCR1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0 0 0 0.005 0 0 0 0.01 0 0 0.01 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0 0 0.001 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY1GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0125 0.01 0 0 0 0.01 0 0 0.01 0 0
 pPREY2GCR2  37
@@ -3496,8 +3496,8 @@ pPREYBFF  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0.001 0 0 0 0 0 5e-04 0.008 0.005 0 0 0 0
 pPREYCOR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0.001 0.001 0 0 0 0 0 0 0.001 5e-04 0 0 0 0
-pPREYBCA  37
-1e-04 1e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 5e-04 0.005 1e-04 0 0 1e-04 0.001 1e-05 0 0 0 0 0.1 1e-04 0 0
+pPREYSUR  37
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 0 0 0 0.05 0 0 0 0 0 0.005 0.001 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.01 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
 
@@ -3529,7 +3529,7 @@ p_split_SCR   1 # Ontogenetic diet preferences  Small crustaceans [ Number ]
 p_split_BFF   1 # Ontogenetic diet preferences  Deposit feeders [ Number ]
 p_split_LPH   1 # Ontogenetic diet preferences  Large phytoplankton [ Number ]
 p_split_SPH   1 # Ontogenetic diet preferences  Small phytoplankton [ Number ]
-p_split_BCA   1 # Ontogenetic diet preferences  Benthic Carnivorous [ Number ]
+p_split_SUR   1 # Ontogenetic diet preferences  Benthic Carnivorous [ Number ]
 p_split_MOL   1 # Ontogenetic diet preferences  Mollusca [ Number ]
 p_split_MA    1 # Ontogenetic diet preferences  Macroalgae [ Number ]
 p_split_PB    1 # Ontogenetic diet preferences  Pelagic Bacteria [ Number ]
@@ -3565,7 +3565,7 @@ age_structured_prey_SCR   0 # Flag to indicate that the group uses age structure
 age_structured_prey_BFF   0 # Flag to indicate that the group uses age structured prey Deposit feeders [ Number ]
 age_structured_prey_LPH   0 # Flag to indicate that the group uses age structured prey Large phytoplankton [ Number ]
 age_structured_prey_SPH   0 # Flag to indicate that the group uses age structured prey Small phytoplankton [ Number ]
-age_structured_prey_BCA   0 # Flag to indicate that the group uses age structured prey Benthic Carnivorous [ Number ]
+age_structured_prey_SUR   0 # Flag to indicate that the group uses age structured prey Benthic Carnivorous [ Number ]
 age_structured_prey_MOL   0 # Flag to indicate that the group uses age structured prey Mollusca [ Number ]
 age_structured_prey_MA    0 # Flag to indicate that the group uses age structured prey Macroalgae [ Number ]
 age_structured_prey_PB    0 # Flag to indicate that the group uses age structured prey Pelagic Bacteria [ Number ]
@@ -3688,7 +3688,7 @@ KLP_MZO   0     # Lower prey selection size limit for Medium Zooplankton [ Numbe
 KLP_LZO   0     # Lower prey selection size limit for Large Zooplankton [ Number ]
 KLP_SCR   1e-07 # Lower prey selection size limit for Small crustaceans [ Number ]
 KLP_BFF   0     # Lower prey selection size limit for Deposit feeders [ Number ]
-KLP_BCA   1e-07 # Lower prey selection size limit for Benthic Carnivorous [ Number ]
+KLP_SUR   1e-07 # Lower prey selection size limit for Benthic Carnivorous [ Number ]
 KLP_MOL   1e-07 # Lower prey selection size limit for Mollusca [ Number ]
 
 # Upper gape size for predators. Should be a value for each group that is tagged as a predator in the functional group definition file.
@@ -3716,7 +3716,7 @@ KUP_MZO   0.4 # Upper prey selection size limit for Medium Zooplankton [ Number 
 KUP_LZO   0.4 # Upper prey selection size limit for Large Zooplankton [ Number ]
 KUP_SCR   0.01 # Upper prey selection size limit for Small crustaceans [ Number ]
 KUP_BFF   0.01 # Upper prey selection size limit for Deposit feeders [ Number ]
-KUP_BCA   0.01 # Upper prey selection size limit for Benthic Carnivorous [ Number ]
+KUP_SUR   0.01 # Upper prey selection size limit for Benthic Carnivorous [ Number ]
 KUP_MOL   0.01 # Upper prey selection size limit for Mollusca [ Number ]
 
 Kmax_coefft_SPL   0.6 # Steepness of the smooth feeding window curve of the predator  Spiny lobster
@@ -3745,7 +3745,7 @@ Kmax_coefft_SCR   0.6 # Steepness of the smooth feeding window curve of the pred
 Kmax_coefft_BFF   0.6 # Steepness of the smooth feeding window curve of the predator  Deposit feeders
 Kmax_coefft_LPH   0.6 # Steepness of the smooth feeding window curve of the predator  Large phytoplankton
 Kmax_coefft_SPH   0.6 # Steepness of the smooth feeding window curve of the predator  Small phytoplankton
-Kmax_coefft_BCA   0.6 # Steepness of the smooth feeding window curve of the predator  Benthic Carnivorous
+Kmax_coefft_SUR   0.6 # Steepness of the smooth feeding window curve of the predator  Benthic Carnivorous
 Kmax_coefft_MOL   0.6 # Steepness of the smooth feeding window curve of the predator  Mollusca
 Kmax_coefft_MA    0.6 # Steepness of the smooth feeding window curve of the predator  Macroalgae
 Kmax_coefft_PB    0.6 # Steepness of the smooth feeding window curve of the predator  Pelagic Bacteria
@@ -3760,7 +3760,7 @@ SQD_sn   1737.56     # Size biomass pool to available to be  consume Octupus [ m
 COR_sn   90.0        # Size biomass pool to available to be  consume Octupus [ mg N ]
 SCR_sn   1485.22     # Size biomass pool to available to be  consume Small crustaceans [ mg N ]
 BFF_sn   240.33      # Size biomass pool to available to be  consume Deposit feeders [ mg N ]
-BCA_sn   456.44      # Size biomass pool to available to be  consume Benthic Carnivorous [ mg N ]
+SUR_sn   456.44      # Size biomass pool to available to be  consume Benthic Carnivorous [ mg N ]
 MOL_sn   672.92      # Size biomass pool to available to be  consume Mollusca [ mg N ]
 SZO_sn   0.5           # Size biomass pool to available to be  consume Small Zooplankton [ mg N ]
 MZO_sn   0.7           # Size biomass pool to available to be  consume Medium Zooplankton [ mg N ]
@@ -3775,7 +3775,7 @@ k_refsDL  10000   # Reference labile detrit. level in sediments (if higher avail
 
 k_trans_COR 1.0
 k_trans_MOL 1.0
-k_trans_BCA 1.0
+k_trans_SUR 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
 C_OCT_T15   0.007   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
@@ -3786,7 +3786,7 @@ C_MZO_T15   0.08   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.05   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-C_BCA_T15   0.001   #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
+C_SUR_T15   0.001   #  Clearance rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.003   #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -3800,7 +3800,7 @@ vl_MZO 0.004
 vl_LZO 0.002
 vl_SCR 0.05
 vl_BFF 0.02
-vl_BCA 0.016
+vl_SUR 0.016
 vl_MOL 0.016
 vl_COR 0.001
 ## For vertebrates
@@ -3849,7 +3849,7 @@ ht_MZO 1.2        # Coefficient of handling time for MZO  [ mg N m-3 ]
 ht_LZO 4.5        # Coefficient of handling time for LZO  [ mg N m-3 ]
 ht_SCR 0.1       # Coefficient of handling time for SCR  [ mg N m-3 ]
 ht_BFF 40        # Coefficient of handling time for BFF  [ mg N m-3 ]
-ht_BCA 30        # Coefficient of handling time for BCA  [ mg N m-3 ]
+ht_SUR 30        # Coefficient of handling time for SUR  [ mg N m-3 ]
 ht_MOL 20        # Coefficient of handling time for MOL  [ mg N m-3 ]
 ht_COR 40        # Coefficient of handling time for COR  [ mg N m-3 ]
 
@@ -3941,7 +3941,7 @@ mum_MZO_T15   0.1      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.06     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-mum_BCA_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
+mum_SUR_T15   0.0001      #  Growth rate for Benthic Carnivorous [ m3(mg N)-1 d-1 ]
 mum_MOL_T15   0.0001      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_BB_T15    1.5        #  Growth rate of sediment bacteria
@@ -4009,7 +4009,7 @@ KL_SCR   0 # Lower threshold for feeding by Small crustaceans [ mg N m-3 ]
 KL_BFF   0 # Lower threshold for feeding by Deposit feeders [ mg N m-3 ]
 KL_LPH   0 # Lower threshold for feeding by Large phytoplankton [ mg N m-3 ]
 KL_SPH   0 # Lower threshold for feeding by Small phytoplankton [ mg N m-3 ]
-KL_BCA   0 # Lower threshold for feeding by Benthic Carnivorous [ mg N m-3 ]
+KL_SUR   0 # Lower threshold for feeding by Benthic Carnivorous [ mg N m-3 ]
 KL_MOL   0 # Lower threshold for feeding by Mollusca [ mg N m-3 ]
 KL_MA    0 # Lower threshold for feeding by Macroalgae [ mg N m-3 ]
 KL_PB    0 # Lower threshold for feeding by Pelagic Bacteria [ mg N m-3 ]
@@ -4045,7 +4045,7 @@ KU_SCR   0 # Half saturation for uptake by Small crustaceans [ mg N m-3 ]
 KU_BFF   0 # Half saturation for uptake by Deposit feeders [ mg N m-3 ]
 KU_LPH   0 # Half saturation for uptake by Large phytoplankton [ mg N m-3 ]
 KU_SPH   0 # Half saturation for uptake by Small phytoplankton [ mg N m-3 ]
-KU_BCA   0 # Half saturation for uptake by Benthic Carnivorous [ mg N m-3 ]
+KU_SUR   0 # Half saturation for uptake by Benthic Carnivorous [ mg N m-3 ]
 KU_MOL   0 # Half saturation for uptake by Mollusca [ mg N m-3 ]
 KU_MA    0 # Half saturation for uptake by Macroalgae [ mg N m-3 ]
 KU_PB    0 # Half saturation for uptake by Pelagic Bacteria [ mg N m-3 ]
@@ -4157,7 +4157,7 @@ KDEP_MZO   0 # Sediment penetration depth of Medium Zooplankton [ m ]
 KDEP_LZO   0 # Sediment penetration depth of Large Zooplankton [ m ]
 KDEP_SCR   0.01 # Sediment penetration depth of Small crustaceans [ m ]
 KDEP_BFF   0.03 # Sediment penetration depth of Deposit feeders [ m ]
-KDEP_BCA   0.01 # Sediment penetration depth of Benthic Carnivorous [ m ]
+KDEP_SUR   0.01 # Sediment penetration depth of Benthic Carnivorous [ m ]
 KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
@@ -4186,7 +4186,7 @@ E_MZO   0.45 # Assimilation efficiency on live food and carrion of Medium Zoopla
 E_LZO   0.45 # Assimilation efficiency on live food and carrion of Large Zooplankton
 E_SCR   0.4 # Assimilation efficiency on live food and carrion of Small crustaceans
 E_BFF   0.4 # Assimilation efficiency on live food and carrion of Deposit feeders
-E_BCA   0.35 # Assimilation efficiency on live food and carrion of Benthic Carnivorous
+E_SUR   0.35 # Assimilation efficiency on live food and carrion of Benthic Carnivorous
 E_MOL   0.35 # Assimilation efficiency on live food and carrion of Mollusca
 
 # Assimilation efficiency of consumers on plants
@@ -4214,7 +4214,7 @@ EPlant_MZO   0.45 # Assimilation efficiency on Plants of Medium Zooplankton
 EPlant_LZO   0.45 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
 EPlant_BFF   0.4  # Assimilation efficiency on Plants of Deposit feeders
-EPlant_BCA   0.5  # Assimilation efficiency on Plants of Benthic Carnivorous
+EPlant_SUR   0.5  # Assimilation efficiency on Plants of Benthic Carnivorous
 EPlant_MOL   0.45 # Assimilation efficiency on Plants of Mollusca
 
 # Assimilation efficiency of invertebrate consumers on labile detritus
@@ -4244,7 +4244,7 @@ EDL_SCR   0.4 # Assim efficiency on labile detritus of Small crustaceans
 EDL_BFF   0.3  # Assim efficiency on labile detritus of Deposit feeders
 EDL_LPH   0 # Assim efficiency on labile detritus of Large phytoplankton
 EDL_SPH   0 # Assim efficiency on labile detritus of Small phytoplankton
-EDL_BCA   0.2 # Assim efficiency on labile detritus of Benthic Carnivorous
+EDL_SUR   0.2 # Assim efficiency on labile detritus of Benthic Carnivorous
 EDL_MOL   0.25 # Assim efficiency on labile detritus of Mollusca
 EDL_PB    0.5  # Assim efficiency on labile detritus of Pelagic Bacteria
 EDL_BB    0.5 # Assim efficiency on labile detritus of Sediment Bacteria
@@ -4276,7 +4276,7 @@ EDR_SCR   0.01 # Assim efficiency on refractory detritus of Small crustaceans
 EDR_BFF   0.05 # Assim efficiency on refractory detritus of Deposit feeders
 EDR_LPH   0 # Assim efficiency on refractory detritus of Large phytoplankton
 EDR_SPH   0 # Assim efficiency on refractory detritus of Small phytoplankton
-EDR_BCA   0 # Assim efficiency on refractory detritus of Benthic Carnivorous
+EDR_SUR   0 # Assim efficiency on refractory detritus of Benthic Carnivorous
 EDR_MOL   0.03 # Assim efficiency on refractory detritus of Mollusca
 EDR_PB    0.25 # Assim efficiency on refractory detritus of Pelagic Bacteria
 EDR_BB    0.25 # Assim efficiency on refractory detritus of Sediment Bacteria
@@ -4308,7 +4308,7 @@ KA_SCR   0 # Scaling coefft in allometry of resp vs weight for Small crustaceans
 KA_BFF   0 # Scaling coefft in allometry of resp vs weight for Deposit feeders
 KA_LPH   0 # Scaling coefft in allometry of resp vs weight for Large phytoplankton
 KA_SPH   0 # Scaling coefft in allometry of resp vs weight for Small phytoplankton
-KA_BCA   0 # Scaling coefft in allometry of resp vs weight for Benthic Carnivorous
+KA_SUR   0 # Scaling coefft in allometry of resp vs weight for Benthic Carnivorous
 KA_MOL   0 # Scaling coefft in allometry of resp vs weight for Mollusca
 KA_MA    0 # Scaling coefft in allometry of resp vs weight for Macroalgae
 KA_PB    0 # Scaling coefft in allometry of resp vs weight for Pelagic Bacteria
@@ -4343,7 +4343,7 @@ KB_SCR   0 #  Exponent in respiration vs weight for Small crustaceans
 KB_BFF   0 #  Exponent in respiration vs weight for Deposit feeders
 KB_LPH   0 #  Exponent in respiration vs weight for Large phytoplankton
 KB_SPH   0 #  Exponent in respiration vs weight for Small phytoplankton
-KB_BCA   0 #  Exponent in respiration vs weight for Benthic Carnivorous
+KB_SUR   0 #  Exponent in respiration vs weight for Benthic Carnivorous
 KB_MOL   0 #  Exponent in respiration vs weight for Mollusca
 KB_MA    0 #  Exponent in respiration vs weight for Macroalgae
 KB_PB    0 #  Exponent in respiration vs weight for Pelagic Bacteria
@@ -4415,7 +4415,7 @@ MZO_mL   0.0005 # Linear mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mL   0.0005 # Linear mortality rate of Large Zooplankton [ d-1 ]
 SCR_mL   0 # Linear mortality rate of Small crustaceans [ d-1 ]
 BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
-BCA_mL   0 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
+SUR_mL   0 # Linear mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mL   0 # Linear mortality rate of Mollusca [ d-1 ]
 MA_mL    0 # Linear mortality rate of Large phytoplancton [ d-1 ]
 LPH_mL   0.0004  # Linear mortality rate of Large phytoplancton [ d-1 ]
@@ -4431,7 +4431,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-10 1e-12
+8e-11 5e-13
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 3e-10
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
@@ -4445,7 +4445,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-12 1e-11
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-8 5e-8
+3e-8 8e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-9 8e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
@@ -4459,7 +4459,7 @@ SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-11
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-3e-13 5e-11
+8e-13 1e-10
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 5e-11 5e-09
 
@@ -4472,7 +4472,7 @@ MZO_mQ   1e-14 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-14 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
-BCA_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
+SUR_mQ   1e-15 #  Quad. mortality rate of Benthic Carnivorous [ d-1 ]
 MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
 LPH_mQ   1e-15 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
@@ -4519,7 +4519,7 @@ mD_BFF   0.005 # Half oxygen mortality depth for  Deposit feeders [ m ]
 mD_COR   0.005 # Half oxygen mortality depth for  Deposit feeders [ m ]
 mD_LPH   1 # Half oxygen mortality depth for  Large phytoplankton [ m ]
 mD_SPH   1 # Half oxygen mortality depth for  Small phytoplankton [ m ]
-mD_BCA   0.005 # Half oxygen mortality depth for  Benthic Carnivorous [ m ]
+mD_SUR   0.005 # Half oxygen mortality depth for  Benthic Carnivorous [ m ]
 mD_MOL   0.005 #  Half oxygen mortality depth for  Mollusca [ m ]
 mD_PB    0.001 # Half oxygen mortality depth for  Pelagic Bacteria [ m ]
 mD_BB    0.001 # Half oxygen mortality depth for  Sediment Bacteria [ m ]
@@ -4532,7 +4532,7 @@ mO_BFF   0.00001 # Oxygen dependent mortality for  Deposit feeders [ d-1 ]
 mO_COR   0.00001 # Oxygen dependent mortality for  Deposit feeders [ d-1 ]
 mO_LPH   0 # Oxygen dependent mortality for  Large phytoplankton [ d-1 ]
 mO_SPH   0 # Oxygen dependent mortality for  Small phytoplankton [ d-1 ]
-mO_BCA   0.001 # Oxygen dependent mortality for  Benthic Carnivorous [ d-1 ]
+mO_SUR   0.001 # Oxygen dependent mortality for  Benthic Carnivorous [ d-1 ]
 mO_MOL   0.0001 # Oxygen dependent mortality for  Mollusca [ d-1 ]
 mO_PB    0.001 # Oxygen dependent mortality for  Pelagic Bacteria [ d-1 ]
 mO_BB    0.001 # Oxygen dependent mortality for  Sediment Bacteria [ d-1 ]
@@ -4545,7 +4545,7 @@ KO2_BFF   690 # Lethal oxygen limit for  Deposit feeders [ mg O2 m-3 ]
 KO2_COR   690 # Lethal oxygen limit for  Deposit feeders [ mg O2 m-3 ]
 KO2_LPH   0 # Lethal oxygen limit for  Large phytoplankton [ mg O2 m-3 ]
 KO2_SPH   0 # Lethal oxygen limit for  Small phytoplankton [ mg O2 m-3 ]
-KO2_BCA   890 # Lethal oxygen limit for  Benthic Carnivorous [ mg O2 m-3 ]
+KO2_SUR   890 # Lethal oxygen limit for  Benthic Carnivorous [ mg O2 m-3 ]
 KO2_MOL   890 # Lethal oxygen limit for  Mollusca [ mg O2 m-3 ]
 KO2_PB    0 # Lethal oxygen limit for  Pelagic Bacteria [ mg O2 m-3 ]
 KO2_BB    0 # Lethal oxygen limit for  Sediment Bacteria [ mg O2 m-3 ]
@@ -4557,7 +4557,7 @@ KO2LIM_BFF   890 # Limiting oxygen level for settled Deposit feeders [ mg O2 m-3
 KO2LIM_COR   890 # Limiting oxygen level for settled Deposit feeders [ mg O2 m-3 ]
 KO2LIM_LPH   0 # Limiting oxygen level for settled Large phytoplankton [ mg O2 m-3 ]
 KO2LIM_SPH   0 # Limiting oxygen level for settled Small phytoplankton [ mg O2 m-3 ]
-KO2LIM_BCA   1220 # Limiting oxygen level for settled Benthic Carnivorous [ mg O2 m-3 ]
+KO2LIM_SUR   1220 # Limiting oxygen level for settled Benthic Carnivorous [ mg O2 m-3 ]
 KO2LIM_MOL   1990 # Limiting oxygen level for settled Mollusca [ mg O2 m-3 ]
 KO2LIM_PB    0 # Limiting oxygen level for settled Pelagic Bacteria [ mg O2 m-3 ]
 KO2LIM_BB    0 # Limiting oxygen level for settled Sediment Bacteria [ mg O2 m-3 ]
@@ -4665,7 +4665,7 @@ FSBDR_SBF   0 # Seabird slopping feeding for Small benthic fish [ Proportion ]
 FSBDR_LBF   0 # Seabird slopping feeding for Large benthic fish [ Proportion ]
 FSBDR_SCR   0 # Seabird slopping feeding for Small crustaceans [ Proportion ]
 FSBDR_BFF   0 # Seabird slopping feeding for Deposit feeders [ Proportion ]
-FSBDR_BCA   0 # Seabird slopping feeding for Sea urchins [ Proportion ]
+FSBDR_SUR   0 # Seabird slopping feeding for Sea urchins [ Proportion ]
 FSBDR_MOL   0 # Seabird slopping feeding for Mollusca [ Proportion ]
 
 # Demersal fish sloppy feeding
@@ -4696,7 +4696,7 @@ FDG_MZO   0.25 # Fraction of non-assimilate lost to detritus for  Medium Zooplan
 FDG_LZO   0.3 # Fraction of non-assimilate lost to detritus for  Large Zooplankton [ Proportion ]
 FDG_SCR   0.3 # Fraction of non-assimilate lost to detritus for  Small crustaceans [ Proportion ]
 FDG_BFF   0.35 # Fraction of non-assimilate lost to detritus for  Deposit feeders [ Proportion ]
-FDG_BCA   0.3 # Fraction of non-assimilate lost to detritus for  Benthic Carnivorous [ Proportion ]
+FDG_SUR   0.3 # Fraction of non-assimilate lost to detritus for  Benthic Carnivorous [ Proportion ]
 FDG_MOL   0.3 # Fraction of non-assimilate lost to detritus for  Mollusca [ Proportion ]
 
 # Fraction of non-assimilate from labile detrital food lost to detritus
@@ -4724,7 +4724,7 @@ FDGDL_MZO   0.05 # Detrit contrib from unassim lab detrit ingested by  Medium Zo
 FDGDL_LZO   0.05 # Detrit contrib from unassim lab detrit ingested by  Large Zooplankton [ Proportion ]
 FDGDL_SCR   0.05 # Detrit contrib from unassim lab detrit ingested by  Small crustaceans [ Proportion ]
 FDGDL_BFF   0.5 # Detrit contrib from unassim lab detrit ingested by  Deposit feeders [ Proportion ]
-FDGDL_BCA   0.5 # Detrit contrib from unassim lab detrit ingested by  Benthic Carnivorous [ Proportion ]
+FDGDL_SUR   0.5 # Detrit contrib from unassim lab detrit ingested by  Benthic Carnivorous [ Proportion ]
 FDGDL_MOL   0.5 # Detrit contrib from unassim lab detrit ingested by  Mollusca [ Proportion ]
 
 # Fraction of non-assimilate from refractory detrital food lost to detritus
@@ -4752,7 +4752,7 @@ FDGDR_MZO   0.008 # Detrit contrib from unassim ref detrit ingested by  Medium Z
 FDGDR_LZO   0.009 # Detrit contrib from unassim ref detrit ingested by  Large Zooplankton [ Proportion ]
 FDGDR_SCR   0.05 # Detrit contrib from unassim ref detrit ingested by  Small crustaceans [ Proportion ]
 FDGDR_BFF   0.05 # Detrit contrib from unassim ref detrit ingested by  Deposit feeders [ Proportion ]
-FDGDR_BCA   0.05 # Detrit contrib from unassim ref detrit ingested by  Benthic Carnivorous [ Proportion ]
+FDGDR_SUR   0.05 # Detrit contrib from unassim ref detrit ingested by  Benthic Carnivorous [ Proportion ]
 FDGDR_MOL   0.08 # Detrit contrib from unassim ref detrit ingested by  Mollusca [ Proportion ]
 
 # Fraction of mortality products lost to detritus
@@ -4779,7 +4779,7 @@ FDM_MZO   0.025 # Detrit contrib from mortality of  Medium Zooplankton [ Proport
 FDM_LZO   0.03  # Detrit contrib from mortality of  Large Zooplankton [ Proportion ]
 FDM_SCR   0.15 # Detrit contrib from mortality of  Small crustaceans [ Proportion ]
 FDM_BFF   0.25 # Detrit contrib from mortality of  Deposit feeders [ Proportion ]
-FDM_BCA   0.25 # Detrit contrib from mortality of  Benthic Carnivorous [ Proportion ]
+FDM_SUR   0.25 # Detrit contrib from mortality of  Benthic Carnivorous [ Proportion ]
 FDM_MOL   0.25 # Detrit contrib from mortality of  Mollusca [ Proportion ]
 FDM_PB    0.6  # Detrit contrib from mortality of  Pelagic Bacteria [ Proportion ]
 FDM_BB    0.6  # Detrit contrib from mortality of  Sediment Bacteria [ Proportion ]
@@ -5344,7 +5344,7 @@ intersp_depend_recruit_MZO   0 # Flag indicating interspecies dependence of recr
 intersp_depend_recruit_LZO   0 # Flag indicating interspecies dependence of recruitment for LZO
 intersp_depend_recruit_SCR   0 # Flag indicating interspecies dependence of recruitment for SCR
 intersp_depend_recruit_BFF   0 # Flag indicating interspecies dependence of recruitment for BFF
-intersp_depend_recruit_BCA   0 # Flag indicating interspecies dependence of recruitment for BCA
+intersp_depend_recruit_SUR   0 # Flag indicating interspecies dependence of recruitment for SUR
 intersp_depend_recruit_MOL   0 # Flag indicating interspecies dependence of recruitment for MOL
 intersp_depend_recruit_PB    0 # Flag indicating interspecies dependence of recruitment for PB
 intersp_depend_recruit_BB    0 # Flag indicating interspecies dependence of recruitment for BB
@@ -5372,7 +5372,7 @@ intersp_depend_sp_MZO   0 # ID of species recruitment dependent on
 intersp_depend_sp_LZO   0 # ID of species recruitment dependent on
 intersp_depend_sp_SCR   0 # ID of species recruitment dependent on
 intersp_depend_sp_BFF   0 # ID of species recruitment dependent on
-intersp_depend_sp_BCA   0 # ID of species recruitment dependent on
+intersp_depend_sp_SUR   0 # ID of species recruitment dependent on
 intersp_depend_sp_MOL   0 # ID of species recruitment dependent on
 intersp_depend_sp_PB    0 # ID of species recruitment dependent on
 intersp_depend_sp_BB    0 # ID of species recruitment dependent on
@@ -5400,7 +5400,7 @@ intersp_depend_scale_MZO   0 # Scalar for dependency of recruitment
 intersp_depend_scale_LZO   0 # Scalar for dependency of recruitment
 intersp_depend_scale_SCR   0 # Scalar for dependency of recruitment
 intersp_depend_scale_BFF   0 # Scalar for dependency of recruitment
-intersp_depend_scale_BCA   0 # Scalar for dependency of recruitment
+intersp_depend_scale_SUR   0 # Scalar for dependency of recruitment
 intersp_depend_scale_MOL   0 # Scalar for dependency of recruitment
 intersp_depend_scale_PB    0 # Scalar for dependency of recruitment
 intersp_depend_scale_BB    0 # Scalar for dependency of recruitment
@@ -5865,7 +5865,7 @@ trait_active_LPH   8 # Active traits for Large phytoplankton
 0 0 0 0 0 0 0 0
 trait_active_SPH   8 # Active traits for Small phytoplankton
 0 0 0 0 0 0 0 0
-trait_active_BCA   8 # Active traits for Benthic Carnivorous
+trait_active_SUR   8 # Active traits for Benthic Carnivorous
 0 0 0 0 0 0 0 0
 trait_active_MOL   8 # Active traits for Mollusca
 0 0 0 0 0 0 0 0
@@ -5909,7 +5909,7 @@ max_prop_shift_SCR   0 # Max proportional shift in phenotypes with aging for Sma
 max_prop_shift_BFF   0 # Max proportional shift in phenotypes with aging for Deposit feeders
 max_prop_shift_LPH   0 # Max proportional shift in phenotypes with aging for Large phytoplankton
 max_prop_shift_SPH   0 # Max proportional shift in phenotypes with aging for Small phytoplankton
-max_prop_shift_BCA   0 # Max proportional shift in phenotypes with aging for Benthic Carnivorous
+max_prop_shift_SUR   0 # Max proportional shift in phenotypes with aging for Benthic Carnivorous
 max_prop_shift_MOL   0 # Max proportional shift in phenotypes with aging for Mollusca
 max_prop_shift_MA    0 # Max proportional shift in phenotypes with aging for Macroalgae
 max_prop_shift_PB    0 # Max proportional shift in phenotypes with aging for Pelagic Bacteria
@@ -5945,7 +5945,7 @@ inheritance_SCR   0 # Level of inheritance for Small crustaceans
 inheritance_BFF   0 # Level of inheritance for Deposit feeders
 inheritance_LPH   0 # Level of inheritance for Large phytoplankton
 inheritance_SPH   0 # Level of inheritance for Small phytoplankton
-inheritance_BCA   0 # Level of inheritance for Benthic Carnivorous
+inheritance_SUR   0 # Level of inheritance for Benthic Carnivorous
 inheritance_MOL   0 # Level of inheritance for Mollusca
 inheritance_MA    0 # Level of inheritance for Macroalgae
 inheritance_PB    0 # Level of inheritance for Pelagic Bacteria
@@ -5981,7 +5981,7 @@ trait_varianceSCR   0 # Level of trait variance for Small crustaceans
 trait_varianceBFF   0 # Level of trait variance for Deposit feeders
 trait_varianceLPH   0 # Level of trait variance for Large phytoplankton
 trait_varianceSPH   0 # Level of trait variance for Small phytoplankton
-trait_varianceBCA   0 # Level of trait variance for Benthic Carnivorous
+trait_varianceSUR   0 # Level of trait variance for Benthic Carnivorous
 trait_varianceMOL   0 # Level of trait variance for Mollusca
 trait_varianceMA    0 # Level of trait variance for Macroalgae
 trait_variancePB    0 # Level of trait variance for Pelagic Bacteria
@@ -6017,7 +6017,7 @@ min_trait_variance_SCR   0 # Minimum level of trait variance for Small crustacea
 min_trait_variance_BFF   0 # Minimum level of trait variance for Deposit feeders
 min_trait_variance_LPH   0 # Minimum level of trait variance for Large phytoplankton
 min_trait_variance_SPH   0 # Minimum level of trait variance for Small phytoplankton
-min_trait_variance_BCA   0 # Minimum level of trait variance for Benthic Carnivorous
+min_trait_variance_SUR   0 # Minimum level of trait variance for Benthic Carnivorous
 min_trait_variance_MOL   0 # Minimum level of trait variance for Mollusca
 min_trait_variance_MA    0 # Minimum level of trait variance for Macroalgae
 min_trait_variance_PB    0 # Minimum level of trait variance for Pelagic Bacteria
@@ -6061,7 +6061,7 @@ SCR_RugCover_scalar 0.2
 BFF_RugCover_scalar 0.2
 LPH_RugCover_scalar 0.01
 SPH_RugCover_scalar 0.01
-BCA_RugCover_scalar 0.2
+SUR_RugCover_scalar 0.2
 MOL_RugCover_scalar 0.2
 # MA_RugCover_scalar 0.1
 # PB_RugCover_scalar 0.1
@@ -6097,7 +6097,7 @@ SCR_rugFeedScalar 0.000000001
 BFF_rugFeedScalar 0.000000001
 LPH_rugFeedScalar 0.000000001
 SPH_rugFeedScalar 0.000000001
-BCA_rugFeedScalar 0.000000001
+SUR_rugFeedScalar 0.000000001
 MOL_rugFeedScalar 0.000000001
 # MA_RugCover_scalar 0.1
 # PB_RugCover_scalar 0.1
@@ -6150,7 +6150,7 @@ SCR_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small crus
 BFF_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Deposit feeders
 LPH_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Large phytoplankton
 SPH_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Small phytoplankton
-BCA_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Benthic Carnivorous
+SUR_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Benthic Carnivorous
 MOL_rec_HabDepend   0 # Recruitment dependent on demersal habitat for Mollusca
 NO_rec_HabDepend    0 # Recruitment dependent on demersal habitat for Nitrate
 MA_rec_HabDepend    0 # Recruitment dependent on demersal habitat for Macroalgae
@@ -6199,7 +6199,7 @@ SCR_Arsenic_LD50   100 # Arsenic tolerance 50 Small crustaceans
 BFF_Arsenic_LD50   100 # Arsenic tolerance 50 Deposit feeders
 LPH_Arsenic_LD50   100 # Arsenic tolerance 50 Large phytoplankton
 SPH_Arsenic_LD50   100 # Arsenic tolerance 50 Small phytoplankton
-BCA_Arsenic_LD50   100 # Arsenic tolerance 50 Benthic Carnivorous
+SUR_Arsenic_LD50   100 # Arsenic tolerance 50 Benthic Carnivorous
 MOL_Arsenic_LD50   100 # Arsenic tolerance 50 Mollusca
 NO_Arsenic_LD50    100 # Arsenic tolerance 50 Nitrate
 MA_Arsenic_LD50    100 # Arsenic tolerance 50 Macroalgae
@@ -6235,7 +6235,7 @@ SCR_Arsenic_LD100   1000 # Arsenic tolerance 50 Small crustaceans
 BFF_Arsenic_LD100   1000 # Arsenic tolerance 50 Deposit feeders
 LPH_Arsenic_LD100   1000 # Arsenic tolerance 50 Large phytoplankton
 SPH_Arsenic_LD100   1000 # Arsenic tolerance 50 Small phytoplankton
-BCA_Arsenic_LD100   1000 # Arsenic tolerance 50 Benthic Carnivorous
+SUR_Arsenic_LD100   1000 # Arsenic tolerance 50 Benthic Carnivorous
 MOL_Arsenic_LD100   1000 # Arsenic tolerance 50 Mollusca
 NO_Arsenic_LD100    1000 # Arsenic tolerance 50 Nitrate
 MA_Arsenic_LD100    1000 # Arsenic tolerance 50 Macroalgae
