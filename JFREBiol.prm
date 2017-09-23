@@ -3785,7 +3785,7 @@ C_MZO_T15   0.08   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.05   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-C_SUR_T15   0.001   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
+C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.003   #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -3940,8 +3940,8 @@ mum_MZO_T15   0.1      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.06     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-mum_SUR_T15   0.0001      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
-mum_MOL_T15   0.0001      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
+mum_MOL_T15   0.0005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 
@@ -4156,7 +4156,7 @@ KDEP_MZO   0 # Sediment penetration depth of Medium Zooplankton [ m ]
 KDEP_LZO   0 # Sediment penetration depth of Large Zooplankton [ m ]
 KDEP_SCR   0.01 # Sediment penetration depth of Small crustaceans [ m ]
 KDEP_BFF   0.03 # Sediment penetration depth of Deposit feeders [ m ]
-KDEP_SUR   0.01 # Sediment penetration depth of Sea Urchin [ m ]
+KDEP_SUR   0.03 # Sediment penetration depth of Sea Urchin [ m ]
 KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
@@ -4440,36 +4440,36 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 3e-11 8e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 5e-10
+1e-10 1e-09
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-12 1e-11
+1e-12 1e-09
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-8 8e-8
+3e-8 1e-7
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-9 8e-8
+1e-9 5e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-13 8e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 5e-8 8e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-10 1e-10
+1e-10 6e-10
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-5e-11 5e-11
+3e-11 3e-11
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-8e-13 1e-10
+1e-12 5e-10
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-5e-11 5e-09
+1e-10 8e-09
 
 ## Invertebrates
 OCT_mQ   1e-14 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-10 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   1e-14 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   1e-14 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   1e-15 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+MZO_mQ   1e-13 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   1e-13 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SCR_mQ   1e-12 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-15 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   1e-15 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-15 #  Quad. mortality rate of Mollusca [ d-1 ]
@@ -5111,7 +5111,7 @@ KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-4
+5
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
@@ -5205,7 +5205,7 @@ BHalpha_SBF   1.3E9                    # Beverton-Holt recruitment rate paramete
 BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
-BHbeta_SPL   1.4E+12       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
+BHbeta_SPL   1.4E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   4E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   5E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
@@ -6217,7 +6217,7 @@ ALF_Arsenic_LD100   1000 # Arsenic tolerance 50 Alfonsino
 ANG_Arsenic_LD100   1000 # Arsenic tolerance 50 Anguila
 CHO_Arsenic_LD100   1000 # Arsenic tolerance 50 Chondrichtyans
 OTA_Arsenic_LD100   1000 # Arsenic tolerance 50 Otariid
-DOL_Arsenic_LD100   1000 # Arsenic toleranDolphins 50 eeCetaceans
+DOL_Arsenic_LD100   1000 # Arsenic tolerancd Dolphins
 BIR_Arsenic_LD100   1000 # Arsenic tolerance 50 Birds
 OCT_Arsenic_LD100   1000 # Arsenic tolerance 50 Octupus
 SQD_Arsenic_LD100   1000 # Arsenic tolerance 50 Octupus
