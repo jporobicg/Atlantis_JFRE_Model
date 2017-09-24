@@ -8893,3 +8893,81 @@ Removed: CET
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+***** SCR
+- from : 0.003
+- to : 0.002
+***** SUR
+- from : 0.001
+- to : 0.003
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+**** Recruitment
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+**** Recruitment
+***** SPL
+- Beta :
+- from : 1.4E+12
+- to : 1.4E+11
+***** DOL
+- from : 4
+- to : 5
+**** Running time
+**** Mum
+***** SUR
+- from : 0.0001
+- to : 0.0005
+***** MOL
+- from : 0.0001
+- to : 0.0005
+**** Mortality
+***** ALF
+- from : 1e-10 5e-10
+- to : 1e-10 1e-09
+***** LPF
+- from : 1e-10 1e-10
+- to : 1e-10 6e-10
+***** ANG
+- from : 1e-12 1e-11
+- to : 1e-12 1e-09
+***** CHO
+- from : 3e-8 8e-8
+- to : 3e-8 1e-7
+***** OTA
+- from : 1e-9 8e-8
+- to : 1e-9 5e-8
+***** SBF
+- from : 8e-13 1e-10
+- to : 1e-12 5e-10
+***** MPF
+- from : 5e-11 5e-11
+- to : 3e-11 3e-11
+***** LBF
+- from : 5e-11 5e-09
+- to : 1e-10 8e-09
+***** SCR
+- from 1e15
+- to : 1e12
+**** Initial Weighr
+*** Others
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170922161752
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170922161752.png]]
+* Run PC-Demiurgo 20170924130236
+  - Run start: 2017-09-24 13:02:36
+  - Run end: 2017-09-25 06:32:18
+  - log file : [[file:Calibration/20170925063218.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
