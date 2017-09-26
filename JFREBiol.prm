@@ -244,7 +244,7 @@ flagrecruitLBF 3
 flagext_reprodSPL 0
 flagext_reprodGCR 0
 flagext_reprodBRC 0
-flagext_reprodVID 1
+flagext_reprodVID 0
 flagext_reprodANG 0
 flagext_reprodORO 0
 flagext_reprodALF 0
@@ -3351,6 +3351,7 @@ KHTI            1.5    # Factor handother deep demersal time increased by for re
 ## ~       PPrey Matrix   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
+##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
@@ -3460,11 +3461,11 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.075 0.07 1e-04 0.05 0.008 0.008 0 0 0 0.008 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.05 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.05 0.03 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.09 0.075 0.07 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
@@ -3476,13 +3477,13 @@ pPREY1SBF2  37
 pPREY2SBF2  37
 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
-0.001 0.005 0.005 0 0 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.05 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.005 0.005 0 0.001 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.05 1e-06 0.001 0.01 0.01 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
 0 0 0.005 0 0 1e-05 5e-05 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.05 1e-06 0.001 0.01 0.01 0.001 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LBF2  37
-0.05 0.03 0.01 0 0 0.001 0.05 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.05 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
+0.05 0.03 0.01 0 0.01 0.001 0.05 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.05 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF2  37
-0.01 0.001 0.005 0 0 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.05 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.001 0.005 0 0.005 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.05 0 0 0.05 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
 pPREYMZO  37
@@ -3905,7 +3906,7 @@ C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 3.9 24.38 47.86 68.51 82.6 91.67 97.31 100.77 102.84 104.09
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
-8.51 17.45 27.28 37.11 46.42 54.95 62.58 69.29 75.15 80.15
+19.45 39.89 62.35 84.82 106.11 125.60 143.05 158.38 171.76 183.21
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 2.74 6.3 17.84 32.27 47.81 63.59 78.8 93.07 106.12 117.99
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
@@ -3953,7 +3954,7 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.008 0.05 0.175 0.41 1.36 2.6 2.8 3.733 4.417 4.957
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
-4 9 10.4 11.25 15.15 15.72 20.64 26.784 34.344 50.76
+13.333 13.846 14.857 18.75 25.25 26.2 41.28 53.568 68.688 101.52
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 0.24  1.85   2.43
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 0.14 0.24 0.83 1.36 2.22 3.63 6.04 10.03
@@ -3961,15 +3962,15 @@ mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ] 0.00 0.04 
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 45.47 62.905 97.835 125.795 149.28 169.495 149.224 160.96 170.36 117.09
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
-0.002 1.3 8.1 18.1 31.9 49.4 50.714 64.667 85.467 110.133
+0.2 1.3 8.1 18.1 31.9 49.4 50.714 64.667 85.467 110.133
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
-0.05 0.95 2.55 4.9 9.2 17.7 35.05 47.067 56.48 56.48
+0.5 9.5 21.25 32.667 46 88.5 100.143 117.668 112.96 94.133
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-1 4.671123 5.858301 8.806035 9.815369 10.38608 10.70514 10.88426 10.98644
+1 11.678 19.528 22.015 24.538 25.965 26.763 27.211 27.466 27.466
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 4.56 3.705 6.213 9.5283333333 9.7992 20.52765
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
-1.3 2.5 7.3 8.2 10.2 11.1 18.4 18.4 18.4 18.4
+13 25 36.5 41 51 55.5 92 92 92 92
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 0.6 2.75 3.75 12.7 15.4 17.35 26.6 33.769 34.458 99.5
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
@@ -4166,20 +4167,20 @@ E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
 E_GCR   0.44 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
-E_ORO   0.3 # Assimilation efficiency on live food and carrion of Orange Roughy
+E_ORO   0.4 # Assimilation efficiency on live food and carrion of Orange Roughy
 E_ALF   0.55 # Assimilation efficiency on live food and carrion of Alfonsino
-E_ANG   0.2 # Assimilation efficiency on live food and carrion of Anguila
-E_CHO   0.3 # Assimilation efficiency on live food and carrion of Chondrichtyans
+E_ANG   0.45 # Assimilation efficiency on live food and carrion of Anguila
+E_CHO   0.38 # Assimilation efficiency on live food and carrion of Chondrichtyans
 E_OTA   0.35 # Assimilation efficiency on live food and carrion of Otariid
 E_DOL   0.35 # Assimilation efficiency on live food and carrion of Cetaceans
 E_BIR   0.65 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
-E_LPF   0.35 # Assimilation efficiency on live food and carrion of Large pelagic fish
+E_LPF   0.45 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_MPF   0.6 # Assimilation efficiency on live food and carrion of Small pelagic fish
-E_SBF   0.45 # Assimilation efficiency on live food and carrion of Small benthic fish
+E_SBF   0.5 # Assimilation efficiency on live food and carrion of Small benthic fish
 E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
 E_MZO   0.45 # Assimilation efficiency on live food and carrion of Medium Zooplankton
@@ -4207,7 +4208,7 @@ EPlant_COR   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_LPF   0    # Assimilation efficiency on Plants of Large pelagic fish
 EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_MPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
-EPlant_SBF   0.45 # Assimilation efficiency on Plants of Small benthic fish
+EPlant_SBF   0.55 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
 EPlant_SZO   0.45 # Assimilation efficiency on Plants of Small Zooplankton
 EPlant_MZO   0.45 # Assimilation efficiency on Plants of Medium Zooplankton
@@ -4374,11 +4375,11 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.0001 0.0027
+0.0001 0.0025
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0.0005 0.002
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0.0001 0.002739726
+0.00005 0.0025
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
@@ -4390,11 +4391,11 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0.0001 0.001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.0005 0.00001
+0.00035 0.000009
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0.00001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
-0.001 0.0005
+0.0008 0.00045
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
@@ -4439,21 +4440,21 @@ BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 8e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-3e-11 9e-10
+9e-12 9e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 4e-10 8e-09
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-10 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-8 5e-7
+3e-8 7e-7
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 1e-9 5e-10
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 1e-13 1e-13
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-5e-8 5e-10
+1e-9 1e-11
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-10 6e-09
+1e-10 5e-08
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 5e-11 5e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
@@ -4461,7 +4462,7 @@ MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-12 1e-9
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-3e-10 1e-08
+8e-10 8e-08
 
 ## Invertebrates
 OCT_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -5112,7 +5113,7 @@ KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-5
+500
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
