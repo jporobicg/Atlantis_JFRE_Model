@@ -20,7 +20,7 @@ hd5.name Inputs/Forcing_Hydro/06_JFRE_hydro.nc
 use_tempfiles     1  # Temperature time series data file
 ntempfiles    	  1  # The number of temperature input files
 Temperature0.name Inputs/Forcing_Hydro/JFRE_temp.nc
-temp_rewind       0
+temp_rewind       1
 
 ## ~~~~~~~~~~~~~~~~~~ ##
 ## ~     Salinity   ~ ##
@@ -28,7 +28,7 @@ temp_rewind       0
 use_saltfiles   1  # Salinity time series data file
 nsaltfiles 	1  # The number of salinity files
 Salinity0.name 	Inputs/Forcing_Hydro/JFRE_salt.nc
-salt_rewind     0
+salt_rewind     1
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Larval dispersion      ~ ##
