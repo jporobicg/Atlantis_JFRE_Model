@@ -4375,7 +4375,7 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.0001 0.0025
+0.00005 0.0021
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0.0005 0.002
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
