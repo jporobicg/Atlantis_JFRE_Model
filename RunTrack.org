@@ -9462,3 +9462,162 @@ Removed: CET
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+***** SZO
+- from : 0.7
+- to : 0.1
+***** MZO
+- from : 0.1
+- to : 0.05
+***** LZO
+- from : 0.06
+- to : 0.01
+***** OCT
+- from : 0.001
+- to : 0.0001
+***** SQD
+- from : 0.5
+- to : 0.2
+**** Clearance
+***** OCT
+- from : 0.007
+- to : 0.001
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+***** ML
+****** OTA
+- from : 0.0002 0.000009
+- to : 0.0001 0.000009
+****** GCR
+- from :0.0005 0.002
+- to : 0.0005 0.0018
+****** BRC
+- from : 0.00005 0.0015
+- to : 0.00005 0.001
+****** OTA
+- from : 0.00035 0.000009
+- to : 0.0002 0.000009
+****** BIR
+- from : 0.0008 0.00045
+- to : 0.0008 0.00035
+****** MPF
+- from : 0  0.0001
+- to : 0  0.00005
+****** ANG
+- from : 0.001 0.0005
+- to : 0.0005 0.0005
+****** SQD
+- from : 0.001
+- to : 0.0001
+**** Recruitment
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+**** Recruitment
+***** ORO
+* Alpha
+- from : 9.47508E+12
+- to : 9.47508E+13
+***** SPF
+- alpha
+- from : 9.74E+9
+- to : 9.74E+10
+**** Running time
+**** Mum
+***** ORO
+- from : 0.05 3.9 7.15 7.17 24.78 28.333 33.3 36.29 48.312 80.208
+- to : 0.25 19.5 35.75 23.9 41.3 47.222 55.5 60.483 80.52 114.583
+***** BIR
+- from : 1.308548 2.453507 3.564064 4.680342 5.564694 6.241930 6.750315 7.127507 7.405688 5.131481
+- to : 0.059 0.613 1.55 3.9 5.059 5.674 6.137 6.48 6.732 4.665
+***** CHO
+- from : 0.9693378125 5.861018 40.51596 55.502375 73.290315 81.3076 87.262905 91.662335 94.91327 77.1632
+- to : 0.269	9.768	101.29	185.008	200.795	203.269	218.157	229.156	316.378	257.211
+***** LPF
+- from : 0.5 9.5 21.25 32.667 46 88.5 100.143 117.668 112.96 94.133
+- to : 2.5 31.667 35.417 40.834 46 88.5 100.143 117.668 112.96 94.133
+**** Mortality
+***** MQ
+****** SPL
+- from : 8e-11 5e-13
+- to : 1e-10 1e-11
+****** BFF
+- from : 1e12
+- to : 1e10
+****** SUR
+- from : 1e12
+- to : 1e10
+****** MOL
+- from : 1e15
+- to : 1e12
+****** LPH
+- from : 1e15
+- to : 1e12
+****** SPH
+- from : 1e15
+- to : 1e12
+****** MPF
+- from : 3e-11 3e-11
+- to : 3e-11 1e-10
+****** ANG
+- from : 1e-10 1e-07
+- to : 1e-9 5e-07
+****** SBF
+- from : 1e-12 1e-9
+- to : 1e-10 1e-8
+****** SPF
+- from : 5e-11 5e-08
+- to : 5e-10 7e-08
+****** BIR
+- from : 1e-9 1e-11
+- to : 1e-9 1e-10
+****** OTA
+- from : 1e-9 5e-10
+- to : 10e-9 5e-9
+****** ALF
+- from : 4e-10 8e-09
+- to : 4e-10 5e-08
+****** GCR
+- from : 1e-10 1e-8
+- to : 1e-10 1e-7
+****** CHO
+- from : 3e-8 7e-7
+- to : 3e-8 1e-6
+****** LPF
+- from : 1e-10 1e-08
+- to : 1e-9 5e-07
+****** LBF
+- from : 1e-10 8e-08
+- to : 9e-9 7e-07
+****** ORO
+- from : 9e-12 9e-10
+- to : 5e-11 5e-9
+***** ML
+****** BRC
+- from : 0.00005 0.0025
+- to : 0.00005 0.0018
+**** Initial Weighr
+*** Others
+**** Gape Size
+***** ORO
+- from : 0.4
+- to : 0.5
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170928093233
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170928093233.png]]
+* Run PC-Demiurgo 20170928160937
+  - Run start: 2017-09-28 16:09:37
+  - Run end: 2017-09-29 06:36:49
+  - log file : [[file:Calibration/20170929063649.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
