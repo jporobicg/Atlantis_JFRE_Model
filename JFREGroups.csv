@@ -22,7 +22,7 @@ MZO,19,1,Med_zooplankton,Medium Zooplankton,1,1,1,1,1,1,1,1,0,0,0,MED_ZOO,1,0,0,
 LZO,20,1,Large_zooplankton,Large Zooplankton,1,1,1,1,1,1,1,1,0,0,0,LG_ZOO,1,0,0,0,0,0,0,0,1
 SCR,21,1,Small_crus,Small crustaceans,1,1,1,1,1,1,0,0,0,1,0,MOB_EP_OTHER,1,0,0,0,0,0,0,1,0
 BFF,22,1,Deposit_feeders,Deposit feeders,1,1,1,1,1,1,0,0,0,1,0,LG_INF,1,0,0,0,0,0,0,0,0
-LPH,23,1,Large_phyto,Large phytoplankton,1,1,1,1,1,1,0,0,0,0,0,LG_PHY,0,0,0,0,0,0,0,0,0
+LPH,23,1,Large_phyto,Large phytoplankton,1,1,1,1,1,1,0,0,0,0,0,LG_PHY,0,0,1,0,0,0,0,0,0
 SPH,24,1,Small_phyto,Small phytoplankton,1,1,1,1,1,1,0,0,0,0,0,SM_PHY,0,0,0,0,0,0,0,0,0
 COR,25,1,Coral,Coral,1,1,1,1,1,1,0,0,0,1,0,CORAL,1,1,0,0,0,0,0,0,0
 SUR,26,1,Sea_Urchin,Sea Urchin,1,1,1,1,1,1,0,0,0,0,0,MOB_EP_OTHER,1,0,0,0,0,0,0,0,0

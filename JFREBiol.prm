@@ -250,7 +250,7 @@ flagext_reprodORO 0
 flagext_reprodALF 0
 flagext_reprodCHO 0
 flagext_reprodOTA 0
-flagext_reprodDOL 1
+flagext_reprodDOL 0
 flagext_reprodBIR 0
 flagext_reprodOCT 0
 flagext_reprodCOR 0
@@ -3484,11 +3484,11 @@ pPREY1LBF2  37
 pPREY2LBF2  37
 0.01 0.001 0.005 0 0.005 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.05 0 0 0.005 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0.05 0 0 0 0 0.005 0.001 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 1e-05 0 0 0 0.01 0.02 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0 0.01 0.001 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0.007 0.005 0 0 0 0 0 0 1e-04 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0.01 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
@@ -3936,11 +3936,11 @@ C_OTA 10
 mum_OCT_T15   0.00001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.2      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.01      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.005      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
-mum_BFF_T15   0.0001       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.0005      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.0005     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SCR_T15   0.0001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+mum_BFF_T15   0.00005       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
 mum_MOL_T15   0.0005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -4374,9 +4374,9 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.00005 0.0021
+0.00005 0.0018
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.0005 0.0018
+0.0005 0.0015
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0.00001 0.001
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
@@ -4402,9 +4402,9 @@ SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.0001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
-0.0001  0.00002
+0  0.00002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
-0.0000001 0.00001
+0 0.00001
 
 ## Invertebrates
 OCT_mL   0.001 # Linear mortality rate of Octupus [ d-1 ]
@@ -4431,7 +4431,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-8e-10 5e-10
+8e-10 1e-9
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 5e-7
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
@@ -4459,9 +4459,9 @@ SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-11 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-5e-10 1e-7
+5e-9 1e-7
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-5e-9 3e-07
+1e-8 3e-07
 
 ## Invertebrates
 OCT_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -4875,7 +4875,7 @@ ALF_Recruit_Time   91  # Length of larval period for  Alfonsino [ d ]
 ANG_Recruit_Time   300 # Length of larval period for  Anguila [ d ]
 CHO_Recruit_Time   600 # Length of larval period for  Chondrichtyans [ d ]
 OTA_Recruit_Time   335 # Length of larval period for  Otariid [ d ]
-DOL_Recruit_Time   335 # Length of larval period for  Dolphins [ d ]
+DOL_Recruit_Time   427 # Length of larval period for  Dolphins [ d ]
 BIR_Recruit_Time   90  # Length of larval period for  Birds [ d ]
 OCT_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
 SQD_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
@@ -5112,7 +5112,7 @@ KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.35
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-500
+4
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]

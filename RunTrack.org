@@ -7977,7 +7977,7 @@ y
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170910152023
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170910152023.png]]
@@ -8119,7 +8119,7 @@ y
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : 
+  - Commit Githhub :
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20170912112841
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170912112841.png]]
@@ -9309,7 +9309,7 @@ Removed: CET
 **** Recruitment
 ***** DOL
 - from : 5 KDENR
-- to : 5 KDENR
+- to : 500 KDENR
 **** Running time
 **** Mum
 ***** BRC
@@ -9387,7 +9387,7 @@ Removed: CET
 **** Pprey
 **** Recruitment
 ***** ORO
-* Alpha
+- Alpha
 - from : 9.47508E+12
 - to : 9.47508E+13
 ***** SPF
@@ -9522,7 +9522,7 @@ Removed: CET
 **** Pprey
 **** Recruitment
 ***** ORO
-* Alpha
+- Alpha
 - from : 9.47508E+12
 - to : 9.47508E+13
 ***** SPF
@@ -9621,3 +9621,85 @@ Removed: CET
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6221
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+***** SZO
+- from : 0.1
+- to : 0.01
+***** MZO
+- from : 0.05
+- to : 0.005
+***** LZO
+- from : 0.01
+- to : 0.001
+***** OCT
+- from : 0.001
+- to : 0.0001
+***** SQD
+- from : 0.5
+- to : 0.2
+**** Clearance
+***** OCT
+- from : 0.007
+- to : 0.001
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+***** ML
+**** Recruitment
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+**** Recruitment
+***** GCR
+- Beta
+- from : 9e+09
+- to : 5e+08
+**** Running time
+**** Mum
+***** ORO
+- from : 0.25 19.5 35.75 23.9 41.3 47.222 55.5 60.483 80.52 114.583
+- to : 1.25 39 44.688 34.143 59 67.46 79.286 86.404 134.2 190.972
+***** SPF
+- from : 1 11.678 19.528 22.015 24.538 25.965 26.763 27.211 27.466 27.466
+- to : 1.25 19.463 32.547 36.692 40.897 43.275 44.605 45.352 45.777 45.777
+***** LBF
+- from : 0.6 2.75 3.75 12.7 15.4 17.35 26.6 33.769 34.458 99.5
+- to : 3 11 12.5 31.75 30.8 31.545 48.364 61.398 62.651 165.833
+**** Mortality
+***** MQ
+****** GCR
+- from : 1e-10 1e-7
+- to : 1e-10 5e-7
+****** ORO
+- from : 9e-12 9e-10
+- to : 5e-11 5e-9
+****** ANG
+- from : 1e-10 1e-07
+- to : 1e-9 5e-07
+****** CHO
+- from : 3e-8 7e-7
+- to : 3e-8 5e-6
+****** BIR
+- from : 1e-9 1e-11
+- to : 5e-9 1e-9
+****** SBF
+- from : 1e-10 1e-8
+- to : 5e-10 1e-7
+****** LBF
+- from : 9e-9 7e-07
+- to : 5e-9 3e-07
+***** ML
+****** BRC
+- to : 0.00005 0.0018
+- to: 0.00001 0.001
+**** Initial Weighr
+*** Others
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20170928160937
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20170928160937.png]]
