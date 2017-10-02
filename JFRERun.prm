@@ -10,7 +10,7 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
-tstop         18250 day    # Stop time after the given period 14600 day = 40 años 10950
+tstop         21900 day    # Stop time after the given period 14600 day = 40 años 10950
 tburnday      0 day	   # Burnday
 external_box  0		   #
 
@@ -91,7 +91,7 @@ K_num_detritus      3      # Total number of detritus groups in the model (labil
 # (needed to  parameter arrays in the initialisation section of the model,
 # best left untouched for now)
 K_num_fisheries   11   # Maximum number of fisheries - must match the number of fisheries defined in your fisheries definition input file.
-K_num_ports       4    # Maxiumum number of ports in the model area
+K_num_ports       3    # Maxiumum number of ports in the model area
 K_max_num_zoning  1    # Maximum number of spatial zonings used in the model
 K_num_reg         2    # Maximum number of management zonings used in the model
 K_num_markets     2    # Maxiumum number of markets in the model area
