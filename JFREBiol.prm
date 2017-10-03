@@ -17,7 +17,7 @@ availflag  1 # Switch to filter flows based on active groups 1
 flagrandom 0 # Flag indicating whether add random wobble in aging/spawning dates (0=no, 1=yes)
 
 # Parameters defining groups
-K_num_invmig    5 # Maximum number of vertically migrating invertebrate groups
+K_num_invmig    7 # Maximum number of vertically migrating invertebrate groups
 readin_popratio 0 # Switch to indicate whether loading pre-existing age distributions or not 0
 
 # If fish respiration is off then the fish model is essentially/very similar to a Deriso-Schnute
@@ -4374,11 +4374,11 @@ KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.00005 0.0018
+0.00005 0.0009
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.00005 0.0015
+0.00005 0.0008
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0.00001 0.001
+0.00001 0.0008
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
@@ -4386,15 +4386,15 @@ ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
-0.0005 0.0005
+0.0005 0.0002
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
-0.0001 0.001
+0.00001 0.0001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
 0.0002 0.000009
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0.00001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
-0.0008 0.00035
+0.0008 0.000035
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
@@ -4418,8 +4418,8 @@ BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
 SUR_mL   0 # Linear mortality rate of Sea Urchin [ d-1 ]
 MOL_mL   0 # Linear mortality rate of Mollusca [ d-1 ]
 MA_mL    0 # Linear mortality rate of Large phytoplancton [ d-1 ]
-LPH_mL   0.0004  # Linear mortality rate of Large phytoplancton [ d-1 ]
-SPH_mL   0.0002  # Linear mortality rate of Mollusca [ d-1 ]
+LPH_mL   0.000004  # Linear mortality rate of Large phytoplancton [ d-1 ]
+SPH_mL   0.000002  # Linear mortality rate of Mollusca [ d-1 ]
 PB_mL    0 # Linear mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mL    0 # Linear mortality rate of Sediment Bacteria [ d-1 ]
 DL_mL    0 # Linear mortality rate of Labile detritus [ d-1 ]
@@ -4475,8 +4475,8 @@ BFF_mQ   1e-10 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   1e-10 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-12 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-12 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-12 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+LPH_mQ   1e-18 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-18 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-12 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
