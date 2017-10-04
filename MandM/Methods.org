@@ -52,7 +52,6 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
     svn update SETas_model_New
     svn update trunk
 - [X] If I udate I need to build atlantis again
-
 *** Build Atlantis [9/9]
 # to build Atlantis I need t compile and run using aototools
 - [X] cd  /home/demiurgo/Documents/2015/Atlantis_Model/trunk/atlantis
