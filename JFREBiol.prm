@@ -1441,10 +1441,10 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  1.2      # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  1.2     # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   3      # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
-MB_wc        0.01     # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
+mum_LPH_T15  1	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  1     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_MA_T15   3      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
 KI_LPH_T15  10  Light saturation, large phytoplankton W m-2 10 - 20
@@ -4410,9 +4410,9 @@ LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
 OCT_mL   0.001 # Linear mortality rate of Octupus [ d-1 ]
 SQD_mL   0.0001 # Linear mortality rate of Octupus [ d-1 ]
 COR_mL   0 # Linear mortality rate of Octupus [ d-1 ]
-SZO_mL   0.0005 # Linear mortality rate of Small Zooplankton [ d-1 ]
-MZO_mL   0.0005 # Linear mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mL   0.0005 # Linear mortality rate of Large Zooplankton [ d-1 ]
+SZO_mL   0.0001 # Linear mortality rate of Small Zooplankton [ d-1 ]
+MZO_mL   0.0001 # Linear mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mL   0.0001 # Linear mortality rate of Large Zooplankton [ d-1 ]
 SCR_mL   0 # Linear mortality rate of Small crustaceans [ d-1 ]
 BFF_mL   0 # Linear mortality rate of Deposit feeders [ d-1 ]
 SUR_mL   0 # Linear mortality rate of Sea Urchin [ d-1 ]

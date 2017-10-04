@@ -6512,7 +6512,7 @@ from 0 0.0001 to 0.0001 0.00001
 **** Mortality
 ***** MQ
 ****** SPF
-* from : 1-e15 1e1-6 to 5-e15 1-e15
+- from : 1-e15 1e1-6 to 5-e15 1-e15
 ****** SPL
 - from 1e-16 1e-17 to 5e-16 5e-17
 ****** SBF
@@ -9892,34 +9892,23 @@ Removed: CET
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20171003090203
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171003090203.png]]
-* Run PC-Demiurgo 20171004103454
-  - Run start: 2017-10-04 10:34:54
-  - Run end: 2017-10-04 10:47:48
-  - log file : [[file:Calibration/20171004104748.bak][Backupfile]]
+* Run PC-Demiurgo 20171005084943
+  - Run start: 2017-10-05 08:49:43
+  - Run end: 2017-10-05 08:50:01
+  - log file : [[file:Calibration/20171005085001.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
-  - Atlantis Version : #Atlantis2 Updated to Version 6221
+  - Atlantis Version : #Atlantis2 Updated to Version 6246
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
-  - Commit Githhub : ** Input
-*** Decreased
-**** Clearance
-**** Mum
-**** Clearance
-**** Pprey
-**** Lysis
-**** Light saturation and absorption
-**** Mortality
-***** MQ
-******
-***** ML
+  - Commit Githhub : 
  - Biomasss Plot
-#+CAPTION: Biomass plot for the simulation 20171004103454
-[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171004103454.png]]
-* Run PC-Demiurgo 20171004104824
-  - Run start: 2017-10-04 10:48:24
-  - Run end: 2017-10-04 14:03:05
-  - log file : [[file:Calibration/20171004140305.bak][Backupfile]]
+#+CAPTION: Biomass plot for the simulation 20171005084943
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171005084943.png]]
+* Run PC-Demiurgo 20171005085013
+  - Run start: 2017-10-05 08:50:13
+  - Run end: 2017-10-05 10:14:54
+  - log file : [[file:Calibration/20171005101454.bak][Backupfile]]
   - OS : Ubuntu 14.04.3 LTS
   - Compiler version : gcc 4.8
   - Bash Version : 4.3.11(1)-release
