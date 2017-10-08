@@ -4364,8 +4364,8 @@ Ktmp_bird    0.08  # Factor relating temperature to respiration for seabirds
 Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
-KLYS_LPH   0.00005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.0001 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_LPH   0.0002 # Lysis rate of Large phytoplankton [ d-1 ]
+KLYS_SPH   0.0004 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.0002 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
@@ -5191,7 +5191,7 @@ KDENR_COR 1
 # Beverton-Holt recruitment
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   1.168682E+11   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_BRC   9.68682E+10   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508E+13              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   2.5E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
