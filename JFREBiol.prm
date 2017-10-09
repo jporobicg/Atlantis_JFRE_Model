@@ -542,7 +542,7 @@ flagANGMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out o
 flagALFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCHOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOTAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
-flagDOLMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagDOLMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOCTMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCORMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSQDMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
@@ -3384,21 +3384,21 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.08 0 0 0 0.05 0.08 0.01 0 0.005 0.08 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.08 0 0 0 0.05 0.1 0.01 0 0.005 0.08 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.03 0 0 0 0.05 0.08 0 0.001 0.005 0.08 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.03 0 0 0 0.05 0.1 0 0.001 0.005 0.08 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.08 0.01 0 0 0.001 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.1 0.01 0 0 0.001 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.08 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.1 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.005 0.05 0.1 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.005 0.05 0.1 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.01 0.05 0.1 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.01 0.05 0.1 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0.001 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0.001 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 1e-04 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 1e-04 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.05 0.001 0.01 0 0 0.005 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG1  37
@@ -4366,7 +4366,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.0002 # Lysis rate of Large phytoplankton [ d-1 ]
 KLYS_SPH   0.0004 # Lysis rate of Small phytoplankton [ d-1 ]
-KLYS_MA    0.0002 # Lysis rate of Macroalgae [ d-1 ]
+KLYS_MA    0.00015 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -4378,7 +4378,7 @@ SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0.00005 0.0008
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0.00001 0.0008
+0.000001 0.0008
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
@@ -4386,9 +4386,9 @@ ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
-0.0005 0.0002
+0.000001 0.0002
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
-0.00001 0.0001
+0 0.0001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
 0.0002 0.000009
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
@@ -4435,7 +4435,7 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 5e-7
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-8e-10 5e-13
+1e-12 1e-12
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 8e-11
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -4445,11 +4445,11 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-8 5e-6
+3e-7 5e-6
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 5e-9 5e-9
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-13 1e-13
+1e-7 5e-6
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-5 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
@@ -4459,9 +4459,9 @@ SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-11 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-5e-9 1e-7
+1e-12 1e-10
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-8 3e-07
+1e-10 1e-7
 
 ## Invertebrates
 OCT_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -5110,9 +5110,9 @@ KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
 2
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
-0.35
+0.3
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-4
+0.5
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
@@ -5191,7 +5191,7 @@ KDENR_COR 1
 # Beverton-Holt recruitment
 BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   9.68682E+10   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   9.47508E+13              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   2.5E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
@@ -5203,12 +5203,12 @@ BHalpha_LPF   2.5E+9                   # Beverton-Holt recruitment rate paramete
 BHalpha_SPF   9.74E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1.3E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
-BHalpha_LBF   3347062000               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   5e+09       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
-BHbeta_BRC   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
+BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   6E+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino

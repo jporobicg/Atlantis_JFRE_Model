@@ -701,6 +701,10 @@ fi
 
 ** PRM files
 *** Biology input file
+**** Initial abundance
+***** OTA
+- I used the values form aguayo 1971 for the starting values (750).
+But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
 **** Habitat dependence
  - The species that are cover are Coral and Macroalgae. Those are been reported that act as cover for juvenile lobster and juvenile bonny fishes.
 | FG  | Stage | Kcov | Bcov | Acov |
@@ -2965,7 +2969,14 @@ In this secction I use the data form the Database to get the number of organism 
 | VID |      0.002739726 | Using CCL    |
 
 *** Forcing files
-**** Solar radiation
+*** Harvest file
+**** I will use the value of mFc for the fisheries
+ - This means that I will use a proportion of the biomass removed by the fishery (u)
+***** MfC
+****** Lobster
+ - Based on the MPA silulation model
+   -
+*** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data
 ** Initial conditions file

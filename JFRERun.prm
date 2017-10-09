@@ -27,9 +27,9 @@ flag_replicate_old_calendar 0   # This flag specifically allows for legacy model
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~     Parameters controlling detailed outputs for a specific box and diagnostic reporting       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-debug_it      1
-checkbox      80  	       # Give detailed logged output for this box
-checkstart    366666660 day          # Start detailed logged output after this date
+debug_it      0
+checkbox      56  	       # Give detailed logged output for this box
+checkstart    4700 day          # Start detailed logged output after this date
 checkstop     366666660 day    # Stop detailed logged output after this date
 debug         0        	       # Several option,  Check manual
 fishtest      0        	       # Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes
