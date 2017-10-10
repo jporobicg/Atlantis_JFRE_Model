@@ -3460,13 +3460,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.09 0.01 0.01 0.008 0.008 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.01 0.01 0.008 1e-05 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.075 0.07 1e-04 0.05 0.008 0.008 0 0 0 0.008 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 1e-04 0.05 0.008 0.001 0 0 0 0.008 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.05 0.05 0.05 0.03 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.03 0.01 0.008 1e-05 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.09 0.075 0.07 0.01 0.01 0.008 0.008 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.01 0.01 0.008 0.001 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.02 0.001 0.05 0.05 0.05 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3967,7 +3967,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1.25 19.463 32.547 36.692 40.897 43.275 44.605 45.352 45.777 45.777
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-4.56 3.705 6.213 9.5283333333 9.7992 20.52765
+18.24	18.525	20.71	23.821	24.498	34.213
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 13 25 36.5 41 51 55.5 92 92 92 92
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -4178,7 +4178,7 @@ E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.45 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
-E_MPF   0.6 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_MPF   0.6 # Assimilation efficiency on live food and carrion of Mesopelagic fish
 E_SBF   0.5 # Assimilation efficiency on live food and carrion of Small benthic fish
 E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
@@ -4400,7 +4400,7 @@ LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.00005
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.0001
+0  0.00001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
 0  0.00002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
@@ -4453,15 +4453,15 @@ DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 1e-5 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-1e-9 7e-9
+5e-9 5e-8
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 1e-09 7e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-3e-11 1e-10
+3e-09 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-12 1e-10
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-1e-9 1e-7
+1e-9 5e-7
 
 ## Invertebrates
 OCT_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -5201,7 +5201,7 @@ BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate paramete
 BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   5E+8                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_MPF   9.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_MPF   5.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1.5E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
