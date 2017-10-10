@@ -2970,12 +2970,30 @@ In this secction I use the data form the Database to get the number of organism 
 
 *** Forcing files
 *** Harvest file
-**** I will use the value of mFc for the fisheries
- - This means that I will use a proportion of the biomass removed by the fishery (u)
-***** MfC
-****** Lobster
- - Based on the MPA silulation model
-   -
+**** General setting
+| FG  | fishery   | Start (year) |   End | Effort model | Selectivity | Change q | Change Eff |
+|-----+-----------+--------------+-------+--------------+-------------+----------+------------|
+| SPL | Trap      |            0 |       |            3 | Logistic    |        1 | 1 (Chigre) |
+| GCR | Trap      | 18263 (2000) |       |            3 | Logistic    |        0 |          0 |
+| ANG | Trap      |            0 |       |            3 | Constant    |        0 |          0 |
+| SPF | Bait      |            0 |       |            3 | Normal      |        0 |          0 |
+| LPF | Bait      |            0 |       |            3 | Logistic    |        0 |          0 |
+| BRC | Bait      |            0 |       |            3 | Logistic    |        0 |          0 |
+| LBF | Bait      |            0 |       |            3 | Logistic    |        0 |          0 |
+| SBF | Bait      |            0 |       |            3 | Logistic    |        0 |          0 |
+| BRC | Long line |            0 |       |            3 | Logistic    |        0 |          0 |
+| VID | Long line |            0 |       |            3 | Logistic    |        0 |          0 |
+| ORO | Trawl     |        17533 | 21551 |            3 | Logistic    |        0 |          0 |
+| ALF | Trawl     |        17533 | 23012 |            3 | Logistic    |        0 |          0 |
+| OCT | Pot       |            0 |       |            1 | Logistic    |        0 |          0 |
+
+
+**** TAC
+***** ALF
+ - start 2011 - jun - 01 (22446) (wiff 2016)
+   - catch 4752 tonns
+***** ORO
+ - start 1999 (17897) Paya (2013)
 *** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data
