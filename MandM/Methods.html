@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-08-21T16:44+1000"/>
+<meta name="generated" content="2017-10-11T18:58+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -294,31 +294,37 @@ for the JavaScript code below.
 <ul>
 <li><a href="#sec-5-2-1">Biology input file</a>
 <ul>
-<li><a href="#sec-5-2-1-1">Habitat dependence</a></li>
-<li><a href="#sec-5-2-1-2">Acidification (Turnned off for calibration)</a></li>
-<li><a href="#sec-5-2-1-3">Diets</a></li>
-<li><a href="#sec-5-2-1-4">Whater - Column parameters</a></li>
-<li><a href="#sec-5-2-1-5">Spatial Distribution</a></li>
-<li><a href="#sec-5-2-1-6">Spatial Cover</a></li>
-<li><a href="#sec-5-2-1-7">Throphic relation</a></li>
-<li><a href="#sec-5-2-1-8">Spawning</a></li>
-<li><a href="#sec-5-2-1-9">Recruitment</a></li>
-<li><a href="#sec-5-2-1-10">LFD by cohorts</a></li>
-<li><a href="#sec-5-2-1-11">Estimation of the mean Weight</a></li>
-<li><a href="#sec-5-2-1-12">Temperature</a></li>
-<li><a href="#sec-5-2-1-13">Oxigen</a></li>
-<li><a href="#sec-5-2-1-14">Extra Mortality</a></li>
-<li><a href="#sec-5-2-1-15">Bibliography that I need</a></li>
-<li><a href="#sec-5-2-1-16">Codes</a></li>
-<li><a href="#sec-5-2-1-17">What is needed</a></li>
-<li><a href="#sec-5-2-1-18">Resume of the configuration file</a></li>
-<li><a href="#sec-5-2-1-19">Mortality</a></li>
+<li><a href="#sec-5-2-1-1">Initial abundance</a></li>
+<li><a href="#sec-5-2-1-2">Habitat dependence</a></li>
+<li><a href="#sec-5-2-1-3">Acidification (Turnned off for calibration)</a></li>
+<li><a href="#sec-5-2-1-4">Diets</a></li>
+<li><a href="#sec-5-2-1-5">Whater - Column parameters</a></li>
+<li><a href="#sec-5-2-1-6">Spatial Distribution</a></li>
+<li><a href="#sec-5-2-1-7">Spatial Cover</a></li>
+<li><a href="#sec-5-2-1-8">Throphic relation</a></li>
+<li><a href="#sec-5-2-1-9">Spawning</a></li>
+<li><a href="#sec-5-2-1-10">Recruitment</a></li>
+<li><a href="#sec-5-2-1-11">LFD by cohorts</a></li>
+<li><a href="#sec-5-2-1-12">Estimation of the mean Weight</a></li>
+<li><a href="#sec-5-2-1-13">Temperature</a></li>
+<li><a href="#sec-5-2-1-14">Oxigen</a></li>
+<li><a href="#sec-5-2-1-15">Extra Mortality</a></li>
+<li><a href="#sec-5-2-1-16">Bibliography that I need</a></li>
+<li><a href="#sec-5-2-1-17">Codes</a></li>
+<li><a href="#sec-5-2-1-18">What is needed</a></li>
+<li><a href="#sec-5-2-1-19">Resume of the configuration file</a></li>
+<li><a href="#sec-5-2-1-20">Mortality</a></li>
 </ul>
 </li>
-<li><a href="#sec-5-2-2">Forcing files</a>
+<li><a href="#sec-5-2-2">Forcing files</a></li>
+<li><a href="#sec-5-2-3">Harvest file</a>
 <ul>
-<li><a href="#sec-5-2-2-1">Solar radiation</a></li>
-</ul></li>
+<li><a href="#sec-5-2-3-1">General setting</a></li>
+<li><a href="#sec-5-2-3-2">TAC</a></li>
+<li><a href="#sec-5-2-3-3">Selectivity</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-2-4">Solar radiation</a></li>
 </ul>
 </li>
 <li><a href="#sec-5-3">Initial conditions file</a></li>
@@ -446,7 +452,6 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 <li><code>[X]</code> If I udate I need to build atlantis again
 </li>
 </ul>
-
 
 </div>
 
@@ -1784,8 +1789,26 @@ print(b)
 </div>
 
 <div id="outline-container-5-2-1-1" class="outline-5">
-<h5 id="sec-5-2-1-1">Habitat dependence</h5>
+<h5 id="sec-5-2-1-1">Initial abundance</h5>
 <div class="outline-text-5" id="text-5-2-1-1">
+
+<ul>
+<li id="sec-5-2-1-1-1">OTA<br/>
+<ul>
+<li>I used the values form aguayo 1971 for the starting values (750).
+</li>
+</ul>
+
+<p>But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
+</p></li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-2" class="outline-5">
+<h5 id="sec-5-2-1-2">Habitat dependence</h5>
+<div class="outline-text-5" id="text-5-2-1-2">
 
 <ul>
 <li>The species that are cover are Coral and Macroalgae. Those are been reported that act as cover for juvenile lobster and juvenile bonny fishes.
@@ -1814,9 +1837,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-2" class="outline-5">
-<h5 id="sec-5-2-1-2">Acidification (Turnned off for calibration)</h5>
-<div class="outline-text-5" id="text-5-2-1-2">
+<div id="outline-container-5-2-1-3" class="outline-5">
+<h5 id="sec-5-2-1-3">Acidification (Turnned off for calibration)</h5>
+<div class="outline-text-5" id="text-5-2-1-3">
 
 <ul>
 <li>Effect of ph in crustacean and other species.
@@ -1854,9 +1877,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-3" class="outline-5">
-<h5 id="sec-5-2-1-3">Diets</h5>
-<div class="outline-text-5" id="text-5-2-1-3">
+<div id="outline-container-5-2-1-4" class="outline-5">
+<h5 id="sec-5-2-1-4">Diets</h5>
+<div class="outline-text-5" id="text-5-2-1-4">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" />
@@ -2008,9 +2031,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-4" class="outline-5">
-<h5 id="sec-5-2-1-4">Whater - Column parameters</h5>
-<div class="outline-text-5" id="text-5-2-1-4">
+<div id="outline-container-5-2-1-5" class="outline-5">
+<h5 id="sec-5-2-1-5">Whater - Column parameters</h5>
+<div class="outline-text-5" id="text-5-2-1-5">
 
 <ul>
 <li>Light penetration through the water column
@@ -2026,12 +2049,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-5" class="outline-5">
-<h5 id="sec-5-2-1-5">Spatial Distribution</h5>
-<div class="outline-text-5" id="text-5-2-1-5">
+<div id="outline-container-5-2-1-6" class="outline-5">
+<h5 id="sec-5-2-1-6">Spatial Distribution</h5>
+<div class="outline-text-5" id="text-5-2-1-6">
 
 <ul>
-<li id="sec-5-2-1-5-1">Horizontal distribution<br/>
+<li id="sec-5-2-1-6-1">Horizontal distribution<br/>
 <ul>
 <li>Spatial distribution juvenile and adult (case of jurelilo-jurel)
 <ul>
@@ -2571,7 +2594,7 @@ write.table(data.end, file = <span style="color: #ffc125; font-weight: bold;">'/
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-5-2">Vertical distribution<br/>
+<li id="sec-5-2-1-6-2">Vertical distribution<br/>
 <ul>
 <li><b>Deph Distribution</b>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -2594,8 +2617,16 @@ write.table(data.end, file = <span style="color: #ffc125; font-weight: bold;">'/
 <tr><td class="left">ANG</td><td class="right">0</td><td class="right">300</td><td class="left">Arana 2000 - PEsca exploratoria con trampa</td></tr>
 <tr><td class="left">CHO</td><td class="right">20</td><td class="right">600</td><td class="left">Fishbase</td></tr>
 <tr><td class="left">COR</td><td class="right">50</td><td class="right">1000</td><td class="left">Data base &amp;   Niklitschek 2010</td></tr>
+<tr><td class="left">MPF</td><td class="right">0</td><td class="right">5000</td><td class="left">Fish base</td></tr>
 </tbody>
 </table>
+
+
+<ul>
+<li><b>NOTE</b> For SBF and LBF it was necesary increase the maximum depth using the distriburion observed by Yañes et al. (2008; Seamount biodiversity report)
+
+</li>
+</ul>
 
 </li>
 <li><b>Day-nigth distribution</b>
@@ -2633,7 +2664,7 @@ lc <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dup.row(lc, 2)
 <span style="color: #696969;">## </span><span style="color: #696969;">Grupos funcionales</span>
 lc <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(lc, 1)
 
-lc.fg$SPF[which(lc.fg$SPF$layer==3),]
+<span style="color: #696969;">#</span><span style="color: #696969;">lc.fg$SPF[which(lc.fg$SPF$layer==3),]</span>
 <span style="color: #696969;">##</span><span style="color: #696969;">-----------</span>
 <span style="color: #696969;">##  </span><span style="color: #696969;">Divide by functional group</span>
 <span style="color: #696969;">##</span><span style="color: #696969;">---------------</span>
@@ -2666,14 +2697,15 @@ print(b)
 <tr><td class="left">ALF</td><td class="right">0.000</td><td class="right">0.051</td><td class="right">0.268</td><td class="right">0.580</td><td class="right">0.046</td><td class="right">0.055</td><td class="right">0.000</td><td class="right">0.000</td></tr>
 <tr><td class="left">ANG</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.146</td><td class="right">0.491</td><td class="right">0.363</td></tr>
 <tr><td class="left">BRC-Adult</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.085</td><td class="right">0.120</td><td class="right">0.668</td><td class="right">0.071</td><td class="right">0.056</td></tr>
-<tr><td class="left">BRC-Juvenil</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.013</td><td class="right">0.095</td><td class="right">0.728</td><td class="right">0.106</td><td class="right">0.058</td></tr>
-<tr><td class="left">CHO</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.087</td><td class="right">0.130</td><td class="right">0.653</td><td class="right">0.065</td><td class="right">0.065</td></tr>
-<tr><td class="left">LBF</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.136</td><td class="right">0.728</td><td class="right">0.121</td><td class="right">0.015</td></tr>
+<tr><td class="left">BRC-Juvenil</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.013</td><td class="right">0.095</td><td class="right">0.729</td><td class="right">0.106</td><td class="right">0.058</td></tr>
+<tr><td class="left">CHO</td><td class="right">0.000</td><td class="right">0.144</td><td class="right">0.317</td><td class="right">0.183</td><td class="right">0.224</td><td class="right">0.131</td><td class="right">0.001</td><td class="right">0.001</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.000</td><td class="right">0.122</td><td class="right">0.269</td><td class="right">0.491</td><td class="right">0.040</td><td class="right">0.054</td><td class="right">0.020</td><td class="right">0.003</td></tr>
 <tr><td class="left">LPF</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.003</td><td class="right">0.030</td><td class="right">0.125</td><td class="right">0.842</td></tr>
 <tr><td class="left">ORO</td><td class="right">0.000</td><td class="right">0.649</td><td class="right">0.347</td><td class="right">0.004</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td></tr>
-<tr><td class="left">SBF</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.063</td><td class="right">0.820</td><td class="right">0.054</td><td class="right">0.063</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.070</td><td class="right">0.432</td><td class="right">0.164</td><td class="right">0.334</td></tr>
-<tr><td class="left">VID</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.005</td><td class="right">0.269</td><td class="right">0.586</td><td class="right">0.140</td></tr>
+<tr><td class="left">SBF</td><td class="right">0.000</td><td class="right">0.122</td><td class="right">0.268</td><td class="right">0.489</td><td class="right">0.041</td><td class="right">0.075</td><td class="right">0.002</td><td class="right">0.002</td></tr>
+<tr><td class="left">SCR</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">1.000</td><td class="right">0.000</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.069</td><td class="right">0.435</td><td class="right">0.165</td><td class="right">0.330</td></tr>
+<tr><td class="left">VID</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.000</td><td class="right">0.005</td><td class="right">0.269</td><td class="right">0.585</td><td class="right">0.140</td></tr>
 </tbody>
 </table>
 
@@ -2681,7 +2713,7 @@ print(b)
 <p><img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Functional_groups.png" width="600" alt="image" /></p>
 <p>Vertical distribution of the vertebrate FG</p>
 </div>
-<ul>
+</li>
 <li>Invertebrates
 
 
@@ -2812,14 +2844,33 @@ print(b)
 <p>Relative vertical Distribution of Medium (Copepods) and Large (Eufausiid) zooplancton according to their maximimum and minimum depth</p>
 </div>
 <p>
- <br style="clear:both;" />
+    <br style="clear:both;" />
 </p></li>
+<li>MPF
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Layer</th><th scope="col" class="right">1</th><th scope="col" class="right">2</th><th scope="col" class="right">3</th><th scope="col" class="right">4</th><th scope="col" class="right">5</th><th scope="col" class="right">6</th><th scope="col" class="right">7</th><th scope="col" class="right">8</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">Nigth</td><td class="right">0.15</td><td class="right">0.24</td><td class="right">0.26</td><td class="right">0.2</td><td class="right">0.12</td><td class="right">0.03</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">Day</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0</td><td class="right">0.15</td><td class="right">0.35</td><td class="right">0.39</td><td class="right">0.11</td></tr>
+</tbody>
+</table>
+
+  <div class="figure">
+<p><img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/mpf_vert.png" width="600" alt="image" /></p>
+<p>Relative vertical Distribution of Mesopelagic fish</p>
+</div>
+  <br style="clear:both;" />
+</li>
 </ul>
 
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-5-3">Speed movement<br/>
+<li id="sec-5-2-1-6-3">Speed movement<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="left" /><col class="left" /><col class="left" />
 </colgroup>
@@ -2844,7 +2895,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-5-4">Migration<br/>
+<li id="sec-5-2-1-6-4">Migration<br/>
 <ul>
 <li><b>Day of migration</b>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -3299,9 +3350,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-6" class="outline-5">
-<h5 id="sec-5-2-1-6">Spatial Cover</h5>
-<div class="outline-text-5" id="text-5-2-1-6">
+<div id="outline-container-5-2-1-7" class="outline-5">
+<h5 id="sec-5-2-1-7">Spatial Cover</h5>
+<div class="outline-text-5" id="text-5-2-1-7">
 
 <ul>
 <li>For the Cover, I used the data for friedman and also I ude data from Yañez et al.
@@ -3380,17 +3431,17 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-7" class="outline-5">
-<h5 id="sec-5-2-1-7">Throphic relation</h5>
-<div class="outline-text-5" id="text-5-2-1-7">
+<div id="outline-container-5-2-1-8" class="outline-5">
+<h5 id="sec-5-2-1-8">Throphic relation</h5>
+<div class="outline-text-5" id="text-5-2-1-8">
 
 <ul>
-<li id="sec-5-2-1-7-1">Availability matrix<br/>
+<li id="sec-5-2-1-8-1">Availability matrix<br/>
 <ul>
 <li>I will leave this one for the last part
 </li>
 <li>Gape size
-    I wil use the normal limits (0.1% to 40%)
+    I will use the normal limits (0.1% to 40%)
 </li>
 <li>I increase the value of KLP to 1e-06 for whales
 </li>
@@ -3399,7 +3450,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-7-2">Estimation of structural weight to calculate the biomass for predation<br/>
+<li id="sec-5-2-1-8-2">Estimation of structural weight to calculate the biomass for predation<br/>
 
 
 
@@ -3427,9 +3478,10 @@ print(b)
 <tr><td class="left">OCT</td><td class="right">1737.56</td><td class="right">4604.54</td></tr>
 <tr><td class="left">SCR</td><td class="right">1485.22</td><td class="right">3935.83</td></tr>
 <tr><td class="left">BFF</td><td class="right">240.33</td><td class="right">636.87</td></tr>
-<tr><td class="left">SUR</td><td class="right">456.44</td><td class="right">1209.57</td></tr>
+<tr><td class="left">BCA</td><td class="right">456.44</td><td class="right">1209.57</td></tr>
 <tr><td class="left">MOL</td><td class="right">672.92</td><td class="right">1783.23</td></tr>
 <tr><td class="left">DOL</td><td class="right">1123528.00</td><td class="right">2977349.19</td></tr>
+<tr><td class="left">MPF</td><td class="right">81.71</td><td class="right">216.53</td></tr>
 </tbody>
 </table>
 
@@ -3437,7 +3489,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-7-3">Estimation of Clearance<br/>
+<li id="sec-5-2-1-8-3">Estimation of Clearance<br/>
   I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
 
 
@@ -3470,38 +3522,13 @@ b     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(C.out,
 print(b)
 </pre>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
-</colgroup>
-<thead>
-<tr><th scope="col" class="left"></th><th scope="col" class="right">1</th><th scope="col" class="right">2</th><th scope="col" class="right">3</th><th scope="col" class="right">4</th><th scope="col" class="right">5</th><th scope="col" class="right">6</th><th scope="col" class="right">7</th><th scope="col" class="right">8</th><th scope="col" class="right">9</th><th scope="col" class="right">10</th></tr>
-</thead>
-<tbody>
-<tr><td class="left">ALF</td><td class="right">1.38</td><td class="right">2.67</td><td class="right">3.94</td><td class="right">5.05</td><td class="right">5.94</td><td class="right">8.80</td><td class="right">9.39</td><td class="right">9.71</td><td class="right">9.82</td><td class="right">9.74</td></tr>
-<tr><td class="left">ANG</td><td class="right">0.15</td><td class="right">6.36</td><td class="right">16.18</td><td class="right">26.11</td><td class="right">34.27</td><td class="right">35.05</td><td class="right">37.84</td><td class="right">33.03</td><td class="right">32.09</td><td class="right">29.98</td></tr>
-<tr><td class="left">BIR</td><td class="right">0.41</td><td class="right">2.18</td><td class="right">5.28</td><td class="right">9.24</td><td class="right">13.61</td><td class="right">18.04</td><td class="right">22.28</td><td class="right">26.20</td><td class="right">29.72</td><td class="right">32.81</td></tr>
-<tr><td class="left">BRC</td><td class="right">2.44</td><td class="right">3.48</td><td class="right">4.69</td><td class="right">6.05</td><td class="right">7.61</td><td class="right">9.52</td><td class="right">11.69</td><td class="right">13.54</td><td class="right">15.34</td><td class="right">17.25</td></tr>
-<tr><td class="left">CET</td><td class="right">520.31</td><td class="right">536.84</td><td class="right">2628.20</td><td class="right">5557.57</td><td class="right">8023.18</td><td class="right">18128.94</td><td class="right">19623.76</td><td class="right">20394.75</td><td class="right">20413.13</td><td class="right">23104.04</td></tr>
-<tr><td class="left">CHO</td><td class="right">2.33</td><td class="right">7.44</td><td class="right">13.49</td><td class="right">19.50</td><td class="right">25.01</td><td class="right">29.82</td><td class="right">33.90</td><td class="right">37.29</td><td class="right">40.08</td><td class="right">42.34</td></tr>
-<tr><td class="left">DOL</td><td class="right">5.52</td><td class="right">18.10</td><td class="right">33.62</td><td class="right">49.70</td><td class="right">65.04</td><td class="right">78.98</td><td class="right">91.27</td><td class="right">101.88</td><td class="right">110.92</td><td class="right">118.52</td></tr>
-<tr><td class="left">GCR</td><td class="right">0.02</td><td class="right">0.06</td><td class="right">0.12</td><td class="right">0.21</td><td class="right">0.31</td><td class="right">0.42</td><td class="right">0.51</td><td class="right">0.59</td><td class="right">0.68</td><td class="right">0.75</td></tr>
-<tr><td class="left">LBF</td><td class="right">12.41</td><td class="right">14.32</td><td class="right">16.64</td><td class="right">17.92</td><td class="right">19.37</td><td class="right">22.06</td><td class="right">23.52</td><td class="right">23.48</td><td class="right">24.10</td><td class="right">24.54</td></tr>
-<tr><td class="left">LPF</td><td class="right">3.61</td><td class="right">25.43</td><td class="right">43.22</td><td class="right">53.56</td><td class="right">59.00</td><td class="right">61.75</td><td class="right">63.10</td><td class="right">63.77</td><td class="right">64.10</td><td class="right">64.26</td></tr>
-<tr><td class="left">ORO</td><td class="right">0.05</td><td class="right">1.49</td><td class="right">2.07</td><td class="right">2.61</td><td class="right">2.86</td><td class="right">3.17</td><td class="right">3.37</td><td class="right">3.49</td><td class="right">3.56</td><td class="right">3.60</td></tr>
-<tr><td class="left">OTA</td><td class="right">14.08</td><td class="right">25.90</td><td class="right">32.06</td><td class="right">37.14</td><td class="right">41.23</td><td class="right">44.46</td><td class="right">46.99</td><td class="right">48.94</td><td class="right">50.45</td><td class="right">51.60</td></tr>
-<tr><td class="left">SBF</td><td class="right">1.31</td><td class="right">1.96</td><td class="right">2.19</td><td class="right">2.72</td><td class="right">3.62</td><td class="right">4.92</td><td class="right">5.75</td><td class="right">7.80</td><td class="right">9.11</td><td class="right">10.54</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.30</td><td class="right">2.22</td><td class="right">4.19</td><td class="right">6.25</td><td class="right">7.93</td><td class="right">9.23</td><td class="right">10.19</td><td class="right">10.89</td><td class="right">11.39</td><td class="right">11.74</td></tr>
-<tr><td class="left">SPL</td><td class="right">0.46</td><td class="right">0.55</td><td class="right">0.65</td><td class="right">0.75</td><td class="right">0.89</td><td class="right">1.00</td><td class="right">1.12</td><td class="right">1.23</td><td class="right">1.33</td><td class="right">1.45</td></tr>
-<tr><td class="left">VID</td><td class="right">14.54</td><td class="right">19.24</td><td class="right">26.04</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-</tbody>
-</table>
-
+<p>
    <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png" width="600" alt="image" />
    <br style="clear:both;" />
-</li>
+</p></li>
 </ul>
 <ul>
-<li id="sec-5-2-1-7-4">Estimation of growth rate<br/>
+<li id="sec-5-2-1-8-4">Estimation of growth rate<br/>
 <ul>
 <li>First, I estimated the value of the alfa and beta parameters from the allometric relationship
 
@@ -3732,69 +3759,37 @@ print(b)
 <tr><td class="left">BFF</td><td class="right">0.061</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 <tr><td class="left">BIR</td><td class="right">0.023</td><td class="right">0.211</td><td class="right">0.539</td><td class="right">1.008</td><td class="right">1.619</td><td class="right">2.386</td><td class="right">3.332</td><td class="right">4.491</td><td class="right">5.905</td><td class="right">7.629</td></tr>
 <tr><td class="left">BRC</td><td class="right">0.046</td><td class="right">0.178</td><td class="right">0.520</td><td class="right">0.750</td><td class="right">1.015</td><td class="right">1.310</td><td class="right">1.722</td><td class="right">2.484</td><td class="right">3.183</td><td class="right">3.764</td></tr>
-<tr><td class="left">CET</td><td class="right">75.580</td><td class="right">237.616</td><td class="right">1377.780</td><td class="right">2658.289</td><td class="right">5250.752</td><td class="right">10525.676</td><td class="right">21272.002</td><td class="right">43171.570</td><td class="right">87803.233</td><td class="right">178764.873</td></tr>
 <tr><td class="left">CHO</td><td class="right">0.016</td><td class="right">0.106</td><td class="right">0.418</td><td class="right">0.796</td><td class="right">1.294</td><td class="right">1.928</td><td class="right">2.727</td><td class="right">3.732</td><td class="right">4.999</td><td class="right">6.597</td></tr>
 <tr><td class="left">DOL</td><td class="right">0.079</td><td class="right">0.676</td><td class="right">1.678</td><td class="right">3.077</td><td class="right">4.883</td><td class="right">7.143</td><td class="right">9.938</td><td class="right">13.376</td><td class="right">17.602</td><td class="right">22.797</td></tr>
 <tr><td class="left">GCR</td><td class="right">0.011</td><td class="right">0.058</td><td class="right">0.213</td><td class="right">0.408</td><td class="right">0.677</td><td class="right">1.039</td><td class="right">1.541</td><td class="right">2.239</td><td class="right">2.653</td><td class="right">3.471</td></tr>
 <tr><td class="left">LBF</td><td class="right">0.120</td><td class="right">0.548</td><td class="right">0.749</td><td class="right">2.540</td><td class="right">3.082</td><td class="right">3.468</td><td class="right">5.320</td><td class="right">8.782</td><td class="right">8.274</td><td class="right">9.952</td></tr>
 <tr><td class="left">LPF</td><td class="right">0.021</td><td class="right">0.189</td><td class="right">0.508</td><td class="right">0.981</td><td class="right">1.839</td><td class="right">3.542</td><td class="right">7.010</td><td class="right">14.120</td><td class="right">28.721</td><td class="right">58.714</td></tr>
 <tr><td class="left">MOL</td><td class="right">0.684</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
+<tr><td class="left">MPF</td><td class="right">0.052</td><td class="right">0.494</td><td class="right">2.071</td><td class="right">11.434</td><td class="right">68.050</td><td class="right">410.553</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 <tr><td class="left">OCT</td><td class="right">0.353</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 <tr><td class="left">ORO</td><td class="right">0.001</td><td class="right">0.039</td><td class="right">0.143</td><td class="right">0.239</td><td class="right">0.826</td><td class="right">1.360</td><td class="right">2.220</td><td class="right">3.629</td><td class="right">6.039</td><td class="right">10.026</td></tr>
 <tr><td class="left">OTA</td><td class="right">2.276</td><td class="right">6.748</td><td class="right">21.073</td><td class="right">28.824</td><td class="right">38.571</td><td class="right">51.143</td><td class="right">67.582</td><td class="right">89.225</td><td class="right">117.806</td><td class="right">155.600</td></tr>
 <tr><td class="left">SBF</td><td class="right">0.129</td><td class="right">0.248</td><td class="right">0.730</td><td class="right">0.815</td><td class="right">1.022</td><td class="right">1.106</td><td class="right">1.840</td><td class="right">1.329</td><td class="right">2.201</td><td class="right">2.462</td></tr>
 <tr><td class="left">SCR</td><td class="right">1.258</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">SPF</td><td class="right">0.007</td><td class="right">0.107</td><td class="right">0.581</td><td class="right">1.233</td><td class="right">2.113</td><td class="right">3.295</td><td class="right">4.911</td><td class="right">7.163</td><td class="right">10.342</td><td class="right">14.860</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.014</td><td class="right">0.126</td><td class="right">0.581</td><td class="right">1.233</td><td class="right">2.113</td><td class="right">3.295</td><td class="right">4.911</td><td class="right">7.163</td><td class="right">10.342</td><td class="right">14.860</td></tr>
 <tr><td class="left">SPL</td><td class="right">0.127</td><td class="right">0.374</td><td class="right">1.292</td><td class="right">1.556</td><td class="right">1.717</td><td class="right">2.357</td><td class="right">2.747</td><td class="right">3.513</td><td class="right">3.908</td><td class="right">4.330</td></tr>
 <tr><td class="left">VID</td><td class="right">0.239</td><td class="right">1.847</td><td class="right">2.435</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
 </tbody>
 </table>
 
-</li>
-</ul>
 
-<p>=    #+ATTR<sub>HTML</sub>: :style float:left;width:30%;margin:3ex
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption>Values of growth rate (mum) for each functional group [mgN-1d-1]</caption>
-<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
-</colgroup>
-<thead>
-<tr><th scope="col" class="left"></th><th scope="col" class="right">1</th><th scope="col" class="right">2</th><th scope="col" class="right">3</th><th scope="col" class="right">4</th><th scope="col" class="right">5</th><th scope="col" class="right">6</th><th scope="col" class="right">7</th><th scope="col" class="right">8</th><th scope="col" class="right">9</th><th scope="col" class="right">10</th></tr>
-</thead>
-<tbody>
-<tr><td class="left">ALF</td><td class="right">0.08</td><td class="right">0.34</td><td class="right">1.06</td><td class="right">1.71</td><td class="right">2.52</td><td class="right">3.51</td><td class="right">4.71</td><td class="right">6.17</td><td class="right">7.90</td><td class="right">10.06</td></tr>
-<tr><td class="left">ANG</td><td class="right">0.00</td><td class="right">0.01</td><td class="right">0.08</td><td class="right">0.18</td><td class="right">0.32</td><td class="right">0.49</td><td class="right">0.71</td><td class="right">0.97</td><td class="right">1.28</td><td class="right">1.65</td></tr>
-<tr><td class="left">BCA</td><td class="right">0.46</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">BFF</td><td class="right">0.06</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">BIR</td><td class="right">0.02</td><td class="right">0.21</td><td class="right">0.54</td><td class="right">1.01</td><td class="right">1.62</td><td class="right">2.39</td><td class="right">3.33</td><td class="right">4.49</td><td class="right">5.90</td><td class="right">7.63</td></tr>
-<tr><td class="left">BRC</td><td class="right">0.05</td><td class="right">0.18</td><td class="right">0.52</td><td class="right">0.75</td><td class="right">1.01</td><td class="right">1.31</td><td class="right">1.72</td><td class="right">2.48</td><td class="right">3.18</td><td class="right">3.76</td></tr>
-<tr><td class="left">CET</td><td class="right">75.58</td><td class="right">237.62</td><td class="right">1377.78</td><td class="right">2658.29</td><td class="right">5250.75</td><td class="right">10525.68</td><td class="right">21272.00</td><td class="right">43171.57</td><td class="right">87803.23</td><td class="right">178764.87</td></tr>
-<tr><td class="left">CHO</td><td class="right">0.02</td><td class="right">0.11</td><td class="right">0.42</td><td class="right">0.80</td><td class="right">1.29</td><td class="right">1.93</td><td class="right">2.73</td><td class="right">3.73</td><td class="right">5.00</td><td class="right">6.60</td></tr>
-<tr><td class="left">DOL</td><td class="right">0.08</td><td class="right">0.68</td><td class="right">1.68</td><td class="right">3.08</td><td class="right">4.88</td><td class="right">7.14</td><td class="right">9.94</td><td class="right">13.38</td><td class="right">17.60</td><td class="right">22.80</td></tr>
-<tr><td class="left">GCR</td><td class="right">0.01</td><td class="right">0.06</td><td class="right">0.21</td><td class="right">0.41</td><td class="right">0.68</td><td class="right">1.04</td><td class="right">1.54</td><td class="right">2.24</td><td class="right">2.65</td><td class="right">3.47</td></tr>
-<tr><td class="left">LBF</td><td class="right">0.12</td><td class="right">0.55</td><td class="right">0.75</td><td class="right">2.54</td><td class="right">3.08</td><td class="right">3.47</td><td class="right">5.32</td><td class="right">8.78</td><td class="right">8.27</td><td class="right">9.95</td></tr>
-<tr><td class="left">LPF</td><td class="right">0.02</td><td class="right">0.19</td><td class="right">0.51</td><td class="right">0.98</td><td class="right">1.84</td><td class="right">3.54</td><td class="right">7.01</td><td class="right">14.12</td><td class="right">28.72</td><td class="right">58.71</td></tr>
-<tr><td class="left">MOL</td><td class="right">0.68</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">OCT</td><td class="right">0.35</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">ORO</td><td class="right">0.00</td><td class="right">0.04</td><td class="right">0.14</td><td class="right">0.24</td><td class="right">0.83</td><td class="right">1.36</td><td class="right">2.22</td><td class="right">3.63</td><td class="right">6.04</td><td class="right">10.03</td></tr>
-<tr><td class="left">OTA</td><td class="right">2.28</td><td class="right">6.75</td><td class="right">21.07</td><td class="right">28.82</td><td class="right">38.57</td><td class="right">51.14</td><td class="right">67.58</td><td class="right">89.22</td><td class="right">117.81</td><td class="right">155.60</td></tr>
-<tr><td class="left">SBF</td><td class="right">0.13</td><td class="right">0.25</td><td class="right">0.73</td><td class="right">0.82</td><td class="right">1.02</td><td class="right">1.11</td><td class="right">1.84</td><td class="right">1.33</td><td class="right">2.20</td><td class="right">2.46</td></tr>
-<tr><td class="left">SCR</td><td class="right">1.26</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-<tr><td class="left">SPF</td><td class="right">0.01</td><td class="right">0.11</td><td class="right">0.58</td><td class="right">1.23</td><td class="right">2.11</td><td class="right">3.29</td><td class="right">4.91</td><td class="right">7.16</td><td class="right">10.34</td><td class="right">14.86</td></tr>
-<tr><td class="left">SPL</td><td class="right">0.13</td><td class="right">0.37</td><td class="right">1.29</td><td class="right">1.56</td><td class="right">1.72</td><td class="right">2.36</td><td class="right">2.75</td><td class="right">3.51</td><td class="right">3.91</td><td class="right">4.33</td></tr>
-<tr><td class="left">VID</td><td class="right">0.24</td><td class="right">1.85</td><td class="right">2.43</td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td><td class="right"></td></tr>
-</tbody>
-</table>
 
-    <div class="figure">
+<div class="figure">
 <p><img src="img/mum.png" width="600" alt="image" /></p>
 <p>Values of Growth rate for each Vertebrate Functional Group</p>
 </div>
+</li>
+</ul>
 
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-7-5">Maturity and Spawning<br/>
+<li id="sec-5-2-1-8-5">Maturity and Spawning<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption>length (in mm) for the reproductive maturity for vertebraes and mobile bentos (with age classes)</caption>
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
@@ -3816,6 +3811,7 @@ print(b)
 <tr><td class="left">OTA</td><td class="right">105</td><td class="right">5</td><td class="left">Amano2000 and Osman</td><td class="left"></td></tr>
 <tr><td class="left">LPF</td><td class="right">34.5</td><td class="right">3</td><td class="left">Fishbase (average)</td><td class="left">Pseudocaranx dentex</td></tr>
 <tr><td class="left">SBF</td><td class="right">21</td><td class="right"></td><td class="left">Fishbase  + Munoz</td><td class="left">Helicolemus dactylipterus  + Girella tricuspidata</td></tr>
+<tr><td class="left">MPF</td><td class="right">5.6</td><td class="right">1</td><td class="left">Fishbase</td><td class="left"></td></tr>
 </tbody>
 </table>
 
@@ -3840,10 +3836,9 @@ print(b)
 <tr><td class="left">OTA</td><td class="right">3</td><td class="left">Amano2000 and Osman</td><td class="left"></td></tr>
 <tr><td class="left">LPF</td><td class="right">2</td><td class="left">Fishbase (average)</td><td class="left">Pseudocaranx dentex</td></tr>
 <tr><td class="left">SBF</td><td class="right">3</td><td class="left">Fishbase  + Munoz</td><td class="left">Helicolemus dactylipterus  + Girella tricuspidata</td></tr>
+<tr><td class="left">MPF</td><td class="right">1</td><td class="left">Fishbase</td><td class="left"></td></tr>
 </tbody>
 </table>
-
-
 
 
 <ul>
@@ -3910,22 +3905,22 @@ print(b)
 <tr><td class="left">SPL</td><td class="right">7.96</td><td class="right">12.94</td><td class="right">271.18</td><td class="right">1015.74</td><td class="right">0.96</td><td class="right">2.72</td><td class="right">1727.03</td><td class="right">6468.90</td><td class="right">0.35</td><td class="right">609.71</td></tr>
 <tr><td class="left">VID</td><td class="right">58.02</td><td class="right">77.64</td><td class="right">1586.56</td><td class="right">3923.89</td><td class="right">0.01</td><td class="right">3.11</td><td class="right">10104.27</td><td class="right">24989.94</td><td class="right">0.40</td><td class="right">4059.30</td></tr>
 <tr><td class="left">CHO</td><td class="right">64.75</td><td class="right">95.18</td><td class="right">1187.73</td><td class="right">4037.54</td><td class="right">0.00</td><td class="right">3.18</td><td class="right">7564.23</td><td class="right">25713.72</td><td class="right">0.36</td><td class="right">2736.13</td></tr>
+<tr><td class="left">MPF</td><td class="right">4.00</td><td class="right">8.00</td><td class="right">2.72</td><td class="right">30.31</td><td class="right">0.02</td><td class="right">3.48</td><td class="right">17.35</td><td class="right">193.02</td><td class="right">0.31</td><td class="right">5.30</td></tr>
 </tbody>
 </table>
 
 </li>
 </ul>
 
-
 </li>
 </ul>
 </div>
 
 </div>
 
-<div id="outline-container-5-2-1-8" class="outline-5">
-<h5 id="sec-5-2-1-8">Spawning</h5>
-<div class="outline-text-5" id="text-5-2-1-8">
+<div id="outline-container-5-2-1-9" class="outline-5">
+<h5 id="sec-5-2-1-9">Spawning</h5>
+<div class="outline-text-5" id="text-5-2-1-9">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption>First day of each month</caption>
@@ -3973,16 +3968,16 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-9" class="outline-5">
-<h5 id="sec-5-2-1-9">Recruitment</h5>
-<div class="outline-text-5" id="text-5-2-1-9">
+<div id="outline-container-5-2-1-10" class="outline-5">
+<h5 id="sec-5-2-1-10">Recruitment</h5>
+<div class="outline-text-5" id="text-5-2-1-10">
 
 <ul>
-<li id="sec-5-2-1-9-1">Connectivity Simulations<br/>
+<li id="sec-5-2-1-10-1">Connectivity Simulations<br/>
 <ul>
-<li id="sec-5-2-1-9-1-1">Setting icthyops<br/>
+<li id="sec-5-2-1-10-1-1">Setting icthyops<br/>
 <ul>
-<li id="sec-5-2-1-9-1-1-1">I need to work on the SBF and LBF<br/>
+<li id="sec-5-2-1-10-1-1-1">I need to work on the SBF and LBF<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -4003,7 +3998,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-9-1-2">Icthyops input files<br/>
+<li id="sec-5-2-1-10-1-2">Icthyops input files<br/>
 
 
 
@@ -4107,7 +4102,7 @@ zones.xml(lon = lon, lat = lat, rel.pol = rel.pol, rec.pol = rec.pol,
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-9-1-3">Output connectivity matrix<br/>
+<li id="sec-5-2-1-10-1-3">Output connectivity matrix<br/>
 
 
 
@@ -4217,9 +4212,9 @@ invisible(dev.off())
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-9-2">Recruitment model<br/>
+<li id="sec-5-2-1-10-2">Recruitment model<br/>
 <ul>
-<li id="sec-5-2-1-9-2-1">Estimation of B-H parameter<br/>
+<li id="sec-5-2-1-10-2-1">Estimation of B-H parameter<br/>
 <ul>
 <li>The Formula used is the option 3 for atlatnis
   R<sub>c</sub>=(Sp * BHa)/Biomass + BHb
@@ -4366,7 +4361,7 @@ biomass[1] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> init.B
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-9-2-2">EStimation of weight at recruitment<br/>
+<li id="sec-5-2-1-10-2-2">EStimation of weight at recruitment<br/>
 
 
 
@@ -4377,7 +4372,7 @@ options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span
 data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Spawning/weight_rec.csv'</span>)
 
 data$weight <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(data, ifelse(is.na(weight),
-                                 alometric(size, alf.all, beta.all),
+                                 alometric(size, Alpha, Beta),
                                  weight))
 <span style="color: #696969;">##</span><span style="color: #696969;">~ estimation of structural and reserve wight for recruitment</span>
 data <span style="color: #ff4500; font-weight: bold;">&lt;-</span> cbind(data, with(data, weights(FG, weight,<span style="color: #ffc125; font-weight: bold;">'g'</span>))[, 2 : 3])
@@ -4388,24 +4383,24 @@ print(b)
 </pre>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption>Structural and reserve wight for recruitment</caption>
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="left" /><col class="right" /><col class="right" />
 </colgroup>
 <thead>
-<tr><th scope="col" class="left">FG</th><th scope="col" class="right">weight</th><th scope="col" class="right">size</th><th scope="col" class="right">alf.all</th><th scope="col" class="right">beta.all</th><th scope="col" class="left">Reference</th><th scope="col" class="right">structural</th><th scope="col" class="right">reserve</th></tr>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="right">weight</th><th scope="col" class="right">size</th><th scope="col" class="right">Alpha</th><th scope="col" class="right">Beta</th><th scope="col" class="left">Reference</th><th scope="col" class="right">structural</th><th scope="col" class="right">reserve</th></tr>
 </thead>
 <tbody>
 <tr><td class="left">ALF</td><td class="right">0.15</td><td class="right">1.50</td><td class="right">0.05</td><td class="right">2.84</td><td class="left">Mundy1990</td><td class="right">0.36</td><td class="right">0.97</td></tr>
 <tr><td class="left">ANG</td><td class="right">0.69</td><td class="right">5.80</td><td class="right">0.00</td><td class="right">2.83</td><td class="left">Miller2009</td><td class="right">1.65</td><td class="right">4.37</td></tr>
 <tr><td class="left">BRC</td><td class="right">0.28</td><td class="right">3.04</td><td class="right">0.01</td><td class="right">3.15</td><td class="left">Bruce2001</td><td class="right">0.67</td><td class="right">1.77</td></tr>
 <tr><td class="left">GCR</td><td class="right">9.61</td><td class="right">2.77</td><td class="right">0.53</td><td class="right">2.84</td><td class="left">Anger1983</td><td class="right">23.09</td><td class="right">61.18</td></tr>
-<tr><td class="left">LBF</td><td class="right">0.17</td><td class="right">5.30</td><td class="right">0.00</td><td class="right">3.88</td><td class="left">Mujica</td><td class="right">0.41</td><td class="right">1.07</td></tr>
-<tr><td class="left">LPF</td><td class="right">4.40</td><td class="right"></td><td class="right">0.03</td><td class="right">2.73</td><td class="left">Lopez 2000</td><td class="right">10.57</td><td class="right">28.01</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.16</td><td class="right">5.30</td><td class="right">0.00</td><td class="right">3.90</td><td class="left">Mujica</td><td class="right">0.38</td><td class="right">1.01</td></tr>
+<tr><td class="left">LPF</td><td class="right">4.40</td><td class="right"></td><td class="right">0.07</td><td class="right">2.50</td><td class="left">Lopez 2000</td><td class="right">10.57</td><td class="right">28.01</td></tr>
 <tr><td class="left">ORO</td><td class="right">0.01</td><td class="right">0.53</td><td class="right">0.04</td><td class="right">2.91</td><td class="left">Zeldis</td><td class="right">0.02</td><td class="right">0.05</td></tr>
 <tr><td class="left">OTA</td><td class="right">8600.00</td><td class="right"></td><td class="right">3.88</td><td class="right">2.07</td><td class="left">Osman</td><td class="right">20668.11</td><td class="right">54770.49</td></tr>
-<tr><td class="left">SBF</td><td class="right">31.94</td><td class="right">3.00</td><td class="right">7.08</td><td class="right">1.37</td><td class="left"></td><td class="right">76.77</td><td class="right">203.43</td></tr>
+<tr><td class="left">SBF</td><td class="right">11.07</td><td class="right">3.00</td><td class="right">1.58</td><td class="right">1.77</td><td class="left">Billy Database</td><td class="right">26.61</td><td class="right">70.53</td></tr>
 <tr><td class="left">SPF</td><td class="right">0.06</td><td class="right">2.00</td><td class="right">0.01</td><td class="right">3.14</td><td class="left">Sawada</td><td class="right">0.15</td><td class="right">0.40</td></tr>
 <tr><td class="left">SPL</td><td class="right">0.96</td><td class="right">1.00</td><td class="right">0.96</td><td class="right">2.72</td><td class="left">Porobic</td><td class="right">2.31</td><td class="right">6.13</td></tr>
+<tr><td class="left">VID</td><td class="right">1586.96</td><td class="right">58.02</td><td class="right">0.01</td><td class="right">3.11</td><td class="left">Billy Database</td><td class="right">3813.90</td><td class="right">10106.83</td></tr>
 </tbody>
 </table>
 
@@ -4418,13 +4413,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-10" class="outline-5">
-<h5 id="sec-5-2-1-10">LFD by cohorts</h5>
-<div class="outline-text-5" id="text-5-2-1-10">
+<div id="outline-container-5-2-1-11" class="outline-5">
+<h5 id="sec-5-2-1-11">LFD by cohorts</h5>
+<div class="outline-text-5" id="text-5-2-1-11">
 
 <p>In this secction I use the data form the Database to get the number of organism by cohort. The cohorts used here matches the cohort on Atlantis
 </p>
-
 
 
 <pre class="src src-R">rm(list = ls())
@@ -4501,14 +4495,13 @@ print(b)
 <p>
 <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png" width="600" alt="image" />
 <br style="clear:both;" />
-</p>
-</div>
+</p></div>
 
 </div>
 
-<div id="outline-container-5-2-1-11" class="outline-5">
-<h5 id="sec-5-2-1-11">Estimation of the mean Weight</h5>
-<div class="outline-text-5" id="text-5-2-1-11">
+<div id="outline-container-5-2-1-12" class="outline-5">
+<h5 id="sec-5-2-1-12">Estimation of the mean Weight</h5>
+<div class="outline-text-5" id="text-5-2-1-12">
 
 <ul>
 <li>Based on the catch data and the data at age available I calculated the mean weight for several groups
@@ -4543,12 +4536,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-12" class="outline-5">
-<h5 id="sec-5-2-1-12">Temperature</h5>
-<div class="outline-text-5" id="text-5-2-1-12">
+<div id="outline-container-5-2-1-13" class="outline-5">
+<h5 id="sec-5-2-1-13">Temperature</h5>
+<div class="outline-text-5" id="text-5-2-1-13">
 
 <ul>
-<li id="sec-5-2-1-12-1">Recruitment<br/>
+<li id="sec-5-2-1-13-1">Recruitment<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="left" />
 </colgroup>
@@ -4569,7 +4562,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-1-12-2">Optimal temperature<br/>
+<li id="sec-5-2-1-13-2">Optimal temperature<br/>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" /><col class="left" />
 </colgroup>
@@ -4649,7 +4642,7 @@ print(b)
 
 
 <ul>
-<li id="sec-5-2-1-12-2-1">Temperature tolerance (Griffin model)<br/>
+<li id="sec-5-2-1-13-2-1">Temperature tolerance (Griffin model)<br/>
 
 </li>
 </ul>
@@ -4659,12 +4652,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-13" class="outline-5">
-<h5 id="sec-5-2-1-13">Oxigen</h5>
-<div class="outline-text-5" id="text-5-2-1-13">
+<div id="outline-container-5-2-1-14" class="outline-5">
+<h5 id="sec-5-2-1-14">Oxigen</h5>
+<div class="outline-text-5" id="text-5-2-1-14">
 
 <ul>
-<li id="sec-5-2-1-13-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
+<li id="sec-5-2-1-14-1">Oxygen model used for epibenthic invertebrate <b>Quadratic limitation</b> (O2case = 3)<br/>
 <ul>
 <li>Calculates both ambient and depth based limitation and uses the larger of the two values as the oxygen scalar dO2
 </li>
@@ -4725,18 +4718,18 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-14" class="outline-5">
-<h5 id="sec-5-2-1-14">Extra Mortality</h5>
-<div class="outline-text-5" id="text-5-2-1-14">
+<div id="outline-container-5-2-1-15" class="outline-5">
+<h5 id="sec-5-2-1-15">Extra Mortality</h5>
+<div class="outline-text-5" id="text-5-2-1-15">
 
 <p>     I'm not including xxplicit fish mortality by season (mS<sub>FDXXX</sub>) and seabird and mamal induced mortality (mS<sub>SBXXX</sub>)
 </p></div>
 
 </div>
 
-<div id="outline-container-5-2-1-15" class="outline-5">
-<h5 id="sec-5-2-1-15">Bibliography that I need</h5>
-<div class="outline-text-5" id="text-5-2-1-15">
+<div id="outline-container-5-2-1-16" class="outline-5">
+<h5 id="sec-5-2-1-16">Bibliography that I need</h5>
+<div class="outline-text-5" id="text-5-2-1-16">
 
 <ul>
 <li><code>[&nbsp;]</code> Sepulveda y Pequeño,  Fauna ictica del archipielago de Juan Fernandez. En P. Arana (ed). Investigaciones Marinas en el Archipiélago de Juan Fernández. Esc. Ciencias del Mar, UCV, Valparaíso
@@ -4752,9 +4745,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-16" class="outline-5">
-<h5 id="sec-5-2-1-16">Codes</h5>
-<div class="outline-text-5" id="text-5-2-1-16">
+<div id="outline-container-5-2-1-17" class="outline-5">
+<h5 id="sec-5-2-1-17">Codes</h5>
+<div class="outline-text-5" id="text-5-2-1-17">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4802,25 +4795,25 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-17" class="outline-5">
-<h5 id="sec-5-2-1-17">What is needed</h5>
-<div class="outline-text-5" id="text-5-2-1-17">
-
-<ul>
-<li id="sec-5-2-1-17-1">Look for the larval duration of other species<br/>
-</li>
-</ul>
-<ul>
-<li id="sec-5-2-1-17-2">Poner el numero de individuos desovando<br/>
-</li>
-</ul>
-</div>
-
-</div>
-
 <div id="outline-container-5-2-1-18" class="outline-5">
-<h5 id="sec-5-2-1-18">Resume of the configuration file</h5>
+<h5 id="sec-5-2-1-18">What is needed</h5>
 <div class="outline-text-5" id="text-5-2-1-18">
+
+<ul>
+<li id="sec-5-2-1-18-1">Look for the larval duration of other species<br/>
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-1-18-2">Poner el numero de individuos desovando<br/>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-1-19" class="outline-5">
+<h5 id="sec-5-2-1-19">Resume of the configuration file</h5>
+<div class="outline-text-5" id="text-5-2-1-19">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -4886,9 +4879,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-1-19" class="outline-5">
-<h5 id="sec-5-2-1-19">Mortality</h5>
-<div class="outline-text-5" id="text-5-2-1-19">
+<div id="outline-container-5-2-1-20" class="outline-5">
+<h5 id="sec-5-2-1-20">Mortality</h5>
+<div class="outline-text-5" id="text-5-2-1-20">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="left" />
@@ -4920,12 +4913,175 @@ print(b)
 <h4 id="sec-5-2-2">Forcing files</h4>
 <div class="outline-text-4" id="text-5-2-2">
 
+</div>
 
 </div>
 
-<div id="outline-container-5-2-2-1" class="outline-5">
-<h5 id="sec-5-2-2-1">Solar radiation</h5>
-<div class="outline-text-5" id="text-5-2-2-1">
+<div id="outline-container-5-2-3" class="outline-4">
+<h4 id="sec-5-2-3">Harvest file</h4>
+<div class="outline-text-4" id="text-5-2-3">
+
+
+</div>
+
+<div id="outline-container-5-2-3-1" class="outline-5">
+<h5 id="sec-5-2-3-1">General setting</h5>
+<div class="outline-text-5" id="text-5-2-3-1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="right" /><col class="left" /><col class="right" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="left">fishery</th><th scope="col" class="right">Start (year)</th><th scope="col" class="left">End</th><th scope="col" class="right">Effort model</th><th scope="col" class="left">Selectivity</th><th scope="col" class="right">Change q</th><th scope="col" class="right">Change Eff</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">SPL</td><td class="left">Trap</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">1</td><td class="right">1 (Chigre)</td></tr>
+<tr><td class="left">GCR</td><td class="left">Trap</td><td class="right">18263 (2000)</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">ANG</td><td class="left">Trap</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Constant</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">SPF</td><td class="left">Bait</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Normal</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">LPF</td><td class="left">Bait</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">BRC</td><td class="left">Bait</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">LBF</td><td class="left">Bait</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">SBF</td><td class="left">Bait</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">BRC</td><td class="left">Long line</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">VID</td><td class="left">Long line</td><td class="right">0</td><td class="left"></td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">ORO</td><td class="left">Trawl</td><td class="right">17533(1998)</td><td class="left">20454 (2006)</td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">ALF</td><td class="left">Trawl</td><td class="right">17533(1998)</td><td class="left">22646 (2012)</td><td class="right">3</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+<tr><td class="left">OCT</td><td class="left">Pot</td><td class="right">0</td><td class="left"></td><td class="right">1</td><td class="left">Logistic</td><td class="right">0</td><td class="right">0</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-3-2" class="outline-5">
+<h5 id="sec-5-2-3-2">TAC</h5>
+<div class="outline-text-5" id="text-5-2-3-2">
+
+<ul>
+<li id="sec-5-2-3-2-1">ALF<br/>
+<ul>
+<li>start 2003 - jun - 01 (22446) (wiff 2016)
+<ul>
+<li>catch 4752 tonns
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<ul>
+<li id="sec-5-2-3-2-2">ORO<br/>
+<ul>
+<li>start 1999 (17897) Paya (2013)
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-3-3" class="outline-5">
+<h5 id="sec-5-2-3-3">Selectivity</h5>
+<div class="outline-text-5" id="text-5-2-3-3">
+
+<ul>
+<li>I used the values length of the catch to estimate the parameter for the selectivity curve
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R"><span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
+<span style="color: #696969;">##</span><span style="color: #696969;">-----------------------------------------#</span>
+<span style="color: #696969;">##  </span><span style="color: #696969;">obtener los limites de las capturas    #</span>
+<span style="color: #696969;">##</span><span style="color: #696969;">-----------------------------------------#</span>
+rm(list = ls())
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">data</span>
+lf    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Harvest/Selectivity/LF.csv'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Grupos funcionales</span>
+lf    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(lf, 2)
+lf.fg <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(lf, lf$FG)  <span style="color: #696969;"># </span><span style="color: #696969;">split by functional group</span>
+lf.fg <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lf.fg[ -c(2, 4, 7)] <span style="color: #696969;">## </span><span style="color: #696969;">removed CHO OCT and ANG</span>
+png(<span style="color: #ffc125; font-weight: bold;">'img/Selectivity.png'</span>, height=900, width=900)
+par(mfrow = c(3, 3), oma = c(3, 3, 1, 1), mar = c(1, 2, 3, 1))
+out  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NULL</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>(i <span style="color: #ff7f00; font-weight: bold;">in</span> 1 :  length(lf.fg)){
+    <span style="color: #696969;">## </span><span style="color: #696969;">checking the lenght of the vector</span>
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(sum(!is.na(lf.fg[[i]]$Fork_length)) &gt; sum(!is.na(lf.fg[[i]]$Total_length))){
+        col <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 3
+    } <span style="color: #ff7f00; font-weight: bold;">else</span>{
+        col <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 4
+    }
+    <span style="color: #696969;">## </span><span style="color: #696969;">range for the lengths</span>
+    rang    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> range(lf.fg[[i]][, col], na.rm = <span style="color: #fffacd; font-weight: bold;">TRUE</span>)
+    h       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> hist(lf.fg[[i]][, col], breaks = seq(from = floor(rang[1]), to = ceiling(rang[2]), length = 10), plot = F)
+    sel.obs <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(size = h$mids, prop = cumsum(h$counts) / sum(h$counts))
+    <span style="color: #696969;">## </span><span style="color: #696969;">estimations (using nls)</span>
+    size    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> sel.obs$size
+    prop    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> sel.obs$prop
+    sel.est <span style="color: #ff4500; font-weight: bold;">&lt;-</span> nls(prop ~ selec(len = size, selb, lsm),
+                   start = c(selb = 0.02, lsm = mean(sel.obs$size)))
+    <span style="color: #696969;">## </span><span style="color: #696969;">Generating the table with the parameters</span>
+    out <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rbind(out, data.frame(FG   = unique(lf.fg[[i]]$FG),
+                                 Selb = coef(sel.est)[1], Lsm =  coef(sel.est)[2]))
+    <span style="color: #696969;">## </span><span style="color: #696969;">Ploting</span>
+    val.st <span style="color: #ff4500; font-weight: bold;">&lt;-</span> fitted(sel.est)
+    plot(sel.obs, pch = 19, main = unique(lf.fg[[i]]$FG), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">''</span>, ylab = <span style="color: #ffc125; font-weight: bold;">''</span>, las = 1)
+    lines(size, val.st, col = 2, lty = 2, lwd = 2)
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 4) mtext(<span style="color: #ffc125; font-weight: bold;">'Selectivity'</span>, side = 2, line = 2.5)
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 8) mtext(<span style="color: #ffc125; font-weight: bold;">'Length (mm)'</span>, side = 1, line = 2.5)
+}
+dev.off()
+<span style="color: #696969;">## </span><span style="color: #696969;">table with parameters</span>
+cap                  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Selectivity parameters'</span>
+b                    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, header=T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">FALSE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption = cap, digit = 8)
+print(b)
+
+</pre>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption>Selectivity parameters</caption>
+<colgroup><col class="left" /><col class="right" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="right">Selb</th><th scope="col" class="right">Lsm</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">ALF</td><td class="right">0.02388184</td><td class="right">306.05752819</td></tr>
+<tr><td class="left">BRC</td><td class="right">0.02108783</td><td class="right">376.49229292</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.00965094</td><td class="right">541.45224712</td></tr>
+<tr><td class="left">LPF</td><td class="right">0.02171968</td><td class="right">272.01915545</td></tr>
+<tr><td class="left">ORO</td><td class="right">0.04799471</td><td class="right">424.55000622</td></tr>
+<tr><td class="left">SBF</td><td class="right">0.01838348</td><td class="right">379.37444575</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.03919890</td><td class="right">283.36112196</td></tr>
+<tr><td class="left">VID</td><td class="right">0.01581793</td><td class="right">652.61085672</td></tr>
+</tbody>
+</table>
+
+
+
+<div class="figure">
+<p><img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Selectivity.png" width="600" alt="image" /></p>
+<p>Fishery gear Selectivity</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5-2-4" class="outline-4">
+<h4 id="sec-5-2-4">Solar radiation</h4>
+<div class="outline-text-4" id="text-5-2-4">
 
 <ul>
 <li>I se the information irradiance from <a href="http://www.soda-pro.com/web-services/radiation/nasa-sse">soda</a>
@@ -4934,7 +5090,6 @@ print(b)
 </li>
 </ul>
 
-</div>
 </div>
 </div>
 
@@ -5007,7 +5162,7 @@ make.init.csv(grp.file, bgm.file, cum.depths, csv.name)
 </table>
 
 </li>
-<li>The lenght or age distribution by cohort. I used the information calculated on <a href="#sec-5-2-1-10">Table</a>
+<li>The lenght or age distribution by cohort. I used the information calculated on <a href="#sec-5-2-1-11">Table</a>
 
 
 
@@ -5473,7 +5628,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-08-21T16:44+1000</p>
+<p class="date">Date: 2017-10-11T18:58+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

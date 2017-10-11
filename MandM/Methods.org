@@ -1912,24 +1912,24 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
   #+RESULTS:
   #+begin_example
   #+CAPTION: Clearance by cohort for some functional groups [m3d-1]
-  |     |     1 |     2 |      3 |      4 |      5 |      6 |      7 |      8 |      9 |     10 |
+  |     | 1     | 2     | 3      | 4      | 5      | 6      | 7      | 8      | 9      | 10     |
   |-----+-------+-------+--------+--------+--------+--------+--------+--------+--------+--------|
-  | ALF | 13.60 | 27.89 |  43.59 |  59.30 |  74.19 |  87.82 | 100.01 | 110.73 | 120.09 | 128.10 |
-  | ANG |  2.74 |  6.30 |  17.84 |  32.27 |  47.81 |  63.59 |  78.80 |  93.07 | 106.12 | 117.99 |
-  | BIR |  0.41 |  2.18 |   5.28 |   9.24 |  13.61 |  18.04 |  22.28 |  26.20 |  29.72 |  32.81 |
-  | BRC | 10.80 | 17.85 |  27.37 |  39.26 |  54.48 |  75.00 | 100.43 | 123.91 | 147.97 | 174.87 |
-  | CHO |  6.99 | 22.33 |  40.47 |  58.51 |  75.02 |  89.45 | 101.70 | 111.88 | 120.24 | 127.02 |
-  | DOL |  8.61 | 28.21 |  52.40 |  77.46 | 101.36 | 123.08 | 142.24 | 158.78 | 172.86 | 184.71 |
-  | GCR |  0.28 |  0.94 |   1.96 |   3.31 |   4.91 |   6.59 |   8.10 |   9.34 |  10.67 |  11.85 |
-  | LBF | 43.67 | 53.94 |  67.23 |  77.84 |  90.75 | 111.77 | 129.30 | 140.53 | 157.67 | 176.21 |
-  | LPF | 12.07 | 85.14 | 144.66 | 179.30 | 197.51 | 206.69 | 211.24 | 213.47 | 214.56 | 215.09 |
-  | MPF |  1.63 |  2.18 |   2.28 |   2.29 |   2.30 |   2.30 |        |        |        |        |
-  | ORO |  2.94 | 18.38 |  36.08 |  51.64 |  62.26 |  69.10 |  73.35 |  75.96 |  77.52 |  78.46 |
-  | OTA | 28.15 | 38.85 |  48.08 |  55.71 |  61.85 |  66.70 |  70.48 |  73.42 |  75.67 |  77.40 |
-  | SBF |  3.65 |  5.45 |   7.61 |  10.79 |  14.37 |  19.53 |  22.84 |  30.93 |  36.17 |  41.81 |
+  | ALF | 10.41 | 21.35 | 33.38  | 45.40  | 56.80  | 67.23  | 76.57  | 84.78  | 91.95  | 98.07  |
+  | ANG | 2.09  | 4.80  | 13.59  | 24.60  | 36.44  | 48.47  | 60.06  | 70.94  | 80.88  | 89.94  |
+  | BIR | 0.41  | 2.18  | 5.28   | 9.24   | 13.61  | 18.04  | 22.28  | 26.20  | 29.72  | 32.81  |
+  | BRC | 10.80 | 17.85 | 27.37  | 39.26  | 54.48  | 75.00  | 100.43 | 123.91 | 147.97 | 174.87 |
+  | CHO | 6.99  | 22.33 | 40.47  | 58.51  | 75.02  | 89.45  | 101.70 | 111.88 | 120.24 | 127.02 |
+  | DOL | 8.61  | 28.21 | 52.40  | 77.46  | 101.36 | 123.08 | 142.24 | 158.78 | 172.86 | 184.71 |
+  | GCR | 0.28  | 0.94  | 1.96   | 3.31   | 4.91   | 6.59   | 8.10   | 9.34   | 10.67  | 11.85  |
+  | LBF | 43.67 | 53.94 | 67.23  | 77.84  | 90.75  | 111.77 | 129.30 | 140.53 | 157.67 | 176.21 |
+  | LPF | 10.06 | 70.95 | 120.55 | 149.42 | 164.59 | 172.24 | 176.03 | 177.89 | 178.80 | 179.24 |
+  | MPF | 1.63  | 2.18  | 2.28   | 2.29   | 2.30   | 2.30   |        |        |        |        |
+  | ORO | 2.94  | 18.38 | 36.08  | 51.64  | 62.26  | 69.10  | 73.35  | 75.96  | 77.52  | 78.46  |
+  | OTA | 28.15 | 38.85 | 48.08  | 55.71  | 61.85  | 66.70  | 70.48  | 73.42  | 75.67  | 77.40  |
+  | SBF | 3.65  | 5.45  | 7.61   | 10.79  | 14.37  | 19.53  | 22.84  | 30.93  | 36.17  | 41.81  |
   | SPF | 10.15 | 46.63 | 100.30 | 149.76 | 190.13 | 221.14 | 244.16 | 260.90 | 272.91 | 281.44 |
-  | SPL |  0.46 |  0.55 |   0.65 |   0.75 |   0.89 |   1.00 |   1.12 |   1.23 |   1.33 |   1.45 |
-  | VID | 31.74 | 42.00 |  56.84 |        |        |        |        |        |        |        |
+  | SPL | 0.46  | 0.55  | 0.65   | 0.75   | 0.89   | 1.00   | 1.12   | 1.23   | 1.33   | 1.45   |
+  | VID | 31.74 | 42.00 | 56.84  |        |        |        |        |        |        |        |
 #+end_example
 
   #+ATTR_HTML: width="600" alt="image"
@@ -2987,13 +2987,82 @@ In this secction I use the data form the Database to get the number of organism 
 | ALF | Trawl     |  17533(1998) | 22646 (2012) |            3 | Logistic    |        0 |          0 |
 | OCT | Pot       |            0 |              |            1 | Logistic    |        0 |          0 |
 
-
 **** TAC
 ***** ALF
  - start 2003 - jun - 01 (22446) (wiff 2016)
    - catch 4752 tonns
 ***** ORO
  - start 1999 (17897) Paya (2013)
+**** Selectivity
+- I used the values length of the catch to estimate the parameter for the selectivity curve
+#+BEGIN_SRC R :results output
+  library(ascii)
+  options(asciiType = "org")
+  ##-----------------------------------------#
+  ##  obtener los limites de las capturas    #
+  ##-----------------------------------------#
+  rm(list = ls())
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  ## data
+  lf    <- read.csv('/home/demiurgo/Documents/PhD/Harvest/Selectivity/LF.csv')
+  ## Grupos funcionales
+  lf    <- FG(lf, 2)
+  lf.fg <- split(lf, lf$FG)  # split by functional group
+  lf.fg <- lf.fg[ -c(2, 4, 7)] ## removed CHO OCT and ANG
+  png('img/Selectivity.png', height=900, width=900)
+  par(mfrow = c(3, 3), oma = c(3, 3, 1, 1), mar = c(1, 2, 3, 1))
+  out  <- NULL
+  for(i in 1 :  length(lf.fg)){
+      ## checking the lenght of the vector
+      if(sum(!is.na(lf.fg[[i]]$Fork_length)) > sum(!is.na(lf.fg[[i]]$Total_length))){
+          col <- 3
+      } else{
+          col <- 4
+      }
+      lf.fg[[i]][, col] <- lf.fg[[i]][, col] /10
+      ## range for the lengths
+      rang    <- range(lf.fg[[i]][, col], na.rm = TRUE)
+      h       <- hist(lf.fg[[i]][, col], breaks = seq(from = floor(rang[1]), to = ceiling(rang[2]), length = 10), plot = F)
+      sel.obs <- data.frame(size = h$mids, prop = cumsum(h$counts) / sum(h$counts))
+      ## estimations (using nls)
+      size    <- sel.obs$size
+      prop    <- sel.obs$prop
+      sel.est <- nls(prop ~ selec(len = size, selb, lsm),
+                     start = c(selb = 0.02, lsm = mean(sel.obs$size)))
+      ## Generating the table with the parameters
+      out <- rbind(out, data.frame(FG   = unique(lf.fg[[i]]$FG),
+                                   Selb = coef(sel.est)[1], Lsm =  coef(sel.est)[2]))
+      ## Ploting
+      val.st <- fitted(sel.est)
+      plot(sel.obs, pch = 19, main = unique(lf.fg[[i]]$FG), bty = 'n', xlab = '', ylab = '', las = 1)
+      lines(size, val.st, col = 2, lty = 2, lwd = 2)
+      if(i == 4) mtext('Selectivity', side = 2, line = 2.5)
+      if(i == 8) mtext('Length (cm)', side = 1, line = 2.5)
+  }
+  dev.off()
+  ## table with parameters
+  cap                  <- 'Selectivity parameters'
+  b                    <- ascii(out, header=T,  include.rownames = FALSE, include.colnames = TRUE, caption = cap, digit = 3)
+  print(b)
+
+#+END_SRC
+
+#+RESULTS:
+#+CAPTION: Selectivity parameters
+| FG  | Selb  | Lsm    |
+|-----+-------+--------|
+| ALF | 0.239 | 30.505 |
+| BRC | 0.211 | 37.649 |
+| LBF | 0.095 | 53.677 |
+| LPF | 0.217 | 27.202 |
+| ORO | 0.427 | 42.323 |
+| SBF | 0.182 | 37.818 |
+| SPF | 0.413 | 28.327 |
+| VID | 0.159 | 64.993 |
+
+#+CAPTION: Fishery gear Selectivity
+#+ATTR_HTML: width="600" alt="image"
+[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Selectivity.png]]
 *** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data
