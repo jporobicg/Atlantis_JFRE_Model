@@ -28,18 +28,18 @@ flag_replicate_old_calendar 0   # This flag specifically allows for legacy model
 ## ~     Parameters controlling detailed outputs for a specific box and diagnostic reporting       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 debug_it      0
-checkbox      56  	       # Give detailed logged output for this box
-checkstart    4700 day          # Start detailed logged output after this date
+checkbox      90  	       # Give detailed logged output for this box
+checkstart    366666660 day            # Start detailed logged output after this date
 checkstop     366666660 day    # Stop detailed logged output after this date
-debug         0        	       # Several option,  Check manual
+debug         0       	       # Several option,  Check manual
 fishtest      0        	       # Count up total population for each vertebrate after each main subroutine: 0=no, 1=yes
 flaggape      0        	       # Periodically list prey vs gape statistics (tuning diagnostic)
 flagchecksize 0        	       # Periodically list relative size (tuning diagnostic)
 flagagecheck  0        	       # Periodically list age structure per cohort (tuning diagnostic)
 flagdietcheck 0        	       # Periodically list realised diet matchups (tuning diagnostic)
-checkNH       1       	       # Give detailed logged output for NH in checkbox
-checkDL       1        	       # Give detailed logged output for DL in checkbox
-checkDR       1        	       # Give detailed logged output for DR in checkbox
+checkNH       0       	       # Give detailed logged output for NH in checkbox
+checkDL       0        	       # Give detailed logged output for DL in checkbox
+checkDR       0        	       # Give detailed logged output for DR in checkbox
 checkbiom     0       	       # Give detailed logged output for biomasses in checkbox
 which_fleet   33       	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
 which_check   80       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
@@ -105,4 +105,4 @@ K_num_catchqueue  7    # Length (in days) of list of catches used in running ave
 flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)
 # SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC
 init_scalar       34
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.25 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1

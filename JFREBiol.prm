@@ -542,7 +542,7 @@ flagANGMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out o
 flagALFMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCHOMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOTAMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
-flagDOLMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
+flagDOLMigrate 1 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagOCTMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagCORMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
 flagSQDMigrate 0 ## 0=always remain within the model domain, 1+=migrate in/out of the model
@@ -3452,13 +3452,13 @@ pPREY1LPF2  37
 pPREY2LPF2  37
 0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.01 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.09 0.005 0.01 0.005 0.005 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.09 0.005 0.01 1e-05 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.03 0.075 0.07 0 0.05 0 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.03 0.075 0.07 0 0.05 1e-05 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.05 0.01 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.05 0.01 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 0.005 0.005 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.01 0.01 0.008 1e-05 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
@@ -3903,13 +3903,13 @@ C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 31.74 42 56.84
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-3.9 24.38 47.86 68.51 82.6 91.67 97.31 100.77 102.84 104.09
+2.94 18.38 36.08 51.64 62.26 69.1 73.35 75.96 77.52 78.46
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
-19.45 39.89 62.35 84.82 106.11 125.60 143.05 158.38 171.76 183.21
+10.41 21.35 33.38 45.4 56.8 67.23 76.57 84.78 91.95 98.07
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-2.74 6.3 17.84 32.27 47.81 63.59 78.8 93.07 106.12 117.99
+2.09 4.8 13.59 24.6 36.44 48.47 60.06 70.94 80.88 89.94
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
-19.2 135.45 230.14 285.26 314.22 328.83 336.06 339.61 341.34 342.19
+10.06 70.95 120.55 149.42 164.59 172.24 176.03 177.89 178.8 179.24
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
 C_MPF 10 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
@@ -3917,7 +3917,7 @@ C_MPF 10 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 3.7 5.5 7.61 10.79 14.37 19.53 22.84 30.93 36.17 41.81
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
-67.02 82.78 103.17 119.46 139.28 171.54 198.44 215.68 241.99 270.43
+43.67 53.94 67.23 77.84 90.75 111.77 129.3 140.53 157.67 176.21
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 6.99 22.33 40.47 58.51 75.02 89.45 101.7 111.88 120.24 127.02
 C_DOL 10
@@ -4166,7 +4166,7 @@ E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
 E_GCR   0.44 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
-E_ORO   0.4 # Assimilation efficiency on live food and carrion of Orange Roughy
+E_ORO   0.55 # Assimilation efficiency on live food and carrion of Orange Roughy
 E_ALF   0.55 # Assimilation efficiency on live food and carrion of Alfonsino
 E_ANG   0.45 # Assimilation efficiency on live food and carrion of Anguila
 E_CHO   0.38 # Assimilation efficiency on live food and carrion of Chondrichtyans
@@ -4176,7 +4176,7 @@ E_BIR   0.65 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
-E_LPF   0.45 # Assimilation efficiency on live food and carrion of Large pelagic fish
+E_LPF   0.52 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_MPF   0.6 # Assimilation efficiency on live food and carrion of Mesopelagic fish
 E_SBF   0.5 # Assimilation efficiency on live food and carrion of Small benthic fish
@@ -4400,7 +4400,7 @@ LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.00005
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.00001
+0  0.000001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
 0  0.00002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
@@ -4435,36 +4435,36 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 5e-7
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-11 5e-11
+5e-11 1e-9
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-8e-10 8e-11
+8e-10 1e-10
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-5e-11 5e-9
+1e-10 1e-8
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-4e-10 5e-08
+4e-10 8e-08
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-9 1e-07
+1e-9 7e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-7 5e-6
+3e-7 9e-6
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-5e-9 5e-9
+5e-7 5e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-7 5e-6
+1e-6 1e-6
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
-1e-5 1e-9
+6e-6 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-9 5e-8
+5e-9 1e-7
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 1e-09 7e-08
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-09 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-12 1e-10
+1e-12 5e-10
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 5e-7
 
 ## Invertebrates
-OCT_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
+OCT_mQ   7e-7 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-9 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
@@ -5108,11 +5108,11 @@ KDENR_ALF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Anguila [ Numbers ]
 0
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
-2
+3
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.3
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
-0.5
+50
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
 0
 KDENR_SPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Small pelagic fish [ Numbers ]
@@ -5193,7 +5193,7 @@ BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate paramete
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   9.47508E+13              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ORO   5.330798E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   2.5E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans

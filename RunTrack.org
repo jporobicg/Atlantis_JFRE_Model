@@ -10176,3 +10176,73 @@ Removed: CET
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6246
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Clearance
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+***** ML
+****** MPF
+- from : 0  0.0001
+- to : 0  0.00001
+**** Recruitment
+***** MPF
+- Alpha
+- from : 9.74E+9
+- to : 5.74E+9
+*** Increased
+**** Clearance
+**** Efficiency
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+***** MPF
+- from : 4.56 3.705 6.213 9.5283333333 9.7992 20.52765
+- to : 18.24	18.525	20.71	23.821	24.498	34.213
+**** Mortality
+***** MQ
+****** BRC
+- from : 5e-12 5e-11
+- to :
+****** LBF
+- from : 1e-9 1e-7
+- to : 1e-9 5e-7
+****** MPF
+- from : 3e-11 1e-10
+- to : 3e-09 1e-10
+****** SPF
+- from : 1e-09 7e-08
+- to :
+****** LPF
+- from : 1e-9 7e-9
+- to : 5e-9 5e-8
+****** LPH
+- from : 1e-13
+- to :
+****** SPH
+- from : 1e-13
+- to :
+**** Initial Weighr
+*** Others
+**** plpulation size
+- MPF (quarter)
+**** Efficiency
+***** MPF
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171010143725
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171010143725.png]]
+* Run PC-Demiurgo 20171011110940
+  - Run start: 2017-10-11 11:09:40
+  - Run end: 2017-10-11 14:08:18
+  - log file : [[file:Calibration/20171011140818.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6246
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
