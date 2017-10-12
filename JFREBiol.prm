@@ -3392,21 +3392,21 @@ pPREY1ORO2  37
 pPREY2ORO2  37
 0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.1 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.005 0.05 0.1 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.07 0 0.005 0 0.05 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.01 0.05 0.1 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.07 0 0.01 0 0.05 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0.001 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0.001 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 1e-04 0 0.01 0.09 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 1e-04 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.05 0.001 0.01 0 0 0.005 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.03 0.001 0.01 0 0 0 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.005 0 0 0 0.005 5e-05 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.01 0.005 0 0 0 0 5e-05 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY1ANG2  37
-0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0.01 0.01 0 0.05 0.05 0.005 0.01 0 0 0 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
+0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0.01 0.01 0 0.05 0.02 0.005 0.01 0 0 0 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG2  37
-0.001 0.001 0.01 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.05 0.01 0.01 0 0 0 5e-05 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.001 0.01 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.03 0.01 0.01 0 0 0 5e-05 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
 0.001 0.01 0 0 0.01 0.01 0.005 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
@@ -3444,21 +3444,21 @@ pPREYSQD  37
 pPREYOCT  37
 0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.001 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.05 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
+0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.001 0 0.05 0 0 0 0.005 0.05 0.1 0 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
-0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0.05 0 0 0 0.05 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 1e-04 0 0.05 0 0 0 0.005 0 0.1 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0.05 0 0 0 0.01 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
+0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.005 0 0.05 0 0 0 0.001 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
-0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.01 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
+0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.05 0 0 0 0.001 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.09 0.005 0.01 1e-05 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 7e-04 0.007 0.07 0.005 0.01 1e-05 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.03 0.075 0.07 0 0.05 1e-05 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 7e-04 0.007 0.07 0 0.05 1e-05 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.05 0.01 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 7e-04 0.007 0.07 0.01 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0.09 0.075 0.07 0 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 7e-04 0.007 0.07 0 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.01 0.01 0.008 1e-05 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
@@ -3468,13 +3468,13 @@ pPREY1MPF2  37
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.0125 0.025 0.05 0.01 0.01 0.008 0.001 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.02 0.001 0.05 0.05 0.05 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.02 0.001 0.005 0.01 0.05 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.05 0.05 0.05 0.001 0 0 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.005 0.01 0.05 0.001 0 0 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.02 0.001 0.01 0.05 0.05 0.07 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.02 0.001 0.001 0.01 0.05 0.07 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0 0.01 0.05 0.05 0.03 0 0 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0 0.001 0.01 0.05 0.03 0 0 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
 0.001 0.005 0.005 0 0.001 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.05 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
@@ -3777,13 +3777,13 @@ k_trans_MOL 1.0
 k_trans_SUR 1.0
 
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
-C_OCT_T15   0.00001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
+C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.000013    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.000001   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.0000005   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-C_SCR_T15   0.003   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.003   #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -3903,13 +3903,13 @@ C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 31.74 42 56.84
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-1.85 11.58 22.73 32.53 39.23 43.53 46.21 47.86 48.84 49.43
+0.86 5.4 10.6 15.18 18.3 20.31 21.56 22.32 22.78 23.06
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 10.41 21.35 33.38 45.4 56.8 67.23 76.57 84.78 91.95 98.07
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-2.09 4.8 13.59 24.6 36.44 48.47 60.06 70.94 80.88 89.94
+1.77 4.05 11.48 20.77 30.77 40.93 50.72 59.9 68.3 79.94
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ]
-10.06 70.95 120.55 149.42 164.59 172.24 176.03 177.89 178.8 179.24
+6.29 44.34 75.34 93.39 102.87 107.65 110.02 111.18 111.75 112.03
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
 C_MPF 10 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
@@ -3933,8 +3933,8 @@ C_OTA 10
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## INVERTEBRATES OR BIOMASS POOLS
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-mum_OCT_T15   0.000001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SQD_T15   0.0002      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_OCT_T15   0.0000001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.0005      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.00005      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
@@ -3955,9 +3955,9 @@ mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
 13.333 13.846 14.857 18.75 25.25 26.2 41.28 53.568 68.688 101.52
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
-0.24  1.85   2.43
+0.48	3.7	8.1
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
-1.25 39 44.688 34.143 59 67.46 79.286 86.404 134.2 190.972
+3.125 97.5 99.307 100.421 131.111 149.911 198.215 172.808 268.4 381.944
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 45.47 62.905 97.835 125.795 149.28 169.495 149.224 160.96 170.36 117.09
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
@@ -4400,7 +4400,7 @@ LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.00005
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.000001
+0  0.00000001
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
 0  0.00002
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
@@ -4437,29 +4437,29 @@ GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-10 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-8e-10 8e-10
+8e-10 5e-9
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 1e-10 1e-8
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-4e-10 8e-08
+6e-10 9e-08
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 7e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 9e-6
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-9e-7 5e-7
+2e-6 5e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 1e-6 1e-6
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 6e-6 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-9 1e-7
+5e-9 5e-7
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-09 7e-08
+1e-09 1e-07
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-09 5e-11
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-12 5e-10
+1e-11 5e-9
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 5e-7
 
@@ -4473,7 +4473,7 @@ LZO_mQ   1e-10 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-11 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-10 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   1e-10 #  Quad. mortality rate of Sea Urchin [ d-1 ]
-MOL_mQ   1e-12 #  Quad. mortality rate of Mollusca [ d-1 ]
+MOL_mQ   1e-9 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
 LPH_mQ   1e-13 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
 SPH_mQ   1e-13 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
