@@ -231,7 +231,7 @@ flagrecruitANG 3
 flagrecruitALF 3
 flagrecruitCHO 12
 flagrecruitOTA 12
-flagrecruitDOL 11
+flagrecruitDOL 3
 flagrecruitBIR 12
 flagrecruitLPF 3
 flagrecruitSPF 3
@@ -5198,7 +5198,7 @@ BHalpha_ALF   2.5E+9		       # Beverton-Holt recruitment rate parameter (if recr
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
-BHalpha_DOL   4000             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
+BHalpha_DOL   4e5             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   5E+8                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   5.74E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
@@ -5215,7 +5215,7 @@ BHbeta_ALF   6E+8       # Beverton-Holt recruitment saturation parameter (if rec
 BHbeta_ANG   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
-BHbeta_DOL   5E+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
+BHbeta_DOL   1E+02       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
 BHbeta_LPF   6E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Large pelagic fish
 BHbeta_SPF   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
 BHbeta_MPF   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Small pelagic fish
