@@ -4449,7 +4449,7 @@ CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 2e-6 5e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-1e-6 1e-6
+1e-6 5e-7
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 6e-6 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
