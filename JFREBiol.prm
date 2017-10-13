@@ -231,7 +231,7 @@ flagrecruitANG 3
 flagrecruitALF 3
 flagrecruitCHO 12
 flagrecruitOTA 12
-flagrecruitDOL 12
+flagrecruitDOL 11
 flagrecruitBIR 12
 flagrecruitLPF 3
 flagrecruitSPF 3
@@ -292,7 +292,7 @@ flaglocalrecruitANG 3
 flaglocalrecruitALF 3
 flaglocalrecruitCHO 1
 flaglocalrecruitOTA 1
-flaglocalrecruitDOL 1
+flaglocalrecruitDOL 2
 flaglocalrecruitOCT 1
 flaglocalrecruitCOR 1
 flaglocalrecruitSQD 1
@@ -3460,13 +3460,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 7e-04 0.007 0.07 0 0.01 1e-06 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 0.01 0.01 0.008 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 0.01 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 1e-04 0.05 0.008 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 1e-04 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.03 0.01 0.008 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.03 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.01 0.01 0.008 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.01 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.01 0.001 0.005 0.01 0.05 0.03 0 0 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3486,7 +3486,7 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0 0.005 0.001 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0 0.003 0.001 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0.005 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
@@ -4875,7 +4875,7 @@ ALF_Recruit_Time   91  # Length of larval period for  Alfonsino [ d ]
 ANG_Recruit_Time   300 # Length of larval period for  Anguila [ d ]
 CHO_Recruit_Time   600 # Length of larval period for  Chondrichtyans [ d ]
 OTA_Recruit_Time   335 # Length of larval period for  Otariid [ d ]
-DOL_Recruit_Time   427 # Length of larval period for  Dolphins [ d ]
+DOL_Recruit_Time   340 # Length of larval period for  Dolphins [ d ]
 BIR_Recruit_Time   90  # Length of larval period for  Birds [ d ]
 OCT_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
 SQD_Recruit_Time   150 # Length of larval period for  Octupus [ d ]
