@@ -2230,6 +2230,16 @@ VERTday_MOL 8
 VERTnight_MOL 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 
+VERTday_LPH 8
+0 0.0 0.0 0.0 0.0 0.1 0.3 0.7
+VERTnight_LPH 8
+0 0.0 0.0 0.0 0.0 0.1 0.3 0.7
+
+VERTday_SPH 8
+0 0.0 0.0 0.0 0.0 0.1 0.3 0.7
+VERTnight_SPH 8
+0 0.0 0.0 0.0 0.0 0.1 0.3 0.7
+
 # Vertical distribution for vertebrates (proportion in each water column layer in day and night).
 # First entry for each group is for the juveniles, second for the adults.
 # First entry for each vector refers to water column layer closest to the sediment
@@ -4365,7 +4375,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.00003 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.00025 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_SPH   0.00003 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00005 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
