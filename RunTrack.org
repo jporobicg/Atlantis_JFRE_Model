@@ -10917,3 +10917,48 @@ Add values to DON
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+**** Recruitment
+***** MPF
+- from : 5E+9
+- to : 4E+9
+*** Increased
+**** Clearance
+***** SZO
+- from : 0.000015
+- to : 0.0015
+**** Efficiency
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+***** SZO
+- from : 0.05
+- to : 0.1
+**** Mortality
+***** SPH
+- from : 1e-11
+- to : 1e-09
+***** LPH
+- from : 1e-11
+- to : 1e-09
+***** PB
+- from : 1e-12
+- to : 1e-09
+**** Initial Weighr
+*** Others
+**** plpulation size
+**** Lysis
+**** RECRUIT SIZE
+**** New vertical distribution SZO
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171017153817
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171017153817.png]]

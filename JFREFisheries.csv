@@ -1,0 +1,14 @@
+Code,Index,Name,IsRec,NumSubFleets
+TrapSPL,1,Trap Spiny Lobster,0,0
+TrapGCR,2,Trap Golden Crab,0,0
+TrapANG,3,Trap Anguila,0,0
+BaitSPF,4,Bait Small Pelagic Fish,0,0
+BaitLPF,5,Bait Large Pelagic Fish,0,0
+BaitBRC,6,Bait Breca,0,0
+BaitLBF,7,Bait Large Benthic Fish,0,0
+BaitSBF,8,Bait Small Benthic Fish,0,0
+HlineBRC,9,Handlining Breca,0,0
+HlineVID,10,handlining Vidriola,0,0
+TrawlORO,11,Trawling Orange Roughy,0,0
+TrawlALF,12,Trawling Alfonsino,0,0
+PotOCT,13,Pot-trap Octopus,0,0

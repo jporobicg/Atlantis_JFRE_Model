@@ -2221,7 +2221,7 @@ VERTday_SZO 8
 0 0 0 0.027 0.173 0.4 0.3 0.1
 VERTnight_SZO 8
 0 0 0 0.143 0.081 0.003 0.136 0.637
-## Sea Urchin
+## Sea Urchin -
 VERTday_SUR 8
 1.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
 VERTnight_SUR 8
