@@ -10971,3 +10971,86 @@ Add values to DON
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Mum
+***** LPH and SPH
+- to 0.7 and 0.8
+***** SZO
+- from : 0.1
+- to : 0.02
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+****** SBF
+- from : 1e-11 5e-9
+- to : 1e-10 5e-9
+****** SZO
+- from : 1e-9
+- to : 1e-4
+****** MZO
+- from :1e-10
+- to : 1e-6
+****** LZO
+- from :1e-10
+- to : 1e-6
+****** SPH
+- from :1e-9
+- to : 1e-4
+****** LPH
+- from :1e-9
+- to : 1e-5
+**** Recruitment
+***** MPF
+- alpha
+- from : 4e+09
+- to : 1e+09
+- beta
+- from : 1e+09
+- to : 1e+07
+*** Increased
+**** Clearance
+***** MZO
+- from : 0.000002
+- to : 0.00002
+***** SZO
+- from : 0.0015
+- to : 0.015
+**** Efficiency
+**** Pprey
+**** Recruitment
+**** Running time
+**** Mum
+***** MZO
+- from : 0.00005
+- to : 0.0001
+***** LZO
+- from : 0.0001
+- to : 0.001
+**** Mortality
+**** Initial Weighr
+*** Others
+**** plpulation size
+**** Lysis
+***** LPH
+- from : 0.00003
+- to : 0.00005
+***** SPH
+- from : 0.00003
+- to : 0.001
+**** RECRUIT SIZE
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171018085100
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171018085100.png]]
+* Run PC-Demiurgo 20171018121026
+  - Run start: 2017-10-18 12:10:26
+  - Run end: 2017-10-18 16:17:12
+  - log file : [[file:Calibration/20171018161712.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
