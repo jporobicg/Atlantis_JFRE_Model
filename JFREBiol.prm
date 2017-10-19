@@ -21,7 +21,7 @@ K_num_invmig    7 # Maximum number of vertically migrating invertebrate groups
 readin_popratio 0 # Switch to indicate whether loading pre-existing age distributions or not 0
 
 # If fish respiration is off then the fish model is essentially/very similar to a Deriso-Schnute
-flagresp 0 Switch to turn fish respiration on/off: off=0, on=1 1
+flagresp 0 	 # Switch to turn fish respiration on/off: off=0, on=1 1
 
 flagavgmig     0 # Switch to turn averaging of migrant sizes on/off: off=0, on=1 1
 flagkdrop      0 # Switch to turn cubic bacterial growth on/off: off=0, on=1 0
@@ -3427,13 +3427,13 @@ pPREY1CHO2  37
 pPREY2CHO2  37
 0.1 0.05 0 0 0.01 0.01 0.001 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA1  37
-0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.1 0.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA1  37
-0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.05 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA2  37
-0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.2 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.05 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA2  37
-0 0 0 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL1  37
 0 0 0.001 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.05 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL1  37
@@ -3455,13 +3455,13 @@ pPREYSQD  37
 pPREYOCT  37
 0.005 0.005 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.0025 0.005 0.001 0 0 0 0 0.01 0 0 0 0 0.00025 0.01 0 0 0 0 0 0 0 0 0
 pPREY1LPF1  37
-0.1 1e-04 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.01 0 0 5e-04 0.005 0.05 0.1 1e-04 0 0 0.005 0.01 0 0 0 0 0 0 0 0 0
+0.1 1e-04 0.001 0 0 0 1e-04 0 0 0 0 0.05 0.05 0 0.005 0.001 0.008 0 5e-05 5e-04 0.008 0.02 0.05 0.001 1e-04 0 0.001 0.008 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
-0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 0.001 0 0.005 0 0 5e-04 0.005 0 0.1 1e-04 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 0.001 1e-05 0.01 0 5e-05 5e-04 0.008 0 0.05 0.001 1e-04 0 1e-04 5e-04 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
-0.1 0.005 8e-04 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0 0.005 0 0 1e-04 0.001 0.05 0.1 0 0 0 0 0.05 0 0 0 0 0 0 0 0 0
+0.005 0.005 0.001 0 0 0 1e-04 0 0 0 0 0.01 0.01 0 0.008 0.001 0.005 5e-04 0 1e-04 0.001 0.02 0.05 1e-04 1e-06 0 0.001 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
-0.2 0.005 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.005 0 0.01 0 0 1e-04 0.001 0 0.1 0 0 0 0.01 0.01 0 0 0 0 0 0 0 0 0
+0 0 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.008 0.001 0.01 0 0 1e-04 0.001 0 0.05 1e-04 1e-06 0 1e-04 0.005 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
 0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 7e-04 0.007 0.07 0.005 0.01 0.001 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
@@ -3471,13 +3471,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 7e-04 0.007 0.07 0 0.01 1e-05 1e-10 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 0.01 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0.005 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0.006 0.025 0.05 1e-04 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.01 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.03 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.025 0.05 0.005 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0 0 0.025 0.05 0.01 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.001 0 0.01 0.001 0.005 0.01 0.05 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3916,11 +3916,11 @@ C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 0.86 5.4 10.6 15.18 18.3 20.31 21.56 22.32 22.78 23.06
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
-10.41 21.35 33.38 45.4 56.8 67.23 76.57 84.78 91.95 98.07
+31.23 64.05 100.14 136.2 170.4 201.69 229.71 254.34 275.85 294.21
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 1.77 4.05 11.48 20.77 30.77 40.93 50.72 59.9 68.3 79.94
-C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #6.29 44.34 75.34 93.39 102.87 107.65 110.02 111.18 111.75 112.03
-0.629 4.434 7.534 9.339 10.287 10.765 11.002 11.118 11.175 11.203
+C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
+14.39 101.53 172.5 213.82 235.53 246.48 251.9 254.56 255.86 256.49
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
@@ -3947,9 +3947,9 @@ C_OTA 10
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.02      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.0001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.001     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.1      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.0001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00005       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3960,7 +3960,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-1.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
+2.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.008 0.05 0.175 0.41 1.36 2.6 2.8 3.733 4.417 4.957
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -4446,7 +4446,7 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-10 5e-7
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-10 1e-8
+1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 8e-10 1e-8
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -4475,18 +4475,18 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 5e-7
 
 ## Invertebrates
-OCT_mQ   5e-5 #  Quad. mortality rate of Octupus [ d-1 ]
-SQD_mQ   1e-8 #  Quad. mortality rate of Octupus [ d-1 ]
+OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
+SQD_mQ   1e-5 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-6 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-6 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-9 #  Quad. mortality rate of Small crustaceans [ d-1 ]
-BFF_mQ   1e-8 #  Quad. mortality rate of Deposit feeders [ d-1 ]
-SUR_mQ   1e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
-MOL_mQ   1e-7 #  Quad. mortality rate of Mollusca [ d-1 ]
+BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
+SUR_mQ   1e-6 #  Quad. mortality rate of Sea Urchin [ d-1 ]
+MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-15 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-05 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+LPH_mQ   1e-04 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
 SPH_mQ   1e-04 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-08 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
@@ -5204,13 +5204,13 @@ BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate paramete
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   5.330798E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ORO   6E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   2.5E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_DOL   4e5             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
-BHalpha_LPF   6E+8                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
+BHalpha_LPF   1E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   1E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   1.5E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
@@ -5305,7 +5305,7 @@ KWSR_ANG   1.65     	     # Structural weight of recruits for Anguila [ mg N m-3
 KWSR_CHO   70      	     # Structural weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWSR_OTA   20668    	     # Structural weight of recruits for Otariid [ mg N m-3 ]
 KWSR_DOL   8048     	     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
-KWSR_LPF   10.57    	     # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
+KWSR_LPF   6.676907e+01	     # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWSR_SPF   1.5     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_MPF   1.5     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_SBF   26.61    	     # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
@@ -5313,7 +5313,7 @@ KWSR_LBF   0.41     	     # Structural weight of recruits for Large benthic fish
 KWSR_BIR   500      	     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
 
 KWRR_SPL   5.558111e+01     # Reserve weight of recruits for Spiny lobster [ mg N m-3 ]
-KWRR_GCR   61.18    # Reserve weight of recruits for Golden Crab [ mg N m-3 ]
+KWRR_GCR   61.18    	    # Reserve weight of recruits for Golden Crab [ mg N m-3 ]
 KWRR_BRC   1.77     # Reserve weight of recruits for Breca [ mg N m-3 ]
 KWRR_VID   10106.83 # Reserve weight of recruits for Vidriola [ mg N m-3 ]
 KWRR_ORO   1.904422e+01     # Reserve weight of recruits for Orange Roughy [ mg N m-3 ]
@@ -5322,7 +5322,7 @@ KWRR_ANG   4.37     # Reserve weight of recruits for Anguila [ mg N m-3 ]
 KWRR_CHO   2018     # Reserve weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWRR_OTA   54770    # Reserve weight of recruits for Otariid [ mg N m-3 ]
 KWRR_DOL   31328    # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
-KWRR_LPF   28.01    # Reserve weight of recruits for Large pelagic fish [ mg N m-3 ]
+KWRR_LPF   1.769380e+02 # Reserve weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWRR_SPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWRR_MPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWRR_SBF   70.53   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
