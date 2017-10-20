@@ -11067,3 +11067,94 @@ Add values to DON
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Mum
+**** Clearance
+**** Pprey
+**** Lysis
+**** Light saturation and absorption
+**** Mortality
+***** MQ
+****** OCT
+- from : 1e-5
+- to : 5e-5
+****** SQD
+- from : 1e-9
+- to : 1e-8
+**** Recruitment
+*** Increased
+**** Clearance
+***** LPF
+- from : 6.29 44.34 75.34 93.39 102.87 107.65 110.02 111.18 111.75 112.03
+- to : 14.39 101.53 172.5 213.82 235.53 246.48 251.9 254.56 255.86 256.49
+***** ALF
+- from : 10.41 21.35 33.38 45.4 56.8 67.23 76.57 84.78 91.95 98.07
+- to : 31.23 64.05 100.14 136.2 170.4 201.69 229.71 254.34 275.85 294.21
+**** Efficiency
+**** Pprey
+**** Recruitment
+***** LPF
+- from : 5E+8
+- to : 6E+8
+***** ORO
+- alpha
+- from : 5.330798E+12
+- to : 6E+12
+**** Running time
+**** Mum
+***** SZO
+- from : 0.02
+- to: 0.1
+***** MZO
+- from:0.0001
+- to : 0.01
+***** LZO
+- from : 0.001
+- to : 0.01
+***** LPF
+- from : 2.5 31.667 35.417 40.834 46 88.5 100.143 117.668 112.96 94.133
+- to : 25 316.67 354.17 408.34 460 885 1001.43 1176.68 1129.6 941.33
+***** SPL
+- from : 1.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
+- to : 2.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
+**** Mortality
+***** LPF
+- from : 5e-9 5e-7
+- to : 5e-9 7e-7
+***** SQD
+- from : 1e-8
+- to : 1e-5
+***** BFF
+- rom : 1e-8
+- to : 1e-6
+***** MOL
+- from : 1e-7
+- to : 1e-6
+***** SUR
+- from : 1e-7
+- to : 1e-6
+***** BRC
+- from : 1e-10 1e-8
+- to : 1e-09 1e-8
+***** LPH
+- from : 1e-5
+- to : 1e-4
+**** Initial Weighr
+*** Others
+**** plpulation size
+**** Lysis
+**** RECRUIT SIZE
+LPF increased
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171019090547
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171019090547.png]]
+* Run PC-Demiurgo 20171019212610
+  - Run start: 2017-10-19 21:26:10
+  - Run end: 2017-10-20 11:08:28
+  - log file : [[file:Calibration/20171020110828.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

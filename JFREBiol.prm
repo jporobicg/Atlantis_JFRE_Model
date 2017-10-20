@@ -3792,8 +3792,8 @@ C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.015    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.00002   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.000001   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.002   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.0001   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3920,7 +3920,7 @@ C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 1.77 4.05 11.48 20.77 30.77 40.93 50.72 59.9 68.3 79.94
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
-14.39 101.53 172.5 213.82 235.53 246.48 251.9 254.56 255.86 256.49
+28.78 507.65 862.5 1069.1 1177.65 1232.4 839.667 636.4 511.72 569.978
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 0.9 8.1 17.4 26.01 33.02 38.41 42.41 45.31 47.4 48.88
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
@@ -3974,7 +3974,7 @@ mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
 0.2 2.6 16.2 45.25 79.75 123.5 126.785 161.668 213.668 275.333
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
-25 316.67 354.17 408.34 460 885 1001.43 1176.68 1129.6 941.33
+50 1583.35 1770.85 2041.7 2300 4425 3338.1 2941.7 2259.2 2091.844
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1.25 19.463 32.547 36.692 40.897 43.275 44.605 45.352 45.777 45.777
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
@@ -3986,7 +3986,7 @@ mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 131.1350 135.6236 201.8767 211.7992 217.7442 221.3859 223.6678 225.1270 226.0758 219.1192
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
-0.269 9.768 101.29 185.008 200.795 203.269 218.157 229.156 316.378 257.211
+0.067 9.768 101.29 185.008 200.795 203.269 218.157 229.156 316.378 257.211
 mum_BIR   10 ## 0.02 0.21 0.54 1.01 1.62 2.39 3.33 4.49 5.90 7.63
 0.059 0.613 1.55 3.9 5.059 5.674 6.137 6.48 6.732 4.665
 mum_DOL   10  ## 0.06 0.52 1.33 2.48 3.97 5.84 8.17 11.03 14.54 18.86
@@ -5306,8 +5306,8 @@ KWSR_CHO   70      	     # Structural weight of recruits for Chondrichtyans [ mg
 KWSR_OTA   20668    	     # Structural weight of recruits for Otariid [ mg N m-3 ]
 KWSR_DOL   8048     	     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
 KWSR_LPF   6.676907e+01	     # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
-KWSR_SPF   1.5     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
-KWSR_MPF   1.5     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWSR_SPF   1.354350e+00     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWSR_MPF   6.389023e-01      # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_SBF   26.61    	     # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
 KWSR_LBF   0.41     	     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
 KWSR_BIR   500      	     # Structural weight of recruits for Large benthic fish [ mg N m-3 ]
@@ -5323,8 +5323,8 @@ KWRR_CHO   2018     # Reserve weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWRR_OTA   54770    # Reserve weight of recruits for Otariid [ mg N m-3 ]
 KWRR_DOL   31328    # Reserve weight of recruits for Cetaceans [ mg N m-3 ]
 KWRR_LPF   1.769380e+02 # Reserve weight of recruits for Large pelagic fish [ mg N m-3 ]
-KWRR_SPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
-KWRR_MPF   0.40     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWRR_SPF   3.589026e+00     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
+KWRR_MPF   1.693091e+00     # Reserve weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWRR_SBF   70.53   # Reserve weight of recruits for Small benthic fish [ mg N m-3 ]
 KWRR_LBF   1.07     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
 KWRR_BIR   1600     # Reserve weight of recruits for Large benthic fish [ mg N m-3 ]
