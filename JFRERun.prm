@@ -28,7 +28,7 @@ flag_replicate_old_calendar 0   # This flag specifically allows for legacy model
 ## ~     Parameters controlling detailed outputs for a specific box and diagnostic reporting       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 debug_it      0
-checkbox      560  	       # Give detailed logged output for this box
+checkbox      300 	       # Give detailed logged output for this box
 checkstart    366666660 day            # Start detailed logged output after this date
 checkstop     366666660 day    # Stop detailed logged output after this date
 debug         0       	       # Several option,  Check manual
@@ -42,7 +42,7 @@ checkDL       0        	       # Give detailed logged output for DL in checkbox
 checkDR       0        	       # Give detailed logged output for DR in checkbox
 checkbiom     0       	       # Give detailed logged output for biomasses in checkbox
 which_fleet   33       	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
-which_check   90       	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
+which_check   160      	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
 habitat_check 0		       # Which distribution type (0-water column, 1- sediment, 2- epibenthic, 3-land, 4-ice) to report for the group marked with which_check.
 move_check    0  	       # ID number of group where tracking movements
 
@@ -105,4 +105,4 @@ K_num_catchqueue  7    # Length (in days) of list of catches used in running ave
 flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)
 # SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC
 init_scalar       34
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 .5 1 0.2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 .5 1 0.4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1

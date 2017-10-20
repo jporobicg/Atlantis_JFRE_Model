@@ -213,7 +213,7 @@ flagplankfishSCR   1 # Flag to indicate if is planktivore  SCR: 1 = on, 0 = off 
 flagplankfishBFF   1 # Flag to indicate if is planktivore  BFF: 1 = on, 0 = off 1
 
 # Recruitment flags
-flagtrecruitdistrib 1 0=humped recruit arrival distrib, 1=flat distrib of recruits 1
+flagtrecruitdistrib 1 # 0=humped recruit arrival distrib, 1=flat distrib of recruits 1
 
 # Vertebrate reproduction related flags. The flagrecruit entries refer to the recruitment function used.
 # 1=const, 2=dependent on prim producers (Chla), 3=Beverton-Holt, 4=lognormal, 5=dependent on all plankton
@@ -2144,7 +2144,7 @@ FSPF_S3juv  59  # Small pelagic fish - Winter Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02959417 0.01972944 0.1578356 0.009610496 0.02959417 0.009610496 0 0 0.02959417 0.03945889 0.03945889 0.03945889 0 0 0 0 0 0 0.1118485 0.08748004 0.03781477 0.0764516 0.08779603 0.05162538 0.1167325 0.02630593
 #--------------------------------------------------------------------------------
 FMPF_S1juv  59  # Mesopelagic fish - Summer Spatial distribution
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02457808 0.01638539 0.1310831 0.009643281 0.2293954 0.009643281 0 0 0.02457808 0.03277077 0.03277077 0.03277077 0 0 0 0 0 0 0.08216213 0.07265254 0.04540118 0.07076326 0.07291497 0.02821928 0.06788232 0.01638539
+0 0 0 0 0 0 0 0 0 0 0 0	0 0 0 0 0 0 0 0.0076381875 0 0 0.0109324318 0.0071317877 0 0.0065572105 0.0267163664 0 0.0153749418 0.0183229579 0.0504438219 0.0195279862 0.0195279862 0.0385115681 0.0421645891 0.0387454628 0.0641481289 0.046529796 0.0451771277 0.0026811645 0 0.0334779273 0.0385006389 0.030575717 0.0241511678 0 0 0.0140186339 0 0.011789896 0.0184687139 0.0628452533 0.0713653048 0.024360502 0.0475271523 0.0285883927 0.0525851653 0.0522473364 0.0293666834
 #--------------------------------------------------------------------------------
 FSBF_S2juv  59  # Small benthic fish - Autumm Spatial distribution
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0545028 0 0 0 0 0.008928571 0.008928571 0.008928571 0.008928571 0.008928571 0.0272514 0.008928571 0.008928571 0.08517372 0.06585755 0.0681285 0 0 0.0408771 0.0272514 0.03406425 0.008928571 0 0.008928571 0.008928571 0 0.008928571 0.008928571 0.05847957 0.07375846 0.05631956 0.06228891 0.04428352 0.1037824 0.0499609 0.0408771
@@ -3403,13 +3403,13 @@ pPREY1ORO2  37
 pPREY2ORO2  37
 0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.05 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.035 0 0.005 0 0.05 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.045 0 0.005 0 0.05 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.035 0 0.01 0 0.05 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.04 0 0.01 0 0.05 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.03 0.001 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.04 0.001 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.03 1e-04 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 1e-04 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.03 0.001 0.01 0 0 0 5e-04 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG1  37
@@ -3679,7 +3679,7 @@ KLP_GCR   1e-07 # Lower prey selection size limit for Golden Crab [ Number ]
 KLP_BRC   1e-04 # Lower prey selection size limit for Breca [ Number ]
 KLP_VID   1e-04 # Lower prey selection size limit for Vidriola [ Number ]
 KLP_ORO   1e-04 # Lower prey selection size limit for Orange Roughy [ Number ]
-KLP_ALF   1e-06 # Lower prey selection size limit for Alfonsino [ Number ]
+KLP_ALF   1e-07 # Lower prey selection size limit for Alfonsino [ Number ]
 KLP_ANG   1e-04 # Lower prey selection size limit for Anguila [ Number ]
 KLP_CHO   1e-04 # Lower prey selection size limit for Chondrichtyans [ Number ]
 KLP_OTA   1e-04 # Lower prey selection size limit for Otariid [ Number ]
@@ -3960,15 +3960,15 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-2.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
+2.515 0.336 0.358 0.413 0.49 0.55 0.616 0.752 0.813 1.063
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
-0.008 0.05 0.175 0.41 1.36 2.6 2.8 3.733 4.417 4.957
+0.001 0.021 0.175 0.41 1.36 2.167 2.333 3.733 4.417 4.957
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
-7.407 5.769 12.381 18.75 31.563 43.667 68.8 107.136 137.376 203.04
+6.173 3.846 10.318 18.75 31.563 43.667 68.8 107.136 114.48 156.185
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
-0.48	3.7	8.1
+0.48 6.167 27
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
-3.125 97.5 99.307 100.421 131.111 149.911 198.215 172.808 268.4 381.944
+3.125 487.5 496.535 502.105 655.555 749.555 660.717 432.02 536.8 636.573
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 113.675 157.263 244.588 314.488 373.2 423.738 373.06 402.4 425.9 292.725
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
@@ -4448,11 +4448,11 @@ GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
-8e-10 1e-8
+1e-9 1e-7
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 8e-11 1e-8
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-6e-10 9e-08
+1e-9 5e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 7e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
