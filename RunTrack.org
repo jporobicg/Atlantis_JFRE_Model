@@ -11215,3 +11215,36 @@ LPF increased
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : ** Input
+*** Decreased
+**** Mum
+***** BRC
+- from : 7.407 5.769 12.381 18.75 31.563 43.667 68.8 107.136 137.376 203.04
+- to : 6.173 3.846 10.318 18.75 31.563 43.667 68.8 107.136 114.48 156.185
+***** SPL
+- from : 2.012 0.605 0.715 0.825 0.979 1.1 1.232 1.353 1.463 1.595
+- to : 2.515 0.336 0.358 0.413 0.49 0.55 0.616 0.752 0.813 1.063
+***** GCR
+- from : 0.008 0.05 0.175 0.41 1.36 2.6 2.8 3.733 4.417 4.957
+- to : 0.001 0.021 0.175 0.41 1.36 2.167 2.333 3.733 4.417 4.957
+***** VID
+- from : 0.48 3.7 8.1
+- to : 0.48 6.167 27
+***** ORO
+- from : 3.125 97.5 99.307 100.421 131.111 149.911 198.215 172.808 268.4 381.944
+- to : 3.125 487.5 496.535 502.105 655.555 749.555 660.717 432.02 536.8 636.573
+***** ALF
+- from : 113.675 157.263 244.588 314.488 373.2 423.738 373.06 402.4 425.9 292.725
+- to : 378.917	524.21	815.293 1048.293 1244 1412.46 1243.533 1341.333 1419.667 975.75
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171020164227
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171020164227.png]]
+* Run PC-Demiurgo 20171021103228
+  - Run start: 2017-10-21 10:32:28
+  - Run end: 2017-10-21 17:23:43
+  - log file : [[file:Calibration/20171021172343.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
