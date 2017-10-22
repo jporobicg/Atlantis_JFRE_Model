@@ -1459,7 +1459,7 @@ eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 
 # KN
 KN_LPH   10    Half-sat const for large phytoplankton growth on DIN mg N m-3 10
 KN_SPH   10    Half-sat const for small phytoplankton phy growth on DIN mg N m-3 10
-KN_MA    10    Half-sat const for MA growth on DIN mg N m-3 20
+KN_MA    5     Half-sat const for MA growth on DIN mg N m-3 20
 KN_COR   10    Half-sat const for COR growth on DIN mg N m-3 20
 # KS
 KS_LPH   1     Half-sat const for small phytoplankton on Si mg Si m-3 20
@@ -3379,13 +3379,13 @@ pPREY1GCR2  37
 pPREY2GCR2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.005 0.001 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY1BRC1  37
-0.005 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.01 0.05 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
+0.005 0.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.04 0.05 0.01 0.001 0 0 0.05 0.001 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.008 0.01 0.01 0.001 0 0 0.05 0.008 0 0 5e-05 5e-05 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0.05 0.08 0.03 0.01 0.01 0.001 0 0 0.05 1e-04 0 0 5e-05 5e-05 0 0 0 0
 pPREY1BRC2  37
-0.003 0.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.01 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
+0.003 0.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.08 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
 pPREY2BRC2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.008 0.05 0.01 1e-04 0 0 0.01 0.008 0 0 5e-05 5e-05 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.05 0.08 0.03 0.05 0.01 1e-04 0 0 0.01 1e-04 0 0 5e-05 5e-05 0 0 0 0
 pPREY1VID1  37
 0.01 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 5e-04 0.01 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY2VID1  37
@@ -3471,13 +3471,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0.003 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0.005 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.1 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.1 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.025 0.05 0.005 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.03 0.1 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.025 0.05 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.1 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.01 0 0.001 0.001 0.005 0.01 0.05 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3495,11 +3495,11 @@ pPREY1LBF2  37
 pPREY2LBF2  37
 0.01 0.001 0.005 0 0.005 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.045 0 0 0.005 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0 0.003 0.001 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0 0 0 0.003 0.01 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0 0.005 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0 0 0.01 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
 0 0 0 0 0 0 0 0 0 0 0 0.001 0.001 0 0 0.001 0 0 0 0.001 0.01 1e-04 0.005 0.001 0.001 0 0.001 0.001 0 0 0 0.001 1e-05 0 1e-05 1e-05 0
 pPREYBFF  37
@@ -3914,7 +3914,7 @@ C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 31.74 42 56.84
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-0.86 5.4 10.6 15.18 18.3 20.31 21.56 22.32 22.78 23.06
+1.3 8.1 15.9 22.76 27.45 30.46 32.34 33.48 34.17 34.59
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 34.35 70.47 110.14 149.83 187.44 221.87 252.69 279.78 303.42 323.64
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
@@ -3950,7 +3950,7 @@ mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.1      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
-mum_SCR_T15   0.0001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
+mum_SCR_T15   0.0005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00005       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
 mum_MOL_T15   0.0005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
@@ -3960,9 +3960,9 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-2.515 0.336 0.358 0.413 0.49 0.55 0.616 0.752 0.813 1.063
+50.3 2.8 2.983 3.442 4.9 5.5 6.844 9.4 13.55 17.717
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
-0.0005 0.021 0.175 0.41 1.36 2.167 2.333 3.733 4.417 4.957
+0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
 6.173 3.846 10.318 18.75 31.563 43.667 68.8 107.136 114.48 156.185
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
@@ -3970,9 +3970,9 @@ mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
 3.125 487.5 496.535 502.105 655.555 749.555 660.717 432.02 536.8 636.573
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
-113.675 157.263 244.588 314.488 373.2 423.738 373.06 402.4 425.9 292.725
+568.375 786.315 1222.94 1572.44 1866 2118.69 1865.3 2012 2129.5 1463.625
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
-0.2 2.6 16.2 45.25 79.75 123.5 126.785 161.668 213.668 275.333
+0.167 26 162 452.5 797.5 1235 1267.85 1616.68 2136.68 2753.33
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 50 1583.35 1770.85 2041.7 2300 4425 3338.1 2941.7 2259.2 2091.844
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
@@ -3982,7 +3982,7 @@ mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 130 250 365 410 510 555 920 920 920 920
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
-3 11 12.5 31.75 30.8 31.545 48.364 61.398 62.651 165.833
+30 55 62.5 158.75 154 157.725 241.82 306.99 313.255 1658.33
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 131.1350 135.6236 201.8767 211.7992 217.7442 221.3859 223.6678 225.1270 226.0758 219.1192
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
@@ -4087,7 +4087,7 @@ pR_BIR   5 # Preference for rebuilding reserves over structure for Otariids [ Nu
 ## ~              Length - weight parameters          ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 # Vertebrates
-li_a_SPL    0.96225457		# Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
+li_a_SPL    0.96225457 	# Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
 li_a_GCR    0.53179259   	# Coefficient of allometic length-weight relation for Golden Crab [ Number ]
 li_a_BRC    0.00839310   	# Coefficient of allometic length-weight relation for Breca [ Number ]
 li_a_VID    0.00523585   	# Coefficient of allometic length-weight relation for Vidriola [ Number ]
@@ -4444,7 +4444,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 8e-9 5e-9
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-10 5e-7
+1e-10 1e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
@@ -4481,7 +4481,7 @@ COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-6 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-6 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   1e-9 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+SCR_mQ   1e-10 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   1e-6 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
@@ -5200,7 +5200,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   194155843881             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1.2e+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
@@ -5217,7 +5217,7 @@ BHalpha_SBF   1.5E9                    # Beverton-Holt recruitment rate paramete
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
-BHbeta_SPL   1E+11       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
+BHbeta_SPL   5E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   5e+09       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
