@@ -2390,7 +2390,7 @@ Speed_LBF  15000    	  ## Swimming speed
 Speed_SBF  2577     	  ## Swimming speed
 Speed_ANG  4262     	  ## Swimming speed
 Speed_OCT  4000     	  ## Swimming speed
-Speed_SQD  2000     	  ## Swimming speed
+Speed_SQD  2000        ## Swimming speed
 
 # Minimum tolerated temperatures
 SPL_min_move_temp  5  # phillips book
@@ -3906,7 +3906,7 @@ C_BB_T15         0.0  # Clearance rate of benthic bacteria m3(mg N)-1 d-1
 flagfishrates  0  # Switch to show whether clearance and growth rates are absolute=0, or as proportion of body mass=1
 
 C_SPL   10 #  Clearance rate for Spiny lobster [ m3(mg N)-1 d-1 ]
-0.46 0.55 0.65 0.75 0.89 1.00 1.12 1.23 1.33 1.45
+0.63 0.76 0.9 1.05 1.24 1.39 1.56 1.7 1.85 2.01
 C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
 0.28 0.94 1.96 3.31 4.91 6.59 8.1 9.34 10.67 11.85
 C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
@@ -3924,7 +3924,7 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
-1.63 2.18 2.28 2.29 2.3 2.3
+17.16 22.86 23.9 24.08 24.11 24.11
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 9.73 14.53 20.3 28.76 38.32 52.07 60.9 82.49 96.45 111.49
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -4220,9 +4220,9 @@ EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_MPF   0.65 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.55 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
-EPlant_SZO   0.45 # Assimilation efficiency on Plants of Small Zooplankton
-EPlant_MZO   0.45 # Assimilation efficiency on Plants of Medium Zooplankton
-EPlant_LZO   0.45 # Assimilation efficiency on Plants of Large Zooplankton
+EPlant_SZO   0.65 # Assimilation efficiency on Plants of Small Zooplankton
+EPlant_MZO   0.65 # Assimilation efficiency on Plants of Medium Zooplankton
+EPlant_LZO   0.65 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
 EPlant_BFF   0.4  # Assimilation efficiency on Plants of Deposit feeders
 EPlant_SUR   0.5  # Assimilation efficiency on Plants of Sea Urchin
