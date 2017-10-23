@@ -3479,13 +3479,13 @@ pPREY1MPF2  37
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.1 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.005 0.001 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.01 0 0.001 0.001 0.005 0.01 0.05 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.001 5e-04 0.001 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.001 0 0.01 0.02 0.1 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0 0.005 0.01 0.05 0.001 0 1e-05 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.01 0.02 0.1 0.001 0 1e-05 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.01 0.01 0.001 0 0.001 1e-04 0 0 0 0 0 0 0 0.001 0.01 0 0.004 0.001 0.001 0.01 0.05 0.07 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.001 0.005 0.001 0 0.001 0 0 0 0 0 0 0 0 5e-05 0.005 0 0.004 8e-04 0.005 0.01 0.05 0.07 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0 0.001 0.01 0.05 0.03 0 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.01 0 0.005 0.01 0.05 0.03 0 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
 0.001 0.005 0.005 0 0.001 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.025 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
@@ -3926,7 +3926,7 @@ C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
 17.16 22.86 23.9 24.08 24.11 24.11
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
-14.59 21.8 30.45 43.14 57.49 78.1 91.34 123.74 144.67 167.23
+35.75 53.41 74.61 105.69 140.84 191.36 223.79 303.16 354.44 409.72
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
 43.67 53.94 67.23 77.84 90.75 111.77 129.3 140.53 157.67 176.21
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
@@ -3978,7 +3978,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1.25 19.463 32.547 36.692 40.897 43.275 44.605 45.352 45.777 45.777
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-91.2 37.05 34.517 33.551 33.559 42.766
+304 123.5 115.057 111.837 111.863 142.553
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 1300 1250 1825 2050 2550 2775 4600 4600 4600 4600
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
@@ -5213,7 +5213,7 @@ BHalpha_DOL   4e5             	       # Beverton-Holt recruitment rate parameter
 BHalpha_LPF   1E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   1E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   1.5E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_SBF   1E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
