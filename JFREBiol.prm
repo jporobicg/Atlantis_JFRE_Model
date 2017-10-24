@@ -3471,13 +3471,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0.003 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.1 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.1 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.03 0.1 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.03 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.1 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.001 5e-04 0.001 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.001 0 0.01 0.02 0.1 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3791,9 +3791,9 @@ k_trans_SUR 1.0
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.015    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-C_MZO_T15   0.002   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.0001   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.001   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3924,7 +3924,7 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
-17.16 22.86 23.9 24.08 24.11 24.11
+24.72 32.92 34.42 34.68 34.72 34.73
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 35.75 53.41 74.61 105.69 140.84 191.36 223.79 303.16 354.44 409.72
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -3947,9 +3947,9 @@ C_OTA 10
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.1      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.001      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.01     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.2      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.01      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.1     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.0005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00005       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3960,7 +3960,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-50.3 2.8 2.983 3.442 4.9 5.5 6.844 9.4 13.55 17.717
+125.75 4.667 4.972 5.737 8.167 9.167 11.407 15.667 22.583 29.528
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -4444,7 +4444,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 8e-9 5e-9
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-10 1e-6
+1e-10 3e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
@@ -4479,8 +4479,8 @@ OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-5 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   1e-6 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   1e-6 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+MZO_mQ   1e-5 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   1e-5 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-10 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   1e-6 #  Quad. mortality rate of Sea Urchin [ d-1 ]
@@ -5200,7 +5200,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   1.2e+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1e+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
