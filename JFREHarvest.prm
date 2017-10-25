@@ -3124,31 +3124,31 @@ Effort_hdistribPotOCT4	59
 
 
 Effort_vdistribTrapSPL	8	## Vertical effort distribution for the fishery Trap Spiny Lobster
-0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0
 Effort_vdistribTrapGCR	8	## Vertical effort distribution for the fishery Trap Golden Crab
-0 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0
 Effort_vdistribTrapANG	8	## Vertical effort distribution for the fishery Trap Anguila
-0 0 0 0 0 0 0 0
+0 0 1 0 0 0 0 0
 Effort_vdistribBaitSPF	8	## Vertical effort distribution for the fishery Bait Small Pelagic Fish
-0 0 0 0 0 0 0 0
+0 0 0 0 0 0.1 0.566 0.334
 Effort_vdistribBaitLPF	8	## Vertical effort distribution for the fishery Bait Large Pelagic Fish
-0 0 0 0 0 0 0 0
+0 0 0 0 0.003 0.03 0.125 0.842
 Effort_vdistribBaitBRC	8	## Vertical effort distribution for the fishery Bait Breca
-0 0 0 0 0 0 0 0
+0 0 0 0.085 0.12 0.668 0.071 0.056
 Effort_vdistribBaitLBF	8	## Vertical effort distribution for the fishery Bait Large Benthic Fish
-0 0 0 0 0 0 0 0
+0 0.123 0.269 0.491 0.04 0.054 0.02 0.003
 Effort_vdistribBaitSBF	8	## Vertical effort distribution for the fishery Bait Small Benthic Fish
-0 0 0 0 0 0 0 0
+0 0.123 0.268 0.489 0.041 0.075 0.002 0.002
 Effort_vdistribHlineBRC	8	## Vertical effort distribution for the fishery Handlining Breca
-0 0 0 0 0 0 0 0
+0 0 0 0.085 0.12 0.668 0.071 0.056
 Effort_vdistribHlineVID	8	## Vertical effort distribution for the fishery handlining Vidriola
-0 0 0 0 0 0 0 0
+0 0 0 0 0.005 0.269 0.586 0.14
 Effort_vdistribTrawlORO	8	## Vertical effort distribution for the fishery Trawling Orange Roughy
-0 0 0 0 0 0 0 0
+0 0.649 0.347 0.004 0 0 0 0
 Effort_vdistribTrawlALF	8	## Vertical effort distribution for the fishery Trawling Alfonsino
-0 0 0 0 0 0 0 0
+0 0.051 0.268 0.58 0.046 0.055 0 0
 Effort_vdistribPotOCT	8	## Vertical effort distribution for the fishery Pot-trap Octopus
-0 0 0 0 0 0 0 0
+0 0 0 0 1 0 0 0
 
 TrapSPLCPUEthresh	0	## CPUE above or below this tonnes/days-at-sea will cause an effort shift for the fishery Trap Spiny Lobster
 TrapGCRCPUEthresh	0	## CPUE above or below this tonnes/days-at-sea will cause an effort shift for the fishery Trap Golden Crab
@@ -3197,33 +3197,33 @@ PotOCT_cap	0	## Effort caps for the Fishery Pot-trap Octopus
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## -- Port information – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
-
+##[ Robinson - Selkikr - Mainland]
 ports_TrapSPL	3	## Ports active [1] or not [0] for the fishery Trap Spiny Lobster
-0 0 0
+1 1 0
 ports_TrapGCR	3	## Ports active [1] or not [0] for the fishery Trap Golden Crab
-0 0 0
+1 0 0
 ports_TrapANG	3	## Ports active [1] or not [0] for the fishery Trap Anguila
-0 0 0
+1 1 0
 ports_BaitSPF	3	## Ports active [1] or not [0] for the fishery Bait Small Pelagic Fish
-0 0 0
+1 1 0
 ports_BaitLPF	3	## Ports active [1] or not [0] for the fishery Bait Large Pelagic Fish
-0 0 0
+1 1 0
 ports_BaitBRC	3	## Ports active [1] or not [0] for the fishery Bait Breca
-0 0 0
+1 1 0
 ports_BaitLBF	3	## Ports active [1] or not [0] for the fishery Bait Large Benthic Fish
-0 0 0
+1 1 0
 ports_BaitSBF	3	## Ports active [1] or not [0] for the fishery Bait Small Benthic Fish
-0 0 0
+1 1 0
 ports_HlineBRC	3	## Ports active [1] or not [0] for the fishery Handlining Breca
-0 0 0
+1 1 0
 ports_HlineVID	3	## Ports active [1] or not [0] for the fishery handlining Vidriola
-0 0 0
+1 1 0
 ports_TrawlORO	3	## Ports active [1] or not [0] for the fishery Trawling Orange Roughy
-0 0 0
+0 0 1
 ports_TrawlALF	3	## Ports active [1] or not [0] for the fishery Trawling Alfonsino
-0 0 0
+0 0 1
 ports_PotOCT	3	## Ports active [1] or not [0] for the fishery Pot-trap Octopus
-0 0 0
+1 1 0
 
 ports_xTrapSPL	3	## X – coordinate port location Trap Spiny Lobster
 0 0 0
@@ -3389,149 +3389,29 @@ ports_marketsPotOCT	3	## Which market is feed by each port (for economic model) 
 
 k_proprecfish	0	 ## The proportion of the population who fish recreationally
 
-## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
-## – MANAGEMENT PARAMETERS – ##
-## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+## -- MANAGEMENT PARAMETERS -- ##
+## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-targ_refA   TrapSPL	0	## Target reference point - tier 1 Trap Spiny Lobster
-targ_refA   TrapGCR	0	## Target reference point - tier 1 Trap Golden Crab
-targ_refA   TrapANG	0	## Target reference point - tier 1 Trap Anguila
-targ_refA   BaitSPF	0	## Target reference point - tier 1 Bait Small Pelagic Fish
-targ_refA   BaitLPF	0	## Target reference point - tier 1 Bait Large Pelagic Fish
-targ_refA   BaitBRC	0	## Target reference point - tier 1 Bait Breca
-targ_refA   BaitLBF	0	## Target reference point - tier 1 Bait Large Benthic Fish
-targ_refA   BaitSBF	0	## Target reference point - tier 1 Bait Small Benthic Fish
-targ_refA   HlineBRC	0	## Target reference point - tier 1 Handlining Breca
-targ_refA   HlineVID	0	## Target reference point - tier 1 handlining Vidriola
-targ_refA   TrawlORO	0	## Target reference point - tier 1 Trawling Orange Roughy
-targ_refA   TrawlALF	0	## Target reference point - tier 1 Trawling Alfonsino
-targ_refA   PotOCT	0	## Target reference point - tier 1 Pot-trap Octopus
+targ_refA   	0	 ## Target reference point - tier 1
 
-targ_refB   TrapSPL	0	## Target reference point - tier 1 Trap Spiny Lobster
-targ_refB   TrapGCR	0	## Target reference point - tier 1 Trap Golden Crab
-targ_refB   TrapANG	0	## Target reference point - tier 1 Trap Anguila
-targ_refB   BaitSPF	0	## Target reference point - tier 1 Bait Small Pelagic Fish
-targ_refB   BaitLPF	0	## Target reference point - tier 1 Bait Large Pelagic Fish
-targ_refB   BaitBRC	0	## Target reference point - tier 1 Bait Breca
-targ_refB   BaitLBF	0	## Target reference point - tier 1 Bait Large Benthic Fish
-targ_refB   BaitSBF	0	## Target reference point - tier 1 Bait Small Benthic Fish
-targ_refB   HlineBRC	0	## Target reference point - tier 1 Handlining Breca
-targ_refB   HlineVID	0	## Target reference point - tier 1 handlining Vidriola
-targ_refB   TrawlORO	0	## Target reference point - tier 1 Trawling Orange Roughy
-targ_refB   TrawlALF	0	## Target reference point - tier 1 Trawling Alfonsino
-targ_refB   PotOCT	0	## Target reference point - tier 1 Pot-trap Octopus
+targ_refB   	0	 ## Target reference point - tier 1
 
-targ_refC   TrapSPL	0	## Target reference point - tier 2 Trap Spiny Lobster
-targ_refC   TrapGCR	0	## Target reference point - tier 2 Trap Golden Crab
-targ_refC   TrapANG	0	## Target reference point - tier 2 Trap Anguila
-targ_refC   BaitSPF	0	## Target reference point - tier 2 Bait Small Pelagic Fish
-targ_refC   BaitLPF	0	## Target reference point - tier 2 Bait Large Pelagic Fish
-targ_refC   BaitBRC	0	## Target reference point - tier 2 Bait Breca
-targ_refC   BaitLBF	0	## Target reference point - tier 2 Bait Large Benthic Fish
-targ_refC   BaitSBF	0	## Target reference point - tier 2 Bait Small Benthic Fish
-targ_refC   HlineBRC	0	## Target reference point - tier 2 Handlining Breca
-targ_refC   HlineVID	0	## Target reference point - tier 2 handlining Vidriola
-targ_refC   TrawlORO	0	## Target reference point - tier 2 Trawling Orange Roughy
-targ_refC   TrawlALF	0	## Target reference point - tier 2 Trawling Alfonsino
-targ_refC   PotOCT	0	## Target reference point - tier 2 Pot-trap Octopus
+targ_refC   	0	 ## Target reference point - tier 2
 
-targ_refD   TrapSPL	0	## Target reference point - tier 2 Trap Spiny Lobster
-targ_refD   TrapGCR	0	## Target reference point - tier 2 Trap Golden Crab
-targ_refD   TrapANG	0	## Target reference point - tier 2 Trap Anguila
-targ_refD   BaitSPF	0	## Target reference point - tier 2 Bait Small Pelagic Fish
-targ_refD   BaitLPF	0	## Target reference point - tier 2 Bait Large Pelagic Fish
-targ_refD   BaitBRC	0	## Target reference point - tier 2 Bait Breca
-targ_refD   BaitLBF	0	## Target reference point - tier 2 Bait Large Benthic Fish
-targ_refD   BaitSBF	0	## Target reference point - tier 2 Bait Small Benthic Fish
-targ_refD   HlineBRC	0	## Target reference point - tier 2 Handlining Breca
-targ_refD   HlineVID	0	## Target reference point - tier 2 handlining Vidriola
-targ_refD   TrawlORO	0	## Target reference point - tier 2 Trawling Orange Roughy
-targ_refD   TrawlALF	0	## Target reference point - tier 2 Trawling Alfonsino
-targ_refD   PotOCT	0	## Target reference point - tier 2 Pot-trap Octopus
+targ_refD   	0	 ## Target reference point - tier 2
 
-lim_ref     TrapSPL	0	## Limit reference point Trap Spiny Lobster
-lim_ref     TrapGCR	0	## Limit reference point Trap Golden Crab
-lim_ref     TrapANG	0	## Limit reference point Trap Anguila
-lim_ref     BaitSPF	0	## Limit reference point Bait Small Pelagic Fish
-lim_ref     BaitLPF	0	## Limit reference point Bait Large Pelagic Fish
-lim_ref     BaitBRC	0	## Limit reference point Bait Breca
-lim_ref     BaitLBF	0	## Limit reference point Bait Large Benthic Fish
-lim_ref     BaitSBF	0	## Limit reference point Bait Small Benthic Fish
-lim_ref     HlineBRC	0	## Limit reference point Handlining Breca
-lim_ref     HlineVID	0	## Limit reference point handlining Vidriola
-lim_ref     TrawlORO	0	## Limit reference point Trawling Orange Roughy
-lim_ref     TrawlALF	0	## Limit reference point Trawling Alfonsino
-lim_ref     PotOCT	0	## Limit reference point Pot-trap Octopus
+lim_ref     	0	 ## Limit reference point
 
-forage_refA TrapSPL	0	## Forage target reference point - tier1 Trap Spiny Lobster
-forage_refA TrapGCR	0	## Forage target reference point - tier1 Trap Golden Crab
-forage_refA TrapANG	0	## Forage target reference point - tier1 Trap Anguila
-forage_refA BaitSPF	0	## Forage target reference point - tier1 Bait Small Pelagic Fish
-forage_refA BaitLPF	0	## Forage target reference point - tier1 Bait Large Pelagic Fish
-forage_refA BaitBRC	0	## Forage target reference point - tier1 Bait Breca
-forage_refA BaitLBF	0	## Forage target reference point - tier1 Bait Large Benthic Fish
-forage_refA BaitSBF	0	## Forage target reference point - tier1 Bait Small Benthic Fish
-forage_refA HlineBRC	0	## Forage target reference point - tier1 Handlining Breca
-forage_refA HlineVID	0	## Forage target reference point - tier1 handlining Vidriola
-forage_refA TrawlORO	0	## Forage target reference point - tier1 Trawling Orange Roughy
-forage_refA TrawlALF	0	## Forage target reference point - tier1 Trawling Alfonsino
-forage_refA PotOCT	0	## Forage target reference point - tier1 Pot-trap Octopus
+forage_refA 	0	 ## Forage target reference point - tier1
 
-forage_refB TrapSPL	0	## Forage target reference point - tier1 Trap Spiny Lobster
-forage_refB TrapGCR	0	## Forage target reference point - tier1 Trap Golden Crab
-forage_refB TrapANG	0	## Forage target reference point - tier1 Trap Anguila
-forage_refB BaitSPF	0	## Forage target reference point - tier1 Bait Small Pelagic Fish
-forage_refB BaitLPF	0	## Forage target reference point - tier1 Bait Large Pelagic Fish
-forage_refB BaitBRC	0	## Forage target reference point - tier1 Bait Breca
-forage_refB BaitLBF	0	## Forage target reference point - tier1 Bait Large Benthic Fish
-forage_refB BaitSBF	0	## Forage target reference point - tier1 Bait Small Benthic Fish
-forage_refB HlineBRC	0	## Forage target reference point - tier1 Handlining Breca
-forage_refB HlineVID	0	## Forage target reference point - tier1 handlining Vidriola
-forage_refB TrawlORO	0	## Forage target reference point - tier1 Trawling Orange Roughy
-forage_refB TrawlALF	0	## Forage target reference point - tier1 Trawling Alfonsino
-forage_refB PotOCT	0	## Forage target reference point - tier1 Pot-trap Octopus
+forage_refB 	0	 ## Forage target reference point - tier1
 
-forage_refC TrapSPL	0	## Forage target reference point - tier2 Trap Spiny Lobster
-forage_refC TrapGCR	0	## Forage target reference point - tier2 Trap Golden Crab
-forage_refC TrapANG	0	## Forage target reference point - tier2 Trap Anguila
-forage_refC BaitSPF	0	## Forage target reference point - tier2 Bait Small Pelagic Fish
-forage_refC BaitLPF	0	## Forage target reference point - tier2 Bait Large Pelagic Fish
-forage_refC BaitBRC	0	## Forage target reference point - tier2 Bait Breca
-forage_refC BaitLBF	0	## Forage target reference point - tier2 Bait Large Benthic Fish
-forage_refC BaitSBF	0	## Forage target reference point - tier2 Bait Small Benthic Fish
-forage_refC HlineBRC	0	## Forage target reference point - tier2 Handlining Breca
-forage_refC HlineVID	0	## Forage target reference point - tier2 handlining Vidriola
-forage_refC TrawlORO	0	## Forage target reference point - tier2 Trawling Orange Roughy
-forage_refC TrawlALF	0	## Forage target reference point - tier2 Trawling Alfonsino
-forage_refC PotOCT	0	## Forage target reference point - tier2 Pot-trap Octopus
+forage_refC 	0	 ## Forage target reference point - tier2
 
-forage_refD TrapSPL	0	## Forage target reference point - tier2 Trap Spiny Lobster
-forage_refD TrapGCR	0	## Forage target reference point - tier2 Trap Golden Crab
-forage_refD TrapANG	0	## Forage target reference point - tier2 Trap Anguila
-forage_refD BaitSPF	0	## Forage target reference point - tier2 Bait Small Pelagic Fish
-forage_refD BaitLPF	0	## Forage target reference point - tier2 Bait Large Pelagic Fish
-forage_refD BaitBRC	0	## Forage target reference point - tier2 Bait Breca
-forage_refD BaitLBF	0	## Forage target reference point - tier2 Bait Large Benthic Fish
-forage_refD BaitSBF	0	## Forage target reference point - tier2 Bait Small Benthic Fish
-forage_refD HlineBRC	0	## Forage target reference point - tier2 Handlining Breca
-forage_refD HlineVID	0	## Forage target reference point - tier2 handlining Vidriola
-forage_refD TrawlORO	0	## Forage target reference point - tier2 Trawling Orange Roughy
-forage_refD TrawlALF	0	## Forage target reference point - tier2 Trawling Alfonsino
-forage_refD PotOCT	0	## Forage target reference point - tier2 Pot-trap Octopus
+forage_refD 	0	 ## Forage target reference point - tier2
 
-forage_lim_ref TrapSPL	0	## Forage limit reference point Trap Spiny Lobster
-forage_lim_ref TrapGCR	0	## Forage limit reference point Trap Golden Crab
-forage_lim_ref TrapANG	0	## Forage limit reference point Trap Anguila
-forage_lim_ref BaitSPF	0	## Forage limit reference point Bait Small Pelagic Fish
-forage_lim_ref BaitLPF	0	## Forage limit reference point Bait Large Pelagic Fish
-forage_lim_ref BaitBRC	0	## Forage limit reference point Bait Breca
-forage_lim_ref BaitLBF	0	## Forage limit reference point Bait Large Benthic Fish
-forage_lim_ref BaitSBF	0	## Forage limit reference point Bait Small Benthic Fish
-forage_lim_ref HlineBRC	0	## Forage limit reference point Handlining Breca
-forage_lim_ref HlineVID	0	## Forage limit reference point handlining Vidriola
-forage_lim_ref TrawlORO	0	## Forage limit reference point Trawling Orange Roughy
-forage_lim_ref TrawlALF	0	## Forage limit reference point Trawling Alfonsino
-forage_lim_ref PotOCT	0	## Forage limit reference point Pot-trap Octopus
+forage_lim_ref 	0	 ## Forage limit reference point
 
 
 TAC_multiyr	0	 ## Years of trend before change TAC
@@ -3549,7 +3429,6 @@ RBCalpha	0	 ## Coefficient for RBC calculations
 TAC_crit_change	0	 ## Magnitude of TAC shift before actually implemented (t)
 
 pseudo_RBCcheck	0	 ## Recommended biological catch based assessment check
-
 
 
 tierSPL	0	## Harvest strategy tier [0 – 5] for RBC setting for the group Spiny lobster
@@ -3613,28 +3492,28 @@ PotOCT_use_min_lever	0	## Re-scale levers based on minimum across groups [1] or 
 RegSeason	1	## Seasonal closure by region
 1
 
-TrapSPL_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Trap Spiny Lobster
-TrapGCR_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Trap Golden Crab
-TrapANG_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Trap Anguila
-BaitSPF_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Bait Small Pelagic Fish
-BaitLPF_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Bait Large Pelagic Fish
-BaitBRC_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Bait Breca
-BaitLBF_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Bait Large Benthic Fish
-BaitSBF_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Bait Small Benthic Fish
+TrapSPL_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Trap Spiny Lobster
+TrapGCR_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Trap Golden Crab
+TrapANG_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Trap Anguila
+BaitSPF_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Bait Small Pelagic Fish
+BaitLPF_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Bait Large Pelagic Fish
+BaitBRC_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Bait Breca
+BaitLBF_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Bait Large Benthic Fish
+BaitSBF_seasonopen	272	## Day of the year season opens (first day = 0) for the fishery Bait Small Benthic Fish
 HlineBRC_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Handlining Breca
 HlineVID_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery handlining Vidriola
 TrawlORO_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Trawling Orange Roughy
 TrawlALF_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Trawling Alfonsino
 PotOCT_seasonopen	0	## Day of the year season opens (first day = 0) for the fishery Pot-trap Octopus
 
-TrapSPL_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Trap Spiny Lobster
-TrapGCR_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Trap Golden Crab
-TrapANG_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Trap Anguila
-BaitSPF_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Bait Small Pelagic Fish
-BaitLPF_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Bait Large Pelagic Fish
-BaitBRC_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Bait Breca
-BaitLBF_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Bait Large Benthic Fish
-BaitSBF_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Bait Small Benthic Fish
+TrapSPL_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Trap Spiny Lobster
+TrapGCR_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Trap Golden Crab
+TrapANG_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Trap Anguila
+BaitSPF_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Bait Small Pelagic Fish
+BaitLPF_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Bait Large Pelagic Fish
+BaitBRC_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Bait Breca
+BaitLBF_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Bait Large Benthic Fish
+BaitSBF_seasonclose	94	## Day of the year season closes (last day 364) for the fishery Bait Small Benthic Fish
 HlineBRC_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Handlining Breca
 HlineVID_seasonclose	364	## Day of the year season closes (last day 364) for the fishery handlining Vidriola
 TrawlORO_seasonclose	364	## Day of the year season closes (last day 364) for the fishery Trawling Orange Roughy

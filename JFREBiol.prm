@@ -3363,13 +3363,13 @@ KHTI            1.5    # Factor handother deep demersal time increased by for re
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0.001 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0 0.001 0 0.001 0.001 0.001 0.001 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0.001 0.001 0 0.001 0.001 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0.05 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
 pPREY2SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0.1 0 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0.1 0.05 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.05 0.03 0 0.001 0 0 0 0.01 0.01 0 0 0.001 0.0075 0.005 0 0 0 0.01 0 0 0.01 0 0
 pPREY2GCR1  37
@@ -3395,21 +3395,21 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.08 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.03 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.02 0.01 0 0 0.001 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.02 0.01 0 0 0.001 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.08 0 0 0 0.05 0.05 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.05 0.001 0 0 0.001 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.005 0 0.05 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.05 0 0.005 0 0.05 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.01 0 0.05 0 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.01 0 0.05 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.04 0.001 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.04 0.001 0 0 0.005 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 1e-04 0 0 0.005 0.01 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 1e-04 0 0 0.005 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.03 0.001 0.01 0 0 0 0.001 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG1  37
@@ -3471,13 +3471,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0.003 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
 pPREY1MPF2  37
-0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.03 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-05 0 0.009 0.03 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
 0.001 5e-04 0.001 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.001 0 0.01 0.02 0.1 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3906,9 +3906,9 @@ C_BB_T15         0.0  # Clearance rate of benthic bacteria m3(mg N)-1 d-1
 flagfishrates  0  # Switch to show whether clearance and growth rates are absolute=0, or as proportion of body mass=1
 
 C_SPL   10 #  Clearance rate for Spiny lobster [ m3(mg N)-1 d-1 ]
-0.63 0.76 0.9 1.05 1.24 1.39 1.56 1.7 1.85 2.01
+1.9 2.28 2.7 3.15 3.71 4.18 4.67 5.1 5.56 6.03
 C_GCR   10 #  Clearance rate for Golden Crab [ m3(mg N)-1 d-1 ]
-0.28 0.94 1.96 3.31 4.91 6.59 8.1 9.34 10.67 11.85
+0.52 1.74 3.65 6.16 9.14 12.25 15.07 17.38 19.85 22.03
 C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 6.48 10.71 16.42 23.56 32.69 45 60.26 74.35 88.78 104.92
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
@@ -3918,7 +3918,7 @@ C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
 34.35 70.47 110.14 149.83 187.44 221.87 252.69 279.78 303.42 323.64
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
-1.77 4.05 11.48 20.77 30.77 40.93 50.72 59.9 68.3 79.94
+2.35 5.4 15.31 27.69 41.03 54.57 67.63 79.87 91.07 79.94
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 28.78 507.65 862.5 1069.1 1177.65 1232.4 839.667 636.4 511.72 569.978
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
@@ -3945,11 +3945,11 @@ C_OTA 10
 ## INVERTEBRATES OR BIOMASS POOLS
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SQD_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.2      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.25      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.01      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-mum_LZO_T15   0.1     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+mum_LZO_T15   0.15     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.0005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00005       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -4173,59 +4173,59 @@ KDEP_MOL   0.02 # Sediment penetration depth of Mollusca [ m ]
 
 # Assimilation efficiency of invertebrate consumers on live food and carrion
 # Assimilation efficiencies of vertebrate consumers
-E_SPL   0.45 # Assimilation efficiency on live food and carrion of Spiny lobster
-E_GCR   0.44 # Assimilation efficiency on live food and carrion of Golden Crab
+E_SPL   0.6 # Assimilation efficiency on live food and carrion of Spiny lobster
+E_GCR   0.6 # Assimilation efficiency on live food and carrion of Golden Crab
 E_BRC   0.4 # Assimilation efficiency on live food and carrion of Breca
 E_VID   0.3 # Assimilation efficiency on live food and carrion of Vidriola
 E_ORO   0.65 # Assimilation efficiency on live food and carrion of Orange Roughy
-E_ALF   0.65 # Assimilation efficiency on live food and carrion of Alfonsino
-E_ANG   0.45 # Assimilation efficiency on live food and carrion of Anguila
-E_CHO   0.38 # Assimilation efficiency on live food and carrion of Chondrichtyans
-E_OTA   0.35 # Assimilation efficiency on live food and carrion of Otariid
+E_ALF   0.7 # Assimilation efficiency on live food and carrion of Alfonsino
+E_ANG   0.6 # Assimilation efficiency on live food and carrion of Anguila
+E_CHO   0.58 # Assimilation efficiency on live food and carrion of Chondrichtyans
+E_OTA   0.55 # Assimilation efficiency on live food and carrion of Otariid
 E_DOL   0.35 # Assimilation efficiency on live food and carrion of Cetaceans
 E_BIR   0.65 # Assimilation efficiency on live food and carrion of Birds
 E_OCT   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_SQD   0.45 # Assimilation efficiency on live food and carrion of Octupus
 E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.55 # Assimilation efficiency on live food and carrion of Large pelagic fish
-E_SPF   0.5 # Assimilation efficiency on live food and carrion of Small pelagic fish
-E_MPF   0.6 # Assimilation efficiency on live food and carrion of Mesopelagic fish
-E_SBF   0.5 # Assimilation efficiency on live food and carrion of Small benthic fish
-E_LBF   0.3 # Assimilation efficiency on live food and carrion of Large benthic fish
+E_SPF   0.55 # Assimilation efficiency on live food and carrion of Small pelagic fish
+E_MPF   0.65 # Assimilation efficiency on live food and carrion of Mesopelagic fish
+E_SBF   0.55 # Assimilation efficiency on live food and carrion of Small benthic fish
+E_LBF   0.55 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
-E_MZO   0.45 # Assimilation efficiency on live food and carrion of Medium Zooplankton
-E_LZO   0.45 # Assimilation efficiency on live food and carrion of Large Zooplankton
-E_SCR   0.4 # Assimilation efficiency on live food and carrion of Small crustaceans
-E_BFF   0.4 # Assimilation efficiency on live food and carrion of Deposit feeders
-E_SUR   0.2 # Assimilation efficiency on live food and carrion of Sea Urchin
+E_MZO   0.55 # Assimilation efficiency on live food and carrion of Medium Zooplankton
+E_LZO   0.55 # Assimilation efficiency on live food and carrion of Large Zooplankton
+E_SCR   0.6 # Assimilation efficiency on live food and carrion of Small crustaceans
+E_BFF   0.45 # Assimilation efficiency on live food and carrion of Deposit feeders
+E_SUR   0.4 # Assimilation efficiency on live food and carrion of Sea Urchin
 E_MOL   0.35 # Assimilation efficiency on live food and carrion of Mollusca
 
 # Assimilation efficiency of consumers on plants
-EPlant_SPL   0.55 # Assimilation efficiency on Plants of Spiny lobster
-EPlant_GCR   0.45 # Assimilation efficiency on Plants of Golden Crab
-EPlant_BRC   0.55  # Assimilation efficiency on Plants of Breca
+EPlant_SPL   0.65 # Assimilation efficiency on Plants of Spiny lobster
+EPlant_GCR   0.55 # Assimilation efficiency on Plants of Golden Crab
+EPlant_BRC   0.75  # Assimilation efficiency on Plants of Breca
 EPlant_VID   0    # Assimilation efficiency on Plants of Vidriola
 EPlant_ORO   0    # Assimilation efficiency on Plants of Orange Roughy
-EPlant_ALF   0.01    # Assimilation efficiency on Plants of Alfonsino
+EPlant_ALF   0.1    # Assimilation efficiency on Plants of Alfonsino
 EPlant_ANG   0    # Assimilation efficiency on Plants of Anguila
 EPlant_CHO   0    # Assimilation efficiency on Plants of Chondrichtyans
 EPlant_OTA   0    # Assimilation efficiency on Plants of Otariid
 EPlant_DOL   0    # Assimilation efficiency on Plants of Cetaceans
 EPlant_BIR   0    # Assimilation efficiency on Plants of Birds
-EPlant_OCT   0.2  # Assimilation efficiency on Plants of Octupus
-EPlant_SQD   0.3  # Assimilation efficiency on Plants of Octupus
+EPlant_OCT   0.3  # Assimilation efficiency on Plants of Octupus
+EPlant_SQD   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_COR   0.4  # Assimilation efficiency on Plants of Octupus
 EPlant_LPF   0    # Assimilation efficiency on Plants of Large pelagic fish
-EPlant_SPF   0.55 # Assimilation efficiency on Plants of Small pelagic fish
-EPlant_MPF   0.65 # Assimilation efficiency on Plants of Small pelagic fish
+EPlant_SPF   0.65 # Assimilation efficiency on Plants of Small pelagic fish
+EPlant_MPF   0.75 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.55 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
-EPlant_SZO   0.65 # Assimilation efficiency on Plants of Small Zooplankton
-EPlant_MZO   0.65 # Assimilation efficiency on Plants of Medium Zooplankton
-EPlant_LZO   0.65 # Assimilation efficiency on Plants of Large Zooplankton
+EPlant_SZO   0.75 # Assimilation efficiency on Plants of Small Zooplankton
+EPlant_MZO   0.7 # Assimilation efficiency on Plants of Medium Zooplankton
+EPlant_LZO   0.7 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
-EPlant_BFF   0.4  # Assimilation efficiency on Plants of Deposit feeders
-EPlant_SUR   0.5  # Assimilation efficiency on Plants of Sea Urchin
+EPlant_BFF   0.5  # Assimilation efficiency on Plants of Deposit feeders
+EPlant_SUR   0.65  # Assimilation efficiency on Plants of Sea Urchin
 EPlant_MOL   0.45 # Assimilation efficiency on Plants of Mollusca
 
 # Assimilation efficiency of invertebrate consumers on labile detritus
@@ -4248,21 +4248,21 @@ EDL_SPF   0.1 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_MPF   0.4 # Assim efficiency on labile detritus of Small pelagic fish
 EDL_SBF   0 # Assim efficiency on labile detritus of Small benthic fish
 EDL_LBF   0 # Assim efficiency on labile detritus of Large benthic fish
-EDL_SZO   0.15 # Assim efficiency on labile detritus of Small Zooplankton
-EDL_MZO   0.15 # Assim efficiency on labile detritus of Medium Zooplankton
-EDL_LZO   0.15 # Assim efficiency on labile detritus of Large Zooplankton
+EDL_SZO   0.25 # Assim efficiency on labile detritus of Small Zooplankton
+EDL_MZO   0.45 # Assim efficiency on labile detritus of Medium Zooplankton
+EDL_LZO   0.45 # Assim efficiency on labile detritus of Large Zooplankton
 EDL_SCR   0.4 # Assim efficiency on labile detritus of Small crustaceans
-EDL_BFF   0.3  # Assim efficiency on labile detritus of Deposit feeders
+EDL_BFF   0.6  # Assim efficiency on labile detritus of Deposit feeders
 EDL_LPH   0 # Assim efficiency on labile detritus of Large phytoplankton
 EDL_SPH   0 # Assim efficiency on labile detritus of Small phytoplankton
 EDL_SUR   0.3 # Assim efficiency on labile detritus of Sea Urchin
-EDL_MOL   0.25 # Assim efficiency on labile detritus of Mollusca
+EDL_MOL   0.45 # Assim efficiency on labile detritus of Mollusca
 EDL_PB    0.5  # Assim efficiency on labile detritus of Pelagic Bacteria
 EDL_BB    0.5 # Assim efficiency on labile detritus of Sediment Bacteria
 
 # Assimilation efficiency of invertebrate consumers on refractory detritus
-EDR_SPL   0.01 # Assim efficiency on refractory detritus of Spiny lobster
-EDR_GCR   0.01 # Assim efficiency on refractory detritus of Golden Crab
+EDR_SPL   0.5 # Assim efficiency on refractory detritus of Spiny lobster
+EDR_GCR   0.4 # Assim efficiency on refractory detritus of Golden Crab
 EDR_BRC   0.01 # Assim efficiency on refractory detritus of Breca
 EDR_VID   0 # Assim efficiency on refractory detritus of Vidriola
 EDR_ORO   0 # Assim efficiency on refractory detritus of Orange Roughy
@@ -4287,7 +4287,7 @@ EDR_SCR   0.01 # Assim efficiency on refractory detritus of Small crustaceans
 EDR_BFF   0.05 # Assim efficiency on refractory detritus of Deposit feeders
 EDR_LPH   0 # Assim efficiency on refractory detritus of Large phytoplankton
 EDR_SPH   0 # Assim efficiency on refractory detritus of Small phytoplankton
-EDR_SUR   0.2 # Assim efficiency on refractory detritus of Sea Urchin
+EDR_SUR   0.4 # Assim efficiency on refractory detritus of Sea Urchin
 EDR_MOL   0.03 # Assim efficiency on refractory detritus of Mollusca
 EDR_PB    0.25 # Assim efficiency on refractory detritus of Pelagic Bacteria
 EDR_BB    0.25 # Assim efficiency on refractory detritus of Sediment Bacteria
