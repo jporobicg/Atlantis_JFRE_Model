@@ -2994,13 +2994,13 @@ PotOCT_Effort	0	## Effort per day [Days per day] for the fishery Pot-trap Octopu
 
 ##  Prescribed effort distributions for the fishery   Trap Spiny Lobster
 Effort_hdistribTrapSPL1	59
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108.9098347797 128.5325287293 259.9726186059 54.624920459 0 0 64.520116412 40.6298367623 46.0851388335 22.3671673656 0 0 0 0 0 0 7201.993396334 2955.295431882 6776.2478799843 8009.6001942406 4517.9580399671 951.3294481228 2385.1578115003 3143.8975543334
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73.6672600955 86.9401670087 175.8470256729 36.948621135 0 0 43.6417905392 27.4822632728 31.1722620446 15.1292850573 0 0 0 0 0 0 4871.4711743604 1998.979409709 4583.4943745529 5417.7412165159 3055.9736933212 643.4848976964 1613.3349318174 2126.5510072355
 Effort_hdistribTrapSPL2 59
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7.0909450259 26.0892152155 181.1956351742 87.4995303801 0 0 4.1991407673 42.5456701556 91.4845167935 28.0137910946 0 0 0 0 0 0 1302.1163984489 792.074984988 2199.4656291276 3942.0343371122 1666.4779849174 535.518851237 547.8977002357 728.7986518827
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4.7963573961 17.6469003636 122.5618054746 59.1852028403 0 0 2.8403237936 28.7781443763 61.880671355 18.9486949365 0 0 0 0 0 0 880.7592775543 535.7642315064 1487.73163507 2666.4154748262 1127.2156220476 362.2281365122 370.6012636106 492.9637433945
 Effort_hdistribTrapSPL3 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 Effort_hdistribTrapSPL4 59
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74.668091915 65.0768526574 120.1305663107 67.4862370141 0 0 32.3990136609 30.3078460652 79.4224901106 16.3386810993 0 0 0 0 0 0 7171.3635428451 4294.035901354 6786.0309402603 6274.3270968482 5134.8929349415 634.3625264706 3490.5765279908 3201.5210631366
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50.5059415347 44.0183702473 81.2570296496 45.6480921584 0 0 21.9148855658 20.5004073648 53.7218447558 11.0515810862 0 0 0 0 0 0 4850.7529592587 2904.5114267617 4590.1116947182 4243.9921711623 3473.272126121 429.0865864122 2361.0467272383 2165.5278913636
 
 ##  Prescribed effort distributions for the fishery   Trap Golden Crab
 Effort_hdistribTrapGCR1 59
@@ -3039,11 +3039,11 @@ Effort_hdistribBaitLPF2 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7.3625540286717 0 0 0 0 0 0 0 0 0 0 0 14.7251080573434 4.70037983536629 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49.6024295345204 279.797378783754 9.40075967073258 141.205447439513 20.7761819710782 40.8256384150324 34.1262669010367 0
 Effort_hdistribBaitLPF3 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3.08147115903043 2.87499096011646 0 0 0 0 0 0 0.201787467120473 0 0 0 0 0 0 0 2.87499096011646 54.6248282422127 0 28.7499096011646 0 0 0 0
-Effort_hdistribBaitLPF4	59
+Effort_hdistribBaitLPF4 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16.4944496311585 0 95.7508462799153 18.0505392805725 0 0 0 0 0 0 0 0 72.20215712229 0 66.6656880308848 36.101078561145 0 0 0 0 0 5.49814987705285 0 0 0 0 0 0 131.85192484106 624.599677650514 135.040830683306 500.406309202693 8.91253166662377 0 135.415144149252 0
 
 ##  Prescribed effort distributions for the fishery   Bait Breca
-Effort_hdistribBaitBRC1	59
+Effort_hdistribBaitBRC1 59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13.3072430865006 0 20.9914686646544 99.7158369126477 282.951418106785 36.0017286142571 0 0 36.0017286142571 144.388425554751 5.6230175083467 5.6230175083467 0 0 0 0 0 0 1294.16104401806 748.735709550108 592.338226783219 851.094557993515 264.356028827626 397.296003871313 247.440336520551 112.306697585738
 Effort_hdistribBaitBRC2	59
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7.80482051622256 0 19.1420980244969 11.3372775082744 0 0 0 0 0 0 0 0 0 105.556045095281 64.4912080575943 11.3372775082744 0 0 0 22.6745550165487 16.9650102743353 11.3372775082744 0 0 0 0 0 0 316.843668709389 267.22219515212 303.999307478159 358.508607269369 123.21833005554 218.243454963341 113.290963106591 70.1189408236553
@@ -4759,7 +4759,7 @@ PotOCT_FC_endanger_period	0	## Period of time over which effort reduction occurs
 ## – Change in effort – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-TrapSPL_num_changes	1	## number of changes in effort for the fishery Trap Spiny Lobster
+TrapSPL_num_changes	2	## number of changes in effort for the fishery Trap Spiny Lobster
 TrapGCR_num_changes	1	## number of changes in effort for the fishery Trap Golden Crab
 TrapANG_num_changes	1	## number of changes in effort for the fishery Trap Anguila
 BaitSPF_num_changes	1	## number of changes in effort for the fishery Bait Small Pelagic Fish
@@ -4773,8 +4773,8 @@ TrawlORO_num_changes	1	## number of changes in effort for the fishery Trawling O
 TrawlALF_num_changes	1	## number of changes in effort for the fishery Trawling Alfonsino
 PotOCT_num_changes	1	## number of changes in effort for the fishery Pot-trap Octopus
 
-EffortChange_start_TrapSPL	1	## When each change in fishing begins (days from run start) for the fishery Trap Spiny Lobster
-0
+EffortChange_start_TrapSPL	2	## (2000 use of chigre) When each change in fishing begins (days from run start) for the fishery Trap Spiny Lobster
+0 18262
 EffortChange_start_TrapGCR	1	## When each change in fishing begins (days from run start) for the fishery Trap Golden Crab
 0
 EffortChange_start_TrapANG	1	## When each change in fishing begins (days from run start) for the fishery Trap Anguila
@@ -4800,62 +4800,62 @@ EffortChange_start_TrawlALF	1	## When each change in fishing begins (days from r
 EffortChange_start_PotOCT	1	## When each change in fishing begins (days from run start) for the fishery Pot-trap Octopus
 0
 
-EffortChange_period_TrapSPL	1	## Time period over which change in fishing occurs for the fishery [d] Trap Spiny Lobster
-0
+EffortChange_period_TrapSPL	2	## Time period over which change in fishing occurs for the fishery [d] Trap Spiny Lobster
+1 1
 EffortChange_period_TrapGCR	1	## Time period over which change in fishing occurs for the fishery [d] Trap Golden Crab
-0
+1
 EffortChange_period_TrapANG	1	## Time period over which change in fishing occurs for the fishery [d] Trap Anguila
-0
+1
 EffortChange_period_BaitSPF	1	## Time period over which change in fishing occurs for the fishery [d] Bait Small Pelagic Fish
-0
+1
 EffortChange_period_BaitLPF	1	## Time period over which change in fishing occurs for the fishery [d] Bait Large Pelagic Fish
-0
+1
 EffortChange_period_BaitBRC	1	## Time period over which change in fishing occurs for the fishery [d] Bait Breca
-0
+1
 EffortChange_period_BaitLBF	1	## Time period over which change in fishing occurs for the fishery [d] Bait Large Benthic Fish
-0
+1
 EffortChange_period_BaitSBF	1	## Time period over which change in fishing occurs for the fishery [d] Bait Small Benthic Fish
-0
+1
 EffortChange_period_HlineBRC	1	## Time period over which change in fishing occurs for the fishery [d] Handlining Breca
-0
+1
 EffortChange_period_HlineVID	1	## Time period over which change in fishing occurs for the fishery [d] handlining Vidriola
-0
+1
 EffortChange_period_TrawlORO	1	## Time period over which change in fishing occurs for the fishery [d] Trawling Orange Roughy
-0
+1
 EffortChange_period_TrawlALF	1	## Time period over which change in fishing occurs for the fishery [d] Trawling Alfonsino
-0
+1
 EffortChange_period_PotOCT	1	## Time period over which change in fishing occurs for the fishery [d] Pot-trap Octopus
-0
+1
 
 Effort_mult_TrapSPL	1	## Proportional change in effort for the fishery Trap Spiny Lobster
-0
+1 1.4784021374
 Effort_mult_TrapGCR	1	## Proportional change in effort for the fishery Trap Golden Crab
-0
+1
 Effort_mult_TrapANG	1	## Proportional change in effort for the fishery Trap Anguila
-0
+1
 Effort_mult_BaitSPF	1	## Proportional change in effort for the fishery Bait Small Pelagic Fish
-0
+1
 Effort_mult_BaitLPF	1	## Proportional change in effort for the fishery Bait Large Pelagic Fish
-0
+1
 Effort_mult_BaitBRC	1	## Proportional change in effort for the fishery Bait Breca
-0
+1
 Effort_mult_BaitLBF	1	## Proportional change in effort for the fishery Bait Large Benthic Fish
-0
+1
 Effort_mult_BaitSBF	1	## Proportional change in effort for the fishery Bait Small Benthic Fish
-0
+1
 Effort_mult_HlineBRC	1	## Proportional change in effort for the fishery Handlining Breca
-0
+1
 Effort_mult_HlineVID	1	## Proportional change in effort for the fishery handlining Vidriola
-0
+1
 Effort_mult_TrawlORO	1	## Proportional change in effort for the fishery Trawling Orange Roughy
-0
+1
 Effort_mult_TrawlALF	1	## Proportional change in effort for the fishery Trawling Alfonsino
-0
+1
 Effort_mult_PotOCT	1	## Proportional change in effort for the fishery Pot-trap Octopus
-0
+1
 
-flagpulseTrapSPL	1	## Each change in fishing is a simple pulse [1] or not [0] Trap Spiny Lobster
-0
+flagpulseTrapSPL	2	## Each change in fishing is a simple pulse [1] or not [0] Trap Spiny Lobster
+0 0
 flagpulseTrapGCR	1	## Each change in fishing is a simple pulse [1] or not [0] Trap Golden Crab
 0
 flagpulseTrapANG	1	## Each change in fishing is a simple pulse [1] or not [0] Trap Anguila
@@ -5675,7 +5675,7 @@ DISCRDchange_discardmult_DC	1	## New level of discarding for the group Carrion
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 SPL_q_changes	13	## Number of changes of catchability for the groupSpiny lobster
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 0 0 0
 GCR_q_changes	13	## Number of changes of catchability for the groupGolden Crab
 0 0 0 0 0 0 0 0 0 0 0 0 0
 BRC_q_changes	13	## Number of changes of catchability for the groupBreca
@@ -5743,8 +5743,8 @@ DR_q_changes	13	## Number of changes of catchability for the groupRefractory det
 DC_q_changes	13	## Number of changes of catchability for the groupCarrion
 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-Qchange_start_SPL	1	## Time when each change in catchability begins for the group Spiny lobster
-0
+Qchange_start_SPL	2	## Change trapTime when each change in catchability begins for the group Spiny lobster
+0 11596
 Qchange_start_GCR	1	## Time when each change in catchability begins for the group Golden Crab
 0
 Qchange_start_BRC	1	## Time when each change in catchability begins for the group Breca
@@ -5812,8 +5812,8 @@ Qchange_start_DR	1	## Time when each change in catchability begins for the group
 Qchange_start_DC	1	## Time when each change in catchability begins for the group Carrion
 0
 
-Qchange_period_SPL	1	## Period over which change in catchability occurs for the group Spiny lobster
-0
+Qchange_period_SPL	2	## Period over which change in catchability occurs for the group Spiny lobster
+0 0
 Qchange_period_GCR	1	## Period over which change in catchability occurs for the group Golden Crab
 0
 Qchange_period_BRC	1	## Period over which change in catchability occurs for the group Breca
@@ -5881,8 +5881,8 @@ Qchange_period_DR	1	## Period over which change in catchability occurs for the g
 Qchange_period_DC	1	## Period over which change in catchability occurs for the group Carrion
 0
 
-Qchange_mult_SPL	1	## New level of catchability for the group Spiny lobster
-0
+Qchange_mult_SPL	2	## New level of catchability for the group Spiny lobster
+1 1.3
 Qchange_mult_GCR	1	## New level of catchability for the group Golden Crab
 0
 Qchange_mult_BRC	1	## New level of catchability for the group Breca
@@ -6237,73 +6237,73 @@ mFCchange_mult_DC	1	## New level of fishing mortality for the group Carrion
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 SPL_TAC_changes	13	## Number of changes of TAC for the groupSpiny lobster
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 GCR_TAC_changes	13	## Number of changes of TAC for the groupGolden Crab
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 BRC_TAC_changes	13	## Number of changes of TAC for the groupBreca
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 VID_TAC_changes	13	## Number of changes of TAC for the groupVidriola
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 ORO_TAC_changes	13	## Number of changes of TAC for the groupOrange Roughy
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 ALF_TAC_changes	13	## Number of changes of TAC for the groupAlfonsino
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 ANG_TAC_changes	13	## Number of changes of TAC for the groupAnguila
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 CHO_TAC_changes	13	## Number of changes of TAC for the groupChondrichtyans
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 OTA_TAC_changes	13	## Number of changes of TAC for the groupOtariid
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 DOL_TAC_changes	13	## Number of changes of TAC for the groupDophins
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 BIR_TAC_changes	13	## Number of changes of TAC for the groupBirds
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SQD_TAC_changes	13	## Number of changes of TAC for the groupSquids
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 OCT_TAC_changes	13	## Number of changes of TAC for the groupOctupus
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 LPF_TAC_changes	13	## Number of changes of TAC for the groupLarge pelagic fish
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SPF_TAC_changes	13	## Number of changes of TAC for the groupSmall pelagic fish
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SBF_TAC_changes	13	## Number of changes of TAC for the groupSmall benthic fish
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 MPF_TAC_changes	13	## Number of changes of TAC for the groupMesopelagic fish
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 LBF_TAC_changes	13	## Number of changes of TAC for the groupLarge benthic fish
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SZO_TAC_changes	13	## Number of changes of TAC for the groupSmall Zooplankton
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 MZO_TAC_changes	13	## Number of changes of TAC for the groupMedium Zooplankton
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 LZO_TAC_changes	13	## Number of changes of TAC for the groupLarge Zooplankton
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SCR_TAC_changes	13	## Number of changes of TAC for the groupSmall crustaceans
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 BFF_TAC_changes	13	## Number of changes of TAC for the groupDeposit feeders
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 LPH_TAC_changes	13	## Number of changes of TAC for the groupLarge phytoplankton
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SPH_TAC_changes	13	## Number of changes of TAC for the groupSmall phytoplankton
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 COR_TAC_changes	13	## Number of changes of TAC for the groupCoral
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 SUR_TAC_changes	13	## Number of changes of TAC for the groupSea Urchin
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 MOL_TAC_changes	13	## Number of changes of TAC for the groupMollusca
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 MA_TAC_changes	13	## Number of changes of TAC for the groupMacroalgae
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 PB_TAC_changes	13	## Number of changes of TAC for the groupPelagic Bacteria
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 BB_TAC_changes	13	## Number of changes of TAC for the groupSediment Bacteria
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 DL_TAC_changes	13	## Number of changes of TAC for the groupLabile detritus
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 DR_TAC_changes	13	## Number of changes of TAC for the groupRefractory detritrus
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 DC_TAC_changes	13	## Number of changes of TAC for the groupCarrion
-NA NA NA NA NA NA NA NA NA NA NA NA NA
+0 0 0 0 0 0 0 0 0 0 0 0 0
 
 TACchange_start_SPL	1	## Time when each change in TAC begins for the group Spiny lobster
 0

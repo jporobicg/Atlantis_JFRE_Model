@@ -3970,7 +3970,7 @@ mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 2.286 20.556 225
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
-3.125 487.5 496.535 502.105 655.555 749.555 660.717 432.02 536.8 636.573
+3.125 975 993.07 1004.21 1311.11 1499.11 1321.434 864.04 1073.6 1273.146
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
 568.375 786.315 1222.94 1572.44 1866 2118.69 1865.3 2012 2129.5 1463.625
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
@@ -3986,7 +3986,7 @@ mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
 30 55 62.5 158.75 154 157.725 241.82 306.99 313.255 1658.33
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
-437.117 452.079 672.922 705.997 725.814 737.953 745.559 750.423 753.586 730.397
+1457.057 2260.395 3364.61 3529.985 3629.07 3689.765 3727.795 2501.41 2511.953 2434.657
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
 0.067 9.768 101.29 185.008 200.795 203.269 218.157 229.156 316.378 257.211
 mum_BIR   10 ## 0.02 0.21 0.54 1.01 1.62 2.39 3.33 4.49 5.90 7.63
@@ -4089,8 +4089,8 @@ pR_BIR   5 # Preference for rebuilding reserves over structure for Otariids [ Nu
 ## ~              Length - weight parameters          ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 # Vertebrates
-li_a_SPL    0.96225457 	# Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
-li_a_GCR    0.53179259   	# Coefficient of allometic length-weight relation for Golden Crab [ Number ]
+li_a_SPL    0.96225457  # Coefficient of allometic length-weight relation for Spiny lobster [ Number ]
+li_a_GCR    0.53179259    # Coefficient of allometic length-weight relation for Golden Crab [ Number ]
 li_a_BRC    0.00839310   	# Coefficient of allometic length-weight relation for Breca [ Number ]
 li_a_VID    0.00523585   	# Coefficient of allometic length-weight relation for Vidriola [ Number ]
 li_a_ORO    0.84         	# Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
@@ -4395,7 +4395,7 @@ BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 0.000001 0.0003
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
-0.000001 4.986301e-05
+0 4e-07
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
 0  0.0004
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
@@ -4403,9 +4403,9 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0 0.0001
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.0002 0.000009
+0.00001 0.0000045
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
-0 0.00001
+0 0.000001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0.0008 0.000035
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
@@ -4452,7 +4452,7 @@ BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-8e-11 1e-8
+1e-12 1e-7
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 1e-9 1e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
@@ -5123,7 +5123,7 @@ KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
 3
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
-0.25
+0.1
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
 1
 KDENR_LPF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Large pelagic fish [ Numbers ]
