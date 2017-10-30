@@ -253,40 +253,75 @@ TrawlORO_selcurve	2	## What form of selectivity (1-6) start the fishery: Trawlin
 TrawlALF_selcurve	2	## What form of selectivity (1-6) start the fishery: Trawling Alfonsino
 PotOCT_selcurve		0	## What form of selectivity (1-6) start the fishery: Pot-trap Octopus
 
-flagdiscard_SPL	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Spiny lobster
-flagdiscard_GCR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Golden Crab
-flagdiscard_BRC	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Breca
-flagdiscard_VID	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Vidriola
-flagdiscard_ORO	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Orange Roughy
-flagdiscard_ALF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Alfonsino
-flagdiscard_ANG	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Anguila
-flagdiscard_CHO	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Chondrichtyans
-flagdiscard_OTA	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Otariid
-flagdiscard_DOL	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Dophins
-flagdiscard_BIR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Birds
-flagdiscard_SQD	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Squids
-flagdiscard_OCT	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Octupus
-flagdiscard_LPF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Large pelagic fish
-flagdiscard_SPF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Small pelagic fish
-flagdiscard_SBF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Small benthic fish
-flagdiscard_MPF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Mesopelagic fish
-flagdiscard_LBF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Large benthic fish
-flagdiscard_SZO	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Small Zooplankton
-flagdiscard_MZO	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Medium Zooplankton
-flagdiscard_LZO	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Large Zooplankton
-flagdiscard_SCR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Small crustaceans
-flagdiscard_BFF	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Deposit feeders
-flagdiscard_LPH	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Large phytoplankton
-flagdiscard_SPH	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Small phytoplankton
-flagdiscard_COR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Coral
-flagdiscard_SUR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Sea Urchin
-flagdiscard_MOL	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Mollusca
-flagdiscard_MA	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Macroalgae
-flagdiscard_PB	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Pelagic Bacteria
-flagdiscard_BB	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Sediment Bacteria
-flagdiscard_DL	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Labile detritus
-flagdiscard_DR	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Refractory detritrus
-flagdiscard_DC	0	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based for Carrion
+##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
+flagdiscard_SPL	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSpiny lobster
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_GCR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forGolden Crab
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_BRC	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forBreca
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_VID	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forVidriola
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_ORO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forOrange Roughy
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_ALF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAlfonsino
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_ANG	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAnguila
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_CHO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forChondrichtyans
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_OTA	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forOtariid
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_DOL	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forDophins
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_BIR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forBirds
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SQD	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSquids
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_OCT	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forOctupus
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_LPF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forLarge pelagic fish
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SPF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSmall pelagic fish
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SBF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSmall benthic fish
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_MPF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forMesopelagic fish
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_LBF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forLarge benthic fish
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SZO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSmall Zooplankton
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_MZO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forMedium Zooplankton
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_LZO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forLarge Zooplankton
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SCR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSmall crustaceans
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_BFF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forDeposit feeders
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_LPH	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forLarge phytoplankton
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SPH	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSmall phytoplankton
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_COR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forCoral
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_SUR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSea Urchin
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_MOL	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forMollusca
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_MA	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forMacroalgae
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_PB	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forPelagic Bacteria
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_BB	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSediment Bacteria
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_DL	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forLabile detritus
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_DR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forRefractory detritrus
+0 0 0 0 0 0 0 0 0 0 0 0 0
+flagdiscard_DC	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forCarrion
+0 0 0 0 0 0 0 0 0 0 0 0 0
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 flagescapement_SPL	13	## Escapement formulation [0] no escapement, [1] fixed proportion, [2] size based for:Spiny lobster
@@ -1036,31 +1071,31 @@ Speed_recboat	9260	 ## Speed of average rec vessel  [m.hr-1]
 KDEP_fishery	0.1	 ## Sediment penetration depth of fishing gear [m]
 
 ##  COR | MA | reef | flat | soft | canyon |
-habitat_SPL	6	## Which habitats can operate the fishery:  Trap Spiny Lobster
+habitat_TrapSPL	6	## Which habitats can operate the fishery:  Trap Spiny Lobster
 1 1 1 1 1 1
-habitat_GCR	6	## Which habitats can operate the fishery:  Trap Golden Crab
+habitat_TrapGCR	6	## Which habitats can operate the fishery:  Trap Golden Crab
 1 1 1 1 1 1
-habitat_BRC	6	## Which habitats can operate the fishery:  Trap Anguila
+habitat_TrapANG	6	## Which habitats can operate the fishery:  Trap Anguila
 1 1 1 1 1 1
-habitat_VID	6	## Which habitats can operate the fishery:  Bait Small Pelagic Fish
+habitat_BaitSPF	6	## Which habitats can operate the fishery:  Bait Small Pelagic Fish
 1 1 1 1 1 1
-habitat_ORO	6	## Which habitats can operate the fishery:  Bait Large Pelagic Fish
+habitat_BaitLPF	6	## Which habitats can operate the fishery:  Bait Large Pelagic Fish
 1 1 1 1 1 1
-habitat_ALF	6	## Which habitats can operate the fishery:  Bait Breca
+habitat_BaitBRC	6	## Which habitats can operate the fishery:  Bait Breca
 1 1 1 1 1 1
-habitat_ANG	6	## Which habitats can operate the fishery:  Bait Large Benthic Fish
+habitat_BaitLBF	6	## Which habitats can operate the fishery:  Bait Large Benthic Fish
 1 1 1 1 1 1
-habitat_CHO	6	## Which habitats can operate the fishery:  Bait Small Benthic Fish
+habitat_BaitSBF	6	## Which habitats can operate the fishery:  Bait Small Benthic Fish
 1 1 1 1 1 1
-habitat_OTA	6	## Which habitats can operate the fishery:  Handlining Breca
+habitat_HlineBRC	6	## Which habitats can operate the fishery:  Handlining Breca
 1 1 1 1 1 1
-habitat_DOL	6	## Which habitats can operate the fishery:  handlining Vidriola
+habitat_HlineVID	6	## Which habitats can operate the fishery:  handlining Vidriola
 1 1 1 1 1 1
-habitat_BIR	6	## Which habitats can operate the fishery:  Trawling Orange Roughy
+habitat_TrawlORO	6	## Which habitats can operate the fishery:  Trawling Orange Roughy
 1 1 1 1 1 1
-habitat_SQD	6	## Which habitats can operate the fishery:  Trawling Alfonsino
+habitat_TrawlALF	6	## Which habitats can operate the fishery:  Trawling Alfonsino
 1 1 1 1 1 1
-habitat_OCT	6	## Which habitats can operate the fishery:  Pot-trap Octopus
+habitat_PotOCT	6	## Which habitats can operate the fishery:  Pot-trap Octopus
 1 1 1 1 1 1
 
 TrapSPL_mindepth	25	## Minimum seafloor depths for the fishery Trap Spiny Lobster
@@ -1943,19 +1978,19 @@ TrawlOROsel_lognormlsm	0	## Modal length of the lognormal selectivity curve for 
 TrawlALFsel_lognormlsm	0	## Modal length of the lognormal selectivity curve for Trawling Alfonsino
 PotOCTsel_lognormlsm	0	## Modal length of the lognormal selectivity curve for Pot-trap Octopus
 
-TrapSPL_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Spiny Lobster
-TrapGCR_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Golden Crab
-TrapANG_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Anguila
-BaitSPF_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Small Pelagic Fish
-BaitLPF_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Large Pelagic Fish
-BaitBRC_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Breca
-BaitLBF_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Large Benthic Fish
-BaitSBF_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Small Benthic Fish
-HlineBRC_gammasigma	0	## Measure of spread of gamma selectivity curve Handlining Breca
-HlineVID_gammasigma	0	## Measure of spread of gamma selectivity curve handlining Vidriola
-TrawlORO_gammasigma	0	## Measure of spread of gamma selectivity curve Trawling Orange Roughy
-TrawlALF_gammasigma	0	## Measure of spread of gamma selectivity curve Trawling Alfonsino
-PotOCT_gammasigma	0	## Measure of spread of gamma selectivity curve Pot-trap Octopus
+TrapSPLsel_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Spiny Lobster
+TrapGCRsel_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Golden Crab
+TrapANGsel_gammasigma	0	## Measure of spread of gamma selectivity curve Trap Anguila
+BaitSPFsel_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Small Pelagic Fish
+BaitLPFsel_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Large Pelagic Fish
+BaitBRCsel_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Breca
+BaitLBFsel_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Large Benthic Fish
+BaitSBFsel_gammasigma	0	## Measure of spread of gamma selectivity curve Bait Small Benthic Fish
+HlineBRCsel_gammasigma	0	## Measure of spread of gamma selectivity curve Handlining Breca
+HlineVIDsel_gammasigma	0	## Measure of spread of gamma selectivity curve handlining Vidriola
+TrawlOROsel_gammasigma	0	## Measure of spread of gamma selectivity curve Trawling Orange Roughy
+TrawlALFsel_gammasigma	0	## Measure of spread of gamma selectivity curve Trawling Alfonsino
+PotOCTsel_gammasigma	0	## Measure of spread of gamma selectivity curve Pot-trap Octopus
 
 TrapSPLsel_gammalsm	0	## Modal length of the gamma selectivity curve Trap Spiny Lobster
 TrapGCRsel_gammalsm	0	## Modal length of the gamma selectivity curve Trap Golden Crab
@@ -2270,31 +2305,31 @@ k_pattern	0	 ## Parameters used to set up Ellis and Pantus (2000) habitat refuge
 k_patches	2	 ## Parameters used to set up Ellis and Pantus (2000) habitat refuge from fisheries
 
 ##  COR | MA | reef | flat | soft | canyon |
-k_coverSPL	6	## Cover value per box for the fishery Trap Spiny Lobster
+k_coverTrapSPL	6	## Cover value per box for the fishery Trap Spiny Lobster
 1 1 1 1 1 1
-k_coverGCR	6	## Cover value per box for the fishery Trap Golden Crab
+k_coverTrapGCR	6	## Cover value per box for the fishery Trap Golden Crab
 1 1 1 1 1 1
-k_coverBRC	6	## Cover value per box for the fishery Trap Anguila
+k_coverTrapANG	6	## Cover value per box for the fishery Trap Anguila
 1 1 1 1 1 1
-k_coverVID	6	## Cover value per box for the fishery Bait Small Pelagic Fish
+k_coverBaitSPF	6	## Cover value per box for the fishery Bait Small Pelagic Fish
 1 1 1 1 1 1
-k_coverORO	6	## Cover value per box for the fishery Bait Large Pelagic Fish
+k_coverBaitLPF	6	## Cover value per box for the fishery Bait Large Pelagic Fish
 1 1 1 1 1 1
-k_coverALF	6	## Cover value per box for the fishery Bait Breca
+k_coverBaitBRC	6	## Cover value per box for the fishery Bait Breca
 1 1 1 1 1 1
-k_coverANG	6	## Cover value per box for the fishery Bait Large Benthic Fish
+k_coverBaitLBF	6	## Cover value per box for the fishery Bait Large Benthic Fish
 1 1 1 1 1 1
-k_coverCHO	6	## Cover value per box for the fishery Bait Small Benthic Fish
+k_coverBaitSBF	6	## Cover value per box for the fishery Bait Small Benthic Fish
 1 1 1 1 1 1
-k_coverOTA	6	## Cover value per box for the fishery Handlining Breca
+k_coverHlineBRC	6	## Cover value per box for the fishery Handlining Breca
 1 1 1 1 1 1
-k_coverDOL	6	## Cover value per box for the fishery handlining Vidriola
+k_coverHlineVID	6	## Cover value per box for the fishery handlining Vidriola
 1 1 1 1 1 1
-k_coverBIR	6	## Cover value per box for the fishery Trawling Orange Roughy
+k_coverTrawlORO	6	## Cover value per box for the fishery Trawling Orange Roughy
 1 1 1 1 1 1
-k_coverSQD	6	## Cover value per box for the fishery Trawling Alfonsino
+k_coverTrawlALF	6	## Cover value per box for the fishery Trawling Alfonsino
 1 1 1 1 1 1
-k_coverOCT	6	## Cover value per box for the fishery Pot-trap Octopus
+k_coverPotOCT	6	## Cover value per box for the fishery Pot-trap Octopus
 1 1 1 1 1 1
 
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
@@ -3225,166 +3260,22 @@ ports_TrawlALF	3	## Ports active [1] or not [0] for the fishery Trawling Alfonsi
 ports_PotOCT	3	## Ports active [1] or not [0] for the fishery Pot-trap Octopus
 1 1 0
 
-ports_xTrapSPL	3	## X – coordinate port location Trap Spiny Lobster
-0 0 0
-ports_xTrapGCR	3	## X – coordinate port location Trap Golden Crab
-0 0 0
-ports_xTrapANG	3	## X – coordinate port location Trap Anguila
-0 0 0
-ports_xBaitSPF	3	## X – coordinate port location Bait Small Pelagic Fish
-0 0 0
-ports_xBaitLPF	3	## X – coordinate port location Bait Large Pelagic Fish
-0 0 0
-ports_xBaitBRC	3	## X – coordinate port location Bait Breca
-0 0 0
-ports_xBaitLBF	3	## X – coordinate port location Bait Large Benthic Fish
-0 0 0
-ports_xBaitSBF	3	## X – coordinate port location Bait Small Benthic Fish
-0 0 0
-ports_xHlineBRC	3	## X – coordinate port location Handlining Breca
-0 0 0
-ports_xHlineVID	3	## X – coordinate port location handlining Vidriola
-0 0 0
-ports_xTrawlORO	3	## X – coordinate port location Trawling Orange Roughy
-0 0 0
-ports_xTrawlALF	3	## X – coordinate port location Trawling Alfonsino
-0 0 0
-ports_xPotOCT	3	## X – coordinate port location Pot-trap Octopus
+ports_x	3	## X -- coordinate port location
 0 0 0
 
-ports_yTrapSPL	3	## Y - coordinate port location Trap Spiny Lobster
-0 0 0
-ports_yTrapGCR	3	## Y - coordinate port location Trap Golden Crab
-0 0 0
-ports_yTrapANG	3	## Y - coordinate port location Trap Anguila
-0 0 0
-ports_yBaitSPF	3	## Y - coordinate port location Bait Small Pelagic Fish
-0 0 0
-ports_yBaitLPF	3	## Y - coordinate port location Bait Large Pelagic Fish
-0 0 0
-ports_yBaitBRC	3	## Y - coordinate port location Bait Breca
-0 0 0
-ports_yBaitLBF	3	## Y - coordinate port location Bait Large Benthic Fish
-0 0 0
-ports_yBaitSBF	3	## Y - coordinate port location Bait Small Benthic Fish
-0 0 0
-ports_yHlineBRC	3	## Y - coordinate port location Handlining Breca
-0 0 0
-ports_yHlineVID	3	## Y - coordinate port location handlining Vidriola
-0 0 0
-ports_yTrawlORO	3	## Y - coordinate port location Trawling Orange Roughy
-0 0 0
-ports_yTrawlALF	3	## Y - coordinate port location Trawling Alfonsino
-0 0 0
-ports_yPotOCT	3	## Y - coordinate port location Pot-trap Octopus
+ports_y	3	## Y - coordinate port location
 0 0 0
 
-ports_startTrapSPL	3	## Time port first used (days from model start time) Trap Spiny Lobster
-0 0 0
-ports_startTrapGCR	3	## Time port first used (days from model start time) Trap Golden Crab
-0 0 0
-ports_startTrapANG	3	## Time port first used (days from model start time) Trap Anguila
-0 0 0
-ports_startBaitSPF	3	## Time port first used (days from model start time) Bait Small Pelagic Fish
-0 0 0
-ports_startBaitLPF	3	## Time port first used (days from model start time) Bait Large Pelagic Fish
-0 0 0
-ports_startBaitBRC	3	## Time port first used (days from model start time) Bait Breca
-0 0 0
-ports_startBaitLBF	3	## Time port first used (days from model start time) Bait Large Benthic Fish
-0 0 0
-ports_startBaitSBF	3	## Time port first used (days from model start time) Bait Small Benthic Fish
-0 0 0
-ports_startHlineBRC	3	## Time port first used (days from model start time) Handlining Breca
-0 0 0
-ports_startHlineVID	3	## Time port first used (days from model start time) handlining Vidriola
-0 0 0
-ports_startTrawlORO	3	## Time port first used (days from model start time) Trawling Orange Roughy
-0 0 0
-ports_startTrawlALF	3	## Time port first used (days from model start time) Trawling Alfonsino
-0 0 0
-ports_startPotOCT	3	## Time port first used (days from model start time) Pot-trap Octopus
+ports_start	3	## Time port first used (days from model start time)
 0 0 0
 
-ports_endTrapSPL	3	## Time port last used (days from model start time) Trap Spiny Lobster
-0 0 0
-ports_endTrapGCR	3	## Time port last used (days from model start time) Trap Golden Crab
-0 0 0
-ports_endTrapANG	3	## Time port last used (days from model start time) Trap Anguila
-0 0 0
-ports_endBaitSPF	3	## Time port last used (days from model start time) Bait Small Pelagic Fish
-0 0 0
-ports_endBaitLPF	3	## Time port last used (days from model start time) Bait Large Pelagic Fish
-0 0 0
-ports_endBaitBRC	3	## Time port last used (days from model start time) Bait Breca
-0 0 0
-ports_endBaitLBF	3	## Time port last used (days from model start time) Bait Large Benthic Fish
-0 0 0
-ports_endBaitSBF	3	## Time port last used (days from model start time) Bait Small Benthic Fish
-0 0 0
-ports_endHlineBRC	3	## Time port last used (days from model start time) Handlining Breca
-0 0 0
-ports_endHlineVID	3	## Time port last used (days from model start time) handlining Vidriola
-0 0 0
-ports_endTrawlORO	3	## Time port last used (days from model start time) Trawling Orange Roughy
-0 0 0
-ports_endTrawlALF	3	## Time port last used (days from model start time) Trawling Alfonsino
-0 0 0
-ports_endPotOCT	3	## Time port last used (days from model start time) Pot-trap Octopus
+ports_end	3	## Time port last used (days from model start time)
 0 0 0
 
-ports_popTrapSPL	3	## Population of each port Trap Spiny Lobster
-0 0 0
-ports_popTrapGCR	3	## Population of each port Trap Golden Crab
-0 0 0
-ports_popTrapANG	3	## Population of each port Trap Anguila
-0 0 0
-ports_popBaitSPF	3	## Population of each port Bait Small Pelagic Fish
-0 0 0
-ports_popBaitLPF	3	## Population of each port Bait Large Pelagic Fish
-0 0 0
-ports_popBaitBRC	3	## Population of each port Bait Breca
-0 0 0
-ports_popBaitLBF	3	## Population of each port Bait Large Benthic Fish
-0 0 0
-ports_popBaitSBF	3	## Population of each port Bait Small Benthic Fish
-0 0 0
-ports_popHlineBRC	3	## Population of each port Handlining Breca
-0 0 0
-ports_popHlineVID	3	## Population of each port handlining Vidriola
-0 0 0
-ports_popTrawlORO	3	## Population of each port Trawling Orange Roughy
-0 0 0
-ports_popTrawlALF	3	## Population of each port Trawling Alfonsino
-0 0 0
-ports_popPotOCT	3	## Population of each port Pot-trap Octopus
+ports_pop	3	## Population of each port
 0 0 0
 
-ports_marketsTrapSPL	3	## Which market is feed by each port (for economic model) Trap Spiny Lobster
-0 0 0
-ports_marketsTrapGCR	3	## Which market is feed by each port (for economic model) Trap Golden Crab
-0 0 0
-ports_marketsTrapANG	3	## Which market is feed by each port (for economic model) Trap Anguila
-0 0 0
-ports_marketsBaitSPF	3	## Which market is feed by each port (for economic model) Bait Small Pelagic Fish
-0 0 0
-ports_marketsBaitLPF	3	## Which market is feed by each port (for economic model) Bait Large Pelagic Fish
-0 0 0
-ports_marketsBaitBRC	3	## Which market is feed by each port (for economic model) Bait Breca
-0 0 0
-ports_marketsBaitLBF	3	## Which market is feed by each port (for economic model) Bait Large Benthic Fish
-0 0 0
-ports_marketsBaitSBF	3	## Which market is feed by each port (for economic model) Bait Small Benthic Fish
-0 0 0
-ports_marketsHlineBRC	3	## Which market is feed by each port (for economic model) Handlining Breca
-0 0 0
-ports_marketsHlineVID	3	## Which market is feed by each port (for economic model) handlining Vidriola
-0 0 0
-ports_marketsTrawlORO	3	## Which market is feed by each port (for economic model) Trawling Orange Roughy
-0 0 0
-ports_marketsTrawlALF	3	## Which market is feed by each port (for economic model) Trawling Alfonsino
-0 0 0
-ports_marketsPotOCT	3	## Which market is feed by each port (for economic model) Pot-trap Octopus
+ports_markets	3	## Which market is feed by each port (for economic model)
 0 0 0
 
 k_proprecfish	0	 ## The proportion of the population who fish recreationally
@@ -3413,6 +3304,28 @@ forage_refD 	0	 ## Forage target reference point - tier2
 
 forage_lim_ref 	0	 ## Forage limit reference point
 
+byproduct_refA	0	 ## Byproduct target reference point - tier1
+
+byproduct_refB	0	 ## Byproduct target reference point - tier2
+
+byproduct_refC	0	 ## Byproduct target reference point - tier3
+
+byproduct_refD	0	 ## Byproduct target reference point - tier4
+
+byproduct_lim_ref	0	 ## Byproduct limit reference point
+
+bycatch_refA	0	 ## Bycatch target reference point - tier1
+
+bycatch_refB	0	 ## Bycatch target reference point - tier2
+
+bycatch_refC	0	 ## Bycatch target reference point - tier3
+
+bycatch_refD	0	 ## Bycatch target reference point - tier4
+
+bycatch_lim_ref	0	 ## Bycatch limit reference point
+
+whichref	34	## Set of reference points to use [1] Target ref. point or [0] Forage ref. point
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 TAC_multiyr	0	 ## Years of trend before change TAC
 
@@ -3430,6 +3343,17 @@ TAC_crit_change	0	 ## Magnitude of TAC shift before actually implemented (t)
 
 pseudo_RBCcheck	0	 ## Recommended biological catch based assessment check
 
+estBo	34	## Virgin biomasses for use with pseudo assessment
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+Fref	34	## Fishing rate (F) that equates with BrefA (i.e.F to apply if B > Bref)
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+Frestart_scalar	34	## Fishing rate
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+Fref_High	34	## Fishing rate
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 tierSPL	0	## Harvest strategy tier [0 – 5] for RBC setting for the group Spiny lobster
 tierGCR	0	## Harvest strategy tier [0 – 5] for RBC setting for the group Golden Crab
@@ -3470,6 +3394,8 @@ tierDC	0	## Harvest strategy tier [0 – 5] for RBC setting for the group Carrio
 ## – MSY related management parameters – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
+UseLever	34	## Lever to use for the MSY based management (tier6 above) for the group
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 TrapSPL_use_min_lever	0	## Re-scale levers based on minimum across groups [1] or the average [0] for the fishery Trap Spiny Lobster
 TrapGCR_use_min_lever	0	## Re-scale levers based on minimum across groups [1] or the average [0] for the fishery Trap Golden Crab
@@ -4391,6 +4317,8 @@ prop_spawn_close_DR	13	## Proportion of spawning grounds closed when trading off
 prop_spawn_close_DC	13	## Proportion of spawning grounds closed when trading off vs TAC reduction for the groupCarrion
 0 0 0 0 0 0 0 0 0 0 0 0 0
 
+SP_Concern	34	## Identification of groups of concern
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## – Spatial management – ##
@@ -4411,59 +4339,59 @@ TrawlALF_infringe	0	## Level of infringement (as proportion of uncontrolled effo
 PotOCT_infringe	0	## Level of infringement (as proportion of uncontrolled effort) for Pot-trap Octopus
 
 ##  COR | MA | reef | flat | soft | canyon |
-MPASPL	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Trap Spiny Lobster
+MPATrapSPL	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Spiny Lobster
 0 0 0 0 0 0
-MPAGCR	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Trap Golden Crab
+MPATrapGCR	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Golden Crab
 0 0 0 0 0 0
-MPABRC	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Trap Anguila
+MPATrapANG	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Anguila
 0 0 0 0 0 0
-MPAVID	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Bait Small Pelagic Fish
+MPABaitSPF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Pelagic Fish
 0 0 0 0 0 0
-MPAORO	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Bait Large Pelagic Fish
+MPABaitLPF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Pelagic Fish
 0 0 0 0 0 0
-MPAALF	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Bait Breca
+MPABaitBRC	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Breca
 0 0 0 0 0 0
-MPAANG	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Bait Large Benthic Fish
+MPABaitLBF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Benthic Fish
 0 0 0 0 0 0
-MPACHO	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Bait Small Benthic Fish
+MPABaitSBF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Benthic Fish
 0 0 0 0 0 0
-MPAOTA	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Handlining Breca
+MPAHlineBRC	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Handlining Breca
 0 0 0 0 0 0
-MPADOL	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery handlining Vidriola
+MPAHlineVID	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery handlining Vidriola
 0 0 0 0 0 0
-MPABIR	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Trawling Orange Roughy
+MPATrawlORO	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Orange Roughy
 0 0 0 0 0 0
-MPASQD	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Trawling Alfonsino
+MPATrawlALF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Alfonsino
 0 0 0 0 0 0
-MPAOCT	6	## General MPA status [fishing allowed between 1 – 0] of the cell with regard to the fishery Pot-trap Octopus
+MPAPotOCT	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Pot-trap Octopus
 0 0 0 0 0 0
 
 ##  COR | MA | reef | flat | soft | canyon |
-MPAendangeredSPL	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Trap Spiny Lobster
+MPAendangeredTrapSPL	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trap Spiny Lobster
 0 0 0 0 0 0
-MPAendangeredGCR	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Trap Golden Crab
+MPAendangeredTrapGCR	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trap Golden Crab
 0 0 0 0 0 0
-MPAendangeredBRC	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Trap Anguila
+MPAendangeredTrapANG	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trap Anguila
 0 0 0 0 0 0
-MPAendangeredVID	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Bait Small Pelagic Fish
+MPAendangeredBaitSPF	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Bait Small Pelagic Fish
 0 0 0 0 0 0
-MPAendangeredORO	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Bait Large Pelagic Fish
+MPAendangeredBaitLPF	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Bait Large Pelagic Fish
 0 0 0 0 0 0
-MPAendangeredALF	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Bait Breca
+MPAendangeredBaitBRC	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Bait Breca
 0 0 0 0 0 0
-MPAendangeredANG	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Bait Large Benthic Fish
+MPAendangeredBaitLBF	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Bait Large Benthic Fish
 0 0 0 0 0 0
-MPAendangeredCHO	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Bait Small Benthic Fish
+MPAendangeredBaitSBF	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Bait Small Benthic Fish
 0 0 0 0 0 0
-MPAendangeredOTA	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Handlining Breca
+MPAendangeredHlineBRC	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Handlining Breca
 0 0 0 0 0 0
-MPAendangeredDOL	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery handlining Vidriola
+MPAendangeredHlineVID	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery handlining Vidriola
 0 0 0 0 0 0
-MPAendangeredBIR	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Trawling Orange Roughy
+MPAendangeredTrawlORO	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trawling Orange Roughy
 0 0 0 0 0 0
-MPAendangeredSQD	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Trawling Alfonsino
+MPAendangeredTrawlALF	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trawling Alfonsino
 0 0 0 0 0 0
-MPAendangeredOCT	6	## MPA's imposed when threatened groups [fishing allowed between 1 – 0] by the fishery Pot-trap Octopus
+MPAendangeredPotOCT	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Pot-trap Octopus
 0 0 0 0 0 0
 
 MPAoverfishedSPL	6	## MPA imposed if a fished judged as overfished has TAC exceeded for the group Spiny lobster
@@ -5669,6 +5597,74 @@ DISCRDchange_discardmult_DR	1	## New level of discarding for the group Refractor
 DISCRDchange_discardmult_DC	1	## New level of discarding for the group Carrion
 0
 
+DISCRDchange_wastemult_SPL	1	## New level of discarding for the group Spiny lobster
+0
+DISCRDchange_wastemult_GCR	1	## New level of discarding for the group Golden Crab
+0
+DISCRDchange_wastemult_BRC	1	## New level of discarding for the group Breca
+0
+DISCRDchange_wastemult_VID	1	## New level of discarding for the group Vidriola
+0
+DISCRDchange_wastemult_ORO	1	## New level of discarding for the group Orange Roughy
+0
+DISCRDchange_wastemult_ALF	1	## New level of discarding for the group Alfonsino
+0
+DISCRDchange_wastemult_ANG	1	## New level of discarding for the group Anguila
+0
+DISCRDchange_wastemult_CHO	1	## New level of discarding for the group Chondrichtyans
+0
+DISCRDchange_wastemult_OTA	1	## New level of discarding for the group Otariid
+0
+DISCRDchange_wastemult_DOL	1	## New level of discarding for the group Dophins
+0
+DISCRDchange_wastemult_BIR	1	## New level of discarding for the group Birds
+0
+DISCRDchange_wastemult_SQD	1	## New level of discarding for the group Squids
+0
+DISCRDchange_wastemult_OCT	1	## New level of discarding for the group Octupus
+0
+DISCRDchange_wastemult_LPF	1	## New level of discarding for the group Large pelagic fish
+0
+DISCRDchange_wastemult_SPF	1	## New level of discarding for the group Small pelagic fish
+0
+DISCRDchange_wastemult_SBF	1	## New level of discarding for the group Small benthic fish
+0
+DISCRDchange_wastemult_MPF	1	## New level of discarding for the group Mesopelagic fish
+0
+DISCRDchange_wastemult_LBF	1	## New level of discarding for the group Large benthic fish
+0
+DISCRDchange_wastemult_SZO	1	## New level of discarding for the group Small Zooplankton
+0
+DISCRDchange_wastemult_MZO	1	## New level of discarding for the group Medium Zooplankton
+0
+DISCRDchange_wastemult_LZO	1	## New level of discarding for the group Large Zooplankton
+0
+DISCRDchange_wastemult_SCR	1	## New level of discarding for the group Small crustaceans
+0
+DISCRDchange_wastemult_BFF	1	## New level of discarding for the group Deposit feeders
+0
+DISCRDchange_wastemult_LPH	1	## New level of discarding for the group Large phytoplankton
+0
+DISCRDchange_wastemult_SPH	1	## New level of discarding for the group Small phytoplankton
+0
+DISCRDchange_wastemult_COR	1	## New level of discarding for the group Coral
+0
+DISCRDchange_wastemult_SUR	1	## New level of discarding for the group Sea Urchin
+0
+DISCRDchange_wastemult_MOL	1	## New level of discarding for the group Mollusca
+0
+DISCRDchange_wastemult_MA	1	## New level of discarding for the group Macroalgae
+0
+DISCRDchange_wastemult_PB	1	## New level of discarding for the group Pelagic Bacteria
+0
+DISCRDchange_wastemult_BB	1	## New level of discarding for the group Sediment Bacteria
+0
+DISCRDchange_wastemult_DL	1	## New level of discarding for the group Labile detritus
+0
+DISCRDchange_wastemult_DR	1	## New level of discarding for the group Refractory detritrus
+0
+DISCRDchange_wastemult_DC	1	## New level of discarding for the group Carrion
+0
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## -- Changes in catchability through time – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
@@ -6590,31 +6586,143 @@ tac_resetperiodDL	1	## Number of years between TAC reassessments for the group L
 tac_resetperiodDR	1	## Number of years between TAC reassessments for the group Refractory detritrus
 tac_resetperiodDC	1	## Number of years between TAC reassessments for the group Carrion
 
-qSTOCK_TrapSPL	4	## qStock values by season for the group Trap Spiny Lobster
+## Adults
+qSTOCK_SPL	4	## qStock values by season for the group Spiny lobster
 1 1 1 1
-qSTOCK_TrapGCR	4	## qStock values by season for the group Trap Golden Crab
+qSTOCK_GCR	4	## qStock values by season for the group Golden Crab
 1 1 1 1
-qSTOCK_TrapANG	4	## qStock values by season for the group Trap Anguila
+qSTOCK_BRC	4	## qStock values by season for the group Breca
 1 1 1 1
-qSTOCK_BaitSPF	4	## qStock values by season for the group Bait Small Pelagic Fish
+qSTOCK_VID	4	## qStock values by season for the group Vidriola
 1 1 1 1
-qSTOCK_BaitLPF	4	## qStock values by season for the group Bait Large Pelagic Fish
+qSTOCK_ORO	4	## qStock values by season for the group Orange Roughy
 1 1 1 1
-qSTOCK_BaitBRC	4	## qStock values by season for the group Bait Breca
+qSTOCK_ALF	4	## qStock values by season for the group Alfonsino
 1 1 1 1
-qSTOCK_BaitLBF	4	## qStock values by season for the group Bait Large Benthic Fish
+qSTOCK_ANG	4	## qStock values by season for the group Anguila
 1 1 1 1
-qSTOCK_BaitSBF	4	## qStock values by season for the group Bait Small Benthic Fish
+qSTOCK_CHO	4	## qStock values by season for the group Chondrichtyans
 1 1 1 1
-qSTOCK_HlineBRC	4	## qStock values by season for the group Handlining Breca
+qSTOCK_OTA	4	## qStock values by season for the group Otariid
 1 1 1 1
-qSTOCK_HlineVID	4	## qStock values by season for the group handlining Vidriola
+qSTOCK_DOL	4	## qStock values by season for the group Dophins
 1 1 1 1
-qSTOCK_TrawlORO	4	## qStock values by season for the group Trawling Orange Roughy
+qSTOCK_BIR	4	## qStock values by season for the group Birds
 1 1 1 1
-qSTOCK_TrawlALF	4	## qStock values by season for the group Trawling Alfonsino
+qSTOCK_SQD	4	## qStock values by season for the group Squids
 1 1 1 1
-qSTOCK_PotOCT	4	## qStock values by season for the group Pot-trap Octopus
+qSTOCK_OCT	4	## qStock values by season for the group Octupus
+1 1 1 1
+qSTOCK_LPF	4	## qStock values by season for the group Large pelagic fish
+1 1 1 1
+qSTOCK_SPF	4	## qStock values by season for the group Small pelagic fish
+1 1 1 1
+qSTOCK_SBF	4	## qStock values by season for the group Small benthic fish
+1 1 1 1
+qSTOCK_MPF	4	## qStock values by season for the group Mesopelagic fish
+1 1 1 1
+qSTOCK_LBF	4	## qStock values by season for the group Large benthic fish
+1 1 1 1
+qSTOCK_SZO	4	## qStock values by season for the group Small Zooplankton
+1 1 1 1
+qSTOCK_MZO	4	## qStock values by season for the group Medium Zooplankton
+1 1 1 1
+qSTOCK_LZO	4	## qStock values by season for the group Large Zooplankton
+1 1 1 1
+qSTOCK_SCR	4	## qStock values by season for the group Small crustaceans
+1 1 1 1
+qSTOCK_BFF	4	## qStock values by season for the group Deposit feeders
+1 1 1 1
+qSTOCK_LPH	4	## qStock values by season for the group Large phytoplankton
+1 1 1 1
+qSTOCK_SPH	4	## qStock values by season for the group Small phytoplankton
+1 1 1 1
+qSTOCK_COR	4	## qStock values by season for the group Coral
+1 1 1 1
+qSTOCK_SUR	4	## qStock values by season for the group Sea Urchin
+1 1 1 1
+qSTOCK_MOL	4	## qStock values by season for the group Mollusca
+1 1 1 1
+qSTOCK_MA	4	## qStock values by season for the group Macroalgae
+1 1 1 1
+qSTOCK_PB	4	## qStock values by season for the group Pelagic Bacteria
+1 1 1 1
+qSTOCK_BB	4	## qStock values by season for the group Sediment Bacteria
+1 1 1 1
+qSTOCK_DL	4	## qStock values by season for the group Labile detritus
+1 1 1 1
+qSTOCK_DR	4	## qStock values by season for the group Refractory detritrus
+1 1 1 1
+qSTOCK_DC	4	## qStock values by season for the group Carrion
+1 1 1 1
+## Juveniles
+qSTOCK_jSPL	4	## qStock values by season for the group Spiny lobster
+1 1 1 1
+qSTOCK_jGCR	4	## qStock values by season for the group Golden Crab
+1 1 1 1
+qSTOCK_jBRC	4	## qStock values by season for the group Breca
+1 1 1 1
+qSTOCK_jVID	4	## qStock values by season for the group Vidriola
+1 1 1 1
+qSTOCK_jORO	4	## qStock values by season for the group Orange Roughy
+1 1 1 1
+qSTOCK_jALF	4	## qStock values by season for the group Alfonsino
+1 1 1 1
+qSTOCK_jANG	4	## qStock values by season for the group Anguila
+1 1 1 1
+qSTOCK_jCHO	4	## qStock values by season for the group Chondrichtyans
+1 1 1 1
+qSTOCK_jOTA	4	## qStock values by season for the group Otariid
+1 1 1 1
+qSTOCK_jDOL	4	## qStock values by season for the group Dophins
+1 1 1 1
+qSTOCK_jBIR	4	## qStock values by season for the group Birds
+1 1 1 1
+qSTOCK_jSQD	4	## qStock values by season for the group Squids
+1 1 1 1
+qSTOCK_jOCT	4	## qStock values by season for the group Octupus
+1 1 1 1
+qSTOCK_jLPF	4	## qStock values by season for the group Large pelagic fish
+1 1 1 1
+qSTOCK_jSPF	4	## qStock values by season for the group Small pelagic fish
+1 1 1 1
+qSTOCK_jSBF	4	## qStock values by season for the group Small benthic fish
+1 1 1 1
+qSTOCK_jMPF	4	## qStock values by season for the group Mesopelagic fish
+1 1 1 1
+qSTOCK_jLBF	4	## qStock values by season for the group Large benthic fish
+1 1 1 1
+qSTOCK_jSZO	4	## qStock values by season for the group Small Zooplankton
+1 1 1 1
+qSTOCK_jMZO	4	## qStock values by season for the group Medium Zooplankton
+1 1 1 1
+qSTOCK_jLZO	4	## qStock values by season for the group Large Zooplankton
+1 1 1 1
+qSTOCK_jSCR	4	## qStock values by season for the group Small crustaceans
+1 1 1 1
+qSTOCK_jBFF	4	## qStock values by season for the group Deposit feeders
+1 1 1 1
+qSTOCK_jLPH	4	## qStock values by season for the group Large phytoplankton
+1 1 1 1
+qSTOCK_jSPH	4	## qStock values by season for the group Small phytoplankton
+1 1 1 1
+qSTOCK_jCOR	4	## qStock values by season for the group Coral
+1 1 1 1
+qSTOCK_jSUR	4	## qStock values by season for the group Sea Urchin
+1 1 1 1
+qSTOCK_jMOL	4	## qStock values by season for the group Mollusca
+1 1 1 1
+qSTOCK_jMA	4	## qStock values by season for the group Macroalgae
+1 1 1 1
+qSTOCK_jPB	4	## qStock values by season for the group Pelagic Bacteria
+1 1 1 1
+qSTOCK_jBB	4	## qStock values by season for the group Sediment Bacteria
+1 1 1 1
+qSTOCK_jDL	4	## qStock values by season for the group Labile detritus
+1 1 1 1
+qSTOCK_jDR	4	## qStock values by season for the group Refractory detritrus
+1 1 1 1
+qSTOCK_jDC	4	## qStock values by season for the group Carrion
 1 1 1 1
 
 TrapSPLsel_bisigma	0	## Measure of spread of bi-modal "normal" selectivity curve for the fishery Trap Spiny Lobster

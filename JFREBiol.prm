@@ -3395,13 +3395,13 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.008 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.004 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.02 0.01 0 0 0.01 0.03 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.02 0.01 0 0 0.01 0.015 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.05 0.001 0 0 0.01 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.05 0.001 0 0 0.01 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
 0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.005 0 0.05 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
@@ -3972,7 +3972,7 @@ mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
 3.125 975 993.07 1004.21 1311.11 1499.11 1321.434 864.04 1073.6 1273.146
 mum_ALF   10 # Vertebrate growth rates for Alfonsino [ mg N d-1 ]
-568.375 786.315 1222.94 1572.44 1866 2118.69 1865.3 2012 2129.5 1463.625
+5683.75 7863.15 12229.4 15724.4 18660 21186.9 18653 20120 21295 14636.25
 mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
 0.167 26 162 452.5 797.5 1235 1267.85 1616.68 2136.68 2753.33
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
@@ -4405,7 +4405,7 @@ CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
 0.00001 0.0000045
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
-0 0.000001
+0 0.0000001
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0.0008 0.000035
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
@@ -4444,23 +4444,23 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-8e-9 5e-8
+8e-9 1e-7
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-10 5e-6
+1e-10 1e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-1e-12 1e-7
+5e-12 5e-6
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-9 1e-07
+1e-9 5e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 7e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 9e-6
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-2e-6 2e-7
+6e-6 5e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-7 1e-7
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
@@ -4483,7 +4483,7 @@ COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-5 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-5 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   1e-10 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+SCR_mQ   1e-8 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
