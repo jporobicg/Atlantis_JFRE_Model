@@ -3479,13 +3479,13 @@ pPREY1MPF2  37
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.001 5e-04 0.001 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.001 0 0.01 0.02 0.1 0.03 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.02 0.05 0.15 0.06 0.05 1e-05 0 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.01 0.02 0.1 0.001 0 1e-05 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.02 0.05 0.15 0.01 0.05 1e-05 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.001 0.005 0.001 0 0.001 0 0 0 0 0 0 0 0 5e-05 0.005 0 0.004 8e-04 0.005 0.01 0.05 0.07 0 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.003 0.005 0.005 0 0.001 0 0 0 0 0 0 0.005 0.005 5e-04 0.008 0 0.008 8e-04 0.005 0.01 0.1 0.14 0.05 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.01 0 0.005 0.01 0.05 0.03 0 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.01 0 0.008 0.02 0.1 0.06 0.05 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
 0.001 0.005 0.005 0 5e-04 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.025 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
@@ -3927,9 +3927,9 @@ C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
 36.05 48.00 50.20 50.57 50.63 50.64
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
-35.75 53.41 74.61 105.69 140.84 191.36 223.79 303.16 354.44 409.72
+47.94 71.63 100.05 141.74 188.87 256.62 300.12 406.55 475.32 549.46
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
-43.67 53.94 67.23 77.84 90.75 111.77 129.3 140.53 157.67 176.21
+91.93 113.55 141.53 163.87 191.05 235.31 272.21 295.86 331.94 370.96
 C_CHO 10  # Clearance rate for Chondictians [ m3(mg N)-1 d-1 ]
 6.99 22.33 40.47 58.51 75.02 89.45 101.7 111.88 120.24 127.02
 C_DOL 10
@@ -3977,13 +3977,13 @@ mum_ANG   10 # Vertebrate growth rates for Anguila [ mg N d-1 ]
 mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 166.667 3166.7 3541.7 3402.833 3833.333 5531.25 4172.625 3677.125 3765.333 3486.407
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-12.5 194.63 325.47 366.92 408.97 432.75 446.05 453.52 457.77 457.77
+13.889 324.383 542.45 611.533 681.617 865.5 892.1 907.04 915.54 1144.425
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 3040 308.75 287.643 279.593 279.658 356.383
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 1300 1250 1825 2050 2550 2775 4600 4600 4600 4600
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
-300 550 625 1587.5 1540 1577.25 2418.2 3069.9 3132.55 16583.3
+1500 1833.333 2083.333 5291.667 3850 3943.125 6045.5 7674.75 7831.375 16583.3
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 4856.857 7534.65 11215.367 11766.617 12096.9 12299.217 12425.983 8338.033 8373.177 8115.523
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
@@ -4092,7 +4092,7 @@ li_a_SPL    0.96225457  # Coefficient of allometic length-weight relation for Sp
 li_a_GCR    0.53179259    # Coefficient of allometic length-weight relation for Golden Crab [ Number ]
 li_a_BRC    0.00839310    # Coefficient of allometic length-weight relation for Breca [ Number ]
 li_a_VID    0.00523585    # Coefficient of allometic length-weight relation for Vidriola [ Number ]
-li_a_ORO    0.84         	# Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
+li_a_ORO    0.84          # Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
 li_a_ALF    0.048        	# Coefficient of allometic length-weight relation for Alfonsino [ Number ]
 li_a_ANG    0.00470168   	# Coefficient of allometic length-weight relation for Anguila [ Number ]
 li_a_OTA    3.88353881   	# Coefficient of allometic length-weight relation for Otariid [ Number ]
@@ -4191,8 +4191,8 @@ E_COR   0.3 # Assimilation efficiency on live food and carrion of Octupus
 E_LPF   0.55 # Assimilation efficiency on live food and carrion of Large pelagic fish
 E_SPF   0.65 # Assimilation efficiency on live food and carrion of Small pelagic fish
 E_MPF   0.75 # Assimilation efficiency on live food and carrion of Mesopelagic fish
-E_SBF   0.65 # Assimilation efficiency on live food and carrion of Small benthic fish
-E_LBF   0.55 # Assimilation efficiency on live food and carrion of Large benthic fish
+E_SBF   0.75 # Assimilation efficiency on live food and carrion of Small benthic fish
+E_LBF   0.65 # Assimilation efficiency on live food and carrion of Large benthic fish
 E_SZO   0.55 # Assimilation efficiency on live food and carrion of Small Zooplankton
 E_MZO   0.75 # Assimilation efficiency on live food and carrion of Medium Zooplankton
 E_LZO   0.75 # Assimilation efficiency on live food and carrion of Large Zooplankton
@@ -4221,7 +4221,7 @@ EPlant_SPF   0.65 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_MPF   0.75 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.65 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
-EPlant_SZO   0.75 # Assimilation efficiency on Plants of Small Zooplankton
+EPlant_SZO   0.8 # Assimilation efficiency on Plants of Small Zooplankton
 EPlant_MZO   0.7 # Assimilation efficiency on Plants of Medium Zooplankton
 EPlant_LZO   0.7 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
@@ -4467,11 +4467,11 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 5e-9 5e-7
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-09 1e-07
+1e-09 5e-07
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-10 1e-12
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-9 1e-8
+1e-8 5e-8
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 1e-9 5e-7
 
@@ -4479,7 +4479,7 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-5 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+SZO_mQ   1e-5 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-5 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-5 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-8 #  Quad. mortality rate of Small crustaceans [ d-1 ]
@@ -5214,7 +5214,7 @@ BHalpha_DOL   2E+6             	       # Beverton-Holt recruitment rate paramete
 BHalpha_LPF   1E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   1E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   1E9                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_SBF   5E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 

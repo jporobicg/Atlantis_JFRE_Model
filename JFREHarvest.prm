@@ -499,22 +499,22 @@ flagimposecatch_DR	13	## catch time series (0 - 4) used for:Refractory detritrus
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagimposecatch_DC	13	## catch time series (0 - 4) used for:Carrion
 0 0 0 0 0 0 0 0 0 0 0 0 0
-##
+
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 flagF_SPL	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Spiny lobster
-1 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_GCR	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Golden Crab
-0 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_BRC	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Breca
-0 0 0 0 0 1 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0
 flagF_VID	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Vidriola
-0 0 0 0 0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_ORO	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Orange Roughy
-0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_ALF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Alfonsino
-0 0 0 0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_ANG	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Anguila
-0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_CHO	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Chondrichtyans
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_OTA	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Otariid
@@ -526,17 +526,17 @@ flagF_BIR	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynami
 flagF_SQD	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Squids
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_OCT	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Octupus
-0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_LPF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Large pelagic fish
-0 0 0 0 1 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_SPF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Small pelagic fish
-0 0 0 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_SBF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Small benthic fish
-0 0 0 0 0 0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_MPF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Mesopelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_LBF	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Large benthic fish
-0 0 0 0 0 0 1 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_SZO	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Small Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagF_MZO	13	## [0] No or [1] Yes for fishing mortality rather than fleet dynamics model for :Medium Zooplankton

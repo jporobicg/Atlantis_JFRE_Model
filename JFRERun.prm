@@ -10,7 +10,7 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
-tstop         21900 day #14600 day #21900 day    # Stop time after the given period 14600 day = 60 años 21900 (time for the hydro model)
+tstop         14600 day #21900 day    # Stop time after the given period 14600 day = 60 años 21900 (time for the hydro model)
 tburnday      0 day	   # Burnday
 external_box  0		   #
 
