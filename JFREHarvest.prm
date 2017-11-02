@@ -3789,7 +3789,7 @@ PotOCT_landallTAC_sp	0	## Discards allowed [1] NO or [0] YES  if over quota for 
 
 manage_reg	0	 ## TACs use stock based regional TAC [0] or management area regional TAC [1]
 
-flag_sel_with_mFC	0	 ## Size based selectivity model applied [1] Yes or [0] Not
+flag_sel_with_mFC	1	 ## Size based selectivity model applied [1] Yes or [0] Not
 
 bulkTAC	0	 ## Fisheries can be allocated multi-year TACs [1] Yes or [0] Not
 

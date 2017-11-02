@@ -1443,7 +1443,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 # Primary producer growth
 mum_LPH_T15  0.7	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.8     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   3      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
@@ -3463,13 +3463,13 @@ pPREY1LPF2  37
 pPREY2LPF2  37
 0 0 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.008 0.001 0.01 0 0 1e-04 0.001 0 0.05 1e-04 1e-06 0 1e-04 0.005 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0.003 0.03 0.07 0.005 0.01 0.01 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 3e-04 0.03 0.07 0.005 0.01 0.01 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.003 0.03 0.07 0 0.05 0.01 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 3e-04 0.03 0.07 0 0.05 0.01 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0.003 0.03 0.07 0.01 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0.03 0.07 0.01 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0.003 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
 1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
@@ -3479,13 +3479,13 @@ pPREY1MPF2  37
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.02 0.05 0.15 0.06 0.05 1e-05 0 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
+0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0.001 5e-04 5e-05 0.005 0 0.01 0 3e-04 0.05 0.075 0.06 0.05 3e-04 3e-04 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0.02 0.05 0.15 0.01 0.05 1e-05 0 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 5e-04 0 0.005 0 0.01 0 3e-04 0.05 0.075 0.01 0.05 3e-04 3e-04 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.003 0.005 0.005 0 0.001 0 0 0 0 0 0 0.005 0.005 5e-04 0.008 0 0.008 8e-04 0.005 0.01 0.1 0.14 0.05 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.003 0.005 0.005 0 0.001 0 0 0 0 0 0 0.01 5e-04 5e-04 0.008 0 0.008 8e-04 0 0.01 0.05 0.14 0.05 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 5e-05 0 0 0.01 0 0.01 0 0.008 0.02 0.1 0.06 0.05 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 5e-04 5e-04 0 0.01 0 0.01 0 0 0.02 0.05 0.06 0.05 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
 0.001 0.005 0.005 0 5e-04 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.025 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
@@ -3510,7 +3510,6 @@ pPREYSUR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 0 0 0 0.05 0 0 0 0 0 0.005 0.001 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
-
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3925,7 +3924,7 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ]
-36.05 48.00 50.20 50.57 50.63 50.64
+41.38 55.1 57.63 58.05 58.12 58.13
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 47.94 71.63 100.05 141.74 188.87 256.62 300.12 406.55 475.32 549.46
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -4377,7 +4376,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.00005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.001 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_SPH   0.0008 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
