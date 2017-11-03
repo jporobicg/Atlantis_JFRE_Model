@@ -105,4 +105,6 @@ K_num_catchqueue  7    # Length (in days) of list of catches used in running ave
 flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)
 # SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC
 init_scalar       34
-1 1 1 1 1 1 1 1 1 1 1 1 1 .8 .5 .7 0.4 .8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+#1 1 1 1 1 1 1 1 1 1 1 1 1 .8 .5 .7 0.4 .8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
