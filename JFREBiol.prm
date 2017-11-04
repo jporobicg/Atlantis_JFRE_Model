@@ -3915,8 +3915,8 @@ C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 67.01 88.68 120
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
 2.59 16.2 31.81 45.53 54.89 60.92 64.67 66.97 68.35 69.17
-C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ]
-76.74 131.18 205.03 278.92 348.94 413.03 470.4 520.82 564.84 602.47
+C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ] ## 76.74 131.18 205.03 278.92 348.94 413.03 470.4 520.82 564.84 602.47
+7.674 13.118 20.503 27.892 34.894 41.303 47.04 52.082 56.484 60.247
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
 2.35 5.4 15.31 27.69 41.03 54.57 67.63 79.87 91.07 79.94
 C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
@@ -4452,7 +4452,7 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 5e-12 1e-6
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-1e-10 1e-08
+1e-10 1e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 7e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
@@ -4468,7 +4468,7 @@ LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 1e-09 5e-07
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-3e-10 1e-13
+3e-10 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-8 5e-8
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
