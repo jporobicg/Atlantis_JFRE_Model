@@ -12198,3 +12198,62 @@ Changed spatial Distribution GCR and SPL
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder
+  - Commit Githhub : 
+
+* Input
+*** Mum
+**** MPF
+- from : 3040 308.75 287.643 279.593 279.658 356.383
+- to :  3040 308.75 487.643 479.593 479.658 656.383
+**** LPH
+- from : 0.7
+- to : 1
+**** LZO
+- from : 0.7
+- to 1
+*** Clearance
+**** ALF
+- from : 76.74 131.18 205.03 278.92 348.94 413.03 470.4 520.82 564.84 602.47
+- to : 46.42 79.35 124.03 168.73 211.09 249.86 284.56 315.07 341.69 364.46
+**** ORO
+- from : 2.59 16.2 31.81 45.53 54.89 60.92 64.67 66.97 68.35 69.17
+- to : 1.8 11.25 22.09 31.62 38.12 42.31 44.91 46.51 47.46 48.04
+*** Pprey
+*** Light saturation and absorption
+*** Mortality
+**** MQ
+***** MPF
+- from : 3e-10 1e-12
+- to : 3e-10 1e-13
+***** LBF
+- from : 1e-9 5e-7
+- to : 2e-9 8e-7
+***** ORO
+- from : 5e-12 1e-6
+- to : 5e-10  1e-6
+***** ALF
+- from : 1e-10 1e-08
+- to : 1e-10 1e-07
+**** ML
+*** Recruitment
+**** MPF
+- Alpha
+- from : 1E+9
+- to : 1E+10
+*** Efficiency
+*** Changed BGM
+*** Lysis
+*** Changed spatial distribution GCR and SPL
+**** SPH
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171105001942
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171105001942.png]]
+* Run PC-Demiurgo 20171105224206
+  - Run start: 2017-11-05 22:42:06
+  - Run end: 2017-11-06 07:59:24
+  - log file : [[file:Calibration/20171106075924.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder

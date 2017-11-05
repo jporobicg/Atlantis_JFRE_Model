@@ -3772,9 +3772,9 @@ SCR_sn   1485.22     # Size biomass pool to available to be  consume Small crust
 BFF_sn   240.33      # Size biomass pool to available to be  consume Deposit feeders [ mg N ]
 SUR_sn   456.44      # Size biomass pool to available to be  consume Sea Urchin [ mg N ]
 MOL_sn   672.92      # Size biomass pool to available to be  consume Mollusca [ mg N ]
-SZO_sn   0.5           # Size biomass pool to available to be  consume Small Zooplankton [ mg N ]
-MZO_sn   0.7           # Size biomass pool to available to be  consume Medium Zooplankton [ mg N ]
-LZO_sn   1           # Size biomass pool to available to be  consume Large Zooplankton [ mg N ]
+SZO_sn   12.016      # Size biomass pool to available to be  consume Small Zooplankton [ mg N ]
+MZO_sn   60.08       # Size biomass pool to available to be  consume Medium Zooplankton [ mg N ]
+LZO_sn   108.147     # Size biomass pool to available to be  consume Large Zooplankton [ mg N ]
 
 
 # Detritus handother deep demersal parameters
@@ -3791,9 +3791,9 @@ k_trans_SUR 1.0
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.06    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.12    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.004   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.04   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
