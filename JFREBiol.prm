@@ -3395,21 +3395,21 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0.01 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
 0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.004 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.02 0.01 0 0 0.01 0.015 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.01 0.01 0 0 0.01 0.015 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.05 0.001 0 0 0.01 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.03 0.001 0 0 0.01 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.15 0 0.01 0.01 0.05 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0.01 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.1 0 0.01 0.01 0.1 0.1 0.001 0.001 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.15 0 0.01 0.01 0.05 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.07 0 0.01 0.01 0.1 0.1 0.001 0.001 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.15 0.001 0 0 0.005 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.02 0.15 0.005 0 0 0.01 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF2  37
-0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.15 1e-04 0 0 0.005 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.01 0.04 0.1 0.001 0 0 0.01 0.1 0.001 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY1ANG1  37
 0.001 0.001 0 0 0 0 0 0 0 0 0 0.01 0.01 0 0.001 0.03 0.001 0.01 0 0 0 0.01 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0.005 0.005 0
 pPREY2ANG1  37
@@ -3419,13 +3419,13 @@ pPREY1ANG2  37
 pPREY2ANG2  37
 0.001 0.001 0.01 0 0 0 0 0 0 0 0 0.01 0.01 0 0.05 0.03 0.01 0.01 0 0 0 0.001 0 0 0 0 0.005 0.001 0 0 0 0 0 0 0 0 0
 pPREY1CHO1  37
-0.001 0.01 0 0 0.05 0.01 0.005 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.05 0.01 0.005 0 0 0 0 0.001 0.01 0.01 0.001 0.1 0.001 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO1  37
-0.01 0.01 0 0 0.01 0 1e-04 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.01 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.01 0.01 0 0 0.02 0 1e-04 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.005 0.01 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1CHO2  37
-0.001 0.01 0 0 0.1 0.01 0.008 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.001 0.01 0 0 0.1 0.01 0.008 0 0 0 0 0.001 0.05 0.1 0.001 0.01 0.001 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2CHO2  37
-0.1 0.05 0 0 0.1 0.01 0.001 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.01 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0.1 0.05 0 0 0.1 0.01 0.001 0 0 0 0 0.001 0.05 0.01 0.001 0.1 0.001 0.1 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1OTA1  37
 0 0 0.01 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.05 0.1 0.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2OTA1  37
@@ -3435,7 +3435,7 @@ pPREY1OTA2  37
 pPREY2OTA2  37
 0 0 0 0.01 0 0 0 0 0 0 0 0.1 0.2 0.01 0.01 0.1 0.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.05 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0.05 0.01 0 0.008 0.2 0.01 0.01 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2DOL1  37
 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0.01 0.001 0.1 0.05 0.001 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1DOL2  37
@@ -3457,19 +3457,19 @@ pPREYOCT  37
 pPREY1LPF1  37
 0.1 1e-04 0.001 0 0 0 1e-04 0 0 0 0 0.05 0.05 0 0.005 0.001 0.008 0 5e-05 5e-04 0.008 0.02 0.05 0.001 1e-04 0 0.001 0.008 0 0 0 0 0 0 0 0 0
 pPREY2LPF1  37
-0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 0.001 1e-05 0.01 0 5e-05 5e-04 0.008 0 0.05 0.001 1e-04 0 1e-04 5e-04 0 0 0 0 0 0 0 0 0
+0 0 5e-05 0 0 0 0 0 0 0 0 0.001 0.001 0 0.01 1e-05 0.01 0 5e-05 5e-04 0.008 0 0.05 0.001 1e-04 0 1e-04 5e-04 0 0 0 0 0 0 0 0 0
 pPREY1LPF2  37
 0.005 0.005 0.001 0 0 0 1e-04 0 0 0 0 0.01 0.01 0 0.008 0.001 0.005 5e-04 0 1e-04 0.001 0.02 0.05 1e-04 1e-06 0 0.001 0.01 0 0 0 0 0 0 0 0 0
 pPREY2LPF2  37
 0 0 5e-04 0 0 0 0 0 0 0 0 0.05 0.05 0 0.008 0.001 0.01 0 0 1e-04 0.001 0 0.05 1e-04 1e-06 0 1e-04 0.005 0 0 0 0 0 0 0 0 0
 pPREY1SPF1  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 3e-04 0.03 0.07 0.005 0.01 0.01 1e-08 0 0 0 0.01 0 0 0 0 0 0 0 0
+0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 3e-04 0.03 0.07 0.005 0.01 0.01 1e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 3e-04 0.03 0.07 0 0.05 0.01 1e-08 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 3e-04 0.03 0.07 0 0.05 0.01 1e-08 0 0 0 0.002 0 0 0 0 0 0 0 0
 pPREY1SPF2  37
-0.1 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0.03 0.07 0.01 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
+0.01 0.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5e-04 0 0 0.03 0.07 0.01 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY2SPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0.03 0.07 0 0.01 0.001 5e-04 0 0 0 0.005 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0.03 0.07 0 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
 1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.05 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY2MPF1  37
@@ -3479,21 +3479,21 @@ pPREY1MPF2  37
 pPREY2MPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.009 0.03 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00015 0 0 0 0 0 0 0 0
 pPREY1SBF1  37
-0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0.001 5e-04 5e-05 0.005 0 0.01 0 3e-04 0.05 0.075 0.06 0.05 3e-04 3e-04 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
+0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0.001 5e-04 5e-05 0.005 0 0.008 0 3e-04 0.05 0.075 0.06 0.05 3e-04 3e-04 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 5e-04 0 0.005 0 0.01 0 3e-04 0.05 0.075 0.01 0.05 3e-04 3e-04 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 5e-04 0 0.005 0 0.008 0 3e-04 0.05 0.075 0.01 0.05 3e-04 3e-04 0 0 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY1SBF2  37
-0.003 0.005 0.005 0 0.001 0 0 0 0 0 0 0.01 5e-04 5e-04 0.008 0 0.008 8e-04 0 0.01 0.05 0.14 0.05 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
+0.01 0.005 0.005 0 0.001 0 0 0 0 0 0 0.01 5e-04 5e-04 0.008 0 0.006 8e-04 0 0.01 0.05 0.07 0.05 1e-05 0 0 0 0.01 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF2  37
-0 0 0.001 0 0 0 0 0 0 0 0 5e-04 5e-04 0 0.01 0 0.01 0 0 0.02 0.05 0.06 0.05 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 5e-04 5e-04 0 0.01 0 0.008 0 0 0.02 0.05 0.06 0.05 1e-06 0 0 0 0.05 0.001 0 0 0 0 0 0 0 0
 pPREY1LBF1  37
-0.001 0.005 0.005 0 5e-04 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.025 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
+0.001 0.005 0.007 0 5e-04 1e-04 0.001 0 0 0 0 0.01 0.01 0.01 0.01 0.01 0.025 1e-06 0.001 0.005 0.05 0.005 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF1  37
 0 0 0.005 0 0 1e-05 5e-05 0 0 0 0 0.001 0.001 0.001 0.001 0.001 0.01 1e-06 0.001 0.01 0.05 0.001 0.01 0 0 0 0.001 0.001 0 0 0 0 0 0 0 0 0
 pPREY1LBF2  37
-0.05 0.03 0.01 0 0.005 0.001 0.05 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.01 0.005 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
+0.05 0.03 0.01 0 0.005 0.001 0.025 0 0 0 0 0.01 0.01 0.05 0.05 0.05 0.01 0.001 0 0.001 0.001 0.001 0.01 0 0 0 5e-04 0.001 0 0 0 0 0 0 0 0 0
 pPREY2LBF2  37
-0.01 0.001 0.005 0 0.0025 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.045 0 0 0.005 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
+0.01 0.007 0.005 0 0.0025 1e-04 5e-04 0 0 0 0 0.001 0.001 0.01 0.001 0.001 0.045 0 0 0.005 0.01 0.001 0.01 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
@@ -3720,7 +3720,7 @@ KUP_LPF   0.4 # Upper prey selection size limit for Large pelagic fish [ Number 
 KUP_SPF   0.4 # Upper prey selection size limit for Small pelagic fish [ Number ]
 KUP_MPF   0.4 # Upper prey selection size limit for Small pelagic fish [ Number ]
 KUP_SBF   0.45 # Upper prey selection size limit for Small benthic fish [ Number ]
-KUP_LBF   0.45 # Upper prey selection size limit for Large benthic fish [ Number ]
+KUP_LBF   0.55 # Upper prey selection size limit for Large benthic fish [ Number ]
 KUP_SZO   0.4 # Upper prey selection size limit for Small Zooplankton [ Number ]
 KUP_MZO   0.4 # Upper prey selection size limit for Medium Zooplankton [ Number ]
 KUP_LZO   0.4 # Upper prey selection size limit for Large Zooplankton [ Number ]
@@ -4442,45 +4442,45 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-8e-9 1e-7
+8e-9 5e-7
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-9 5e-6
+1e-9 8e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-5e-10 1e-6
+5e-10 5e-6
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 1e-10 1e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-9 7e-07
+1e-9 1e-05
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-7 9e-6
+3e-7 1e-5
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-6 5e-7
+1e-6 7e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-7 1e-8
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 2e-6 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
-5e-9 5e-7
+1e-8 7e-7
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-09 5e-07
+1e-09 1e-06
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-10 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
 1e-8 5e-8
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-2e-9 8e-7
+2e-9 1e-6
 
 ## Invertebrates
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   1e-5 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-2 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   1e-2 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   1e-2 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SZO_mQ   1e-3 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   1e-3 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   1e-3 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-8 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
@@ -5200,7 +5200,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   8e+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   7e+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
@@ -5209,11 +5209,11 @@ BHalpha_ALF   5E+9		       # Beverton-Holt recruitment rate parameter (if recrui
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
-BHalpha_DOL   2E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
+BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   1E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_MPF   1E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_SBF   5E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
+BHalpha_MPF   9E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_SBF   4E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
