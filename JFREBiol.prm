@@ -1442,7 +1442,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 ## Biological parameters
 # Primary producer growth
 mum_LPH_T15  1	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.08     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.01     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -3791,7 +3791,7 @@ k_trans_SUR 1.0
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.00003    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.01    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.08   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
@@ -4376,7 +4376,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.00005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.0008 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_SPH   0.0001 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
@@ -4486,8 +4486,8 @@ BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-18 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-05 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-05 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+LPH_mQ   1e-08 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-08 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-08 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
