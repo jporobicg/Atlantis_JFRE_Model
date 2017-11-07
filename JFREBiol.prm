@@ -4221,7 +4221,7 @@ EPlant_MPF   0.75 # Assimilation efficiency on Plants of Small pelagic fish
 EPlant_SBF   0.65 # Assimilation efficiency on Plants of Small benthic fish
 EPlant_LBF   0    # Assimilation efficiency on Plants of Large benthic fish
 EPlant_SZO   0.8 # Assimilation efficiency on Plants of Small Zooplankton
-EPlant_MZO   0.7 # Assimilation efficiency on Plants of Medium Zooplankton
+EPlant_MZO   0.75 # Assimilation efficiency on Plants of Medium Zooplankton
 EPlant_LZO   0.7 # Assimilation efficiency on Plants of Large Zooplankton
 EPlant_SCR   0.5  # Assimilation efficiency on Plants of Small crustaceans
 EPlant_BFF   0.5  # Assimilation efficiency on Plants of Deposit feeders
@@ -4446,11 +4446,11 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-9 8e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-09 1e-8
+1e-09 5e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-5e-10 5e-6
+5e-10 8e-6
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 1e-10 1e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
@@ -4486,8 +4486,8 @@ BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-18 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-02 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-02 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+LPH_mQ   1e-05 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-05 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-08 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
@@ -5200,11 +5200,11 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitment
-BHalpha_SPL   7e+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1e+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   6E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ORO   3E+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   5E+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
