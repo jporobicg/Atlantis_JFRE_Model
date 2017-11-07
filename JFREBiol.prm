@@ -692,7 +692,7 @@ FDON_D    0.05     Fraction od DON breakdown that becomes detritus 0.05
 R_0_T15    200    Minimum rate of sediment respiration that supports nitrification 200 - 250
 R_D_T15    10     Peak of nitrification-denitrification curve 10 - 20
 Dmax   	   0.25   Maximum rate of denitrification 0.25
-K_nit_T15  0.01   Rate of nitrification by free bacteria 0.01
+K_nit_T15  0.1   Rate of nitrification by free bacteria 0.01
 K_conc     2000   Half concentration level for nitrification by PFB mg N m-3 2000
 
 # Adsorption
@@ -1441,8 +1441,8 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.009	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.009     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.001	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.05     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -4375,8 +4375,8 @@ Ktmp_bird    0.08  # Factor relating temperature to respiration for seabirds
 Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
-KLYS_LPH   0 #0.00005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0 #0.00009 # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_LPH   0.00005 # Lysis rate of Large phytoplankton [ d-1 ]
+KLYS_SPH   0.0005 # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001 # Lysis rate of CORAL [ d-1 ]
 
