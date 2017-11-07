@@ -1442,7 +1442,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 ## Biological parameters
 # Primary producer growth
 mum_LPH_T15  1	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  1     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.9     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
