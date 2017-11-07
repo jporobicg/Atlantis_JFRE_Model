@@ -1442,7 +1442,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 ## Biological parameters
 # Primary producer growth
 mum_LPH_T15  1	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.9     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_SPH_T15  1     	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -3497,7 +3497,7 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0 0 0 0.003 0.01 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0.03 0.05 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0 0 0.01 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
@@ -3793,7 +3793,7 @@ C_SQD_T15   0.01    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.05    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.1    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.02   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.4   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.0000000000000001   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3947,7 +3947,7 @@ C_OTA 10
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   1.1      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.5      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.06      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   1     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.0005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
