@@ -1448,7 +1448,7 @@ MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not 
 
 # Primary producer light requirements
 KI_LPH_T15  15  Light saturation, large phytoplankton W m-2 10 - 20
-KI_SPH_T15  15  Light saturation, Small phytoplankton W m-2 10 - 20
+KI_SPH_T15  20  Light saturation, Small phytoplankton W m-2 10 - 20
 KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  10  Light saturation, CORALS W m-2 5
 
