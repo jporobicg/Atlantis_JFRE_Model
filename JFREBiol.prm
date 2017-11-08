@@ -1453,7 +1453,7 @@ KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  10  Light saturation, CORALS W m-2 5
 
 # Eddy impact
-eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 1
+eddy_scale  100  Coefficient scaling eddy strength impact on phytoplankton growth 1
 
 # Primary producer nutrient requirements
 # KN
