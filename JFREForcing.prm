@@ -71,13 +71,21 @@ eddy_nFiles 1
 eddy_File0.name Inputs/Forcings/OFES_JFRE_eddies.nc
 eddy_rewind 1
 
+# NO3_nFiles 1
+# NO3_File0.name Inputs/Forcings/NO3.nc
+# NO3_rewind 1
+
 # Bottom stress
 # BottomStress inputs/stress/stress.nc
 # BottomStress inputs/stress/nxstress.nc
 
 #############################################
 # Point source\sink lists
-npointss 0
+npointss 1
+pss0.name Nitrate
+pss0.location  -597720  6194984 1
+pss0.data Inputs/Forcings/NO3.ts
+pss0.rewind 0
 
 ##########################################
 # Rain and evaporation
