@@ -2968,7 +2968,6 @@ In this secction I use the data form the Database to get the number of organism 
 | LBF |        0.0000001 | Guestimation |
 | VID |      0.002739726 | Using CCL    |
 
-*** Forcing files
 *** Harvest file
 **** General setting
 | FG  | fishery   | Start (year) | End          | Effort model | Selectivity | Change q | Change Eff |
@@ -3118,6 +3117,72 @@ In this secction I use the data form the Database to get the number of organism 
 *** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data
+** Forcing files
+*** Rain
+- I wil use the information form the 'Anuarios climatologicos' from the *DIRECCIÓN GENERAL DE AERONÁUTICA CIVIL*
+- This data has some gaps to I will reconstruc the data usind diferent model
+  - Due to the similaity with the original time series I will use new time series from the ARIMA model and from the SPLINE
+ #+BEGIN_SRC R
+   ## Wavelet descomposition and time serie recontruction
+   library(imputeTS)
+   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+   dat   <- read.csv('/home/demiurgo/Documents/PhD/Forcing_Files/NO3/NO3.csv')
+   dates <- as.Date(as.Date(dat[,4]), format = '%Y/%m/%d')
+   ## remove trend in the data
+   lmodel  <- predict(lm(Precipitation ~ day, data = dat, na.action = na.exclude), data.frame(day = dat$day))
+   ts.pres <- dat[, 5] - lmodel
+   ## By interpolation
+   ## ~~~~~~~~~~~~~~~~~~~~~
+   ## Spline interpolation
+   spline <- na.interpolation(ts.pres, option = 'spline')
+   ## Linear interpolation
+   linear <- na.interpolation(ts.pres, option = 'linear')
+   ## Linear interpolation
+   stine  <- na.interpolation(ts.pres, option = 'stine')
+   ## By Kalman Smoothing and State Space Models
+   ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ## Structural model fitted by maximum likelihood
+   like   <- na.kalman(ts.pres, model = "StructTS", smooth = TRUE, nit = -1)
+   ## State space representation of arima mode
+   arima  <- na.kalman(ts.pres, model = "auto.arima", smooth = TRUE, nit = -1)
+   ## State space representation of arima mode
+   like.t <- na.kalman(ts.pres, model = "StructTS", smooth = TRUE, type = 'trend')
+   ## Back data to original magnitud Using the total by month.
+   lmodel[is.na(lmodel)] <- 0
+   spline  <- spline + lmodel
+   linear  <- linear + lmodel
+   stine   <- stine + lmodel
+   like    <- like + lmodel
+   arima   <- arima + lmodel
+   like.t  <- like.t + lmodel
+   ts.pres <- dat[, 5]
+   ## Plotting outputs
+   ## ~~~~~~~~~~~~~~~~~~
+   png('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.png', width = 900, height = 900)
+   par(mfrow = c(2, 1), oma = c(1, 1, 1, 1), mar = c(1, 5, 1, 1))
+   plot(dates, spline, col = 'royalblue', type = 'l', ylab = 'Precipitacion', xlab = 'Date', xaxt='n')
+   lines(dates, linear, col = 'firebrick')
+   lines(dates, stine, col = 'darkolivegreen')
+   lines(dates, ts.pres, type = 'l', col = 1)
+   legend('topleft', legend = c('Original', 'Spline', 'Linear', 'Stine'),
+          col = c('black', 'royalblue', 'firebrick', 'darkolivegreen'), lty = 1, bty = 'n')
+   plot(dates, like, col = 'darkolivegreen', type = 'l', ylab = 'Precipitacion', xlab = 'Date')
+   lines(dates, arima, col = 'royalblue')
+   lines(dates, ts.pres, type = 'l')
+   legend('topleft', legend = c('Original', 'ARIMA', 'Likelihood'),
+          col = c('black', 'royalblue', 'darkolivegreen'), lty = 1, bty = 'n')
+   dev.off()
+   ## Savind data
+   ## ~~~~~~~~~~~~~
+   dat$spline <- spline
+   dat$arime  <- arima
+   dat$date   <- dates
+   write.table(dat, file = '/home/demiurgo/Documents/PhD/Forcing_Files/NO3/Rain.csv', row.names = FALSE)
+    #+END_SRC
+
+ #+RESULTS:
+  #+ATTR_HTML: width="600" alt="image"
+  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.png]]
 ** Initial conditions file
 - To set the initial conditions I used the Shiny application and the code that create to fill the matrix of abundance and cover
 - The Shiny Application to create the csv files to fill
