@@ -1453,7 +1453,7 @@ KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  10  Light saturation, CORALS W m-2 5
 
 # Eddy impact
-eddy_scale  1  Coefficient scaling eddy strength impact on phytoplankton growth 1
+eddy_scale  1.2  # Coefficient scaling eddy strength impact on phytoplankton growth 1
 
 # Primary producer nutrient requirements
 # KN
@@ -5199,8 +5199,8 @@ CrecruitC_COR 0.9
 KDENR_COR 1
 24208652
 
-# Beverton-Holt recruitment
-BHalpha_SPL   1e+10             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+# Beverton-Holt recruitmen
+BHalpha_SPL   2e+9             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
@@ -5217,7 +5217,7 @@ BHalpha_SBF   4E8                    # Beverton-Holt recruitment rate parameter 
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
-BHbeta_SPL   5E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
+BHbeta_SPL   5e+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
 BHbeta_GCR   1e+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
