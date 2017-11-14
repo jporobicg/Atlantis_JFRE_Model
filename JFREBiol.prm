@@ -2374,23 +2374,23 @@ VERTnight_VID2 8
 
 # Swimming speed weighted averages for VMPA are not that different from those in the NSW
 Speed_SPL  1260     ## Swimming speed
-Speed_GCR  450 	 	  ## Swimming speed
-Speed_BRC  12500    	  ## Swimming speed
-Speed_CHO  10000    	  ## Swimming speed
-Speed_DOL  21000    	  ## Swimming speed
-Speed_OTA  28000    	  ## Swimming speed
-Speed_BIR  1000	    	  ## Swimming speed
-Speed_ORO  12500    	  ## Swimming speed
-Speed_ALF  12500    	  ## Swimming speed
-Speed_VID  12500    	  ## Swimming speed
-Speed_LPF  12500    	  ## Swimming speed
-Speed_SPF  2577     	  ## Swimming speed
-Speed_MPF  2000     	  ## Swimming speed
-Speed_LBF  15000    	  ## Swimming speed
-Speed_SBF  2577     	  ## Swimming speed
-Speed_ANG  4262     	  ## Swimming speed
-Speed_OCT  4000     	  ## Swimming speed
-Speed_SQD  2000        ## Swimming speed
+Speed_GCR  450 	    ## Swimming speed
+Speed_BRC  12500    ## Swimming speed
+Speed_CHO  10000    ## Swimming speed
+Speed_DOL  21000    ## Swimming speed
+Speed_OTA  28000    ## Swimming speed
+Speed_BIR  1000	    ## Swimming speed
+Speed_ORO  12500    ## Swimming speed
+Speed_ALF  12500    ## Swimming speed
+Speed_VID  12500    ## Swimming speed
+Speed_LPF  12500    ## Swimming speed
+Speed_SPF  2577     ## Swimming speed
+Speed_MPF  2000     ## Swimming speed
+Speed_LBF  15000    ## Swimming speed
+Speed_SBF  2577     ## Swimming speed
+Speed_ANG  4262     ## Swimming speed
+Speed_OCT  4000     ## Swimming speed
+Speed_SQD  2000     ## Swimming speed
 
 # Minimum tolerated temperatures
 SPL_min_move_temp  5  # phillips book

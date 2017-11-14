@@ -3183,6 +3183,106 @@ In this secction I use the data form the Database to get the number of organism 
  #+RESULTS:
   #+ATTR_HTML: width="600" alt="image"
   [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.png]]
+**** Localization of the river
+ - To locate the river and the ridge that support most of the water affluents,  I used the rivers of Selkirk (Masoli 2008) and Robinson (Astudillo,  2014)
+   - due to the effect of intense rain I decide to analize the effect of alluvium,  something that happend in intense rains (Masoli 2008). For that I use the percentile on 90%,  so event higher that taht would be event of extreme rain
+#+BEGIN_SRC R
+ ## extream rain events
+  ## Read data
+  dat <- read.csv(file = '/home/demiurgo/Documents/PhD/Forcing_Files/NO3/1-Rain.csv', sep = ' ')
+  png('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png', width = 900, height = 400)
+  plot(dat$arima, type = 'l', yaxt = 'n', xaxt = 'n', ylab = 'Rainfall (mm)', xlab = 'Date', bty = 'n')
+  tickx <- seq(from = 1, to = length(dat$date), length = 5)
+  yticks <- seq(0, max(dat$arima), by = round(max(dat$arima) / 5))
+  abline(h = quantile(dat$arima,c(.9)), col = 'firebrick', lty = 2, lwd = 1.5)
+  abline(h = mean(dat$arima), col = 'goldenrod', lty = 2, lwd = 1.5)
+  axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+  axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], '%Y.%m'), lwd = 2,  col = 1)
+  legend('topleft', c('Average', '9th percentile'), col = c('goldenrod', 'firebrick'),
+         lty = c(2, 2),  bty = 'n')
+  dev.off()
+  dat$a.extreme <- dat$arima
+  dat$a.extreme[which(dat$a.extreme < quantile(dat$arima,c(.9)))] <- NA
+  write.table(dat, file = '/home/demiurgo/Documents/PhD/Forcing_Files/NO3/2-Rain_extrem.csv', row.names = FALSE)
+#+END_SRC
+#+RESULTS:
+     #+ATTR_HTML: width="600" alt="image"
+     [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png]]
+**** Constructing the ts per day
+ - I used the data of the peak day (days with more than 10mm per day) and the total day of rain to reconstruct the time seriw by days
+ - I assume that the rain is distributed normal during the month
+#+BEGIN_SRC R
+  ## Create the inputs files
+  ## Average dischard form a small river is 516 MgNy-1
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
+  Rivers <- read.csv('/home/demiurgo/Documents/PhD/Forcing_Files/NO3/Rivers.csv')
+  dat <- read.csv('/home/demiurgo/Documents/PhD/Forcing_Files/NO3/2-Rain_extrem.csv', sep = ' ')
+  month  <- c(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+  peak   <- dat$peaks * 10
+  peak[is.na(peak)] <- 0
+  n.peak   <- dat$arima - peak
+  n.peak.d <- (dat$duration - dat$peaks)
+  ts       <- NULL
+  for(p in 1 : nrow(dat)){
+      days <- month[dat$Month[p]]
+      if(dat$Month[p] == 2 & dat$Year[p]%%4 == 0) days <- days + 1
+      if(!is.na(dat$duration[p]) & n.peak[p] != 0){
+          tmp.1 <- rep(n.peak[p] / n.peak.d[p], n.peak.d[p])
+          tmp.2 <- rep(peak[p] / dat$peaks[p], dat$peaks[p])
+          if(tmp.1[1] > 10){
+              ## Keeping the same amoun of days below 10mm of rain
+              tmp.1[] <- 9.9
+              extra   <- n.peak[p] - sum(tmp.1)
+              tmp.2 <- tmp.2[] + (extra / length(tmp.2))
+          }
+          tmp.3 <- c(tmp.1[1 : round(length(tmp.1) / 2)], tmp.2, tmp.1[(round(length(tmp.1) / 2) + 1) : length(tmp.1)] )
+          left  <- days - length(tmp.3)
+          tmp.4 <- c(rep(0, round(left / 2)), tmp.3, rep(0, (left - (round(left / 2)))))
+      } else {
+          tmp.4  <- rep(n.peak[p] / days, days)
+      }
+      final.1 <- data.frame(Year  = rep(dat$Year[p], days),
+                            Month = rep(dat$Month[p], days),
+                            Day   = 1 : days,
+                            Rain  = tmp.4,
+                            Peak  = rep(ifelse(is.na(dat$a.extreme[p]), FALSE, TRUE), days))
+      ts <- rbind(ts, final.1)
+  }
+  ts$dates <- with(ts, as.Date(paste0(ts$Year,'/', ts$Month, '/', ts$Day), format = '%Y/%m/%d'))
+  ts$mean  <- movavg(ts$Rain, 15)
+  write.table(ts, file = '/home/demiurgo/Documents/PhD/Forcing_Files/NO3/3-daily_Rain.csv', row.names = FALSE)
+  by.year  <- tapply(dat$arima, dat$Year, sum)
+  years    <- 1950 : 2016
+  color    <- rgb(t(col2rgb("grey")), alpha = 250, maxColorValue = 255)
+  ## plots
+  png('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png', width = 600, height = 900)
+  par(mfrow = c(3, 1), oma = c(3, 1, 1, 1), mar = c(2, 5, 1, 1))
+  ## By Years
+  plot(years, unlist(by.year), yaxt = 'n', xaxt = 'n', bty = 'n',
+       type = 'b', pch = 19,  xlab = 'Years', ylab = 'Rainfall per year (mm)')
+  tickx <- seq(from = 1950, to = 2016, length = 5)
+  yticks <- seq(0, max(by.year), by = round(max(by.year) / 5))
+  axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+  axis(1, at = tickx, labels = tickx, lwd = 2,  col = 1)
+  ## By month
+  plot(dat$arima, type = 'l', yaxt = 'n', xaxt = 'n', ylab = 'Rainfall per month (mm)', xlab = 'Date', bty = 'n')
+  tickx <- seq(from = 1, to = length(dat$date), length = 5)
+  yticks <- seq(0, max(dat$arima), by = round(max(dat$arima) / 5))
+  axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+  axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], '%Y.%m'), lwd = 2,  col = 1)
+  ## By day
+  plot(ts$Rain, type = 'l', yaxt = 'n', xaxt = 'n', ylab = 'Rainfall per day (mm)', xlab = 'Date', bty = 'n')
+  lines(ts$mean, col = 'firebrick')
+  tickx <- seq(from = 1, to = length(ts$dates), length = 5)
+  yticks <- seq(0, max(ts$Rain), by = round(max(ts$Rain) / 5))
+  axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+  axis(1, at = tickx, labels = format.Date(ts$dates[tickx], '%Y.%m.%d'), lwd = 2,  col = 1)
+  dev.off()
+#+END_SRC
+#+RESULTS:
+     #+ATTR_HTML: width="600" alt="image"
+     [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png]]
+
 ** Initial conditions file
 - To set the initial conditions I used the Shiny application and the code that create to fill the matrix of abundance and cover
 - The Shiny Application to create the csv files to fill

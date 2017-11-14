@@ -81,11 +81,46 @@ eddy_rewind 1
 
 #############################################
 # Point source\sink lists
-npointss 1
-pss0.name Nitrate
-pss0.location  -597720  6194984 1
-pss0.data Inputs/Forcings/NO3.ts
+npointss 8
+pss0.name Nitrate_51
+pss0.location  -421032  6233060 1
+pss0.data Inputs/Forcings/NO3_51.ts
 pss0.rewind 0
+
+pss1.name Nitrate_52
+pss1.location  -411494  6236794 1
+pss1.data Inputs/Forcings/NO3_52.ts
+pss1.rewind 0
+
+pss2.name Nitrate_53
+pss2.location  -411710 6228392 1
+pss2.data Inputs/Forcings/NO3_53.ts
+pss2.rewind 0
+
+pss3.name Nitrate_54
+pss3.location  -424977 6224558 1
+pss3.data Inputs/Forcings/NO3_54.ts
+pss3.rewind 0
+
+pss4.name Nitrate_55
+pss4.location  -598120 6204569 1
+pss4.data Inputs/Forcings/NO3_55.ts
+pss4.rewind 0
+
+pss5.name Nitrate_56
+pss5.location  -592323 6204707 1
+pss5.data Inputs/Forcings/NO3_56.ts
+pss5.rewind 0
+
+pss6.name Nitrate_57
+pss6.location  -590985 6196326 1
+pss6.data Inputs/Forcings/NO3_57.ts
+pss6.rewind 0
+
+pss7.name Nitrate_58
+pss7.location  -598838 6196243 1
+pss7.data Inputs/Forcings/NO3_58.ts
+pss7.rewind 0
 
 ##########################################
 # Rain and evaporation
