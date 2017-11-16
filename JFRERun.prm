@@ -10,15 +10,15 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
-tstop         21900 day    # Stop time after the given period 14600 day = 60 años 21900 (time for the hydro model)
-tburnday      0 day	   # Burnday
+tstop         24900 day    # Stop time after the given period 14600 day = 60 años 21900 (time for the hydro model)
+tburnday      3000 day	   # Burnday
 external_box  0		   #
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~                         Parameters loading different submodel or options                     ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 flagecon_on                 0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
-flag_fisheries_on           0   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
+flag_fisheries_on           1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol              0   # Flag showing whether want biological model run (1) or not (0 - only used when debugging fisheries)
 flag_skip_phys              0   # Flag showing whether want biological model run (0) or not (1 - only used when debugging fisheries)
 fishmove      	            1   # Set to 0 to turn vertebrate movement off for debugging purposes
@@ -28,7 +28,7 @@ flag_replicate_old_calendar 0   # This flag specifically allows for legacy model
 ## ~     Parameters controlling detailed outputs for a specific box and diagnostic reporting       ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 debug_it      0
-checkbox      300 	       # Give detailed logged output for this box
+checkbox      560 	       # Give detailed logged output for this box
 checkstart    366666660 day            # Start detailed logged output after this date
 checkstop     366666660 day    # Stop detailed logged output after this date
 debug         0       	       # Several option,  Check manual
@@ -41,7 +41,7 @@ checkNH       0       	       # Give detailed logged output for NH in checkbox
 checkDL       0        	       # Give detailed logged output for DL in checkbox
 checkDR       0        	       # Give detailed logged output for DR in checkbox
 checkbiom     0       	       # Give detailed logged output for biomasses in checkbox
-which_fleet   33       	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
+which_fleet   100      	       # ID number of fleet to track (if don't want to track anything set to 33), find number in fisheries input file.
 which_check   160      	       # ID number of group to track (if don't want to track anything set to 80), find number from functional group input file.
 habitat_check 0		       # Which distribution type (0-water column, 1- sediment, 2- epibenthic, 3-land, 4-ice) to report for the group marked with which_check.
 move_check    0  	       # ID number of group where tracking movements
@@ -90,7 +90,7 @@ K_num_detritus      3      # Total number of detritus groups in the model (labil
 # Parameters defining the numbers of certain types of fisheries
 # (needed to  parameter arrays in the initialisation section of the model,
 # best left untouched for now)
-K_num_fisheries   11   # Maximum number of fisheries - must match the number of fisheries defined in your fisheries definition input file.
+K_num_fisheries   13   # Maximum number of fisheries - must match the number of fisheries defined in your fisheries definition input file.
 K_num_ports       3    # Maxiumum number of ports in the model area [Robinson-Selkirk-Mainlands]
 K_max_num_zoning  1    # Maximum number of spatial zonings used in the model
 K_num_reg         2    # Maximum number of management zonings used in the model
