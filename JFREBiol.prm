@@ -1453,7 +1453,7 @@ KI_MA_T15   5   Light saturation, macroalgae W m-2 5
 KI_COR_T15  10  Light saturation, CORALS W m-2 5
 
 # Eddy impact
-eddy_scale  1  # Coefficient scaling eddy strength impact on phytoplankton growth 1
+eddy_scale  1.1  # Coefficient scaling eddy strength impact on phytoplankton growth 1
 
 # Primary producer nutrient requirements
 # KN
@@ -3471,13 +3471,13 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0.015 0.07 0 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.1 0.001 0.01 0.002 1e-05 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.2 0 0.05 0.004 0.001 0 0 0 0.00025 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.1 0 0.05 0.002 0.001 0 0 0 0.00025 0 0 1e-05 0 0 0 0 0
 pPREY1MPF2  37
-0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0.005 0.2 0.001 0.01 0.004 1e-05 0 0 0 0.00015 0 0 0 0 0 0 0 0
+0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0.005 0.1 0.001 0.01 0.002 1e-05 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
 pPREY2MPF2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0.005 0.2 0.001 0.01 0.004 0.001 0 0 0 0.00015 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0.005 0.1 0.001 0.01 0.002 0.001 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
 pPREY1SBF1  37
 0.001 5e-04 0.005 0 5e-04 0 0 0 0 0 0 0.001 5e-04 5e-05 0.005 0 0.008 0 5e-05 0.025 0.075 0.06 0.05 3e-04 3e-04 0 0.05 0.05 5e-04 0 0 0 0 0 0 0 0
 pPREY2SBF1  37
@@ -3510,6 +3510,8 @@ pPREYSUR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 0 0 0 0.05 0 0 0 0 0 0.005 0.001 0
 pPREYMOL  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
+
+
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3924,7 +3926,7 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ] #41.38 55.1 57.63 58.05 58.12 58.13
-8.276 11.02 11.526 11.61 11.624 11.626
+16.552 22.04 23.052 23.22 23.248 23.252
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 47.94 71.63 100.05 141.74 188.87 256.62 300.12 406.55 475.32 549.46
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
@@ -3948,7 +3950,7 @@ mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.1        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.013      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.32      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.35      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.95     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.0005      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00007       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
@@ -3960,7 +3962,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-125.75 4.667 4.972 5.737 8.167 9.167 11.407 15.667 22.583 29.528
+96.731 3.111 4.143 5.737 8.167 9.167 11.407 15.667 22.583 29.528
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -4409,7 +4411,7 @@ BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 0  0.0001
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.00005
+0  0.000025
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.000000005
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
@@ -4466,7 +4468,7 @@ BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
 1e-8 7e-7
 SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
-1e-09 1e-06
+1e-08 1e-06
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-10 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
@@ -5200,7 +5202,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitmen
-BHalpha_SPL   1e+9             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   8e+8             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
@@ -5212,7 +5214,7 @@ BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate paramete
 BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   1E+9                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_MPF   9E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_MPF   5E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   4E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
