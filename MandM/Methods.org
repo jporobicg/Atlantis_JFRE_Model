@@ -1914,7 +1914,7 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
   #+CAPTION: Clearance by cohort for some functional groups [m3d-1]
   |     | 1      | 2      | 3      | 4      | 5      | 6      | 7      | 8      | 9      | 10     |
   |-----+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-  | ALF | 46.42  | 79.35  | 124.03 | 168.73 | 211.09 | 249.86 | 284.56 | 315.07 | 341.69 | 364.46 |
+  | ALF | 60.63  | 103.65 | 162.00 | 220.38 | 275.70 | 326.34 | 371.68 | 411.51 | 446.29 | 476.03 |
   | ANG | 2.35   | 5.40   | 15.31  | 27.69  | 41.03  | 54.57  | 67.63  | 79.87  | 91.07  | 79.94  |
   | BIR | 0.41   | 2.18   | 5.28   | 9.24   | 13.61  | 18.04  | 22.28  | 26.20  | 29.72  | 32.81  |
   | BRC | 6.48   | 10.71  | 16.42  | 23.56  | 32.69  | 45.00  | 60.26  | 74.35  | 88.78  | 104.92 |
@@ -3119,6 +3119,7 @@ In this secction I use the data form the Database to get the number of organism 
 - The model use rewind of the data
 ** Forcing files
 *** Rain
+**** Reconstruction of the TS
 - I wil use the information form the 'Anuarios climatologicos' from the *DIRECCIÓN GENERAL DE AERONÁUTICA CIVIL*
 - This data has some gaps to I will reconstruc the data usind diferent model
   - Due to the similaity with the original time series I will use new time series from the ARIMA model and from the SPLINE
@@ -3282,6 +3283,25 @@ In this secction I use the data form the Database to get the number of organism 
 #+RESULTS:
      #+ATTR_HTML: width="600" alt="image"
      [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png]]
+
+**** Nitrogen
+- to calculate the average amount of nitrogen in the river I used the relation of DIN=NO3+NO2+NH4. Assuming that in JF there is not to much waste I asummed that the total DIN is almost equal to NO3
+- from the database of Mayorga et al 2010 I use the average for the river of order 2 in the strahlet stream order of 157.4 KgNk2yr-1 (+-88.6)
+| River Area (Km2) | DIN (KgKm2y-1) |
+|------------------+----------------|
+| 98,779           |          185.5 |
+| 83,316           |          151.3 |
+| 63,815           |          330.9 |
+| 54,765           |          235.1 |
+| 52,964           |           59.8 |
+| 50,544           |           88.8 |
+| 41,531           |          113.2 |
+| 33,733           |          220.0 |
+| 32,159           |           71.0 |
+| 29,866           |           56.7 |
+| 27,702           |          219.3 |
+
+- Las principales quebradas en Robisnon tienen un total de 32.45 km2
 
 ** Initial conditions file
 - To set the initial conditions I used the Shiny application and the code that create to fill the matrix of abundance and cover

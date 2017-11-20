@@ -12943,3 +12943,77 @@ Using harvest file
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun_h.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** ML
+***** SBF
+- from : 0  0.00002
+- to : 0  0.00001
+***** SPF
+- from : 0  0.00005
+- to : 0  0.000025
+**** MQ
+***** MPF
+- from : 3e-10 1e-10
+- to : 1e-10 1e-10
+***** SPF
+- from : 1e-09 1e-06
+- to : 1e-08 1e-06
+*** Pprey
+**** MPF
+- MZO
+- 0.05
+- 0.01
+- SZO
+- 0.03
+- 0.005
+- LPH
+- from: 0.004
+- to:0.002
+- LZO
+- from : 0.2
+- to : 0.1
+*** Mum
+**** MZO
+- from : 0.32
+- to : 0.35
+**** SPL
+- from : 125.75 4.667 4.972 5.737 8.167 9.167 11.407 15.667 22.583 29.528
+- to : 96.731 3.111 4.143 5.737 8.167 9.167 11.407 15.667 22.583 29.528
+*** Clearance
+**** MPF
+- Decreased  / 10
+*** Lysis
+*** Eddy scale
+- from : 1
+- to : 1.1
+*** Light saturation and absorption
+*** Recruitment
+**** SPF
+- from : 2.24e+10
+- to : 4e+10
+**** MPF
+- from : 9E+9
+- to : 9.5E+8
+*** Efficiency
+*** Changed BGM
+*** Structural weight
+*** Initial abundance
+**** MPF decrease to 0.87
+* FUTURE
+- Play with Clearance on ALF
+- Play with eddy scale to increas nutrients
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171118231614
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171118231614.png]]
+* Run PC-Demiurgo 20171119103919
+  - Run start: 2017-11-19 10:39:19
+  - Run end: 2017-11-20 12:32:15
+  - log file : [[file:Calibration/20171120123215.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv

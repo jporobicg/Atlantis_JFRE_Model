@@ -11,7 +11,7 @@ dateinicio="$(date +'%Y-%m-%d %H:%M:%S')"
 ## ~           Running Atlantis JFRE        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 #gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder
-gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun_h.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
 
 ## Backup of the log.txt file
 echo "++++++++++++++++++++++++++++++++++++++++"
