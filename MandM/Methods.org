@@ -3287,6 +3287,12 @@ In this secction I use the data form the Database to get the number of organism 
 **** Nitrogen
 - to calculate the average amount of nitrogen in the river I used the relation of DIN=NO3+NO2+NH4. Assuming that in JF there is not to much waste I asummed that the total DIN is almost equal to NO3
 - from the database of Mayorga et al 2010 I use the average for the river of order 2 in the strahlet stream order of 157.4 KgNk2yr-1 (+-88.6)
+- The linear regresion equation was 0.0027316231 x River Area with an 0.72 of R2
+  - This gives a value of 0.08864117 DIN for Robisnon Asumming that 80% of DIN is NO3 the todal NO3 is 0.0709129357 KgKm2y-1
+    - this would give a total of 2.302 Kgy-1
+    - 2301124.7626862 NO3 Mgy-1
+
+
 | River Area (Km2) | DIN (KgKm2y-1) |
 |------------------+----------------|
 | 98,779           |          185.5 |

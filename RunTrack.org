@@ -13017,3 +13017,62 @@ Using harvest file
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+*** Pprey
+*** Mum
+**** ALF
+- from : 28418.75 39315.75 40764.667 52414.667 62200 70623 62176.667 50300 53237.5 36590.625
+- to : 284.1875 393.1575 407.6467 524.1467 622.0 706.23 621.7667 503.0 532.375 365.9063
+*** Clearance
+**** ALF
+- from : 46.42 79.35 124.03 168.73 211.09 249.86 284.56 315.07 341.69 364.46
+- to : 60.63 103.65 162 220.38 275.7 326.34 371.68 411.51 446.29 476.03
+*** Lysis
+*** Eddy scale
+**** Increased to 1.5
+*** Light saturation and absorption
+*** Recruitment
+**** ORO
+- from : 3E+12
+- to : 2E+12
+*** Efficiency
+**** ALF
+- ON Plants
+- from : 0.1
+- to 0.5
+*** Changed BGM
+*** Structural weight
+*** Mortality
+**** MQ
+***** SPL
+- from  :8e-9 5e-7
+- to : 1e-8 5e-7
+***** SQD
+- from : 1e-5
+- to : 1e-4
+*** Reserv over structural
+**** alf
+- from : 2
+- to : 3.5
+**** oro :
+- from 1.5
+- to : 3.5
+*** Initial abundance
+* FUTURE
+- Play with Clearance on ALF
+- Play with eddy scale to increas nutrients
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171119103919
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171119103919.png]]
+* Run PC-Demiurgo 20171120182316
+  - Run start: 2017-11-20 18:23:16
+  - Run end: 2017-11-21 06:59:13
+  - log file : [[file:Calibration/20171121065913.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
