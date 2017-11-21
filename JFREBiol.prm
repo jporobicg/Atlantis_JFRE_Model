@@ -4386,7 +4386,7 @@ KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
-0.000001 0.0009
+0.000001 0.0001
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0.00005 0.0001
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
@@ -4396,7 +4396,7 @@ VID_mL   2 # Linear mortality rate of Vidriola [ d-1
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 0 0
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
-0  0.000004
+0  0.000001
 ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 0.000001 0.0002
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
@@ -4443,7 +4443,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-5e-8 5e-7
+4e-8 5e-7
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-9 8e-6
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
@@ -4453,7 +4453,7 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 5e-10 8e-6
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-5e-10 1e-07
+4e-10 1e-07
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 1e-05
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
@@ -4477,7 +4477,7 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 
 ## Invertebrates
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
-SQD_mQ   5e-4 #  Quad. mortality rate of Octupus [ d-1 ]
+SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-3 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-3 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
@@ -5205,7 +5205,7 @@ BHalpha_SPL   8e+8             # Beverton-Holt recruitment rate parameter (if re
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   1.5e+12              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ORO   9e+11              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   1E+10		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
