@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-10-11T18:58+1100"/>
+<meta name="generated" content="2017-11-22T11:15+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -316,18 +316,32 @@ for the JavaScript code below.
 <li><a href="#sec-5-2-1-20">Mortality</a></li>
 </ul>
 </li>
-<li><a href="#sec-5-2-2">Forcing files</a></li>
-<li><a href="#sec-5-2-3">Harvest file</a>
+<li><a href="#sec-5-2-2">Harvest file</a>
 <ul>
-<li><a href="#sec-5-2-3-1">General setting</a></li>
-<li><a href="#sec-5-2-3-2">TAC</a></li>
-<li><a href="#sec-5-2-3-3">Selectivity</a></li>
+<li><a href="#sec-5-2-2-1">General setting</a></li>
+<li><a href="#sec-5-2-2-2">TAC</a></li>
+<li><a href="#sec-5-2-2-3">Selectivity</a></li>
+<li><a href="#sec-5-2-2-4">Effort</a></li>
+<li><a href="#sec-5-2-2-5">Swept area</a></li>
+<li><a href="#sec-5-2-2-6">mFC</a></li>
+<li><a href="#sec-5-2-2-7">Total Catch Bait</a></li>
 </ul>
 </li>
-<li><a href="#sec-5-2-4">Solar radiation</a></li>
+<li><a href="#sec-5-2-3">Solar radiation</a></li>
 </ul>
 </li>
-<li><a href="#sec-5-3">Initial conditions file</a></li>
+<li><a href="#sec-5-3">Forcing files</a>
+<ul>
+<li><a href="#sec-5-3-1">Rain</a>
+<ul>
+<li><a href="#sec-5-3-1-1">Reconstruction of the TS</a></li>
+<li><a href="#sec-5-3-1-2">Localization of the river</a></li>
+<li><a href="#sec-5-3-1-3">Constructing the ts per day</a></li>
+<li><a href="#sec-5-3-1-4">Nitrogen</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5-4">Initial conditions file</a></li>
 </ul>
 </li>
 <li><a href="#sec-6">Dietary analysis (DNA)</a>
@@ -4206,7 +4220,6 @@ invisible(dev.off())
 <p><img src="img/connectivity.png" width="600" alt="image" /></p>
 <p>Average connectivity by year and FG</p>
 </div>
-
 </li>
 </ul>
 </li>
@@ -4531,6 +4544,28 @@ b   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, hea
 print(b)
 </pre>
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption>Mean weight for Functional Group (FG)</caption>
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">FG</th><th scope="col" class="right">Mean.Weight</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">ANG</td><td class="right">1013.75</td></tr>
+<tr><td class="left">BRC</td><td class="right">745.93</td></tr>
+<tr><td class="left">CHO</td><td class="right">4298.08</td></tr>
+<tr><td class="left">GCR</td><td class="right">697.06</td></tr>
+<tr><td class="left">LBF</td><td class="right">4125.24</td></tr>
+<tr><td class="left">LPF</td><td class="right">484.88</td></tr>
+<tr><td class="left">OCT</td><td class="right">640.00</td></tr>
+<tr><td class="left">OTA</td><td class="right">75857.01</td></tr>
+<tr><td class="left">SBF</td><td class="right">1203.85</td></tr>
+<tr><td class="left">SPF</td><td class="right">318.45</td></tr>
+<tr><td class="left">SPL</td><td class="right">630.62</td></tr>
+<tr><td class="left">VID</td><td class="right">3755.67</td></tr>
+</tbody>
+</table>
 
 </div>
 
@@ -4910,23 +4945,15 @@ print(b)
 </div>
 
 <div id="outline-container-5-2-2" class="outline-4">
-<h4 id="sec-5-2-2">Forcing files</h4>
+<h4 id="sec-5-2-2">Harvest file</h4>
 <div class="outline-text-4" id="text-5-2-2">
 
-</div>
 
 </div>
 
-<div id="outline-container-5-2-3" class="outline-4">
-<h4 id="sec-5-2-3">Harvest file</h4>
-<div class="outline-text-4" id="text-5-2-3">
-
-
-</div>
-
-<div id="outline-container-5-2-3-1" class="outline-5">
-<h5 id="sec-5-2-3-1">General setting</h5>
-<div class="outline-text-5" id="text-5-2-3-1">
+<div id="outline-container-5-2-2-1" class="outline-5">
+<h5 id="sec-5-2-2-1">General setting</h5>
+<div class="outline-text-5" id="text-5-2-2-1">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="right" /><col class="left" /><col class="right" /><col class="right" />
@@ -4956,12 +4983,12 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-3-2" class="outline-5">
-<h5 id="sec-5-2-3-2">TAC</h5>
-<div class="outline-text-5" id="text-5-2-3-2">
+<div id="outline-container-5-2-2-2" class="outline-5">
+<h5 id="sec-5-2-2-2">TAC</h5>
+<div class="outline-text-5" id="text-5-2-2-2">
 
 <ul>
-<li id="sec-5-2-3-2-1">ALF<br/>
+<li id="sec-5-2-2-2-1">ALF<br/>
 <ul>
 <li>start 2003 - jun - 01 (22446) (wiff 2016)
 <ul>
@@ -4975,7 +5002,7 @@ print(b)
 </li>
 </ul>
 <ul>
-<li id="sec-5-2-3-2-2">ORO<br/>
+<li id="sec-5-2-2-2-2">ORO<br/>
 <ul>
 <li>start 1999 (17897) Paya (2013)
 </li>
@@ -4987,9 +5014,9 @@ print(b)
 
 </div>
 
-<div id="outline-container-5-2-3-3" class="outline-5">
-<h5 id="sec-5-2-3-3">Selectivity</h5>
-<div class="outline-text-5" id="text-5-2-3-3">
+<div id="outline-container-5-2-2-3" class="outline-5">
+<h5 id="sec-5-2-2-3">Selectivity</h5>
+<div class="outline-text-5" id="text-5-2-2-3">
 
 <ul>
 <li>I used the values length of the catch to estimate the parameter for the selectivity curve
@@ -5022,6 +5049,7 @@ out  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="
     } <span style="color: #ff7f00; font-weight: bold;">else</span>{
         col <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 4
     }
+    lf.fg[[i]][, col] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lf.fg[[i]][, col] /10
     <span style="color: #696969;">## </span><span style="color: #696969;">range for the lengths</span>
     rang    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> range(lf.fg[[i]][, col], na.rm = <span style="color: #fffacd; font-weight: bold;">TRUE</span>)
     h       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> hist(lf.fg[[i]][, col], breaks = seq(from = floor(rang[1]), to = ceiling(rang[2]), length = 10), plot = F)
@@ -5039,12 +5067,12 @@ out  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="
     plot(sel.obs, pch = 19, main = unique(lf.fg[[i]]$FG), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">''</span>, ylab = <span style="color: #ffc125; font-weight: bold;">''</span>, las = 1)
     lines(size, val.st, col = 2, lty = 2, lwd = 2)
     <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 4) mtext(<span style="color: #ffc125; font-weight: bold;">'Selectivity'</span>, side = 2, line = 2.5)
-    <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 8) mtext(<span style="color: #ffc125; font-weight: bold;">'Length (mm)'</span>, side = 1, line = 2.5)
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(i == 8) mtext(<span style="color: #ffc125; font-weight: bold;">'Length (cm)'</span>, side = 1, line = 2.5)
 }
 dev.off()
 <span style="color: #696969;">## </span><span style="color: #696969;">table with parameters</span>
 cap                  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #ffc125; font-weight: bold;">'Selectivity parameters'</span>
-b                    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, header=T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">FALSE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption = cap, digit = 8)
+b                    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ascii(out, header=T,  include.rownames = <span style="color: #fffacd; font-weight: bold;">FALSE</span>, include.colnames = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, caption = cap, digit = 3)
 print(b)
 
 </pre>
@@ -5057,14 +5085,14 @@ print(b)
 <tr><th scope="col" class="left">FG</th><th scope="col" class="right">Selb</th><th scope="col" class="right">Lsm</th></tr>
 </thead>
 <tbody>
-<tr><td class="left">ALF</td><td class="right">0.02388184</td><td class="right">306.05752819</td></tr>
-<tr><td class="left">BRC</td><td class="right">0.02108783</td><td class="right">376.49229292</td></tr>
-<tr><td class="left">LBF</td><td class="right">0.00965094</td><td class="right">541.45224712</td></tr>
-<tr><td class="left">LPF</td><td class="right">0.02171968</td><td class="right">272.01915545</td></tr>
-<tr><td class="left">ORO</td><td class="right">0.04799471</td><td class="right">424.55000622</td></tr>
-<tr><td class="left">SBF</td><td class="right">0.01838348</td><td class="right">379.37444575</td></tr>
-<tr><td class="left">SPF</td><td class="right">0.03919890</td><td class="right">283.36112196</td></tr>
-<tr><td class="left">VID</td><td class="right">0.01581793</td><td class="right">652.61085672</td></tr>
+<tr><td class="left">ALF</td><td class="right">0.239</td><td class="right">30.505</td></tr>
+<tr><td class="left">BRC</td><td class="right">0.211</td><td class="right">37.649</td></tr>
+<tr><td class="left">LBF</td><td class="right">0.095</td><td class="right">53.677</td></tr>
+<tr><td class="left">LPF</td><td class="right">0.217</td><td class="right">27.202</td></tr>
+<tr><td class="left">ORO</td><td class="right">0.427</td><td class="right">42.323</td></tr>
+<tr><td class="left">SBF</td><td class="right">0.182</td><td class="right">37.818</td></tr>
+<tr><td class="left">SPF</td><td class="right">0.413</td><td class="right">28.327</td></tr>
+<tr><td class="left">VID</td><td class="right">0.159</td><td class="right">64.993</td></tr>
 </tbody>
 </table>
 
@@ -5075,13 +5103,263 @@ print(b)
 <p>Fishery gear Selectivity</p>
 </div>
 </div>
+
+</div>
+
+<div id="outline-container-5-2-2-4" class="outline-5">
+<h5 id="sec-5-2-2-4">Effort</h5>
+<div class="outline-text-5" id="text-5-2-2-4">
+
+<ul>
+<li>I changed Catchability of lobster traps
+<ul>
+<li>50 to 30% in Oct 1981
+<ul>
+<li>11596 days from the begening
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li>Change in effort lobster fishery because of the chigre
+<ul>
+<li>increase in a 47% information based on Historic information
+<ul>
+<li>18262 days after begining (1-jun-2000)
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-2-5" class="outline-5">
+<h5 id="sec-5-2-2-5">Swept area</h5>
+<div class="outline-text-5" id="text-5-2-2-5">
+
+<ul>
+<li>GCR and SPL
+<ul>
+<li>I used the value reported by Ahumada 2009 fir the GCR. The total swep area affected by the trap is 54.4 m3
+</li>
+</ul>
+
+</li>
+<li>SPF
+   The Volume of influence is 294 m3. whis is calculated from the distance of action of 5 meters away from the hook
+</li>
+<li>LPG BRC and SBF LBF
+</li>
+<li>ORO and ALF
+<ul>
+<li>I using the trawling volumne
+</li>
+<li>40 meter of open
+</li>
+<li>10 meters high
+</li>
+<li>1000 m of trwling
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-2-6" class="outline-5">
+<h5 id="sec-5-2-2-6">mFC</h5>
+<div class="outline-text-5" id="text-5-2-2-6">
+
+<ul>
+<li>Lobster
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Year</th><th scope="col" class="right">F(y-1)</th><th scope="col" class="right">u (d-1)</th><th scope="col" class="left">Comment</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">1930 - 1979</td><td class="right">0.9152795</td><td class="right">0.0025044736</td><td class="left">Historic</td></tr>
+<tr><td class="left">1980 - 2011</td><td class="right">0.8032620</td><td class="right">0.0021982979</td><td class="left">Use of Chigre</td></tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>ORO
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">Year</th><th scope="col" class="right">F(y-1)</th><th scope="col" class="right">u (d-1)</th><th scope="col" class="right">Change</th><th scope="col" class="left">Comment</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">1999</td><td class="right">0.03</td><td class="right">0.0000834</td><td class="right">1</td><td class="left"></td></tr>
+<tr><td class="right">2000</td><td class="right">0.06</td><td class="right">0.0001695</td><td class="right">2.0313312813</td><td class="left"></td></tr>
+<tr><td class="right">2001</td><td class="right">0.1</td><td class="right">0.0002886</td><td class="right">3.4587146148</td><td class="left"></td></tr>
+<tr><td class="right">2002</td><td class="right">0.09</td><td class="right">0.0002584</td><td class="right">3.0960237875</td><td class="left"></td></tr>
+<tr><td class="right">2003</td><td class="right">0.07</td><td class="right">0.0001988</td><td class="right">2.382416112</td><td class="left"></td></tr>
+<tr><td class="right">2004</td><td class="right">0.08</td><td class="right">0.0002284</td><td class="right">2.7372860731</td><td class="left"></td></tr>
+<tr><td class="right">2005</td><td class="right">0.05</td><td class="right">0.0001405</td><td class="right">1.6839515788</td><td class="left"></td></tr>
+<tr><td class="right">2006</td><td class="right">0.01</td><td class="right">0.0000275</td><td class="right">0.329969742</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>ALF (Wiff 2012 report)
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="right">Year</td><td class="right">F(y-1)</td><td class="right">u (d-1)</td><td class="right">Change</td><td class="left">Comment</td></tr>
+<tr><td class="right">1998</td><td class="right">0.00240024</td><td class="right">0.000007</td><td class="right">1</td><td class="left"></td></tr>
+<tr><td class="right">1999</td><td class="right">0.01910191</td><td class="right">0.000052</td><td class="right">7.9581512576</td><td class="left"></td></tr>
+<tr><td class="right">2000</td><td class="right">0.19381938</td><td class="right">0.000531</td><td class="right">80.7288296206</td><td class="left"></td></tr>
+<tr><td class="right">2001</td><td class="right">0.29182918</td><td class="right">0.000799</td><td class="right">121.5351410082</td><td class="left"></td></tr>
+<tr><td class="right">2002</td><td class="right">0.90669067</td><td class="right">0.002481</td><td class="right">377.2824515462</td><td class="left"></td></tr>
+<tr><td class="right">2003</td><td class="right">0.3540354</td><td class="right">0.000969</td><td class="right">147.4289733182</td><td class="left"></td></tr>
+<tr><td class="right">2004</td><td class="right">0.53585359</td><td class="right">0.001467</td><td class="right">223.0869420642</td><td class="left"></td></tr>
+<tr><td class="right">2005</td><td class="right">0.40194019</td><td class="right">0.001101</td><td class="right">167.3667144086</td><td class="left"></td></tr>
+<tr><td class="right">2006</td><td class="right">0.44014401</td><td class="right">0.001205</td><td class="right">183.2650834303</td><td class="left"></td></tr>
+<tr><td class="right">2007</td><td class="right">0.62916292</td><td class="right">0.001722</td><td class="right">261.900078148</td><td class="left"></td></tr>
+<tr><td class="right">2008</td><td class="right">0.27992799</td><td class="right">0.000767</td><td class="right">116.5806733744</td><td class="left"></td></tr>
+<tr><td class="right">2009</td><td class="right">0.08610861</td><td class="right">0.000236</td><td class="right">35.8708865686</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2-2-7" class="outline-5">
+<h5 id="sec-5-2-2-7">Total Catch Bait</h5>
+<div class="outline-text-5" id="text-5-2-2-7">
+
+<ul>
+<li>To get the total bait catch I extrapolate the values of catch per trip to the total of trips by season.
+<ul>
+<li>I used the catch per trip from the Data base
+</li>
+<li>The trips per season where obtained from the Marine traphic control logbook.
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R">rm(list = ls())
+<span style="color: #ff4500; font-weight: bold;">library</span>(ascii)
+options(asciiType = <span style="color: #ffc125; font-weight: bold;">"org"</span>)
+<span style="color: #ff4500; font-weight: bold;">library</span>(ggplot2)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Reading data</span>
+lc     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Harvest/catch.sp/Location_catches_fgs.csv'</span>)
+tr     <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Harvest/catch.sp/trips_by_season.csv'</span>)
+weight <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Harvest/catch.sp/weight.csv'</span>)
+<span style="color: #696969;">##</span><span style="color: #696969;">~ FUNCTIONAL GROUPS</span>
+lc    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> FG(data = lc, column = 6)
+<span style="color: #696969;">##</span>
+<span style="color: #696969;">##</span><span style="color: #696969;">~ By season</span>
+lc$Season <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(lc,  ifelse(month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(1, 2, 3), 1, ifelse(month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(4, 5, 6), 2,
+                                                        ifelse(month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(7, 8, 9), 3, 4))))
+tr$Season <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(tr,  ifelse(Month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(1, 2, 3), 1, ifelse(Month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(4, 5, 6), 2,
+                                                        ifelse(Month %<span style="color: #ff7f00; font-weight: bold;">in</span>% c(7,8,9),   3, 4))))
+<span style="color: #696969;">## </span><span style="color: #696969;">Total number of trips by Year (Information from the marine trafic control)</span>
+tr        <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(tr)        <span style="color: #696969;">#  </span><span style="color: #696969;">Remove Empty rows</span>
+glob.trip <span style="color: #ff4500; font-weight: bold;">&lt;-</span> by(tr$trips, list(tr$Year, tr$Island, tr$Season), sum, na.rm = <span style="color: #fffacd; font-weight: bold;">TRUE</span>)
+trip      <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(Year   = with(tr, rep(unique(Year), length(unique(Island)) * length(unique(Season)))),
+                        Season = with(tr, sort(rep(unique(Season), length(unique(Year)) * length(unique(Island))))),
+                        Island = with(tr, rep(sort(rep(unique(Island), length(unique(Year)))), length(unique(Season)))),
+                        trips  = do.call(rbind,  as.list(glob.trip)))
+<span style="color: #696969;">## </span><span style="color: #696969;">Total trips per Season and Island</span>
+t.trip <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(trip)
+<span style="color: #696969;">## </span><span style="color: #696969;">Functional groups bait cahtch</span>
+lc    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(lc)        <span style="color: #696969;">#  </span><span style="color: #696969;">Remove Empty rows</span>
+lc.FG <span style="color: #ff4500; font-weight: bold;">&lt;-</span> split(lc, paste(lc$Year, lc$Island))
+<span style="color: #696969;">## </span><span style="color: #696969;">list of catch per trip by season and by FG</span>
+CpT         <span style="color: #ff4500; font-weight: bold;">&lt;-</span> as.data.frame(do.call(rbind, lapply(lc.FG,sumry)), rownames = <span style="color: #fffacd; font-weight: bold;">FALSE</span>)
+CpT$TC.numb <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NA</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>(i <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : nrow(t.trip)){
+    post              <span style="color: #ff4500; font-weight: bold;">&lt;-</span> which(CpT$Year == t.trip$Year[i] &amp; CpT$Season == t.trip$Season[i] &amp; CpT$Island == t.trip$Island[i])
+    CpT$TC.numb[post] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> CpT$cperT[post] * t.trip$trips[i]
+}
+CpT$TC.weight <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NA</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>( i <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : nrow(weight)){
+    post                  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> which(CpT$FG %<span style="color: #ff7f00; font-weight: bold;">in</span>%weight$FG[i])
+    CpT$TC.weight[post]   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> CpT$TC.numb[post] * weight$weight[i]  / 1000000 <span style="color: #696969;"># </span><span style="color: #696969;">passing direct to tonnes</span>
+}
+<span style="color: #696969;">## </span><span style="color: #696969;">CAtch per season</span>
+CpT <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(CpT)
+png(<span style="color: #ffc125; font-weight: bold;">'img/Catch_per_Season.png'</span>, height = 1000, width = 1000)
+sp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = CpT, aes(Season, TC.weight, group = 1))+ geom_point() + geom_smooth(method = <span style="color: #ffc125; font-weight: bold;">"lm"</span>, color = <span style="color: #ffc125; font-weight: bold;">'red'</span>)
+sp + facet_wrap(~FG + Island, ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
+<span style="color: #696969;">#</span><span style="color: #696969;">sp</span>
+invisible(dev.off())
+<span style="color: #696969;">## </span><span style="color: #696969;">Catch per YEar and island</span>
+tmp   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lapply(split(CpT, paste(CpT$Year, CpT$Island, CpT$FG)), <span style="color: #ff7f00; font-weight: bold;">function</span>(x) sum(x$TC.weight))
+cat.w <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(matrix(unlist(strsplit(names(tmp), <span style="color: #ffc125; font-weight: bold;">' '</span>)), ncol = 3, byrow = <span style="color: #fffacd; font-weight: bold;">TRUE</span>))
+cat.w$Catch.W <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(unlist(tmp))
+colnames(cat.w)[1 : 3] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(<span style="color: #ffc125; font-weight: bold;">'Year'</span>, <span style="color: #ffc125; font-weight: bold;">'Island'</span>, <span style="color: #ffc125; font-weight: bold;">'FG'</span>)
+png(<span style="color: #ffc125; font-weight: bold;">'img/Catch_per_Year_Island.png'</span>, height = 1000, width = 1000)
+sp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = cat.w, aes(Year, Catch.W, group = 1))+ geom_point() + geom_smooth(method = <span style="color: #ffc125; font-weight: bold;">"lm"</span>, color = <span style="color: #ffc125; font-weight: bold;">'red'</span>)
+sp + facet_wrap(~FG + Island, ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
+<span style="color: #696969;">#</span><span style="color: #696969;">sp</span>
+invisible(dev.off())
+<span style="color: #696969;">## </span><span style="color: #696969;">Total Catch per year</span>
+cat.w <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.omit(cat.w)
+tmp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> lapply(split(cat.w, paste(cat.w$Year, cat.w$FG)), <span style="color: #ff7f00; font-weight: bold;">function</span>(x) sum(x$Catch.W))
+catch.year <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(matrix(unlist(strsplit(names(tmp), <span style="color: #ffc125; font-weight: bold;">' '</span>)), ncol = 2, byrow = <span style="color: #fffacd; font-weight: bold;">TRUE</span>))
+catch.year$Total <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(unlist(tmp))
+colnames(catch.year)[1 : 2] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(<span style="color: #ffc125; font-weight: bold;">'Year'</span>, <span style="color: #ffc125; font-weight: bold;">'FG'</span>)
+png(<span style="color: #ffc125; font-weight: bold;">'img/Total_Catch_per_Year.png'</span>, height = 1000, width = 1000)
+sp <span style="color: #ff4500; font-weight: bold;">&lt;-</span> ggplot(data = catch.year, aes(Year, Total, group = 1))+ geom_line() <span style="color: #696969;">#</span><span style="color: #696969;">+ geom_smooth(method = "lm", color = 'red')</span>
+sp + facet_wrap(~FG , ncol = 4, scales = <span style="color: #ffc125; font-weight: bold;">'free_y'</span>)
+<span style="color: #696969;">#</span><span style="color: #696969;">sp</span>
+invisible(dev.off())
+catch.year <span style="color: #ff4500; font-weight: bold;">&lt;-</span> catch.year[order(catch.year$FG, catch.year$Year), ]
+write.table(catch.year, <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Harvest/catch.sp/catch.csv'</span>)
+</pre>
+
+<p>
+ <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Year_Island.png"  alt="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Year_Island.png" />
+ </p>
+<div class="figure">
+<p><img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Catch_per_Year.png"  alt="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Catch_per_Year.png" /></p>
+<p>Bait catch per year and Island</p>
+</div>
+</div>
 </div>
 
 </div>
 
-<div id="outline-container-5-2-4" class="outline-4">
-<h4 id="sec-5-2-4">Solar radiation</h4>
-<div class="outline-text-4" id="text-5-2-4">
+<div id="outline-container-5-2-3" class="outline-4">
+<h4 id="sec-5-2-3">Solar radiation</h4>
+<div class="outline-text-4" id="text-5-2-3">
 
 <ul>
 <li>I se the information irradiance from <a href="http://www.soda-pro.com/web-services/radiation/nasa-sse">soda</a>
@@ -5096,8 +5374,294 @@ print(b)
 </div>
 
 <div id="outline-container-5-3" class="outline-3">
-<h3 id="sec-5-3">Initial conditions file</h3>
+<h3 id="sec-5-3">Forcing files</h3>
 <div class="outline-text-3" id="text-5-3">
+
+
+</div>
+
+<div id="outline-container-5-3-1" class="outline-4">
+<h4 id="sec-5-3-1">Rain</h4>
+<div class="outline-text-4" id="text-5-3-1">
+
+
+</div>
+
+<div id="outline-container-5-3-1-1" class="outline-5">
+<h5 id="sec-5-3-1-1">Reconstruction of the TS</h5>
+<div class="outline-text-5" id="text-5-3-1-1">
+
+<ul>
+<li>I wil use the information form the 'Anuarios climatologicos' from the <b>DIRECCIÓN GENERAL DE AERONÁUTICA CIVIL</b>
+</li>
+<li>This data has some gaps to I will reconstruc the data usind diferent model
+<ul>
+<li>Due to the similaity with the original time series I will use new time series from the ARIMA model and from the SPLINE
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">Wavelet descomposition and time serie recontruction</span>
+<span style="color: #ff4500; font-weight: bold;">library</span>(imputeTS)
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+dat   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/NO3.csv'</span>)
+dates <span style="color: #ff4500; font-weight: bold;">&lt;-</span> as.Date(as.Date(dat[,4]), format = <span style="color: #ffc125; font-weight: bold;">'%Y/%m/%d'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">remove trend in the data</span>
+lmodel  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> predict(lm(Precipitation ~ day, data = dat, na.action = na.exclude), data.frame(day = dat$day))
+ts.pres <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dat[, 5] - lmodel
+<span style="color: #696969;">## </span><span style="color: #696969;">By interpolation</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">Spline interpolation</span>
+spline <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.interpolation(ts.pres, option = <span style="color: #ffc125; font-weight: bold;">'spline'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Linear interpolation</span>
+linear <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.interpolation(ts.pres, option = <span style="color: #ffc125; font-weight: bold;">'linear'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Linear interpolation</span>
+stine  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.interpolation(ts.pres, option = <span style="color: #ffc125; font-weight: bold;">'stine'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">By Kalman Smoothing and State Space Models</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">Structural model fitted by maximum likelihood</span>
+like   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.kalman(ts.pres, model = <span style="color: #ffc125; font-weight: bold;">"StructTS"</span>, smooth = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, nit = -1)
+<span style="color: #696969;">## </span><span style="color: #696969;">State space representation of arima mode</span>
+arima  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.kalman(ts.pres, model = <span style="color: #ffc125; font-weight: bold;">"auto.arima"</span>, smooth = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, nit = -1)
+<span style="color: #696969;">## </span><span style="color: #696969;">State space representation of arima mode</span>
+like.t <span style="color: #ff4500; font-weight: bold;">&lt;-</span> na.kalman(ts.pres, model = <span style="color: #ffc125; font-weight: bold;">"StructTS"</span>, smooth = <span style="color: #fffacd; font-weight: bold;">TRUE</span>, type = <span style="color: #ffc125; font-weight: bold;">'trend'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Back data to original magnitud Using the total by month.</span>
+lmodel[is.na(lmodel)] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 0
+spline  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> spline + lmodel
+linear  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> linear + lmodel
+stine   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> stine + lmodel
+like    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> like + lmodel
+arima   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> arima + lmodel
+like.t  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> like.t + lmodel
+ts.pres <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dat[, 5]
+<span style="color: #696969;">## </span><span style="color: #696969;">Plotting outputs</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~</span>
+png(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.png'</span>, width = 900, height = 900)
+par(mfrow = c(2, 1), oma = c(1, 1, 1, 1), mar = c(1, 5, 1, 1))
+plot(dates, spline, col = <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Precipitacion'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Date'</span>, xaxt=<span style="color: #ffc125; font-weight: bold;">'n'</span>)
+lines(dates, linear, col = <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>)
+lines(dates, stine, col = <span style="color: #ffc125; font-weight: bold;">'darkolivegreen'</span>)
+lines(dates, ts.pres, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, col = 1)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Original'</span>, <span style="color: #ffc125; font-weight: bold;">'Spline'</span>, <span style="color: #ffc125; font-weight: bold;">'Linear'</span>, <span style="color: #ffc125; font-weight: bold;">'Stine'</span>),
+       col = c(<span style="color: #ffc125; font-weight: bold;">'black'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>, <span style="color: #ffc125; font-weight: bold;">'darkolivegreen'</span>), lty = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+plot(dates, like, col = <span style="color: #ffc125; font-weight: bold;">'darkolivegreen'</span>, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Precipitacion'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Date'</span>)
+lines(dates, arima, col = <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>)
+lines(dates, ts.pres, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Original'</span>, <span style="color: #ffc125; font-weight: bold;">'ARIMA'</span>, <span style="color: #ffc125; font-weight: bold;">'Likelihood'</span>),
+       col = c(<span style="color: #ffc125; font-weight: bold;">'black'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'darkolivegreen'</span>), lty = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+dev.off()
+<span style="color: #696969;">## </span><span style="color: #696969;">Savind data</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~</span>
+dat$spline <span style="color: #ff4500; font-weight: bold;">&lt;-</span> spline
+dat$arime  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> arima
+dat$date   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dates
+write.table(dat, file = <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/Rain.csv'</span>, row.names = <span style="color: #fffacd; font-weight: bold;">FALSE</span>)
+</pre>
+
+
+<div class="figure">
+<p><img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.png" width="600" alt="image" /></p>
+<p>Total Bait catch per year in the JFRE</p>
+</div>
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5-3-1-2" class="outline-5">
+<h5 id="sec-5-3-1-2">Localization of the river</h5>
+<div class="outline-text-5" id="text-5-3-1-2">
+
+<ul>
+<li>To locate the river and the ridge that support most of the water affluents,  I used the rivers of Selkirk (Masoli 2008) and Robinson (Astudillo,  2014)
+<ul>
+<li>due to the effect of intense rain I decide to analize the effect of alluvium,  something that happend in intense rains (Masoli 2008). For that I use the percentile on 90%,  so event higher that taht would be event of extreme rain
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">extream rain events</span>
+ <span style="color: #696969;">## </span><span style="color: #696969;">Read data</span>
+ dat <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(file = <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/1-Rain.csv'</span>, sep = <span style="color: #ffc125; font-weight: bold;">' '</span>)
+ png(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png'</span>, width = 900, height = 400)
+ plot(dat$arima, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, yaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Rainfall (mm)'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Date'</span>, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+ tickx <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = 1, to = length(dat$date), length = 5)
+ yticks <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(0, max(dat$arima), by = round(max(dat$arima) / 5))
+ abline(h = quantile(dat$arima,c(.9)), col = <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>, lty = 2, lwd = 1.5)
+ abline(h = mean(dat$arima), col = <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>, lty = 2, lwd = 1.5)
+ axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+ axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], <span style="color: #ffc125; font-weight: bold;">'%Y.%m'</span>), lwd = 2,  col = 1)
+ legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, c(<span style="color: #ffc125; font-weight: bold;">'Average'</span>, <span style="color: #ffc125; font-weight: bold;">'9th percentile'</span>), col = c(<span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>),
+        lty = c(2, 2),  bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+ dev.off()
+ dat$a.extreme <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dat$arima
+ dat$a.extreme[which(dat$a.extreme &lt; quantile(dat$arima,c(.9)))] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NA</span>
+ write.table(dat, file = <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/2-Rain_extrem.csv'</span>, row.names = <span style="color: #fffacd; font-weight: bold;">FALSE</span>)
+</pre>
+
+<p>
+     <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png"  alt="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png" />
+</p></div>
+
+</div>
+
+<div id="outline-container-5-3-1-3" class="outline-5">
+<h5 id="sec-5-3-1-3">Constructing the ts per day</h5>
+<div class="outline-text-5" id="text-5-3-1-3">
+
+<ul>
+<li>I used the data of the peak day (days with more than 10mm per day) and the total day of rain to reconstruct the time seriw by days
+</li>
+<li>I assume that the rain is distributed normal during the month
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">Create the inputs files</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">Average dischard form a small river is 516 MgNy-1</span>
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R'</span>)
+Rivers <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/Rivers.csv'</span>)
+dat <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/2-Rain_extrem.csv'</span>, sep = <span style="color: #ffc125; font-weight: bold;">' '</span>)
+month  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+peak   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dat$peaks * 10
+peak[is.na(peak)] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 0
+n.peak   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> dat$arima - peak
+n.peak.d <span style="color: #ff4500; font-weight: bold;">&lt;-</span> (dat$duration - dat$peaks)
+ts       <span style="color: #ff4500; font-weight: bold;">&lt;-</span> <span style="color: #fffacd; font-weight: bold;">NULL</span>
+<span style="color: #ff7f00; font-weight: bold;">for</span>(p <span style="color: #ff7f00; font-weight: bold;">in</span> 1 : nrow(dat)){
+    days <span style="color: #ff4500; font-weight: bold;">&lt;-</span> month[dat$Month[p]]
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(dat$Month[p] == 2 &amp; dat$Year[p]%%4 == 0) days <span style="color: #ff4500; font-weight: bold;">&lt;-</span> days + 1
+    <span style="color: #ff7f00; font-weight: bold;">if</span>(!is.na(dat$duration[p]) &amp; n.peak[p] != 0){
+        tmp.1 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rep(n.peak[p] / n.peak.d[p], n.peak.d[p])
+        tmp.2 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rep(peak[p] / dat$peaks[p], dat$peaks[p])
+        <span style="color: #ff7f00; font-weight: bold;">if</span>(tmp.1[1] &gt; 10){
+            <span style="color: #696969;">## </span><span style="color: #696969;">Keeping the same amoun of days below 10mm of rain</span>
+            tmp.1[] <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 9.9
+            extra   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> n.peak[p] - sum(tmp.1)
+            tmp.2 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> tmp.2[] + (extra / length(tmp.2))
+        }
+        tmp.3 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(tmp.1[1 : round(length(tmp.1) / 2)], tmp.2, tmp.1[(round(length(tmp.1) / 2) + 1) : length(tmp.1)] )
+        left  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> days - length(tmp.3)
+        tmp.4 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> c(rep(0, round(left / 2)), tmp.3, rep(0, (left - (round(left / 2)))))
+    } <span style="color: #ff7f00; font-weight: bold;">else</span> {
+        tmp.4  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rep(n.peak[p] / days, days)
+    }
+    final.1 <span style="color: #ff4500; font-weight: bold;">&lt;-</span> data.frame(Year  = rep(dat$Year[p], days),
+                          Month = rep(dat$Month[p], days),
+                          Day   = 1 : days,
+                          Rain  = tmp.4,
+                          Peak  = rep(ifelse(is.na(dat$a.extreme[p]), <span style="color: #fffacd; font-weight: bold;">FALSE</span>, <span style="color: #fffacd; font-weight: bold;">TRUE</span>), days))
+    ts <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rbind(ts, final.1)
+}
+ts$dates <span style="color: #ff4500; font-weight: bold;">&lt;-</span> with(ts, as.Date(paste0(ts$Year,<span style="color: #ffc125; font-weight: bold;">'/'</span>, ts$Month, <span style="color: #ffc125; font-weight: bold;">'/'</span>, ts$Day), format = <span style="color: #ffc125; font-weight: bold;">'%Y/%m/%d'</span>))
+ts$mean  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> movavg(ts$Rain, 15)
+write.table(ts, file = <span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Forcing_Files/NO3/3-daily_Rain.csv'</span>, row.names = <span style="color: #fffacd; font-weight: bold;">FALSE</span>)
+by.year  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> tapply(dat$arima, dat$Year, sum)
+years    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> 1950 : 2016
+color    <span style="color: #ff4500; font-weight: bold;">&lt;-</span> rgb(t(col2rgb(<span style="color: #ffc125; font-weight: bold;">"grey"</span>)), alpha = 250, maxColorValue = 255)
+<span style="color: #696969;">## </span><span style="color: #696969;">plots</span>
+png(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png'</span>, width = 600, height = 900)
+par(mfrow = c(3, 1), oma = c(3, 1, 1, 1), mar = c(2, 5, 1, 1))
+<span style="color: #696969;">## </span><span style="color: #696969;">By Years</span>
+plot(years, unlist(by.year), yaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>,
+     type = <span style="color: #ffc125; font-weight: bold;">'b'</span>, pch = 19,  xlab = <span style="color: #ffc125; font-weight: bold;">'Years'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Rainfall per year (mm)'</span>)
+tickx <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = 1950, to = 2016, length = 5)
+yticks <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(0, max(by.year), by = round(max(by.year) / 5))
+axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+axis(1, at = tickx, labels = tickx, lwd = 2,  col = 1)
+<span style="color: #696969;">## </span><span style="color: #696969;">By month</span>
+plot(dat$arima, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, yaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Rainfall per month (mm)'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Date'</span>, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+tickx <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = 1, to = length(dat$date), length = 5)
+yticks <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(0, max(dat$arima), by = round(max(dat$arima) / 5))
+axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], <span style="color: #ffc125; font-weight: bold;">'%Y.%m'</span>), lwd = 2,  col = 1)
+<span style="color: #696969;">## </span><span style="color: #696969;">By day</span>
+plot(ts$Rain, type = <span style="color: #ffc125; font-weight: bold;">'l'</span>, yaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xaxt = <span style="color: #ffc125; font-weight: bold;">'n'</span>, ylab = <span style="color: #ffc125; font-weight: bold;">'Rainfall per day (mm)'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Date'</span>, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+lines(ts$mean, col = <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>)
+tickx <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(from = 1, to = length(ts$dates), length = 5)
+yticks <span style="color: #ff4500; font-weight: bold;">&lt;-</span> seq(0, max(ts$Rain), by = round(max(ts$Rain) / 5))
+axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
+axis(1, at = tickx, labels = format.Date(ts$dates[tickx], <span style="color: #ffc125; font-weight: bold;">'%Y.%m.%d'</span>), lwd = 2,  col = 1)
+dev.off()
+</pre>
+
+<p>
+     <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png"  alt="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain.ts.png" />
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5-3-1-4" class="outline-5">
+<h5 id="sec-5-3-1-4">Nitrogen</h5>
+<div class="outline-text-5" id="text-5-3-1-4">
+
+<ul>
+<li>to calculate the average amount of nitrogen in the river I used the relation of DIN=NO3+NO2+NH4. Assuming that in JF there is not to much waste I asummed that the total DIN is almost equal to NO3
+</li>
+<li>from the database of Mayorga et al 2010 I use the average for the river of order 2 in the strahlet stream order of 157.4 KgNk2yr-1 (+-88.6)
+</li>
+<li>The linear regresion equation was 0.0027316231 x River Area with an 0.72 of R2
+<ul>
+<li>This gives a value of 0.08864117 DIN for Robisnon Asumming that 80% of DIN is NO3 the todal NO3 is 0.0709129357 KgKm2y-1
+<ul>
+<li>this would give a total of 2.302 Kgy-1
+</li>
+<li>2301124.7626862 NO3 Mgy-1
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">River Area (Km2)</th><th scope="col" class="right">DIN (KgKm2y-1)</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">98,779</td><td class="right">185.5</td></tr>
+<tr><td class="left">83,316</td><td class="right">151.3</td></tr>
+<tr><td class="left">63,815</td><td class="right">330.9</td></tr>
+<tr><td class="left">54,765</td><td class="right">235.1</td></tr>
+<tr><td class="left">52,964</td><td class="right">59.8</td></tr>
+<tr><td class="left">50,544</td><td class="right">88.8</td></tr>
+<tr><td class="left">41,531</td><td class="right">113.2</td></tr>
+<tr><td class="left">33,733</td><td class="right">220.0</td></tr>
+<tr><td class="left">32,159</td><td class="right">71.0</td></tr>
+<tr><td class="left">29,866</td><td class="right">56.7</td></tr>
+<tr><td class="left">27,702</td><td class="right">219.3</td></tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>Las principales quebradas en Robisnon tienen un total de 32.45 km2
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5-4" class="outline-3">
+<h3 id="sec-5-4">Initial conditions file</h3>
+<div class="outline-text-3" id="text-5-4">
 
 <ul>
 <li>To set the initial conditions I used the Shiny application and the code that create to fill the matrix of abundance and cover
@@ -5628,7 +6192,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-10-11T18:58+1100</p>
+<p class="date">Date: 2017-11-22T11:15+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
