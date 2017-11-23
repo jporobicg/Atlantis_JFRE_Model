@@ -1444,7 +1444,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 mum_LPH_T15  0.013	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.01    	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
-MB_wc        0.01     	# Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
+MB_wc        0.01      # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
 KI_LPH_T15  15  Light saturation, large phytoplankton W m-2 10 - 20
@@ -3395,13 +3395,13 @@ pPREY1VID2  37
 pPREY2VID2  37
 0 0 0.0025 0 0 0 0 0 0 0 0 0 0.01 0.05 0.025 1e-04 0.08 0 0 0.001 0.001 0.01 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0
 pPREY1ORO1  37
-0 0 0 0 0 0.01 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0.01 0.01 0 0 0 0 0.008 0 0 0 0.05 0.05 0.01 0 0.005 0.08 0.004 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO1  37
-0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.004 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.01 0 0 0 0 0.003 0 0 0 0.05 0.01 0 0.001 0.005 0.08 0.003 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.01 0.01 0 0 0.01 0.015 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.01 0.01 0 0 0.01 0.01 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2ORO2  37
-0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.03 0.001 0 0 0.01 0.005 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0.05 0 0 0 0 0.008 0 0 0 0.05 0.03 0.001 0 0 0.01 0.004 0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY1ALF1  37
 0 0 0 0 0.01 0 0 0 0 0 0 0.01 0.01 0 0.01 0.01 0.15 0 0.01 0.01 0.1 0.1 0.001 0.001 0 0 0 0.001 0 0 0 0 0 0 0 0 0
 pPREY2ALF1  37
@@ -3961,7 +3961,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-96.731 3.111 4.143 5.737 8.167 9.167 11.407 15.667 22.583 29.528
+0.967 0.622 2.762 5.737 13.612 15.278 19.012 31.334 45.166 73.82
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -4482,7 +4482,7 @@ COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-3 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   1e-3 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   1e-3 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   1e-8 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
