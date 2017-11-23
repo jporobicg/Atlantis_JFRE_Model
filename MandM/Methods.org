@@ -1956,8 +1956,8 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
       ##---------------
       lf.fg       <- split(lf, lf$FG)  # split by functional group
       ## type of length that I used in the estimation of the cohorts for each functional group
-      len.ty <- c('total', 'fork', 'total', 'total', 'fork',
-                  'total', 'total', 'total', 'total', 'total','fork', 'total', 'total')
+      len.ty <- c('total','total', 'total', 'total', 'total', 'fork',
+                  'total', 'total', 'total','total','total', 'total','fork', 'total', 'total')
       alometric <- function(length, alfa, beta){
           weight <- alfa  * length ^ beta
           return(weight)
@@ -1966,19 +1966,18 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
       cho <- c(alfa=0.00210, beta=3.176)
       ## Due to the lack of information I will remove some groups
       ## Removing octopus
-      lf.fg <- lf.fg[ - 8]
+      lf.fg <- lf.fg[ - 9]
       png('img/allometric.png', width = 1200, height = 900)
       res <- list()
-      par(mfrow=c(3, 4), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
-      i=4
-      for(i in 1:length(lf.fg)){
+      par(mfrow=c(3, 5), mar = c(4, 2, 1, 2), oma=c(3, 2, 0, 2), cex = 1.2)
+          for(i in 1:length(lf.fg)){
           len       <- lf.fg[[i]][, ifelse(len.ty[i] == 'total', 4, 3)]
           weight    <- lf.fg[[i]][, 5]
           ## orden the list,  jut for plotting
           or        <- order(len)
           len       <- len[or]
           weight    <- weight[or]
-          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = 0.5, beta = ifelse(i==3, 3, 1.4)),
+          res[[i]]  <- nls(weight~alometric(len, alfa, beta), start = c(alfa = 0.5, beta = ifelse(i%in%c(4,1,9), 3, 1.4)),
                            trace = FALSE, control = nls.control(maxiter = 5000, minFactor = 1/100000))
           plot(len, weight, col = spgrey, pch = 20, bty = 'n', xlab = '', ylab = '', main = lf.fg[[i]]$FG[1] )
           lines(len[!is.na(len)], predict(res[[i]]), col = 2)
@@ -2002,11 +2001,11 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
     #+END_SRC
     #+RESULTS:
     #+CAPTION: Values of the paramter alfa and beta in the allometric relationship for each functional group
-    |      |        ANG |        BRC |        CET |        CHO |        GCR |        LBF |        LPF |        OTA |        SBF |        SPF |        SPL |        VID |
-    |------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+------------|
-    | alfa | 0.00470168 | 0.00839310 | 0.01787816 | 0.00210000 | 0.53179259 | 0.00023791 | 0.06825499 | 3.88353881 | 6.15806045 | 0.00716116 | 0.96225457 | 0.00523585 |
-    | beta | 2.83452053 | 3.14636532 | 2.92615017 | 3.17600000 | 2.84013419 | 3.89821853 | 2.50292955 | 2.07274350 | 1.40660523 | 3.14316080 | 2.71901358 | 3.10821550 |
-    #+CAPTION: Allometric relationship for different functional groups
+    |      |        ALF |        ANG |        BRC |        CET |          CHO |        GCR |        LBF |        LPF |        ORO |        OTA |        SBF |        SPF |        SPL |        VID |
+    |------+------------+------------+------------+------------+--------------+------------+------------+------------+------------+------------+------------+------------+------------+------------|
+    | alfa | 0.07147389 | 0.00470168 | 0.00419986 | 0.00210000 | 164.38180473 | 0.53179259 | 0.00023791 | 0.06825499 | 0.06883698 | 3.88353881 | 1.57860495 | 0.00716116 | 0.96225457 | 0.00523585 |
+    | beta | 2.70714831 | 2.83452053 | 3.21196191 | 3.17600000 |   0.78557000 | 2.84013419 | 3.89821853 | 2.50292955 | 2.70895066 | 2.07274350 | 1.77322880 | 3.14316080 | 2.71901358 | 3.10821550 |
+   #+CAPTION: Allometric relationship for different functional groups
     #+ATTR_HTML: width="600" alt="image"
     [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/allometric.png]]
   - For Seals I use the values from Amano2000
