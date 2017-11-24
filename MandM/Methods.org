@@ -3193,6 +3193,16 @@ In this secction I use the data form the Database to get the number of organism 
    #+CAPTION: Bait catch per year and Island
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Catch_per_Year.png]]
    #+CAPTION: Total Bait catch per year in the JFRE
+**** Bycatch and Discars
+***** Discards
+****** Industrial
+ - cada tonelada de descarte se tiene una tonelada de peces de desembarcados \cite{yAñes 2008}
+   - Has effect on Coral ans sesils epifauna
+ - The 98.85% of the catch per tow correspond to Rorange roughy (The rest are fishes)
+   - almost the 11 % of the catch is coral (But decrease with time) \cite{Anderson2003}
+     - Other species 1.3 % (This can be BFF)
+     - Species like CHo can be almost the 0.2% of the catch
+ - The 98.96% of the catch per tow correspond to alfosnino (The rest are fishes)
 *** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data

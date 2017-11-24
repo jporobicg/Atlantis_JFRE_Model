@@ -4451,9 +4451,9 @@ BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
-1e-10 8e-6
+1e-10 1e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-4e-10 1e-07
+4e-10 1e-09
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 1e-05
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
@@ -5205,8 +5205,8 @@ BHalpha_SPL   1e+8             # Beverton-Holt recruitment rate parameter (if re
 BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   3e+11              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
-BHalpha_ALF   1E+10		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
+BHalpha_ORO   9e+9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ALF   1e+9		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
 BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
@@ -5222,7 +5222,7 @@ BHbeta_SPL   5e+8       # Beverton-Holt recruitment saturation parameter (if rec
 BHbeta_GCR   1e+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
-BHbeta_ORO   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
+BHbeta_ORO   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   6E+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
 BHbeta_ANG   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
