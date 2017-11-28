@@ -2415,9 +2415,9 @@ LBF_min_move_temp  4
 SUR_min_move_temp  4
 MOL_min_move_temp  4
 SCR_min_move_temp  4
-SZO_min_move_temp  4
-LZO_min_move_temp  4
-MZO_min_move_temp  4
+SZO_min_move_temp  3
+LZO_min_move_temp  3
+MZO_min_move_temp  3
 BFF_min_move_temp  4
 LPH_min_move_temp  4
 SPH_min_move_temp  4
