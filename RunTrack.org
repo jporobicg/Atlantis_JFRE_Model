@@ -13428,3 +13428,51 @@ Using harvest file
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6253
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+- from : 1e-9 5e-7
+- to : 1e-9 1e-8
+*** Pprey
+**** ORO
+- on SQD
+- increased by 0.002
+*** Mum
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** ORO
+- from : 9e+9
+- to : 6e+9
+**** ALF
+- from : 1e+9
+- to : 9e+8
+*** Efficiency
+*** Changed BGM
+*** Structural weight
+*** Reserv over structural
+*** Initial abundance
+*** Run the model for 100 year and cuttit.
+**** It would be nice if I can create a new file with the hidro time for another 200 years and runn it fron there
+**** reduce the predation of scr on mol and bff
+****  keep oro on top
+**** change the F for the fisheries
+**** Increase the survival of adults on SPL
+**** Change the F for the GCR
+**** Recruitment deviations for the lobster its that necesary?
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171127080604
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171127080604.png]]
+* Run PC-Demiurgo 20171128082007
+  - Run start: 2017-11-28 08:20:07
+  - Run end: 2017-11-28 16:28:24
+  - log file : [[file:Calibration/20171128162824.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6253
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
