@@ -13528,3 +13528,66 @@ Using harvest file
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6260
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+***** SPHY
+- from : 1e-10
+- to : 1e-8
+*** Pprey
+**** SCR
+-on DL
+decreased from 0.001 to 0.0005
+**** SUR
+on DR
+increased from 0 to 0.0005
+*** Mum
+**** COR
+- from : 0.10
+- to : 0.11
+**** ALF (on scenario 1 - bowen)
+- from : 284.1875 393.1575 407.6467 524.1467 622.0 706.23 621.7667 503.0 532.375 365.9063
+- to : 189.458 245.723 254.779 349.431 414.667 470.82 414.511 335.333 354.917 243.938
+**** MPF
+- from : 3040 308.75 487.643 479.593 479.658 656.383
+- to : 1520 205.833 304.777 299.746 282.152 386.108
+*** Clearance
+**** COR
+- from : 0.05
+- to : 0.06
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** ORO
+**** ALF
+*** Efficiency
+*** Changed BGM
+*** Density deppend movement Movement to 0 for zooplankton
+- from 4
+- to : 0
+*** Structural weight
+*** Reserv over structural
+*** Initial abundance
+*** Run the model for 100 year and cuttit.
+**** It would be nice if I can create a new file with the hidro time for another 200 years and runn it fron there
+**** reduce the predation of scr on mol and bff
+****  keep oro on top
+**** change the F for the fisheries
+**** Increase the survival of adults on SPL
+**** Change the F for the GCR
+**** Recruitment deviations for the lobster its that necesary?
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171129085205
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171129085205.png]]
+* Run PC-Demiurgo 20171129175459
+  - Run start: 2017-11-29 17:54:59
+  - Run end: 2017-11-29 18:07:28
+  - log file : [[file:Calibration/20171129180728.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6261
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
