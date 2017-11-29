@@ -2415,9 +2415,9 @@ LBF_min_move_temp  4
 SUR_min_move_temp  4
 MOL_min_move_temp  4
 SCR_min_move_temp  4
-SZO_min_move_temp  3
-LZO_min_move_temp  3
-MZO_min_move_temp  3
+SZO_min_move_temp  1
+LZO_min_move_temp  1
+MZO_min_move_temp  1
 BFF_min_move_temp  4
 LPH_min_move_temp  4
 SPH_min_move_temp  4
@@ -3979,7 +3979,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 13.889 324.383 542.45 611.533 681.617 865.5 892.1 907.04 915.54 1144.425
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ] 3040 308.75 287.643 279.593 279.658 356.383
-3040 308.75 487.643 479.593 479.658 656.383
+1520 205.833 304.777 299.746 282.152 386.108
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 1300 1250 1825 2050 2550 2775 4600 4600 4600 4600
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
