@@ -1441,7 +1441,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.005 #0.005	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.01 #0.005	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.01    	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01      # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
@@ -3925,7 +3925,7 @@ C_LPF 10 # Clearance rate for Large pelagic fish [ m3(mg N)-1 d-1 ] #
 C_SPF 10 # Clearance rate for Small pelagic fish [ m3(mg N)-1 d-1 ]
 10.15 46.63 100.3 149.76 190.13 221.14 244.16 260.9 272.91 281.44
 C_MPF 6 # Clearance rate for Mesopelagic fish [ m3(mg N)-1 d-1 ] #41.38 55.1 57.63 58.05 58.12 58.13
-12.26 16.33 17.07 17.2 17.22 17.22
+9.81 13.06 13.66 13.76 13.78 13.78
 C_SBF  10 # Clearance rate for Small benthic fish [ m3(mg N)-1 d-1 ]
 47.94 71.63 100.05 141.74 188.87 256.62 300.12 406.55 475.32 549.46
 C_LBF 10 # Clearance rate for Large benthic fish [ m3(mg N)-1 d-1 ]
