@@ -3497,7 +3497,7 @@ pPREY2LBF2  37
 pPREYSZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 1e-04 0.001 0 0 0 0 0 0
 pPREYMZO  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0 0.03 0.05 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0.03 0.05 0 0 0 0 0 0 1e-04 0 0.07 0 0 0
 pPREYLZO  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0 0 0 0.01 0 0 0 0 0 0 0 1e-04 0 0 0 0 0
 pPREYSCR  37
@@ -4479,9 +4479,9 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-6 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   1e-5 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   2e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SZO_mQ   5e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   5e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
