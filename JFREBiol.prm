@@ -1441,10 +1441,10 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.008 #0.005	# Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.01    	# Maximum growth rate, Small phytoplankton d-1 1 - 1.7
-mum_MA_T15   4      	# Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
-MB_wc        0.01      # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
+mum_LPH_T15  0.0085  # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.01    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_MA_T15   4       # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
+MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
 KI_LPH_T15  23 # 25  Light saturation, large phytoplankton W m-2 10 - 20
@@ -3471,9 +3471,9 @@ pPREY1SPF2  37
 pPREY2SPF2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.002 0 0 0.015 0.07 0 0.01 0.005 0 0 0 0 0.005 0 0 0 0 0 0 0 0
 pPREY1MPF1  37
-1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.01 0.001 0.01 0.002 1e-05 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
+1e-04 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.007 0.01 0.001 0.01 0.002 1e-05 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
 pPREY2MPF1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.01 0.01 0 0.05 0.002 0.001 0 0 0 0.00025 0 0 1e-05 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0.007 0.01 0 0.05 0.002 0.001 0 0 0 0.00025 0 0 1e-05 0 0 0 0 0
 pPREY1MPF2  37
 0.001 0.005 5e-04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1e-04 0.005 0.05 0.001 0.01 0.002 1e-05 0 0 0 0.00015 0 0 1e-05 0 0 0 0 0
 pPREY2MPF2  37
@@ -3509,7 +3509,7 @@ pPREYCOR  37
 pPREYSUR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 1e-04 0 0 0.05 0 0 0 5e-04 0 0.005 0.001 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 00
 
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
@@ -3983,7 +3983,7 @@ mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ] 3040 
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 1300 1250 1825 2050 2550 2775 4600 4600 4600 4600
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
-1500 1833.333 2083.333 5291.667 3850 3943.125 6045.5 7674.75 7831.375 16583.3
+750 366.667 416.667 881.945 962.5 1971.563 3022.75 5116.5 7831.375 16583.3
 mum_OTA   10 # Vertebrate growth rates for Otarids [ mg N d-1 ] ## prev 10 13 21.07 28.82 38.57 51.14 67.58 89.22 117.81 155.60
 4856.857 7534.65 11215.367 11766.617 12096.9 12299.217 12425.983 8338.033 8373.177 8115.523
 mum_CHO   10 ## 0.02 0.11 0.42 0.80 1.29 1.93 2.73 3.73 5.00 6.60
@@ -4093,7 +4093,7 @@ li_a_GCR    0.53179259    # Coefficient of allometic length-weight relation for 
 li_a_BRC    0.00839310    # Coefficient of allometic length-weight relation for Breca [ Number ]
 li_a_VID    0.00523585    # Coefficient of allometic length-weight relation for Vidriola [ Number ]
 li_a_ORO    0.06883698          # Coefficient of allometic length-weight relation for Orange Roughy [ Number ]
-li_a_ALF    0.07147389        	# Coefficient of allometic length-weight relation for Alfonsino [ Number ]
+li_a_ALF    0.07147389         # Coefficient of allometic length-weight relation for Alfonsino [ Number ]
 li_a_ANG    0.00470168   	# Coefficient of allometic length-weight relation for Anguila [ Number ]
 li_a_OTA    3.88353881   	# Coefficient of allometic length-weight relation for Otariid [ Number ]
 li_a_LPF    0.02835469   	# Coefficient of allometic length-weight relation for Large pelagic fish [ Number ]
@@ -4479,9 +4479,9 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   5e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   5e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   3e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   4e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
