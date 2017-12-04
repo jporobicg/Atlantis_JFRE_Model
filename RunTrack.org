@@ -13950,3 +13950,58 @@ increased from 0 to 0.0005
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6261
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+***** LZO
+- from : 5e-4
+- to : 4e-4
+***** ORO
+- from : 1e-10 1e-10
+- to : 2e-10 1e-10
+***** MZO
+- from 5e-4
+- to : 3e-4
+***** SZO
+- from : 5e-4
+- to : 1e-4
+*** Pprey
+**** MPF on MSZO
+- from 0.01
+- to 0.007
+*** Mum
+**** LBF
+1) from : 750 366.667 416.667 881.945 962.5 1971.563 3022.75 5116.5 7831.375 16583.3
+2) to : 500 81.482 92.593 195.988 213.889 657.188 2015.167 3411 6024.135 16583.3
+**** MZO
+- from : 0.009
+- to : 0.0093
+**** LPH
+- from : 0.008
+- to : 0.0085
+**** LPF
+- from : 166.667 3166.7 3541.7 3402.833 3833.333 5531.25 4172.625 3677.125 3765.333 3486.407
+- to : 111.111 703.711 983.806 850.708 958.333 1382.813 1043.156 1021.424 1045.926 968.446
+**** SBF
+- from : 1300 1250 1825 2050 2550 2775 4600 4600 4600 4600
+- to : 325 156.25 182.5 205 255 277.5 383.333 383.333 383.333 383.333
+**** ALF
+- from : 284.1875 393.1575 407.6467 524.1467 622.0 706.23 621.7667 503.0 532.375 365.9063
+- to : 71.047 65.526 67.941 131.037 207.333 353.115 345.426 279.444 295.764 243.938
+**** SPF
+- from : 13.889 324.383 542.45 611.533 681.617 865.5 892.1 907.04 915.54 1144.425
+- to : 1.736 64.877 108.49 122.307 136.323 173.1 178.42 181.408 183.108 228.885
+**** MPF
+- from : 1520 205.833 304.777 299.746 282.152 386.108
+- to : 1520 172 152 120 94 129
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+*** Efficiency
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171204185419
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171204185419.png]]
