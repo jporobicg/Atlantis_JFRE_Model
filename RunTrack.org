@@ -14005,3 +14005,12 @@ increased from 0 to 0.0005
  - Biomasss Plot
 #+CAPTION: Biomass plot for the simulation 20171204185419
 [[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171204185419.png]]
+* Run PC-Demiurgo 20171205084959
+  - Run start: 2017-12-05 08:49:59
+  - Run end: 2017-12-05 15:30:29
+  - log file : [[file:Calibration/20171205153029.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6261
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
