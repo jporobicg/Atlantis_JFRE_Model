@@ -24,11 +24,11 @@ readin_popratio 0 # Switch to indicate whether loading pre-existing age distribu
 flagresp 0 	 # Switch to turn fish respiration on/off: off=0, on=1 1
 
 flagavgmig     0 # Switch to turn averaging of migrant sizes on/off: off=0, on=1 1
-flagkdrop      0 # Switch to turn cubic bacterial growth on/off: off=0, on=1 0
+flagkdrop      0 # Switch to turn cubic bacterial growth on/off: off = 0, on=1 0
 flagbactstim   0 # Switch to turn stimulation of bacterial growth on/off: off=0, on=1 0
-flagBOlim      1 # Switch to turn OB population limitation on/off: off=0, on=1 0
-flagBDlim      1 # Switch to turn BD population limitation on/off: off=0, on=1 0
-flagBGlim      1 # Switch to turn BG population limitation on/off: off=0, on=1 -1 0
+flagBOlim      1 # Switch to turn OB population limitation on/off: off = 0, on=1 0
+flagBDlim      1 # Switch to turn BD population limitation on/off: off = 0, on=1 0
+flagBGlim      1 # Switch to turn BG population limitation on/off: off = 0, on=1 -1 0
 flagBFlim      1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBFSlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
 flagBFDlim     1 # Switch to identify filter feeding crowding used: simple=0, ERSEM=1 0
@@ -1441,7 +1441,7 @@ min_channel_depth 0.001        Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.0085  # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.0084  # Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_SPH_T15  0.01    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4       # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
@@ -3979,7 +3979,7 @@ mum_LPF   10 # Vertebrate growth rates for Large pelagic fish [ mg N d-1 ]
 mum_SPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
 1.736 64.877 108.49 122.307 136.323 173.1 178.42 181.408 183.108 228.885
 mum_MPF   10 # Vertebrate growth rates for Small pelagic fish [ mg N d-1 ]
-1520 68.8 50.667 21.818 13.429 16.125
+1520 34.4 14.476 4.364 2.686 3.225
 mum_SBF   10 # Vertebrate growth rates for Small benthic fish [ mg N d-1 ]
 216.667 26.042 30.417 34.167 42.5 46.25 63.889 63.889 63.889 63.889
 mum_LBF   10 # Vertebrate growth rates for Large benthic fish [ mg N d-1 ]
