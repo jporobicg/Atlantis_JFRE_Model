@@ -1433,16 +1433,16 @@ salt_correction_PB  1.0
 salt_correction_BB  1.0
 
 ## Tolerances and boundaries
-RelTol            0.1          Relative tolerance of the adaptive differentiation scheme 0.1
-Flux_tol          0.2          Tolerance of mass balance assumption per cell mg N m-3 0.1
-min_pool          0.00000001   Minimum pool size 0.00000001 mg N m-3
-min_dens          0.0001       Minimum density of top predators and fish 0.0001
-min_channel_depth 0.001        Minimum depth of estuarine channels
+RelTol            0.1          # Relative tolerance of the adaptive differentiation scheme 0.1
+Flux_tol          0.2          # Tolerance of mass balance assumption per cell mg N m-3 0.1
+min_pool          0.00000001   # Minimum pool size 0.00000001 mg N m-3
+min_dens          0.0001       # Minimum density of top predators and fish 0.0001
+min_channel_depth 0.001        # Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.0084  # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.01    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.007   # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.0095    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4       # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
@@ -4453,7 +4453,7 @@ VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 2e-10 1e-10
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
-4e-10 1e-09
+7e-10 1e-09
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 1e-9 1e-05
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]

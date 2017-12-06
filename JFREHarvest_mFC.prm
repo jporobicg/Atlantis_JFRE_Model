@@ -255,17 +255,17 @@ PotOCT_selcurve		0	## What form of selectivity (1-6) start the fishery: Pot-trap
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 flagdiscard_SPL	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forSpiny lobster
-1 0 0 0 0 0 0 0 0 0 0 0 0
+4 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_GCR	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forGolden Crab
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 4 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_BRC	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forBreca
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_VID	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forVidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_ORO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forOrange Roughy
-0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 4 0 0
 flagdiscard_ALF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAlfonsino
-0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 4 0 0
 flagdiscard_ANG	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAnguila
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_CHO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forChondrichtyans
@@ -1546,77 +1546,78 @@ DiscardTS_agedistribLBF	10	##  Discard by age distribution forLarge benthic fish
 
 ##    1 | 2   | 3   | 4	  | 5	| 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29 | 30 | 31 | 32 | 33 | 34
 ##  SPL | GCR | BRC | VID | ORO | ALF | ANG | CHO | OTA | DOL | BIR | SQD | OCT | LPF | SPF | SBF | MPF | LBF | SZO | MZO | LZO | SCR | BFF | LPH | SPH | COR | SUR | MOL | MA | PB | BB | DL | DR | DC |
-FCcocatchSPL  	34	## Proportional discarding based on catch of another species Spiny lobster
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.000001 0 0 0 0.000001 0 0 0 0 0 0 0 0
-FCcocatchGCR	34	## Proportional discarding based on catch of another species Golden Crab
+FCcocatchSPL	34	##	Proportional	discarding	based	on	catch	of	another	species	Spiny	lobster
+0 0 0 0 0 0 0 0 0 0 0 0 0.0022819915 0 0 0 0 0 0 0 0 9.37093968823075E-005 3.28664383160465E-007 0 0 4.66256908116045E-006 4.55956236363657E-005 8.21025151646731E-006 0 0 0 0 0 0
+FCcocatchGCR 34 ## Proportional discarding based on catch of another species Golden Crab
+0 0 0 0 0 0 0 0 0 0 0 0 0.0022819915 0 0 0 0 0 0 0 0 9.37093968823075E-005 3.28664383160465E-007 0 0 4.66256908116045E-006 4.55956236363657E-005 8.21025151646731E-006 0 0 0 0 0 0
+FCcocatchBRC 34 ## Proportional discarding based on catch of another species Breca
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchBRC	34	## Proportional discarding based on catch of another species Breca
+FCcocatchVID 34 ## Proportional discarding based on catch of another species Vidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchVID	34	## Proportional discarding based on catch of another species Vidriola
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchORO	34	## Proportional discarding based on catch of another species Orange Roughy
+FCcocatchORO 34 ## Proportional discarding based on catch of another species Orange Roughy
 0 0 0 0 0 0 0 0.002 0 0 0 0 0 0 0 0 0 0 0 0 0 0.013 0.013 0 0 0.1 0 0 0 0 0 0 0 0
-FCcocatchALF	34	## Proportional discarding based on catch of another species Alfonsino
+FCcocatchALF 34 ## Proportional discarding based on catch of another species Alfonsino
 0 0 0 0 0 0 0 0.002 0 0 0 0 0 0 0 0 0 0 0 0 0 0.013 0.013 0 0 0.1 0 0 0 0 0 0 0 0
-FCcocatchANG	34	## Proportional discarding based on catch of another species Anguila
+FCcocatchANG 34 ## Proportional discarding based on catch of another species Anguila
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchCHO	34	## Proportional discarding based on catch of another species Chondrichtyans
+FCcocatchCHO 34 ## Proportional discarding based on catch of another species Chondrichtyans
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchOTA	34	## Proportional discarding based on catch of another species Otariid
+FCcocatchOTA 34 ## Proportional discarding based on catch of another species Otariid
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchDOL	34	## Proportional discarding based on catch of another species Dophins
+FCcocatchDOL 34 ## Proportional discarding based on catch of another species Dophins
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchBIR	34	## Proportional discarding based on catch of another species Birds
+FCcocatchBIR 34 ## Proportional discarding based on catch of another species Birds
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSQD	34	## Proportional discarding based on catch of another species Squids
+FCcocatchSQD 34 ## Proportional discarding based on catch of another species Squids
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchOCT	34	## Proportional discarding based on catch of another species Octupus
+FCcocatchOCT 34 ## Proportional discarding based on catch of another species Octupus
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchLPF	34	## Proportional discarding based on catch of another species Large pelagic fish
+FCcocatchLPF 34 ## Proportional discarding based on catch of another species Large pelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSPF	34	## Proportional discarding based on catch of another species Small pelagic fish
+FCcocatchSPF 34 ## Proportional discarding based on catch of another species Small pelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSBF	34	## Proportional discarding based on catch of another species Small benthic fish
+FCcocatchSBF 34 ## Proportional discarding based on catch of another species Small benthic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchMPF	34	## Proportional discarding based on catch of another species Mesopelagic fish
+FCcocatchMPF 34 ## Proportional discarding based on catch of another species Mesopelagic fish
+0 0 0 0 0 0 0 0 0 0 0 0	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+FCcocatchLBF 34 ## Proportional discarding based on catch of another species Large benthic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchLBF	34	## Proportional discarding based on catch of another species Large benthic fish
+FCcocatchSZO 34 ## Proportional discarding based on catch of another species Small Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSZO	34	## Proportional discarding based on catch of another species Small Zooplankton
+FCcocatchMZO 34 ## Proportional discarding based on catch of another species Medium Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchMZO	34	## Proportional discarding based on catch of another species Medium Zooplankton
+FCcocatchLZO 34 ## Proportional discarding based on catch of another species Large Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchLZO	34	## Proportional discarding based on catch of another species Large Zooplankton
+FCcocatchSCR 34 ## Proportional discarding based on catch of another species Small crustaceans
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSCR	34	## Proportional discarding based on catch of another species Small crustaceans
+FCcocatchBFF 34 ## Proportional discarding based on catch of another species Deposit feeders
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchBFF	34	## Proportional discarding based on catch of another species Deposit feeders
+FCcocatchLPH 34 ## Proportional discarding based on catch of another species Large phytoplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchLPH	34	## Proportional discarding based on catch of another species Large phytoplankton
+FCcocatchSPH 34 ## Proportional discarding based on catch of another species Small phytoplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSPH	34	## Proportional discarding based on catch of another species Small phytoplankton
+FCcocatchCOR 34 ## Proportional discarding based on catch of another species Coral
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchCOR	34	## Proportional discarding based on catch of another species Coral
+FCcocatchSUR 34 ## Proportional discarding based on catch of another species Sea Urchin
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchSUR	34	## Proportional discarding based on catch of another species Sea Urchin
+FCcocatchMOL 34 ## Proportional discarding based on catch of another species Mollusca
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0	0 0
+FCcocatchMA 34 ## Proportional discarding based on catch of another species Macroalgae
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchMOL	34	## Proportional discarding based on catch of another species Mollusca
+FCcocatchPB 34 ## Proportional discarding based on catch of another species Pelagic Bacteria
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchMA	34	## Proportional discarding based on catch of another species Macroalgae
+FCcocatchBB 34 ## Proportional discarding based on catch of another species Sediment Bacteria
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchPB	34	## Proportional discarding based on catch of another species Pelagic Bacteria
+FCcocatchDL 34 ## Proportional discarding based on catch of another species Labile detritus
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchBB	34	## Proportional discarding based on catch of another species Sediment Bacteria
+FCcocatchDR 34 ## Proportional discarding based on catch of another species Refractory detritrus
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchDL	34	## Proportional discarding based on catch of another species Labile detritus
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchDR	34	## Proportional discarding based on catch of another species Refractory detritrus
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchDC	34	## Proportional discarding based on catch of another species Carrion
+FCcocatchDC 34 ## Proportional discarding based on catch of another species Carrion
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
+
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
-q_SPL	13	## Catchability per fisherySpiny lobster
+q_SPL	13    	## Catchability per fisherySpiny lobster
 1 0 0 0 0 0 0 0 0 0 0 0 0
 q_GCR	13	## Catchability per fisheryGolden Crab
 0 1 0 0 0 0 0 0 0 0 0 0 0

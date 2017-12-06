@@ -3109,7 +3109,7 @@ In this secction I use the data form the Database to get the number of organism 
 | 2008 | 0.27992799 | 0.000767 | 116.5806733744 |         |
 | 2009 | 0.08610861 | 0.000236 |  35.8708865686 |         |
 
-**** Total Catch Bait
+**** Total Bait Catch
 - To get the total bait catch I extrapolate the values of catch per trip to the total of trips by season.
   - I used the catch per trip from the Data base
   - The trips per season where obtained from the Marine traphic control logbook.
@@ -3188,21 +3188,128 @@ In this secction I use the data form the Database to get the number of organism 
 #+END_SRC
 #+RESULTS:
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Season.png]]
-   #+CAPTION: Bait catch per season
+ #+CAPTION: Bait catch per season
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Year_Island.png]]
-   #+CAPTION: Bait catch per year and Island
+ #+CAPTION: Bait catch per year and Island
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Catch_per_Year.png]]
-   #+CAPTION: Total Bait catch per year in the JFRE
+ #+CAPTION: Total Bait catch per year in the JFRE
 **** Bycatch and Discars
 ***** Discards
 ****** Industrial
- - cada tonelada de descarte se tiene una tonelada de peces de desembarcados \cite{yAñes 2008}
+ - Cada tonelada de descarte se tiene una tonelada de peces de desembarcados \cite{yAñes 2008}
    - Has effect on Coral ans sesils epifauna
  - The 98.85% of the catch per tow correspond to Rorange roughy (The rest are fishes)
    - almost the 11 % of the catch is coral (But decrease with time) \cite{Anderson2003}
      - Other species 1.3 % (This can be BFF)
      - Species like CHo can be almost the 0.2% of the catch
  - The 98.96% of the catch per tow correspond to alfosnino (The rest are fishes)
+****** Artisanal
+ - To stimate te total bycatch I used the same approach that one used for the estimation of bait catch
+ - I multiply the number of trips by the bycatch per trips
+#+BEGIN_SRC R :results output
+  rm(list = ls())
+  library(ascii)
+  options(asciiType = "org")
+  library(ggplot2)
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  ## Reading data
+  lc     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/Bycatch/Bycatch.csv')
+  tr     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/trips_by_season.csv')
+  weight <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/Bycatch/weight.csv')
+  ##~ FUNCTIONAL GROUPS
+  lc    <- FG(data = lc, column = 6)
+  lc    <- na.omit(lc)        #  Remove Empty rows
+  ##
+  ##~ By season
+  lc$Season <- with(lc,  ifelse(Month %in% c(1, 2, 3), 1, ifelse(Month %in% c(4, 5, 6), 2,
+                                                          ifelse(Month %in% c(7, 8, 9), 3, 4))))
+  tr$Season <- with(tr,  ifelse(Month %in% c(1, 2, 3), 1, ifelse(Month %in% c(4, 5, 6), 2,
+                                                          ifelse(Month %in% c(7,8,9),   3, 4))))
+  ## get everything in numbers
+  w.pos <- which(lc$Units %in% c('p', 'P'))
+  for( w in w.pos){
+      fg.pos       <- which(weight$FG %in% lc$FG[w])
+      lc$Volume[w] <- lc$Volume[w] / weight$weight[fg.pos]
+      if(is.na(lc$Volume[w])) stop( lc$FG[w])
+  }
+  ## Total number of trips by Year (Information from the marine trafic control)
+  tr        <- na.omit(tr)        #  Remove Empty rows
+  glob.trip <- by(tr$trips, list(tr$Year, tr$Island, tr$Season), sum, na.rm = TRUE)
+  trip      <- data.frame(Year   = with(tr, rep(unique(Year), length(unique(Island)) * length(unique(Season)))),
+                          Season = with(tr, sort(rep(unique(Season), length(unique(Year)) * length(unique(Island))))),
+                          Island = with(tr, rep(sort(rep(unique(Island), length(unique(Year)))), length(unique(Season)))),
+                          trips  = do.call(rbind,  as.list(glob.trip)))
+  ## Total trips per Season and Island
+  t.trip <- na.omit(trip)
+  lc$Total_unit <- lc$Volume
+  ## Functional groups bait cahtch
+  lc.FG <- split(lc, paste(lc$Year, lc$Island))
+  ## list of catch per trip by season and by FG
+  CpT         <- as.data.frame(do.call(rbind, lapply(lc.FG, sumry)), rownames = FALSE)
+  CpT$TC.numb <- NA
+  for(i in 1 : nrow(t.trip)){
+      post              <- which(CpT$Year == t.trip$Year[i] & CpT$Season == t.trip$Season[i] & CpT$Island == as.character(t.trip$Island[i]))
+      CpT$TC.numb[post] <- CpT$cperT[post] * t.trip$trips[i]
+  }
+  CpT$TC.weight <- NA
+  for( i in 1 : nrow(weight)){
+      post                  <- which(CpT$FG %in% weight$FG[i])
+      CpT$TC.weight[post]   <- CpT$TC.numb[post] * weight$weight[i]  / 1000000 # passing direct to tonnes
+  }
+  ## CAtch per season
+  CpT <- na.omit(CpT)
+  png('img/Bycatch_per_Season.png', height = 1000, width = 1000)
+  sp <- ggplot(data = CpT, aes(Season, TC.weight, group = 1))+ geom_point() + geom_smooth(method = "lm", color = 'red')
+  sp + facet_wrap(~FG + Island, ncol = 4, scales = 'free_y')
+  #sp
+  invisible(dev.off())
+  ## Catch per YEar and island
+  tmp   <- lapply(split(CpT, paste(CpT$Year, CpT$Island, CpT$FG)), function(x) sum(x$TC.weight))
+  cat.w <- data.frame(matrix(unlist(strsplit(names(tmp), ' ')), ncol = 3, byrow = TRUE))
+  cat.w$Catch.W <- c(unlist(tmp))
+  colnames(cat.w)[1 : 3] <- c('Year', 'Island', 'FG')
+  png('img/Bycatch_per_Year_Island.png', height = 1000, width = 1000)
+  sp <- ggplot(data = cat.w, aes(Year, Catch.W, group = 1))+ geom_point() + geom_smooth(method = "lm", color = 'red')
+  sp + facet_wrap(~FG + Island, ncol = 4, scales = 'free_y')
+  #sp
+  invisible(dev.off())
+  ## Total Catch per year
+  cat.w <- na.omit(cat.w)
+  tmp <- lapply(split(cat.w, paste(cat.w$Year, cat.w$FG)), function(x) sum(x$Catch.W))
+  catch.year <- data.frame(matrix(unlist(strsplit(names(tmp), ' ')), ncol = 2, byrow = TRUE))
+  catch.year$Total <- c(unlist(tmp))
+  colnames(catch.year)[1 : 2] <- c('Year', 'FG')
+  png('img/Total_Bycatch_per_Year.png', height = 1000, width = 1000)
+  sp <- ggplot(data = catch.year, aes(Year, Total, group = 1))+ geom_line() #+ geom_smooth(method = "lm", color = 'red')
+  sp + facet_wrap(~FG , ncol = 4, scales = 'free_y') + labs(y = 'Total catch [Tons]', x = 'Years')
+  #sp
+  invisible(dev.off())
+  catch.year <- catch.year[order(catch.year$FG, catch.year$Year), ]
+  tab.out <- xtabs(Total ~ FG + Year, catch.year)
+  write.table(catch.year, '/home/demiurgo/Documents/PhD/Harvest/catch.sp/Bycatch/Bycatch_out.csv')
+  cap    <- 'Total Bycatch Tons per Year'
+  c       <- ascii(tab.out, header=T,  include.rownames = TRUE, include.colnames = T, caption = cap)
+  print(c)
+#+END_SRC
+#+RESULTS:
+#+CAPTION: Total Bycatch Tons per Year
+|      |     | *Year* |      |      |      |      |
+|      |     | 2011   | 2012 | 2013 | 2014 | 2015 |
+|------+-----+--------+------+------+------|------|
+| *FG* | BFF | 0.00   | 0.01 | 0.01 | 0.00 | 0.00 |
+|      | COR | 0.00   | 0.02 | 0.12 | 0.02 | 0.59 |
+|      | MOL | 0.02   | 0.15 | 0.04 | 0.26 | 0.03 |
+|      | OCT | 0.00   | 0.08 | 0.69 | 1.34 | 1.54 |
+|      | SCR | 0.08   | 3.05 | 2.71 | 2.71 | 0.82 |
+|      | SUR | 0.00   | 0.23 | 0.31 | 0.26 | 0.12 |
+
+#+RESULTS:
+ [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Bycatch_per_Season.png]]
+ #+CAPTION: Bait catch per season
+ [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Bycatch_per_Year_Island.png]]
+ #+CAPTION: Bait catch per year and Island
+ [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Bycatch_per_Year.png]]
+ #+CAPTION: Total Bait catch per year in the JFRE
 *** Solar radiation
 - I se the information irradiance from [[http://www.soda-pro.com/web-services/radiation/nasa-sse][soda]]
 - The model use rewind of the data
