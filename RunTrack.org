@@ -14040,3 +14040,40 @@ increased from 0 to 0.0005
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6261
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+***** ALF
+- from : 4e-10 1e-09
+- to : 7e-10 1e-09
+*** Pprey
+*** Mum
+**** MPF
+- 1520 68.8 50.667 21.818 13.429 16.125
+- 1520 34.4 14.476 4.364 2.686 3.225
+**** LPH
+- from: 0.0085
+- to : 0.007
+**** SPH
+- from: 0.01
+- to : 0.0095
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+*** Efficiency
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20171206095807
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20171206095807.png]]
+* Run PC-Demiurgo 20171207120836
+  - Run start: 2017-12-07 12:08:36
+  - Run end: 2017-12-07 18:38:14
+  - log file : [[file:Calibration/20171207183814.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6261
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv

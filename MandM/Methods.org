@@ -1880,7 +1880,7 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
      | MPF               |       81.71 |       216.53 |
 
 ***** Estimation of Clearance
-  I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
+      I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
   #+BEGIN_SRC R :results output
     library(ascii)
     library(ggplot2)
@@ -1924,14 +1924,13 @@ But for the final calibration I will use the values from OSMAN in 2007 31633 lob
   | LBF | 91.93  | 113.55 | 141.53 | 163.87 | 191.05 | 235.31 | 272.21 | 295.86 | 331.94 | 370.96 |
   | LPF | 14.39  | 101.53 | 172.50 | 213.82 | 235.53 | 246.48 | 251.90 | 254.56 | 255.86 | 256.49 |
   | MPF | 9.81   | 13.06  | 13.66  | 13.76  | 13.78  | 13.78  |        |        |        |        |
-  | ORO | 1.80   | 11.25  | 22.09  | 31.62  | 38.12  | 42.31  | 44.91  | 46.51  | 47.46  | 48.04  |
+  | ORO | 2.59   | 16.20  | 31.81  | 45.53  | 54.89  | 60.92  | 64.67  | 66.97  | 68.35  | 69.17  |
   | OTA | 175.96 | 242.84 | 300.52 | 348.19 | 386.54 | 416.85 | 440.52 | 458.85 | 472.94 | 483.74 |
   | SBF | 47.94  | 71.63  | 100.05 | 141.74 | 188.87 | 256.62 | 300.12 | 406.55 | 475.32 | 549.46 |
   | SPF | 10.15  | 46.63  | 100.30 | 149.76 | 190.13 | 221.14 | 244.16 | 260.90 | 272.91 | 281.44 |
   | SPL | 1.90   | 2.28   | 2.70   | 3.15   | 3.71   | 4.18   | 4.67   | 5.10   | 5.56   | 6.03   |
   | VID | 67.01  | 88.68  | 120.00 |        |        |        |        |        |        |        |
 #+end_example
-
   #+ATTR_HTML: width="600" alt="image"
    [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]
    @<br style="clear:both;" />
