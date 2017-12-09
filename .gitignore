@@ -7,3 +7,5 @@ Inputs/Forcing_Hydro/JFRE_hydro.nc
 /Calibration/*
 /Inputs/Forcings/*
 /MandM/FG_connect.nc
+Inputs/Larval_disp/Burn.nc
+Inputs/Larval_disp/FG_connect_Burn.nc
