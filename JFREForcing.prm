@@ -36,7 +36,10 @@ salt_rewind     1
 use_larvalfiles 1
 larval_rewind   1
 Larval0.name 	Inputs/Larval_disp/FG_connect.nc
-
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~               Larval Recruitment Deviations            ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+Recruitment_enviro_forcing Inputs/Forcings/SPL_rec_dev.ts
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~        Solar radiation     ~ ##

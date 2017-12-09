@@ -61,7 +61,7 @@ flagroc              	   0         		    ## Density dependent drop off option: 0
 flaghomog_sp         	   1         		    ## Body condition homogenised across the entire area: 0 = no, 1 = yes 0
 flagagestruct        	   1         		    ## Age structure option: 0 = homogeneous cohorts, 1 = track cohorts 0
 flagsenesce          	   1         		    ## Oldest sub-part of final age group senesces, 1 = yes, 0 = no 0
-flagtsforcerecruit   	   0         		    ## Force recruitment of 1+ groups with environmental forcing 0
+flagtsforcerecruit   	   1         		    ## Force recruitment of 1+ groups with environmental forcing 0
 lim_sun_hours        	   1         		    ## Whether using limted hours of sun per day or the default assumption of half the day is "day"
 flag_macro_model    	   0
 swr_scalar           	   0.45			    ## Proportion of shortwave radiation available to photosynthesis
@@ -3362,12 +3362,13 @@ KHTI            1.5    # Factor handother deep demersal time increased by for re
 ## ~       PPrey Matrix   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
+##     SPL GCR BRC VID ORO ALF ANG CHO OTA DOL BIR SQD OCT LPF SPF SBF MPF LBF SZO MZO LZO SCR BFF LPH SPH COR SUR MOL MA PB BB DL DR DC DLsed DRsed DCsed
 pPREY1SPL1  37
-0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0.01 0.001 0 0.001 0.025 0.05 0.005 0 0 0.001 0.001 0 0 0 0
+0 0 0.001 0 0 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0.05 0.05 0.075 0.05 0.01 0.001 0 0.001 0.05 0.05 0.005 0 0 0.001 0.001 0 0 0 0
 pPREY2SPL1  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0.01 0.001 0 0.001 0.001 0.001 0.001 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0.01 0.01 0.01 0.001 0 0.001 0.005 0.001 0.001 0 0 0 0 0 0 0 0
 pPREY1SPL2  37
-0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0.1 0.001 0 0.01 0.01 0.1 0.007 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 0.01 0.01 0 0.001 0 0 0 0.05 0.1 0.001 0 0.01 0.07 0.1 0.007 0 0 0 0 0 0 0 0
 pPREY2SPL2  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0.01 0 0 0 0 0 0.1 0.1 0.001 0 0.01 0.05 0.1 0.005 0 0 0 0 0 0 0 0
 pPREY1GCR1  37
@@ -3509,7 +3510,7 @@ pPREYCOR  37
 pPREYSUR  37
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.005 0 0 1e-04 0 0 0.05 0 0 0 5e-04 0 0.005 0.001 0
 pPREYMOL  37
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 00
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.01 0.001 0 0.005 0.013 0.1 0.001 1e-04 5e-04 0 0 1e-06 0.005 0 0 0 0 0
 
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
@@ -3797,7 +3798,7 @@ C_MZO_T15   0.009 #0.01   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 
 C_LZO_T15   0.017 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-C_SUR_T15   0.003   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
+C_SUR_T15   0.001   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
 C_MOL_T15   0.003   #  Clearance rate for Mollusca [ m3(mg N)-1 d-1 ]
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
@@ -4388,7 +4389,7 @@ KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
 0 0
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
-0.00005 0.0001
+0 0
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
 0.000001 0.0001
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
@@ -4443,9 +4444,9 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-1e-9 1e-8
+7e-10 1e-8
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
-1e-9 8e-6
+1e-9 1e-8
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
 1e-09 5e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
@@ -4471,9 +4472,9 @@ SPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 MPF_mQ   2 #  Quad. mortality rate of Small pelagic fish [ d-1 ]
 3e-10 1e-10
 SBF_mQ   2 #  Quad. mortality rate of Small benthic fish [ d-1 ]
-1e-8 5e-8
+1e-8 8e-8
 LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
-2e-9 1e-6
+7e-9 5e-6
 
 ## Invertebrates
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
@@ -4481,7 +4482,7 @@ SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
 SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   3e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   4e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+LZO_mQ   4.5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
@@ -5202,7 +5203,7 @@ KDENR_COR 1
 
 # Beverton-Holt recruitmen
 BHalpha_SPL   1e+8             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
-BHalpha_GCR   96342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
+BHalpha_GCR   5342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   6e+9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
@@ -5219,7 +5220,7 @@ BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   5e+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   1e+08       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_GCR   1e+06       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
 BHbeta_ORO   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
