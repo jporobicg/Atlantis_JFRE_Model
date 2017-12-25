@@ -5203,7 +5203,7 @@ KDENR_COR 1
 
 # Beverton-Holt recruitmen
 BHalpha_SPL   1e+8             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
-BHalpha_GCR   5342809735    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
+BHalpha_GCR   5.3E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   6e+9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
