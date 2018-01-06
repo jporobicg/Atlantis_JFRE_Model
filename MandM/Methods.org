@@ -3685,6 +3685,23 @@ In this secction I use the data form the Database to get the number of organism 
   nc.file     <- "/home/demiurgo/Documents/PhD/Ini_conditions/JFRE.ini.nc"
   make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 #+END_SRC
+* Running Atlantis
+*** Burning period
+- The burning period that was setted for the model was 31 years. During this time most
+  of the functional groups reached and stable age distribution.
+**** General Changes
+- Days 11306 for the burning period (almos 31 years)
+- All the Forcing files were replicated 31 years for the bigining of the
+  simulation.  I repeated the infomation for :
+  - Recruitment Conectivity
+  - Hidrodaynamic : Fluxes of nutrients, temperature and salinity
+  - Eddies by box
+  - Solar radiation
+**** Fisheries
+ - In the JFRE all the artisanal fisheries start almost in 1900 except GCR. To
+   represent this I start the model under an exploitation state. I start all the
+   fisheries 6 years before the start of the model,  that provides and age
+   distribution very similar to the one reported in the JFRE MPA model
 * Dietary analysis (DNA)
 ** NGS
       I will use NGS for the analysis of the dietary relationship between the functional groups
