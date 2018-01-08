@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="Materials and Methods for the JFRE Atlantis model"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2017-12-06T18:04+1100"/>
+<meta name="generated" content="2018-01-08T15:58+1100"/>
 <meta name="author" content="Javier Porobic"/>
 <meta name="description" content="This document Contain all the steps that I took to build the Atlantis Model for the Juan Fernandez Ridge Ecosystem"/>
 <meta name="keywords" content="Juan Fernandez Ridge ecosystem, Atlantis, Ecosystem-based fisheries management"/>
@@ -345,17 +345,29 @@ for the JavaScript code below.
 <li><a href="#sec-5-4">Initial conditions file</a></li>
 </ul>
 </li>
-<li><a href="#sec-6">Dietary analysis (DNA)</a>
+<li><a href="#sec-6">Running Atlantis</a>
 <ul>
-<li><a href="#sec-6-1">NGS</a>
+<li>
 <ul>
-<li><a href="#sec-6-1-1">Procedure</a></li>
-<li><a href="#sec-6-1-2">Results</a></li>
+<li><a href="#sec-6-1">Burning period</a>
+<ul>
+<li><a href="#sec-6-1-1">General Changes</a></li>
+<li><a href="#sec-6-1-2">Fisheries</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </li>
-<li><a href="#sec-6-2">Cost DNA procedure</a></li>
-<li><a href="#sec-6-3">Functional groups</a></li>
-<li><a href="#sec-6-4">Clasification and samples</a></li>
+<li><a href="#sec-7">Dietary analysis (DNA)</a>
+<ul>
+<li><a href="#sec-7-1">NGS</a>
+<ul>
+<li><a href="#sec-7-1-1">Procedure</a></li>
+<li><a href="#sec-7-1-2">Results</a></li>
+</ul>
+</li>
+<li><a href="#sec-7-2">Cost DNA procedure</a></li>
+<li><a href="#sec-7-3">Functional groups</a></li>
+<li><a href="#sec-7-4">Clasification and samples</a></li>
 </ul>
 </li>
 </ul>
@@ -1812,10 +1824,133 @@ print(b)
 <ul>
 <li>I used the values form aguayo 1971 for the starting values (750).
 </li>
+<li>But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
+</li>
 </ul>
 
-<p>But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption>Abundance of furseals for the Juan Fernandez Archipalgo,  values are presented by island and for the entired archipelago. The values (*) These values were estimated using the proportion of abundance between island.</caption>
+<colgroup><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">Year</th><th scope="col" class="right">Robinson</th><th scope="col" class="right">Santa Clara</th><th scope="col" class="right">Selkirk</th><th scope="col" class="right">Archipelago</th><th scope="col" class="left">Source</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">1965</td><td class="right">*121</td><td class="right">*2</td><td class="right">200</td><td class="right">323</td><td class="left">Aguayo 1971</td></tr>
+<tr><td class="right">1969</td><td class="right">192</td><td class="right">*3</td><td class="right">267</td><td class="right">462</td><td class="left">Aguayo 1971</td></tr>
+<tr><td class="right">1970</td><td class="right">246</td><td class="right">4</td><td class="right">500</td><td class="right">750</td><td class="left">Aguayo 1971</td></tr>
+<tr><td class="right">1978</td><td class="right">512</td><td class="right">84</td><td class="right">1820</td><td class="right">2416</td><td class="left">Torres 1987a; 1987b</td></tr>
+<tr><td class="right">1982</td><td class="right">*953</td><td class="right">*156</td><td class="right">3480</td><td class="right">4589</td><td class="left">Torres 1987a; 1987b</td></tr>
+<tr><td class="right">1983</td><td class="right">1544</td><td class="right">497</td><td class="right">4318</td><td class="right">6359</td><td class="left">Torres 1987a; 1987b</td></tr>
+<tr><td class="right">1984</td><td class="right">1206</td><td class="right">368</td><td class="right">*3330</td><td class="right">4904</td><td class="left">CONAF</td></tr>
+<tr><td class="right">1987</td><td class="right">*1375</td><td class="right">*488</td><td class="right">4510</td><td class="right">6373</td><td class="left">Torres 2006 Fide Osman 2007</td></tr>
+<tr><td class="right">1998</td><td class="right">5837</td><td class="right">2898</td><td class="right">*18480</td><td class="right">27215</td><td class="left">CONAF</td></tr>
+<tr><td class="right">1999</td><td class="right">7142</td><td class="right">2595</td><td class="right">*20600</td><td class="right">30337</td><td class="left">CONAF</td></tr>
+<tr><td class="right">2000</td><td class="right">8503</td><td class="right">2890</td><td class="right">*14350</td><td class="right">25743</td><td class="left">CONAF</td></tr>
+<tr><td class="right">2001</td><td class="right">8729</td><td class="right">4114</td><td class="right">*16176</td><td class="right">29019</td><td class="left">CONAF</td></tr>
+<tr><td class="right">2003</td><td class="right">8080</td><td class="right">5113</td><td class="right">13941</td><td class="right">27134</td><td class="left">Osman 2007</td></tr>
+<tr><td class="right">2004</td><td class="right">9165</td><td class="right">*5155</td><td class="right">*18036</td><td class="right">32356</td><td class="left">Osman 2007</td></tr>
+<tr><td class="right">2005</td><td class="right">7253</td><td class="right">5110</td><td class="right">19270</td><td class="right">31633</td><td class="left">Osman 2007</td></tr>
+<tr><td class="right">2013</td><td class="right">40060</td><td class="right">20124</td><td class="right">*75803</td><td class="right">135987</td><td class="left">CONAF 2013</td></tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption>Proportion of abundace between islands. RC-SC,  is the abundance of the island Robinson Crusoe and Santa Clara combined.</caption>
+<colgroup><col class="left" /><col class="right" /><col class="right" /><col class="right" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Years</th><th scope="col" class="right">1960-1969</th><th scope="col" class="right">1970-1979</th><th scope="col" class="right">1980-1999</th><th scope="col" class="right">2000-2013</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">Robinson/Sta.Clara</td><td class="right">61.5</td><td class="right">6.0952380952</td><td class="right">2.8184783545</td><td class="right">1.7780241337</td></tr>
+<tr><td class="left">RC-SC/Selkirk</td><td class="right">0.6151685393</td><td class="right">0.3274725275</td><td class="right">0.4726725336</td><td class="right">0.7939562576</td></tr>
+</tbody>
+</table>
+
+
+
+<ul>
+<li id="sec-5-2-1-1-1-1">Estimation of abundance of OTA<br/>
+<ul>
+<li>I calculate de values of abudnace of the Juan fernandez furseal to have an idea how
+  the real abundance  of the population throug time.
+</li>
+</ul>
+
+
+
+
+<pre class="src src-R"><span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~                   CAlculate abundace of Otarids for JF                 ~ ##</span>
+<span style="color: #696969;">## </span><span style="color: #696969;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##</span>
+<span style="color: #696969;">##</span>
+<span style="color: #ff4500; font-weight: bold;">source</span>(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">reading data</span>
+ota <span style="color: #ff4500; font-weight: bold;">&lt;-</span> read.csv(<span style="color: #ffc125; font-weight: bold;">'/home/demiurgo/Documents/PhD/Functional_groups/Abundance/OTA/Ota.csv'</span>)
+n   <span style="color: #ff4500; font-weight: bold;">&lt;-</span> nrow(ota)
+<span style="color: #ff4500; font-weight: bold;">attach</span>(ota)
+<span style="color: #696969;">## </span><span style="color: #696969;">fit Exponential model</span>
+exp.Rob = nls(Robinson ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+exp.Sel = nls(Selkirk ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+exp.SC  = nls(Santa.Clara ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+exp.Ar  = nls(Archipelago ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+<span style="color: #696969;">## </span><span style="color: #696969;">Results</span>
+pred.exp.Rob <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.exp(Year, coef(exp.Rob)[1], coef(exp.Rob)[2])
+pred.exp.Sel <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.exp(Year, coef(exp.Sel)[1], coef(exp.Sel)[2])
+pred.exp.SC  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.exp(Year, coef(exp.SC)[1], coef(exp.SC)[2])
+pred.exp.Ar  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.exp(Year, coef(exp.Ar)[1], coef(exp.Ar)[2])
+<span style="color: #696969;">### </span><span style="color: #696969;">Ajuste del modelo</span>
+denso.Rob <span style="color: #ff4500; font-weight: bold;">&lt;-</span> nls(Robinson ~ mod.denso(Year, No, r, K), start = c(No = 200, r = 0.3, K = 8000))
+<span style="color: #696969;">## </span><span style="color: #696969;">denso.Sel &lt;- nls(Selkirk2 ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.07, K = 20000), trace = T, control = nls.control(maxiter = 1000, tol = 1e-04, minFactor = 1e-20,</span>
+<span style="color: #696969;">##                                                                                                                                  </span><span style="color: #696969;">printEval = FALSE, warnOnly = FALSE))</span>
+denso.SC  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> nls(Santa.Clara ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.2, K = 4000))
+denso.Ar  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> nls(Archipelago ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.2, K = 4000))
+pred.denso.Rob <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.denso(Year, coef(denso.Rob)[1], coef(denso.Rob)[2], coef(denso.Rob)[3])
+pred.denso.Sel <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.denso(Year, 7.076367e+02, 8.392129e-02, 6.532698e+10)
+pred.denso.SC  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.denso(Year, coef(denso.SC)[1], coef(denso.SC)[2], coef(denso.SC)[3])
+pred.denso.Ar  <span style="color: #ff4500; font-weight: bold;">&lt;-</span> mod.denso(Year, coef(denso.Ar)[1], coef(denso.Ar)[2], coef(denso.Ar)[3])
+<span style="color: #696969;">## </span><span style="color: #696969;">PLOT data</span>
+png(<span style="color: #ffc125; font-weight: bold;">'img/N_otarid.png'</span>, width = 900, height = 900)
+par(mfrow = c(2, 2))
+plot(Year, Robinson, pch = 21, bg = <span style="color: #ffc125; font-weight: bold;">'grey'</span>, col = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlim = c(1965, 2008), main = <span style="color: #ffc125; font-weight: bold;">'Robinson Crusoe'</span>,
+     ylab = <span style="color: #ffc125; font-weight: bold;">'Number of furseals'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Years'</span>)
+lines(Year, pred.exp.Rob, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"royalblue"</span>, lwd = 2)
+lines(Year, pred.denso.Rob, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"firebrick"</span>, lwd = 2)
+points(Year, Robinson2, pch = 21, col = 1, bg = <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Observed values'</span>, <span style="color: #ffc125; font-weight: bold;">'Estimated by proportion'</span>, <span style="color: #ffc125; font-weight: bold;">'exponential model'</span>, <span style="color: #ffc125; font-weight: bold;">'logistic model'</span>),
+       lty = c(<span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>, 1, 1), pch = c(19, 19, <span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>), col = c(<span style="color: #ffc125; font-weight: bold;">'grey'</span>, <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Santa clara</span>
+plot(Year, Santa.Clara, pch = 21, bg = <span style="color: #ffc125; font-weight: bold;">'grey'</span>, col = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlim = c(1965, 2008), main = <span style="color: #ffc125; font-weight: bold;">'Santa Clara'</span>,
+     ylab = <span style="color: #ffc125; font-weight: bold;">'Number of furseals'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Years'</span>)
+lines(Year, pred.exp.SC, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"royalblue"</span>, lwd = 2)
+lines(Year, pred.denso.SC, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"firebrick"</span>, lwd = 2)
+points(Year, Robinson2, pch = 21, col = 1, bg = <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Observed values'</span>, <span style="color: #ffc125; font-weight: bold;">'Estimated by proportion'</span>, <span style="color: #ffc125; font-weight: bold;">'exponential model'</span>, <span style="color: #ffc125; font-weight: bold;">'logistic model'</span>),
+       lty = c(<span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>, 1, 1), pch = c(19, 19, <span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>), col = c(<span style="color: #ffc125; font-weight: bold;">'grey'</span>, <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+<span style="color: #696969;">## </span><span style="color: #696969;">Selkirk</span>
+plot(Year, Selkirk, pch = 21, bg = <span style="color: #ffc125; font-weight: bold;">'grey'</span>, col = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlim = c(1965, 2008), main = <span style="color: #ffc125; font-weight: bold;">'Alejandro Selkirk'</span>,
+     ylab = <span style="color: #ffc125; font-weight: bold;">'Number of furseals'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Years'</span>)
+lines(Year, pred.exp.Sel, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"royalblue"</span>, lwd = 2)
+lines(Year, pred.denso.Sel, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"firebrick"</span>, lwd = 2)
+points(Year, Robinson2, pch = 21, col = 1, bg = <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Observed values'</span>, <span style="color: #ffc125; font-weight: bold;">'Estimated by proportion'</span>, <span style="color: #ffc125; font-weight: bold;">'exponential model'</span>, <span style="color: #ffc125; font-weight: bold;">'logistic model'</span>),
+       lty = c(<span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>, 1, 1), pch = c(19, 19, <span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>), col = c(<span style="color: #ffc125; font-weight: bold;">'grey'</span>, <span style="color: #ffc125; font-weight: bold;">'goldenrod'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+plot(Year, Archipelago, pch = 21, bg = <span style="color: #ffc125; font-weight: bold;">'grey'</span>, col = 1, bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>, xlim = c(1965, 2008), main = <span style="color: #ffc125; font-weight: bold;">'Archipelago'</span>,
+     ylab = <span style="color: #ffc125; font-weight: bold;">'Number of furseals'</span>, xlab = <span style="color: #ffc125; font-weight: bold;">'Years'</span>)
+lines(Year, pred.exp.Ar, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"royalblue"</span>, lwd = 2)
+lines(Year, pred.denso.Ar, type = <span style="color: #ffc125; font-weight: bold;">"l"</span>, col = <span style="color: #ffc125; font-weight: bold;">"firebrick"</span>, lwd = 2)
+legend(<span style="color: #ffc125; font-weight: bold;">'topleft'</span>, legend = c(<span style="color: #ffc125; font-weight: bold;">'Observed values'</span>, <span style="color: #ffc125; font-weight: bold;">'exponential model'</span>, <span style="color: #ffc125; font-weight: bold;">'logistic model'</span>),
+       lty = c(<span style="color: #fffacd; font-weight: bold;">NA</span>, 1, 1), pch = c(19, <span style="color: #fffacd; font-weight: bold;">NA</span>, <span style="color: #fffacd; font-weight: bold;">NA</span>), col = c(<span style="color: #ffc125; font-weight: bold;">'grey'</span>, <span style="color: #ffc125; font-weight: bold;">'royalblue'</span>, <span style="color: #ffc125; font-weight: bold;">'firebrick'</span>), bty = <span style="color: #ffc125; font-weight: bold;">'n'</span>)
+dev.off()
+</pre>
+
+<p>
+       /home/demiurgo/Documents/PhD/Atlantis<sub>Model</sub>/model<sub>JFR</sub>/MandM/img/N<sub>otarid</sub>.png]]
 </p></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -1830,7 +1965,8 @@ print(b)
 </li>
 </ul>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table  border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" width="600" alt="image">
+<caption>Horizontal distribution of Breca divided by ontogenetic stage (Juvenile and Adult) and by seasons</caption>
 <colgroup><col class="left" /><col class="left" /><col class="right" /><col class="right" /><col class="right" />
 </colgroup>
 <thead>
@@ -3505,7 +3641,7 @@ print(b)
 </ul>
 <ul>
 <li id="sec-5-2-1-8-3">Estimation of Clearance<br/>
-  I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
+      I use the length of the individual and the speed of each one,  there is another aproximation but I need to have the production and the number of preys. In this aproximation,  I asume that the clearence rate is equal to the time and the speed looking for food.
 
 
 
@@ -3538,7 +3674,7 @@ print(b)
 </pre>
 
 <p>
-   <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png" width="600" alt="image" />
+   <img src="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png"  alt="file:///home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png" />
    <br style="clear:both;" />
 </p></li>
 </ul>
@@ -6071,23 +6207,88 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="outline-container-6" class="outline-2">
-<h2 id="sec-6">Dietary analysis (DNA)</h2>
+<h2 id="sec-6">Running Atlantis</h2>
 <div class="outline-text-2" id="text-6">
 
 
 </div>
 
-<div id="outline-container-6-1" class="outline-3">
-<h3 id="sec-6-1">NGS</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-6-1" class="outline-4">
+<h4 id="sec-6-1">Burning period</h4>
+<div class="outline-text-4" id="text-6-1">
+
+<ul>
+<li>The burning period that was setted for the model was 31 years. During this time most
+  of the functional groups reached and stable age distribution.
+</li>
+</ul>
+
+
+</div>
+
+<div id="outline-container-6-1-1" class="outline-5">
+<h5 id="sec-6-1-1">General Changes</h5>
+<div class="outline-text-5" id="text-6-1-1">
+
+<ul>
+<li>Days 11306 for the burning period (almos 31 years)
+</li>
+<li>All the Forcing files were replicated 31 years for the bigining of the
+  simulation.  I repeated the infomation for :
+<ul>
+<li>Recruitment Conectivity
+</li>
+<li>Hidrodaynamic : Fluxes of nutrients, temperature and salinity
+</li>
+<li>Eddies by box
+</li>
+<li>Solar radiation
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-6-1-2" class="outline-5">
+<h5 id="sec-6-1-2">Fisheries</h5>
+<div class="outline-text-5" id="text-6-1-2">
+
+<ul>
+<li>In the JFRE all the artisanal fisheries start almost in 1900 except GCR. To
+   represent this I start the model under an exploitation state. I start all the
+   fisheries 6 years before the start of the model,  that provides and age
+   distribution very similar to the one reported in the JFRE MPA model
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7">Dietary analysis (DNA)</h2>
+<div class="outline-text-2" id="text-7">
+
+
+</div>
+
+<div id="outline-container-7-1" class="outline-3">
+<h3 id="sec-7-1">NGS</h3>
+<div class="outline-text-3" id="text-7-1">
 
 <p>      I will use NGS for the analysis of the dietary relationship between the functional groups
 </p>
 </div>
 
-<div id="outline-container-6-1-1" class="outline-4">
-<h4 id="sec-6-1-1">Procedure</h4>
-<div class="outline-text-4" id="text-6-1-1">
+<div id="outline-container-7-1-1" class="outline-4">
+<h4 id="sec-7-1-1">Procedure</h4>
+<div class="outline-text-4" id="text-7-1-1">
 
 <ul>
 <li>DNA-extraccion
@@ -6177,9 +6378,9 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 
 </div>
 
-<div id="outline-container-6-1-2" class="outline-4">
-<h4 id="sec-6-1-2">Results</h4>
-<div class="outline-text-4" id="text-6-1-2">
+<div id="outline-container-7-1-2" class="outline-4">
+<h4 id="sec-7-1-2">Results</h4>
+<div class="outline-text-4" id="text-7-1-2">
 
 <ul>
 <li>DNA-extraction
@@ -6223,9 +6424,9 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 
 </div>
 
-<div id="outline-container-6-2" class="outline-3">
-<h3 id="sec-6-2">Cost DNA procedure</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-7-2" class="outline-3">
+<h3 id="sec-7-2">Cost DNA procedure</h3>
+<div class="outline-text-3" id="text-7-2">
 
 <p>-All the cost are in AUD
 </p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -6257,9 +6458,9 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 
 </div>
 
-<div id="outline-container-6-3" class="outline-3">
-<h3 id="sec-6-3">Functional groups</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-7-3" class="outline-3">
+<h3 id="sec-7-3">Functional groups</h3>
+<div class="outline-text-3" id="text-7-3">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="right" /><col class="right" /><col class="left" /><col class="left" />
@@ -6290,9 +6491,9 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 
 </div>
 
-<div id="outline-container-6-4" class="outline-3">
-<h3 id="sec-6-4">Clasification and samples</h3>
-<div class="outline-text-3" id="text-6-4">
+<div id="outline-container-7-4" class="outline-3">
+<h3 id="sec-7-4">Clasification and samples</h3>
+<div class="outline-text-3" id="text-7-4">
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
@@ -6364,7 +6565,7 @@ make.init.nc(bgm.file, cum.depths, JFRE.init, JFRE.init.h, nc.file)
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2017-12-06T18:04+1100</p>
+<p class="date">Date: 2018-01-08T15:58+1100</p>
 <p class="author">Author: Javier Porobic</p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>

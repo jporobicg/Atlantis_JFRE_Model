@@ -4403,7 +4403,7 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0 0.00005
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.00001 0.000001
+0 0
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
@@ -4480,7 +4480,7 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   1e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+SZO_mQ   5e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   3e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   4.5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]

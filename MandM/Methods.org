@@ -704,7 +704,104 @@ fi
 **** Initial abundance
 ***** OTA
 - I used the values form aguayo 1971 for the starting values (750).
-But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
+- But for the final calibration I will use the values from OSMAN in 2007 31633 lobos en total
+#+CAPTION: Abundance of furseals for the Juan Fernandez Archipalgo,  values are presented by island and for the entired archipelago. The values (*) These values were estimated using the proportion of abundance between island.
+| Year | Robinson | Santa Clara | Selkirk | Archipelago | Source                      |
+|------+----------+-------------+---------+-------------+-----------------------------|
+| 1965 |     *121 |          *2 |     200 |         323 | Aguayo 1971                 |
+| 1969 |      192 |          *3 |     267 |         462 | Aguayo 1971                 |
+| 1970 |      246 |           4 |     500 |         750 | Aguayo 1971                 |
+| 1978 |      512 |          84 |    1820 |        2416 | Torres 1987a; 1987b         |
+| 1982 |     *953 |        *156 |    3480 |        4589 | Torres 1987a; 1987b         |
+| 1983 |     1544 |         497 |    4318 |        6359 | Torres 1987a; 1987b         |
+| 1984 |     1206 |         368 |   *3330 |        4904 | CONAF                       |
+| 1987 |    *1375 |        *488 |    4510 |        6373 | Torres 2006 Fide Osman 2007 |
+| 1998 |     5837 |        2898 |  *18480 |       27215 | CONAF                       |
+| 1999 |     7142 |        2595 |  *20600 |       30337 | CONAF                       |
+| 2000 |     8503 |        2890 |  *14350 |       25743 | CONAF                       |
+| 2001 |     8729 |        4114 |  *16176 |       29019 | CONAF                       |
+| 2003 |     8080 |        5113 |   13941 |       27134 | Osman 2007                  |
+| 2004 |     9165 |       *5155 |  *18036 |       32356 | Osman 2007                  |
+| 2005 |     7253 |        5110 |   19270 |       31633 | Osman 2007                  |
+| 2013 |    40060 |       20124 |  *75803 |      135987 | CONAF 2013                  |
+
+#+CAPTION: Proportion of abundace between islands. RC-SC,  is the abundance of the island Robinson Crusoe and Santa Clara combined.
+| Years              |    1960-1969 |    1970-1979 |    1980-1999 |    2000-2013 |
+|--------------------+--------------+--------------+--------------+--------------|
+| Robinson/Sta.Clara |         61.5 | 6.0952380952 | 2.8184783545 | 1.7780241337 |
+| RC-SC/Selkirk      | 0.6151685393 | 0.3274725275 | 0.4726725336 | 0.7939562576 |
+
+
+****** Estimation of abundance of OTA
+- I calculate de values of abudnace of the Juan fernandez furseal to have an idea how
+  the real abundance  of the population throug time.
+#+BEGIN_SRC R :results output
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ## ~                   CAlculate abundace of Otarids for JF                 ~ ##
+  ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+  ##
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  ## reading data
+  ota <- read.csv('/home/demiurgo/Documents/PhD/Functional_groups/Abundance/OTA/Ota.csv')
+  n   <- nrow(ota)
+  attach(ota)
+  ## fit Exponential model
+  exp.Rob = nls(Robinson ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+  exp.Sel = nls(Selkirk ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+  exp.SC  = nls(Santa.Clara ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+  exp.Ar  = nls(Archipelago ~ mod.exp(Year, No, r), start = c( No = 200, r = 0.2))
+  ## Results
+  pred.exp.Rob <- mod.exp(Year, coef(exp.Rob)[1], coef(exp.Rob)[2])
+  pred.exp.Sel <- mod.exp(Year, coef(exp.Sel)[1], coef(exp.Sel)[2])
+  pred.exp.SC  <- mod.exp(Year, coef(exp.SC)[1], coef(exp.SC)[2])
+  pred.exp.Ar  <- mod.exp(Year, coef(exp.Ar)[1], coef(exp.Ar)[2])
+  ### Ajuste del modelo
+  denso.Rob <- nls(Robinson ~ mod.denso(Year, No, r, K), start = c(No = 200, r = 0.3, K = 8000))
+  ## denso.Sel <- nls(Selkirk2 ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.07, K = 20000), trace = T, control = nls.control(maxiter = 1000, tol = 1e-04, minFactor = 1e-20,
+  ##                                                                                                                                  printEval = FALSE, warnOnly = FALSE))
+  denso.SC  <- nls(Santa.Clara ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.2, K = 4000))
+  denso.Ar  <- nls(Archipelago ~ mod.denso(Year, No, r, K), start = c(No = 700, r = 0.2, K = 4000))
+  pred.denso.Rob <- mod.denso(Year, coef(denso.Rob)[1], coef(denso.Rob)[2], coef(denso.Rob)[3])
+  pred.denso.Sel <- mod.denso(Year, 7.076367e+02, 8.392129e-02, 6.532698e+10)
+  pred.denso.SC  <- mod.denso(Year, coef(denso.SC)[1], coef(denso.SC)[2], coef(denso.SC)[3])
+  pred.denso.Ar  <- mod.denso(Year, coef(denso.Ar)[1], coef(denso.Ar)[2], coef(denso.Ar)[3])
+  ## PLOT data
+  png('img/N_otarid.png', width = 900, height = 900)
+  par(mfrow = c(2, 2))
+  plot(Year, Robinson, pch = 21, bg = 'grey', col = 1, bty = 'n', xlim = c(1965, 2008), main = 'Robinson Crusoe',
+       ylab = 'Number of furseals', xlab = 'Years')
+  lines(Year, pred.exp.Rob, type = "l", col = "royalblue", lwd = 2)
+  lines(Year, pred.denso.Rob, type = "l", col = "firebrick", lwd = 2)
+  points(Year, Robinson2, pch = 21, col = 1, bg = 'goldenrod')
+  legend('topleft', legend = c('Observed values', 'Estimated by proportion', 'exponential model', 'logistic model'),
+         lty = c(NA, NA, 1, 1), pch = c(19, 19, NA, NA), col = c('grey', 'goldenrod', 'royalblue', 'firebrick'), bty = 'n')
+  ## Santa clara
+  plot(Year, Santa.Clara, pch = 21, bg = 'grey', col = 1, bty = 'n', xlim = c(1965, 2008), main = 'Santa Clara',
+       ylab = 'Number of furseals', xlab = 'Years')
+  lines(Year, pred.exp.SC, type = "l", col = "royalblue", lwd = 2)
+  lines(Year, pred.denso.SC, type = "l", col = "firebrick", lwd = 2)
+  points(Year, Robinson2, pch = 21, col = 1, bg = 'goldenrod')
+  legend('topleft', legend = c('Observed values', 'Estimated by proportion', 'exponential model', 'logistic model'),
+         lty = c(NA, NA, 1, 1), pch = c(19, 19, NA, NA), col = c('grey', 'goldenrod', 'royalblue', 'firebrick'), bty = 'n')
+  ## Selkirk
+  plot(Year, Selkirk, pch = 21, bg = 'grey', col = 1, bty = 'n', xlim = c(1965, 2008), main = 'Alejandro Selkirk',
+       ylab = 'Number of furseals', xlab = 'Years')
+  lines(Year, pred.exp.Sel, type = "l", col = "royalblue", lwd = 2)
+  lines(Year, pred.denso.Sel, type = "l", col = "firebrick", lwd = 2)
+  points(Year, Robinson2, pch = 21, col = 1, bg = 'goldenrod')
+  legend('topleft', legend = c('Observed values', 'Estimated by proportion', 'exponential model', 'logistic model'),
+         lty = c(NA, NA, 1, 1), pch = c(19, 19, NA, NA), col = c('grey', 'goldenrod', 'royalblue', 'firebrick'), bty = 'n')
+  plot(Year, Archipelago, pch = 21, bg = 'grey', col = 1, bty = 'n', xlim = c(1965, 2008), main = 'Archipelago',
+       ylab = 'Number of furseals', xlab = 'Years')
+  lines(Year, pred.exp.Ar, type = "l", col = "royalblue", lwd = 2)
+  lines(Year, pred.denso.Ar, type = "l", col = "firebrick", lwd = 2)
+  legend('topleft', legend = c('Observed values', 'exponential model', 'logistic model'),
+         lty = c(NA, 1, 1), pch = c(19, NA, NA), col = c('grey', 'royalblue', 'firebrick'), bty = 'n')
+  dev.off()
+#+END_SRC
+#+CAPTION: Horizontal distribution of Breca divided by ontogenetic stage (Juvenile and Adult) and by seasons
+#+ATTR_HTML: width="600" alt="image"
+       /home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/N_otarid.png]]
 **** Habitat dependence
  - The species that are cover are Coral and Macroalgae. Those are been reported that act as cover for juvenile lobster and juvenile bonny fishes.
 | FG  | Stage | Kcov | Bcov | Acov |
