@@ -4378,7 +4378,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.0005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.0023   # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_SPH   0.0025   # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 
@@ -4444,7 +4444,7 @@ DC_mL    0 # Linear mortality rate of Carrion [ d-1 ]
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## Vertebrates
 SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
-7e-10 1e-8
+7e-11 1e-8
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-9 1e-8
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
