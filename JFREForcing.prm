@@ -39,7 +39,8 @@ Larval0.name 	Inputs/Larval_disp/FG_connect.nc
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~               Larval Recruitment Deviations            ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-Recruitment_enviro_forcing Inputs/Forcings/SPL_rec_dev.ts
+#Recruitment_enviro_forcing Inputs/Forcings/SPL_rec_dev.ts
+
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Linear mortality      ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##

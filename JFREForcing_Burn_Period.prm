@@ -42,7 +42,12 @@ Larval0.name 	/OSM/MEL/OA_GLADSTONE_MR/work/JFRE_Files/Atlantis/Files/Inputs/Lar
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~               Larval Recruitment Deviations            ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-Recruitment_enviro_forcing /OSM/MEL/OA_GLADSTONE_MR/work/JFRE_Files/Atlantis/Files/Inputs/Forcings/SPL_rec_dev.ts
+#Recruitment_enviro_forcing /OSM/MEL/OA_GLADSTONE_MR/work/JFRE_Files/Atlantis/Files/Inputs/Forcings/SPL_rec_dev.ts
+
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~         Linear mortality      ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+LinearMort  /OSM/MEL/OA_GLADSTONE_MR/work/JFRE_Files/Atlantis/Files/Inputs/Forcings/linearMortality.ts
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~        Solar radiation     ~ ##
