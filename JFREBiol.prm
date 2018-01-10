@@ -53,7 +53,7 @@ flagq10              	   1			    ## Q10 corrections used in the model: 1 = yes, 
 O2case               	   3         		    ## Oxygen limitation used: 0 = ambient O2, 1 = based on depth, 2 = IGBEM, 3 = quadratic lim 3
 flagnut              	   0         		    ## Nutrient lim used: 0=Leibig (min), 1=multiplicative, 2=WQI 0
 flagmicro            	   0         		    ## Nutrient lim by micronutrient: 0 = no, 1 = yes 0
-flagtempchange       	   0         		    ## Mean temperature changes: 0 = no, 1 = yes 0
+flagtempchange       	   1         		    ## Mean temperature changes: 0 = no, 1 = yes 0
 flagsaltchange       	   0         		    ## Mean salinity changes: 0 = no, 1 = yes 0
 flagstarve           	   1         		    ## Give starvation notices: 0 = no, 1 = yes 0
 flagdegrade          	   0         		    ## Degrade coastal habitats (effects growth of MA, SG and BFS) 0
@@ -893,7 +893,7 @@ q10_correction_PB    1000
 q10_correction_BB    1000
 
 # Temperature changes over time. Only read in if flagtempchange is set to 1. Otherwise you can remove from your input file.
-Tchange_max_num 1   Number of changes in average base temperature 1
+Tchange_max_num 1   ## Number of changes in average base temperature 1
 
 # Day changes in base temperature begins (must have same number of entries as given by Tchange_num)
 Tchange_start  1
@@ -902,10 +902,11 @@ Tchange_start  1
 # Period of time changes in base temperature take (must have same number of
 # entries as given by Tchange_num)
 Tchange_period 1
-1
+18250
+
 # Scale of change in base temperature (must have same number of entries as given by Tchange_num)
 Tchange_mult 1
-1
+0.2
 
 # Differential scaling with depth (must be as many entries as
 # number of water column layers * number of changes)
@@ -4378,7 +4379,7 @@ Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
 KLYS_LPH   0.0005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.0025   # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_SPH   0.003   # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 
@@ -4480,7 +4481,7 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
 COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   5e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+SZO_mQ   3.5e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
 MZO_mQ   3e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
 LZO_mQ   4.5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
 SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
