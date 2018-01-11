@@ -53,7 +53,7 @@ flagq10              	   1			    ## Q10 corrections used in the model: 1 = yes, 
 O2case               	   3         		    ## Oxygen limitation used: 0 = ambient O2, 1 = based on depth, 2 = IGBEM, 3 = quadratic lim 3
 flagnut              	   0         		    ## Nutrient lim used: 0=Leibig (min), 1=multiplicative, 2=WQI 0
 flagmicro            	   0         		    ## Nutrient lim by micronutrient: 0 = no, 1 = yes 0
-flagtempchange       	   1         		    ## Mean temperature changes: 0 = no, 1 = yes 0
+flagtempchange       	   0         		    ## Mean temperature changes: 0 = no, 1 = yes 0
 flagsaltchange       	   0         		    ## Mean salinity changes: 0 = no, 1 = yes 0
 flagstarve           	   1         		    ## Give starvation notices: 0 = no, 1 = yes 0
 flagdegrade          	   0         		    ## Degrade coastal habitats (effects growth of MA, SG and BFS) 0
@@ -906,7 +906,7 @@ Tchange_period 1
 
 # Scale of change in base temperature (must have same number of entries as given by Tchange_num)
 Tchange_mult 1
-0.2
+2
 
 # Differential scaling with depth (must be as many entries as
 # number of water column layers * number of changes)
@@ -4461,7 +4461,7 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 1e-5
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-6 7e-7
+1e-7 1e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-7 1e-8
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
