@@ -54,7 +54,7 @@ dpkg -l | grep flip              # convert text file line endings between Unix a
 - [X] If I udate I need to build atlantis again
 *** Build Atlantis [9/9]
 # to build Atlantis I need t compile and run using aototools
-- [X] cd  /home/demiurgo/Documents/2015/Atlantis_Model/trunk/atlantis
+- [X] cd  /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis
 - [X] aclocal
 - [X] autoconf
 - [X] automake -a               # I have some problems with this section

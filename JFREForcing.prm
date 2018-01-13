@@ -14,6 +14,11 @@ hd3.name Inputs/Forcing_Hydro/04_JFRE_hydro.nc
 hd4.name Inputs/Forcing_Hydro/05_JFRE_hydro.nc
 hd5.name Inputs/Forcing_Hydro/06_JFRE_hydro.nc
 
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+## ~          Vertical mix files      ~ ##
+## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+use_VertMixFiles 0
+
 ## ~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~      Temperature   ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~ ##

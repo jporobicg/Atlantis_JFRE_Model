@@ -4461,7 +4461,7 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 1e-5
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-1e-7 1e-7
+5e-8 5e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
 8e-7 1e-8
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
