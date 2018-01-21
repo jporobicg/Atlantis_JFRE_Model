@@ -1375,17 +1375,17 @@ highgrade_thresh	0.1	 ## Proportion of catch which defines perferred target size
 mFC_SPL	13	## Forced fishing mortality rates (per day) forSpiny lobster
 0.0025044736 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_GCR	13	## Forced fishing mortality rates (per day) forGolden Crab
-0 0.0006111654 0 0 0 0 0 0 0 0 0 0 0
+0 0.0001369769192 0 0 0 0 0 0 0 0 0 0 0
 mFC_BRC	13	## Forced fishing mortality rates (per day) forBreca
-0 0 0 0 0 4.112493E-6 0 0 0.0006111654 0 0 0 0
+0 0 0 0 0 0.0000047415323 0 0 0.0000059424955 0 0 0 0
 mFC_VID	13	## Forced fishing mortality rates (per day) forVidriola
-0 0 0 0 0 0 0 0 0 7.845872E-7 0 0 0
+0 0 0 0 0 0 0 0 0 0.0000009807690 0 0 0
 mFC_ORO	13	## Forced fishing mortality rates (per day) forOrange Roughy
 0 0 0 0 0 0 0 0 0 0 0.0000834 0 0
 mFC_ALF	13	## Forced fishing mortality rates (per day) forAlfonsino
 0 0 0 0 0 0 0 0 0 0 0 0.000007 0
 mFC_ANG	13	## Forced fishing mortality rates (per day) forAnguila
-0 0 4.505450E-6 0 0 0 0 0 0 0 0 0 0
+0 0 0.0000052104174 0 0 0 0 0 0 0 0 0 0
 mFC_CHO	13	## Forced fishing mortality rates (per day) forChondrichtyans
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_OTA	13	## Forced fishing mortality rates (per day) forOtariid
@@ -1397,17 +1397,17 @@ mFC_BIR	13	## Forced fishing mortality rates (per day) forBirds
 mFC_SQD	13	## Forced fishing mortality rates (per day) forSquids
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_OCT	13	## Forced fishing mortality rates (per day) forOctupus
-0 0 0 0 0 0 0 0 0 0 0 0 6.930636E-5
+0 0 0 0 0 0 0 0 0 0 0 0 0.0000693063562
 mFC_LPF	13	## Forced fishing mortality rates (per day) forLarge pelagic fish
-0 0 0 0 2.388359E-6 0 0 0 0 0 0 0 0
+0 0 0 0 0.0000043360100 0 0 0 0 0 0 0 0
 mFC_SPF	13	## Forced fishing mortality rates (per day) forSmall pelagic fish
-0 0 0 3.014882E-7 0 0 0 0 0 0 0 0 0
+0 0 0 0.0000004058572 0 0 0 0 0 0 0 0 0
 mFC_SBF	13	## Forced fishing mortality rates (per day) forSmall benthic fish
-0 0 0 0 0 0 0 6.839595E-8 0 0 0 0 0
+0 0 0 0 0 0 0 0.0000001367936 0 0 0 0 0
 mFC_MPF	13	## Forced fishing mortality rates (per day) forMesopelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_LBF	13	## Forced fishing mortality rates (per day) forLarge benthic fish
-0 0 0 0 0 0 1.013160E-7 0 0 0 0 0 0
+0 0 0 0 0 0 0.0000002026357 0 0 0 0 0 0
 mFC_SZO	13	## Forced fishing mortality rates (per day) forSmall Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_MZO	13	## Forced fishing mortality rates (per day) forMedium Zooplankton
