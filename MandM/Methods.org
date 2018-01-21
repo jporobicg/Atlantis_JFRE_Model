@@ -2717,8 +2717,8 @@ fi
 | SPF | 0.06    | 2.00  | 0.01  | 3.14 | Sawada         | 0.15       | 0.40     |
 | SPL | 0.96    | 1.00  | 0.96  | 2.72 | Porobic        | 2.31       | 6.13     |
 | VID | 1586.96 | 58.02 | 0.01  | 3.11 | Billy Database | 3813.90    | 10106.83 |
-
 **** LFD by cohorts
+***** Age groups non-Crustaceans
 In this secction I use the data form the Database to get the number of organism by cohort. The cohorts used here matches the cohort on Atlantis
  #+BEGIN_SRC R :results output
    rm(list = ls())
@@ -2788,6 +2788,73 @@ In this secction I use the data form the Database to get the number of organism 
 #+ATTR_HTML: width="600" alt="image"
 [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Cohorts.png]]
 @<br style="clear:both;" />
+***** Crustaceans SPL and GCR
+- To calculate the size at age of each individual I used the following steps:
+  - Assume that the average maximum size (Linf) is 314mm (Manriquez,2016)
+  - The minimum size at settlement is 10 mm (Porobic pers. comm.)
+  - Use the transition matrix values
+#+BEGIN_SRC R :results output
+  library(ascii)
+  options(asciiType = "org")
+  library(ggplot2)
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  k.g       <- 0.06985
+  beta.g    <- 1
+  Lo        <- 10
+  Linf1      <- 214
+  Linf2      <- 314
+  ## Testing old linf from Arana
+  f.size    <- NULL
+  f.size[1] <- Lo
+  y         <- 1
+  while((Linf1-f.size[y]) > 1){
+      y <- y + 1
+      f.size[y] <- f.size[y-1] + mgrowth(Linf1, f.size[y-1], k.g)
+      if((f.size[y] - f.size[y - 1]) > 1) y.delta <- y
+  }
+  f.size2    <- NULL
+  f.size2[1] <- Lo
+  y         <- 1
+  while((Linf2-f.size2[y]) > 1){
+      y <- y + 1
+      f.size2[y] <- f.size2[y-1] + mgrowth(Linf2, f.size2[y-1], k.g)
+      if((f.size2[y] - f.size2[y - 1]) > 1) y.delta2 <- y
+  }
+  png('img/AgeClass_SPL.png', height = 1000, width = 1000)
+  par(mfcol = c(2, 1))
+  plot(f.size, xlab = 'Age [Years]', ylab = 'Length [mm]', pch = 20, col = 'red', bty = 'n', main = 'old Linf = 214')
+  y.delta   <- round(y.delta / 10, 0) * 10  ## the is the maximum number of age groups
+  abline(v = seq(from = 1, to = y.delta, by = 4), lty = 2) ## I will use the last age class as a group +
+  axis(3, at = seq(from = 2, to = y.delta , by = 4), label= paste0('AC-', 1 : 10), las=2)
+  fin.size  <- seq(from = 1, to = 37, by=4)
+  plot(f.size2, xlab = 'Age [Years]', ylab = 'Length [mm]', pch = 20, col = 'red', bty = 'n', main = 'New Linf = 314')
+  ## because Atlantis is using round number I will round the maximum value of y.delta to the closest number
+  y.delta2   <- round(y.delta2 / 10, 0) * 10  ## the is the maximum number of age groups
+  abline(v = seq(from = 1, to = y.delta2, by = 4), lty = 2) ## I will use the last age class as a group +
+  axis(3, at = seq(from = 2, to = y.delta2, by = 4), label= paste0('AC-', 1 : 10), las=2)
+  fin.size2  <- seq(from = 1, to = 37, by=4)
+  invisible(dev.off())
+  out       <- data.frame(AgeClass = 1:10, minSize.old= f.size[fin.size], maxSize.old = f.size[fin.size + 4],
+                          minSize.new= f.size2[fin.size2], maxSize.new = f.size2[fin.size2 + 4])
+  cap <- 'Age Classes and size at age for lobster'
+  b     <- ascii(out, header = T,  include.rownames = FALSE, include.colnames = TRUE, caption=cap, digits=3)
+  print(b)
+#+END_SRC
+#+RESULTS:
+#+CAPTION: Age Classes and size at age for lobster
+| AgeClass | minSize.old | maxSize.old | minSize.new | maxSize.new |
+|----------+-------------+-------------+-------------+-------------|
+| 1.000    | 10.000      | 59.728      | 10.000      | 84.104      |
+| 2.000    | 59.728      | 97.333      | 84.104      | 140.144     |
+| 3.000    | 97.333      | 125.772     | 140.144     | 182.524     |
+| 4.000    | 125.772     | 147.279     | 182.524     | 214.573     |
+| 5.000    | 147.279     | 163.543     | 214.573     | 238.809     |
+| 6.000    | 163.543     | 175.843     | 238.809     | 257.138     |
+| 7.000    | 175.843     | 185.144     | 257.138     | 270.999     |
+| 8.000    | 185.144     | 192.178     | 270.999     | 281.481     |
+| 9.000    | 192.178     | 197.497     | 281.481     | 289.408     |
+| 10.000   | 197.497     | 201.520     | 289.408     | 295.402     |
+
 **** Estimation of the mean Weight
 - Based on the catch data and the data at age available I calculated the mean weight for several groups
 #+BEGIN_SRC R :results output
