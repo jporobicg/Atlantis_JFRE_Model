@@ -1375,7 +1375,7 @@ highgrade_thresh	0.1	 ## Proportion of catch which defines perferred target size
 mFC_SPL	13	## Forced fishing mortality rates (per day) forSpiny lobster
 0.0025044736 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_GCR	13	## Forced fishing mortality rates (per day) forGolden Crab
-0 0.0006111654 0 0 0 0 0 0 0 0 0 0 0
+0 0.0001369769192 0 0 0 0 0 0 0 0 0 0 0
 mFC_BRC	13	## Forced fishing mortality rates (per day) forBreca
 0 0 0 0 0 0.0000038880167 0 0 0.0006111654 0 0 0 0
 mFC_VID	13	## Forced fishing mortality rates (per day) forVidriola

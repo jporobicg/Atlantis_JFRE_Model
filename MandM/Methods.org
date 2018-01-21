@@ -3245,6 +3245,11 @@ In this secction I use the data form the Database to get the number of organism 
 | 1930 - 1979 | 0.9152795 | 0.0025044736 | Historic      |
 | 1980 - 2011 | 0.8032620 | 0.0021982979 | Use of Chigre |
 
+ - GCR
+| Year        | F(y - 1) |       u (d - 1) | Source                 |
+|-------------+----------+-----------------+------------------------|
+| 2005 - 2006 |     0.05 | 0.0001369769192 | Ahumada and Arana 2009 |
+
  - ORO
 | Year | F(y-1) |   u (d-1) |       Change | Comment |
 |------+--------+-----------+--------------+---------|
