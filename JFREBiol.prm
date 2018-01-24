@@ -4478,13 +4478,13 @@ LBF_mQ   2 #  Quad. mortality rate of Large benthic fish [ d-1 ]
 7e-9 5e-6
 
 ## Invertebrates
-OCT_mQ   1e-4 #  Quad. mortality rate of Octupus [ d-1 ]
-SQD_mQ   7e-4 #  Quad. mortality rate of Octupus [ d-1 ]
-COR_mQ   1e-15 #  Quad. mortality rate of Octupus [ d-1 ]
-SZO_mQ   3.25e-4 #  Quad. mortality rate of Small Zooplankton [ d-1 ]
-MZO_mQ   3e-4 #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
-LZO_mQ   4.5e-4 #  Quad. mortality rate of Large Zooplankton [ d-1 ]
-SCR_mQ   1e-7 #  Quad. mortality rate of Small crustaceans [ d-1 ]
+OCT_mQ   1e-4    #  Quad. mortality rate of Octupus [ d-1 ]
+SQD_mQ   7e-4    #  Quad. mortality rate of Octupus [ d-1 ]
+COR_mQ   1e-15   #  Quad. mortality rate of Octupus [ d-1 ]
+SZO_mQ   3.1e-4  #  Quad. mortality rate of Small Zooplankton [ d-1 ]
+MZO_mQ   3e-4    #  Quad. mortality rate of Medium Zooplankton [ d-1 ]
+LZO_mQ   4.5e-4  #  Quad. mortality rate of Large Zooplankton [ d-1 ]
+SCR_mQ   5e-6    #  Quad. mortality rate of Small crustaceans [ d-1 ]
 BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
@@ -5203,7 +5203,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitmen
-BHalpha_SPL   1e+8             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   7e+7             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   5.3E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
