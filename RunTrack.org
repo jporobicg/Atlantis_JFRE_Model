@@ -14391,3 +14391,30 @@ increased from 0 to 0.0005
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6268
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** ML
+**** MQ
+***** SZO
+- from : 3.25e-4
+- to : 3.1e-4
+***** SCR
+- from : 1e-7
+- to : 5e-6
+*** Pprey
+*** Mum
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** SPL
+- from : 1e+8
+- to : 7e+7
+*** Efficiency
+*** Initial conditions
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180124100826
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180124100826.png]]
