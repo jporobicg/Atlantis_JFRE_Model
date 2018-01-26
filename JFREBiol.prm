@@ -3963,7 +3963,7 @@ mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 ## VERTEBRATE AND AGE CLASSES
 ## -  -  -  -  -  -  -  -  -  -  -  -
 mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
-0.138 0.622 2.762 5.737 13.612 15.278 19.012 31.334 45.166 73.82
+0.138 3.11 9.207 19.123 45.373 50.927 63.373 78.335 112.915 147.64
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
@@ -5203,7 +5203,7 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitmen
-BHalpha_SPL   7e+7             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1e+7             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   5.3E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
