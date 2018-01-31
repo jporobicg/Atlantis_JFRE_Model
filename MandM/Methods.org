@@ -3887,6 +3887,37 @@ These estimation are based on the observed catch and the simulated biomass
    represent this I start the model under an exploitation state. I start all the
    fisheries 6 years before the start of the model,  that provides and age
    distribution very similar to the one reported in the JFRE MPA model
+*** Projections
+- I use the CMPI5 scenarios
+Future   projections   (2006-2100) forced by RCP 2.6 and 8.5. RCP
+s (representative concentration pathways) approximately result in radiative forcings of 2.6, 4.5, 6.0 and 8.5 W m
+-2 at  year 2100 respectively, relative to pre-industrial conditions.
+  - RCP-2.6
+  - RCP-8.5
+  - The model that I used was the output from the GDFL (http://nomads.gfdl.noaa.gov:8080/DataPortal/cmip5.jsp).
+    - Using the model
+       ESM2M, pressure-based vertical coordinates are used along the developmental path of
+    - Getting the Data
+      #+BEGIN_SRC sh
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_201101-201512.nc -o Proj_2011.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_201601-202012.nc -o Proj_2016.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_202101-202512.nc -o Proj_2021.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_202601-203012.nc -o Proj_2026.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_203101-203512.nc -o Proj_2031.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_203601-204012.nc -o Proj_2036.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_204101-204512.nc -o Proj_2041.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_204601-205012.nc -o Proj_2046.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_205101-205512.nc -o Proj_2051.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_205601-206012.nc -o Proj_2056.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_206101-206512.nc -o Proj_2061.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_206601-207012.nc -o Proj_2066.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_207101-207512.nc -o Proj_2071.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_207601-208012.nc -o Proj_2076.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_208101-208512.nc -o Proj_2081.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_208601-209012.nc -o Proj_2086.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_209101-209512.nc -o Proj_2091.nc
+      ncks -d rlon,194,210  -d rlat,41,53 http://nomads.gfdl.noaa.gov/dods-data/CMIP5/output1/NOAA-GFDL/GFDL-ESM2M/rcp85/mon/ocean/Omon/r1i1p1/v20110601/thetao/thetao_Omon_GFDL-ESM2M_rcp85_r1i1p1_209601-210012.nc -o Proj_2096.nc
+      #+END_SRC
 * Dietary analysis (DNA)
 ** NGS
       I will use NGS for the analysis of the dietary relationship between the functional groups
