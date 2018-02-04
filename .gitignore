@@ -9,3 +9,5 @@ Inputs/Forcing_Hydro/JFRE_hydro.nc
 /MandM/FG_connect.nc
 Inputs/Larval_disp/Burn.nc
 Inputs/Larval_disp/FG_connect_Burn.nc
+Inputs/Larval_disp/old_FG_connect.nc
+MandM/.#Methods.org

@@ -2007,30 +2007,28 @@ fi
     print(b)
   #+END_SRC
   #+RESULTS:
-  #+begin_example
-  #+CAPTION: Clearance by cohort for some functional groups [m3d-1]
-  |     | 1      | 2      | 3      | 4      | 5      | 6      | 7      | 8      | 9      | 10     |
-  |-----+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
-  | ALF | 60.63  | 103.65 | 162.00 | 220.38 | 275.70 | 326.34 | 371.68 | 411.51 | 446.29 | 476.03 |
-  | ANG | 2.35   | 5.40   | 15.31  | 27.69  | 41.03  | 54.57  | 67.63  | 79.87  | 91.07  | 79.94  |
-  | BIR | 0.41   | 2.18   | 5.28   | 9.24   | 13.61  | 18.04  | 22.28  | 26.20  | 29.72  | 32.81  |
-  | BRC | 6.48   | 10.71  | 16.42  | 23.56  | 32.69  | 45.00  | 60.26  | 74.35  | 88.78  | 104.92 |
-  | CHO | 1.46   | 4.65   | 8.43   | 12.19  | 15.63  | 18.64  | 21.19  | 23.31  | 25.05  | 26.46  |
-  | DOL | 8.61   | 28.21  | 52.40  | 77.46  | 101.36 | 123.08 | 142.24 | 158.78 | 172.86 | 184.71 |
-  | GCR | 0.52   | 1.74   | 3.65   | 6.16   | 9.14   | 12.25  | 15.07  | 17.38  | 19.85  | 22.03  |
-  | LBF | 91.93  | 113.55 | 141.53 | 163.87 | 191.05 | 235.31 | 272.21 | 295.86 | 331.94 | 370.96 |
-  | LPF | 14.39  | 101.53 | 172.50 | 213.82 | 235.53 | 246.48 | 251.90 | 254.56 | 255.86 | 256.49 |
-  | MPF | 9.81   | 13.06  | 13.66  | 13.76  | 13.78  | 13.78  |        |        |        |        |
-  | ORO | 2.59   | 16.20  | 31.81  | 45.53  | 54.89  | 60.92  | 64.67  | 66.97  | 68.35  | 69.17  |
-  | OTA | 175.96 | 242.84 | 300.52 | 348.19 | 386.54 | 416.85 | 440.52 | 458.85 | 472.94 | 483.74 |
-  | SBF | 47.94  | 71.63  | 100.05 | 141.74 | 188.87 | 256.62 | 300.12 | 406.55 | 475.32 | 549.46 |
-  | SPF | 10.15  | 46.63  | 100.30 | 149.76 | 190.13 | 221.14 | 244.16 | 260.90 | 272.91 | 281.44 |
-  | SPL | 1.90   | 2.28   | 2.70   | 3.15   | 3.71   | 4.18   | 4.67   | 5.10   | 5.56   | 6.03   |
-  | VID | 67.01  | 88.68  | 120.00 |        |        |        |        |        |        |        |
-#+end_example
-  #+ATTR_HTML: width="600" alt="image"
-   [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]
-   @<br style="clear:both;" />
+ #+CAPTION: Clearance by cohort for some functional groups [m3d-1]
+    |     |      1 |      2 |      3 |      4 |      5 |      6 |      7 |      8 |      9 |     10 |
+    |-----+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------|
+    | ALF |  60.63 | 103.65 | 162.00 | 220.38 | 275.70 | 326.34 | 371.68 | 411.51 | 446.29 | 476.03 |
+    | ANG |   2.35 |   5.40 |  15.31 |  27.69 |  41.03 |  54.57 |  67.63 |  79.87 |  91.07 |  79.94 |
+    | BIR |   0.41 |   2.18 |   5.28 |   9.24 |  13.61 |  18.04 |  22.28 |  26.20 |  29.72 |  32.81 |
+    | BRC |   6.48 |  10.71 |  16.42 |  23.56 |  32.69 |  45.00 |  60.26 |  74.35 |  88.78 | 104.92 |
+    | CHO |   1.46 |   4.65 |   8.43 |  12.19 |  15.63 |  18.64 |  21.19 |  23.31 |  25.05 |  26.46 |
+    | DOL |   8.61 |  28.21 |  52.40 |  77.46 | 101.36 | 123.08 | 142.24 | 158.78 | 172.86 | 184.71 |
+    | GCR |   0.52 |   1.74 |   3.65 |   6.16 |   9.14 |  12.25 |  15.07 |  17.38 |  19.85 |  22.03 |
+    | LBF |  91.93 | 113.55 | 141.53 | 163.87 | 191.05 | 235.31 | 272.21 | 295.86 | 331.94 | 370.96 |
+    | LPF |  14.39 | 101.53 | 172.50 | 213.82 | 235.53 | 246.48 | 251.90 | 254.56 | 255.86 | 256.49 |
+    | MPF |   9.81 |  13.06 |  13.66 |  13.76 |  13.78 |  13.78 |        |        |        |        |
+    | ORO |   3.24 |  20.25 |  39.76 |  56.91 |  68.62 |  76.15 |  80.84 |  83.71 |  85.43 |  86.47 |
+    | OTA | 175.96 | 242.84 | 300.52 | 348.19 | 386.54 | 416.85 | 440.52 | 458.85 | 472.94 | 483.74 |
+    | SBF |  47.94 |  71.63 | 100.05 | 141.74 | 188.87 | 256.62 | 300.12 | 406.55 | 475.32 | 549.46 |
+    | SPF |  10.15 |  46.63 | 100.30 | 149.76 | 190.13 | 221.14 | 244.16 | 260.90 | 272.91 | 281.44 |
+    | SPL |   1.90 |   2.28 |   2.70 |   3.15 |   3.71 |   4.18 |   4.67 |   5.10 |   5.56 |   6.03 |
+    | VID |  67.01 |  88.68 | 120.00 |        |        |        |        |        |        |        |
+#+ATTR_HTML: width="600" alt="image"
+[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/clearance.png]]
+@<br style="clear:both;" />
 ***** Estimation of growth rate
   - First, I estimated the value of the alfa and beta parameters from the allometric relationship
     #+BEGIN_SRC R :results output
@@ -2508,8 +2506,8 @@ fi
   ## I will do an arima to estimate the missing years [61 is the maximum number of years]
   for(ar in 1 : length (connect.l)){
       d <- dim(connect.l[[ar]])
-      if(d[3] != 61){
-          hdif  <- (61 - d[3])
+      if(d[3] != 66){
+          hdif  <- (66 - d[3])
           n.mat <- array(0, c(d[1], d[2], hdif))
           for(rel in 1 : d[1]){
               for(rec in 1 : d[2]){
@@ -2530,7 +2528,7 @@ fi
   ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
   ## ~                  Average connectivity by year and FG               ~ ##
   ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-  connect <- matrix(0, nrow =  length(directories), ncol = 61)
+  connect <- matrix(0, nrow =  length(directories), ncol = 66)
   for( fg in 1: length(directories)){
       tot <- dim(connect.l[[fg]])[3]
       for(sim in 1 : tot) {
@@ -2539,13 +2537,13 @@ fi
   }
   ##~ Output
   rownames(connect) <- directories
-  colnames(connect) <- 1950:2010
+  colnames(connect) <- 1950:2015
   cap   <- 'Mean pelagic connectivity by year and functional groups'
   b     <- ascii(connect, header = T,  include.rownames = TRUE, include.colnames = T, caption = cap)
   print(b)
   ##~ Plots
-  connectivity.out  <- data.frame(Year = sort(rep(c(1950 : 2010), length(directories))),
-                                  FG = rep(directories, 61), Connect = c(connect))
+  connectivity.out  <- data.frame(Year = sort(rep(c(1950 : 2015), length(directories))),
+                                  FG = rep(directories, 66), Connect = c(connect))
   png('img/connectivity.png', height = 1000, width = 1000)
   sp    <- ggplot(data=connectivity.out, aes(Year, Connect)) + geom_smooth(method = "lm", color = 'red') +
       geom_line() + facet_wrap(~FG, ncol = 4, scales = 'free_y')
@@ -3879,6 +3877,16 @@ These estimation are based on the observed catch and the simulated biomass
 - All the Forcing files were replicated 31 years for the bigining of the
   simulation.  I repeated the infomation for :
   - Recruitment Conectivity
+    - Increased historical values
+      #+BEGIN_SRC sh
+        ## Use nco to concatenate the files, is easy and fast
+        ## file with repeating the 31 first years
+        ncks -d t,0,30 FG_connect.nc Burn.nc
+        ## copying the original file to avoid overwriting
+        cp FG_connect.nc FG_connect_Burn.nc
+        ## append the initial values to the file
+        ncks -A Burn.nc FG_connect_Burn.nc
+      #+END_SRC
   - Hidrodaynamic : Fluxes of nutrients, temperature and salinity
   - Eddies by box
   - Solar radiation

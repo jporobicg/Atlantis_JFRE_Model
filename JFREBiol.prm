@@ -3917,7 +3917,7 @@ C_BRC   10 #  Clearance rate for Breca [ m3(mg N)-1 d-1 ]
 C_VID 3 #  Clearance rate for Vidriola [ m3(mg N)-1 d-1 ]
 67.01 88.68 120
 C_ORO 10 #  Clearance rate for Orange Roughy [ m3(mg N)-1 d-1 ]
-2.59 16.2 31.81 45.53 54.89 60.92 64.67 66.97 68.35 69.17
+3.24 20.25 39.76 56.91 68.62 76.15 80.84 83.71 85.43 86.47
 C_ALF 10 # Clearance rate for Alfonsino [ m3(mg N)-1 d-1 ] ##
 60.63 103.65 162 220.38 275.7 326.34 371.68 411.51 446.29 476.03
 C_ANG 10 # Clearance rate for Anguila [ m3(mg N)-1 d-1 ]
@@ -5203,30 +5203,30 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitmen
-BHalpha_SPL   3e+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1.2E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   5.3E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
 BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
-BHalpha_ORO   6e+9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
-BHalpha_ALF   9e+8		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
-BHalpha_ANG   530672162265             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
+BHalpha_ORO   7E+9              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
+BHalpha_ALF   9E+8		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
+BHalpha_ANG   3.3E+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
-BHalpha_LPF   4.5e+08                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
+BHalpha_LPF   4.5E+08                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
 BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_MPF   5E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   4E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
 BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
-BHbeta_SPL   5e+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
-BHbeta_GCR   1e+06       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
+BHbeta_SPL   5E+2       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
+BHbeta_GCR   1E+06       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Golden Crab
 BHbeta_BRC   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Breca
 BHbeta_VID   5E+7        # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Vidriola
-BHbeta_ORO   1E+9       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
+BHbeta_ORO   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Orange Roughy
 BHbeta_ALF   6E+8       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Alfonsino
-BHbeta_ANG   1E+10       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
+BHbeta_ANG   1E+7       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Anguila
 BHbeta_CHO   10          # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Chondrichtyans
 BHbeta_OTA   1.5E+9      # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Otariid
 BHbeta_DOL   1E+02       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Cetaceans
@@ -5303,12 +5303,12 @@ KWSR_GCR   23.09    	     # Structural weight of recruits for Golden Crab [ mg N
 KWSR_BRC   0.67     	     # Structural weight of recruits for Breca [ mg N m-3 ]
 KWSR_VID   3813.90  	     # Structural weight of recruits for Vidriola [ mg N m-3 ]
 KWSR_ORO   7.186498     	     # Structural weight of recruits for Orange Roughy [ mg N m-3 ]
-KWSR_ALF   1.109230e+01     	     # Structural weight of recruits for Alfonsino [ mg N m-3 ]
+KWSR_ALF   1.109230E+01     	     # Structural weight of recruits for Alfonsino [ mg N m-3 ]
 KWSR_ANG   1.65     	     # Structural weight of recruits for Anguila [ mg N m-3 ]
 KWSR_CHO   70      	     # Structural weight of recruits for Chondrichtyans [ mg N m-3 ]
 KWSR_OTA   20668    	     # Structural weight of recruits for Otariid [ mg N m-3 ]
 KWSR_DOL   8048     	     # Structural weight of recruits for Cetaceans [ mg N m-3 ]
-KWSR_LPF   6.676907e+01	     # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
+KWSR_LPF   6.676907E+01	     # Structural weight of recruits for Large pelagic fish [ mg N m-3 ]
 KWSR_SPF   1.354350e+00     	     # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_MPF   6.389023e-01      # Structural weight of recruits for Small pelagic fish [ mg N m-3 ]
 KWSR_SBF   26.61    	     # Structural weight of recruits for Small benthic fish [ mg N m-3 ]
