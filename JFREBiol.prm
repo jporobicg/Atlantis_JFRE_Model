@@ -4404,7 +4404,7 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ]
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ]
 0 0.00005
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0 0
+0.0000000014 0.000000014
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
