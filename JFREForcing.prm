@@ -50,6 +50,7 @@ Recruitment_enviro_forcing Inputs/Forcings/SPL_rec_dev.ts
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Linear mortality      ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
+#LinearMort  Inputs/Forcings/linearMortality_1000000.ts
 LinearMort  Inputs/Forcings/linearMortality.ts
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
