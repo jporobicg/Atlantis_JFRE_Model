@@ -50,8 +50,9 @@ Recruitment_enviro_forcing Inputs/Forcings/SPL_rec_dev.ts
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~         Linear mortality      ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
-#LinearMort  Inputs/Forcings/linearMortality_1000000.ts
-LinearMort  Inputs/Forcings/linearMortality.ts
+LinearMort  Inputs/Forcings/linearMortality_1000000.ts
+LinearMort  Inputs/Forcings/linearMortality_new.ts
+#LinearMort  Inputs/Forcings/linearMortality.ts
 
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 ## ~        Solar radiation     ~ ##
