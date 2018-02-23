@@ -3955,8 +3955,8 @@ mum_MZO_T15   0.0093      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1
 mum_LZO_T15   0.6     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00007       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
-mum_SUR_T15   0.0005      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
-mum_MOL_T15   0.0005      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
+mum_SUR_T15   0.00025      #  Growth rate for Sea Urchin [ m3(mg N)-1 d-1 ]
+mum_MOL_T15   0.00025      #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_PB_T15    1.20       #  Growth rate for Mollusca [ m3(mg N)-1 d-1 ]
 mum_BB_T15    1.5        #  Growth rate of sediment bacteria
 
@@ -4461,9 +4461,9 @@ ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 1e-5
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
-5e-8 7e-8
+8e-8 9e-8
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
-8e-7 1e-8
+8e-7 8e-9
 BIR_mQ   2 #  Quad. mortality rate of Birds [ d-1 ]
 2e-6 1e-9
 LPF_mQ   2 #  Quad. mortality rate of Large pelagic fish [ d-1 ]
@@ -5204,12 +5204,12 @@ KDENR_COR 1
 
 # Beverton-Holt recruitmen
 BHalpha_SPL   1.3E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
-BHalpha_GCR   5.3E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   3E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_GCR   5.2E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
+BHalpha_BRC   2.9E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   1.4E+10              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   9E+8		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
-BHalpha_ANG   3.3E+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
+BHalpha_ANG   3E+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans

@@ -14632,3 +14632,29 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6268
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** ML
+***** ANG
+- from: 0.000001 0.0002
+- to : 0 0
+**** MQ
+***** OTA
+- from : 5e-8 5e-8
+- to : 5e-8 7e-8
+*** Pprey
+*** Mum
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+*** Efficiency
+*** Initial conditions
+**** New conectivity matrix using more years and an ARIMA
+**** New forcing file for ml for OTA from mortality 13 times to 14 and to 1966
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180215144519
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180215144519.png]]
