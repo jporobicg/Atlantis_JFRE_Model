@@ -263,9 +263,9 @@ flagdiscard_BRC	13	## Discarding formulation [0] constant, [1] cont % per Cohort
 flagdiscard_VID	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forVidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_ORO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forOrange Roughy
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 4 0 0
 flagdiscard_ALF	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAlfonsino
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 4 0
 flagdiscard_ANG	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forAnguila
 0 0 0 0 0 0 0 0 0 0 0 0 0
 flagdiscard_CHO	13	## Discarding formulation [0] constant, [1] cont % per Cohort [2] size based forChondrichtyans
@@ -1554,8 +1554,8 @@ FCcocatchBRC 34 ## Proportional discarding based on catch of another species Bre
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 FCcocatchVID 34 ## Proportional discarding based on catch of another species Vidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-FCcocatchORO 34 ## Proportional discarding based on catch of another species Orange Roughy
-0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
+FCcocatchORO 34 ## Proportional discarding based on catch of another species Orange Roughy 0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0.147 0.147 0 0 0.42 0 0 0 0 0 0 0 0
 FCcocatchALF 34 ## Proportional discarding based on catch of another species Alfonsino
 0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
 FCcocatchANG 34 ## Proportional discarding based on catch of another species Anguila
