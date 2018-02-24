@@ -680,7 +680,7 @@ BaitLBF_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Ba
 BaitSBF_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Bait Small Benthic Fish
 HlineBRC_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Handlining Breca
 HlineVID_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: handlining Vidriola
-TrawlORO_flagmanage	3	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Orange Roughy
+TrawlORO_flagmanage	2	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Orange Roughy
 TrawlALF_flagmanage	2	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Alfonsino
 PotOCT_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Pot-trap Octopus
 
@@ -1380,8 +1380,8 @@ mFC_BRC	13	## Forced fishing mortality rates (per day) forBreca
 0 0 0 0 0 0.00000085853961 0 0 0.00000068496918 0 0 0 0
 mFC_VID	13	## Forced fishing mortality rates (per day) forVidriola
 0 0 0 0 0 0 0 0 0 0.00000016898637 0 0 0
-mFC_ORO	13	## Forced fishing mortality rates (per day) forOrange Roughy
-0 0 0 0 0 0 0 0 0 0 0.0001429865 0 0
+mFC_ORO	13	## Forced fishing mortality rates (per day) forOrange Roughy ## 0 0 0 0 0 0 0 0 0 0 0.0001429865 0 0
+0 0 0 0 0 0 0 0 0 0 0.01429865 0 0
 mFC_ALF	13	## Forced fishing mortality rates (per day) forAlfonsino
 0 0 0 0 0 0 0 0 0 0 0 0.000007 0
 mFC_ANG	13	## Forced fishing mortality rates (per day) forAnguila
@@ -1555,7 +1555,7 @@ FCcocatchBRC 34 ## Proportional discarding based on catch of another species Bre
 FCcocatchVID 34 ## Proportional discarding based on catch of another species Vidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 FCcocatchORO 34 ## Proportional discarding based on catch of another species Orange Roughy 0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0.147 0.147 0 0 0.42 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0.8 0.8 0 0 0.8 0 0 0 0 0 0 0 0
 FCcocatchALF 34 ## Proportional discarding based on catch of another species Alfonsino
 0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
 FCcocatchANG 34 ## Proportional discarding based on catch of another species Anguila
@@ -2618,7 +2618,7 @@ invert_incidmort	1	 ## Proportion of the discarded undersized animals that survi
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 incidmort_SPL	13	## Proportion of the discarded that not survive discarding for the groupSpiny lobster
-1 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_GCR	13	## Proportion of the discarded that not survive discarding for the groupGolden Crab
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_BRC	13	## Proportion of the discarded that not survive discarding for the groupBreca
@@ -2626,9 +2626,9 @@ incidmort_BRC	13	## Proportion of the discarded that not survive discarding for 
 incidmort_VID	13	## Proportion of the discarded that not survive discarding for the groupVidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_ORO	13	## Proportion of the discarded that not survive discarding for the groupOrange Roughy
-0 0 0 0 0 0 0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_ALF	13	## Proportion of the discarded that not survive discarding for the groupAlfonsino
-0 0 0 0 0 0 0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_ANG	13	## Proportion of the discarded that not survive discarding for the groupAnguila
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_CHO	13	## Proportion of the discarded that not survive discarding for the groupChondrichtyans
