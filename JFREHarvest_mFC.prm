@@ -680,7 +680,7 @@ BaitLBF_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Ba
 BaitSBF_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Bait Small Benthic Fish
 HlineBRC_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Handlining Breca
 HlineVID_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: handlining Vidriola
-TrawlORO_flagmanage	2	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Orange Roughy
+TrawlORO_flagmanage	3	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Orange Roughy
 TrawlALF_flagmanage	2	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Trawling Alfonsino
 PotOCT_flagmanage	0	## Adaptive Management [0] No, [1] Simple, [2] TACs for: Pot-trap Octopus
 
@@ -2618,7 +2618,7 @@ invert_incidmort	1	 ## Proportion of the discarded undersized animals that survi
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 incidmort_SPL	13	## Proportion of the discarded that not survive discarding for the groupSpiny lobster
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_GCR	13	## Proportion of the discarded that not survive discarding for the groupGolden Crab
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_BRC	13	## Proportion of the discarded that not survive discarding for the groupBreca
@@ -2626,13 +2626,13 @@ incidmort_BRC	13	## Proportion of the discarded that not survive discarding for 
 incidmort_VID	13	## Proportion of the discarded that not survive discarding for the groupVidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_ORO	13	## Proportion of the discarded that not survive discarding for the groupOrange Roughy
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_ALF	13	## Proportion of the discarded that not survive discarding for the groupAlfonsino
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_ANG	13	## Proportion of the discarded that not survive discarding for the groupAnguila
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_CHO	13	## Proportion of the discarded that not survive discarding for the groupChondrichtyans
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_OTA	13	## Proportion of the discarded that not survive discarding for the groupOtariid
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_DOL	13	## Proportion of the discarded that not survive discarding for the groupDophins
@@ -2642,7 +2642,7 @@ incidmort_BIR	13	## Proportion of the discarded that not survive discarding for 
 incidmort_SQD	13	## Proportion of the discarded that not survive discarding for the groupSquids
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_OCT	13	## Proportion of the discarded that not survive discarding for the groupOctupus
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_LPF	13	## Proportion of the discarded that not survive discarding for the groupLarge pelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_SPF	13	## Proportion of the discarded that not survive discarding for the groupSmall pelagic fish
@@ -2660,15 +2660,15 @@ incidmort_MZO	13	## Proportion of the discarded that not survive discarding for 
 incidmort_LZO	13	## Proportion of the discarded that not survive discarding for the groupLarge Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_SCR	13	## Proportion of the discarded that not survive discarding for the groupSmall crustaceans
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_BFF	13	## Proportion of the discarded that not survive discarding for the groupDeposit feeders
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_LPH	13	## Proportion of the discarded that not survive discarding for the groupLarge phytoplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_SPH	13	## Proportion of the discarded that not survive discarding for the groupSmall phytoplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_COR	13	## Proportion of the discarded that not survive discarding for the groupCoral
-0 0 0 0 0 0 0 0 0 0 0 0 0
+1 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_SUR	13	## Proportion of the discarded that not survive discarding for the groupSea Urchin
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_MOL	13	## Proportion of the discarded that not survive discarding for the groupMollusca
@@ -3528,7 +3528,7 @@ TAC_BRC	13	## Total allowable catch (TAC) per fishery for the groupBreca
 TAC_VID	13	## Total allowable catch (TAC) per fishery for the groupVidriola
 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10
 TAC_ORO	13	## Total allowable catch (TAC) per fishery for the groupOrange Roughy
-1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10
+1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16 1e+16
 TAC_ALF	13	## Total allowable catch (TAC) per fishery for the groupAlfonsino
 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10 1e+10
 TAC_ANG	13	## Total allowable catch (TAC) per fishery for the groupAnguila
