@@ -10,7 +10,7 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
-tstop         1500 day #24000 day    # Stop time after the given period 14600 day = 60 años 23000 (time for the hydro model)
+tstop         25 day #24000 day    # Stop time after the given period 14600 day = 60 años 23000 (time for the hydro model)
 tburnday      0 day	   # Burnday
 external_box  0		   #
 
@@ -18,7 +18,7 @@ external_box  0		   #
 ## ~                         Parameters loading different submodel or options                     ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 flagecon_on                 0   # Flag showing whether want economics loaded and submodel run (1) or not (0)
-flag_fisheries_on           1   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
+flag_fisheries_on           0   # Flag showing whether want fisheries loaded and submodel run (1) or not (0)
 flag_skip_biol              0   # Flag showing whether want biological model run (1) or not (0 - only used when debugging fisheries)
 flag_skip_phys              0   # Flag showing whether want biological model run (0) or not (1 - only used when debugging fisheries)
 fishmove      	            1   # Set to 0 to turn vertebrate movement off for debugging purposes
