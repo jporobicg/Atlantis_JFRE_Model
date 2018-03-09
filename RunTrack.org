@@ -14797,3 +14797,55 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6268
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : No fisheries
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180301063814
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180301063814.png]]
+* Run PC-Demiurgo 20180307121515
+  - Run start: 2018-03-07 12:15:15
+  - Run end: 2018-03-07 12:15:34
+  - log file : [[file:Calibration/20180307121534.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6268
+  - Run used :  atlantisMerged -i JFRE.ini_Flat.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180307121515
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180307121515.png]]
+* Run PC-Demiurgo 20180308155146
+  - Run start: 2018-03-08 15:51:46
+  - Run end: 2018-03-08 15:52:04
+  - log file : [[file:Calibration/20180308155204.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6268
+  - Run used :  atlantisMerged -i JFRE.ini_Flat.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180308155146
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180308155146.png]]
+* Run PC-Demiurgo 20180309115757
+  - Run start: 2018-03-09 11:57:57
+  - Run end: 2018-03-09 11:58:17
+  - log file : [[file:Calibration/20180309115817.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6307
+  - Run used :  atlantisMerged -i JFRE.ini_Flat.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180309115757
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180309115757.png]]
+* Run PC-Demiurgo 20180309115944
+  - Run start: 2018-03-09 11:59:44
+  - Run end: 2018-03-09 12:00:03
+  - log file : [[file:Calibration/20180309120003.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6307
+  - Run used :  atlantisMerged -i JFRE.ini_Flat.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv

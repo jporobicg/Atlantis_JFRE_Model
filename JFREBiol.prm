@@ -4391,9 +4391,9 @@ SPL_mL   2 # Linear mortality rate of Spiny lobster [ d-1 ]
 GCR_mL   2 # Linear mortality rate of Golden Crab [ d-1 ]
 0 0
 BRC_mL   2 # Linear mortality rate of Breca [ d-1 ]
-0.000001 0.0001
+0 0
 VID_mL   2 # Linear mortality rate of Vidriola [ d-1
-0.000001 0.0003
+0 0
 ORO_mL   2 # Linear mortality rate of Orange Roughy [ d-1 ]
 0 0
 ALF_mL   2 # Linear mortality rate of Alfonsino [ d-1 ]
@@ -4409,15 +4409,15 @@ DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
 0.0008 0.000035
 LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
-0  0.0001
+0  0
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.000025
+0  0
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0.000000005
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
-0  0.00001
+0  0
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
-0 0.00001
+0 0
 
 ## Invertebrates
 OCT_mL   0.001 # Linear mortality rate of Octupus [ d-1 ]
@@ -4456,7 +4456,7 @@ ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
 ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 8e-10 2e-09
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
-1e-9 1e-05
+2e-10 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
 3e-7 1e-5
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
@@ -5208,7 +5208,7 @@ BHalpha_BRC   2.9E+8   	       # Beverton-Holt recruitment rate parameter (if re
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   1.4E+10              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   9E+8		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
-BHalpha_ANG   3E+11             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
+BHalpha_ANG   1E+9             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Anguila
 BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Chondrichtyans
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
