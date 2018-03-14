@@ -4413,7 +4413,7 @@ LPF_mL   2 # Linear mortality rate of Large pelagic fish [ d-1 ]
 SPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
 0  0
 MPF_mL   2 # Linear mortality rate of Small pelagic fish [ d-1 ]
-0  0.000000005
+0  0
 SBF_mL   2 # Linear mortality rate of Small benthic fish [ d-1 ]
 0  0
 LBF_mL   2 # Linear mortality rate of Large benthic fish [ d-1 ]
@@ -4448,7 +4448,7 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-9 1e-8
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-09 5e-8
+1e-09 1e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -4458,7 +4458,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 2e-10 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-3e-7 1e-5
+1e-7 5e-7
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 2e-7 4e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
@@ -5121,7 +5121,7 @@ KDENR_ALF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Anguila [ Numbers ]
 0
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
-3
+2
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.1
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]
@@ -5202,9 +5202,9 @@ KDENR_COR 1
 24208652
 
 # Beverton-Holt recruitmen
-BHalpha_SPL   1.3E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
+BHalpha_SPL   1.31E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
 BHalpha_GCR   5.2E8    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Golden Crab
-BHalpha_BRC   2.9E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
+BHalpha_BRC   1E+8   	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Breca
 BHalpha_VID   30680852    	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Vidriola
 BHalpha_ORO   1.4E+10              # Beverton-Holt recruitment rate parameter (if recruit = 3) for Orange Roughy
 BHalpha_ALF   9E+8		       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Alfonsino
@@ -5213,10 +5213,10 @@ BHalpha_CHO   0        	       	       # Beverton-Holt recruitment rate paramete
 BHalpha_OTA   5000.00                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Otariid
 BHalpha_DOL   4E+6             	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Cetaceans
 BHalpha_LPF   4.5E+08                   # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large pelagic fish
-BHalpha_SPF   2.24E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
-BHalpha_MPF   5E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_SPF   2E+10                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
+BHalpha_MPF   4.8E+9                  # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small pelagic fish
 BHalpha_SBF   4E8                    # Beverton-Holt recruitment rate parameter (if recruit = 3) for Small benthic fish
-BHalpha_LBF   2.1e9               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
+BHalpha_LBF   8e8               # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 BHalpha_BIR   1000          	       # Beverton-Holt recruitment rate parameter (if recruit = 3) for Large benthic fish
 
 BHbeta_SPL   5E+2       # Beverton-Holt recruitment saturation parameter (if recruit = 3) for Spiny lobster
