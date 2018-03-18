@@ -14949,3 +14949,90 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6307
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** ML
+***** LBF
+- from : 0 0.00001
+- to : 0 0
+***** MPF
+- from : 0  0.000000005
+- to : 0  0
+***** SBF
+- from : 0 0.00001
+- to : 0 0
+***** LPF
+- from : 0  0.0001
+- to : 0  0
+***** SPF
+- from : 0  0.000025
+- to : 0  0
+***** BRC
+- from : 0.000001 0.0001
+- to : 0 0
+***** VID
+- from : 0.000001 0.0003
+- to : 0 0
+**** MQ
+***** ANG
+- from : 5e-9 1e-05
+- to : 2e-10 1e-07
+***** LBF
+- from : 7e-9 5e-6
+- to : 7e-9 1e-8
+***** CHO
+- from : 3e-7 1e-5
+- to : 1e-7 5e-7
+***** BRC
+- from :1e-09 5e-8
+- to : 1e-09 1e-8
+*** Pprey
+*** Mum
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** ANG
+***** ALPHA
+- from : 3E+11
+- to : 1E+9
+**** CHO
+***** KDENR
+- from : 3
+- to : .5
+**** SPF
+***** alpha
+- from : 2.24E+10
+- to : 2E+10
+**** LBF
+***** ALPHA
+- from : 2.1e9
+- to : 8e8
+**** MPF
+***** ALPHA
+- from : 5E+9
+- to  : 4.8E+9
+**** BRC
+***** APHA
+- from : 2.9E+8
+- to : 1E+8
+*** Efficiency
+*** Initial conditions
+**** New conectivity matrix using more years and an ARIMA
+**** New forcing file for ml for OTA from mortality 13 times to 14 and to 1966
+## All the fisheries estar at day 1000 just to0 tray the debuggin
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180314150735
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180314150735.png]]
+* Run PC-Demiurgo 20180316122258
+  - Run start: 2018-03-16 12:22:58
+  - Run end: 2018-03-19 09:13:06
+  - log file : [[file:Calibration/20180319091306.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6307
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv

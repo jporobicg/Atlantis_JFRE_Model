@@ -3966,7 +3966,7 @@ mum_SPL   10 # Vertebrate growth rates for Spiny lobster [ mg N d-1 ]
 mum_GCR   10 # Vertebrate growth rates for Golden Crab [ mg N d-1 ]
 0.0005 0.105 1.75 8.2 27.2 21.67 23.33 37.33 44.17 49.57
 mum_BRC   10 # Vertebrate growth rates for Breca [ mg N d-1 ]
-5.144 2.331 9.38 17.361 29.225 40.433 71.667 89.28 84.8 104.123
+4.676 1.554 7.817 14.468 24.354 33.694 59.723 74.4 70.667 86.769
 mum_VID   3 # Vertebrate growth rates for Vidriola [ mg N d-1 ]
 2.286 20.556 225
 mum_ORO   10 # Vertebrate growth rates for Orange Roughy [ mg N d-1 ]
@@ -4448,7 +4448,7 @@ SPL_mQ   2 #  Quad. mortality rate of Spiny lobster [ d-1 ]
 GCR_mQ   2 #  Quad. mortality rate of Golden Crab [ d-1 ]
 1e-9 1e-8
 BRC_mQ   2 #  Quad. mortality rate of Breca [ d-1 ]
-1e-09 1e-8
+1e-09 4e-8
 VID_mQ   2 #  Quad. mortality rate of Vidriola [ d-1 ]
 1e-9 3e-6
 ORO_mQ   2 #  Quad. mortality rate of Orange Roughy [ d-1 ]
@@ -4458,7 +4458,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 2e-10 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-1e-7 5e-7
+5e-8 5e-7
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 2e-7 4e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
@@ -5121,7 +5121,7 @@ KDENR_ALF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Anguila [ Numbers ]
 0
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
-2
+.5
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.1
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]

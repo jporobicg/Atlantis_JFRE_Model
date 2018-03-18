@@ -3235,13 +3235,13 @@ In this secction I use the data form the Database to get the number of organism 
 **** mFC
  - Lobster
    - The modeling day is assuming that the first day of simulation is 1919-01-17 to 1950-01-01 (burning period)
-| Year        |    F(y-1) |      u (d-1) |  Total Change | Modeling day | Comment               |
-|-------------+-----------+--------------+---------------+--------------+-----------------------|
-| 1900 - 1929 |  0.082085 | 0.0002248651 |               |            0 | First simulated years |
-| 1930 - 1979 | 0.4146949 | 0.0011355052 |  5.0497169644 |         4002 | Early catch records   |
-| 1980 - 1999 | 0.9152795 | 0.0025044736 | 11.1376703175 |        22264 | Change Traps desig    |
-| 2000 - 2015 | 0.8032620 | 0.0021982979 |  9.7760735648 |        29204 | Use of Chigre         |
-| 2015 - 2050 |           |              |               |              |                       |
+| Year        |    F(y-1) |         u (d-1) |     Total Change | Modeling day | Comment                  |
+|-------------+-----------+-----------------+------------------+--------------+--------------------------|
+| 1900 - 1929 |  0.082085 |    0.0002248651 |                  |            0 | First simulated years    |
+| 1930 - 1979 | 0.4146949 |    0.0011355052 |     5.0497169644 |         4002 | Early catch records      |
+| 1980 - 1999 | 0.9152795 |    0.0025044736 |    11.1376703175 |        22264 | Change Traps desig       |
+| 2000 - 2009 | 0.8032620 |    0.0021982979 |     9.7760735648 |        29204 | Use of Chigre            |
+| 2010 - 2015 |    0.8434 | 0.0023080173541 | 10.2640076092654 |        33222 | Increase number of Boats |
  - GCR
 | Year        | F(y - 1) |       u (d - 1) | Source                 |
 |-------------+----------+-----------------+------------------------|
@@ -3295,6 +3295,15 @@ These estimation are based on the observed catch and the simulated biomass
 - To get the total bait catch I extrapolate the values of catch per trip to the total of trips by season.
   - I used the catch per trip from the Data base
   - The trips per season where obtained from the Marine traphic control logbook.
+- I added the information from the Juan Fernandez fisheries report year 2016, the TOtal catch and by catch reported there.
+|     | CPT-SPL |       | CPT-GCR | Total (tons) |
+|-----+---------+-------+---------+--------------|
+|     |      AS | RC-SC |   RC-SC |              |
+| ANG |   26414 | 33199 |    3008 |       62.621 |
+| BRC |   30038 | 55301 |    1651 |        86.99 |
+| JUR |   15420 | 74002 |    1752 |       91.174 |
+| VID |   19912 | 56152 |    3016 |        79.08 |
+
 #+BEGIN_SRC R :results output
   rm(list = ls())
   library(ascii)
@@ -3302,19 +3311,28 @@ These estimation are based on the observed catch and the simulated biomass
   library(ggplot2)
   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
   ## Reading data
-  lc     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/Location_catches_fgs.csv')
+  #lc     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/Location_catches_fgs.csv')
+  lc     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/CpT.csv')
+  lc <- lc[lc$Year>2010,]
   tr     <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/trips_by_season.csv')
   weight <- read.csv('/home/demiurgo/Documents/PhD/Harvest/catch.sp/weight.csv')
   ##~ FUNCTIONAL GROUPS
-  lc    <- FG(data = lc, column = 6)
+  lc    <- FG(data = lc, column = 5)
   ##
   ##~ By season
-  lc$Season <- with(lc,  ifelse(month %in% c(1, 2, 3), 1, ifelse(month %in% c(4, 5, 6), 2,
-                                                          ifelse(month %in% c(7, 8, 9), 3, 4))))
+  lc$Season <- with(lc,  ifelse(Mes %in% c(1, 2, 3), 1, ifelse(Mes %in% c(4, 5, 6), 2,
+                                                          ifelse(Mes %in% c(7, 8, 9), 3, 4))))
   tr$Season <- with(tr,  ifelse(Month %in% c(1, 2, 3), 1, ifelse(Month %in% c(4, 5, 6), 2,
                                                           ifelse(Month %in% c(7,8,9),   3, 4))))
   ## Total number of trips by Year (Information from the marine trafic control)
   tr        <- na.omit(tr)        #  Remove Empty rows
+  ## Numbre of trips
+  png('img/Catch_per_trip.png', height = 900, width = 900)
+  p <- ggplot(tr, aes(x=factor(Month), y=trips, group=as.factor(Year))) + geom_line(aes(color=as.factor(Year)),size=2) + facet_wrap(~Island,ncol=2)
+  p <- p+scale_color_brewer(palette="Reds")+theme_minimal()+ labs(y = 'Tripts per Month',x='Month',colour = "Years")
+  p
+  invisible(dev.off())
+  ## trips
   glob.trip <- by(tr$trips, list(tr$Year, tr$Island, tr$Season), sum, na.rm = TRUE)
   trip      <- data.frame(Year   = with(tr, rep(unique(Year), length(unique(Island)) * length(unique(Season)))),
                           Season = with(tr, sort(rep(unique(Season), length(unique(Year)) * length(unique(Island))))),
@@ -3326,33 +3344,32 @@ These estimation are based on the observed catch and the simulated biomass
   lc    <- na.omit(lc)        #  Remove Empty rows
   lc.FG <- split(lc, paste(lc$Year, lc$Island))
   ## list of catch per trip by season and by FG
-  CpT         <- as.data.frame(do.call(rbind, lapply(lc.FG,sumry)), rownames = FALSE)
+  CpT         <- as.data.frame(do.call(rbind, lapply(lc.FG, sumry)), rownames = FALSE)
   CpT$TC.numb <- NA
   for(i in 1 : nrow(t.trip)){
       post              <- which(CpT$Year == t.trip$Year[i] & CpT$Season == t.trip$Season[i] & CpT$Island == t.trip$Island[i])
-      CpT$TC.numb[post] <- CpT$cperT[post] * t.trip$trips[i]
+      CpT$TC.numb[post] <- CpT$cperT[post] * t.trip$trips[i] /1000
   }
-  CpT$TC.weight <- NA
-  for( i in 1 : nrow(weight)){
-      post                  <- which(CpT$FG %in%weight$FG[i])
-      CpT$TC.weight[post]   <- CpT$TC.numb[post] * weight$weight[i]  / 1000000 # passing direct to tonnes
-  }
+  ## CpT$TC.weight <- NA
+  ## for( i in 1 : nrow(weight)){
+  ##     post                  <- which(CpT$FG %in%weight$FG[i])
+  ##     CpT$TC.weight[post]   <- CpT$TC.numb[post] * weight$weight[i]  / 1000000 # passing direct to tonnes
+  ## }
   ## CAtch per season
   CpT <- na.omit(CpT)
   png('img/Catch_per_Season.png', height = 1000, width = 1000)
-  sp <- ggplot(data = CpT, aes(Season, TC.weight, group = 1))+ geom_point() + geom_smooth(method = "lm", color = 'red')
+  sp <- ggplot(data = CpT, aes(Season, TC.numb, group = as.factor(Year))) + geom_line (aes(color=as.factor(Year)), size=2)#geom_point() + geom_smooth(method = "lm", color = 'red')
   sp + facet_wrap(~FG + Island, ncol = 4, scales = 'free_y')
   #sp
   invisible(dev.off())
-  ## Catch per YEar and island
-  tmp   <- lapply(split(CpT, paste(CpT$Year, CpT$Island, CpT$FG)), function(x) sum(x$TC.weight))
+  ## Catch per Year and island
+  tmp   <- lapply(split(CpT, paste(CpT$Year, CpT$Island, CpT$FG)), function(x) sum(x$TC.numb))
   cat.w <- data.frame(matrix(unlist(strsplit(names(tmp), ' ')), ncol = 3, byrow = TRUE))
   cat.w$Catch.W <- c(unlist(tmp))
   colnames(cat.w)[1 : 3] <- c('Year', 'Island', 'FG')
   png('img/Catch_per_Year_Island.png', height = 1000, width = 1000)
   sp <- ggplot(data = cat.w, aes(Year, Catch.W, group = 1))+ geom_point() + geom_smooth(method = "lm", color = 'red')
   sp + facet_wrap(~FG + Island, ncol = 4, scales = 'free_y')
-  #sp
   invisible(dev.off())
   ## Total Catch per year
   cat.w <- na.omit(cat.w)
@@ -3363,15 +3380,33 @@ These estimation are based on the observed catch and the simulated biomass
   png('img/Total_Catch_per_Year.png', height = 1000, width = 1000)
   sp <- ggplot(data = catch.year, aes(Year, Total, group = 1))+ geom_line() #+ geom_smooth(method = "lm", color = 'red')
   sp + facet_wrap(~FG , ncol = 4, scales = 'free_y')
-  #sp
   invisible(dev.off())
   catch.year <- catch.year[order(catch.year$FG, catch.year$Year), ]
+  tab.out <- xtabs(Total ~ FG + Year, catch.year)
+  cap1    <- 'Catch of bait by years'
+  b       <- ascii(tab.out, header=T,  include.rownames = TRUE, include.colnames = T, caption = cap1)
+  print(b)
   write.table(catch.year, '/home/demiurgo/Documents/PhD/Harvest/catch.sp/catch.csv')
 #+END_SRC
 #+RESULTS:
+#+CAPTION: Catch of bait by years
+|      |     | *Year* |       |       |       |       |       |
+|      |     | 2011   | 2012  | 2013  | 2014  | 2015  | 2016  |
+|------+-----+--------+-------+-------+-------+-------|-------|
+| *FG* | ANG | 6.88   | 25.30 | 27.98 | 43.21 | 38.00 | 9.50  |
+|      | BRC | 10.06  | 35.12 | 47.17 | 53.00 | 56.97 | 21.73 |
+|      | CHO | 0.10   | 0.17  | 0.07  | 0.70  | 0.03  | 0.00  |
+|      | GCR | 0.00   | 0.00  | 0.00  | 0.00  | 0.00  | 0.00  |
+|      | LBF | 0.11   | 0.86  | 0.97  | 2.00  | 0.43  | 0.52  |
+|      | LPF | 2.52   | 14.93 | 15.76 | 21.97 | 14.21 | 11.63 |
+|      | OCT | 0.00   | 0.03  | 0.13  | 0.18  | 0.37  | 0.85  |
+|      | SBF | 0.34   | 0.86  | 0.75  | 0.68  | 2.90  | 0.55  |
+|      | SPF | 0.11   | 0.74  | 0.96  | 2.25  | 1.40  | 1.70  |
+|      | VID | 0.36   | 2.56  | 4.22  | 4.50  | 4.40  | 6.51  |
+#+CAPTION: Trips by Month
+ [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_trip.png]]
+#+CAPTION: Bait catch per season
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Season.png]]
- #+CAPTION: Bait catch per season
- [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Catch_per_Year_Island.png]]
  #+CAPTION: Bait catch per year and Island
  [[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Total_Catch_per_Year.png]]
  #+CAPTION: Total Bait catch per year in the JFRE
@@ -3388,6 +3423,14 @@ These estimation are based on the observed catch and the simulated biomass
 ****** Artisanal
  - To stimate te total bycatch I used the same approach that one used for the estimation of bait catch
  - I multiply the number of trips by the bycatch per trips
+ - For the YEar 2016 I used the estimation from the report: Fisheries of Juan Fernandez year 2016.
+| FG  |      |      | Indi. Weight | Total (Ton) |
+|-----+------+------+--------------+-------------|
+| OCT | 1632 | 3627 |         0.64 |     3.36576 |
+| SCR | 7445 | 3203 |         0.52 |     5.53696 |
+| COR |  338 |   35 |            1 |       0.373 |
+
+
 #+BEGIN_SRC R :results output
   rm(list = ls())
   library(ascii)
