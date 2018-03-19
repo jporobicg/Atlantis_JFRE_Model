@@ -16,7 +16,7 @@ BaitLBF_tStart	10000	## Day of the start for the FISHERY Bait Large Benthic Fish
 BaitSBF_tStart	10000	## Day of the start for the FISHERY Bait Small Benthic Fish
 HlineBRC_tStart	10000	## Day of the start for the FISHERY Handlining Breca
 HlineVID_tStart	10000	## Day of the start for the FISHERY handlining Vidriola
-TrawlORO_tStart	10000 #17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
+TrawlORO_tStart	0 #17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
 TrawlALF_tStart	10000 #17532  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
 PotOCT_tStart	10000	## Day of the start for the FISHERY Pot-trap Octopus
 
