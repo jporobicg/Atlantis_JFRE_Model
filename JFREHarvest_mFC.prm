@@ -6,19 +6,19 @@
 ## -- FISHERIES FLAGS  – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-TrapSPL_tStart	10000	## Day of the start for the FISHERY Trap Spiny Lobster
-TrapGCR_tStart	10000 #18262   ## 18262(notBurn) 29568(Burn) Golden Crab (y:2000)
-TrapANG_tStart	10000	## Day of the start for the FISHERY Trap Anguila
-BaitSPF_tStart	10000	## Day of the start for the FISHERY Bait Small Pelagic Fish
-BaitLPF_tStart	10000	## Day of the start for the FISHERY Bait Large Pelagic Fish
-BaitBRC_tStart	10000	## Day of the start for the FISHERY Bait Breca
-BaitLBF_tStart	10000	## Day of the start for the FISHERY Bait Large Benthic Fish
-BaitSBF_tStart	10000	## Day of the start for the FISHERY Bait Small Benthic Fish
-HlineBRC_tStart	10000	## Day of the start for the FISHERY Handlining Breca
-HlineVID_tStart	10000	## Day of the start for the FISHERY handlining Vidriola
-TrawlORO_tStart	0 #17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
-TrawlALF_tStart	10000 #17532  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
-PotOCT_tStart	10000	## Day of the start for the FISHERY Pot-trap Octopus
+TrapSPL_tStart	0	## Day of the start for the FISHERY Trap Spiny Lobster
+TrapGCR_tStart	18262   ## 18262(notBurn) 29568(Burn) Golden Crab (y:2000)
+TrapANG_tStart	0	## Day of the start for the FISHERY Trap Anguila
+BaitSPF_tStart	0	## Day of the start for the FISHERY Bait Small Pelagic Fish
+BaitLPF_tStart	0	## Day of the start for the FISHERY Bait Large Pelagic Fish
+BaitBRC_tStart	0	## Day of the start for the FISHERY Bait Breca
+BaitLBF_tStart	0	## Day of the start for the FISHERY Bait Large Benthic Fish
+BaitSBF_tStart	0	## Day of the start for the FISHERY Bait Small Benthic Fish
+HlineBRC_tStart	0	## Day of the start for the FISHERY Handlining Breca
+HlineVID_tStart	0	## Day of the start for the FISHERY handlining Vidriola
+TrawlORO_tStart	17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
+TrawlALF_tStart	17532  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
+PotOCT_tStart	0	## Day of the start for the FISHERY Pot-trap Octopus
 
 TrapSPL_tEnd	1e+12	## Active: 2 = no preference, 1 = day, 0 = night, FISHERY Trap Spiny Lobster
 TrapGCR_tEnd	1e+12	## Active: 2 = no preference, 1 = day, 0 = night, FISHERY Trap Golden Crab
