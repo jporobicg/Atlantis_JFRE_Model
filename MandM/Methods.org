@@ -3242,6 +3242,17 @@ In this secction I use the data form the Database to get the number of organism 
 | 1980 - 1999 | 0.9152795 |    0.0025044736 |    11.1376703175 |        22264 | Change Traps desig       |
 | 2000 - 2009 | 0.8032620 |    0.0021982979 |     9.7760735648 |        29204 | Use of Chigre            |
 | 2010 - 2015 |    0.8434 | 0.0023080173541 | 10.2640076092654 |        33222 | Increase number of Boats |
+
+   - The modeling day is assuming that the first day of simulation is 1950-01-01 (NO burning period)
+| Year        |    F(y-1) |         u (d-1) |     Total Change | Modeling day | Comment                  |
+|-------------+-----------+-----------------+------------------+--------------+--------------------------|
+| 1900 - 1929 |  0.082085 |    0.0002248651 |                  |            0 | First simulated years    |
+| 1930 - 1979 | 0.4146949 |    0.0011355052 |     5.0497169644 |         4002 | Early catch records      |
+| 1980 - 1999 | 0.9152795 |    0.0025044736 |    11.1376703175 |        22264 | Change Traps desig       |
+| 2000 - 2009 | 0.8032620 |    0.0021982979 |     9.7760735648 |        29204 | Use of Chigre            |
+| 2010 - 2015 |    0.8434 | 0.0023080173541 | 10.2640076092654 |        33222 | Increase number of Boats |
+
+
  - GCR
 | Year        | F(y - 1) |       u (d - 1) | Source                 |
 |-------------+----------+-----------------+------------------------|

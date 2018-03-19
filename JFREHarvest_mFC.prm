@@ -7,7 +7,7 @@
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 TrapSPL_tStart	0	## Day of the start for the FISHERY Trap Spiny Lobster
-TrapGCR_tStart	18262   ## 18262(notBurn) 29568(Burn) Golden Crab (y:2000)
+TrapGCR_tStart	0 #18262   ## 18262(notBurn) 29568(Burn) Golden Crab (y:2000)
 TrapANG_tStart	0	## Day of the start for the FISHERY Trap Anguila
 BaitSPF_tStart	0	## Day of the start for the FISHERY Bait Small Pelagic Fish
 BaitLPF_tStart	0	## Day of the start for the FISHERY Bait Large Pelagic Fish
@@ -16,8 +16,8 @@ BaitLBF_tStart	0	## Day of the start for the FISHERY Bait Large Benthic Fish
 BaitSBF_tStart	0	## Day of the start for the FISHERY Bait Small Benthic Fish
 HlineBRC_tStart	0	## Day of the start for the FISHERY Handlining Breca
 HlineVID_tStart	0	## Day of the start for the FISHERY handlining Vidriola
-TrawlORO_tStart	17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
-TrawlALF_tStart	17532  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
+TrawlORO_tStart	0 #17532  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
+TrawlALF_tStart	0 #17532  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
 PotOCT_tStart	0	## Day of the start for the FISHERY Pot-trap Octopus
 
 TrapSPL_tEnd	1e+12	## Active: 2 = no preference, 1 = day, 0 = night, FISHERY Trap Spiny Lobster
@@ -1377,15 +1377,15 @@ mFC_SPL	13	## Forced fishing mortality rates (per day) forSpiny lobster
 mFC_GCR	13	## Forced fishing mortality rates (per day) forGolden Crab
 0 0.0001369769192 0 0 0 0 0 0 0 0 0 0 0
 mFC_BRC	13	## Forced fishing mortality rates (per day) forBreca
-0 0 0 0 0 0.00000434829236 0 0 0.00000345645331 0 0 0 0
+0 0 0 0 0 0.000021913043 0 0 0.000006955952 0 0 0 0
 mFC_VID	13	## Forced fishing mortality rates (per day) forVidriola
-0 0 0 0 0 0 0 0 0 0.00001172976679 0 0 0
+0 0 0 0 0 0 0 0 0 0.000015072208 0 0 0
 mFC_ORO	13	## Forced fishing mortality rates (per day) forOrange Roughy ##
 0 0 0 0 0 0 0 0 0 0 0.0001429865 0 0
 mFC_ALF	13	## Forced fishing mortality rates (per day) forAlfonsino
 0 0 0 0 0 0 0 0 0 0 0 0.000007 0
 mFC_ANG	13	## Forced fishing mortality rates (per day) forAnguila
-0 0 0.00000573809727 0 0 0 0 0 0 0 0 0 0
+0 0 0.000010983995 0 0 0 0 0 0 0 0 0 0
 mFC_CHO	13	## Forced fishing mortality rates (per day) forChondrichtyans
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_OTA	13	## Forced fishing mortality rates (per day) forOtariid
@@ -1397,17 +1397,17 @@ mFC_BIR	13	## Forced fishing mortality rates (per day) forBirds
 mFC_SQD	13	## Forced fishing mortality rates (per day) forSquids
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_OCT	13	## Forced fishing mortality rates (per day) forOctupus
-0 0 0 0 0 0 0 0 0 0 0 0 0.00001435071334
+0 0 0 0 0 0 0 0 0 0 0 0 0.000032948238
 mFC_LPF	13	## Forced fishing mortality rates (per day) forLarge pelagic fish
-0 0 0 0 0.00000117080982 0 0 0 0 0 0 0 0
+0 0 0 0 0.000003235391 0 0 0 0 0 0 0 0
 mFC_SPF	13	## Forced fishing mortality rates (per day) forSmall pelagic fish
-0 0 0 0.00000013827795 0 0 0 0 0 0 0 0 0
+0 0 0 0.000000147022 0 0 0 0 0 0 0 0 0
 mFC_SBF	13	## Forced fishing mortality rates (per day) forSmall benthic fish
-0 0 0 0 0 0 0 0.00000006458071 0 0 0 0 0
+0 0 0 0 0 0 0 0.000000087408 0 0 0 0 0
 mFC_MPF	13	## Forced fishing mortality rates (per day) forMesopelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_LBF	13	## Forced fishing mortality rates (per day) forLarge benthic fish
-0 0 0 0 0 0 0.00000006824498 0 0 0 0 0 0
+0 0 0 0 0 0 0.000000073120 0 0 0 0 0 0
 mFC_SZO	13	## Forced fishing mortality rates (per day) forSmall Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_MZO	13	## Forced fishing mortality rates (per day) forMedium Zooplankton
@@ -2670,9 +2670,9 @@ incidmort_SPH	13	## Proportion of the discarded that not survive discarding for 
 incidmort_COR	13	## Proportion of the discarded that not survive discarding for the groupCoral
 1 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_SUR	13	## Proportion of the discarded that not survive discarding for the groupSea Urchin
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_MOL	13	## Proportion of the discarded that not survive discarding for the groupMollusca
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 1 1 0
 incidmort_MA	13	## Proportion of the discarded that not survive discarding for the groupMacroalgae
 0 0 0 0 0 0 0 0 0 0 0 0 0
 incidmort_PB	13	## Proportion of the discarded that not survive discarding for the groupPelagic Bacteria
@@ -5954,19 +5954,19 @@ Qchange_mult_DC	1	## New level of catchability for the group Carrion
 
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 SPL_mFC_changes	13	## Number of changes of fishing mortality for the groupSpiny lobster
-3 0 0 0 0 0 0 0 0 0 0 0 0
+4 0 0 0 0 0 0 0 0 0 0 0 0
 GCR_mFC_changes	13	## Number of changes of fishing mortality for the groupGolden Crab
 0 0 0 0 0 0 0 0 0 0 0 0 0
 BRC_mFC_changes	13	## Number of changes of fishing mortality for the groupBreca
-0 0 0 0 0 3 0 0 0 0 0 0 0
+0 0 0 0 0 4 0 0 0 0 0 0 0
 VID_mFC_changes	13	## Number of changes of fishing mortality for the groupVidriola
-0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 4 0 0 0
 ORO_mFC_changes	13	## Number of changes of fishing mortality for the groupOrange Roughy
 0 0 0 0 0 0 0 0 0 0 7 0 0
 ALF_mFC_changes	13	## Number of changes of fishing mortality for the groupAlfonsino
 0 0 0 0 0 0 0 0 0 0 0 11 0
 ANG_mFC_changes	13	## Number of changes of fishing mortality for the groupAnguila
-0 0 3 0 0 0 0 0 0 0 0 0 0
+0 0 4 0 0 0 0 0 0 0 0 0 0
 CHO_mFC_changes	13	## Number of changes of fishing mortality for the groupChondrichtyans
 0 0 0 0 0 0 0 0 0 0 0 0 0
 OTA_mFC_changes	13	## Number of changes of fishing mortality for the groupOtariid
@@ -5980,15 +5980,15 @@ SQD_mFC_changes	13	## Number of changes of fishing mortality for the groupSquids
 OCT_mFC_changes	13	## Number of changes of fishing mortality for the groupOctupus
 0 0 0 0 0 0 0 0 0 0 0 0 0
 LPF_mFC_changes	13	## Number of changes of fishing mortality for the groupLarge pelagic fish
-0 0 0 0 3 0 0 0 0 0 0 0 0
+0 0 0 0 4 0 0 0 0 0 0 0 0
 SPF_mFC_changes	13	## Number of changes of fishing mortality for the groupSmall pelagic fish
-0 0 0 3 0 0 0 0 0 0 0 0 0
+0 0 0 4 0 0 0 0 0 0 0 0 0
 SBF_mFC_changes	13	## Number of changes of fishing mortality for the groupSmall benthic fish
-0 0 0 0 0 0 0 3 0 0 0 0 0
+0 0 0 0 0 0 0 4 0 0 0 0 0
 MPF_mFC_changes	13	## Number of changes of fishing mortality for the groupMesopelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 LBF_mFC_changes	13	## Number of changes of fishing mortality for the groupLarge benthic fish
-0 0 0 0 0 0 3 0 0 0 0 0 0
+0 0 0 0 0 0 4 0 0 0 0 0 0
 SZO_mFC_changes	13	## Number of changes of fishing mortality for the groupSmall Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 MZO_mFC_changes	13	## Number of changes of fishing mortality for the groupMedium Zooplankton
@@ -6022,20 +6022,20 @@ DR_mFC_changes	13	## Number of changes of fishing mortality for the groupRefract
 DC_mFC_changes	13	## Number of changes of fishing mortality for the groupCarrion
 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-mFCchange_start_SPL	3	## Time when each change in fishing mortality begins for the group Spiny lobster
-4002 22264 29204
+mFCchange_start_SPL	4	## Time when each change in fishing mortality begins for the group Spiny lobster
+4002 22264 29204 33222
 mFCchange_start_GCR	1	## Time when each change in fishing mortality begins for the group Golden Crab
 0
-mFCchange_start_BRC	3	## Time when each change in fishing mortality begins for the group Breca
-4002 22264 29204
+mFCchange_start_BRC	4	## Time when each change in fishing mortality begins for the group Breca
+4002 22264 29204 33222
 mFCchange_start_VID	1	## Time when each change in fishing mortality begins for the group Vidriola
-0
+4002 22264 29204 33222
 mFCchange_start_ORO	7	## Time when each change in fishing mortality begins for the group Orange Roughy
 29571 29936 30301 30666 31032 31397 31762
 mFCchange_start_ALF	11      ## Time when each change in fishing mortality begins for the group Alfonsino
 29205 29571 29936 30301 30666 31032 31397 31762 32127 32493 32858
-mFCchange_start_ANG	3	## Time when each change in fishing mortality begins for the group Anguila
-4002 22264 29204
+mFCchange_start_ANG	4	## Time when each change in fishing mortality begins for the group Anguila
+4002 22264 29204 33222
 mFCchange_start_CHO	1	## Time when each change in fishing mortality begins for the group Chondrichtyans
 0
 mFCchange_start_OTA	1	## Time when each change in fishing mortality begins for the group Otariid
@@ -6048,16 +6048,16 @@ mFCchange_start_SQD	1	## Time when each change in fishing mortality begins for t
 0
 mFCchange_start_OCT	1	## Time when each change in fishing mortality begins for the group Octupus
 0
-mFCchange_start_LPF	3	## Time when each change in fishing mortality begins for the group Large pelagic fish
-4002 22264 29204
-mFCchange_start_SPF	3	## Time when each change in fishing mortality begins for the group Small pelagic fish
-4002 22264 29204
-mFCchange_start_SBF	3	## Time when each change in fishing mortality begins for the group Small benthic fish
-4002 22264 29204
+mFCchange_start_LPF	4	## Time when each change in fishing mortality begins for the group Large pelagic fish
+4002 22264 29204 33222
+mFCchange_start_SPF	4	## Time when each change in fishing mortality begins for the group Small pelagic fish
+4002 22264 29204 33222
+mFCchange_start_SBF	4	## Time when each change in fishing mortality begins for the group Small benthic fish
+4002 22264 29204 33222
 mFCchange_start_MPF	1	## Time when each change in fishing mortality begins for the group Mesopelagic fish
 0
-mFCchange_start_LBF	3	## Time when each change in fishing mortality begins for the group Large benthic fish
-4002 22264 29204
+mFCchange_start_LBF	4	## Time when each change in fishing mortality begins for the group Large benthic fish
+4002 22264 29204 33222
 mFCchange_start_SZO	1	## Time when each change in fishing mortality begins for the group Small Zooplankton
 0
 mFCchange_start_MZO	1	## Time when each change in fishing mortality begins for the group Medium Zooplankton
@@ -6091,20 +6091,21 @@ mFCchange_start_DR	1	## Time when each change in fishing mortality begins for th
 mFCchange_start_DC	1	## Time when each change in fishing mortality begins for the group Carrion
 0
 
-mFCchange_period_SPL	3	## Period over which change in fishing mortality occurs for the group Spiny lobster
-365 365 365
+
+mFCchange_period_SPL	4	## Period over which change in fishing mortality occurs for the group Spiny lobster
+365 365 365 365
 mFCchange_period_GCR	1	## Period over which change in fishing mortality occurs for the group Golden Crab
 0
-mFCchange_period_BRC	3	## Period over which change in fishing mortality occurs for the group Breca
-365 365 365
-mFCchange_period_VID	1	## Period over which change in fishing mortality occurs for the group Vidriola
-0
+mFCchange_period_BRC	4	## Period over which change in fishing mortality occurs for the group Breca
+365 365 365 365
+mFCchange_period_VID	4	## Period over which change in fishing mortality occurs for the group Vidriola
+365 365 365 365
 mFCchange_period_ORO	7	## Period over which change in fishing mortality occurs for the group Orange Roughy
 182 182 182 182 182 182 182
 mFCchange_period_ALF	11	## Period over which change in fishing mortality occurs for the group Alfonsino
 182 182 182 182 182 182 182 182 182 182 182
-mFCchange_period_ANG	3	## Period over which change in fishing mortality occurs for the group Anguila
-365 365 365
+mFCchange_period_ANG	4	## Period over which change in fishing mortality occurs for the group Anguila
+365 365 365 365
 mFCchange_period_CHO	1	## Period over which change in fishing mortality occurs for the group Chondrichtyans
 0
 mFCchange_period_OTA	1	## Period over which change in fishing mortality occurs for the group Otariid
@@ -6117,16 +6118,16 @@ mFCchange_period_SQD	1	## Period over which change in fishing mortality occurs f
 0
 mFCchange_period_OCT	1	## Period over which change in fishing mortality occurs for the group Octupus
 0
-mFCchange_period_LPF	3	## Period over which change in fishing mortality occurs for the group Large pelagic fish
-365 365 365
-mFCchange_period_SPF	3	## Period over which change in fishing mortality occurs for the group Small pelagic fish
-365 365 365
-mFCchange_period_SBF	3	## Period over which change in fishing mortality occurs for the group Small benthic fish
-365 365 365
+mFCchange_period_LPF	4	## Period over which change in fishing mortality occurs for the group Large pelagic fish
+365 365 365 365
+mFCchange_period_SPF	4	## Period over which change in fishing mortality occurs for the group Small pelagic fish
+365 365 365 365
+mFCchange_period_SBF	4	## Period over which change in fishing mortality occurs for the group Small benthic fish
+365 365 365 365
 mFCchange_period_MPF	1	## Period over which change in fishing mortality occurs for the group Mesopelagic fish
 0
-mFCchange_period_LBF	3	## Period over which change in fishing mortality occurs for the group Large benthic fish
-365 365 365
+mFCchange_period_LBF	4	## Period over which change in fishing mortality occurs for the group Large benthic fish
+365 365 365 365
 mFCchange_period_SZO	1	## Period over which change in fishing mortality occurs for the group Small Zooplankton
 0
 mFCchange_period_MZO	1	## Period over which change in fishing mortality occurs for the group Medium Zooplankton
@@ -6160,20 +6161,20 @@ mFCchange_period_DR	1	## Period over which change in fishing mortality occurs fo
 mFCchange_period_DC	1	## Period over which change in fishing mortality occurs for the group Carrion
 0
 
-mFCchange_mult_SPL	1	## New level of fishing mortality for the group Spiny lobster
-5.0497169644 11.1376703175 9.7760735648
+mFCchange_mult_SPL	4	## New level of fishing mortality for the group Spiny lobster
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
 mFCchange_mult_GCR	1	## New level of fishing mortality for the group Golden Crab
 0
-mFCchange_mult_BRC	1	## New level of fishing mortality for the group Breca
-5.0497169644 11.1376703175 9.7760735648
-mFCchange_mult_VID	1	## New level of fishing mortality for the group Vidriola
-0
+mFCchange_mult_BRC	4	## New level of fishing mortality for the group Breca
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
+mFCchange_mult_VID	4	## New level of fishing mortality for the group Vidriola
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
 mFCchange_mult_ORO	7	## New level of fishing mortality for the group Orange Roughy
 1.8177580257 3.4953013371 3.6831009597 2.9420063262 4.0160584055 2.4270230275 1.1026191513
 mFCchange_mult_ALF 11	  	## New level of fishing mortality for the group Alfonsino
 7.9581512576 80.7288296206 121.5351410082 377.2824515462 147.4289733182 223.0869420642 167.3667144086 183.2650834303 261.900078148 116.5806733744 35.8708865686
-mFCchange_mult_ANG 1	        ## New level of fishing mortality for the group Anguila
-5.0497169644 11.1376703175 9.7760735648
+mFCchange_mult_ANG 4	        ## New level of fishing mortality for the group Anguila
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
 mFCchange_mult_CHO 1	        ## New level of fishing mortality for the group Chondrichtyans
 0
 mFCchange_mult_OTA 1	        ## New level of fishing mortality for the group Otariid
@@ -6186,16 +6187,16 @@ mFCchange_mult_SQD	1	## New level of fishing mortality for the group Squids
 0
 mFCchange_mult_OCT	1	## New level of fishing mortality for the group Octupus
 0
-mFCchange_mult_LPF	1	## New level of fishing mortality for the group Large pelagic fish
-5.0497169644 11.1376703175 9.7760735648
-mFCchange_mult_SPF	1	## New level of fishing mortality for the group Small pelagic fish
-5.0497169644 11.1376703175 9.7760735648
-mFCchange_mult_SBF	1	## New level of fishing mortality for the group Small benthic fish
-5.0497169644 11.1376703175 9.7760735648
+mFCchange_mult_LPF	4	## New level of fishing mortality for the group Large pelagic fish
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
+mFCchange_mult_SPF	4	## New level of fishing mortality for the group Small pelagic fish
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
+mFCchange_mult_SBF	4	## New level of fishing mortality for the group Small benthic fish
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
 mFCchange_mult_MPF	1	## New level of fishing mortality for the group Mesopelagic fish
 0
-mFCchange_mult_LBF	1	## New level of fishing mortality for the group Large benthic fish
-5.0497169644 11.1376703175 9.7760735648
+mFCchange_mult_LBF	4	## New level of fishing mortality for the group Large benthic fish
+5.0497169644 11.1376703175 9.7760735648 10.2640076092654
 mFCchange_mult_SZO	1	## New level of fishing mortality for the group Small Zooplankton
 0
 mFCchange_mult_MZO	1	## New level of fishing mortality for the group Medium Zooplankton

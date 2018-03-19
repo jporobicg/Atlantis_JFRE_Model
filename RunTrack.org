@@ -15036,3 +15036,44 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6307
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+***** BRC
+- from: 1e-09 1e-8
+- to: 1e-09 4e-8
+***** CHO
+- from : 1e-7 5e-7
+- to : 5e-8 5e-7
+*** Pprey
+*** Mum
+**** BRC
+- from : 5.144 2.331 9.38 17.361 29.225 40.433 71.667 89.28 84.8 104.123
+- to : 4.676 1.554 7.817 14.468 24.354 33.694 59.723 74.4 70.667 86.769
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** CHO
+***** KDENR
+- from : 2
+- to : .5
+*** Efficiency
+*** Initial conditions
+*** Harvest
+- Updated the total bait catch for the lobster fishery
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180316122258
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180316122258.png]]
+* Run PC-Demiurgo 20180319154025
+  - Run start: 2018-03-19 15:40:25
+  - Run end: 2018-03-19 15:40:55
+  - log file : [[file:Calibration/20180319154055.bak][Backupfile]]
+  - OS : Ubuntu 14.04.3 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6309
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
