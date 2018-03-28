@@ -4458,7 +4458,7 @@ ALF_mQ   2 #  Quad. mortality rate of Alfonsino [ d-1 ]
 ANG_mQ   2 #  Quad. mortality rate of Anguila [ d-1 ]
 2e-10 1e-07
 CHO_mQ   2 #  Quad. mortality rate of Chondrichtyans [ d-1 ]
-5e-8 5e-7
+1e-8 5e-8
 OTA_mQ   2 #  Quad. mortality rate of Otariid [ d-1 ]
 2e-7 4e-7
 DOL_mQ   2 #  Quad. mortality rate of Dophins [ d-1 ]
@@ -5121,7 +5121,7 @@ KDENR_ALF   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for 
 KDENR_ANG   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Anguila [ Numbers ]
 0
 KDENR_CHO   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Chondrichtyans [ Numbers ]
-.5
+1
 KDENR_OTA   1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Otariid [ Numbers ]
 0.1
 KDENR_DOL  1 # Recruits (total if recruit = 1, per-capita if recruit = 12) for Cetaceans [ Numbers ]

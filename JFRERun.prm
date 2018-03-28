@@ -10,7 +10,7 @@ verbose	      0  # Detailed logged output
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 title         Juan Fernandez Ridge Ecosystem Atlantis Model - OFES VERSION
 dt            12 hour      # 12 hour time step
-tstop         24000 day    # Stop time after the given period 14600 day = 60 años 23000 (time for the hydro model)
+tstop         14600 day    # Stop time after the given period 14600 day = 60 años 23000 (time for the hydro model)
 tburnday      0 day	   # Burnday
 external_box  0		   #
 
@@ -105,4 +105,4 @@ K_num_catchqueue  7    # Length (in days) of list of catches used in running ave
 flagscaleinit     1  # Flag to indicate whether scaling initial vertebrate densities (1=yes, 0=no)
 # SPL GCR BRC VID ORO ALF ANG CHO OTA DOL CET BIR SQD OCT LPF SPF SBF LBF SZO MZO LZO SCR BFF LPH SPH COR BCA MOL MA PB BB DL DR DC
 init_scalar       34
-1 1 1 1 2 .8 1 1 1 1 1 1 1 1 1 1 .8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 2 .8 1 3 1 1 1 1 1 1 1 1 .8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
