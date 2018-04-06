@@ -4063,6 +4063,29 @@ s (representative concentration pathways) approximately result in radiative forc
 |             | HlineVID | 1.00000 |  1.00000 |  1.00000 |  1.20000 |   1.20000 |   1.50000 |    2.00000 |
 |             | PotOCT   | 1.00000 |  1.00000 |  1.00000 |  1.20000 |   1.20000 |   1.50000 |    2.00000 |
 
+*** Sensitivity Analsisys
+- I tested the initial biomass for several groups, for those that I did't have a clear estimation
+- Scenarios :
+| FG  | Scenario | BRC | ANG | LPF | SPF | SBF | LBF |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| ANG | UP       |   1 | 1.5 |   1 |   1 | 0.8 |   1 |
+|     | DOWN     |   1 | 0.5 |   1 |   1 | 0.8 |   1 |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| BRC | UP       | 1.5 |   1 |   1 |   1 | 0.8 |   1 |
+|     | DOWN     | 0.5 |   1 |   1 |   1 | 0.8 |   1 |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| LBF | UP       |   1 |   1 |   1 |   1 | 0.8 | 1.5 |
+|     | DOWN     |   1 |   1 |   1 |   1 | 0.8 | 0.5 |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| LPF | UP       |   1 |   1 | 1.5 |   1 | 0.8 |   1 |
+|     | DOWN     |   1 |   1 | 0.5 |   1 | 0.8 |   1 |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| SBF | UP       |   1 |   1 |   1 |   1 | 1.2 |   1 |
+|     | DOWN     |   1 |   1 |   1 |   1 | 0.4 |   1 |
+|-----+----------+-----+-----+-----+-----+-----+-----|
+| SPF | UP       |   1 |   1 |   1 | 1.5 | 0.8 |   1 |
+|     | DOWN     |   1 |   1 |   1 | 0.5 | 0.8 |   1 |
+
 * Dietary analysis (DNA)
 ** NGS
       I will use NGS for the analysis of the dietary relationship between the functional groups
