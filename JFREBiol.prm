@@ -120,6 +120,14 @@ COR_coral_max_accelB	    0.5		# Midpoint of accelerated growth
 COR_CrecruitA		    0.8		# Coral recruitment scalar
 COR_CrecruitB		    50		# Coral recruitment constant
 COR_CrecruitC		    0.8		# Coral recruitment exponent
+# Coral recruitment
+# CrecruitA_COR 50000
+# CrecruitB_COR 864
+# CrecruitC_COR 0.9
+# KDENR_COR 1
+# 24208652
+
+
 
 ## rugosity
 COR_rug_factor		    0.5		# Rugosity surface area scalar
@@ -3792,7 +3800,7 @@ k_trans_SUR 1.0
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_COR_T15   0.06    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
+C_COR_T15   0.2    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.023 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.009 #0.01   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 C_LZO_T15   0.017 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
@@ -3948,7 +3956,7 @@ C_OTA 10
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_COR_T15   0.11        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_COR_T15   0.2        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SZO_T15   0.07      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 mum_MZO_T15   0.0093      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.6     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
@@ -5193,13 +5201,6 @@ Rbeta_MPF   0 # Ricker recruitment K parameter (if recruit = 9) for Small pelagi
 Rbeta_SBF   0 # Ricker recruitment K parameter (if recruit = 9) for Small benthic fish
 Rbeta_LBF   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
 Rbeta_BIR   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
-
-# Coral recruitment
-CrecruitA_COR 50000
-CrecruitB_COR 864
-CrecruitC_COR 0.9
-KDENR_COR 1
-24208652
 
 # Beverton-Holt recruitmen
 BHalpha_SPL   1.32E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster

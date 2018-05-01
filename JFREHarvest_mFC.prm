@@ -6,19 +6,19 @@
 ## -- FISHERIES FLAGS  – ##
 ## ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-TrapSPL_tStart	182620	## Day of the start for the FISHERY Trap Spiny Lobster
-TrapGCR_tStart	18262   ## 18262(notBurn) 29568(Burn) Golden Crab (y:2000)
-TrapANG_tStart	182620	## Day of the start for the FISHERY Trap Anguila
-BaitSPF_tStart	182620	## Day of the start for the FISHERY Bait Small Pelagic Fish
-BaitLPF_tStart	182620	## Day of the start for the FISHERY Bait Large Pelagic Fish
-BaitBRC_tStart	182620	## Day of the start for the FISHERY Bait Breca
-BaitLBF_tStart	182620	## Day of the start for the FISHERY Bait Large Benthic Fish
-BaitSBF_tStart	182620	## Day of the start for the FISHERY Bait Small Benthic Fish
-HlineBRC_tStart	182620	## Day of the start for the FISHERY Handlining Breca
-HlineVID_tStart	182620	## Day of the start for the FISHERY handlining Vidriola
-TrawlORO_tStart	0  ## 17532 (notBurn) 28838 (Burn)	Orange Roughy(year:1998)
-TrawlALF_tStart	182620  ## 17532 (notBurn) 28838 (Burn)	Alfonsino (year:1998
-PotOCT_tStart	182620	## Day of the start for the FISHERY Pot-trap Octopus
+TrapSPL_tStart	0	## Day of the start for the FISHERY Trap Spiny Lobster
+TrapGCR_tStart	0 #29568	## Day of the start for the FISHERY Trap Golden Crab (y:2000)
+TrapANG_tStart	0	## Day of the start for the FISHERY Trap Anguila
+BaitSPF_tStart	0	## Day of the start for the FISHERY Bait Small Pelagic Fish
+BaitLPF_tStart	0	## Day of the start for the FISHERY Bait Large Pelagic Fish
+BaitBRC_tStart	0	## Day of the start for the FISHERY Bait Breca
+BaitLBF_tStart	0	## Day of the start for the FISHERY Bait Large Benthic Fish
+BaitSBF_tStart	0	## Day of the start for the FISHERY Bait Small Benthic Fish
+HlineBRC_tStart	0 #9116	## Day of the start for the FISHERY Handlining Breca
+HlineVID_tStart	0 #9116	## Day of the start for the FISHERY handlining Vidriola
+TrawlORO_tStart	0 # 28838	## Day of the start for the FISHERY Trawling Orange Roughy(year:1998)
+TrawlALF_tStart	0 #28838	## Day of the start for the FISHERY Trawling Alfonsino (year:1998
+PotOCT_tStart	0 # 9116	## Day of the start for the FISHERY Pot-trap Octopus
 
 TrapSPL_tEnd	1e+12	## Active: 2 = no preference, 1 = day, 0 = night, FISHERY Trap Spiny Lobster
 TrapGCR_tEnd	1e+12	## Active: 2 = no preference, 1 = day, 0 = night, FISHERY Trap Golden Crab
@@ -1377,12 +1377,12 @@ mFC_SPL	13	## Forced fishing mortality rates (per day) forSpiny lobster
 mFC_GCR	13	## Forced fishing mortality rates (per day) forGolden Crab
 0 0.0001369769192 0 0 0 0 0 0 0 0 0 0 0
 mFC_BRC	13	## Forced fishing mortality rates (per day) forBreca
-0 0 0 0 0 0.000030655138 0 0 0.000013916531 0 0 0 0
+0 0 0 0 0 0.0000516 0 0 0.0000211 0 0 0 0
 mFC_VID	13	## Forced fishing mortality rates (per day) forVidriola
-0 0 0 0 0 0 0 0 0 0.000015955187 0 0 0
+0 0 0 0 0 0 0 0 0 0.0000465 0 0 0
 mFC_ORO	13	## Forced fishing mortality rates (per day) forOrange Roughy ##
 0 0 0 0 0 0 0 0 0 0 0.0001429865 0 0
-mFC_ALF	13	## Forced fishing mortality rates (per day) forAlfonsino
+mFC_ALF	13	## Forced fishing mortality rates (per day) forAlfonsin
 0 0 0 0 0 0 0 0 0 0 0 0.000007 0
 mFC_ANG	13	## Forced fishing mortality rates (per day) forAnguila
 0 0 0.000028309604 0 0 0 0 0 0 0 0 0 0
@@ -1397,17 +1397,17 @@ mFC_BIR	13	## Forced fishing mortality rates (per day) forBirds
 mFC_SQD	13	## Forced fishing mortality rates (per day) forSquids
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_OCT	13	## Forced fishing mortality rates (per day) forOctupus
-0 0 0 0 0 0 0 0 0 0 0 0 0.000164067736
+0 0 0 0 0 0 0 0 0 0 0 0 0.0000738
 mFC_LPF	13	## Forced fishing mortality rates (per day) forLarge pelagic fish
-0 0 0 0 0.000003609925 0 0 0 0 0 0 0 0
+0 0 0 0 0.0000086 0 0 0 0 0 0 0 0
 mFC_SPF	13	## Forced fishing mortality rates (per day) forSmall pelagic fish
-0 0 0 0.000000147022 0 0 0 0 0 0 0 0 0
+0 0 0 0.00000021 0 0 0 0 0 0 0 0 0
 mFC_SBF	13	## Forced fishing mortality rates (per day) forSmall benthic fish
-0 0 0 0 0 0 0 0.000000120593 0 0 0 0 0
+0 0 0 0 0 0 0 0.00000019 0 0 0 0 0
 mFC_MPF	13	## Forced fishing mortality rates (per day) forMesopelagic fish
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_LBF	13	## Forced fishing mortality rates (per day) forLarge benthic fish
-0 0 0 0 0 0 0.000000091403 0 0 0 0 0 0
+0 0 0 0 0 0 0.0000002 0 0 0 0 0 0
 mFC_SZO	13	## Forced fishing mortality rates (per day) forSmall Zooplankton
 0 0 0 0 0 0 0 0 0 0 0 0 0
 mFC_MZO	13	## Forced fishing mortality rates (per day) forMedium Zooplankton
@@ -1547,17 +1547,17 @@ DiscardTS_agedistribLBF	10	##  Discard by age distribution forLarge benthic fish
 ##    1 | 2   | 3   | 4	  | 5	| 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29 | 30 | 31 | 32 | 33 | 34
 ##  SPL | GCR | BRC | VID | ORO | ALF | ANG | CHO | OTA | DOL | BIR | SQD | OCT | LPF | SPF | SBF | MPF | LBF | SZO | MZO | LZO | SCR | BFF | LPH | SPH | COR | SUR | MOL | MA | PB | BB | DL | DR | DC |
 FCcocatchSPL	34	##	Proportional	discarding	based	on	catch	of	another	species	Spiny	lobster
-0 0 0 0 0 0 0 0 0 0 0 0 0.0022819915 0 0 0 0 0 0 0 0 0.0091322658 3.28664383160465E-006 0 0 0.0002365128 0.0002398999 0.000484397 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.10518 0 0 0 0 0 0 0 0 0.07986 0.006025 0 0 0.009325 0.018645 0 0 0 0 0 0 0
 FCcocatchGCR 34 ## Proportional discarding based on catch of another species Golden Crab
-0 0 0 0 0 0 0 0 0 0 0 0 0.0022819915 0 0 0 0 0 0 0 0 0.0091322658 3.28664383160465E-006 0 0 0.0002365128 0.0002398999 0.000484397 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0.10518 0 0 0 0 0 0 0 0 0.07986 0.006025 0 0 0.009325 0.018645 0 0 0 0 0 0 0
 FCcocatchBRC 34 ## Proportional discarding based on catch of another species Breca
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 FCcocatchVID 34 ## Proportional discarding based on catch of another species Vidriola
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 FCcocatchORO 34 ## Proportional discarding based on catch of another species Orange Roughy 0 0 0 0 0 0 0 0.0034 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0147 0.0147 0 0 0.1242 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0.0303614222 0 0 0 0 0 0 0 0 0 0 0 0 0 8.0625602024 0 0 0 67.2514031999 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0.0303614222 0 0 0 0 0 0 0 0 0 0 0 0 0 0.034309876 0 0 0 0.2130643276 0 0 0 0 0 0 0 0
 FCcocatchALF 34 ## Proportional discarding based on catch of another species Alfonsino
-0 0 0 0 0 0 0 0.0303614222 0 0 0 0 0 0 0 0 0 0 0 0 0 8.0625602024 0 0 0 67.2514031999 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0.0303614222 0 0 0 0 0 0 0 0 0 0 0 0 0 0.034309876 0 0 0 0.2130643276 0 0 0 0 0 0 0 0
 FCcocatchANG 34 ## Proportional discarding based on catch of another species Anguila
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 FCcocatchCHO 34 ## Proportional discarding based on catch of another species Chondrichtyans
@@ -1615,12 +1615,13 @@ FCcocatchDR 34 ## Proportional discarding based on catch of another species Refr
 FCcocatchDC 34 ## Proportional discarding based on catch of another species Carrion
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
+
 ##  TrapSPL | TrapGCR | TrapANG | BaitSPF | BaitLPF | BaitBRC | BaitLBF | BaitSBF | HlineBRC | HlineVID | TrawlORO | TrawlALF | PotOCT |
 q_SPL 13     ## Catchability per fisherySpiny lobster
 1 0 0 0 0 0 0 0 0 0 0 0 0
-q_GCR 13 ## Catchability per fisheryGolden Crab
+q_GCR	13	## Catchability per fisheryGolden Crab
 0 1 0 0 0 0 0 0 0 0 0 0 0
-q_BRC 13 ## Catchability per fisheryBreca
+q_BRC	13	## Catchability per fisheryBreca
 0 0 0 0 0 1 0 0 0 0 0 0 0
 q_VID	13	## Catchability per fisheryVidriola
 0 0 0 0 0 0 0 0 0 1 0 0 0
@@ -6089,7 +6090,6 @@ mFCchange_start_DR	1	## Time when each change in fishing mortality begins for th
 0
 mFCchange_start_DC	1	## Time when each change in fishing mortality begins for the group Carrion
 0
-
 
 mFCchange_period_SPL	4	## Period over which change in fishing mortality occurs for the group Spiny lobster
 365 365 365 365

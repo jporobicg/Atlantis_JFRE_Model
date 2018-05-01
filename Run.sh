@@ -1,6 +1,6 @@
 #!/bin/bash
 ## instaling Atlantis for functionality
-sudo make install -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
+ sudo make install -C /home/demiurgo/Documents/PhD/Atlantis_Model/trunk/atlantis/
 
 
 ## This Code make an aumotamic backup of the log file
@@ -11,11 +11,11 @@ dateinicio="$(date +'%Y-%m-%d %H:%M:%S')"
 ## ~           Running Atlantis JFRE        ~ ##
 ## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##
 #gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder
-#gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
- atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+gdb --args atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+##atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
 ##atlantisMerged -i JFRE.ini_Flat.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm  -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
 
-Backup of the log.txt file
+## Backup of the log.txt file
 echo "++++++++++++++++++++++++++++++++++++++++"
 echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
