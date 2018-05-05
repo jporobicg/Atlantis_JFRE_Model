@@ -15259,3 +15259,47 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6320
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+**** MQ
+***** CHO
+- from : 1e-7 5e-7
+- to : 9e-9 5e-8
+***** BIR
+- from : 2e-6 1e-9
+- to : 2e-6 5e-7
+*** Pprey
+*** Mum
+**** COR
+- from: 0.11
+- to :  0.2
+*** Clearance
+**** COR
+- from : 0.06
+- to 0.2
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** CHO
+***** KDENR
+- from : 2
+- to : .7
+*** Efficiency
+*** Initial conditions
+*** Harvest
+- Updated the total bait catch for the lobster fishery
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180501164325
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180501164325.png]]
+* Run PC-Demiurgo 20180504144615
+  - Run start: 2018-05-04 14:46:15
+  - Run end: 2018-05-05 17:23:55
+  - log file : [[file:Calibration/20180505172355.bak][Backupfile]]
+  - OS : Ubuntu 14.04.5 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6320
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv

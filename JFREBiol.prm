@@ -502,14 +502,14 @@ ANG_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OTA_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MPF_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -1458,10 +1458,10 @@ MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on
 KI_LPH_T15  23 # 25  Light saturation, large phytoplankton W m-2 10 - 20
 KI_SPH_T15  28  # Light saturation, Small phytoplankton W m-2
 KI_MA_T15   5   # Light saturation, macroalgae W m-2 5
-KI_COR_T15  10  # Light saturation, CORALS W m-2 5
+KI_COR_T15  20  # Light saturation, CORALS W m-2 5
 
 # Eddy impact
-eddy_scale  1  # Coefficient scaling eddy strength impact on phytoplankton growth 1
+eddy_scale  1.3  # Coefficient scaling eddy strength impact on phytoplankton growth 1
 
 # Primary producer nutrient requirements
 # KN
@@ -3801,9 +3801,9 @@ k_trans_SUR 1.0
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.2    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.023 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.009 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.009 #0.01   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.017 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.01 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.001   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3957,8 +3957,8 @@ C_OTA 10
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_COR_T15   0.2        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.07      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.0093      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.09      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.01      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.6     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00006       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
@@ -4385,8 +4385,8 @@ Ktmp_bird    0.08  # Factor relating temperature to respiration for seabirds
 Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
-KLYS_LPH   0.0005 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.003   # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_LPH   0.001 # Lysis rate of Large phytoplankton [ d-1 ]
+KLYS_SPH   0.05   # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 
@@ -4411,7 +4411,7 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ] ## 0.000001 0.0002
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ] 0 0.00005
 0 0
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.0000000014 0.000000014
+0.0000000005 0.000000005
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
@@ -4497,7 +4497,7 @@ SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-18 #  Quad. mortality rate of Macroalgae [ d-1 ]
 LPH_mQ   1e-5 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-10 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+SPH_mQ   1e-8 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-08 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
