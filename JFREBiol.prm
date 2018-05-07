@@ -1449,14 +1449,14 @@ min_channel_depth 0.001        # Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  0.007   # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  0.0095    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.01   # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.01    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4       # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
-KI_LPH_T15  23 # 25  Light saturation, large phytoplankton W m-2 10 - 20
-KI_SPH_T15  28  # Light saturation, Small phytoplankton W m-2
+KI_LPH_T15  15  # 25  Light saturation, large phytoplankton W m-2 10 - 20
+KI_SPH_T15  20  # Light saturation, Small phytoplankton W m-2
 KI_MA_T15   5   # Light saturation, macroalgae W m-2 5
 KI_COR_T15  20  # Light saturation, CORALS W m-2 5
 
@@ -3803,7 +3803,7 @@ C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_COR_T15   0.2    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
 C_SZO_T15   0.009 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.009 #0.01   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.01 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.007 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.001   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -4411,7 +4411,7 @@ ANG_mL   2 # Linear mortality rate of Anguila [ d-1 ] ## 0.000001 0.0002
 CHO_mL   2 # Linear mortality rate of Chondrichtyans [ d-1 ] 0 0.00005
 0 0
 OTA_mL   2 # Linear mortality rate of Otariid [ d-1 ]
-0.0000000005 0.000000005
+0.0000000014 0.000000014
 DOL_mL   2 # Linear mortality rate of Dophins [ d-1 ]
 0 0
 BIR_mL   2 # Linear mortality rate of Birds [ d-1 ]
