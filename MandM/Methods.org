@@ -447,54 +447,72 @@ fi
        [fn:1] Recreational fisheries with spears only in summer
 *** SETasGroups
 **** Functional groups
-| Code  | Functional Groups  | Common name       | Sc. Name                              |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *SPL* | Langosta           | Langosta de J.F.  | /Jasus frontalis/                     |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *GCR* | Cangrejo Dorado    | Cangrejo Dorado   | /Chaceon chilensis/                   |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *BRC* | Breca              | Breca             | /Nemadactylus gayi/                   |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *ANG* | Anguila            | Anguila           | /Gymnothorax porphyreus/              |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *VID* | Vidriola           | Vidriola          | /Seriola lalandi/                     |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *ALF* | Alfonsino          | Alfonsino         | /Beryx splendens/                     |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *ORO* | Orange Roughy      | Orange Roughy     | /Hoplostethus atlanticus/             |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *OCT* | Pulpo              | Pulpo de  J.F.    | /Octopus crusoe/                      |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *CHO* | Chondricties       | Tollo             | /Squalus mitsukuri/                   |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *OTA* | Otaridee           | Lobo de J.F.      | /Actocephalus phillippi/              |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *SPF* | Small Pelagic Fish | Pampanito         | /Scorpis chilensis/                   |   |
-|       |                    | Graniento         | /Caprodon longimanus/                 |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *LPF* | Large Pelagic Fish | Corvina de J.F.   | /Umbrina reedi/                       |   |
-|       |                    | Jurel de J.F.     | /Pseudocaranx chilensis/              |   |
-|       |                    | Sierra            | /Thyrsites atun/                      |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *SBF* | Small Benthic Fish | Colorado          | /Plectranthias exsul/                 |   |
-|       |                    | Cabrilla          | /Chironemus delfini/                  |   |
-|       |                    | Chancharro        | /Helicolenus lengerichi/              |   |
-|       |                    | Pez Mariposa      | /Pterygotrigla picta/                 |   |
-|       |                    | Jerguilla de J.F. | /Girella albostriata/                 |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *LBF* | Large Benthic Fish | Bacalado de J.F.  | /Polyprion oxigeneios fernandezianus/ |   |
-|       |                    | Lenguado          | /Paralichthys fernandezianus/         |   |
-|       |                    | Congrio           | /Lotella fernandeziana/               |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *MOL* | Mollusca           | Caracol blanco    | /Fusitritron magellanicum/            |   |
-|       |                    | Ostra             | /Nucula fernandeziana/                |   |
-|       |                    | Loco              | /Concholepas sp/                      |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *SCR* | Small Crustacean   | Centolla de J.F.  | /Paraloma rathbuni/                   |   |
-|       |                    | Jaiva             | /Talifrus dentatus/                   |   |
-|-------+--------------------+-------------------+---------------------------------------+---|
-| *SUR* | Sea Urchin         | Erizo             | /Centrostephanus rodgersii/           |   |
-|       |                    | Estrella de mar   | /Patiriella calcarata/                |   |
+     #+CAPTION: Functional groups for the JFRE Atlantis model. Each functional group has its identifier (CODE). In addition, examples of the species that compose these groups are included, with their common and scientific name. The Management column describes whether the functional group has any interest in conservation management (Conservation) or fisheries management (Fishery).
+| Code  | Functional groups    | Common name        | Scientific Name                       | Management   |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SPL* | Spiny lobster        | Langosta de J.F.   | /Jasus frontalis/                     | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *GCR* | Golden crab          | Cangrejo Dorado    | /Chaceon chilensis/                   | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *BRC* | J.F. morwong         | Breca              | /Nemadactylus gayi/                   | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *ANG* | Morey eels           | Anguila            | /Gymnothorax porphyreus/              | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *VID* | Yellowtail amberjack | Vidriola           | /Seriola lalandi/                     | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *ALF* | Alfonsino            | Alfonsino          | /Beryx splendens/                     | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *ORO* | Orange roughy        | Orange Roughy      | /Hoplostethus atlanticus/             | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *OCT* | Octopus              | Pulpo de  J.F.     | /Octopus crusoe/                      | Fishery      |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *CHO* | Sharks               | Tollo              | /Squalus mitsukuri/                   | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *OTA* | Fur seals            | Lobo de J.F.       | /Actocephalus phillippi/              | Conservation |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SPF* | Small pelagic fish   | Pampanito          | /Scorpis chilensis/                   | Fishery      |
+|       |                      | Graniento          | /Caprodon longimanus/                 |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *LPF* | Large pelagic fish   | Corvina de J.F.    | /Umbrina reedi/                       | Fishery      |
+|       |                      | Jurel de J.F.      | /Pseudocaranx chilensis/              |              |
+|       |                      | Sierra             | /Thyrsites atun/                      |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SBF* | Small benthic fish   | Colorado           | /Plectranthias exsul/                 | Fishery      |
+|       |                      | Cabrilla           | /Chironemus delfini/                  |              |
+|       |                      | Chancharro         | /Helicolenus lengerichi/              |              |
+|       |                      | Pez Mariposa       | /Pterygotrigla picta/                 |              |
+|       |                      | Jerguilla de J.F.  | /Girella albostriata/                 |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *LBF* | Large benthic fish   | Bacalado de J.F.   | /Polyprion oxigeneios fernandezianus/ | Fishery      |
+|       |                      | Lenguado           | /Paralichthys fernandezianus/         |              |
+|       |                      | Congrio            | /Lotella fernandeziana/               |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *MOL* | Mollusca             | Caracol blanco     | /Fusitritron magellanicum/            | -            |
+|       |                      | Ostra              | /Nucula fernandeziana/                |              |
+|       |                      | Loco               | /Concholepas sp/                      |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *BFF* | Deposit feeders      | Poliquetos         | /Scoloplos juanfernandezensis/        | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SCR* | Other crustacean     | Centolla de J.F.   | /Paraloma rathbuni/                   | -            |
+|       |                      | Jaiva              | /Talifrus dentatus/                   |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SUR* | Sea urchin           | Erizo              | /Centrostephanus rodgersii/           | -            |
+|       |                      | Estrella de mar    | /Patiriella calcarata/                |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *COR* | Coral                | Coral Piedra       | /Desmophyllum dianthus/               | Conservation |
+|       |                      | Coral Negro        | /Bathyphates patula/                  |              |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SZO* | Small zooplankton    | microzooplankton   | Several species                       | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *MZO* | Medium zooplankton   | Copepods           | /Canthocalanus pauper/                | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *LZO* | Large zooplankton    | Euphausiid         | /Euphausia mucronata/                 | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *MA*  | Macroalgae           | Alga verde         | /Ulva intestinalis/                   | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *SPH* | Small phytoplankton  | Nano-microplankton | Several species                       | -            |
+|-------+----------------------+--------------------+---------------------------------------+--------------|
+| *LPH* | Large phytoplankton  | Doiatom            | Several species                       | -            |
 
 **** JFRE_biol.csv file configuration
      #+CAPTION: Configuration file with all the functional groups
@@ -832,119 +850,113 @@ fi
    |     |      |    |        |           |
 
 **** Diets
-| FG  | Species                    | Reference               |
-|-----+----------------------------+-------------------------|
-| SPL | Jasus lalandii             | van Zyl et al. 1998     |
-|     | Jasus lalandii             | Haley et al. 2011       |
-|     | Jasus edwearsii            | Connell et al. 2014     |
-|     | Jasus edwardsii            | Thesis Stewart gave me  |
-|     | Jasus edwardsii            | O'Rorke et al. 2014     |
-|-----+----------------------------+-------------------------|
-| GCR | Chaceon notialis           | Fishbase                |
-|     | Chaceon quinquedens        | Fishbase                |
-|     | Chaceon ramosae            | Fishbase                |
-|-----+----------------------------+-------------------------|
-| BRC | Nemadactilys gayi          | Ramirez et al. 2013     |
-|     | Nemadactilys gayi          | Ernst 2015              |
-|-----+----------------------------+-------------------------|
-| VID | Seriola lalandi            | Vergani et al,  2008    |
-|     | Seriola lalandi            | [[http://fishesofaustralia.net.au/home/species/1662/][fishes of australia]]     |
-|-----+----------------------------+-------------------------|
-| ORO | Hoplostethus atlanticus    | Niklitschek 2009        |
-|     | Hoplostethus atlanticus    | Labe and Arana 2001     |
-|     | Hoplostethus atlanticus    | Fishbase                |
-|     | Hoplostethus atlanticus    | Bulman and Kislow 1992  |
-|     | Hoplostethus atlanticus    | Dunn and Forman 2011    |
-|-----+----------------------------+-------------------------|
-| ALF | Beryx splendens            | Horn et al. 2010        |
-|     | Beryx splendens            | Fishbase                |
-|     | Beryx splendens            | Durn and Gonzalez 2002  |
-|-----+----------------------------+-------------------------|
-| ANG | Lycodontis porphyreus      | Pizarro and Tiffou 1974 |
-|     | Gymnothorax vicinus        | Young and Winn,  2003   |
-|-----+----------------------------+-------------------------|
-| CHO | Deep sea Squalus           | Dunn and Ferman 2011    |
-|     | Squalus fernandinus        | Arana 1974              |
-|     | Squalus mitsukurii         | Fishbase                |
-|     | Squalus mitsukurii         | Cortes, 1999            |
-|-----+----------------------------+-------------------------|
-| OTA | Arctocephalus philippii    | Osman 2008              |
-|     | Arctocephalus philippii    | Ecuña and Francis 1995  |
-|     | Arctocephalus philippii    | Diaz 2007               |
-|-----+----------------------------+-------------------------|
-| DOL | Delphinus delphis          | Pusineri et al. 2007    |
-|     | Delphinus delphis          | Fishbase                |
-|     | Tursiops truncatus         | Fishbase                |
-|     | Globicephala macrorhynchus | Fishbase                |
-|     | Delphinus delphis          | Brophy et al. 2006      |
-|-----+----------------------------+-------------------------|
-| CET | Orcinus Orca               | Ford et al 2016         |
-|     | Orcinus orca               | Ford et al. 1998        |
-|     | Kogia breviceps            | West et al. 2009        |
-|     | Kogia breviceps            | Beatson 2007            |
-|     | Balaenoptera physalus      | Landy et al 1991        |
-|     | Balaenoptera physalus      | Fishbase                |
-|     | Balaenoptera musculus      | Fishbase                |
-|-----+----------------------------+-------------------------|
-| BIR | Puffinus cretopus          | Azocar et al. 2013      |
-|-----+----------------------------+-------------------------|
-| SQD | Dosidicus gigas            | Fishbase                |
-|     | vampyroteuthis infernalis  | Fishbase                |
-|-----+----------------------------+-------------------------|
-| OCT | Octopus crusoe             | Petit et al 2015        |
-|     | Octopus mimus              | Fishbase                |
-|     | Enteroctopus megalocyathus | Ibanez and Chong 2008   |
-|     | Octopus vulgaris           | Smith 2003              |
-|-----+----------------------------+-------------------------|
-| LPF | Psudocaranx chilensis      | Ramirez et al 2013      |
-|     | Psudocaranx chilensis      | Fishbase                |
-|-----+----------------------------+-------------------------|
-| SPF | Malapterus reticulatus     | Petit, 2014             |
-|     | Scorpix chilensis          | Ramirez et al 2013      |
-|     | Malapterus reticulatus     | Ramirez et al 2013      |
-|     | Scartichthys variolatus    | Diaz and Munoz 2010     |
-|     | Thyrsites atun             | Fishbase                |
-|     | Callanthias sp.            | Fishbase                |
-|-----+----------------------------+-------------------------|
-| SBF | Hipoplectrodes semicinctum | Ramirez et al 2013      |
-|     | Plectranthias sp           | Fishbase                |
-|     | Aseraggodes sp.            | Fishbase                |
-|     | Girella albostriata        | Fishbase                |
-|     | Myctophidae                | Fishbase                |
-|-----+----------------------------+-------------------------|
-| LBF | Polyprion oxygeneios       | Pizarro and Tiffou 1974 |
-|     | Aserragodes macleayanus    | Sumpton et al. 1990     |
-|     | Polyprion oxygeneios       | Fishbase                |
-|     | Paralabrax sp.             | Fishbase                |
-|     | Paralichthys sp.           | Fishbase                |
-|-----+----------------------------+-------------------------|
-| SZO | microzooplankton           | Calbet et al. 2008      |
-|     | Microzooplankton           | Burian et al. 2013      |
-|-----+----------------------------+-------------------------|
-| MZO | Mesozooplankton            | Baten et al. 2001       |
-|     | Mesozooplankton            | Bode et al. 2004        |
-|     | Mesozooplankton            | Wu et al. 2010          |
-|     | Mesozooplankton            | Motwani et al. 2013     |
-|-----+----------------------------+-------------------------|
-| LZO | Euphausiid                 | Antezana, 2010          |
-|-----+----------------------------+-------------------------|
-| SCR | Projasus bahamondei        | Arana, 2014             |
-|     | Paromola cuviieri          | Fishbase                |
-|     | Chaceon quinquedens        | Steimle et al. 2001     |
-|     | Ovalipes trimaculatus      | Fishbase                |
-|-----+----------------------------+-------------------------|
-| BFF | Polychaete                 | Jumars et al. 2015      |
-|-----+----------------------------+-------------------------|
-| MOL | Acanthopleura              | Camus et al. 2012       |
-|     | Concholepas concholepas    | Stotz et al. 2003       |
-|     | Arca sp.                   | Fishbase                |
-|     | Aplysia sp.                | Fishbase                |
-|-----+----------------------------+-------------------------|
-| BCA | Sea Urchin                 | Fishbase                |
-|     | Actinidae                  | Fishbase                |
-|-----+----------------------------+-------------------------|
-| COR | Deep waters coral          | Kiriakoulakis 2005      |
-|-----+----------------------------+-------------------------|
+#+CAPTION:  Information used for the stablish relation predator prey for the JFRE. FG corresponds to the column that contains the code identifying the functional groups these codes come from Table 1.
+| FG  | Species                      | Reference               |
+|-----+------------------------------+-------------------------|
+| SPL | /Jasus lalandii/             | van Zyl et al. 1998     |
+|     | /Jasus lalandii/             | Haley et al. 2011       |
+|     | /Jasus edwearsii/            | Connell et al. 2014     |
+|     | /Jasus edwardsii/            | Thesis Stewart gave me  |
+|     | /Jasus edwardsii/            | O'Rorke et al. 2014     |
+|-----+------------------------------+-------------------------|
+| GCR | /Chaceon notialis/           | Fishbase                |
+|     | /Chaceon quinquedens/        | Fishbase                |
+|     | /Chaceon ramosae/            | Fishbase                |
+|-----+------------------------------+-------------------------|
+| BRC | /Nemadactilys gayi/          | Ramirez et al. 2013     |
+|     | /Nemadactilys gayi/          | Ernst 2015              |
+|-----+------------------------------+-------------------------|
+| VID | /Seriola lalandi/            | Vergani et al,  2008    |
+|     | /Seriola lalandi/            | [[http://fishesofaustralia.net.au/home/species/1662/][fishes of australia]]     |
+|-----+------------------------------+-------------------------|
+| ORO | /Hoplostethus atlanticus/    | Niklitschek 2009        |
+|     | /Hoplostethus atlanticus/    | Labe and Arana 2001     |
+|     | /Hoplostethus atlanticus/    | Fishbase                |
+|     | /Hoplostethus atlanticus/    | Bulman and Kislow 1992  |
+|     | /Hoplostethus atlanticus/    | Dunn and Forman 2011    |
+|-----+------------------------------+-------------------------|
+| ALF | /Beryx splendens/            | Horn et al. 2010        |
+|     | /Beryx splendens/            | Fishbase                |
+|     | /Beryx splendens/            | Durn and Gonzalez 2002  |
+|-----+------------------------------+-------------------------|
+| ANG | /Lycodontis porphyreus/      | Pizarro and Tiffou 1974 |
+|     | /Gymnothorax vicinus/        | Young and Winn,  2003   |
+|-----+------------------------------+-------------------------|
+| CHO | /Deep sea Squalus/           | Dunn and Ferman 2011    |
+|     | /Squalus fernandinus/        | Arana 1974              |
+|     | /Squalus mitsukurii/         | Fishbase                |
+|     | /Squalus mitsukurii/         | Cortes, 1999            |
+|-----+------------------------------+-------------------------|
+| OTA | /Arctocephalus philippii/    | Osman 2008              |
+|     | /Arctocephalus philippii/    | Ecuña and Francis 1995  |
+|     | /Arctocephalus philippii/    | Diaz 2007               |
+|-----+------------------------------+-------------------------|
+| DOL | /Delphinus delphis/          | Pusineri et al. 2007    |
+|     | /Delphinus delphis/          | Fishbase                |
+|     | /Tursiops truncatus/         | Fishbase                |
+|     | /Globicephala macrorhynchus/ | Fishbase                |
+|     | /Delphinus delphis/          | Brophy et al. 2006      |
+|-----+------------------------------+-------------------------|
+| BIR | /Puffinus cretopus/          | Azocar et al. 2013      |
+|-----+------------------------------+-------------------------|
+| SQD | /Dosidicus gigas/            | Fishbase                |
+|     | /vampyroteuthis infernalis/  | Fishbase                |
+|-----+------------------------------+-------------------------|
+| OCT | /Octopus crusoe/             | Petit et al 2015        |
+|     | /Octopus mimus/              | Fishbase                |
+|     | /Enteroctopus megalocyathus/ | Ibanez and Chong 2008   |
+|     | /Octopus vulgaris/           | Smith 2003              |
+|-----+------------------------------+-------------------------|
+| LPF | /Psudocaranx chilensis/      | Ramirez et al 2013      |
+|     | /Psudocaranx chilensis/      | Fishbase                |
+|-----+------------------------------+-------------------------|
+| SPF | /Malapterus reticulatus/     | Petit, 2014             |
+|     | /Scorpix chilensis/          | Ramirez et al 2013      |
+|     | /Malapterus reticulatus/     | Ramirez et al 2013      |
+|     | /Scartichthys variolatus/    | Diaz and Munoz 2010     |
+|     | /Thyrsites atun/             | Fishbase                |
+|     | /Callanthias sp./            | Fishbase                |
+|-----+------------------------------+-------------------------|
+| SBF | /Hipoplectrodes semicinctum/ | Ramirez et al 2013      |
+|     | /Plectranthias sp/           | Fishbase                |
+|     | /Aseraggodes sp./            | Fishbase                |
+|     | /Girella albostriata/        | Fishbase                |
+|-----+------------------------------+-------------------------|
+| MPF | Myctophidae                  | Fishbase                |
+|-----+------------------------------+-------------------------|
+| LBF | /Polyprion oxygeneios/       | Pizarro and Tiffou 1974 |
+|     | /Aserragodes macleayanus/    | Sumpton et al. 1990     |
+|     | /Polyprion oxygeneios/       | Fishbase                |
+|     | /Paralabrax sp./             | Fishbase                |
+|     | /Paralichthys sp./           | Fishbase                |
+|-----+------------------------------+-------------------------|
+| SZO | Microzooplankton             | Calbet et al. 2008      |
+|     | Microzooplankton             | Burian et al. 2013      |
+|-----+------------------------------+-------------------------|
+| MZO | Mesozooplankton              | Baten et al. 2001       |
+|     | Mesozooplankton              | Bode et al. 2004        |
+|     | Mesozooplankton              | Wu et al. 2010          |
+|     | Mesozooplankton              | Motwani et al. 2013     |
+|-----+------------------------------+-------------------------|
+| LZO | Euphausiid                   | Antezana, 2010          |
+|-----+------------------------------+-------------------------|
+| SCR | /Projasus bahamondei/        | Arana, 2014             |
+|     | /Paromola cuviieri/          | Fishbase                |
+|     | /Chaceon quinquedens/        | Steimle et al. 2001     |
+|     | /Ovalipes trimaculatus/      | Fishbase                |
+|-----+------------------------------+-------------------------|
+| BFF | Polychaete                   | Jumars et al. 2015      |
+|-----+------------------------------+-------------------------|
+| MOL | /Acanthopleura/              | Camus et al. 2012       |
+|     | /Concholepas concholepas/    | Stotz et al. 2003       |
+|     | /Arca sp./                   | Fishbase                |
+|     | /Aplysia sp./                | Fishbase                |
+|-----+------------------------------+-------------------------|
+| SUR | Sea Urchin                   | Fishbase                |
+|     | Actinidae                    | Fishbase                |
+|-----+------------------------------+-------------------------|
+| COR | Deep sea coral               | Kiriakoulakis 2005      |
+|-----+------------------------------+-------------------------|
 
 **** Whater-Column parameters
 - Light penetration through the water column
@@ -992,19 +1004,28 @@ fi
     |-------+-------+-------+------------+------------+------------+------------+---------+----------------|
     | Total | 18435 | 17925 |            |            |            |            |         |                |
     |-------+-------+-------+------------+------------+------------+------------+---------+----------------|
+
+ #+CAPTION: Biomass distribution of orange roughy based on the hidroacustic survey \cite{Niklitschek2007}
+    | Zone |  2005 |  2006 | Distribution (%) | JFRE Atlantis polygons |
+    |------+-------+-------+------------------+------------------------|
+    | JF1  |  7608 | 11258 |            47.5% |            31,32,33,34 |
+    | JF2  | 10646 |  3112 |            34.6% |                     30 |
+    | JF4  |   181 |   203 |             1.0% |                     28 |
+    | JF6  |       |  3352 |            16.9% |                     47 |
+
   - *Chondricties*
-     #+CAPTION: Distribution of Chondricties base on Andrade 2007 and 2008 biodiversity of seamount
-          | Zone     | N/Presence | Zones       | Reference          |
-          |----------+------------+-------------+--------------------|
-          | JF1      | 10         | 31,32,33,34 | Yañez et al        |
-          | JF2      | 1          | 30          |                    |
-          | JF3      | Presence   | 29          | Andrade et al 2008 |
-          | JF4      | Presence   | 28          | Andrade et al 2008 |
-          | Robinson | Presence   | 35,36,37,38 | Arana  2000        |
-          | Selkirk  | Presence   | 41,42,43,44 | Arana 2000         |
+     #+CAPTION: Distribution of sharks based on the presence of these species in different areas
+          | Zone     | Zones       | Reference          |
+          |----------+-------------+--------------------|
+          | JF1      | 31,32,33,34 | \cite{Yanez2008}   |
+          | JF2      | 30          | \cite{Yanez2008}   |
+          | JF3      | 29          | \cite{Andrade2008} |
+          | JF4      | 28          | \cite{Andrade2008} |
+          | Robinson | 35,36,37,38 | \cite{Arana2000b}  |
+          | Selkirk  | 41,42,43,44 | \cite{Arana2000b}  |
+
   - *Cetaceus*
     - Information from Aguayo et al 1998. I use the map provided in the manuscript as a proxi for the spatial location
-
   - Estimation General
      #+BEGIN_SRC R :results output
        ##-----------------------------------------#
@@ -1082,12 +1103,14 @@ fi
                poly[[sea]]$attrib[, fg] <- dbs[, sea]
            }
        }
+
        ## selected few groups for plotting
+       source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
        season  <- c('Summer', 'Autumm','Winter','Spring')
-       fgroups <- names(poly[[1]]$attrib)[c(8, 17 : 18, 21, 24, 25, 26, 27)]
+       fgroups <- names(poly[[1]]$attrib)[c(2, 3, 6, 7, 8, 10, 11, 12, 13, 14, 17, 18, 19, 21, 22)+6]
        for(i in 1 : 4){
-           png(paste0('img/Horiz_distr_season_0', i, '.png'), width = 900, height = 900)
-           par(mfrow = c(4, 2), mar=c(3,2,3,2), oma = c(3, 3, 3, 2))
+           png(paste0('img/Horiz_distr_season_0', i, '.png'), width = 1500, height = 1200)
+           par(mfrow = c(5, 3), mar=c(3,2,3,2), oma = c(3, 3, 3, 2))
            for(fg in fgroups){
                plot.map(poly[[i]], leg.color = fg, specie = TRUE, leg = -81.33, save = FALSE, name = fg, PAR = FALSE)
            }
@@ -1185,7 +1208,6 @@ fi
     | VID_Autumm      |       |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        |  0.019 |        |        |        |        |        |        |        |        |        |  0.094 |  0.293 |        |        |        |        |        |        |  0.019 |        |        |        |        |        |        |        |  0.028 |  0.072 |  0.034 |  0.196 |  0.053 |  0.093 |  0.081 |  0.019 |
     | VID_Winter      |       |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        |  0.024 |        |        |        |        |        |        |        |        |        |  0.120 |  0.375 |        |        |        |        |        |        |  0.024 |        |        |        |        |        |        |        |  0.036 |  0.092 |  0.044 |  0.043 |  0.067 |  0.078 |  0.072 |  0.024 |
     | VID_Spring      |       |       |       |       |       |       |       |       |       |       |        |        |        |        |        |        |        |        |        |        |        |        |        |        |        |  0.025 |        |        |        |        |        |        |        |        |        |  0.125 |  0.390 |        |        |        |        |        |        |  0.025 |        |        |        |        |        |        |        |  0.038 |  0.096 |  0.046 |  0.081 |  0.070 |  0.039 |  0.040 |  0.025 |
-
   - Estimacion Breca
      #+BEGIN_SRC R :results output
        ##-----------------------------------------#
@@ -1226,7 +1248,7 @@ fi
        nomb       <- colnames(poly[[1]]$attrib)[7 : 8]
        poly       <- clean(poly, nomb)
        season     <- c('Summer', 'Autumm','Winter','Spring')
-       png('img/Breca_Distr.png', width = 900, height = 900)
+       png('img/Breca_Distr.png', width = 1200, height = 900)
        par(mfrow = c(4, 2), mar=c(3 ,2, 3, 2), oma = c(3, 3, 3, 2))
        titl <- c(0,-23.5,-46,-68)
        for(i in 1 : 4){
@@ -1278,7 +1300,6 @@ fi
 	#+CAPTION: Horizontal distribution of Breca divided by ontogenetic stage (Juvenile and Adult) and by seasons
 	#+ATTR_HTML: width="600" alt="image"
 	[[/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Breca_Distr.png]]
-
   - Golden Crab spatial distribution
      #+BEGIN_SRC R :results output
        ##-----------------------------------------#
@@ -1325,7 +1346,7 @@ fi
            nomb       <- colnames(poly.dis[[1]]$attrib)[7 : 8]
            poly.dis   <- clean(poly.dis, nomb)
            season     <- c('Summer', 'Autumm','Winter','Spring')
-           png(paste0('img/',ifelse(cr == 1,'GCR','SPL'), '_Distr.png'), width = 900, height = 900)
+           png(paste0('img/',ifelse(cr == 1,'GCR','SPL'), '_Distr.png'), width = 1200, height = 900)
            par(mfrow = c(4, 2), mar=c(3 ,2, 3, 2), oma = c(3, 3, 3, 2))
            titl <- c(0,-23.5,-46,-68)
            for(i in 1 : 4){
@@ -1439,14 +1460,13 @@ fi
       lc <- dup.row(lc, 2)
       ## Grupos funcionales
       lc <- FG(lc, 1)
-
       #lc.fg$SPF[which(lc.fg$SPF$layer==3),]
       ##-----------
       ##  Divide by functional group
       ##---------------
-      lc.fg      <- split(lc, lc$FG)           # split by functional group
-      lc.fg      <- lc.fg[ - c(3, 8)]          # Remove the BCA and octopus
-      lc.fg[[3]] <- stage(lc.fg[[3]], 6, 282)  # Based on Ribara thesis
+      lc.fg      <- split(lc, lc$FG)            # split by functional group
+      lc.fg      <- lc.fg[ - c(7, 12)]          # Remove the BCA and octopus
+      lc.fg[[3]] <- stage(lc.fg[[3]], 6, 282)   # Based on Ribara thesis
       ##  Distribution by layers
       depth <- data.frame(specie = names(lc.fg),
                           min    = rep(0, length(lc.fg)),
@@ -1454,7 +1474,8 @@ fi
       ##++++++++++++++++++++
       ## Real depth location
       ##++++++++++++++++++++
-      out <- hist.deph(lc.fg, col.val = 8, dep.lim = depth, n.file = 'img/Functional_groups')
+      source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+      out <- hist.deph(lc.fg, col.val = 8, dep.lim = depth, n.file = 'img/Functional_groups',relative=TRUE)
       out <- t(out)
       colnames(out) <- paste('layer', rep(8 : 1))
       cap           <- 'Proportion of FG by layer'
@@ -1942,7 +1963,6 @@ fi
     | MA  | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.569  | 0.577  | 0.676  | 0.566  | 0.000  | 0.000  | 0.000  | 0.000  |
     | ROC | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.059  | 0.060  | 0.070  | 0.059  | 0.000  | 0.000  | 0.000  | 0.000  |
     | SAN | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.000  | 0.020  | 0.020  | 0.023  | 0.020  | 0.000  | 0.000  | 0.000  | 0.000  |
-
 **** Throphic relation
 ***** Availability matrix
   - I will leave this one for the last part
@@ -2568,6 +2588,49 @@ fi
 #+ATTR_HTML: width="600" alt="image"
 #+caption: Average connectivity by year and FG
 [[file:img/connectivity.png]]
+****** Connectivity matrix
+#+BEGIN_SRC R :results output
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Connectivity/Cnect.tools.R')
+  library(ascii)
+  options(asciiType="org")
+  library(ggplot2)
+  library(abind)
+  library(forecast)
+  library('ncdf4')
+  library(RColorBrewer)
+  ###------------------------------------------------------##
+  ### Get the connectivity matrix from the Ichtyps output  ##
+  ##-------------------------------------------------------##
+  ## The bowen need to be active
+  coul = colorRampPalette(brewer.pal(8, "YlGnBu"))(25)
+  connect.nc    <- nc_open('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Inputs/Larval_disp/FG_connect.nc')
+  variables <- names(connect.nc$var)
+  connect     <- matrix(0, nrow =  10, ncol = 66)
+  for( fg in 1 : 10){
+      tmp <- ncvar_get(connect.nc, variables[fg])
+      tmp[tmp==0] <- NA
+      connect[fg,] <- apply(tmp, 3, mean, na.rm=TRUE)
+     }
+  rownames(connect) <- substring(variables,1, 3)
+  colnames(connect) <- 1950:2015
+
+  png('img/connect_mat.png', height = 900, width = 1100)
+  par(mar=c(8,6,2,2),cex=2)
+  image.plot(t(connect), ylab = 'Functional Groups', xlab = "Year" , horizontal=T, legend.mar=7.1,
+            col= coul, main = "", xaxt='n', yaxt='n', ann=FALSE)
+  axis(1 , at = seq(from = 0, to = 1, length = 6), labels= seq(from = 1950, to = 2015, length = 6))
+  axis(2 , at = seq(from = 0, to = 1, length = 10), labels= rownames(connect), las=1, cex.lab=5)
+  mtext('Functional groups', side = 2, line = 4,cex=2)
+  mtext('Connectivity level', side = 1, line = 14.5, cex=1.5)
+  mtext('Year', side = 1,line = 3,cex = 2)
+  dev.off()
+
+  library(fields)
+  x = 1:10
+  y = 1:15
+  z = outer( x,y,"+")
+  image.plot(x, y, z)
+#+END_SRC
 ***** Recruitment model
 ****** Estimation of B-H parameter
 - The Formula used is the option 3 for atlatnis
@@ -2694,7 +2757,6 @@ fi
                                    weight))
   ##~ estimation of structural and reserve wight for recruitment
   data <- cbind(data, with(data, weights(FG, weight,'g'))[, 2 : 3])
-
   cap <- 'Structural and reserve wight for recruitment'
   b     <- ascii(data, header = T,  include.rownames = FALSE, include.colnames = T, caption = cap)
   print(b)
@@ -3578,6 +3640,8 @@ These estimation are based on the observed catch and the simulated biomass
    like   <- na.kalman(ts.pres, model = "StructTS", smooth = TRUE, nit = -1)
    ## State space representation of arima mode
    arima  <- na.kalman(ts.pres, model = "auto.arima", smooth = TRUE, nit = -1)
+   summary(arima)
+
    ## State space representation of arima mode
    like.t <- na.kalman(ts.pres, model = "StructTS", smooth = TRUE, type = 'trend')
    ## Back data to original magnitud Using the total by month.
@@ -3620,19 +3684,38 @@ These estimation are based on the observed catch and the simulated biomass
  - To locate the river and the ridge that support most of the water affluents,  I used the rivers of Selkirk (Masoli 2008) and Robinson (Astudillo,  2014)
    - due to the effect of intense rain I decide to analize the effect of alluvium,  something that happend in intense rains (Masoli 2008). For that I use the percentile on 90%,  so event higher that taht would be event of extreme rain
 #+BEGIN_SRC R
- ## extream rain events
+  ## extream rain events
+  source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/General_tools/Atlantis_tools.R')
+  library(RColorBrewer)
+  library(imputeTS)
+  library('forecast')
+  library('tseries')
+  bl <- brewer.pal(9,"Blues")[4]
+  rd <- brewer.pal(9,"YlOrRd")
   ## Read data
   dat <- read.csv(file = '/home/demiurgo/Documents/PhD/Forcing_Files/NO3/1-Rain.csv', sep = ' ')
-  png('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png', width = 900, height = 400)
-  plot(dat$arima, type = 'l', yaxt = 'n', xaxt = 'n', ylab = 'Rainfall (mm)', xlab = 'Date', bty = 'n')
+  dat2 <-dat[c(609:nrow(dat)),]
+  lmodel  <- predict(lm(arima ~ day, data = dat2, na.action = na.exclude), data.frame(day = 805:1000))
+  dat3 <- ts(dat2$arima,frequency=30)
+  decomp = stl(dat3,s.window='periodic')
+  noise <- decomp$time.series[,3]
+  rain.f <- lmodel + noise
+  rain.f[rain.f < 0] <- 0
+  avg <- movavg(dat$arima, 12)
+  png('/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/MandM/img/Rain_extreme.png', width = 900, height = 700)
+  plot(dat$arima, type = 'l', yaxt = 'n', xaxt = 'n', ylab = 'Rainfall (mm)', xlab = 'Date', bty = 'n',col = bl, cex.lab = 1.5,
+       xlim=c(0, 1000))
+  lines(x = c(805:1000),y = rain.f, col='grey45')
+  abline(v=805, lty=2,lwd=1.2)
+  lines(avg, col = rd[9], lwd = 1.8)
   tickx <- seq(from = 1, to = length(dat$date), length = 5)
   yticks <- seq(0, max(dat$arima), by = round(max(dat$arima) / 5))
-  abline(h = quantile(dat$arima,c(.9)), col = 'firebrick', lty = 2, lwd = 1.5)
-  abline(h = mean(dat$arima), col = 'goldenrod', lty = 2, lwd = 1.5)
-  axis(2, at = yticks , labels = yticks, lwd = 2,  col = 1, las = 1)
-  axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], '%Y.%m'), lwd = 2,  col = 1)
-  legend('topleft', c('Average', '9th percentile'), col = c('goldenrod', 'firebrick'),
-         lty = c(2, 2),  bty = 'n')
+  abline(h = quantile(dat$arima,c(.9)), col = rd[7], lty = 2, lwd = 4)
+  abline(h = mean(dat$arima), col = rd[4], lty = 2, lwd = 4)
+  axis(2, at = yticks , labels = yticks, lwd = 2, cex=1.5,font=2)
+  axis(1, at = dat$date[tickx], labels = format.Date(dat$date[tickx], '%Y'), lwd = 2,  col = 1, font=2)
+  legend('topleft', c('Observed', 'Moving Average (12 months)','Average', '90th percentile'), col = c(bl,rd[c(9, 4, 7)]),
+         lty = c(1, 1, 2, 2),  bty = 'n', cex = 1.5, lwd = 4)
   dev.off()
   dat$a.extreme <- dat$arima
   dat$a.extreme[which(dat$a.extreme < quantile(dat$arima,c(.9)))] <- NA
@@ -3644,7 +3727,7 @@ These estimation are based on the observed catch and the simulated biomass
 **** Constructing the ts per day
  - I used the data of the peak day (days with more than 10mm per day) and the total day of rain to reconstruct the time seriw by days
  - I assume that the rain is distributed normal during the month
-#+BEGIN_SRC R
+    #+BEGIN_SRC R
   ## Create the inputs files
   ## Average dischard form a small river is 516 MgNy-1
   source('/home/demiurgo/Documents/PhD/Atlantis_Model/tools/Atlantis_tools.R')
