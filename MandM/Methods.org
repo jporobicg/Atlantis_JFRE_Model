@@ -4310,4 +4310,7 @@ s (representative concentration pathways) approximately result in radiative forc
   - What to check and fix [%]
     - [ ] Otarid abundance
     - [ ] Include effort for lobster
+      - Changed effor for FlagF_SPL to 0 (for dynamic fishing
+      - Updated proportion by box based on new calculations
+      - Estimated porportion of effor by season
     - [ ] check primary producer
