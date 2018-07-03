@@ -120,13 +120,6 @@ COR_coral_max_accelB	    0.5		# Midpoint of accelerated growth
 COR_CrecruitA		    0.8		# Coral recruitment scalar
 COR_CrecruitB		    50		# Coral recruitment constant
 COR_CrecruitC		    0.8		# Coral recruitment exponent
-# Coral recruitment
-# CrecruitA_COR 50000
-# CrecruitB_COR 864
-# CrecruitC_COR 0.9
-# KDENR_COR 1
-# 24208652
-
 
 
 ## rugosity

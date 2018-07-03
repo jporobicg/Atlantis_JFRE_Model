@@ -4305,3 +4305,9 @@ s (representative concentration pathways) approximately result in radiative forc
     |--------------------+----------------------+-----------+---------+--------|
     | Total              |                      |        28 |         |        |
     #+TBLFM: $3=vsum(@2$3..@24$3)::@25$3=vsum(@2$3..@24$3)
+* Extra calibration for the paper
+- Comparison with old model and model from bowen (checking differences)
+  - What to check and fix [%]
+    - [ ] Otarid abundance
+    - [ ] Include effort for lobster
+    - [ ] check primary producer
