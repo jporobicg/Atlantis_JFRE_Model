@@ -121,7 +121,6 @@ COR_CrecruitA		    0.8		# Coral recruitment scalar
 COR_CrecruitB		    50		# Coral recruitment constant
 COR_CrecruitC		    0.8		# Coral recruitment exponent
 
-
 ## rugosity
 COR_rug_factor		    0.5		# Rugosity surface area scalar
 MOL_rug_factor		    0.03	# Rugosity surface area scalar
@@ -495,14 +494,14 @@ ANG_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit
 BIR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 ALF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 CHO_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-OTA_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+OTA_ddepend_move 2 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 DOL_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 OCT_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 COR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SQD_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
-MPF_ddepend_move 3 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
+MPF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 LBF_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
 SCR_ddepend_move 0 # 0 = off, 1 = sedentary, 2 = on, 3 = sticky, 4 = no explicit movement
@@ -692,7 +691,7 @@ FDON_D    0.05     Fraction od DON breakdown that becomes detritus 0.05
 R_0_T15    200    Minimum rate of sediment respiration that supports nitrification 200 - 250
 R_D_T15    10     Peak of nitrification-denitrification curve 10 - 20
 Dmax   	   0.25   Maximum rate of denitrification 0.25
-K_nit_T15  0.1   Rate of nitrification by free bacteria 0.01
+K_nit_T15  0.01   Rate of nitrification by free bacteria 0.01
 K_conc     2000   Half concentration level for nitrification by PFB mg N m-3 2000
 
 # Adsorption
@@ -1442,16 +1441,16 @@ min_channel_depth 0.001        # Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_LPH_T15  1   # Maximum growth rate, large phytoplankton d-1 1 - 1.7
-mum_SPH_T15  1    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
+mum_LPH_T15  0.007   # Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_SPH_T15  0.0095    # Maximum growth rate, Small phytoplankton d-1 1 - 1.7
 mum_MA_T15   4       # Maximum growth rate, Macro algae phytoplankton d-1 1 - 1.24
 MB_wc        0.01    # Scalar for microphytoben. growth in wc (reduced as not on substrate) 0.1
 
 # Primary producer light requirements
-KI_LPH_T15  15  # 25  Light saturation, large phytoplankton W m-2 10 - 20
-KI_SPH_T15  20  # Light saturation, Small phytoplankton W m-2
+KI_LPH_T15  23 # 25  Light saturation, large phytoplankton W m-2 10 - 20
+KI_SPH_T15  28  # Light saturation, Small phytoplankton W m-2
 KI_MA_T15   5   # Light saturation, macroalgae W m-2 5
-KI_COR_T15  20  # Light saturation, CORALS W m-2 5
+KI_COR_T15  10  # Light saturation, CORALS W m-2 5
 
 # Eddy impact
 eddy_scale  1.3  # Coefficient scaling eddy strength impact on phytoplankton growth 1
@@ -1460,17 +1459,17 @@ eddy_scale  1.3  # Coefficient scaling eddy strength impact on phytoplankton gro
 # KN
 KN_LPH   10    Half-sat const for large phytoplankton growth on DIN mg N m-3 10
 KN_SPH   10    Half-sat const for small phytoplankton phy growth on DIN mg N m-3 10
-KN_MA    10     Half-sat const for MA growth on DIN mg N m-3 20
+KN_MA    5     Half-sat const for MA growth on DIN mg N m-3 20
 KN_COR   10    Half-sat const for COR growth on DIN mg N m-3 20
 # KS
-KS_LPH   10     Half-sat const for small phytoplankton on Si mg Si m-3 20
-KS_SPH   0     Half-sat const for large phytoplankton on Si mg Si m-3 20
+KS_LPH   1     Half-sat const for small phytoplankton on Si mg Si m-3 20
+KS_SPH   1     Half-sat const for large phytoplankton on Si mg Si m-3 20
 KS_COR   1     Half-sat const for large phytoplankton on Si mg Si m-3 20
 KS_MA    0     Half-sat const for MA growth on Si mg Si m-3 0
 # KF
-KF_LPH   20    Half-sat const for large phytoplankton growth on Micro-nutrient mg Fe m-3 20
+KF_LPH   0    Half-sat const for large phytoplankton growth on Micro-nutrient mg Fe m-3 20
 KF_COR   0    Half-sat const for COR growth on Micro-nutrient mg Fe m-3 20
-KF_SPH   20    Half-sat const for Small phytoplankton growth on Micro-nutrient mg Fe m-3 20
+KF_SPH   0    Half-sat const for Small phytoplankton growth on Micro-nutrient mg Fe m-3 20
 KF_MA    0    Half-sat const for MA growth on Micro-nutrient mg Fe m-3 0
 
 # Bacterial nutrient requirements
@@ -3793,10 +3792,10 @@ k_trans_SUR 1.0
 # Clearance rates for consumers - this is used by Holling type feeding (predcase 0, 1, 2)
 C_OCT_T15   0.000001   #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
 C_SQD_T15   0.001    #  Clearance rate for Octupus [ m3(mg N)-1 d-1 ]
-C_COR_T15   0.2    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
-C_SZO_T15   0.009 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+C_COR_T15   0.06    #  Clearance rate for coral [ m3(mg N)-1 d-1 ]
+C_SZO_T15   0.023 #0.03    #  Clearance rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
 C_MZO_T15   0.009 #0.01   #  Clearance rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
-C_LZO_T15   0.01 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
+C_LZO_T15   0.017 #0.008   #  Clearance rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 C_SCR_T15   0.002   #  Clearance rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 C_BFF_T15   0.003   #  Clearance rate for Deposit feeders [ m3(mg N)-1 d-1 ]
 C_SUR_T15   0.001   #  Clearance rate for Sea Urchin [ m3(mg N)-1 d-1 ]
@@ -3949,9 +3948,9 @@ C_OTA 10
 ## -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 mum_OCT_T15   0.00000005      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
 mum_SQD_T15   0.0001      #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_COR_T15   0.2        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
-mum_SZO_T15   0.1      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
-mum_MZO_T15   0.01      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
+mum_COR_T15   0.11        #  Growth rate for Octupus [ m3(mg N)-1 d-1 ]
+mum_SZO_T15   0.07      #  Growth rate for Small Zooplankton [ m3(mg N)-1 d-1 ]
+mum_MZO_T15   0.0093      #  Growth rate for Medium Zooplankton [ m3(mg N)-1 d-1 ]
 mum_LZO_T15   0.6     #  Growth rate for Large Zooplankton [ m3(mg N)-1 d-1 ]
 mum_SCR_T15   0.001      #  Growth rate for Small crustaceans [ m3(mg N)-1 d-1 ]
 mum_BFF_T15   0.00006       #  Growth rate for Deposit feeders [ m3(mg N)-1 d-1 ]
@@ -4378,8 +4377,8 @@ Ktmp_bird    0.08  # Factor relating temperature to respiration for seabirds
 Ktmp_mammal  0.08  # Factor relating temperature to respiration for mammals
 
 # Lysis rate of microalgaes. Read in for primary producer groups only.
-KLYS_LPH   0.001 # Lysis rate of Large phytoplankton [ d-1 ]
-KLYS_SPH   0.01   # Lysis rate of Small phytoplankton [ d-1 ]
+KLYS_LPH   0.0005 # Lysis rate of Large phytoplankton [ d-1 ]
+KLYS_SPH   0.0033   # Lysis rate of Small phytoplankton [ d-1 ]
 KLYS_MA    0.00001 # Lysis rate of Macroalgae [ d-1 ]
 KLYS_COR   0.0001  # Lysis rate of CORAL [ d-1 ]
 
@@ -4489,8 +4488,8 @@ BFF_mQ   1e-7 #  Quad. mortality rate of Deposit feeders [ d-1 ]
 SUR_mQ   8e-7 #  Quad. mortality rate of Sea Urchin [ d-1 ]
 MOL_mQ   1e-6 #  Quad. mortality rate of Mollusca [ d-1 ]
 MA_mQ    1e-18 #  Quad. mortality rate of Macroalgae [ d-1 ]
-LPH_mQ   1e-9 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
-SPH_mQ   1e-8 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
+LPH_mQ   1e-5 #  Quad. mortality rate of Large phytoplancton [ d-1 ]
+SPH_mQ   1e-10 #  Quad. mortality rate of Small phytoplancton [ d-1 ]
 PB_mQ    1e-08 #  Quad. mortality rate of Pelagic Bacteria [ d-1 ]
 BB_mQ    1e-12 #  Quad. mortality rate of Sediment Bacteria [ d-1 ]
 DL_mQ    1e-15 #  Quad. mortality rate of Labile detritus [ d-1 ]
@@ -4799,9 +4798,9 @@ FDM_PB    0.6  # Detrit contrib from mortality of  Pelagic Bacteria [ Proportion
 FDM_BB    0.6  # Detrit contrib from mortality of  Sediment Bacteria [ Proportion ]
 
 # Split up of losses to detritus between labile and refractory detritus
-FDL_fish   0.2  # Split between DL and DR for fish 0 - 1
-FDL_benth  0.2  # Split between DL and DR for benthos 0 - 1
-FDL_top    0.2  # Split between DL and DR for top predators 0 - 1
+FDL_fish   0.1  # Split between DL and DR for fish 0 - 1
+FDL_benth  0.1  # Split between DL and DR for benthos 0 - 1
+FDL_top    0.1  # Split between DL and DR for top predators 0 - 1
 FDL_wc     0.9  # Split between DL and DR for pelagic invertebrates 0 - 1
 
 # Fraction of bacterial losses sent to detritus
@@ -5194,6 +5193,13 @@ Rbeta_MPF   0 # Ricker recruitment K parameter (if recruit = 9) for Small pelagi
 Rbeta_SBF   0 # Ricker recruitment K parameter (if recruit = 9) for Small benthic fish
 Rbeta_LBF   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
 Rbeta_BIR   0 # Ricker recruitment K parameter (if recruit = 9) for Large benthic fish
+
+# Coral recruitment
+CrecruitA_COR 50000
+CrecruitB_COR 864
+CrecruitC_COR 0.9
+KDENR_COR 1
+24208652
 
 # Beverton-Holt recruitmen
 BHalpha_SPL   1.32E+05             # Beverton-Holt recruitment rate parameter (if recruit = 3) for Spiny lobster
