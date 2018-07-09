@@ -15618,3 +15618,16 @@ New aproach for mortality
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6320
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : Automatic backup 20180709091837
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180709085532
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180709085532.png]]
+* Run PC-Demiurgo 20180709091211
+  - Run start: 2018-07-09 09:12:11
+  - Run end: 2018-07-09 14:55:28
+  - log file : [[file:Calibration/20180709145528.bak][Backupfile]]
+  - OS : Ubuntu 14.04.5 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6320
+  - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
