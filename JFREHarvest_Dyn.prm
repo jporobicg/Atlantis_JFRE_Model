@@ -4339,33 +4339,33 @@ TrawlORO_infringe	0	## Level of infringement (as proportion of uncontrolled effo
 TrawlALF_infringe	0	## Level of infringement (as proportion of uncontrolled effort) for Trawling Alfonsino
 PotOCT_infringe	0	## Level of infringement (as proportion of uncontrolled effort) for Pot-trap Octopus
 
-##  COR | MA | reef | flat | soft | canyon |
-MPATrapSPL	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Spiny Lobster
-0 0 0 0 0 0
-MPATrapGCR	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Golden Crab
-0 0 0 0 0 0
-MPATrapANG	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Anguila
-0 0 0 0 0 0
-MPABaitSPF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Pelagic Fish
-0 0 0 0 0 0
-MPABaitLPF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Pelagic Fish
-0 0 0 0 0 0
-MPABaitBRC	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Breca
-0 0 0 0 0 0
-MPABaitLBF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Benthic Fish
-0 0 0 0 0 0
-MPABaitSBF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Benthic Fish
-0 0 0 0 0 0
-MPAHlineBRC	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Handlining Breca
-0 0 0 0 0 0
-MPAHlineVID	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery handlining Vidriola
-0 0 0 0 0 0
-MPATrawlORO	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Orange Roughy
-0 0 0 0 0 0
-MPATrawlALF	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Alfonsino
-0 0 0 0 0 0
-MPAPotOCT	6	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Pot-trap Octopus
-0 0 0 0 0 0
+##  0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 |
+MPATrapSPL	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Spiny Lobster
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPATrapGCR	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Golden Crab
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPATrapANG	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trap Anguila
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPABaitSPF	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Pelagic Fish
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPABaitLPF	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Pelagic Fish
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPABaitBRC	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Breca
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPABaitLBF	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Large Benthic Fish
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPABaitSBF	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Bait Small Benthic Fish
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPAHlineBRC	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Handlining Breca
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPAHlineVID	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery handlining Vidriola
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPATrawlORO	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Orange Roughy
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPATrawlALF	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Trawling Alfonsino
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+MPAPotOCT	59	## General MPA status [fishing allowed between 1 -- 0] of the cell with regard to the fishery Pot-trap Octopus
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 
 ##  COR | MA | reef | flat | soft | canyon |
 MPAendangeredTrapSPL	6	## MPA's imposed when threatened groups [fishing allowed between 1 -- 0] by the fishery Trap Spiny Lobster
