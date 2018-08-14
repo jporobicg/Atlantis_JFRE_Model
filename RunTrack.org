@@ -15671,3 +15671,16 @@ Spatial explicit effort
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6320
   - Run used :  /usr/local/bin/atlantisMerged -i JFRE.ini.nc 0 -o outputJFRE.nc -r JFRERun.prm -f JFREForcing.prm -p JFREPhysics.prm -b JFREBiol.prm -s JFREGroups.csv -d JFR_Output_Folder -h JFREHarvest_mFC.prm -q JFREFisheries.csv
+  - Commit Githhub : 
+
+**  Input
+*** Vertical migration
+**** ORO
+- from : 0 0.649 0.347 0.004 0 0 0 0
+- to : 0 0.549 0.347 0.104 0 0 0 0
+**** ALF
+1) 0 0.051 0.268 0.58 0.046 0.055 0 0
+2) to : 0 0 0.268 0.58 0.082 0.07 0 0
+ - Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180814134536
+[[file:/home/demiurgo/Documents/PhD/Atlantis_Model/model_JFR/Calibration/figures/20180814134536.png]]
